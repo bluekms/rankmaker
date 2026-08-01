@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="bluekms21 <bluekms21@naver.com> · https://blog.naver.com/bluekms21">
+<!-- RankMaker — made by bluekms21 (bluekms21@naver.com · https://blog.naver.com/bluekms21) -->
+<title>RankMaker</title>
+<style>
+:root {
+  --bg: #f4f5f7;
+  --card: #ffffff;
+  --text: #1b1e23;
+  --muted: #6b7280;
+  --border: #e2e5ea;
+  --accent: #4f6ef7;
+  --accent-soft: #e8edff;
+  --shadow: 0 1px 3px rgba(0,0,0,.08);
+  color-scheme: light;
+}
+:root[data-theme="dark"] {
+  --bg: #12151a;
+  --card: #1c2129;
+  --text: #e8eaed;
+  --muted: #9aa3af;
+  --border: #2b323c;
+  --accent: #7b93ff;
+  --accent-soft: #263050;
+  --shadow: 0 1px 3px rgba(0,0,0,.4);
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans KR", sans-serif;
+  line-height: 1.5;
+}
+header {
+  position: sticky; top: 0; z-index: 10;
+  display: flex; align-items: center; gap: .6rem;
+  padding: .6rem .9rem;
+  background: var(--card);
+  border-bottom: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  flex-wrap: wrap;
+}
+header .spacer { flex: 1; }
+select, button, input {
+  font: inherit; color: inherit;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: .55rem;
+  padding: .35rem .7rem;
+}
+button { cursor: pointer; }
+button:hover { border-color: var(--accent); }
+.seg { display: inline-flex; border: 1px solid var(--border); border-radius: .55rem; overflow: hidden; }
+.seg button { border: 0; border-radius: 0; background: transparent; }
+.seg button.active { background: var(--accent); color: #fff; }
+#colWrap { display: inline-flex; align-items: center; gap: .35rem; font-size: .9rem; color: var(--muted); }
+#colInput { width: 3.4rem; padding: .3rem .4rem; text-align: center; }
+#searchInput { width: 11rem; }
+#noResult { text-align: center; color: var(--muted); padding: 2.5rem 0; grid-column: 1 / -1; }
+#viewControls { display: inline-flex; align-items: center; gap: .6rem; flex-wrap: wrap; }
+details.menu { position: relative; }
+details.menu summary {
+  list-style: none; cursor: pointer;
+  border: 1px solid var(--border); border-radius: .55rem;
+  padding: .3rem .55rem; font-size: .82rem; color: var(--muted);
+}
+details.menu summary::-webkit-details-marker { display: none; }
+details.menu summary:hover, details.menu[open] summary { border-color: var(--accent); }
+.menu-list {
+  position: absolute; right: 0; top: calc(100% + 6px); z-index: 20;
+  display: flex; flex-direction: column; min-width: 15rem; overflow: hidden;
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: .6rem; box-shadow: var(--shadow);
+}
+.menu-list button { border: 0; border-radius: 0; background: transparent; text-align: left; padding: .55rem .8rem; font-size: .88rem; }
+.menu-list button:hover { background: var(--accent-soft); }
+#btnTheme { font-size: 1.05rem; padding: .3rem .55rem; }
+.mini { font-size: .82rem; padding: .3rem .55rem; color: var(--muted); }
+#status { font-size: .85rem; color: var(--muted); opacity: 0; transition: opacity .3s; }
+#status.show { opacity: 1; }
+#importInput, #dirInput { display: none; }
+
+main { max-width: 1100px; margin: 0 auto; padding: 1rem; }
+
+/* ---------- welcome ---------- */
+#welcome {
+  margin: 9vh auto 0; max-width: 500px; text-align: center;
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: 1rem; padding: 2rem 1.6rem; box-shadow: var(--shadow);
+}
+#welcome h1 { margin: 0 0 .4rem; font-size: 1.6rem; }
+#welcome p { color: var(--muted); font-size: .93rem; }
+#welcome .actions { display: flex; flex-direction: column; gap: .6rem; margin-top: 1.2rem; }
+#welcome .actions button, #welcome .actions label {
+  padding: .7rem; border-radius: .7rem; border: 0; cursor: pointer;
+  background: var(--accent); color: #fff; font-weight: 600; font-size: 1rem;
+}
+#welcome .actions .alt { background: var(--card); color: var(--text); border: 1px solid var(--border); font-weight: 500; }
+#welcome .drop-hint { font-size: .85rem; margin-top: 1.1rem; }
+#welcome.dragging { outline: 3px dashed var(--accent); outline-offset: -8px; }
+
+/* ---------- items ---------- */
+#items.list { display: flex; flex-direction: column; gap: .7rem; }
+#items.grid {
+  display: grid;
+  grid-template-columns: repeat(var(--cols, 3), minmax(0, 1fr));
+  gap: .9rem;
+}
+.item {
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: .9rem; box-shadow: var(--shadow);
+  position: relative;
+}
+.item.dragging { opacity: .4; }
+.item.drop-before::before, .item.drop-after::after {
+  content: ""; position: absolute; background: var(--accent); border-radius: 2px; z-index: 5;
+}
+#items.list .item.drop-before::before { left: 0; right: 0; top: -6px; height: 3px; }
+#items.list .item.drop-after::after  { left: 0; right: 0; bottom: -6px; height: 3px; }
+#items.grid .item.drop-before::before { top: 0; bottom: 0; left: -7px; width: 3px; }
+#items.grid .item.drop-after::after  { top: 0; bottom: 0; right: -7px; width: 3px; }
+
+/* list layout */
+#items.list .item { display: flex; align-items: center; gap: .9rem; padding: .6rem .8rem; }
+#items.list .thumb { width: 72px; height: 72px; border-radius: .6rem; object-fit: cover; flex: none; }
+#items.list .content { flex: 1; min-width: 0; overflow-x: auto; }
+
+/* grid layout */
+#items.grid .item { display: flex; flex-direction: column; overflow: hidden; }
+#items.grid .thumb { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; display: block; }
+#items.grid .content { padding: .55rem .75rem .75rem; overflow-x: auto; }
+#items.grid .head { display: flex; align-items: center; gap: .5rem; padding: .45rem .55rem; }
+#items.list .head { display: contents; }
+
+.name { font-weight: 700; }
+#items.grid .name { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.desc-line { white-space: nowrap; font-size: .9rem; color: var(--muted); }
+.desc-line input[type=checkbox] { accent-color: var(--accent); margin: 0 .15rem; vertical-align: -2px; padding: 0; }
+
+/* rank */
+.rank { display: flex; flex-direction: column; align-items: center; flex: none; width: 2.6rem; user-select: none; }
+.rank .num {
+  font-size: 1.25rem; font-weight: 800; color: var(--accent);
+  min-width: 2.2rem; text-align: center; cursor: pointer;
+  border-radius: .4rem; padding: 0 .2rem;
+}
+.rank .num:hover { background: var(--accent-soft); }
+.rank .arrow {
+  visibility: hidden; border: 0; background: transparent; color: var(--muted);
+  padding: 0; line-height: 1; font-size: .8rem;
+}
+.rank:hover .arrow { visibility: visible; }
+.rank .arrow:hover { color: var(--accent); }
+@media (hover: none) { .rank .arrow { visibility: visible; } }
+.rank-input { width: 3rem; text-align: center; padding: .15rem; }
+
+/* drag handle */
+.handle {
+  flex: none; cursor: grab; color: var(--muted); font-size: 1.1rem;
+  padding: .2rem .3rem; letter-spacing: -2px; touch-action: none;
+}
+.handle:active { cursor: grabbing; }
+
+#credit {
+  text-align: center; padding: 1.2rem 0 1.6rem;
+  font-size: .8rem; color: var(--muted);
+}
+#credit a { color: var(--muted); }
+#credit a:hover { color: var(--accent); }
+
+@media (max-width: 560px) {
+  #items.list .thumb { width: 56px; height: 56px; }
+  #searchInput { width: 8rem; }
+  main { padding: .7rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <select id="topicSelect" hidden></select>
+  <input id="searchInput" type="search" placeholder="검색 (초성 지원)" hidden>
+  <span id="status"></span>
+  <div class="spacer"></div>
+  <span id="viewControls" hidden>
+    <span class="seg">
+      <button id="btnList">리스트</button>
+      <button id="btnGrid">액자</button>
+    </span>
+    <label id="colWrap" hidden>가로 <input id="colInput" type="number" min="1" max="8"></label>
+    <details id="exportMenu" class="menu">
+      <summary>이미지 출력</summary>
+      <div class="menu-list">
+        <button id="btnImgInsta">인스타용 — 정사각형 · Top 3 단상</button>
+        <button id="btnImgTop10">포스터 — Top 10 (단상 + 리스트)</button>
+      </div>
+    </details>
+    <button id="btnExport" class="mini" title="현재 주제의 저장 데이터를 파일로 백업">내보내기</button>
+    <button id="btnImport" class="mini" title="백업한 save.json 파일을 불러오기">가져오기</button>
+    <input id="importInput" type="file" accept=".json,application/json">
+  </span>
+  <button id="btnTheme" title="라이트/다크 전환">🌙</button>
+</header>
+
+<main>
+  <section id="welcome" hidden>
+    <h1>RankMaker</h1>
+    <p>주제 데이터는 <b>이미지 + info.md + save.json</b> 파일이 전부입니다.<br>
+    처음 한 번만 이 저장소의 <code>topics</code> 폴더를 연결하면 다음부터는 <b>자동으로 열립니다</b>.<br>
+    (내 파일을 읽는 것이므로 브라우저 보안상 최초 승인 1회는 생략할 수 없습니다)</p>
+    <div class="actions">
+      <button id="btnResume" hidden>📂 지난 폴더 다시 열기</button>
+      <button id="btnOpen">📂 topics 폴더 연결 (Chrome / Edge)</button>
+      <label class="alt">📁 topics 폴더 선택 (기타 브라우저)
+        <input id="dirInput" type="file" webkitdirectory>
+      </label>
+    </div>
+    <p class="drop-hint">topics 폴더를 이 창에 끌어다 놓아도 됩니다</p>
+  </section>
+  <section id="board" hidden>
+    <div id="items"></div>
+  </section>
+</main>
+
+<footer id="credit">
+  RankMaker · made by <a href="mailto:bluekms21@naver.com">bluekms21</a> ·
+  <a href="https://blog.naver.com/bluekms21" target="_blank" rel="noopener">blog.naver.com/bluekms21</a>
+</footer>
+
+<script>
+"use strict";
+const $ = s => document.querySelector(s);
+const CREDIT = "RankMaker · by bluekms21 · blog.naver.com/bluekms21";
+console.info(CREDIT + " · bluekms21@naver.com");
+const IMG_EXT = /\.(png|jpe?g|gif|webp|svg|bmp|avif)$/i;
+
+let topics = [];        // { name, dirHandle? , files? (Map name->File) }
+let cur = null;         // current topic state
+let dragItem = null;
+let saveTimer = null;
+let themeLocked = !!localStorage.getItem("rm-theme");
+
+/* ---------- theme ---------- */
+function setTheme(t, remember = true) {
+  document.documentElement.dataset.theme = t;
+  $("#btnTheme").textContent = t === "dark" ? "☀️" : "🌙";
+  if (remember) { localStorage.setItem("rm-theme", t); themeLocked = true; }
+}
+setTheme(localStorage.getItem("rm-theme") ||
+  (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"), false);
+$("#btnTheme").onclick = () =>
+  setTheme(document.documentElement.dataset.theme === "dark" ? "light" : "dark");
+
+/* ---------- tiny IndexedDB kv (폴더 핸들 기억용) ---------- */
+function idb() {
+  return new Promise((res, rej) => {
+    const rq = indexedDB.open("rankmaker", 1);
+    rq.onupgradeneeded = () => rq.result.createObjectStore("kv");
+    rq.onsuccess = () => res(rq.result);
+    rq.onerror = () => rej(rq.error);
+  });
+}
+async function idbGet(k) {
+  try {
+    const db = await idb();
+    return await new Promise(res => {
+      const r = db.transaction("kv").objectStore("kv").get(k);
+      r.onsuccess = () => res(r.result);
+      r.onerror = () => res(undefined);
+    });
+  } catch (e) { return undefined; }
+}
+async function idbSet(k, v) {
+  try {
+    const db = await idb();
+    await new Promise(res => {
+      const tx = db.transaction("kv", "readwrite");
+      tx.objectStore("kv").put(v, k);
+      tx.oncomplete = res; tx.onerror = res;
+    });
+  } catch (e) {}
+}
+
+/* ---------- open sources: FSA(기억) / 드래그&드롭 / webkitdirectory ---------- */
+async function boot() {
+  if (await tryResume(true)) return;          // 연결해둔 폴더가 있으면 소리 없이 자동 오픈
+  if (await idbGet("root")) $("#btnResume").hidden = false;
+  $("#welcome").hidden = false;
+}
+async function tryResume(silent) {
+  const h = await idbGet("root");
+  if (!h || !h.queryPermission) return false;
+  try {
+    let p = await h.queryPermission({ mode: "readwrite" });
+    if (p === "prompt" && !silent) p = await h.requestPermission({ mode: "readwrite" });
+    if (p !== "granted") return false;
+    return await openRoot(h, false);
+  } catch (e) { return false; }
+}
+$("#btnResume").onclick = () => tryResume(false);
+$("#btnOpen").onclick = async () => {
+  try {
+    const h = await showDirectoryPicker({ mode: "readwrite", id: "rankmaker-topics" });
+    await openRoot(h, true);
+  } catch (e) { /* cancelled */ }
+};
+if (!window.showDirectoryPicker) $("#btnOpen").hidden = true;
+
+async function openRoot(handle, remember) {
+  // rankmaker 루트를 골랐다면 그 안의 topics 폴더로 내려간다
+  try {
+    const sub = await handle.getDirectoryHandle("topics");
+    if (sub) handle = sub;
+  } catch (e) {}
+  const list = [];
+  for await (const c of handle.values())
+    if (c.kind === "directory") list.push({ name: c.name, dirHandle: c });
+  if (!list.length) { alert("하위 폴더(주제)가 없습니다. topics 폴더를 연결했는지 확인하세요."); return false; }
+  topics = list;
+  if (remember) idbSet("root", handle);
+  afterOpen();
+  return true;
+}
+
+/* 폴더 드래그&드롭 */
+addEventListener("dragover", e => {
+  if ([...(e.dataTransfer?.items || [])].some(i => i.kind === "file")) {
+    e.preventDefault();
+    $("#welcome").classList.add("dragging");
+  }
+});
+addEventListener("dragleave", () => $("#welcome").classList.remove("dragging"));
+addEventListener("drop", async e => {
+  $("#welcome").classList.remove("dragging");
+  const item = [...(e.dataTransfer?.items || [])].find(i => i.kind === "file");
+  if (!item) return;
+  e.preventDefault();
+  // 핸들/엔트리는 이벤트 처리 중(동기)에 확보해야 한다
+  const handlePromise = item.getAsFileSystemHandle ? item.getAsFileSystemHandle() : null;
+  const entry = item.webkitGetAsEntry && item.webkitGetAsEntry();
+  try {
+    if (handlePromise) {
+      // Chromium: 드롭으로 폴더 핸들 획득 — "폴더 연결" 버튼과 동일 (기억 + 파일 자동 저장)
+      const h = await handlePromise;
+      if (!h || h.kind !== "directory") { alert("폴더를 드롭해주세요."); return; }
+      await openRoot(h, true);
+      return;
+    }
+    if (!entry || !entry.isDirectory) { alert("폴더를 드롭해주세요."); return; }
+    let kids = await allEntries(entry);
+    const tsub = kids.find(k => k.isDirectory && k.name.toLowerCase() === "topics");
+    if (tsub) kids = await allEntries(tsub);
+    const dirs = kids.filter(k => k.isDirectory);
+    if (!dirs.length) { alert("하위 폴더(주제)가 없습니다. topics 폴더를 드롭했는지 확인하세요."); return; }
+    const list = [];
+    for (const d of dirs) {
+      const files = new Map();
+      for (const f of await allEntries(d))
+        if (f.isFile) files.set(f.name, await new Promise((res, rej) => f.file(res, rej)));
+      list.push({ name: d.name, files });
+    }
+    topics = list;
+    afterOpen();
+  } catch (err) {
+    console.error(err);
+    alert("폴더를 읽지 못했습니다: " + ((err && err.message) || err));
+  }
+});
+async function allEntries(dirEntry) {
+  const out = [];
+  const reader = dirEntry.createReader();
+  let batch;
+  do {
+    batch = await new Promise(res => reader.readEntries(res, () => res([])));
+    out.push(...batch);
+  } while (batch.length);
+  return out;
+}
+
+/* webkitdirectory 폴백 (Firefox/Safari) */
+$("#dirInput").onchange = e => {
+  const map = new Map();
+  for (const f of e.target.files) {
+    const parts = (f.webkitRelativePath || "").split("/");
+    if (parts.length !== 3) continue;           // root/topic/file 만
+    if (!map.has(parts[1])) map.set(parts[1], new Map());
+    map.get(parts[1]).set(parts[2], f);
+  }
+  topics = [...map.entries()].map(([name, files]) => ({ name, files }));
+  if (!topics.length) { alert("하위 폴더(주제)가 없습니다."); return; }
+  afterOpen();
+};
+
+function afterOpen() {
+  topics.sort((a, b) => a.name.localeCompare(b.name));
+  const sel = $("#topicSelect");
+  sel.innerHTML = "";
+  topics.forEach((t, i) => sel.append(new Option(t.name, i)));
+  sel.hidden = false;
+  sel.onchange = () => loadTopic(topics[sel.value]);
+  $("#searchInput").hidden = false;
+  $("#viewControls").hidden = false;
+  $("#welcome").hidden = true;
+  $("#board").hidden = false;
+  loadTopic(topics[0]);
+}
+boot();
+
+/* ---------- info.md ---------- */
+function parseInfo(text) {
+  const info = { name: null, theme: null, view: null, columns: null, global: [], items: {} };
+  let cursec = null;
+  for (const raw of (text || "").split(/\r?\n/)) {
+    const t = raw.trim();
+    if (!t) continue;
+    if (t.startsWith("//")) {
+      const v = t.slice(2).trim();
+      const col = v.match(/^columns?\s*[:=]?\s*(\d+)$/i);
+      if (/^(light|dark)$/i.test(v)) info.theme = v.toLowerCase();
+      else if (/^(grid|list)$/i.test(v)) info.view = v.toLowerCase();
+      else if (col) info.columns = +col[1];
+      else if (!info.name) info.name = v;
+    } else if (t.startsWith("#")) {
+      const h = t.replace(/^#+\s*/, "");
+      cursec = /^global$/i.test(h) ? info.global : (info.items[h] = info.items[h] || []);
+    } else if ((t.startsWith("-") || t.startsWith("+")) && cursec) {
+      // "-" 필수 설명(항상 표시), "+" 추가 설명(리스트형에서만 표시)
+      const text2 = t.replace(/^[-+]\s*/, "");
+      if (text2) cursec.push({ text: text2, extra: t.startsWith("+") });
+    }
+  }
+  return info;
+}
+
+/* ---------- topic loading ---------- */
+async function loadTopic(t) {
+  const files = new Map();
+  if (t.dirHandle) {
+    for await (const h of t.dirHandle.values())
+      if (h.kind === "file") files.set(h.name, await h.getFile());
+  } else {
+    for (const [n, f] of t.files) files.set(n, f);
+  }
+
+  const info = parseInfo(files.has("info.md") ? await files.get("info.md").text() : "");
+  const save = { view: {}, ranks: {}, checks: {} };
+  if (files.has("save.json")) {
+    try { Object.assign(save, JSON.parse(await files.get("save.json").text())); }
+    catch (e) { console.warn("save.json parse error", e); }
+  }
+  if (!t.dirHandle) {
+    // 읽기 전용 소스에서는 이후 조작분이 브라우저(localStorage)에 겹쳐 저장돼 있다
+    try { Object.assign(save, JSON.parse(localStorage.getItem("rm:" + t.name) || "null") || {}); }
+    catch (e) {}
+  }
+
+  if (cur) for (const it of cur.items) URL.revokeObjectURL(it.url);
+  posterImgCache.clear();
+
+  const imgs = [...files.keys()].filter(n => IMG_EXT.test(n)).sort();
+  const items = imgs.map((n, i) => ({
+    file: n,
+    label: n.replace(/\.[^.]+$/, ""),
+    url: URL.createObjectURL(files.get(n)),
+    key: Number.isFinite(save.ranks[n]) ? save.ranks[n] : 1e9 + i,  // 저장에 없던 아이템은 뒤로
+    ord: i,
+  }));
+  for (const it of items) {
+    const lines = [...info.global, ...(info.items[it.file] || [])].map(l => l.text);
+    it.search = (it.label + " " + lines.join(" ")).toLowerCase();
+    it.searchCho = choseong(it.search);
+  }
+
+  cur = {
+    name: t.name, dirHandle: t.dirHandle || null, info, save, items,
+    view: {
+      mode: (save.view.mode || info.view) === "grid" ? "grid" : "list",
+      columns: save.view.columns || info.columns || 3,
+    },
+  };
+  normalize();
+  if (!themeLocked && info.theme) setTheme(info.theme, false);
+  $("#searchInput").value = "";
+  syncControls();
+  render();
+}
+
+/* ---------- ranking (competition ranking: 1,1,1,4 …) ---------- */
+function sorted() {
+  return [...cur.items].sort((a, b) => a.key - b.key || a.ord - b.ord);
+}
+function normalize() {
+  const arr = sorted();
+  let rank = 0, prevKey = null;
+  arr.forEach((it, i) => {
+    if (it.key !== prevKey) { rank = i + 1; prevKey = it.key; }
+    it.rank = rank;
+    it.ord = i;
+  });
+  arr.forEach(it => it.key = it.rank);
+}
+function moveItem(it, dir) {  // dir: -1 up / +1 down
+  const arr = sorted();
+  const i = arr.indexOf(it), j = i + dir;
+  if (j < 0 || j >= arr.length) return;
+  const other = arr[j];
+  if (other.key === it.key) it.key += dir * 0.5;   // 동점 그룹 탈출
+  else { const k = it.key; it.key = other.key; other.key = k; }
+  commit();
+}
+function setRank(it, v) {
+  if (!Number.isFinite(v)) return;
+  const n = cur.items.length;
+  // 범위 밖 입력은 "끼워넣기": 0 이하 → 단독 1위(나머지 밀림), n 초과 → 단독 꼴찌.
+  // 범위 안에서 기존과 같은 숫자를 입력한 경우만 공동 순위가 된다.
+  if (v <= 0) it.key = 0.5;
+  else if (v > n) it.key = n + 0.5;
+  else it.key = Math.round(v);
+  commit();
+}
+function commit() { normalize(); render(); scheduleSave(); }
+
+/* ---------- rendering ---------- */
+function syncControls() {
+  $("#btnList").classList.toggle("active", cur.view.mode === "list");
+  $("#btnGrid").classList.toggle("active", cur.view.mode === "grid");
+  $("#colWrap").hidden = cur.view.mode !== "grid";
+  $("#colInput").value = cur.view.columns;
+}
+$("#btnList").onclick = () => { cur.view.mode = "list"; syncControls(); render(); scheduleSave(); };
+$("#btnGrid").onclick = () => { cur.view.mode = "grid"; syncControls(); render(); scheduleSave(); };
+$("#colInput").onchange = e => {
+  cur.view.columns = Math.max(1, Math.min(8, +e.target.value || 3));
+  e.target.value = cur.view.columns;
+  render(); scheduleSave();
+};
+
+function render() {
+  const wrap = $("#items");
+  wrap.innerHTML = "";
+  wrap.className = cur.view.mode;
+  wrap.style.setProperty("--cols", cur.view.columns);
+  const shown = sorted().filter(matchesQuery);
+  for (const it of shown) wrap.append(renderItem(it));
+  if (!shown.length) {
+    const d = document.createElement("div");
+    d.id = "noResult";
+    d.textContent = "검색 결과가 없습니다";
+    wrap.append(d);
+  }
+}
+
+function renderItem(it) {
+  const row = document.createElement("article");
+  row.className = "item";
+
+  const head = document.createElement("div");
+  head.className = "head";
+  head.append(renderRank(it));
+
+  const name = document.createElement("span");
+  name.className = "name";
+  name.textContent = it.label;
+
+  const img = document.createElement("img");
+  img.className = "thumb";
+  img.src = it.url;
+  img.alt = it.label;
+  img.loading = "lazy";
+
+  const content = document.createElement("div");
+  content.className = "content";
+  if (cur.view.mode === "list") content.append(name);
+  const showExtra = cur.view.mode === "list";
+  const descLines = [...cur.info.global, ...(cur.info.items[it.file] || [])]
+    .filter(l => showExtra || !l.extra);
+  for (const line of descLines) content.append(renderDescLine(line.text, it));
+
+  const handle = document.createElement("span");
+  handle.className = "handle";
+  handle.textContent = "⣿";
+  handle.title = "드래그하여 순위 이동";
+  handle.addEventListener("pointerdown", () => row.draggable = true);
+
+  if (cur.view.mode === "grid") {
+    head.append(name, handle);
+    row.append(head, img, content);
+  } else {
+    row.append(head, img, content, handle);
+  }
+
+  /* drag & drop */
+  row.addEventListener("dragstart", e => {
+    dragItem = it;
+    e.dataTransfer.effectAllowed = "move";
+    row.classList.add("dragging");
+  });
+  row.addEventListener("dragend", () => {
+    dragItem = null; row.draggable = false; row.classList.remove("dragging");
+    document.querySelectorAll(".drop-before,.drop-after")
+      .forEach(el => el.classList.remove("drop-before", "drop-after"));
+  });
+  const dropSide = e => {
+    const r = row.getBoundingClientRect();
+    return cur.view.mode === "grid"
+      ? e.clientX < r.left + r.width / 2
+      : e.clientY < r.top + r.height / 2;
+  };
+  row.addEventListener("dragover", e => {
+    if (!dragItem || dragItem === it) return;
+    e.preventDefault();
+    const before = dropSide(e);
+    row.classList.toggle("drop-before", before);
+    row.classList.toggle("drop-after", !before);
+  });
+  row.addEventListener("dragleave", () => row.classList.remove("drop-before", "drop-after"));
+  row.addEventListener("drop", e => {
+    if (!dragItem || dragItem === it) return;
+    e.preventDefault();
+    e.stopPropagation();
+    dragItem.key = dropSide(e) ? it.key - 0.5 : it.key + 0.5;
+    commit();
+  });
+  return row;
+}
+
+function renderRank(it) {
+  const box = document.createElement("div");
+  box.className = "rank";
+  const up = document.createElement("button");
+  up.className = "arrow"; up.textContent = "▲"; up.title = "한 칸 위로";
+  up.onclick = () => moveItem(it, -1);
+  const down = document.createElement("button");
+  down.className = "arrow"; down.textContent = "▼"; down.title = "한 칸 아래로";
+  down.onclick = () => moveItem(it, 1);
+  const num = document.createElement("span");
+  num.className = "num";
+  num.textContent = it.rank;
+  num.title = "클릭하여 순위 직접 입력";
+  num.onclick = () => {
+    const inp = document.createElement("input");
+    inp.type = "number"; inp.min = 1; inp.max = cur.items.length;
+    inp.value = it.rank; inp.className = "rank-input";
+    num.replaceWith(inp);
+    inp.focus(); inp.select();
+    inp.onblur = () => setRank(it, parseInt(inp.value, 10));
+    inp.onkeydown = e => {
+      if (e.key === "Enter") inp.blur();
+      if (e.key === "Escape") { inp.onblur = null; render(); }
+    };
+  };
+  box.append(up, num, down);
+  return box;
+}
+
+/* ---------- descriptions & checkboxes ---------- */
+function renderDescLine(text, it) {
+  const line = document.createElement("div");
+  line.className = "desc-line";
+  const label = (text.split("[")[0].split(":")[0].trim()) || "chk";
+  const re = /\[( |x|X)?\]/g;
+  let m, idx = 0, last = 0;
+  while ((m = re.exec(text))) {
+    line.append(text.slice(last, m.index));
+    const cb = document.createElement("input");
+    cb.type = "checkbox";
+    const key = `${label}#${idx++}`;
+    const stored = cur.save.checks?.[it.file]?.[key];
+    cb.checked = stored !== undefined ? !!stored : /x/i.test(m[1] || "");
+    cb.onchange = () => {
+      ((cur.save.checks ||= {})[it.file] ||= {})[key] = cb.checked;
+      scheduleSave();
+    };
+    line.append(cb);
+    last = m.index + m[0].length;
+  }
+  line.append(text.slice(last));
+  return line;
+}
+
+/* ---------- search (이름·설명 전체, 한글 초성 지원) ---------- */
+const CHO = "ㄱㄲㄴㄷㄸㄹㅁㅂㅃㅅㅆㅇㅈㅉㅊㅋㅌㅍㅎ";
+function choseong(str) {
+  let out = "";
+  for (const ch of str) {
+    const c = ch.codePointAt(0);
+    out += (c >= 0xAC00 && c <= 0xD7A3) ? CHO[Math.floor((c - 0xAC00) / 588)] : ch;
+  }
+  return out;
+}
+function matchesQuery(it) {
+  const q = $("#searchInput").value.trim().toLowerCase();
+  if (!q) return true;
+  if (it.search.includes(q)) return true;
+  return /[ㄱ-ㅎ]/.test(q) && it.searchCho.includes(q);
+}
+$("#searchInput").oninput = () => render();
+
+/* ---------- persistence ---------- */
+function scheduleSave() { clearTimeout(saveTimer); saveTimer = setTimeout(persist, 400); }
+function saveData() {
+  return {
+    view: cur.view,
+    ranks: Object.fromEntries(cur.items.map(i => [i.file, i.rank])),
+    checks: cur.save.checks || {},
+  };
+}
+async function writeSaveFile(json) {
+  const fh = await cur.dirHandle.getFileHandle("save.json", { create: true });
+  const w = await fh.createWritable();
+  await w.write(json);
+  await w.close();
+}
+async function persist() {
+  const data = saveData();
+  cur.save = Object.assign({}, cur.save, data);
+  const json = JSON.stringify(data, null, 2);
+  if (cur.dirHandle) {
+    try { await writeSaveFile(json); flash("저장됨 ✓"); return; }
+    catch (e) { console.warn("write failed", e); }
+  }
+  try { localStorage.setItem("rm:" + cur.name, json); flash("저장됨 ✓ (브라우저)"); }
+  catch (e) { flash("저장 실패 — 내보내기로 백업하세요"); }
+}
+function downloadBlob(blob, name) {
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = name;
+  a.click();
+  setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+}
+
+/* backup / restore */
+$("#btnExport").onclick = () => {
+  downloadBlob(new Blob([JSON.stringify(saveData(), null, 2)], { type: "application/json" }), "save.json");
+  flash("save.json 다운로드됨 — 주제 폴더에 넣으면 초기 상태로도 쓰인다");
+};
+$("#btnImport").onclick = () => $("#importInput").click();
+$("#importInput").onchange = async e => {
+  const f = e.target.files[0];
+  e.target.value = "";
+  if (!f) return;
+  try {
+    const data = JSON.parse(await f.text());
+    const json = JSON.stringify(data, null, 2);
+    if (cur.dirHandle) await writeSaveFile(json);
+    else localStorage.setItem("rm:" + cur.name, json);
+    await loadTopic(topics.find(t => t.name === cur.name));
+    flash("가져오기 완료 ✓");
+  } catch (err) {
+    flash("가져오기 실패 — 올바른 save.json이 아닙니다");
+  }
+};
+
+/* ---------- 이미지 출력 (Canvas 포스터) ---------- */
+const posterImgCache = new Map();   // file -> HTMLImageElement
+
+$("#btnImgInsta").onclick = () => exportImage("insta");
+$("#btnImgTop10").onclick = () => exportImage("top10");
+document.addEventListener("click", e => {
+  const m = $("#exportMenu");
+  if (m.open && !m.contains(e.target)) m.open = false;
+});
+
+async function exportImage(kind) {
+  $("#exportMenu").open = false;
+  const items = sorted();
+  if (!items.length) { flash("아이템이 없습니다"); return; }
+  try {
+    const cv = await drawPoster(kind, items);
+    cv.toBlob(b => {
+      if (!b) return flash("이미지 출력 실패");
+      downloadBlob(b, cur.name + (kind === "insta" ? "-top3" : "-top10") + ".png");
+      flash("이미지 저장됨 ✓");
+    }, "image/png");
+  } catch (err) { console.error(err); flash("이미지 출력 실패"); }
+}
+function posterImage(it) {
+  if (posterImgCache.has(it.file)) return Promise.resolve(posterImgCache.get(it.file));
+  return new Promise(res => {
+    const im = new Image();
+    im.onload = () => { posterImgCache.set(it.file, im); res(im); };
+    im.onerror = () => res(null);   // 로드 실패 시 회색 박스로 대체
+    im.src = it.url;                // blob URL이라 캔버스를 오염시키지 않는다
+  });
+}
+function roundPath(ctx, x, y, w, h, r) {
+  ctx.beginPath();
+  if (ctx.roundRect) { ctx.roundRect(x, y, w, h, r); return; }
+  ctx.moveTo(x + r, y);
+  ctx.arcTo(x + w, y, x + w, y + h, r);
+  ctx.arcTo(x + w, y + h, x, y + h, r);
+  ctx.arcTo(x, y + h, x, y, r);
+  ctx.arcTo(x, y, x + w, y, r);
+  ctx.closePath();
+}
+function drawCover(ctx, img, x, y, w, h, r, fallback) {
+  ctx.save();
+  roundPath(ctx, x, y, w, h, r);
+  ctx.clip();
+  if (img) {
+    const iw = img.naturalWidth || img.width, ih = img.naturalHeight || img.height;
+    const s = Math.max(w / iw, h / ih);
+    ctx.drawImage(img, x + (w - iw * s) / 2, y + (h - ih * s) / 2, iw * s, ih * s);
+  } else {
+    ctx.fillStyle = fallback;
+    ctx.fillRect(x, y, w, h);
+  }
+  ctx.restore();
+}
+function fitText(ctx, text, x, y, maxW) {
+  let size = parseInt(ctx.font.match(/(\d+)px/)[1], 10);
+  while (size > 14 && ctx.measureText(text).width > maxW) {
+    size -= 2;
+    ctx.font = ctx.font.replace(/\d+px/, size + "px");
+  }
+  ctx.fillText(text, x, y);
+}
+async function drawPoster(kind, all) {
+  const css = getComputedStyle(document.documentElement);
+  const V = n => css.getPropertyValue(n).trim();
+  const medals = ["#f2c94c", "#c8ccd4", "#cd9a6c"];   // 금 · 은 · 동
+  const top3 = all.slice(0, 3);
+  const rest = kind === "top10" ? all.slice(3, 10) : [];
+  const W = 1080, pad = 40, rowH = 100, rowGap = 14, listTop = 990;
+  const podiumBottom = kind === "insta" ? 990 : 930;
+  const H = kind === "insta" ? 1080
+    : (rest.length ? listTop + rest.length * (rowH + rowGap) + 46 : 1020);
+  const cv = document.createElement("canvas");
+  cv.width = W; cv.height = H;
+  const ctx = cv.getContext("2d");
+
+  ctx.fillStyle = V("--bg"); ctx.fillRect(0, 0, W, H);
+
+  ctx.textAlign = "center"; ctx.textBaseline = "alphabetic";
+  ctx.fillStyle = V("--text");
+  ctx.font = "800 58px system-ui, sans-serif";
+  fitText(ctx, cur.info.name || cur.name, W / 2, 106, W - pad * 2);
+  ctx.fillStyle = V("--accent");
+  ctx.font = "700 26px system-ui, sans-serif";
+  ctx.fillText(kind === "insta" ? "TOP 3" : "TOP 10", W / 2, 150);
+
+  // 단상: 2위 - 1위 - 3위 순서로 배치
+  const colW = 300, gap = 30, x0 = (W - colW * 3 - gap * 2) / 2;
+  const blockH = [250, 190, 150];
+  for (let c = 0; c < 3; c++) {
+    const idx = [1, 0, 2][c];
+    const it = top3[idx];
+    if (!it) continue;
+    const x = x0 + c * (colW + gap);
+    const bh = blockH[idx], bt = podiumBottom - bh;
+    ctx.fillStyle = medals[idx];
+    roundPath(ctx, x, bt, colW, bh, 18); ctx.fill();
+    ctx.fillStyle = "rgba(255,255,255,.95)";
+    ctx.font = "800 72px system-ui, sans-serif";
+    ctx.textAlign = "center"; ctx.textBaseline = "middle";
+    ctx.fillText(String(it.rank), x + colW / 2, bt + bh / 2 + 4);
+    ctx.textBaseline = "alphabetic";
+    ctx.fillStyle = V("--text");
+    ctx.font = "700 30px system-ui, sans-serif";
+    fitText(ctx, it.label, x + colW / 2, bt - 20, colW - 12);
+    const size = idx === 0 ? 300 : 260;
+    const ix = x + (colW - size) / 2, iy = bt - 62 - size;
+    ctx.fillStyle = V("--card");
+    roundPath(ctx, ix - 8, iy - 8, size + 16, size + 16, 22); ctx.fill();
+    drawCover(ctx, await posterImage(it), ix, iy, size, size, 16, V("--border"));
+  }
+
+  // 4위 이하 리스트
+  for (let i = 0; i < rest.length; i++) {
+    const it = rest[i];
+    const y = listTop + i * (rowH + rowGap);
+    ctx.fillStyle = V("--card");
+    roundPath(ctx, pad, y, W - pad * 2, rowH, 16); ctx.fill();
+    ctx.fillStyle = V("--accent");
+    ctx.font = "800 40px system-ui, sans-serif";
+    ctx.textAlign = "center"; ctx.textBaseline = "middle";
+    ctx.fillText(String(it.rank), pad + 56, y + rowH / 2 + 2);
+    drawCover(ctx, await posterImage(it), pad + 112, y + 14, rowH - 28, rowH - 28, 12, V("--border"));
+    ctx.fillStyle = V("--text");
+    ctx.font = "700 34px system-ui, sans-serif";
+    ctx.textAlign = "left";
+    fitText(ctx, it.label, pad + 208, y + rowH / 2 + 12, W - pad * 2 - 230);
+  }
+
+  // 개발자 워터마크 — 출력 이미지 픽셀에 직접 새겨진다
+  ctx.fillStyle = V("--muted");
+  ctx.font = "600 20px system-ui, sans-serif";
+  ctx.textAlign = "right"; ctx.textBaseline = "alphabetic";
+  ctx.fillText(CREDIT, W - 24, H - 18);
+  return cv;
+}
+
+let flashTimer = null;
+function flash(msg) {
+  const el = $("#status");
+  el.textContent = msg;
+  el.classList.add("show");
+  clearTimeout(flashTimer);
+  flashTimer = setTimeout(() => el.classList.remove("show"), 2500);
+}
+</script>
+</body>
+</html>

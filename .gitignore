@@ -1,0 +1,17 @@
+# OS
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+*.log
+
+# 개인 순위 데이터 — 저장소에 올리지 않는다 (앱이 첫 조작 때 자동 생성)
+topics/*/save.json
+
+# 개인 주제 폴더를 커밋하고 싶지 않다면 아래 주석을 해제하세요.
+# (ex_ 접두사가 붙은 예제 주제만 저장소에 남습니다)
+# topics/*
+# !topics/ex_*/
