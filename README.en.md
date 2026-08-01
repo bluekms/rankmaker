@@ -2,7 +2,21 @@
 
 > [한국어](README.md) | **English**
 
-An offline ranking board: drop images into a folder and rank them. Runs from a single `index.html` — no server, no install.
+**An offline ranking board: drop images into a folder, rank them, and export share-ready posters.**
+Runs from a single `index.html` — no server, no install, no build.
+
+<p align="center">
+  <img src="docs/top3_dark.png" width="49%" alt="Top 3 poster — dark theme">
+  <img src="docs/top3_light.png" width="49%" alt="Top 3 poster — light theme">
+</p>
+<p align="center">
+  <img src="docs/top10_dark.png" width="49%" alt="Top 10 poster — dark theme">
+  <img src="docs/top10_light.png" width="49%" alt="Top 10 poster — light theme">
+</p>
+
+- **Rank with drag & drop** — tied ranks, Korean chosung search, list/gallery views
+- **Your data is just files** — images + `info.md` + `save.json`, all on your machine
+- **One-click PNG export** — Instagram 1:1 / Top 10 posters (the images above are real exports)
 
 ## Getting started
 
@@ -52,7 +66,7 @@ topics/
 | Move a rank one step | Hover the rank number → ▲▼ |
 | Type a rank | Click the rank number (Enter to confirm / Esc to cancel) |
 | Drag to reorder | Grab the ⣿ handle |
-| Export as image | "Image export" menu → Instagram (1:1, Top 3 podium) / Poster (Top 10) PNG |
+| Export as image | "Image Export" menu → Instagram (1:1, Top 3 podium) / Poster (Top 10) PNG |
 | Backup / restore | Export / Import (`save.json` file) |
 
 - Typing an existing rank creates a tie: 1, 1, 1, then 4.

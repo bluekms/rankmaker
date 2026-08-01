@@ -190,19 +190,19 @@ main { max-width: 1100px; margin: 0 auto; padding: 1rem; }
   <div class="spacer"></div>
   <span id="viewControls" hidden>
     <span class="seg">
-      <button id="btnList">리스트</button>
-      <button id="btnGrid">액자</button>
+      <button id="btnList">List</button>
+      <button id="btnGrid">Gallery</button>
     </span>
-    <label id="colWrap" hidden>가로 <input id="colInput" type="number" min="1" max="8"></label>
+    <label id="colWrap" hidden>Cols <input id="colInput" type="number" min="1" max="8"></label>
     <details id="exportMenu" class="menu">
-      <summary>이미지 출력</summary>
+      <summary>Image Export</summary>
       <div class="menu-list">
-        <button id="btnImgInsta">인스타용 — 정사각형 · Top 3 단상</button>
-        <button id="btnImgTop10">포스터 — Top 10 (단상 + 리스트)</button>
+        <button id="btnImgInsta">Instagram — 1:1 · Top 3</button>
+        <button id="btnImgTop10">Poster — Top 10</button>
       </div>
     </details>
-    <button id="btnExport" class="mini" title="현재 주제의 저장 데이터를 파일로 백업">내보내기</button>
-    <button id="btnImport" class="mini" title="백업한 save.json 파일을 불러오기">가져오기</button>
+    <button id="btnExport" class="mini" title="현재 주제의 저장 데이터를 파일로 백업">Export</button>
+    <button id="btnImport" class="mini" title="백업한 save.json 파일을 불러오기">Import</button>
     <input id="importInput" type="file" accept=".json,application/json">
   </span>
   <button id="btnTheme" title="라이트/다크 전환">🌙</button>
@@ -215,9 +215,9 @@ main { max-width: 1100px; margin: 0 auto; padding: 1rem; }
     처음 한 번만 이 저장소의 <code>topics</code> 폴더를 연결하면 다음부터는 <b>자동으로 열립니다</b>.<br>
     (내 파일을 읽는 것이므로 브라우저 보안상 최초 승인 1회는 생략할 수 없습니다)</p>
     <div class="actions">
-      <button id="btnResume" hidden>📂 지난 폴더 다시 열기</button>
-      <button id="btnOpen">📂 topics 폴더 연결 (Chrome / Edge)</button>
-      <label class="alt">📁 topics 폴더 선택 (기타 브라우저)
+      <button id="btnResume" hidden>📂 Reopen Last Folder</button>
+      <button id="btnOpen">📂 Connect Topics Folder (Chrome / Edge)</button>
+      <label class="alt">📁 Select Topics Folder (other browsers)
         <input id="dirInput" type="file" webkitdirectory>
       </label>
     </div>
@@ -239,8 +239,10 @@ const $ = s => document.querySelector(s);
 const CREDIT = "RankMaker · by bluekms21 · blog.naver.com/bluekms21";
 console.info(CREDIT + " · bluekms21@naver.com");
 const IMG_EXT = /\.(png|jpe?g|gif|webp|svg|bmp|avif)$/i;
+const PODIUM_RE = /^podium\.(png|jpe?g|gif|webp|svg|bmp|avif)$/i;  // 포스터 단상 그림 — 아이템에서 제외
 
 let topics = [];        // { name, dirHandle? , files? (Map name->File) }
+let rootPodiumFile = null;  // topics 루트의 공통 podium.* (주제 폴더 것이 우선)
 let cur = null;         // current topic state
 let dragItem = null;
 let saveTimer = null;
@@ -319,8 +321,11 @@ async function openRoot(handle, remember) {
     if (sub) handle = sub;
   } catch (e) {}
   const list = [];
-  for await (const c of handle.values())
+  rootPodiumFile = null;
+  for await (const c of handle.values()) {
     if (c.kind === "directory") list.push({ name: c.name, dirHandle: c });
+    else if (c.kind === "file" && PODIUM_RE.test(c.name)) rootPodiumFile = await c.getFile();
+  }
   if (!list.length) { alert("하위 폴더(주제)가 없습니다. topics 폴더를 연결했는지 확인하세요."); return false; }
   topics = list;
   if (remember) idbSet("root", handle);
@@ -356,6 +361,9 @@ addEventListener("drop", async e => {
     let kids = await allEntries(entry);
     const tsub = kids.find(k => k.isDirectory && k.name.toLowerCase() === "topics");
     if (tsub) kids = await allEntries(tsub);
+    rootPodiumFile = null;
+    const pf = kids.find(k => k.isFile && PODIUM_RE.test(k.name));
+    if (pf) rootPodiumFile = await new Promise((res, rej) => pf.file(res, rej));
     const dirs = kids.filter(k => k.isDirectory);
     if (!dirs.length) { alert("하위 폴더(주제)가 없습니다. topics 폴더를 드롭했는지 확인하세요."); return; }
     const list = [];
@@ -386,8 +394,10 @@ async function allEntries(dirEntry) {
 /* webkitdirectory 폴백 (Firefox/Safari) */
 $("#dirInput").onchange = e => {
   const map = new Map();
+  rootPodiumFile = null;
   for (const f of e.target.files) {
     const parts = (f.webkitRelativePath || "").split("/");
+    if (parts.length === 2 && PODIUM_RE.test(parts[1])) { rootPodiumFile = f; continue; }
     if (parts.length !== 3) continue;           // root/topic/file 만
     if (!map.has(parts[1])) map.set(parts[1], new Map());
     map.get(parts[1]).set(parts[2], f);
@@ -460,10 +470,18 @@ async function loadTopic(t) {
     catch (e) {}
   }
 
-  if (cur) for (const it of cur.items) URL.revokeObjectURL(it.url);
+  if (cur) {
+    for (const it of cur.items) URL.revokeObjectURL(it.url);
+    if (cur.podiumUrl) URL.revokeObjectURL(cur.podiumUrl);
+  }
   posterImgCache.clear();
 
-  const imgs = [...files.keys()].filter(n => IMG_EXT.test(n)).sort();
+  // 포스터 단상 그림: 주제 폴더의 podium.* 이 우선, 없으면 topics 루트의 공통 podium.*
+  const podName = [...files.keys()].find(n => PODIUM_RE.test(n));
+  const podiumUrl = podName ? URL.createObjectURL(files.get(podName))
+    : rootPodiumFile ? URL.createObjectURL(rootPodiumFile) : null;
+
+  const imgs = [...files.keys()].filter(n => IMG_EXT.test(n) && !PODIUM_RE.test(n)).sort();
   const items = imgs.map((n, i) => ({
     file: n,
     label: n.replace(/\.[^.]+$/, ""),
@@ -478,7 +496,7 @@ async function loadTopic(t) {
   }
 
   cur = {
-    name: t.name, dirHandle: t.dirHandle || null, info, save, items,
+    name: t.name, dirHandle: t.dirHandle || null, info, save, items, podiumUrl,
     view: {
       mode: (save.view.mode || info.view) === "grid" ? "grid" : "list",
       columns: save.view.columns || info.columns || 3,
@@ -781,6 +799,55 @@ async function exportImage(kind) {
     }, "image/png");
   } catch (err) { console.error(err); flash("이미지 출력 실패"); }
 }
+function podiumTops(img, drawH) {
+  // 단상 그림을 저해상도로 샘플링해, 세 기둥 자리(중앙·좌·우)에서
+  // 윗면 높이(위→아래 첫 불투명 줄)와 바닥 여백(아래→위 첫 불투명 줄)을 찾는다.
+  // 반환: { tops: [1위,2위,3위] (캔버스 바닥 기준 px), base: 그림 하단 여백 px } 또는 null
+  try {
+    const iw = img.naturalWidth || img.width, ih = img.naturalHeight || img.height;
+    const sw = 270, sh = Math.max(40, Math.round(sw * ih / iw));
+    const c = document.createElement("canvas");
+    c.width = sw; c.height = sh;
+    const cx = c.getContext("2d", { willReadFrequently: true });
+    cx.drawImage(img, 0, 0, sw, sh);
+    const data = cx.getImageData(0, 0, sw, sh).data;
+    const centers = [0.5, 0.194, 0.806];   // 1위(중앙) · 2위(좌) · 3위(우)
+    const half = Math.round(sw * 0.09);
+    const rowSolid = (y, c0) => {
+      let solid = 0, total = 0;
+      for (let x = Math.max(0, c0 - half); x <= Math.min(sw - 1, c0 + half); x++) {
+        total++;
+        if (data[(y * sw + x) * 4 + 3] > 200) solid++;
+      }
+      return solid / total > 0.6;
+    };
+    const tops = [], bases = [];
+    for (const f of centers) {
+      const c0 = Math.round(sw * f);
+      let top = null, bottom = null;
+      for (let y = 0; y < sh; y++) if (rowSolid(y, c0)) { top = y; break; }
+      for (let y = sh - 1; y >= 0; y--) if (rowSolid(y, c0)) { bottom = y; break; }
+      if (top === null || bottom === null) return null;        // 기둥을 못 찾음
+      tops.push((sh - top) / sh * drawH);
+      bases.push((sh - 1 - bottom) / sh * drawH);
+    }
+    if (tops.every(t => t > drawH * 0.95)) return null;        // 배경이 불투명한 그림 — 감지 무의미
+    return {
+      tops: tops.map(t => Math.min(t, drawH)),
+      base: Math.max(0, Math.min(...bases)),
+    };
+  } catch (e) { return null; }
+}
+function podiumImage() {
+  if (!cur.podiumUrl) return Promise.resolve(null);
+  if (posterImgCache.has("\0podium")) return Promise.resolve(posterImgCache.get("\0podium"));
+  return new Promise(res => {
+    const im = new Image();
+    im.onload = () => { posterImgCache.set("\0podium", im); res(im); };
+    im.onerror = () => res(null);
+    im.src = cur.podiumUrl;
+  });
+}
 function posterImage(it) {
   if (posterImgCache.has(it.file)) return Promise.resolve(posterImgCache.get(it.file));
   return new Promise(res => {
@@ -822,21 +889,111 @@ function fitText(ctx, text, x, y, maxW) {
   }
   ctx.fillText(text, x, y);
 }
+function hexRgb(h) {
+  h = h.trim().replace("#", "");
+  if (h.length === 3) h = h.split("").map(c => c + c).join("");
+  const n = parseInt(h, 16);
+  return [(n >> 16) & 255, (n >> 8) & 255, n & 255];
+}
+function rgba(h, a) { const [r, g, b] = hexRgb(h); return `rgba(${r},${g},${b},${a})`; }
+function mixHex(h1, h2, t) {
+  const a = hexRgb(h1), b = hexRgb(h2);
+  return `rgb(${a.map((v, i) => Math.round(v + (b[i] - v) * t)).join(",")})`;
+}
+function drawPosterBg(ctx, W, H, V) {
+  const bg = V("--bg"), acc = V("--accent");
+  const [r, g, b] = hexRgb(bg);
+  const dark = (r * 0.299 + g * 0.587 + b * 0.114) < 128;
+  // 바탕: 대각선 3색 그라데이션 — SNS에서 눈에 띄도록 과감하게
+  const lg = ctx.createLinearGradient(0, 0, W, H);
+  if (dark) {
+    lg.addColorStop(0, mixHex(bg, acc, 0.55));
+    lg.addColorStop(0.45, mixHex(bg, "#7b2ff7", 0.35));
+    lg.addColorStop(0.75, mixHex(bg, "#ff2e88", 0.22));
+    lg.addColorStop(1, mixHex(bg, "#000000", 0.40));
+  } else {
+    lg.addColorStop(0, mixHex(bg, acc, 0.30));
+    lg.addColorStop(0.5, mixHex(bg, "#ff9ecd", 0.22));
+    lg.addColorStop(1, mixHex(bg, "#ffd76b", 0.26));
+  }
+  ctx.fillStyle = lg;
+  ctx.fillRect(0, 0, W, H);
+  // 영롱한 빛무리 — 오로라처럼 여섯 방향에서
+  const glows = [
+    [0.16, 0.08, 0.60, acc, dark ? 0.45 : 0.22],
+    [0.88, 0.22, 0.55, "#f2c94c", dark ? 0.32 : 0.18],
+    [0.50, 0.95, 0.75, "#f2c94c", dark ? 0.30 : 0.15],
+    [0.78, 0.02, 0.40, "#7bdcff", dark ? 0.26 : 0.14],
+    [0.06, 0.55, 0.45, "#c96bff", dark ? 0.26 : 0.12],
+    [0.97, 0.72, 0.45, "#ff6b9d", dark ? 0.20 : 0.10],
+  ];
+  for (const [fx, fy, fr, c, a] of glows) {
+    const rg = ctx.createRadialGradient(fx * W, fy * H, 0, fx * W, fy * H, fr * W);
+    rg.addColorStop(0, rgba(c, a));
+    rg.addColorStop(1, rgba(c, 0));
+    ctx.fillStyle = rg;
+    ctx.fillRect(0, 0, W, H);
+  }
+  // 대각선 광선 2줄
+  const beams = [[0.32, -0.35], [0.72, -0.28]];
+  for (const [fx, ang] of beams) {
+    ctx.save();
+    ctx.translate(W * fx, 0);
+    ctx.rotate(ang);
+    const beam = ctx.createLinearGradient(0, 0, 240, 0);
+    beam.addColorStop(0, "rgba(255,255,255,0)");
+    beam.addColorStop(0.5, rgba(dark ? "#ffffff" : acc, dark ? 0.10 : 0.08));
+    beam.addColorStop(1, "rgba(255,255,255,0)");
+    ctx.fillStyle = beam;
+    ctx.fillRect(-160, -220, 480, H * 1.8);
+    ctx.restore();
+  }
+  // 반짝이 입자 — 결정적 배치라 출력할 때마다 동일. 일부는 십자 별로
+  const spark = dark ? "#ffffff" : acc;
+  for (let i = 0; i < 70; i++) {
+    const x = (i * 199 + 71) % W;
+    const y = ((i * 137 + 43) % (H - 160)) + 40;
+    const s = 0.8 + (i % 5) * 0.5;
+    const a = 0.12 + (i % 4) * 0.09;
+    ctx.fillStyle = rgba(spark, a);
+    ctx.beginPath();
+    ctx.arc(x, y, s, 0, Math.PI * 2);
+    ctx.fill();
+    if (i % 9 === 0) {
+      const r2 = s * 4;
+      ctx.strokeStyle = rgba(spark, Math.min(0.5, a + 0.15));
+      ctx.lineWidth = 1.2;
+      ctx.beginPath();
+      ctx.moveTo(x - r2, y); ctx.lineTo(x + r2, y);
+      ctx.moveTo(x, y - r2); ctx.lineTo(x, y + r2);
+      ctx.stroke();
+    }
+  }
+  // 가장자리 비네트
+  const vg = ctx.createRadialGradient(W / 2, H / 2, Math.min(W, H) * 0.35, W / 2, H / 2, Math.max(W, H) * 0.75);
+  vg.addColorStop(0, "rgba(0,0,0,0)");
+  vg.addColorStop(1, dark ? "rgba(0,0,0,0.34)" : "rgba(0,0,0,0.10)");
+  ctx.fillStyle = vg;
+  ctx.fillRect(0, 0, W, H);
+}
 async function drawPoster(kind, all) {
   const css = getComputedStyle(document.documentElement);
   const V = n => css.getPropertyValue(n).trim();
   const medals = ["#f2c94c", "#c8ccd4", "#cd9a6c"];   // 금 · 은 · 동
   const top3 = all.slice(0, 3);
   const rest = kind === "top10" ? all.slice(3, 10) : [];
-  const W = 1080, pad = 40, rowH = 100, rowGap = 14, listTop = 990;
-  const podiumBottom = kind === "insta" ? 990 : 930;
+  // 단상부는 인스타(정사각형) 구도를 기준으로 잡고, 전체 출력은 그 아래에 리스트를 잇는다.
+  // podiumBottom 960: 단상을 바닥에서 띄워 아이템 무리가 세로 중앙 부근에 오게 한다.
+  const W = 1080, pad = 40, rowH = 100, rowGap = 14, listTop = 1020;
+  // 전체(Top 10) 출력은 단상을 10% 더 올려 리스트와의 간격·하단 여유를 확보한다
+  const podiumBottom = kind === "insta" ? 960 : 852;
   const H = kind === "insta" ? 1080
-    : (rest.length ? listTop + rest.length * (rowH + rowGap) + 46 : 1020);
+    : (rest.length ? listTop + rest.length * (rowH + rowGap) + 120 : 1020);
   const cv = document.createElement("canvas");
   cv.width = W; cv.height = H;
   const ctx = cv.getContext("2d");
 
-  ctx.fillStyle = V("--bg"); ctx.fillRect(0, 0, W, H);
+  drawPosterBg(ctx, W, H, V);
 
   ctx.textAlign = "center"; ctx.textBaseline = "alphabetic";
   ctx.fillStyle = V("--text");
@@ -846,30 +1003,75 @@ async function drawPoster(kind, all) {
   ctx.font = "700 26px system-ui, sans-serif";
   ctx.fillText(kind === "insta" ? "TOP 3" : "TOP 10", W / 2, 150);
 
-  // 단상: 2위 - 1위 - 3위 순서로 배치
+  // 단상: 2위 - 1위 - 3위 순서로 배치.
+  // topics/<주제>/podium.png(또는 topics/podium.png)이 있으면 그 그림을 단상으로 사용.
+  // 단상 그림 규격: 1080×400 투명 PNG, 블록 밑변은 바닥에 밀착,
+  // 윗면 높이(바닥 기준) 1위 250px(중앙) / 2위 190px(왼쪽) / 3위 150px(오른쪽)
   const colW = 300, gap = 30, x0 = (W - colW * 3 - gap * 2) / 2;
   const blockH = [250, 190, 150];
+  const podiumImg = await podiumImage();
+  let topOff = blockH;
+  if (podiumImg) {
+    // 커스텀 단상: 비율을 유지한 채 가로를 캔버스 폭에 맞추고 바닥에 정렬
+    const iw = podiumImg.naturalWidth || podiumImg.width;
+    const ih = podiumImg.naturalHeight || podiumImg.height;
+    const hArt = ih * (W / iw);
+    // 알파 채널로 기둥 윗면·바닥 여백을 감지 — 실패 시 그림 높이 비례 추정으로 폴백
+    const det = podiumTops(podiumImg, hArt);
+    let shift = 0;
+    if (det) {
+      // 그림 내부의 바닥 여백만큼 아래로 내려 그려, 단상이 캔버스 바닥에 붙게 한다
+      shift = Math.min(det.base, hArt * 0.45);
+      topOff = det.tops.map(t => Math.max(120, t - shift));
+    } else {
+      const k = Math.min(hArt, 560) / 400;
+      topOff = blockH.map(v => v * k);
+    }
+    ctx.drawImage(podiumImg, 0, podiumBottom - hArt + shift, W, hArt);
+  }
   for (let c = 0; c < 3; c++) {
     const idx = [1, 0, 2][c];
     const it = top3[idx];
     if (!it) continue;
     const x = x0 + c * (colW + gap);
-    const bh = blockH[idx], bt = podiumBottom - bh;
-    ctx.fillStyle = medals[idx];
-    roundPath(ctx, x, bt, colW, bh, 18); ctx.fill();
-    ctx.fillStyle = "rgba(255,255,255,.95)";
-    ctx.font = "800 72px system-ui, sans-serif";
-    ctx.textAlign = "center"; ctx.textBaseline = "middle";
-    ctx.fillText(String(it.rank), x + colW / 2, bt + bh / 2 + 4);
-    ctx.textBaseline = "alphabetic";
-    ctx.fillStyle = V("--text");
-    ctx.font = "700 30px system-ui, sans-serif";
-    fitText(ctx, it.label, x + colW / 2, bt - 20, colW - 12);
+    const bt = podiumBottom - topOff[idx];   // 단상 윗면(추정) 높이
     const size = idx === 0 ? 300 : 260;
-    const ix = x + (colW - size) / 2, iy = bt - 62 - size;
-    ctx.fillStyle = V("--card");
-    roundPath(ctx, ix - 8, iy - 8, size + 16, size + 16, 22); ctx.fill();
-    drawCover(ctx, await posterImage(it), ix, iy, size, size, 16, V("--border"));
+    const ix = x + (colW - size) / 2;
+    if (!podiumImg) {
+      const bh = blockH[idx];
+      ctx.fillStyle = medals[idx];
+      roundPath(ctx, x, bt, colW, bh, 18); ctx.fill();
+      ctx.fillStyle = "rgba(255,255,255,.95)";
+      ctx.font = "800 72px system-ui, sans-serif";
+      ctx.textAlign = "center"; ctx.textBaseline = "middle";
+      ctx.fillText(String(it.rank), x + colW / 2, bt + bh / 2 + 4);
+      ctx.textBaseline = "alphabetic";
+      ctx.fillStyle = V("--text");
+      ctx.font = "700 30px system-ui, sans-serif";
+      ctx.textAlign = "center";
+      fitText(ctx, it.label, x + colW / 2, bt - 20, colW - 12);
+      const iy = bt - 62 - size;
+      ctx.fillStyle = V("--card");
+      roundPath(ctx, ix - 8, iy - 8, size + 16, size + 16, 22); ctx.fill();
+      drawCover(ctx, await posterImage(it), ix, iy, size, size, 16, V("--border"));
+    } else {
+      // 커스텀 단상: 순위 숫자 없음. 아이템 밑변을 윗면에 살짝(8px) 겹쳐 '올려진' 느낌을 주고
+      // 접지 그림자를 깐다. 제목(TOP 라벨)과 간격이 부족하면 이미지 크기를 자동 축소.
+      const sink = 8;
+      const lift = kind === "insta" ? 108 : Math.round(size * 0.2);   // 아이템을 단상보다 조금 더 위로
+      let sz = size;
+      const maxSz = bt + sink - lift - 234;   // 이름까지 포함해 상단 라벨과 최소 간격 확보
+      if (sz > maxSz) sz = Math.max(160, maxSz);
+      const ix2 = x + (colW - sz) / 2;
+      const iy = bt + sink - sz - lift;
+      ctx.fillStyle = V("--text");
+      ctx.font = "700 30px system-ui, sans-serif";
+      ctx.textAlign = "center";
+      fitText(ctx, it.label, x + colW / 2, iy - 22, colW - 12);
+      ctx.fillStyle = V("--card");
+      roundPath(ctx, ix2 - 8, iy - 8, sz + 16, sz + 16, 22); ctx.fill();
+      drawCover(ctx, await posterImage(it), ix2, iy, sz, sz, 16, V("--border"));
+    }
   }
 
   // 4위 이하 리스트
