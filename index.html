@@ -60,8 +60,9 @@ button:hover { border-color: var(--accent); }
 .seg { display: inline-flex; border: 1px solid var(--border); border-radius: .55rem; overflow: hidden; }
 .seg button { border: 0; border-radius: 0; background: transparent; }
 .seg button.active { background: var(--accent); color: #fff; }
-#colWrap { display: inline-flex; align-items: center; gap: .35rem; font-size: .9rem; color: var(--muted); }
+#colWrap, #sizeWrap { display: inline-flex; align-items: center; gap: .35rem; font-size: .9rem; color: var(--muted); }
 #colInput { width: 3.4rem; padding: .3rem .4rem; text-align: center; }
+#sizeInput { width: 4.2rem; padding: .3rem .4rem; text-align: center; }
 #searchInput { width: 11rem; }
 #noResult { text-align: center; color: var(--muted); padding: 2.5rem 0; grid-column: 1 / -1; }
 #viewControls { display: inline-flex; align-items: center; gap: .6rem; flex-wrap: wrap; }
@@ -180,7 +181,7 @@ main { max-width: 1100px; margin: 0 auto; padding: 1rem; }
 /* tier view */
 #items.tier { display: flex; flex-direction: column; gap: 0; }
 .tier-row {
-  display: flex; min-height: 88px; overflow: hidden;
+  display: flex; min-height: calc(var(--tiersize, 72px) + 16px); overflow: hidden;
   background: var(--card); border: 1px solid var(--border); border-radius: .6rem;
 }
 .tier-row.drop-into { outline: 2px solid var(--accent); outline-offset: -2px; }
@@ -189,16 +190,32 @@ main { max-width: 1100px; margin: 0 auto; padding: 1rem; }
   font-weight: 800; font-size: 1.15rem; color: #1b1e23; cursor: pointer;
   text-align: center; padding: 4px; word-break: break-all;
 }
-.tier-label input { width: 92%; text-align: center; font-weight: 700; padding: .2rem; }
+.tier-label input {
+  width: 92%; text-align: center; font-weight: 700; padding: .2rem;
+  background: rgba(255,255,255,.92); color: #1b1e23;
+  border: 1px solid rgba(0,0,0,.25);
+}
 .tier-items {
   flex: 1; display: flex; flex-wrap: wrap; gap: 6px; padding: 8px; align-content: flex-start;
 }
-.tier-item { width: 72px; height: 72px; border-radius: .45rem; object-fit: cover; cursor: grab; }
+.tier-item { width: var(--tiersize, 72px); height: var(--tiersize, 72px); border-radius: .45rem; object-fit: cover; cursor: grab; }
 .tier-item.drop-before { box-shadow: -4px 0 0 0 var(--accent); }
 .tier-item.drop-after { box-shadow: 4px 0 0 0 var(--accent); }
 .tier-gap { height: 10px; border-radius: 4px; margin: 1px 0; }
 .tier-gap.drop-into { background: var(--accent); height: 18px; }
-@media (max-width: 560px) { .tier-label { width: 72px; font-size: .95rem; } .tier-item { width: 56px; height: 56px; } }
+.tier-add {
+  display: flex; align-items: center; justify-content: center;
+  border: 2px dashed var(--border); border-radius: .6rem;
+  color: var(--muted); font-weight: 600; font-size: .9rem;
+  padding: .5rem; margin: 3px 0; cursor: pointer; user-select: none;
+}
+.tier-add:hover { border-color: var(--accent); color: var(--accent); }
+.tier-x {
+  flex: none; align-self: center; border: 0; background: transparent;
+  color: var(--muted); font-size: 1.15rem; padding: 0 .7rem; cursor: pointer;
+}
+.tier-x:hover { color: #e03131; }
+@media (max-width: 560px) { .tier-label { width: 72px; font-size: .95rem; } }
 
 #credit {
   text-align: center; padding: 1.2rem 0 1.6rem;
@@ -222,11 +239,12 @@ main { max-width: 1100px; margin: 0 auto; padding: 1rem; }
   <div class="spacer"></div>
   <span id="viewControls" hidden>
     <span class="seg">
+      <button id="btnTier">Tier</button>
       <button id="btnList">List</button>
       <button id="btnGrid">Gallery</button>
-      <button id="btnTier">Tier</button>
     </span>
     <label id="colWrap" hidden>Cols <input id="colInput" type="number" min="1" max="8"></label>
+    <label id="sizeWrap" hidden>Size <input id="sizeInput" type="number" min="40" max="160" step="8"></label>
     <details id="exportMenu" class="menu">
       <summary>Image Export</summary>
       <div class="menu-list">
@@ -515,15 +533,35 @@ async function loadTopic(t) {
     : rootPodiumFile ? URL.createObjectURL(rootPodiumFile) : null;
 
   const imgs = [...files.keys()].filter(n => IMG_EXT.test(n) && !PODIUM_RE.test(n)).sort();
-  // 동점(같은 티어) 안의 순서는 save.order(표시 순서 배열)로 복원한다
+  // 표시 순서: save.order → (구버전) ranks → 파일명 순. 저장에 없던 새 아이템은 맨 뒤(미분류)
   const ordMap = new Map((Array.isArray(save.order) ? save.order : []).map((n, i) => [n, i]));
   const items = imgs.map((n, i) => ({
     file: n,
     label: n.replace(/\.[^.]+$/, ""),
     url: URL.createObjectURL(files.get(n)),
-    key: Number.isFinite(save.ranks[n]) ? save.ranks[n] : 1e9 + i,  // 저장에 없던 아이템은 뒤로
-    ord: ordMap.has(n) ? ordMap.get(n) : 1e9 + i,
+    ord: ordMap.has(n) ? ordMap.get(n)
+      : Number.isFinite(save.ranks[n]) ? 1e6 + save.ranks[n] * 1e4 + i
+      : 1e9 + i,
   }));
+  if (!Array.isArray(save.tierSizes)) {
+    // 구버전 저장 마이그레이션: 순위의 동점 그룹을 앞에서부터 티어로 유도 (없으면 전부 미분류)
+    const tc = Math.max(1, Math.min(10, save.tierCount || 5));
+    const seq = [...items].sort((a, b) => a.ord - b.ord);
+    const sizes = [];
+    let prev = null;
+    for (const it2 of seq) {
+      const r = save.ranks[it2.file];
+      if (!Number.isFinite(r)) break;
+      if (sizes.length && r === prev) sizes[sizes.length - 1]++;
+      else {
+        if (sizes.length >= tc) break;
+        sizes.push(1);
+      }
+      prev = r;
+    }
+    while (sizes.length < tc) sizes.push(0);
+    save.tierSizes = sizes;
+  }
   for (const it of items) {
     const lines = [...info.global, ...(info.items[it.file] || [])].map(l => l.text);
     it.search = (it.label + " " + lines.join(" ")).toLowerCase();
@@ -533,8 +571,9 @@ async function loadTopic(t) {
   cur = {
     name: t.name, dirHandle: t.dirHandle || null, info, save, items, podiumUrl,
     view: {
-      mode: ["grid", "tier"].includes(save.view.mode || info.view) ? (save.view.mode || info.view) : "list",
+      mode: ["grid", "list", "tier"].includes(save.view.mode || info.view) ? (save.view.mode || info.view) : "tier",
       columns: save.view.columns || info.columns || 3,
+      tierSize: Math.max(40, Math.min(160, save.view.tierSize || 72)),
     },
   };
   normalize();
@@ -544,48 +583,106 @@ async function loadTopic(t) {
   render();
 }
 
-/* ---------- ranking (competition ranking: 1,1,1,4 …) ---------- */
+/* ---------- 순서 + 티어 경계 모델 ----------
+   진실은 두 가지: 아이템의 전역 순서(ord)와 티어별 아이템 수(save.tierSizes).
+   같은 티어 슬라이스 안의 아이템은 공동 순위, 풀(미분류)은 개별 순위를 가진다.
+   티어가 비어도 그대로 유지되며, 아래 티어·풀의 아이템을 자동으로 끌어오지 않는다. */
 function sorted() {
-  return [...cur.items].sort((a, b) => a.key - b.key || a.ord - b.ord);
+  return [...cur.items].sort((a, b) => a.ord - b.ord);
+}
+function tierSizes() {
+  let ts = cur.save.tierSizes;
+  if (!Array.isArray(ts) || !ts.length) ts = [0, 0, 0, 0, 0];
+  ts = ts.map(v => Math.max(0, v | 0));
+  let sum = ts.reduce((a, b) => a + b, 0);            // 합이 아이템 수를 넘으면 뒤에서부터 깎는다
+  for (let i = ts.length - 1; sum > cur.items.length && i >= 0; i--) {
+    const cut = Math.min(ts[i], sum - cur.items.length);
+    ts[i] -= cut; sum -= cut;
+  }
+  cur.save.tierSizes = ts;
+  return ts;
 }
 function normalize() {
   const arr = sorted();
-  let rank = 0, prevKey = null;
-  arr.forEach((it, i) => {
-    if (it.key !== prevKey) { rank = i + 1; prevKey = it.key; }
-    it.rank = rank;
-    it.ord = i;
-  });
-  arr.forEach(it => it.key = it.rank);
-}
-function moveItem(it, dir) {  // dir: -1 up / +1 down
-  const arr = sorted();
-  const i = arr.indexOf(it), j = i + dir;
-  if (j < 0 || j >= arr.length) return;
-  const other = arr[j];
-  if (other.key === it.key) it.key += dir * 0.5;   // 동점 그룹 탈출
-  else { const k = it.key; it.key = other.key; other.key = k; }
-  commit();
-}
-function setRank(it, v) {
-  if (!Number.isFinite(v)) return;
-  const n = cur.items.length;
-  // 범위 밖 입력은 "끼워넣기": 0 이하 → 단독 1위(나머지 밀림), n 초과 → 단독 꼴찌.
-  // 범위 안에서 기존과 같은 숫자를 입력한 경우만 공동 순위가 된다.
-  if (v <= 0) it.key = 0.5;
-  else if (v > n) it.key = n + 0.5;
-  else it.key = Math.round(v);
-  commit();
+  arr.forEach((it, i) => it.ord = i);
+  const ts = tierSizes();
+  let pos = 0;
+  for (const sz of ts) {
+    for (let i = 0; i < sz; i++) arr[pos + i].rank = pos + 1;   // 티어 = 공동 순위
+    pos += sz;
+  }
+  for (; pos < arr.length; pos++) arr[pos].rank = pos + 1;      // 풀은 개별 순위
 }
 function commit() { normalize(); render(); scheduleSave(); }
-function placeItem(it, target, before) {
-  // target 앞/뒤로 삽입 — 같은 티어(동점) 안의 순서도 바뀌며, 이 순서는 List/Gallery와 연동·저장된다
-  it.key = target.key;
-  const arr = sorted().filter(x => x !== it);
-  const idx = arr.indexOf(target) + (before ? 0 : 1);
-  arr.splice(idx, 0, it);
-  arr.forEach((x, i) => x.ord = i);
+function moveItem(it, dir) {  // 이웃과 자리 교환 — 티어 경계를 넘으면 소속도 서로 바뀐다
+  const q = it.ord + dir;
+  if (q < 0 || q >= cur.items.length) return;
+  const other = sorted()[q];
+  other.ord = it.ord;
+  it.ord = q;
   commit();
+}
+function tierAssignments() {  // 현재 순서·크기에서 각 아이템의 티어(-1=풀)를 계산
+  const arr = sorted();
+  const ts = tierSizes();
+  const map = new Map();
+  let pos = 0;
+  ts.forEach((sz, t) => {
+    for (let i = 0; i < sz; i++) map.set(arr[pos + i], t);
+    pos += sz;
+  });
+  for (; pos < arr.length; pos++) map.set(arr[pos], -1);
+  return map;
+}
+function moveToTier(it, destTier, posInTier) {
+  // 할당 기반 재구성: 나머지 아이템의 티어 소속을 먼저 확정하고,
+  // it을 목적 티어(또는 풀)의 posInTier 위치에 끼운 뒤 전체를 다시 조립한다.
+  // 경계 산술이 없어 티어↔티어 이동에서도 어긋나지 않는다.
+  const asg = tierAssignments();
+  const ts = tierSizes();
+  const rest = sorted().filter(x => x !== it);
+  const buckets = [];
+  for (let t = 0; t < ts.length; t++) buckets.push(rest.filter(x => asg.get(x) === t));
+  const pool = rest.filter(x => asg.get(x) === -1);
+  const target = (destTier >= 0 && destTier < buckets.length) ? buckets[destTier] : pool;
+  const p = Number.isFinite(posInTier) ? Math.max(0, Math.min(target.length, posInTier)) : target.length;
+  target.splice(p, 0, it);
+  const seq = [...buckets.flat(), ...pool];
+  seq.forEach((x, i) => x.ord = i);
+  cur.save.tierSizes = buckets.map(b => b.length);
+  commit();
+}
+function setRank(it, v) {  // 그 순위 위치로 이동 — 티어 자리면 그 티어에 합류(공동 순위)
+  if (!Number.isFinite(v)) return;
+  const n = cur.items.length;
+  if (Math.round(v) > n) { moveToTier(it, -1, Infinity); return; }   // 범위 초과 → 미분류 맨 뒤
+  const p = Math.max(0, Math.round(v) - 1);
+  const ts = tierSizes();
+  let acc = 0, t = -1, off = p;
+  for (let k = 0; k < ts.length; k++) {
+    if (p < acc + ts[k]) { t = k; off = p - acc; break; }
+    acc += ts[k];
+  }
+  if (t < 0) off = p - acc;
+  moveToTier(it, t, off);
+}
+function placeItem(it, target, before) {  // target 앞/뒤로 삽입 — target의 티어에 합류
+  const asg = tierAssignments();
+  const dt = asg.get(target);
+  const peers = sorted().filter(x => x !== it && asg.get(x) === dt);
+  const idx = peers.indexOf(target) + (before ? 0 : 1);
+  moveToTier(it, dt, idx);
+}
+function shiftTierNames(from, delta) {    // 티어 삽입/삭제 시 저장된 이름 인덱스 이동
+  const names = cur.save.tierNames || {};
+  const out = {};
+  for (const [k, v] of Object.entries(names)) {
+    if (k === "pool") { out[k] = v; continue; }
+    const i = +k;
+    if (delta < 0 && i === from + delta) continue;    // 삭제된 티어의 이름은 버린다
+    out[i >= from ? i + delta : i] = v;
+  }
+  cur.save.tierNames = out;
 }
 
 /* ---------- rendering ---------- */
@@ -595,6 +692,8 @@ function syncControls() {
   $("#btnTier").classList.toggle("active", cur.view.mode === "tier");
   $("#colWrap").hidden = cur.view.mode !== "grid";
   $("#colInput").value = cur.view.columns;
+  $("#sizeWrap").hidden = cur.view.mode !== "tier";
+  $("#sizeInput").value = cur.view.tierSize;
 }
 $("#btnList").onclick = () => { cur.view.mode = "list"; syncControls(); render(); scheduleSave(); };
 $("#btnGrid").onclick = () => { cur.view.mode = "grid"; syncControls(); render(); scheduleSave(); };
@@ -604,12 +703,18 @@ $("#colInput").onchange = e => {
   e.target.value = cur.view.columns;
   render(); scheduleSave();
 };
+$("#sizeInput").onchange = e => {
+  cur.view.tierSize = Math.max(40, Math.min(160, +e.target.value || 72));
+  e.target.value = cur.view.tierSize;
+  render(); scheduleSave();
+};
 
 function render() {
   const wrap = $("#items");
   wrap.innerHTML = "";
   wrap.className = cur.view.mode;
   wrap.style.setProperty("--cols", cur.view.columns);
+  wrap.style.setProperty("--tiersize", (cur.view.tierSize || 72) + "px");
   if (cur.view.mode === "tier") { renderTierView(wrap); return; }
   const shown = sorted().filter(matchesQuery);
   for (const it of shown) wrap.append(renderItem(it));
@@ -622,40 +727,25 @@ function render() {
 }
 
 /* ---------- tier view (티어표) ----------
-   티어 = 공동 순위 그룹. 행에 드롭하면 그 행과 같은 순위(동점)가 되고,
-   행 사이 틈에 드롭하면 그 위치에 새 티어가 생긴다. 데이터는 기존 ranks 그대로다. */
+   티어 행 = 전역 순서의 연속 구간(save.tierSizes). 빈 티어도 그대로 유지되며,
+   풀(미분류)의 아이템은 직접 끌어다 놓기 전에는 절대 티어에 들어가지 않는다. */
 const TIER_DEF = ["S", "A", "B", "C", "D", "E", "F", "G", "H", "I"];
 const TIER_COLORS = ["#ff7f7f", "#ffbf7f", "#ffdf7f", "#ffff7f", "#bfff7f",
   "#7fff7f", "#7fffff", "#7fbfff", "#9f8fff", "#ff7fff"];
 function renderTierView(wrap) {
-  const shown = sorted().filter(matchesQuery);
-  if (!shown.length) {
-    const d = document.createElement("div");
-    d.id = "noResult";
-    d.textContent = "검색 결과가 없습니다";
-    wrap.append(d);
-    return;
-  }
-  const groups = [];
-  for (const it of shown) {
-    const last = groups[groups.length - 1];
-    if (last && last.rank === it.rank) last.items.push(it);
-    else groups.push({ rank: it.rank, items: [it] });
-  }
-  // 티어는 최대 5개 — 나머지 그룹은 맨 아래 풀(pool) 한 행에 몰아넣는다
-  const MAXT = 5;
-  const tiers = groups.slice(0, MAXT);
-  const pool = groups.slice(MAXT);
-  const maxRank = shown[shown.length - 1].rank;
+  const all = sorted();
+  const ts = tierSizes();
   const names = cur.save.tierNames || {};
   const defName = k => k === "pool" ? "…" : (TIER_DEF[k] || String(k + 1));
+  const q = $("#searchInput").value.trim();
 
-  const makeGap = key => {
+  // 갭: 이 위치(insertIdx)에 새 티어를 만들면서 아이템을 넣는다
+  const makeGap = insertIdx => {
     const gp = document.createElement("div");
     gp.className = "tier-gap";
     gp.title = "여기에 놓으면 새 티어";
     gp.addEventListener("dragover", e => {
-      if (!dragItem) return;
+      if (!dragItem || tierSizes().length >= 10) return;
       e.preventDefault();
       gp.classList.add("drop-into");
     });
@@ -663,13 +753,17 @@ function renderTierView(wrap) {
     gp.addEventListener("drop", e => {
       if (!dragItem) return;
       e.preventDefault(); e.stopPropagation();
-      dragItem.key = key;
-      commit();
+      const ts2 = tierSizes();
+      if (ts2.length >= 10) return;
+      shiftTierNames(insertIdx, 1);
+      ts2.splice(insertIdx, 0, 0);
+      moveToTier(dragItem, insertIdx, 0);
     });
     return gp;
   };
 
-  const makeRow = (labelKey, color, items, dropKey) => {
+  // 행: dropTier(-1 = 풀)의 맨 뒤로 아이템을 받는다
+  const makeRow = (labelKey, color, items, dropTier) => {
     const row = document.createElement("div");
     row.className = "tier-row";
     const label = document.createElement("div");
@@ -698,6 +792,7 @@ function renderTierView(wrap) {
     const cell = document.createElement("div");
     cell.className = "tier-items";
     for (const it of items) {
+      if (q && !matchesQuery(it)) continue;   // 검색 시 안 맞는 아이템만 감춘다 (행 구조 유지)
       const im = document.createElement("img");
       im.className = "tier-item";
       im.src = it.url;
@@ -737,25 +832,44 @@ function renderTierView(wrap) {
     row.addEventListener("drop", e => {
       if (!dragItem) return;
       e.preventDefault(); e.stopPropagation();
-      dragItem.key = dropKey;
-      commit();
+      moveToTier(dragItem, dropTier, Infinity);   // 해당 티어(또는 풀)의 맨 뒤로
     });
     return row;
   };
 
-  tiers.forEach((g, gi) => {
-    wrap.append(makeGap(gi === 0 ? g.rank - 0.5 : (tiers[gi - 1].rank + g.rank) / 2));
-    wrap.append(makeRow(gi, TIER_COLORS[gi % TIER_COLORS.length], g.items, g.rank));
+  let start = 0;
+  ts.forEach((sz, gi) => {
+    wrap.append(makeGap(gi));
+    const row = makeRow(gi, TIER_COLORS[gi % TIER_COLORS.length], all.slice(start, start + sz), gi);
+    const s0 = start, n0 = sz;
+    const xb = document.createElement("button");
+    xb.className = "tier-x";
+    xb.textContent = "×";
+    xb.title = n0 ? "티어 삭제 — 아이템은 모두 미분류(…)로 이동합니다" : "이 빈 티어 제거";
+    xb.onclick = () => {
+      const arr = sorted();
+      const moved = arr.slice(s0, s0 + n0);     // 삭제된 티어의 아이템은 풀 맨 뒤로
+      const rest = arr.filter(x => !moved.includes(x));
+      [...rest, ...moved].forEach((x, i) => x.ord = i);
+      cur.save.tierSizes.splice(gi, 1);
+      shiftTierNames(gi + 1, -1);
+      commit();
+    };
+    row.append(xb);
+    wrap.append(row);
+    start += sz;
   });
-  // 그룹이 5개 미만이면 빈 티어 행을 채워 보여준다 (드롭하면 맨 아래 티어로)
-  for (let gi = tiers.length; gi < MAXT; gi++) {
-    wrap.append(makeRow(gi, TIER_COLORS[gi % TIER_COLORS.length], [], maxRank + 0.5));
+  // + Add Tier — 빈 티어를 추가할 뿐, 어떤 아이템도 자동으로 채우지 않는다
+  if (ts.length < 10) {
+    const add = document.createElement("div");
+    add.className = "tier-add";
+    add.textContent = "+ Add Tier";
+    add.title = "빈 티어를 추가합니다";
+    add.onclick = () => { cur.save.tierSizes.push(0); scheduleSave(); render(); };
+    wrap.append(add);
   }
-  if (pool.length) {
-    wrap.append(makeRow("pool", "#c9ced6", pool.flatMap(g => g.items), pool[0].rank));
-  } else if (tiers.length === MAXT) {
-    wrap.append(makeGap(tiers[MAXT - 1].rank + 0.5));
-  }
+  // 풀("…") = 미분류 아이템 — 항상 가장 아래에 고정
+  wrap.append(makeRow("pool", "#c9ced6", all.slice(start), -1));
 }
 
 function renderItem(it) {
@@ -838,8 +952,7 @@ function renderItem(it) {
     if (!dragItem || dragItem === it) return;
     e.preventDefault();
     e.stopPropagation();
-    dragItem.key = dropSide(e) ? it.key - 0.5 : it.key + 0.5;
-    commit();
+    placeItem(dragItem, it, dropSide(e));
   });
   return row;
 }
@@ -942,6 +1055,7 @@ function saveData() {
     checks: cur.save.checks || {},
     memos: cur.save.memos || {},
     tierNames: cur.save.tierNames || {},
+    tierSizes: tierSizes(),
   };
 }
 async function writeSaveFile(json) {

@@ -62,8 +62,8 @@ topics/
 |---|---|
 | Switch topics | Dropdown at the top left |
 | Search | Header search box — names & descriptions, Korean chosung (`ㅅㄹㅁ`) supported |
-| Switch views | List / Gallery / Tier buttons; set column count in gallery view |
-| Build a tier list | Tier view — drag an item onto a row to tie it with that tier, drop between rows to create a new tier. Up to 5 tiers; everything else gathers in the bottom pool row. Click a label to rename it |
+| Switch views | Tier / List / Gallery buttons; "Cols" sets gallery columns, "Size" sets tier icon size |
+| Build a tier list | Tier view — drag onto a row to tie with that tier, drop between rows for a new tier. 5 tiers by default, "+ Add Tier" to add (max 10), × to delete (its items move to the bottom "…" pool). Click a label to rename |
 | Toggle theme | 🌙 / ☀️ at the top right |
 | Move a rank one step | Hover the rank number → ▲▼ |
 | Type a rank | Click the rank number (Enter to confirm / Esc to cancel) |
