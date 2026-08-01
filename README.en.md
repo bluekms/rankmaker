@@ -14,7 +14,7 @@ Runs from a single `index.html` — no server, no install, no build.
   <img src="docs/top10_light.png" width="49%" alt="Top 10 poster — light theme">
 </p>
 
-- **Rank with drag & drop** — tied ranks, Korean chosung search, list/gallery views
+- **Rank with drag & drop** — tied ranks, Korean chosung search, list/gallery/tier views
 - **Your data is just files** — images + `info.md` + `save.json`, all on your machine
 - **One-click PNG export** — Instagram 1:1 / Top 10 posters (the images above are real exports)
 
@@ -54,6 +54,7 @@ topics/
 - `# global` — lines shown at the top of every item's description.
 - `# filename` — description for that image; must match the filename exactly.
 - `[ ]` — put checkboxes anywhere. Their state is stored in `save.json`.
+- `http(s)://` addresses render as clickable links. Emoji labels (⭐ 👥 📅 …) look great.
 
 ## Using the app
 
@@ -61,13 +62,15 @@ topics/
 |---|---|
 | Switch topics | Dropdown at the top left |
 | Search | Header search box — names & descriptions, Korean chosung (`ㅅㄹㅁ`) supported |
-| Switch views | List / Gallery buttons; set column count in gallery view |
+| Switch views | List / Gallery / Tier buttons; set column count in gallery view |
+| Build a tier list | Tier view — drag an item onto a row to tie it with that tier, drop between rows to create a new tier. Up to 5 tiers; everything else gathers in the bottom pool row. Click a label to rename it |
 | Toggle theme | 🌙 / ☀️ at the top right |
 | Move a rank one step | Hover the rank number → ▲▼ |
 | Type a rank | Click the rank number (Enter to confirm / Esc to cancel) |
 | Drag to reorder | Grab the ⣿ handle |
 | Export as image | "Image Export" menu → Instagram (1:1, Top 3 podium) / Poster (Top 10) PNG |
 | Backup / restore | Export / Import (`save.json` file) |
+| Memo | An input under each item in List view — saved as you type, shown in List view only |
 
 - Typing an existing rank creates a tie: 1, 1, 1, then 4.
 - Numbers above the item count (e.g. 999) insert as sole last; 0 or below as sole first.

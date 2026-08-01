@@ -143,6 +143,15 @@ main { max-width: 1100px; margin: 0 auto; padding: 1rem; }
 #items.grid .name { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .desc-line { white-space: nowrap; font-size: .9rem; color: var(--muted); }
 .desc-line input[type=checkbox] { accent-color: var(--accent); margin: 0 .15rem; vertical-align: -2px; padding: 0; }
+.desc-line a { color: var(--accent); text-decoration: none; }
+.desc-line a:hover { text-decoration: underline; }
+.memo {
+  width: 100%; margin-top: .35rem; font-size: .85rem;
+  background: transparent; color: var(--text);
+  border: 1px dashed var(--border); border-radius: .4rem; padding: .25rem .55rem;
+}
+.memo::placeholder { color: var(--muted); opacity: .65; }
+.memo:focus { border-style: solid; border-color: var(--accent); outline: none; }
 
 /* rank */
 .rank { display: flex; flex-direction: column; align-items: center; flex: none; width: 2.6rem; user-select: none; }
@@ -168,6 +177,29 @@ main { max-width: 1100px; margin: 0 auto; padding: 1rem; }
 }
 .handle:active { cursor: grabbing; }
 
+/* tier view */
+#items.tier { display: flex; flex-direction: column; gap: 0; }
+.tier-row {
+  display: flex; min-height: 88px; overflow: hidden;
+  background: var(--card); border: 1px solid var(--border); border-radius: .6rem;
+}
+.tier-row.drop-into { outline: 2px solid var(--accent); outline-offset: -2px; }
+.tier-label {
+  width: 110px; flex: none; display: flex; align-items: center; justify-content: center;
+  font-weight: 800; font-size: 1.15rem; color: #1b1e23; cursor: pointer;
+  text-align: center; padding: 4px; word-break: break-all;
+}
+.tier-label input { width: 92%; text-align: center; font-weight: 700; padding: .2rem; }
+.tier-items {
+  flex: 1; display: flex; flex-wrap: wrap; gap: 6px; padding: 8px; align-content: flex-start;
+}
+.tier-item { width: 72px; height: 72px; border-radius: .45rem; object-fit: cover; cursor: grab; }
+.tier-item.drop-before { box-shadow: -4px 0 0 0 var(--accent); }
+.tier-item.drop-after { box-shadow: 4px 0 0 0 var(--accent); }
+.tier-gap { height: 10px; border-radius: 4px; margin: 1px 0; }
+.tier-gap.drop-into { background: var(--accent); height: 18px; }
+@media (max-width: 560px) { .tier-label { width: 72px; font-size: .95rem; } .tier-item { width: 56px; height: 56px; } }
+
 #credit {
   text-align: center; padding: 1.2rem 0 1.6rem;
   font-size: .8rem; color: var(--muted);
@@ -192,6 +224,7 @@ main { max-width: 1100px; margin: 0 auto; padding: 1rem; }
     <span class="seg">
       <button id="btnList">List</button>
       <button id="btnGrid">Gallery</button>
+      <button id="btnTier">Tier</button>
     </span>
     <label id="colWrap" hidden>Cols <input id="colInput" type="number" min="1" max="8"></label>
     <details id="exportMenu" class="menu">
@@ -433,7 +466,7 @@ function parseInfo(text) {
       const v = t.slice(2).trim();
       const col = v.match(/^columns?\s*[:=]?\s*(\d+)$/i);
       if (/^(light|dark)$/i.test(v)) info.theme = v.toLowerCase();
-      else if (/^(grid|list)$/i.test(v)) info.view = v.toLowerCase();
+      else if (/^(grid|list|tier)$/i.test(v)) info.view = v.toLowerCase();
       else if (col) info.columns = +col[1];
       else if (!info.name) info.name = v;
     } else if (t.startsWith("#")) {
@@ -482,12 +515,14 @@ async function loadTopic(t) {
     : rootPodiumFile ? URL.createObjectURL(rootPodiumFile) : null;
 
   const imgs = [...files.keys()].filter(n => IMG_EXT.test(n) && !PODIUM_RE.test(n)).sort();
+  // 동점(같은 티어) 안의 순서는 save.order(표시 순서 배열)로 복원한다
+  const ordMap = new Map((Array.isArray(save.order) ? save.order : []).map((n, i) => [n, i]));
   const items = imgs.map((n, i) => ({
     file: n,
     label: n.replace(/\.[^.]+$/, ""),
     url: URL.createObjectURL(files.get(n)),
     key: Number.isFinite(save.ranks[n]) ? save.ranks[n] : 1e9 + i,  // 저장에 없던 아이템은 뒤로
-    ord: i,
+    ord: ordMap.has(n) ? ordMap.get(n) : 1e9 + i,
   }));
   for (const it of items) {
     const lines = [...info.global, ...(info.items[it.file] || [])].map(l => l.text);
@@ -498,7 +533,7 @@ async function loadTopic(t) {
   cur = {
     name: t.name, dirHandle: t.dirHandle || null, info, save, items, podiumUrl,
     view: {
-      mode: (save.view.mode || info.view) === "grid" ? "grid" : "list",
+      mode: ["grid", "tier"].includes(save.view.mode || info.view) ? (save.view.mode || info.view) : "list",
       columns: save.view.columns || info.columns || 3,
     },
   };
@@ -543,16 +578,27 @@ function setRank(it, v) {
   commit();
 }
 function commit() { normalize(); render(); scheduleSave(); }
+function placeItem(it, target, before) {
+  // target 앞/뒤로 삽입 — 같은 티어(동점) 안의 순서도 바뀌며, 이 순서는 List/Gallery와 연동·저장된다
+  it.key = target.key;
+  const arr = sorted().filter(x => x !== it);
+  const idx = arr.indexOf(target) + (before ? 0 : 1);
+  arr.splice(idx, 0, it);
+  arr.forEach((x, i) => x.ord = i);
+  commit();
+}
 
 /* ---------- rendering ---------- */
 function syncControls() {
   $("#btnList").classList.toggle("active", cur.view.mode === "list");
   $("#btnGrid").classList.toggle("active", cur.view.mode === "grid");
+  $("#btnTier").classList.toggle("active", cur.view.mode === "tier");
   $("#colWrap").hidden = cur.view.mode !== "grid";
   $("#colInput").value = cur.view.columns;
 }
 $("#btnList").onclick = () => { cur.view.mode = "list"; syncControls(); render(); scheduleSave(); };
 $("#btnGrid").onclick = () => { cur.view.mode = "grid"; syncControls(); render(); scheduleSave(); };
+$("#btnTier").onclick = () => { cur.view.mode = "tier"; syncControls(); render(); scheduleSave(); };
 $("#colInput").onchange = e => {
   cur.view.columns = Math.max(1, Math.min(8, +e.target.value || 3));
   e.target.value = cur.view.columns;
@@ -564,6 +610,7 @@ function render() {
   wrap.innerHTML = "";
   wrap.className = cur.view.mode;
   wrap.style.setProperty("--cols", cur.view.columns);
+  if (cur.view.mode === "tier") { renderTierView(wrap); return; }
   const shown = sorted().filter(matchesQuery);
   for (const it of shown) wrap.append(renderItem(it));
   if (!shown.length) {
@@ -571,6 +618,143 @@ function render() {
     d.id = "noResult";
     d.textContent = "검색 결과가 없습니다";
     wrap.append(d);
+  }
+}
+
+/* ---------- tier view (티어표) ----------
+   티어 = 공동 순위 그룹. 행에 드롭하면 그 행과 같은 순위(동점)가 되고,
+   행 사이 틈에 드롭하면 그 위치에 새 티어가 생긴다. 데이터는 기존 ranks 그대로다. */
+const TIER_DEF = ["S", "A", "B", "C", "D", "E", "F", "G", "H", "I"];
+const TIER_COLORS = ["#ff7f7f", "#ffbf7f", "#ffdf7f", "#ffff7f", "#bfff7f",
+  "#7fff7f", "#7fffff", "#7fbfff", "#9f8fff", "#ff7fff"];
+function renderTierView(wrap) {
+  const shown = sorted().filter(matchesQuery);
+  if (!shown.length) {
+    const d = document.createElement("div");
+    d.id = "noResult";
+    d.textContent = "검색 결과가 없습니다";
+    wrap.append(d);
+    return;
+  }
+  const groups = [];
+  for (const it of shown) {
+    const last = groups[groups.length - 1];
+    if (last && last.rank === it.rank) last.items.push(it);
+    else groups.push({ rank: it.rank, items: [it] });
+  }
+  // 티어는 최대 5개 — 나머지 그룹은 맨 아래 풀(pool) 한 행에 몰아넣는다
+  const MAXT = 5;
+  const tiers = groups.slice(0, MAXT);
+  const pool = groups.slice(MAXT);
+  const maxRank = shown[shown.length - 1].rank;
+  const names = cur.save.tierNames || {};
+  const defName = k => k === "pool" ? "…" : (TIER_DEF[k] || String(k + 1));
+
+  const makeGap = key => {
+    const gp = document.createElement("div");
+    gp.className = "tier-gap";
+    gp.title = "여기에 놓으면 새 티어";
+    gp.addEventListener("dragover", e => {
+      if (!dragItem) return;
+      e.preventDefault();
+      gp.classList.add("drop-into");
+    });
+    gp.addEventListener("dragleave", () => gp.classList.remove("drop-into"));
+    gp.addEventListener("drop", e => {
+      if (!dragItem) return;
+      e.preventDefault(); e.stopPropagation();
+      dragItem.key = key;
+      commit();
+    });
+    return gp;
+  };
+
+  const makeRow = (labelKey, color, items, dropKey) => {
+    const row = document.createElement("div");
+    row.className = "tier-row";
+    const label = document.createElement("div");
+    label.className = "tier-label";
+    label.style.background = color;
+    label.textContent = names[labelKey] != null ? names[labelKey] : defName(labelKey);
+    label.title = "클릭하여 티어 이름 변경";
+    label.onclick = () => {
+      if (label.querySelector("input")) return;
+      const inp = document.createElement("input");
+      inp.value = label.textContent;
+      label.textContent = "";
+      label.append(inp);
+      inp.focus(); inp.select();
+      inp.onblur = () => {
+        (cur.save.tierNames ||= {})[labelKey] = inp.value.trim() || defName(labelKey);
+        scheduleSave();
+        render();
+      };
+      inp.onkeydown = e => {
+        e.stopPropagation();
+        if (e.key === "Enter") inp.blur();
+        if (e.key === "Escape") { inp.onblur = null; render(); }
+      };
+    };
+    const cell = document.createElement("div");
+    cell.className = "tier-items";
+    for (const it of items) {
+      const im = document.createElement("img");
+      im.className = "tier-item";
+      im.src = it.url;
+      im.alt = im.title = it.label;
+      im.draggable = true;
+      im.addEventListener("dragstart", e => {
+        dragItem = it;
+        e.dataTransfer.effectAllowed = "move";
+      });
+      im.addEventListener("dragend", () => { dragItem = null; });
+      // 같은 티어 안에서 앞뒤 이동: 아이템 위에 드롭하면 좌/우 절반 기준으로 그 앞/뒤에 삽입
+      im.addEventListener("dragover", e => {
+        if (!dragItem || dragItem === it) return;
+        e.preventDefault(); e.stopPropagation();
+        const r = im.getBoundingClientRect();
+        const before = e.clientX < r.left + r.width / 2;
+        im.classList.toggle("drop-before", before);
+        im.classList.toggle("drop-after", !before);
+        row.classList.remove("drop-into");
+      });
+      im.addEventListener("dragleave", () => im.classList.remove("drop-before", "drop-after"));
+      im.addEventListener("drop", e => {
+        if (!dragItem || dragItem === it) return;
+        e.preventDefault(); e.stopPropagation();
+        const r = im.getBoundingClientRect();
+        placeItem(dragItem, it, e.clientX < r.left + r.width / 2);
+      });
+      cell.append(im);
+    }
+    row.append(label, cell);
+    row.addEventListener("dragover", e => {
+      if (!dragItem) return;
+      e.preventDefault();
+      row.classList.add("drop-into");
+    });
+    row.addEventListener("dragleave", () => row.classList.remove("drop-into"));
+    row.addEventListener("drop", e => {
+      if (!dragItem) return;
+      e.preventDefault(); e.stopPropagation();
+      dragItem.key = dropKey;
+      commit();
+    });
+    return row;
+  };
+
+  tiers.forEach((g, gi) => {
+    wrap.append(makeGap(gi === 0 ? g.rank - 0.5 : (tiers[gi - 1].rank + g.rank) / 2));
+    wrap.append(makeRow(gi, TIER_COLORS[gi % TIER_COLORS.length], g.items, g.rank));
+  });
+  // 그룹이 5개 미만이면 빈 티어 행을 채워 보여준다 (드롭하면 맨 아래 티어로)
+  for (let gi = tiers.length; gi < MAXT; gi++) {
+    wrap.append(makeRow(gi, TIER_COLORS[gi % TIER_COLORS.length], [], maxRank + 0.5));
+  }
+  if (pool.length) {
+    wrap.append(makeRow("pool", "#c9ced6", pool.flatMap(g => g.items), pool[0].rank));
+  } else if (tiers.length === MAXT) {
+    wrap.append(makeGap(tiers[MAXT - 1].rank + 0.5));
   }
 }
 
@@ -599,6 +783,18 @@ function renderItem(it) {
   const descLines = [...cur.info.global, ...(cur.info.items[it.file] || [])]
     .filter(l => showExtra || !l.extra);
   for (const line of descLines) content.append(renderDescLine(line.text, it));
+  if (cur.view.mode === "list") {
+    // 아이템별 메모 — List 보기에서만 보이고 save.json에 저장된다
+    const memo = document.createElement("input");
+    memo.className = "memo";
+    memo.placeholder = "메모…";
+    memo.value = (cur.save.memos || {})[it.file] || "";
+    memo.oninput = () => {
+      (cur.save.memos ||= {})[it.file] = memo.value;
+      scheduleSave();
+    };
+    content.append(memo);
+  }
 
   const handle = document.createElement("span");
   handle.className = "handle";
@@ -685,7 +881,7 @@ function renderDescLine(text, it) {
   const re = /\[( |x|X)?\]/g;
   let m, idx = 0, last = 0;
   while ((m = re.exec(text))) {
-    line.append(text.slice(last, m.index));
+    appendWithLinks(line, text.slice(last, m.index));
     const cb = document.createElement("input");
     cb.type = "checkbox";
     const key = `${label}#${idx++}`;
@@ -698,8 +894,24 @@ function renderDescLine(text, it) {
     line.append(cb);
     last = m.index + m[0].length;
   }
-  line.append(text.slice(last));
+  appendWithLinks(line, text.slice(last));
   return line;
+}
+function appendWithLinks(el, text) {
+  // http/https URL만 링크로 — 나머지는 전부 텍스트 노드 (데이터의 코드 해석 없음)
+  const re = /https?:\/\/[^\s<>"']+/g;
+  let m, last = 0;
+  while ((m = re.exec(text))) {
+    el.append(text.slice(last, m.index));
+    const a = document.createElement("a");
+    a.href = m[0];
+    a.textContent = m[0];
+    a.target = "_blank";
+    a.rel = "noopener";
+    el.append(a);
+    last = m.index + m[0].length;
+  }
+  el.append(text.slice(last));
 }
 
 /* ---------- search (이름·설명 전체, 한글 초성 지원) ---------- */
@@ -726,7 +938,10 @@ function saveData() {
   return {
     view: cur.view,
     ranks: Object.fromEntries(cur.items.map(i => [i.file, i.rank])),
+    order: sorted().map(i => i.file),
     checks: cur.save.checks || {},
+    memos: cur.save.memos || {},
+    tierNames: cur.save.tierNames || {},
   };
 }
 async function writeSaveFile(json) {
