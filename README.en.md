@@ -93,8 +93,9 @@ Best place to start when you have a lot of items. Drop onto a row to join that t
 
 - Click the rank number to type one; hover it for ▲▼ to nudge by one
 - Grab the `⣿` handle to drag
-- Ties allowed
 - A memo box per item (List view only)
+
+> Ranks are always a gapless 1, 2, 3, … — there are no ties. Put items you can't separate in the same tier instead.
 
 ### Gallery — see everything
 
