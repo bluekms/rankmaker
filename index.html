@@ -16,6 +16,8 @@
   --accent: #4f6ef7;
   --accent-soft: #e8edff;
   --shadow: 0 1px 3px rgba(0,0,0,.08);
+  --screen: rgba(255,255,255,.7);   /* 라운드 배너 뒤에 까는 반투명 스크린 */
+  --gold: #a8780c;
   color-scheme: light;
 }
 :root[data-theme="dark"] {
@@ -27,6 +29,8 @@
   --accent: #7b93ff;
   --accent-soft: #263050;
   --shadow: 0 1px 3px rgba(0,0,0,.4);
+  --screen: rgba(0,0,0,.66);
+  --gold: #f2c94c;
   color-scheme: dark;
 }
 * { box-sizing: border-box; }
@@ -45,9 +49,18 @@ header {
   background: var(--card);
   border-bottom: 1px solid var(--border);
   box-shadow: var(--shadow);
-  flex-wrap: wrap;
+  flex-wrap: nowrap;              /* 줄바꿈이 생기면 오른쪽 고정 버튼이 튄다 */
 }
-header .spacer { flex: 1; }
+header .spacer { flex: 1; min-width: .3rem; }
+#topicSelect { max-width: 34vw; min-width: 5rem; }
+/* 순위표 전용 컨트롤 — 좁아지면 이 안에서만 줄바꿈된다 */
+/* 왼쪽 컨트롤이 여러 줄로 늘어나도 첫 줄에 그대로 머문다 — 세로 위치까지 고정 */
+#hdrFixed {
+  display: inline-flex; align-items: center; gap: .6rem; flex: none;
+  align-self: flex-start; min-height: 2.15rem;
+}
+#boardTools { display: inline-flex; align-items: center; gap: .4rem; flex: none; }
+#btnCup { min-width: 6.6rem; text-align: center; }
 select, button, input {
   font: inherit; color: inherit;
   background: var(--card);
@@ -63,9 +76,15 @@ button:hover { border-color: var(--accent); }
 #colWrap, #sizeWrap { display: inline-flex; align-items: center; gap: .35rem; font-size: .9rem; color: var(--muted); }
 #colInput { width: 3.4rem; padding: .3rem .4rem; text-align: center; }
 #sizeInput { width: 4.2rem; padding: .3rem .4rem; text-align: center; }
-#searchInput { width: 11rem; }
+/* 좁아지면 왼쪽 항목이 먼저 줄어든다 — 오른쪽 고정 버튼이 밀리거나 넘치지 않게 */
+#searchInput { width: 11rem; min-width: 0; flex: 0 1 auto; }
+#status { flex: 0 1 auto; min-width: 0; overflow: hidden; white-space: nowrap; }
 #noResult { text-align: center; color: var(--muted); padding: 2.5rem 0; grid-column: 1 / -1; }
-#viewControls { display: inline-flex; align-items: center; gap: .6rem; flex-wrap: wrap; }
+#viewControls {
+  display: inline-flex; align-items: center; gap: .6rem;
+  flex-wrap: wrap; justify-content: flex-end;
+  min-width: 0;                   /* 좁아지면 밖으로 넘치지 말고 안에서 줄바꿈 */
+}
 details.menu { position: relative; }
 details.menu summary {
   list-style: none; cursor: pointer;
@@ -84,7 +103,7 @@ details.menu summary:hover, details.menu[open] summary { border-color: var(--acc
 .menu-list button:hover { background: var(--accent-soft); }
 #btnTheme { font-size: 1.05rem; padding: .3rem .55rem; }
 .mini { font-size: .82rem; padding: .3rem .55rem; color: var(--muted); }
-#status { font-size: .85rem; color: var(--muted); opacity: 0; transition: opacity .3s; }
+#status { font-size: .85rem; color: var(--muted); opacity: 0; transition: opacity .3s; text-overflow: ellipsis; }
 #status.show { opacity: 1; }
 #importInput, #dirInput { display: none; }
 
@@ -215,6 +234,143 @@ main { max-width: 1100px; margin: 0 auto; padding: 1rem; }
 .tier-x:hover { color: #e03131; }
 @media (max-width: 560px) { .tier-label { width: 72px; font-size: .95rem; } }
 
+/* ---------- world cup (독립 화면) ---------- */
+#btnCup.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+.cup-setup {
+  max-width: 480px; margin: 6vh auto 0; text-align: center;
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: 1rem; padding: 1.8rem 1.6rem; box-shadow: var(--shadow);
+}
+.cup-setup h2 { margin: 0 0 .2rem; }
+.cup-sub { color: var(--muted); font-size: .9rem; margin: 0 0 1.3rem; }
+.cup-setup label { display: block; margin: .55rem 0; font-size: .95rem; }
+.cup-go {
+  width: 100%; margin-top: 1.2rem; padding: .7rem; border: 0; border-radius: .7rem;
+  background: var(--accent); color: #fff; font-weight: 700; font-size: 1rem;
+}
+.cup-note { color: var(--muted); font-size: .8rem; margin: 1.1rem 0 0; line-height: 1.55; }
+#cup.playing {
+  background: hsl(var(--cup-hue, 220) 75% 50% / .07);
+  border-radius: 1rem; padding: .9rem; transition: background .55s ease;
+}
+.cup-head { display: flex; align-items: center; gap: .6rem; flex-wrap: wrap; margin-bottom: .9rem; }
+.cup-head b { font-size: 1.1rem; color: var(--accent); }
+.cup-head span { color: var(--muted); font-size: .9rem; }
+.cup-head .cup-pick { margin-right: auto; }
+/* 라운드 전환 알림 — 몇 강인지 크게 한 번 보여주고 사라진다 */
+.cup-banner {
+  position: fixed; inset: 0; z-index: 50;
+  display: flex; align-items: center; justify-content: center; pointer-events: none;
+}
+/* 글자 뒤에 테마에 맞는 반투명 스크린을 깔아 아이템 이미지와 겹쳐도 읽히게 한다 */
+.cup-screen {
+  position: absolute; inset: 0;
+  background: var(--screen);
+  backdrop-filter: blur(2px);
+  animation: cupScreen var(--dur, 1200ms) ease-out forwards;
+}
+/* 결승에 가까울수록 오래·크게 (lv0 → lv3=Final). 글자 자체는 담백하게 둔다 */
+.cup-banner span {
+  position: relative;
+  font-size: clamp(2.4rem, 9vw, 5rem); font-weight: 900; letter-spacing: -.02em;
+  color: var(--accent);
+  animation: cupBanner var(--dur, 1200ms) ease-out forwards;
+}
+.cup-banner.lv1 span { font-size: clamp(2.6rem, 10vw, 5.6rem); }
+.cup-banner.lv2 span { font-size: clamp(2.9rem, 11vw, 6.2rem); }
+.cup-banner.lv3 span { font-size: clamp(3.2rem, 13vw, 7rem); color: var(--gold); }
+@keyframes cupBanner {
+  0%   { opacity: 0; transform: scale(.88); }
+  14%  { opacity: 1; transform: scale(1.02); }
+  26%  { transform: scale(1); }
+  82%  { opacity: 1; }
+  100% { opacity: 0; transform: scale(1.03); }
+}
+@keyframes cupScreen {
+  0%   { opacity: 0; }
+  12%  { opacity: 1; }
+  78%  { opacity: 1; }
+  100% { opacity: 0; }
+}
+.cup-grid { display: grid; grid-template-columns: repeat(var(--n, 2), minmax(0, 1fr)); gap: 1rem; }
+/* 화면 가득 채우기 — 남은 세로 공간을 카드가 나눠 갖는다. 배율로 줄일 수 있다. */
+body.cup-fill main { max-width: none; }
+.cup-grid.fill {
+  height: calc((100dvh - var(--cup-chrome, 178px)) * var(--cup-zoom, 1));
+  width: calc(100% * var(--cup-zoom, 1));
+  margin-inline: auto;
+}
+.cup-grid.fill .cup-card { height: 100%; display: flex; flex-direction: column; min-height: 0; }
+.cup-grid.fill .cup-media { flex: 1; aspect-ratio: auto; min-height: 0; }
+#cupZoomWrap { display: inline-flex; align-items: center; gap: .35rem; font-size: .85rem; color: var(--muted); }
+#cupZoom { width: 4.2rem; padding: .25rem .4rem; text-align: center; }
+.cup-card {
+  background: var(--card); border: 2px solid var(--border); border-radius: .9rem;
+  overflow: hidden; cursor: pointer; box-shadow: var(--shadow);
+  transition: transform .12s, border-color .12s, opacity .25s, filter .25s;
+}
+.cup-card:hover { transform: translateY(-3px); border-color: var(--accent); }
+/* 고른 카드 — 진행 중에도 한눈에 보이도록 테두리·링·체크 배지를 함께 준다 */
+.cup-card.picked {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 4px var(--accent), 0 0 0 8px var(--accent-soft), 0 10px 28px rgba(0,0,0,.2);
+  transform: translateY(-3px);
+}
+.cup-card.picked .cup-media::after {
+  content: ""; position: absolute; inset: 0;
+  background: var(--accent); opacity: .22; mix-blend-mode: multiply;
+}
+.cup-pickmark {
+  position: absolute; top: .55rem; left: .55rem; z-index: 2;
+  display: flex; align-items: center; gap: .3rem;
+  padding: .25rem .6rem .3rem; border-radius: 999px;
+  background: var(--accent); color: #fff; font-weight: 800; font-size: .82rem;
+  box-shadow: 0 3px 12px rgba(0,0,0,.3);
+  animation: cupMark .28s cubic-bezier(.2,1.5,.4,1) both;
+}
+@keyframes cupMark { from { opacity: 0; transform: scale(.4); } to { opacity: 1; transform: none; } }
+.cup-card.picked .cup-name { color: var(--accent); }
+
+/* 선택 확정 순간 — 고른 것만 남기고 나머지를 확실히 죽인다 */
+.cup-grid.flash, .cup-grid.locked { pointer-events: none; }
+.cup-grid.flash .cup-card:not(.picked) {
+  opacity: .18; filter: grayscale(1) blur(1.5px); transform: scale(.9);
+}
+.cup-grid.flash .cup-card.picked {
+  animation: cupWin .55s cubic-bezier(.2,1.4,.4,1) forwards;
+  box-shadow: 0 0 0 5px var(--accent), 0 0 0 14px var(--accent-soft), 0 16px 42px rgba(0,0,0,.3);
+}
+.cup-grid.flash .cup-card.picked .cup-pickmark { font-size: 1rem; padding: .35rem .8rem .4rem; }
+@keyframes cupWin {
+  0%   { transform: translateY(-3px) scale(1); }
+  45%  { transform: translateY(-3px) scale(1.09); }
+  100% { transform: translateY(-3px) scale(1.06); }
+}
+.cup-media { position: relative; aspect-ratio: 1 / 1; background: var(--bg); }
+.cup-media img, .cup-media video, .cup-media iframe {
+  width: 100%; height: 100%; object-fit: cover; display: block; border: 0;
+}
+.cup-btns { position: absolute; right: .5rem; bottom: .5rem; z-index: 2; display: flex; gap: .35rem; }
+.cup-btn {
+  border: 0; border-radius: 50%; width: 2.2rem; height: 2.2rem; padding: 0;
+  background: rgba(0,0,0,.62); color: #fff; font-size: .85rem; line-height: 1;
+}
+.cup-btn:hover:not(:disabled) { background: var(--accent); }
+.cup-btn:disabled { opacity: .3; cursor: not-allowed; }
+.cup-stop { position: absolute; right: .5rem; top: .5rem; }
+.cup-name { font-weight: 800; padding: .55rem .7rem .1rem; }
+.cup-desc { padding: 0 .7rem .6rem; color: var(--muted); font-size: .85rem; }
+.cup-desc div { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.cup-result { text-align: center; }
+.cup-winner-name { font-size: 1.6rem; font-weight: 800; margin: .2rem 0 1rem; }
+.cup-poster {
+  width: 100%; max-width: 540px; border-radius: 1rem;
+  box-shadow: var(--shadow); animation: cupIn .5s ease-out;
+}
+@keyframes cupIn { from { opacity: 0; transform: scale(.94); } to { opacity: 1; transform: none; } }
+.cup-actions { display: flex; justify-content: center; gap: .6rem; margin-top: 1.1rem; flex-wrap: wrap; }
+@media (max-width: 560px) { .cup-grid { grid-template-columns: 1fr 1fr; } }
+
 #credit {
   text-align: center; padding: 1.2rem 0 1.6rem;
   font-size: .8rem; color: var(--muted);
@@ -232,11 +388,17 @@ main { max-width: 1100px; margin: 0 auto; padding: 1rem; }
 <body>
 <header>
   <select id="topicSelect" hidden></select>
+  <!-- 주제의 저장 데이터를 다루는 기능 — 주제 바로 옆 -->
+  <span id="boardTools" hidden>
+    <button id="btnExport" class="mini" title="현재 주제의 저장 데이터를 파일로 백업">Export</button>
+    <button id="btnImport" class="mini" title="백업한 save.json 파일을 불러오기">Import</button>
+    <input id="importInput" type="file" accept=".json,application/json">
+  </span>
   <input id="searchInput" type="search" placeholder="검색 (초성 지원)" hidden>
   <span id="status"></span>
   <div class="spacer"></div>
   <span id="viewControls" hidden>
-    <span class="seg">
+    <span class="seg" id="viewSeg">
       <button id="btnTier">Tier</button>
       <button id="btnList">List</button>
       <button id="btnGrid">Gallery</button>
@@ -250,11 +412,12 @@ main { max-width: 1100px; margin: 0 auto; padding: 1rem; }
         <button id="btnImgTop10">Poster — Top 10</button>
       </div>
     </details>
-    <button id="btnExport" class="mini" title="현재 주제의 저장 데이터를 파일로 백업">Export</button>
-    <button id="btnImport" class="mini" title="백업한 save.json 파일을 불러오기">Import</button>
-    <input id="importInput" type="file" accept=".json,application/json">
   </span>
-  <button id="btnTheme" title="라이트/다크 전환">🌙</button>
+  <!-- 화면이 바뀌어도 항상 있는 전역 토글 — 오른쪽 끝에 고정해 위치가 흔들리지 않는다 -->
+  <span id="hdrFixed">
+    <button id="btnCup" class="mini" hidden>🏆 Cup</button>
+    <button id="btnTheme" title="라이트/다크 전환">🌙</button>
+  </span>
 </header>
 
 <main>
@@ -275,6 +438,7 @@ main { max-width: 1100px; margin: 0 auto; padding: 1rem; }
   <section id="board" hidden>
     <div id="items"></div>
   </section>
+  <section id="cup" hidden></section>
 </main>
 
 <footer id="credit">
@@ -289,6 +453,27 @@ const CREDIT = "RankMaker · by CrosS21 · blog.naver.com/bluekms21";
 console.info(CREDIT + " · bluekms21@naver.com");
 const IMG_EXT = /\.(png|jpe?g|gif|webp|svg|bmp|avif)$/i;
 const PODIUM_RE = /^podium\.(png|jpe?g|gif|webp|svg|bmp|avif)$/i;  // 포스터 단상 그림 — 아이템에서 제외
+const VIDEO_EXT = /\.(mp4|webm)$/i;   // 월드컵 후보 영상 — 주제 폴더 직속만
+const YT_RE = /(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|shorts\/|embed\/))([\w-]{11})/;
+const CHZZK_RE = /chzzk\.naver\.com\/(?:embed\/)?(clips?|video|live)\/([\w-]+)/i;
+const VIMEO_RE = /vimeo\.com\/(?:video\/)?(\d+)/;
+const NAVERTV_RE = /tv\.naver\.com\/(?:embed\/)?v?\/?(\d{5,})/;
+const SOOP_VOD_RE = /(?:vod\.)?(?:sooplive\.co\.kr|afreecatv\.com)\/player\/(\d+)/;
+const SOOP_LIVE_RE = /play\.(?:sooplive\.co\.kr|afreecatv\.com)\/([A-Za-z0-9_-]+)(?:\/(\d+))?/;
+// 썸네일로 쓸 주소 — 확장자가 이미지이거나, 알려진 썸네일 호스트
+const THUMB_EXT_RE = /https?:\/\/\S+?\.(?:jpe?g|png|webp|gif|avif)(?:\?\S*)?(?=\s|$)/i;
+const THUMB_HOST_RE = /https?:\/\/(?:videoimg\.(?:sooplive\.com|afreecatv\.com)|video-phinf\.pstatic\.net|img\.youtube\.com)\/\S+/i;
+const thumbOf = lines => {
+  for (const l of lines || []) {
+    const m = l.text.match(THUMB_EXT_RE) || l.text.match(THUMB_HOST_RE);
+    if (m) return m[0];
+  }
+  return null;
+};
+// 후보 설명 줄에서 미디어·썸네일로 해석되는 주소들 — 설명에는 보이지 않게 한다
+const MEDIA_RES = [YT_RE, CHZZK_RE, VIMEO_RE, NAVERTV_RE, SOOP_VOD_RE, SOOP_LIVE_RE,
+  THUMB_EXT_RE, THUMB_HOST_RE];
+const isMetaLine = t => MEDIA_RES.some(re => re.test(t));
 
 let topics = [];        // { name, dirHandle? , files? (Map name->File) }
 let rootPodiumFile = null;  // topics 루트의 공통 podium.* (주제 폴더 것이 우선)
@@ -465,9 +650,15 @@ function afterOpen() {
   sel.onchange = () => loadTopic(topics[sel.value]);
   $("#searchInput").hidden = false;
   $("#viewControls").hidden = false;
+  $("#boardTools").hidden = false;
+  $("#btnCup").hidden = false;
   $("#welcome").hidden = true;
   $("#board").hidden = false;
-  loadTopic(topics[0]);
+  // 지난번에 보던 주제로 연다 — 그 주제가 없어졌으면 첫 번째
+  const last = localStorage.getItem("rm-topic");
+  const i = Math.max(0, topics.findIndex(t => t.name === last));
+  sel.value = i;
+  loadTopic(topics[i]);
 }
 boot();
 
@@ -497,6 +688,41 @@ function parseInfo(text) {
   return info;
 }
 
+/* ---------- 텍스트 카드 SVG ----------
+   info.md 에 이미지 확장자로 끝나는 섹션이 있는데 실제 파일이 없으면 그 이름으로 카드를 만든다.
+   메모리에서만 만들고 폴더에 쓰지 않는다 — 같은 이름의 진짜 이미지를 넣으면 그쪽이 이긴다. */
+function wrapLabel(s, w = 8, max = 3) {
+  const out = [];
+  let line = "";
+  for (const word of s.split(/\s+/)) {
+    if (!line) line = word;
+    else if ((line + " " + word).length <= w) line += " " + word;
+    else { out.push(line); line = word; }
+    while (line.length > w) { out.push(line.slice(0, w)); line = line.slice(w); }
+  }
+  if (line) out.push(line);
+  if (out.length > max) { out.length = max; out[max - 1] = out[max - 1].slice(0, w - 1) + "…"; }
+  return out;
+}
+function textCardSvg(label) {
+  let h = 0;
+  for (const ch of label) h = (h * 31 + ch.codePointAt(0)) >>> 0;   // 이름이 같으면 색도 항상 같다
+  const hue = h % 360;
+  const lines = wrapLabel(label);
+  const size = Math.min(104, Math.round(430 / Math.max(1, ...lines.map(l => l.length))));
+  const lineH = Math.round(size * 1.22);
+  const y0 = 256 - (lines.length - 1) * lineH / 2 + size * 0.35;    // alphabetic 기준 시각 중앙
+  const esc = s => s.replace(/[&<>]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c]));
+  const text = lines.map((l, i) =>
+    `<text x="256" y="${Math.round(y0 + i * lineH)}">${esc(l)}</text>`).join("");
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">`
+    + `<rect width="512" height="512" fill="hsl(${hue},58%,90%)"/>`
+    + `<g font-family="system-ui,'Noto Sans KR',sans-serif" font-weight="800" font-size="${size}"`
+    + ` fill="hsl(${hue},62%,26%)" text-anchor="middle">${text}</g></svg>`;
+}
+const textCardUri = label =>
+  "data:image/svg+xml;charset=utf-8," + encodeURIComponent(textCardSvg(label));
+
 /* ---------- topic loading ---------- */
 async function loadTopic(t) {
   const files = new Map();
@@ -508,6 +734,13 @@ async function loadTopic(t) {
   }
 
   const info = parseInfo(files.has("info.md") ? await files.get("info.md").text() : "");
+  // info.md 에만 있고 실제 파일이 없는 이미지 섹션 → 썸네일 주소가 있으면 그걸 쓰고,
+  // 없을 때만 이름으로 텍스트 카드를 만든다
+  const synth = new Map();
+  for (const h of Object.keys(info.items))
+    if (IMG_EXT.test(h) && !files.has(h))
+      synth.set(h, thumbOf(info.items[h]) || textCardUri(h.replace(/\.[^.]+$/, "")));
+
   const save = { view: {}, ranks: {}, checks: {} };
   if (files.has("save.json")) {
     try { Object.assign(save, JSON.parse(await files.get("save.json").text())); }
@@ -519,24 +752,40 @@ async function loadTopic(t) {
     catch (e) {}
   }
 
+  // 월드컵 저장은 save.json 과 완전히 분리된 별도 파일이다
+  const cupSave = { config: null, history: [] };
+  if (files.has("cup.save.json")) {
+    try { Object.assign(cupSave, JSON.parse(await files.get("cup.save.json").text())); }
+    catch (e) { console.warn("cup.save.json parse error", e); }
+  }
+  if (!t.dirHandle) {
+    try { Object.assign(cupSave, JSON.parse(localStorage.getItem("rmcup:" + t.name) || "null") || {}); }
+    catch (e) {}
+  }
+
   if (cur) {
     for (const it of cur.items) URL.revokeObjectURL(it.url);
+    for (const u of cur.videos.values()) URL.revokeObjectURL(u);
     if (cur.podiumUrl) URL.revokeObjectURL(cur.podiumUrl);
   }
   posterImgCache.clear();
+
+  const videos = new Map();
+  for (const [n, f] of files) if (VIDEO_EXT.test(n)) videos.set(n, URL.createObjectURL(f));
 
   // 포스터 단상 그림: 주제 폴더의 podium.* 이 우선, 없으면 topics 루트의 공통 podium.*
   const podName = [...files.keys()].find(n => PODIUM_RE.test(n));
   const podiumUrl = podName ? URL.createObjectURL(files.get(podName))
     : rootPodiumFile ? URL.createObjectURL(rootPodiumFile) : null;
 
-  const imgs = [...files.keys()].filter(n => IMG_EXT.test(n) && !PODIUM_RE.test(n)).sort();
+  const imgs = [...new Set([...files.keys()].filter(n => IMG_EXT.test(n) && !PODIUM_RE.test(n))
+    .concat([...synth.keys()]))].sort();
   // 표시 순서: save.order → (구버전) ranks → 파일명 순. 저장에 없던 새 아이템은 맨 뒤(미분류)
   const ordMap = new Map((Array.isArray(save.order) ? save.order : []).map((n, i) => [n, i]));
   const items = imgs.map((n, i) => ({
     file: n,
     label: n.replace(/\.[^.]+$/, ""),
-    url: URL.createObjectURL(files.get(n)),
+    url: synth.has(n) ? synth.get(n) : URL.createObjectURL(files.get(n)),
     ord: ordMap.has(n) ? ordMap.get(n)
       : Number.isFinite(save.ranks[n]) ? 1e6 + save.ranks[n] * 1e4 + i
       : 1e9 + i,
@@ -567,7 +816,7 @@ async function loadTopic(t) {
   }
 
   cur = {
-    name: t.name, dirHandle: t.dirHandle || null, info, save, items, podiumUrl,
+    name: t.name, dirHandle: t.dirHandle || null, info, save, items, podiumUrl, videos, cupSave,
     view: {
       mode: ["grid", "list", "tier"].includes(save.view.mode || info.view) ? (save.view.mode || info.view) : "tier",
       columns: save.view.columns || info.columns || 3,
@@ -577,6 +826,9 @@ async function loadTopic(t) {
   normalize();
   if (!themeLocked && info.theme) setTheme(info.theme, false);
   $("#searchInput").value = "";
+  try { localStorage.setItem("rm-topic", t.name); } catch (e) {}   // 다음 실행 때 이 주제로 연다
+  cup = null;                 // 주제를 바꾸면 진행 중이던 월드컵은 버린다
+  cupSetScreen(false);
   syncControls();
   render();
 }
@@ -686,10 +938,12 @@ function syncControls() {
   $("#colInput").value = cur.view.columns;
   $("#sizeWrap").hidden = cur.view.mode !== "tier";
   $("#sizeInput").value = cur.view.tierSize;
+  $("#exportMenu").hidden = cur.view.mode === "tier";   // 포스터 출력은 List·Gallery 에서만
 }
-$("#btnList").onclick = () => { cur.view.mode = "list"; syncControls(); render(); scheduleSave(); };
-$("#btnGrid").onclick = () => { cur.view.mode = "grid"; syncControls(); render(); scheduleSave(); };
-$("#btnTier").onclick = () => { cur.view.mode = "tier"; syncControls(); render(); scheduleSave(); };
+const setMode = m => { cupSetScreen(false); cur.view.mode = m; syncControls(); render(); scheduleSave(); };
+$("#btnList").onclick = () => setMode("list");
+$("#btnGrid").onclick = () => setMode("grid");
+$("#btnTier").onclick = () => setMode("tier");
 $("#colInput").onchange = e => {
   cur.view.columns = Math.max(1, Math.min(8, +e.target.value || 3));
   e.target.value = cur.view.columns;
@@ -863,7 +1117,7 @@ function renderItem(it) {
   if (cur.view.mode === "list") content.append(name);
   const showExtra = cur.view.mode === "list";
   const descLines = [...cur.info.global, ...(cur.info.items[it.file] || [])]
-    .filter(l => showExtra || !l.extra);
+    .filter(l => (showExtra || !l.extra) && !THUMB_HOST_RE.test(l.text) && !THUMB_EXT_RE.test(l.text));
   for (const line of descLines) content.append(renderDescLine(line.text, it));
   if (cur.view.mode === "list") {
     // 아이템별 메모 — List 보기에서만 보이고 save.json에 저장된다
@@ -1148,10 +1402,17 @@ function podiumImage() {
 function posterImage(it) {
   if (posterImgCache.has(it.file)) return Promise.resolve(posterImgCache.get(it.file));
   return new Promise(res => {
-    const im = new Image();
-    im.onload = () => { posterImgCache.set(it.file, im); res(im); };
-    im.onerror = () => res(null);   // 로드 실패 시 회색 박스로 대체
-    im.src = it.url;                // blob URL이라 캔버스를 오염시키지 않는다
+    const done = im => { posterImgCache.set(it.file, im); res(im); };
+    // 외부 썸네일은 crossOrigin 으로 받아야 캔버스가 오염되지 않는다.
+    // 거부되면 로드가 실패하므로 이름만 그린 텍스트 카드로 대체한다.
+    const load = (src, cross) => {
+      const im = new Image();
+      if (cross) im.crossOrigin = "anonymous";
+      im.onload = () => done(im);
+      im.onerror = () => (cross ? load(textCardUri(it.label), false) : done(null));
+      im.src = src;
+    };
+    load(it.url, /^https?:/i.test(it.url));
   });
 }
 function roundPath(ctx, x, y, w, h, r) {
@@ -1282,10 +1543,12 @@ async function drawPoster(kind, all) {
   // 단상부는 인스타(정사각형) 구도를 기준으로 잡고, 전체 출력은 그 아래에 리스트를 잇는다.
   // podiumBottom 960: 단상을 바닥에서 띄워 아이템 무리가 세로 중앙 부근에 오게 한다.
   const W = 1080, pad = 40, rowH = 100, rowGap = 14, listTop = 1020;
+  const square = kind !== "top10";          // insta·cup = 1:1
   // 전체(Top 10) 출력은 단상을 10% 더 올려 리스트와의 간격·하단 여유를 확보한다
-  const podiumBottom = kind === "insta" ? 960 : 852;
-  const H = kind === "insta" ? 1080
+  const podiumBottom = square ? 960 : 852;
+  const H = square ? 1080
     : (rest.length ? listTop + rest.length * (rowH + rowGap) + 120 : 1020);
+  const imgOf = kind === "cup" ? cupPosterImage : posterImage;
   const cv = document.createElement("canvas");
   cv.width = W; cv.height = H;
   const ctx = cv.getContext("2d");
@@ -1298,7 +1561,7 @@ async function drawPoster(kind, all) {
   fitText(ctx, cur.info.name || cur.name, W / 2, 106, W - pad * 2);
   ctx.fillStyle = V("--accent");
   ctx.font = "700 26px system-ui, sans-serif";
-  ctx.fillText(kind === "insta" ? "TOP 3" : "TOP 10", W / 2, 150);
+  ctx.fillText(kind === "cup" ? "WINNER" : kind === "insta" ? "TOP 3" : "TOP 10", W / 2, 150);
 
   // 단상: 2위 - 1위 - 3위 순서로 배치.
   // topics/<주제>/podium.png(또는 topics/podium.png)이 있으면 그 그림을 단상으로 사용.
@@ -1341,7 +1604,7 @@ async function drawPoster(kind, all) {
       ctx.fillStyle = "rgba(255,255,255,.95)";
       ctx.font = "800 72px system-ui, sans-serif";
       ctx.textAlign = "center"; ctx.textBaseline = "middle";
-      ctx.fillText(String(it.rank), x + colW / 2, bt + bh / 2 + 4);
+      ctx.fillText(String(kind === "cup" ? 1 : it.rank), x + colW / 2, bt + bh / 2 + 4);
       ctx.textBaseline = "alphabetic";
       ctx.fillStyle = V("--text");
       ctx.font = "700 30px system-ui, sans-serif";
@@ -1350,12 +1613,12 @@ async function drawPoster(kind, all) {
       const iy = bt - 62 - size;
       ctx.fillStyle = V("--card");
       roundPath(ctx, ix - 8, iy - 8, size + 16, size + 16, 22); ctx.fill();
-      drawCover(ctx, await posterImage(it), ix, iy, size, size, 16, V("--border"));
+      drawCover(ctx, await imgOf(it), ix, iy, size, size, 16, V("--border"));
     } else {
       // 커스텀 단상: 순위 숫자 없음. 아이템 밑변을 윗면에 살짝(8px) 겹쳐 '올려진' 느낌을 주고
       // 접지 그림자를 깐다. 제목(TOP 라벨)과 간격이 부족하면 이미지 크기를 자동 축소.
       const sink = 8;
-      const lift = kind === "insta" ? 108 : Math.round(size * 0.2);   // 아이템을 단상보다 조금 더 위로
+      const lift = square ? 108 : Math.round(size * 0.2);   // 아이템을 단상보다 조금 더 위로
       let sz = size;
       const maxSz = bt + sink - lift - 234;   // 이름까지 포함해 상단 라벨과 최소 간격 확보
       if (sz > maxSz) sz = Math.max(160, maxSz);
@@ -1367,7 +1630,7 @@ async function drawPoster(kind, all) {
       fitText(ctx, it.label, x + colW / 2, iy - 22, colW - 12);
       ctx.fillStyle = V("--card");
       roundPath(ctx, ix2 - 8, iy - 8, sz + 16, sz + 16, 22); ctx.fill();
-      drawCover(ctx, await posterImage(it), ix2, iy, sz, sz, 16, V("--border"));
+      drawCover(ctx, await imgOf(it), ix2, iy, sz, sz, 16, V("--border"));
     }
   }
 
@@ -1394,6 +1657,460 @@ async function drawPoster(kind, all) {
   ctx.textAlign = "right"; ctx.textBaseline = "alphabetic";
   ctx.fillText(CREDIT, W - 24, H - 18);
   return cv;
+}
+
+/* ---------- 이상형 월드컵 ----------
+   순위표와 완전히 독립된 별도 화면이다. ord·tierSizes·save.json 을 절대 건드리지 않고,
+   후보는 info.md(=현재 주제의 아이템) 를 그대로 쓰며, 기록만 cup.save.json 에 남는다. */
+let cup = null;          // 진행 상태 (null = 설정 화면)
+let cupOpen = false;     // 화면 전환은 순수 UI 상태 — save.json 에 남기지 않는다
+let cupLock = false;     // 선택 확정 연출 중 — 입력을 막는다 (cup 상태가 아니라 Undo 와 무관)
+let cupBusy = false;     // 라운드 전환 연출 중 — 카드 클릭만 막는다 (Undo·Quit 은 살려둔다)
+let cupPlaying = null;   // 지금 재생 중인 카드를 원래대로 되돌리는 함수 (한 번에 하나만 재생)
+function cupStopPlaying() { const f = cupPlaying; cupPlaying = null; if (f) f(); }
+let cupLastRound = 0;    // 라운드가 바뀔 때만 배너를 띄우기 위한 표식
+
+function itemOf(file) { return cur.items.find(i => i.file === file); }
+function loadYtThumb(id, cross) {
+  // maxres 는 HD 영상에만 있다 — 없으면 mq(16:9)로 내린다. hq 는 4:3이라 검은 여백이 낀다.
+  const srcs = [`https://img.youtube.com/vi/${id}/maxresdefault.jpg`,
+    `https://img.youtube.com/vi/${id}/mqdefault.jpg`];
+  const step = i => new Promise(res => {
+    if (i >= srcs.length) return res(null);
+    const im = new Image();
+    if (cross) im.crossOrigin = "anonymous";   // 캔버스 오염 방지 — 거부되면 로드가 실패한다
+    im.onload = () => (im.naturalWidth > 120 ? res(im) : step(i + 1).then(res));
+    im.onerror = () => step(i + 1).then(res);
+    im.src = srcs[i];
+  });
+  return step(0);
+}
+/* 후보 미디어는 info.md 설명 줄에서 자동 판별한다.
+   inline: 카드 안에서 바로 재생할 수 있는가.
+   유튜브만 file:// 에서 임베드가 거부된다(오류 153 — 리퍼러가 없어서다).
+   치지직·네이버TV·Vimeo 는 file:// 에서도 그대로 재생된다(실측 확인). */
+const CAN_HTTP = location.protocol === "http:" || location.protocol === "https:";
+function cupMedia(file) {
+  const s = (cur.info.items[file] || []).map(l => l.text).join(" ");
+  let m;
+  if ((m = s.match(YT_RE))) return {
+    type: "embed", site: "yt", id: m[1], inline: CAN_HTTP,
+    embed: `https://www.youtube.com/embed/${m[1]}?autoplay=1&rel=0`,
+    link: `https://www.youtube.com/watch?v=${m[1]}`,
+  };
+  if ((m = s.match(CHZZK_RE))) {
+    const kind = /^clip/i.test(m[1]) ? "clip" : m[1].toLowerCase();
+    return {
+      type: "embed", site: "chzzk",
+      // 치지직은 클립·영상만 임베드가 있다. 채널(live)은 embed 경로가 없어 링크로만 연다.
+      inline: kind !== "live",
+      embed: `https://chzzk.naver.com/embed/${kind}/${m[2]}?autoplay=1`,
+      link: `https://chzzk.naver.com/${kind === "clip" ? "clips" : kind}/${m[2]}`,
+    };
+  }
+  if ((m = s.match(VIMEO_RE))) return {
+    type: "embed", site: "vimeo", inline: true,
+    embed: `https://player.vimeo.com/video/${m[1]}?autoplay=1`,
+    link: `https://vimeo.com/${m[1]}`,
+  };
+  if ((m = s.match(NAVERTV_RE))) return {
+    type: "embed", site: "navertv", inline: true,
+    embed: `https://tv.naver.com/embed/${m[1]}?autoPlay=true`,
+    link: `https://tv.naver.com/v/${m[1]}`,
+  };
+  if ((m = s.match(SOOP_VOD_RE))) return {
+    type: "embed", site: "soop", inline: true,
+    embed: `https://vod.sooplive.co.kr/player/${m[1]}/embed?showChat=false&mutePlay=true&autoPlay=true`,
+    link: `https://vod.sooplive.co.kr/player/${m[1]}`,
+  };
+  if ((m = s.match(SOOP_LIVE_RE))) return {
+    type: "embed", site: "soop", inline: true,
+    embed: `https://play.sooplive.co.kr/${m[1]}${m[2] ? "/" + m[2] : ""}/embed`,
+    link: `https://play.sooplive.co.kr/${m[1]}${m[2] ? "/" + m[2] : ""}`,
+  };
+  const mv = s.match(/(\S+\.(?:mp4|webm))/i);
+  if (mv && cur.videos.has(mv[1])) return { type: "video", url: cur.videos.get(mv[1]) };
+  return { type: "img", url: (itemOf(file) || {}).url };
+}
+
+/* --- 엔진 --- */
+function shuffled(a) {
+  a = [...a];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+function cupStart(size, k, m) {
+  cup = { k, m, size, roundNo: 0, pool: [], queue: [], qi: 0,
+    picked: [], winners: [], byes: [], done: null, recorded: false, hist: [] };
+  cupLock = false;
+  cupBusy = false;
+  cupLastRound = 0;
+  cupBuildRound(shuffled(cur.items.map(i => i.file)).slice(0, size));
+  cupRender();
+}
+function cupRoundName() {
+  return cup.pool.length <= cup.k ? "Final" : "Round of " + cup.pool.length;
+}
+function cupRoundsLeft() {   // 우승까지 남은 라운드 수 — 연출 강도를 정하는 데 쓴다
+  let n = cup.pool.length, r = 0;
+  while (n > 1 && r < 30) {
+    if (n <= cup.k) return r + 1;
+    const q = Math.floor(n / cup.k), rest = n % cup.k;
+    n = q * cup.m + (rest >= 2 ? Math.min(cup.m, rest - 1) : rest);
+    r++;
+  }
+  return r;
+}
+function cupBuildRound(pool) {
+  cup.roundNo++;
+  cup.pool = pool;
+  cup.queue = []; cup.qi = 0; cup.picked = []; cup.winners = []; cup.byes = [];
+  if (pool.length <= 1) { cup.done = pool[0] || null; return; }
+  if (pool.length <= cup.k) { cup.queue = [{ c: pool, n: 1 }]; return; }   // 결승 — 1등만 뽑는다
+  const q = Math.floor(pool.length / cup.k);
+  for (let i = 0; i < q; i++) cup.queue.push({ c: pool.slice(i * cup.k, (i + 1) * cup.k), n: cup.m });
+  // 나머지도 2명 이상이면 그들끼리 매치를 연다 — 부전승은 딱 1명 남을 때만 생긴다
+  const rest = pool.slice(q * cup.k);
+  if (rest.length >= 2) cup.queue.push({ c: rest, n: Math.min(cup.m, rest.length - 1) });
+  else cup.byes = rest;
+}
+function cupSnap() {   // 상태가 전부 문자열이라 스냅샷이 싸다 — Undo 는 무제한
+  const { hist, ...s } = cup;
+  cup.hist.push(JSON.stringify(s));
+}
+function cupUndo() {
+  if (cupLock || !cup || !cup.hist.length) return;
+  Object.assign(cup, JSON.parse(cup.hist.pop()));
+  cupRender();
+}
+function cupToggle(file) {
+  if (cupLock || cupBusy) return;
+  const m = cup.queue[cup.qi];
+  if (!m) return;
+  cupSnap();
+  const i = cup.picked.indexOf(file);
+  if (i >= 0) cup.picked.splice(i, 1);
+  else if (cup.picked.length < m.n) cup.picked.push(file);
+  if (cup.picked.length < m.n) { cupRender(); return; }
+  // 다 골랐으면 바로 넘기지 않고, 고른 것을 잠깐 강조해 보여준 뒤 진행한다
+  cupLock = true;
+  cupRender();
+  setTimeout(() => {
+    cupLock = false;
+    cup.winners.push(...cup.picked);
+    cup.picked = [];
+    cup.qi++;
+    if (cup.qi >= cup.queue.length) cupBuildRound([...cup.winners, ...cup.byes]);
+    cupRender();
+  }, 620);
+}
+
+/* --- 화면 --- */
+function cupSetScreen(on) {
+  cupOpen = on;
+  cupStopPlaying();
+  if (!on) document.body.classList.remove("cup-fill");
+  $("#cup").hidden = !on;
+  $("#board").hidden = on;
+  $("#searchInput").hidden = on;
+  // 순위표 전용 컨트롤(Tier·List·Gallery·Cols·Size·Export)은 통째로 감춘다.
+  // Cup·테마는 #hdrFixed 로 오른쪽 끝에 고정돼 있어 위치가 흔들리지 않는다.
+  $("#viewControls").hidden = on;
+  $("#boardTools").hidden = on;
+  const cb = $("#btnCup");
+  cb.classList.toggle("active", on);
+  cb.textContent = on ? "← Ranking" : "🏆 Cup";
+  cb.title = on ? "순위표로 돌아가기" : "이상형 월드컵 — 순위표와 독립된 별도 화면";
+  if (on) cupRender();
+  else if (cur) syncControls();
+}
+$("#btnCup").onclick = () => cupSetScreen(!cupOpen);
+
+function cupZoom() {
+  const z = (cur.cupSave.config || {}).zoom;
+  return Math.max(0.4, Math.min(1, z || 1));
+}
+function cupSetZoom(z) {
+  (cur.cupSave.config ||= { round: 0, k: 2, m: 1 }).zoom = Math.max(0.4, Math.min(1, z));
+  cupPersist();
+  cupRender();
+}
+function cupRender() {
+  const el = $("#cup");
+  cupPlaying = null;            // DOM 을 갈아엎으므로 재생 복구 함수는 무효가 된다
+  el.innerHTML = "";
+  el.classList.toggle("playing", !!cup && !cup.done);
+  document.body.classList.toggle("cup-fill", !!cup && !cup.done);
+  if (!cup) cupSetup(el);
+  else if (cup.done) cupResult(el);
+  else cupMatch(el);
+}
+
+function cupSetup(el) {
+  const n = cur.items.length;
+  const cfg = cur.cupSave.config || { round: 0, k: 2, m: 1 };
+  const box = document.createElement("div");
+  box.className = "cup-setup";
+  box.innerHTML =
+    `<h2>🏆 World Cup</h2>
+     <p class="cup-sub">${n} candidates</p>
+     <label>Pick <select id="cupM"></select> of <select id="cupK"></select> per match</label>
+     <label>Start from <select id="cupSize"></select></label>
+     <button id="cupGo" class="cup-go">Start</button>
+     <p class="cup-note">Separate from the ranking board — nothing you pick here changes Tier / List / Gallery.</p>`;
+  el.append(box);
+  if (n < 2) {
+    box.querySelector("#cupGo").disabled = true;
+    box.querySelector(".cup-note").textContent = "Needs at least 2 candidates.";
+    return;
+  }
+  const opt = (v, sel, txt) => `<option value="${v}"${v === sel ? " selected" : ""}>${txt == null ? v : txt}</option>`;
+  $("#cupK").innerHTML = [2, 3, 4, 5, 6].filter(v => v <= n).map(v => opt(v, cfg.k)).join("");
+  // K 를 정하면 그에 맞는 강수(K의 거듭제곱)가 드롭다운으로 채워진다
+  const syncK = () => {
+    const k = +$("#cupK").value;
+    $("#cupM").innerHTML = Array.from({ length: k - 1 }, (_, i) => opt(i + 1, cfg.m)).join("");
+    const sizes = [];
+    for (let v = k; v <= n; v *= k) sizes.push(v);
+    if (!sizes.includes(n)) sizes.push(n);
+    $("#cupSize").innerHTML = sizes
+      .map(v => opt(v, cfg.round, v === n ? `All ${n}` : "Round of " + v)).join("");
+    $("#cupSize").value = sizes.includes(cfg.round) ? cfg.round : sizes[sizes.length - 1];
+  };
+  $("#cupK").onchange = syncK;
+  syncK();
+  $("#cupGo").onclick = () => cupStart(+$("#cupSize").value, +$("#cupK").value, +$("#cupM").value);
+}
+
+function cupMatch(el) {
+  const m = cup.queue[cup.qi];
+  $("#cup").style.setProperty("--cup-hue", (cup.roundNo * 53 + 200) % 360);
+  const head = document.createElement("div");
+  head.className = "cup-head";
+  const title = document.createElement("b");
+  title.textContent = cupRoundName();
+  const prog = document.createElement("span");
+  prog.textContent = `${cup.qi + 1} / ${cup.queue.length}`;
+  const pick = document.createElement("span");
+  pick.className = "cup-pick";
+  pick.textContent = m.n === 1 ? "Pick 1" : `Pick ${m.n} (${cup.picked.length}/${m.n})`;
+  const undo = document.createElement("button");
+  undo.className = "mini"; undo.textContent = "↶ Undo";
+  undo.disabled = cupLock || !cup.hist.length;
+  undo.onclick = cupUndo;
+  const quit = document.createElement("button");
+  quit.className = "mini"; quit.textContent = "Quit";
+  quit.disabled = cupLock;
+  quit.onclick = () => { cup = null; cupLastRound = 0; cupRender(); };
+  // 카드 크기 — 기본 100%(화면 가득), 줄이면 가운데로 모인다
+  const zw = document.createElement("label");
+  zw.id = "cupZoomWrap";
+  zw.textContent = "Size ";
+  const zi = document.createElement("input");
+  zi.id = "cupZoom"; zi.type = "number"; zi.min = 40; zi.max = 100; zi.step = 5;
+  zi.value = Math.round(cupZoom() * 100);
+  zi.title = "카드 크기 (%) — 100이면 화면을 가득 채운다";
+  zi.onchange = () => cupSetZoom((+zi.value || 100) / 100);
+  zw.append(zi, document.createTextNode("%"));
+  head.append(title, prog, pick, zw, undo, quit);
+
+  const grid = document.createElement("div");
+  grid.className = "cup-grid fill" + (cupLock ? " flash" : "") + (cupBusy ? " locked" : "");
+  grid.style.setProperty("--cup-zoom", cupZoom());
+  const c = m.c.length;
+  grid.style.setProperty("--n", c <= 2 ? c : c === 4 ? 2 : 3);
+  for (const f of m.c) grid.append(cupCard(f));
+  el.append(head, grid);
+
+  // 라운드가 바뀐 첫 화면에서만 몇 강인지 크게 알린다 — 결승이 가까울수록 길고 강하게
+  if (cup.roundNo !== cupLastRound) {
+    cupLastRound = cup.roundNo;
+    const left = cupRoundsLeft();
+    const lv = left <= 1 ? 3 : left === 2 ? 2 : left <= 4 ? 1 : 0;
+    const dur = [1200, 1900, 2600, 3400][lv];
+    const b = document.createElement("div");
+    b.className = "cup-banner lv" + lv;
+    b.style.setProperty("--dur", dur + "ms");
+    const bg = document.createElement("div");
+    bg.className = "cup-screen";
+    const s = document.createElement("span");
+    s.textContent = cupRoundName();
+    b.append(bg, s);
+    document.body.append(b);
+    // 연출이 끝날 때까지 카드 선택을 막는다 (Undo·Quit 은 계속 눌린다)
+    cupBusy = true;
+    grid.classList.add("locked");
+    setTimeout(() => {
+      b.remove();
+      cupBusy = false;
+      document.querySelectorAll(".cup-grid.locked").forEach(g => g.classList.remove("locked"));
+    }, dur);
+  }
+}
+
+function cupCard(file) {
+  const it = itemOf(file);
+  const pickedAt = cup.picked.indexOf(file);
+  const card = document.createElement("div");
+  card.className = "cup-card" + (pickedAt >= 0 ? " picked" : "");
+  const media = cupMedia(file);
+  const box = document.createElement("div");
+  box.className = "cup-media";
+  if (pickedAt >= 0) {
+    // 고른 카드에 배지를 박는다 — 여러 개 고를 때는 몇 번째인지도 같이 보여준다
+    const mark = document.createElement("div");
+    mark.className = "cup-pickmark";
+    mark.textContent = cup.queue[cup.qi].n > 1 ? `✓ ${pickedAt + 1}` : "✓ PICKED";
+    box.append(mark);
+  }
+  if (media.type === "embed") {
+    const im = document.createElement("img");
+    im.alt = it.label;
+    im.src = it.url;      // 기본은 아이템 이미지 — 유튜브만 썸네일을 덧입힌다
+    if (media.site === "yt") loadYtThumb(media.id, false).then(t => { if (t) im.src = t.src; });
+
+    const bar = document.createElement("div");
+    bar.className = "cup-btns";
+    const mk = (txt, title, on) => {
+      const b = document.createElement("button");
+      b.className = "cup-btn"; b.textContent = txt; b.title = title;
+      b.onclick = e => { e.stopPropagation(); on(); };
+      bar.append(b);
+      return b;
+    };
+    const play = mk("▶", media.inline ? "여기서 재생" : "이 플랫폼은 file:// 에서 인라인 재생이 막혀 있다 — 링크로 열어야 한다", () => {
+      cupStopPlaying();          // 다른 카드가 재생 중이면 먼저 끈다 — 한 번에 하나만
+      const fr = document.createElement("iframe");
+      fr.src = media.embed;
+      fr.allow = "autoplay; encrypted-media; clipboard-write; web-share";
+      fr.allowFullscreen = true;
+      const stop = document.createElement("button");
+      stop.className = "cup-btn cup-stop"; stop.textContent = "✕";
+      stop.title = "재생 멈추기";
+      stop.onclick = e => { e.stopPropagation(); cupStopPlaying(); };
+      box.replaceChildren(fr, stop);
+      cupPlaying = () => box.replaceChildren(im, bar);
+    });
+    play.disabled = !media.inline;      // 인라인 불가 플랫폼이면 링크 열기만 남는다
+    mk("↗", "링크 열기", () => window.open(media.link, "_blank", "noopener"));
+    box.append(im, bar);
+  } else if (media.type === "video") {
+    const v = document.createElement("video");
+    v.src = media.url;
+    v.autoplay = v.muted = v.loop = v.playsInline = true;
+    box.append(v);
+  } else {
+    const im = document.createElement("img");
+    im.src = media.url; im.alt = it.label;
+    box.append(im);
+  }
+  const name = document.createElement("div");
+  name.className = "cup-name";
+  name.textContent = it.label;
+  const desc = document.createElement("div");
+  desc.className = "cup-desc";
+  for (const l of (cur.info.items[file] || [])) {
+    if (l.extra || MEDIA_RES.some(re => re.test(l.text))) continue;
+    const d = document.createElement("div");
+    d.textContent = l.text.replace(/\[( |x|X)?\]/g, "").trim();   // 체크박스는 순위표 전용
+    if (d.textContent) desc.append(d);
+  }
+  card.append(box, name, desc);
+  card.onclick = () => cupToggle(file);
+  return card;
+}
+
+/* --- 결과: 1등만 단상에 올린다 --- */
+function cupPosterImage(it) {
+  const media = cupMedia(it.file);
+  if (media.type === "video") {
+    return new Promise(res => {
+      const v = document.createElement("video");
+      v.muted = true; v.playsInline = true;
+      v.onloadeddata = () => {
+        const c = document.createElement("canvas");
+        c.width = v.videoWidth || 512; c.height = v.videoHeight || 512;
+        c.getContext("2d").drawImage(v, 0, 0, c.width, c.height);
+        res(c);
+      };
+      v.onerror = () => posterImage(it).then(res);
+      v.src = media.url;
+    });
+  }
+  if (media.type === "yt")
+    return loadYtThumb(media.id, true).then(im => im || posterImage(it));
+  return posterImage(it);
+}
+function cupStamp() {
+  const d = new Date(), p = n => String(n).padStart(2, "0");
+  return String(d.getFullYear()).slice(2) + p(d.getMonth() + 1) + p(d.getDate())
+    + "_" + p(d.getHours()) + p(d.getMinutes()) + p(d.getSeconds());
+}
+async function cupPersist() {
+  const json = JSON.stringify(cur.cupSave, null, 2);
+  if (cur.dirHandle) {
+    try {
+      const fh = await cur.dirHandle.getFileHandle("cup.save.json", { create: true });
+      const w = await fh.createWritable();
+      await w.write(json);
+      await w.close();
+      return;
+    } catch (e) { console.warn("cup save failed", e); }
+  }
+  try { localStorage.setItem("rmcup:" + cur.name, json); } catch (e) {}
+}
+function cupResult(el) {
+  const it = itemOf(cup.done);
+  const box = document.createElement("div");
+  box.className = "cup-result";
+  const h = document.createElement("h2");
+  h.textContent = "🏆 Winner";
+  const nm = document.createElement("div");
+  nm.className = "cup-winner-name";
+  nm.textContent = it.label;
+  const img = document.createElement("img");
+  img.className = "cup-poster";
+  img.alt = it.label;
+  const acts = document.createElement("div");
+  acts.className = "cup-actions";
+  const again = document.createElement("button");
+  again.className = "mini"; again.textContent = "Restart";
+  again.onclick = () => { cup = null; cupLastRound = 0; cupRender(); };
+  const save = document.createElement("button");
+  save.className = "mini"; save.textContent = "Save Image";
+  save.disabled = true;
+  const close = document.createElement("button");
+  close.className = "mini"; close.textContent = "Close";
+  close.onclick = () => cupSetScreen(false);
+  acts.append(save, again, close);
+  box.append(h, nm, img, acts);
+  el.append(box);
+
+  if (!cup.recorded) {
+    cup.recorded = true;
+    cur.cupSave.config = { round: cup.size, k: cup.k, m: cup.m };
+    (cur.cupSave.history ||= []).unshift({
+      at: cupStamp(), round: cup.size, k: cup.k, m: cup.m, winner: it.label,
+    });
+    cur.cupSave.history.splice(50);
+    cupPersist();
+  }
+
+  // 포스터는 만들어서 보여주기만 한다 — 저장은 버튼을 눌렀을 때만
+  drawPoster("cup", [it]).then(cv => {
+    cv.toBlob(b => {
+      if (!b) { flash("이미지 출력 실패"); return; }
+      img.src = URL.createObjectURL(b);
+      save.disabled = false;
+      save.onclick = () => {
+        downloadBlob(b, cur.name + "-winner-" + cupStamp() + ".png");
+        flash("이미지 저장됨 ✓");
+      };
+    }, "image/png");
+  }).catch(e => { console.error(e); flash("이미지 출력 실패"); });
 }
 
 let flashTimer = null;
