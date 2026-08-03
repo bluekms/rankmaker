@@ -232,6 +232,15 @@ main { max-width: 1100px; margin: 0 auto; padding: 1rem; }
   color: var(--muted); font-size: 1.15rem; padding: 0 .7rem; cursor: pointer;
 }
 .tier-x:hover { color: #e03131; }
+.tier-memo {
+  width: 100%; max-width: 100%; min-width: 100%;   /* 가로는 티어 행과 동일, 조절 불가 */
+  /* 5줄(line-height 1.5 × 5) + 상하 패딩 = 기본·최소 높이 */
+  height: 8.2rem; min-height: 8.2rem;
+  resize: vertical; overflow: auto;
+  font: inherit; color: inherit; background: var(--card);
+  border: 1px solid var(--border); border-radius: .55rem;
+  padding: .35rem .7rem;
+}
 @media (max-width: 560px) { .tier-label { width: 72px; font-size: .95rem; } }
 
 /* ---------- world cup (독립 화면) ---------- */
@@ -1092,6 +1101,18 @@ function renderTierView(wrap) {
   }
   // 풀("…") = 미분류 아이템 — 항상 가장 아래에 고정
   wrap.append(makeRow("pool", "#c9ced6", all.slice(start), -1));
+  // 하단 메모 — 가로는 티어 행과 같게 고정, 세로는 드래그로 조절하며 내용과 함께 저장한다
+  const memo = document.createElement("textarea");
+  memo.className = "tier-memo";
+  memo.placeholder = "메모";
+  memo.value = cur.save.tierMemo || "";
+  if (cur.save.tierMemoH) memo.style.height = cur.save.tierMemoH + "px";
+  memo.oninput = () => { cur.save.tierMemo = memo.value; scheduleSave(); };
+  memo.addEventListener("pointerup", () => {
+    const h = Math.round(memo.getBoundingClientRect().height);
+    if (h && h !== cur.save.tierMemoH) { cur.save.tierMemoH = h; scheduleSave(); }
+  });
+  wrap.append(memo);
 }
 
 function renderItem(it) {
@@ -1278,6 +1299,8 @@ function saveData() {
     memos: cur.save.memos || {},
     tierNames: cur.save.tierNames || {},
     tierSizes: tierSizes(),
+    tierMemo: cur.save.tierMemo || "",
+    tierMemoH: cur.save.tierMemoH || 0,
   };
 }
 async function writeSaveFile(json) {
