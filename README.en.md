@@ -14,7 +14,7 @@ Runs from a single `index.html` — no server, no install, no build.
   <img src="docs/top10_light.png" width="49%" alt="Top 10 poster — light theme">
 </p>
 
-- **Rank with drag & drop** — tied ranks, Korean chosung search, list/gallery/tier views
+- **Rank with drag & drop** — tier lists, Korean chosung search, list/gallery/tier views
 - **Your data is just files** — images + `info.md` + `save.json`, all on your machine
 - **One-click PNG export** — Instagram 1:1 / Top 10 posters (the images above are real exports)
 
@@ -63,7 +63,7 @@ topics/
 | Switch topics | Dropdown at the top left |
 | Search | Header search box — names & descriptions, Korean chosung (`ㅅㄹㅁ`) supported |
 | Switch views | Tier / List / Gallery buttons; "Cols" sets gallery columns, "Size" sets tier icon size |
-| Build a tier list | Tier view — drag onto a row to tie with that tier, drop between rows for a new tier. 5 tiers by default, "+ Add Tier" to add (max 10), × to delete (its items move to the bottom "…" pool). Click a label to rename |
+| Build a tier list | Tier view — drag onto a row to join that tier; the order inside a tier becomes the rank. 5 tiers by default, "+ Add Tier" to add (max 10), × to delete (its items move to the bottom "…" pool). Click a label to rename |
 | Toggle theme | 🌙 / ☀️ at the top right |
 | Move a rank one step | Hover the rank number → ▲▼ |
 | Type a rank | Click the rank number (Enter to confirm / Esc to cancel) |
@@ -72,8 +72,8 @@ topics/
 | Backup / restore | Export / Import (`save.json` file) |
 | Memo | An input under each item in List view — saved as you type, shown in List view only |
 
-- Typing an existing rank creates a tie: 1, 1, 1, then 4.
-- Numbers above the item count (e.g. 999) insert as sole last; 0 or below as sole first.
+- Typing a rank inserts the item at that position; if it lands inside a tier, it joins that tier.
+- Numbers above the item count (e.g. 999) go to the end of the unranked pool; 0 or below insert as first.
 - Every change is auto-saved instantly ("Saved ✓").
 
 ## Examples
