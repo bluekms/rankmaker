@@ -89,6 +89,6 @@ Folders prefixed with `ex_` are samples — delete them when no longer needed.
 
 ## Author
 
-**bluekms21** — [bluekms21@naver.com](mailto:bluekms21@naver.com) · [blog.naver.com/bluekms21](https://blog.naver.com/bluekms21)
+**CrosS21** — [bluekms21@naver.com](mailto:bluekms21@naver.com) · [blog.naver.com/bluekms21](https://blog.naver.com/bluekms21)
 
 This project was built by **vibe coding** with [Claude Code](https://claude.com/claude-code).

@@ -89,6 +89,6 @@ topics/
 
 ## 개발자
 
-**bluekms21** — [bluekms21@naver.com](mailto:bluekms21@naver.com) · [blog.naver.com/bluekms21](https://blog.naver.com/bluekms21)
+**CrosS21** — [bluekms21@naver.com](mailto:bluekms21@naver.com) · [blog.naver.com/bluekms21](https://blog.naver.com/bluekms21)
 
 이 프로젝트는 [Claude Code](https://claude.com/claude-code)를 이용한 **바이브 코딩**(vibe coding)으로 개발되었습니다.
