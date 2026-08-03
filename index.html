@@ -60,7 +60,7 @@ header .spacer { flex: 1; min-width: .3rem; }
   align-self: flex-start; min-height: 2.15rem;
 }
 #boardTools { display: inline-flex; align-items: center; gap: .4rem; flex: none; }
-#btnCup { min-width: 6.6rem; text-align: center; }
+#btnCup { min-width: 8.2rem; text-align: center; }
 select, button, input {
   font: inherit; color: inherit;
   background: var(--card);
@@ -390,7 +390,7 @@ body.cup-fill main { max-width: none; }
   <select id="topicSelect" hidden></select>
   <!-- 주제의 저장 데이터를 다루는 기능 — 주제 바로 옆 -->
   <span id="boardTools" hidden>
-    <button id="btnExport" class="mini" title="현재 주제의 저장 데이터를 파일로 백업">Export</button>
+    <button id="btnExport" class="mini" title="현재 주제의 저장 데이터를 파일로 백업">Save</button>
     <button id="btnImport" class="mini" title="백업한 save.json 파일을 불러오기">Import</button>
     <input id="importInput" type="file" accept=".json,application/json">
   </span>
@@ -406,7 +406,7 @@ body.cup-fill main { max-width: none; }
     <label id="colWrap" hidden>Cols <input id="colInput" type="number" min="1" max="8"></label>
     <label id="sizeWrap" hidden>Size <input id="sizeInput" type="number" min="40" max="160" step="8"></label>
     <details id="exportMenu" class="menu">
-      <summary>Image Export</summary>
+      <summary>Podium</summary>
       <div class="menu-list">
         <button id="btnImgInsta">Instagram — 1:1 · Top 3</button>
         <button id="btnImgTop10">Poster — Top 10</button>
@@ -415,7 +415,7 @@ body.cup-fill main { max-width: none; }
   </span>
   <!-- 화면이 바뀌어도 항상 있는 전역 토글 — 오른쪽 끝에 고정해 위치가 흔들리지 않는다 -->
   <span id="hdrFixed">
-    <button id="btnCup" class="mini" hidden>🏆 Cup</button>
+    <button id="btnCup" class="mini" hidden>🏆 WorldCup</button>
     <button id="btnTheme" title="라이트/다크 전환">🌙</button>
   </span>
 </header>
@@ -1822,7 +1822,7 @@ function cupSetScreen(on) {
   $("#boardTools").hidden = on;
   const cb = $("#btnCup");
   cb.classList.toggle("active", on);
-  cb.textContent = on ? "← Ranking" : "🏆 Cup";
+  cb.textContent = on ? "← Ranking" : "🏆 WorldCup";
   cb.title = on ? "순위표로 돌아가기" : "이상형 월드컵 — 순위표와 독립된 별도 화면";
   if (on) cupRender();
   else if (cur) syncControls();

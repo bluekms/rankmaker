@@ -3,15 +3,30 @@
 # global
 - ▶ 본 적 있음 [ ]
 
+# 되플레이 - 아 욕하면 안되잖아.svg
+- 👤 되플레이 · 👁 178회
++ 🖼 https://video-phinf.pstatic.net/20250122_58/17374736566120CxLz_JPEG/1Uv8Y9Bmwl_03.jpg
++ 🔗 https://chzzk.naver.com/clips/eV5vtVTpNv
+
 # 시라유키 히나 - 발박수 하는 거 보고 휘둥그레.svg
 - 👤 시라유키 히나 · 👁 399,168회
 + 🖼 https://video-phinf.pstatic.net/20250324_41/1742742768027Ueixt_JPEG/ZTIVw2ab9M_05.jpg
 + 🔗 https://chzzk.naver.com/clips/brl5GPRc6g
 
+# 되플레이 - 인간극장 - 되플레이편.svg
+- 👤 되플레이 · 👁 90회
++ 🖼 https://video-phinf.pstatic.net/20260524_201/1779560246728Dyjoi_JPEG/TKaHqqGeqw_03.jpg
++ 🔗 https://chzzk.naver.com/clips/z94XG348Im
+
 # 오화요 - 오빠 어디가 시불.svg
 - 👤 오화요 · 👁 204,976회
 + 🖼 https://video-phinf.pstatic.net/20250225_14/1740490972247Rz0WH_JPEG/FjdeBnLBoV_03.jpg
 + 🔗 https://chzzk.naver.com/clips/ZUwoUGUN5V
+
+# 되플레이 - 퉁퉁퉁.svg
+- 👤 되플레이 · 👁 87회
++ 🖼 https://video-phinf.pstatic.net/20250607_216/1749297534164UoiXA_JPEG/6fbNiQxWt4_03.jpg
++ 🔗 https://chzzk.naver.com/clips/E6Roet7SCq
 
 # 시라유키 히나 - 해둥이 검거ㅋㅋㅋㅋㅋ.svg
 - 👤 시라유키 히나 · 👁 167,362회
@@ -28,10 +43,20 @@
 + 🖼 https://video-phinf.pstatic.net/20250311_265/1741679898958x3PhL_JPEG/KO62YgabBz_03.jpg
 + 🔗 https://chzzk.naver.com/clips/672ywKpIhn
 
+# 되플레이 - 나락 감지 센서 ON.svg
+- 👤 되플레이 · 👁 67회
++ 🖼 https://video-phinf.pstatic.net/20250413_109/1744472801356euS8M_JPEG/ERkIrmHUJH_03.jpg
++ 🔗 https://chzzk.naver.com/clips/JVLR7CzNqW
+
 # 텐코 시부키 - 반가워서 신나는 부키.svg
 - 👤 텐코 시부키 · 👁 93,957회
 + 🖼 https://video-phinf.pstatic.net/20250113_54/1736762782823M9nA3_JPEG/Ol4UmPwAtV_02.jpg
 + 🔗 https://chzzk.naver.com/clips/0UmCmJrL91
+
+# 되플레이 - 눈치가 빠른 스트리머.svg
+- 👤 되플레이 · 👁 54회
++ 🖼 https://video-phinf.pstatic.net/20250412_283/1744467398450duxaj_JPEG/nRNuFl6orJ_03.jpg
++ 🔗 https://chzzk.naver.com/clips/3blNoIydMM
 
 # 유즈하 리코 - 엉큰리.svg
 - 👤 유즈하 리코 · 👁 92,317회
@@ -63,6 +88,11 @@
 + 🖼 https://video-phinf.pstatic.net/20241204_156/1733241818178vJ7dU_JPEG/DXuvC0H9uh_03.jpg
 + 🔗 https://chzzk.naver.com/clips/hX7xyUpVVw
 
+# 되플레이 - 당장 진행시켜~ 추친력 끝판왕!.svg
+- 👤 되플레이 · 👁 46회
++ 🖼 https://video-phinf.pstatic.net/20250618_54/1750220653020U7hjT_JPEG/jvOinfUMWs_03.jpg
++ 🔗 https://chzzk.naver.com/clips/vdGQUjbWEF
+
 # 허니츄러스 - 착한생각 착한생각2.svg
 - 👤 허니츄러스 · 👁 71,052회
 + 🖼 https://video-phinf.pstatic.net/20250729_70/1753768431228aCStc_JPEG/1rXXGTkoHb_03.jpg
@@ -78,6 +108,11 @@
 + 🖼 https://video-phinf.pstatic.net/20241225_204/1735057898744An7My_JPEG/vpBcboTV5K_03.jpg
 + 🔗 https://chzzk.naver.com/clips/KxQ8NgFoZa
 
+# 되플레이 - 네..네번째 들었어 OK.svg
+- 👤 되플레이 · 👁 39회
++ 🖼 https://video-phinf.pstatic.net/20250412_145/1744469001756gfVW2_JPEG/Fsv9FaQ0jG_03.jpg
++ 🔗 https://chzzk.naver.com/clips/gu4pWEEurW
+
 # 유즈하 리코 - 린 공개곡 리코 반응.svg
 - 👤 유즈하 리코 · 👁 58,029회
 + 🖼 https://video-phinf.pstatic.net/20251225_26/1766589288642gFAXm_JPEG/yh43tbUmbM_03.jpg
@@ -88,10 +123,20 @@
 + 🖼 https://video-phinf.pstatic.net/20250519_180/1747658357240LDesb_JPEG/LPr0FnDhqd_03.jpg
 + 🔗 https://chzzk.naver.com/clips/89HbdrGPZb
 
+# 되플레이 - 산책 할 때는 목줄을 꼭 하고 갑시다.svg
+- 👤 되플레이 · 👁 32회
++ 🖼 https://video-phinf.pstatic.net/20260310_266/1773099295736t0wFT_JPEG/yzBtocPRa6_03.jpg
++ 🔗 https://chzzk.naver.com/clips/ETJgeR6Sif
+
 # 아라하시 타비 - 타비) 이게 왜 유행이... 어디까지 퍼진 거야.svg
 - 👤 아라하시 타비 · 👁 65,446회
 + 🖼 https://video-phinf.pstatic.net/20250627_112/1750957502502ipaBa_JPEG/RLHggzkd4V_03.jpg
 + 🔗 https://chzzk.naver.com/clips/Li9FnNnVER
+
+# 되플레이 - 캡틴아메리카랑 노래하는 자매이카.svg
+- 👤 되플레이 · 👁 27회
++ 🖼 https://video-phinf.pstatic.net/20260525_254/17797099688280rPQJ_JPEG/KLaV8UJgOk_03.jpg
++ 🔗 https://chzzk.naver.com/clips/o3q89g22Zo
 
 # 아오쿠모 린 - 징글 벨 - 청운종.svg
 - 👤 아오쿠모 린 · 👁 55,734회
@@ -172,6 +217,11 @@
 - 👤 아카네 리제 · 👁 45,514회
 + 🖼 https://video-phinf.pstatic.net/20250621_284/1750501291000GALlp_JPEG/vh4G2OGuAk_03.jpg
 + 🔗 https://chzzk.naver.com/clips/wewFo4ZCq3
+
+# 되플레이 - 다큐인가예능인가(feat.셀프 인간극장 브금).svg
+- 👤 되플레이 · 👁 27회
++ 🖼 https://video-phinf.pstatic.net/20260524_176/1779559303320ll2ge_JPEG/iR60q0tAUd_03.jpg
++ 🔗 https://chzzk.naver.com/clips/yl3lzCdiHy
 
 # 아야츠노 유니 - 나서스.svg
 - 👤 아야츠노 유니 · 👁 45,344회
