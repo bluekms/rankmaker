@@ -83,6 +83,7 @@
 + ♟️ 디자이너: Eric Hong, Mathieu Rivero
 + 🎨 아티스트: Jiahui Eva Gao, Gautier Maia, Stefano Martinuz, Erica Tormen
 + 🔗 https://boardgamegeek.com/boardgameexpansion/436651/the-vale-of-eternity-curse
++ 🖼 https://cf.geekdo-images.com/lRRyWRygB4rFaEgQ8JmtNw__original/img/kZabQbsrHWlalE-LA6u5i8Quzhg=/0x0/filters:format(png)/pic8879294.png
 
 # 지도 제작자들 맵 팩 5 - 케스라의 초지 레드투스와 골드벨리.png
 - 👥 인원: 1 ~ 75 (2~3인 베스트)
@@ -93,6 +94,7 @@
 + ♟️ 디자이너: Jordy Adan, John Brieger
 + 🎨 아티스트: Lucas Ribeiro
 + 🔗 https://boardgamegeek.com/boardgameexpansion/353864/cartographers-map-pack-5-kethras-steppe-redtooth-a
++ 🖼 https://cf.geekdo-images.com/GlaRQnt0b_JTdwgiPioFEw__original/img/RZbz2uUuSE8Wbo1wURvTINM5r6g=/0x0/filters:format(png)/pic6596236.png
 
 # 베일 오브 이터니티 아티팩트.png
 - 👥 인원: 2 ~ 4 (2~3인 베스트)
@@ -103,6 +105,7 @@
 + ♟️ 디자이너: Eric Hong, Mathieu Rivero
 + 🎨 아티스트: Jacqui Davis, Jiahui Eva Gao, Gautier Maia, Stefano Martinuz, Erica Tormen
 + 🔗 https://boardgamegeek.com/boardgameexpansion/421904/the-vale-of-eternity-artifacts
++ 🖼 https://cf.geekdo-images.com/w7sysEnnXwVe52oucO3T7w__original/img/BsrJW8ae9ABLWFUYLPvWn1PjZnk=/0x0/filters:format(png)/pic8231216.png
 
 # 롤 플레이어 어드벤처 네프라스의 심판.jpg
 - 👥 인원: 1 ~ 4 (3인 베스트)
@@ -113,6 +116,7 @@
 + ♟️ 디자이너: Seth Johnson, Jon Leitheusser, Keith Matejka, James William Ryan, Peter Andrew Ryan
 + 🎨 아티스트: JJ Ariosa, Veronika Fedorova, Damien Mammoliti
 + 🔗 https://boardgamegeek.com/boardgameexpansion/312235/roll-player-adventures-nefrass-judgement
++ 🖼 https://cf.geekdo-images.com/kK8opQLtWnuiZYLqdCrsnw__original/img/-BDW-G4N4DoqPw9bf0Mu8kmX2j4=/0x0/filters:format(jpeg)/pic5478448.jpg
 
 # 지도 제작자들 맵 팩 1 - 네블리스 불꽃의 차원계.png
 - 👥 인원: 1 ~ 75 (3~4인 베스트)
@@ -123,6 +127,7 @@
 + ♟️ 디자이너: Jordy Adan, John Brieger
 + 🎨 아티스트: Lucas Ribeiro
 + 🔗 https://boardgamegeek.com/boardgameexpansion/319272/cartographers-map-pack-1-nebblis-plane-of-flame
++ 🖼 https://cf.geekdo-images.com/4KQ2sdpGQ2g2vih-rkJhVQ__original/img/VqRexsU445QtMBRzfmxwCq_WXjw=/0x0/filters:format(png)/pic5648477.png
 
 # 그랜드 오스트리아 호텔.jpg
 - 👥 인원: 2 ~ 4 (2인 베스트)
@@ -143,6 +148,7 @@
 + ♟️ 디자이너: Jordy Adan, John Brieger
 + 🎨 아티스트: JJ Ariosa, Lucas Ribeiro
 + 🔗 https://boardgamegeek.com/boardgameexpansion/353865/cartographers-map-pack-6-hornhelm-wasteland-market
++ 🖼 https://cf.geekdo-images.com/O-e32Oj_mPCVwwttp3dfFA__original/img/OJGFKxNqaBGjpPWcBIdQ7nbjs8g=/0x0/filters:format(png)/pic6596237.png
 
 # 엔들리스 윈터 선조들.jpg
 - 👥 인원: 1 ~ 4 (2인 베스트)
@@ -153,6 +159,7 @@
 + ♟️ 디자이너: Stan Kordonskiy, Jonny Pac, Drake Villareal
 + 🎨 아티스트: Mihajlo Dimitrievski, Yoma
 + 🔗 https://boardgamegeek.com/boardgameexpansion/323060/endless-winter-ancestors
++ 🖼 https://cf.geekdo-images.com/pNokVswNnhjnkVvJqLUbxQ__original/img/8AWF36rVCXi6P5pfEJODWHsq8PM=/0x0/filters:format(jpeg)/pic5741362.jpg
 
 # 지도 제작자들 맵 팩 4 - 얼어붙은 광야 서리 거인의 땅.png
 - 👥 인원: 1 ~ 75 (5인 베스트)
@@ -163,6 +170,7 @@
 + ♟️ 디자이너: Jordy Adan, John Brieger
 + 🎨 아티스트: Lucas Ribeiro, Diego Sá
 + 🔗 https://boardgamegeek.com/boardgameexpansion/353862/cartographers-map-pack-4-frozen-expanse-realm-of-f
++ 🖼 https://cf.geekdo-images.com/WHQ09I0bYEEvoYg9Z5aljQ__original/img/j6GTJSIO-gOfeqpcQZnnHkarfys=/0x0/filters:format(png)/pic6596233.png
 
 # 태양 너머로.jpg
 - 👥 인원: 2 ~ 4 (3인 베스트)
@@ -183,6 +191,7 @@
 + ♟️ 디자이너: Stan Kordonskiy, Jonny Pac
 + 🎨 아티스트: Mihajlo Dimitrievski, Yoma
 + 🔗 https://boardgamegeek.com/boardgameexpansion/323056/endless-winter-rivers-and-rafts
++ 🖼 https://cf.geekdo-images.com/9-hJ9Rr74tv9ESrMjIr5RA__original/img/JtSJc2n7qaKhi1CuaVf4Yo2uV3Y=/0x0/filters:format(jpeg)/pic5741337.jpg
 
 # 지도 제작자들 맵 팩 2 - 지식의 차원계.png
 - 👥 인원: 1 ~ 75 (3~4인 베스트)
@@ -193,6 +202,7 @@
 + ♟️ 디자이너: Jordy Adan, John Brieger
 + 🎨 아티스트: Lucas Ribeiro
 + 🔗 https://boardgamegeek.com/boardgameexpansion/319273/cartographers-map-pack-2-affril-plane-of-knowledge
++ 🖼 https://cf.geekdo-images.com/7b-bqQ4DCvhFgxLV34tA5g__original/img/Y1CCtkuAeFHcDiPEg9Nd3ovYQrw=/0x0/filters:format(png)/pic5648476.png
 
 # 지도 제작자들 맵 팩 3 - 지하도시 사벡의 지하.png
 - 👥 인원: 1 ~ 75 (1인 베스트)
@@ -203,6 +213,7 @@
 + ♟️ 디자이너: Jordy Adan, John Brieger
 + 🎨 아티스트: Lucas Ribeiro
 + 🔗 https://boardgamegeek.com/boardgameexpansion/319274/cartographers-map-pack-3-undercity-depths-of-sabek
++ 🖼 https://cf.geekdo-images.com/VBjrkPfOsRN9WM8ngio-ow__original/img/Ztn0-dEWNPk0lKfD56UfspIUEoQ=/0x0/filters:format(png)/pic5648475.png
 
 # 엔들리스 윈터 동굴 벽화.jpg
 - 👥 인원: 1 ~ 4 (3~4인 베스트)
@@ -213,6 +224,7 @@
 + ♟️ 디자이너: Stan Kordonskiy, Jonny Pac
 + 🎨 아티스트: Mihajlo Dimitrievski, Yoma
 + 🔗 https://boardgamegeek.com/boardgameexpansion/323058/endless-winter-cave-paintings
++ 🖼 https://cf.geekdo-images.com/A5rWIhz3M6IpMN8RvH2oGQ__original/img/qnn0zJ6yiGtFUnFwq1ioVta1K1Y=/0x0/filters:format(jpeg)/pic5741331.jpg
 
 # 태양 너머로 새 여명의 지도자들.jpg
 - 👥 인원: 1 ~ 4 (3인 베스트)
@@ -223,6 +235,7 @@
 + ♟️ 디자이너: Dennis K. Chan, Joseph Summa
 + 🎨 아티스트: Franz Vohwinkel
 + 🔗 https://boardgamegeek.com/boardgameexpansion/378291/beyond-the-sun-leaders-of-the-new-dawn
++ 🖼 https://cf.geekdo-images.com/u_jw17ffD1Qr1OmVCsNCRw__original/img/wAd9G71avrJ5I01t40_qDJh4-Bs=/0x0/filters:format(jpeg)/pic7362301.jpg
 
 # 하다라 귀족과 발명.jpg
 - 👥 인원: 2 ~ 5 (4~5인 베스트)
@@ -233,6 +246,7 @@
 + ♟️ 디자이너: Benjamin Schwer
 + 🎨 아티스트: Dominik Mayer
 + 🔗 https://boardgamegeek.com/boardgameexpansion/290042/hadara-nobles-and-inventions
++ 🖼 https://cf.geekdo-images.com/gWb5haRoXRV2hTboVapHhg__original/img/0bkdwoA9qzfMeIur0QEugtPcXkc=/0x0/filters:format(jpeg)/pic4982367.jpg
 
 # 지도 제작자들 습격 프로모 카드.png
 - 👥 인원: 1 ~ 100 (2, 4인 베스트)
@@ -243,6 +257,7 @@
 + ♟️ 디자이너: Jordy Adan, John Brieger
 + 🎨 아티스트: Luis Francisco, Lucas Ribeiro
 + 🔗 https://boardgamegeek.com/boardgameexpansion/302884/cartographers-ambush-mini-expansion
++ 🖼 https://cf.geekdo-images.com/1KGozzFfiNyM1OVSvujGFA__original/img/IEnBvtcf49PKwICzGWH_aXCnwYY=/0x0/filters:format(png)/pic5533466.png
 
 # 센추리 향신료의 길 - 보너스 카드 2.jpg
 - 👥 인원: 2 ~ 5 (4인 베스트)
@@ -253,6 +268,7 @@
 + ♟️ 디자이너: Emerson Matsuuchi
 + 🎨 아티스트: David Richards, Fernanda Suárez
 + 🔗 https://boardgamegeek.com/boardgameexpansion/263751/century-spice-road-bonus-cards-2
++ 🖼 https://cf.geekdo-images.com/040XuTnlcaM3MbnLiV8cug__original/img/_PzUOYmCMPeDygff0sNcPN4oNHQ=/0x0/filters:format(jpeg)/pic4447987.jpg
 
 # 고빅.png
 - 👥 인원: 3 ~ 6
@@ -283,6 +299,7 @@
 + ♟️ 디자이너: Adrian Adamescu, Daryl Andrews
 + 🎨 아티스트: Peter Wocken
 + 🔗 https://boardgamegeek.com/boardgameexpansion/244262/sagrada-5-6-player-expansion
++ 🖼 https://cf.geekdo-images.com/Fa7AXB525_XEDatF3jOOWQ__original/img/puYBg5Ccukq74MHLhEaZ3iKEJW4=/0x0/filters:format(jpeg)/pic4238050.jpg
 
 # 이 개 누구 개.png
 - 👥 인원: 2 ~ 6
@@ -303,6 +320,7 @@
 + ♟️ 디자이너: -
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgameexpansion/287567/roll-player-cartographer-backstory-promo-card
++ 🖼 https://cf.geekdo-images.com/-X1_uw5L3MyXrtbWMmJaRw__original/img/kEjovM9uc3zS54fOZ4y42F82B2M=/0x0/filters:format(jpeg)/pic4972172.jpg
 
 # 사그라다 수평 완벽 대칭.png
 - 👥 인원: 1 ~ 4 (5~None인 베스트)
@@ -313,6 +331,7 @@
 + ♟️ 디자이너: Adrian Adamescu, Daryl Andrews
 + 🎨 아티스트: Adrian Adamescu, Daryl Andrews, Peter Wocken
 + 🔗 https://boardgamegeek.com/boardgameexpansion/286275/sagrada-horizontal-symmetry-promo-card
++ 🖼 https://cf.geekdo-images.com/ThJMHeLFN_9MiwUrQFBSmw__original/img/A5okItkwpL2JZhFJg-Mr9Qd0e4g=/0x0/filters:format(png)/pic4887248.png
 
 # 엔들리스 윈터.jpg
 - 👥 인원: 1 ~ 4 (3인 베스트)
@@ -333,6 +352,7 @@
 + ♟️ 디자이너: Keith Matejka
 + 🎨 아티스트: JJ Ariosa, Luis Francisco
 + 🔗 https://boardgamegeek.com/boardgameexpansion/209484/roll-player-frogkin-promo-punchboard
++ 🖼 https://cf.geekdo-images.com/LV1ViTY0vDrhMQ2AOiC5DA__original/img/sHqxu-CBWoJ4Tka8yW8r92b136o=/0x0/filters:format(jpeg)/pic3192746.jpg
 
 # 하다라 시장과 기념물.jpg
 - 👥 인원: 2 ~ 5 (4~5인 베스트)
@@ -343,6 +363,7 @@
 + ♟️ 디자이너: Benjamin Schwer
 + 🎨 아티스트: Dominik Mayer
 + 🔗 https://boardgamegeek.com/boardgameexpansion/290045/hadara-marketplaces-and-monuments
++ 🖼 https://cf.geekdo-images.com/3YiiLVhTcDblIG13v6Y8Pw__original/img/NHnRH9D0GcoRtvjKIM9_71lGl8M=/0x0/filters:format(jpeg)/pic4982365.jpg
 
 # 베일 오브 이터니티.png
 - 👥 인원: 2 ~ 4 (3인 베스트)
@@ -383,6 +404,7 @@
 + ♟️ 디자이너: Adrian Adamescu, Daryl Andrews
 + 🎨 아티스트: Matt Paquette & Co., Peter Wocken
 + 🔗 https://boardgamegeek.com/boardgameexpansion/263695/sagrada-the-great-facades-passion
++ 🖼 https://cf.geekdo-images.com/38rJtMZP6z5SeDwexSe-6Q__original/img/TS9lSFsakHo3Lt0qgH0S-iqhq4k=/0x0/filters:format(jpeg)/pic4945855.jpg
 
 # 카르디아 쟁탈전.png
 - 👥 인원: 2 (2인 베스트)
@@ -413,6 +435,7 @@
 + ♟️ 디자이너: Chris Choi
 + 🎨 아티스트: 9george
 + 🔗 https://boardgamegeek.com/boardgameexpansion/393518/catch-sketch-magic-hat
++ 🖼 https://cf.geekdo-images.com/h_obPpdEg7H6K0VzG552PQ__original/img/zd7C9f7f85B1nSQnS-LuMlYnfhw=/0x0/filters:format(png)/pic7595644.png
 
 # 캐치 스케치.jpg
 - 👥 인원: 3 ~ 6 (5인 베스트)
@@ -453,6 +476,7 @@
 + ♟️ 디자이너: Stan Kordonskiy, Drake Villareal
 + 🎨 아티스트: Mihajlo Dimitrievski
 + 🔗 https://boardgamegeek.com/boardgameexpansion/372345/endless-winter-canine-familiars-module
++ 🖼 https://cf.geekdo-images.com/mUElGrw_sOXCDmnir_w55w__original/img/0RyRdQ8z1yOosfNW1td6TyvEzcY=/0x0/filters:format(jpeg)/pic7854151.jpg
 
 # 미크로 마크로 크라임 시티.jpg
 - 👥 인원: 1 ~ 4 (2인 베스트)
@@ -533,6 +557,7 @@
 + ♟️ 디자이너: Adrien Hesling, Axel Hesling
 + 🎨 아티스트: Tomasz Jedruszek
 + 🔗 https://boardgamegeek.com/boardgameexpansion/324219/oriflamme-the-general
++ 🖼 https://cf.geekdo-images.com/YeAt6F2Se0BXXJgDU6Qm0A__original/img/zq9KxT1dMdHkGXWpr_9Tk7Ujr6A=/0x0/filters:format(jpeg)/pic7530200.jpg
 
 # 탈리스만 (개정 4판) 사신 확장.jpg
 - 👥 인원: 2 ~ 6 (4인 베스트)
@@ -543,6 +568,7 @@
 + ♟️ 디자이너: John Goodenough
 + 🎨 아티스트: Ryan Barger, Massimiliano Bertolini, Felicia Cano, Julie Dillon, John Goodenough, Robert Harris, Ralph Horsley, McLean Kendree, Federico Piatti, Frank Walls, Mark Winters
 + 🔗 https://boardgamegeek.com/boardgameexpansion/38025/talisman-revised-4th-edition-the-reaper-expansion
++ 🖼 https://cf.geekdo-images.com/D8suVuNCdGFYkfXtAJGDnw__original/img/XQsGJelwTSsqroArlzxz__gCoYg=/0x0/filters:format(jpeg)/pic5151633.jpg
 
 # 타케노코 빅 박스.jpg
 - 👥 인원: 2 ~ 4 (2인 베스트)
@@ -563,6 +589,7 @@
 + ♟️ 디자이너: Yoshiyuki Arai (あらいよしゆき)
 + 🎨 아티스트: Yann Tisseron
 + 🔗 https://boardgamegeek.com/boardgameexpansion/232265/fantasy-defense-the-stone-king
++ 🖼 https://cf.geekdo-images.com/Q-a1BCsfjwD_OeYB-yPqfg__original/img/ZETQ_ux6YEP4pndEvfKKcyqkvU0=/0x0/filters:format(jpeg)/pic3733348.jpg
 
 # 돈키호테.png
 - 👥 인원: 3 ~ 5
@@ -773,6 +800,7 @@
 + ♟️ 디자이너: Keith Matejka
 + 🎨 아티스트: JJ Ariosa, Luis Francisco
 + 🔗 https://boardgamegeek.com/boardgameexpansion/214327/roll-player-cursed-ring-promo-card
++ 🖼 https://cf.geekdo-images.com/KiosYShUdLatU5TRPGPJcw__original/img/CGth8nNcTHARiHp3zhdUUW996J8=/0x0/filters:format(jpeg)/pic3366915.jpg
 
 # 제왕의 깃발.jpg
 - 👥 인원: 3 ~ 5 (4인 베스트)
@@ -883,6 +911,7 @@
 + ♟️ 디자이너: Yohan Goh
 + 🎨 아티스트: Vincent Dutrait
 + 🔗 https://boardgamegeek.com/boardgameexpansion/446266/kushi-express-grandmaster
++ 🖼 https://cf.geekdo-images.com/5N5a_XdBz0v9kGn7U_tkIQ__original/img/pWE8f8DoLw274XWxVKs7A7VgHCM=/0x0/filters:format(png)/pic8873466.png
 
 # 참새작.jpg
 - 👥 인원: 2 ~ 5 (3인 베스트)
@@ -1763,6 +1792,7 @@
 + ♟️ 디자이너: Cédric Millet
 + 🎨 아티스트: Angelina Costamagna, Mathieu Leyssenne, Sabrina Tobal
 + 🔗 https://boardgamegeek.com/boardgameexpansion/249087/meeple-circus-tomatoes-and-awards
++ 🖼 https://cf.geekdo-images.com/qDf7Bv23TnKYLyP7lTQtaw__original/img/jiy0SXcdr2NYOXpDp-sUrJDLG-s=/0x0/filters:format(jpeg)/pic4044619.jpg
 
 # 타코 캣 고트 치즈 피자 체험판.jpg
 - 👥 인원: 2 ~ 3 (3인 베스트)
@@ -2353,6 +2383,7 @@
 + ♟️ 디자이너: -
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgameexpansion/430234/the-vale-of-eternity-meeps-the-mascot-promo-card
++ 🖼 https://cf.geekdo-images.com/x6xZgqEXHtqablenrJeSHA__original/img/cr208RP07m7cpvI4mDJcMY-tox8=/0x0/filters:format(jpeg)/pic8463890.jpg
 
 # 클루리스 클럽.png
 - 👥 인원: 3 ~ 6
