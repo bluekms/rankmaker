@@ -1,0 +1,23 @@
+# push · PR 마다 순수 로직 테스트를 돌린다.
+# 브라우저가 필요한 확인은 tests/SCENARIOS.md 를 사람이 따라간다.
+name: test
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  unit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      # 의존성이 없으므로 설치 단계가 필요 없다
+      - name: 순수 로직 테스트
+        run: node tests/unit.mjs

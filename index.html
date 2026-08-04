@@ -18,6 +18,8 @@
   --shadow: 0 1px 3px rgba(0,0,0,.08);
   --screen: rgba(255,255,255,.7);   /* 라운드 배너 뒤에 까는 반투명 스크린 */
   --gold: #a8780c;
+  --mark: #ffdf7e;        /* 검색어 하이라이트 */
+  --mark-text: #3b2f00;
   color-scheme: light;
 }
 :root[data-theme="dark"] {
@@ -31,6 +33,8 @@
   --shadow: 0 1px 3px rgba(0,0,0,.4);
   --screen: rgba(0,0,0,.66);
   --gold: #f2c94c;
+  --mark: #6d5411;
+  --mark-text: #ffe9a8;
   color-scheme: dark;
 }
 * { box-sizing: border-box; }
@@ -42,25 +46,68 @@ body {
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans KR", sans-serif;
   line-height: 1.5;
 }
+/* ---------- 상단바 ----------
+   세 묶음이 각각 다른 일을 한다: 왼쪽=데이터 · 가운데=검색 · 오른쪽=보기와 모드.
+   칸을 못박아 두어 무엇이 숨겨져도 다른 묶음의 자리로 흘러들지 않는다. */
 header {
   position: sticky; top: 0; z-index: 10;
-  display: flex; align-items: center; gap: .6rem;
+  display: grid; grid-template-columns: 1fr minmax(0, auto) 1fr;
+  align-items: center; gap: .6rem;
   padding: .6rem .9rem;
   background: var(--card);
   border-bottom: 1px solid var(--border);
   box-shadow: var(--shadow);
-  flex-wrap: nowrap;              /* 줄바꿈이 생기면 오른쪽 고정 버튼이 튄다 */
 }
-header .spacer { flex: 1; min-width: .3rem; }
-#topicSelect { max-width: 34vw; min-width: 5rem; }
-/* 순위표 전용 컨트롤 — 좁아지면 이 안에서만 줄바꿈된다 */
-/* 왼쪽 컨트롤이 여러 줄로 늘어나도 첫 줄에 그대로 머문다 — 세로 위치까지 고정 */
+
+/* 왼쪽 — 주제와 그 저장 데이터 */
+#hdrLeft { display: inline-flex; align-items: center; gap: .6rem; min-width: 0; grid-column: 1; justify-self: start; }
+#topicSelect { max-width: 22vw; min-width: 5rem; }
+#boardTools { display: inline-flex; align-items: center; gap: .4rem; flex: none; }
+#status {
+  flex: 0 1 auto; min-width: 0; margin-left: .8rem;
+  overflow: hidden; white-space: nowrap; text-overflow: ellipsis;
+  font-size: .85rem; color: var(--muted); opacity: 0; transition: opacity .3s;
+}
+#status.show { opacity: 1; }
+
+/* 가운데 — 되돌리기와 검색. 자리가 모자라면 여기가 가장 먼저 양보한다 */
+#searchWrap {
+  display: inline-flex; align-items: center; gap: .4rem;
+  min-width: 0; max-width: 100%; grid-column: 2; justify-self: center;
+}
+#btnUndo { flex: none; margin-right: .3rem; }
+#btnUndo[disabled] { opacity: .4; cursor: default; }
+#btnUndo[disabled]:hover { border-color: var(--border); }
+/* 양옆 묶음이 쓰는 폭(대략 60rem)을 뺀 '남는 자리'를 그대로 쓴다.
+   넓으면 24rem 에서 멈추고, 좁아도 4.5rem 아래로는 내려가지 않는다 —
+   placeholder 의 'Sea' 정도는 보여야 검색창인 줄 알 수 있다. */
+#searchInput { width: clamp(4.5rem, calc(100vw - 60rem), 24rem); min-width: 4.5rem; flex: 0 1 auto; }
+#descWrap {
+  display: inline-flex; align-items: center; gap: .25rem; flex: none;
+  font-size: .85rem; color: var(--muted); white-space: nowrap; cursor: pointer;
+}
+
+/* 오른쪽 — 보기·출력, 그리고 선 너머의 모드 전환·전역 설정 */
+#hdrRight { display: inline-flex; align-items: center; gap: .6rem; min-width: 0; grid-column: 3; justify-self: end; }
+#viewControls {
+  display: inline-flex; align-items: center; gap: .6rem;
+  flex-wrap: wrap; justify-content: flex-end;
+  min-width: 0;                   /* 좁아지면 밖으로 넘치지 말고 안에서 줄바꿈 */
+}
+#colWrap, #sizeWrap { display: inline-flex; align-items: center; gap: .35rem; font-size: .9rem; color: var(--muted); }
+#colInput { width: 3.4rem; padding: .3rem .4rem; text-align: center; }
+#sizeInput { width: 4.2rem; padding: .3rem .4rem; text-align: center; }
+/* 보기 묶음이 여러 줄로 늘어나도 첫 줄에 머문다 — 세로 위치까지 고정 */
 #hdrFixed {
   display: inline-flex; align-items: center; gap: .6rem; flex: none;
   align-self: flex-start; min-height: 2.15rem;
+  padding-left: .9rem; border-left: 1px solid var(--border);
 }
-#boardTools { display: inline-flex; align-items: center; gap: .4rem; flex: none; }
+#viewControls[hidden] + #hdrFixed { padding-left: 0; border-left: 0; }   /* 선만 남지 않게 */
 #btnCup { min-width: 8.2rem; text-align: center; }
+#btnTheme { font-size: 1.05rem; padding: .3rem .55rem; }
+
+/* ---------- 공통 컨트롤 ---------- */
 select, button, input {
   font: inherit; color: inherit;
   background: var(--card);
@@ -70,21 +117,10 @@ select, button, input {
 }
 button { cursor: pointer; }
 button:hover { border-color: var(--accent); }
+.mini { font-size: .82rem; padding: .3rem .55rem; color: var(--muted); }
 .seg { display: inline-flex; border: 1px solid var(--border); border-radius: .55rem; overflow: hidden; }
 .seg button { border: 0; border-radius: 0; background: transparent; }
 .seg button.active { background: var(--accent); color: #fff; }
-#colWrap, #sizeWrap { display: inline-flex; align-items: center; gap: .35rem; font-size: .9rem; color: var(--muted); }
-#colInput { width: 3.4rem; padding: .3rem .4rem; text-align: center; }
-#sizeInput { width: 4.2rem; padding: .3rem .4rem; text-align: center; }
-/* 좁아지면 왼쪽 항목이 먼저 줄어든다 — 오른쪽 고정 버튼이 밀리거나 넘치지 않게 */
-#searchInput { width: 11rem; min-width: 0; flex: 0 1 auto; }
-#status { flex: 0 1 auto; min-width: 0; overflow: hidden; white-space: nowrap; }
-#noResult { text-align: center; color: var(--muted); padding: 2.5rem 0; grid-column: 1 / -1; }
-#viewControls {
-  display: inline-flex; align-items: center; gap: .6rem;
-  flex-wrap: wrap; justify-content: flex-end;
-  min-width: 0;                   /* 좁아지면 밖으로 넘치지 말고 안에서 줄바꿈 */
-}
 details.menu { position: relative; }
 details.menu summary {
   list-style: none; cursor: pointer;
@@ -101,13 +137,10 @@ details.menu summary:hover, details.menu[open] summary { border-color: var(--acc
 }
 .menu-list button { border: 0; border-radius: 0; background: transparent; text-align: left; padding: .55rem .8rem; font-size: .88rem; }
 .menu-list button:hover { background: var(--accent-soft); }
-#btnTheme { font-size: 1.05rem; padding: .3rem .55rem; }
-.mini { font-size: .82rem; padding: .3rem .55rem; color: var(--muted); }
-#status { font-size: .85rem; color: var(--muted); opacity: 0; transition: opacity .3s; text-overflow: ellipsis; }
-#status.show { opacity: 1; }
 #importInput, #dirInput { display: none; }
 
 main { max-width: 1100px; margin: 0 auto; padding: 1rem; }
+#noResult { text-align: center; color: var(--muted); padding: 2.5rem 0; grid-column: 1 / -1; }
 
 /* ---------- welcome ---------- */
 #welcome {
@@ -384,48 +417,94 @@ body.cup-fill main { max-width: none; }
   text-align: center; padding: 1.2rem 0 1.6rem;
   font-size: .8rem; color: var(--muted);
 }
+mark {
+  background: var(--mark); color: var(--mark-text);
+  border-radius: .2rem; padding: 0 .12em;
+}
 #credit a { color: var(--muted); }
 #credit a:hover { color: var(--accent); }
 
+/* 포스터에 쓸 이미지 파일이 없을 때의 안내창 */
+#imgHelp {
+  border: 1px solid var(--border); border-radius: .8rem;
+  background: var(--card); color: var(--text);
+  box-shadow: 0 8px 30px rgba(0,0,0,.18);
+  padding: 1.2rem 1.3rem; max-width: 40rem; width: calc(100vw - 2rem);
+}
+#imgHelp::backdrop { background: rgba(0,0,0,.45); }
+#imgHelp h3 { margin: 0 0 .5rem; font-size: 1.05rem; }
+#imgHelp p { margin: .45rem 0; font-size: .88rem; line-height: 1.55; color: var(--muted); }
+#imgHelp code {
+  background: var(--accent-soft); color: var(--text);
+  padding: .08rem .3rem; border-radius: .3rem; font-size: .85em;
+  word-break: break-all;
+}
+#imgHelpList {
+  max-height: 40vh; overflow: auto; margin: .8rem 0;
+  border: 1px solid var(--border); border-radius: .55rem;
+}
+.ih-row {
+  display: flex; align-items: center; gap: .6rem;
+  padding: .5rem .65rem; border-bottom: 1px solid var(--border); font-size: .85rem;
+}
+.ih-row:last-child { border-bottom: 0; }
+.ih-name { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ih-row a { flex: none; color: var(--accent); }
+#imgHelp .cup-actions { margin-top: 1rem; }
+
+/* 좁아지는 순서. 검색창은 위의 clamp 로 연속적으로 줄어 960px 에서 0 이 된다.
+   다른 묶음이 양보하는 것은 그 뒤부터다. */
+@media (max-width: 960px) { #descWrap span { display: none; } }   /* 가운데에 남은 글자 */
+@media (max-width: 820px) { #btnCup { min-width: 0; } }           /* WorldCup 고정폭 해제 */
 @media (max-width: 560px) {
   #items.list .thumb { width: 56px; height: 56px; }
-  #searchInput { width: 8rem; }
+  #topicSelect { max-width: 30vw; }
   main { padding: .7rem; }
 }
 </style>
 </head>
 <body>
 <header>
-  <select id="topicSelect" hidden></select>
-  <!-- 주제의 저장 데이터를 다루는 기능 — 주제 바로 옆 -->
-  <span id="boardTools" hidden>
-    <button id="btnExport" class="mini" title="현재 주제의 저장 데이터를 파일로 백업">Save</button>
-    <button id="btnImport" class="mini" title="백업한 save.json 파일을 불러오기">Import</button>
-    <input id="importInput" type="file" accept=".json,application/json">
-  </span>
-  <input id="searchInput" type="search" placeholder="검색 (초성 지원)" hidden>
-  <span id="status"></span>
-  <div class="spacer"></div>
-  <span id="viewControls" hidden>
-    <span class="seg" id="viewSeg">
-      <button id="btnTier">Tier</button>
-      <button id="btnList">List</button>
-      <button id="btnGrid">Gallery</button>
+  <!-- 왼쪽: 주제와 그 저장 데이터를 다루는 것들 -->
+  <span id="hdrLeft">
+    <select id="topicSelect" hidden></select>
+    <span id="boardTools" hidden>
+      <button id="btnExport" class="mini" title="현재 주제의 저장 데이터를 파일로 백업">Save</button>
+      <button id="btnImport" class="mini" title="백업한 save.json 파일을 불러오기">Load</button>
+      <input id="importInput" type="file" accept=".json,application/json">
     </span>
-    <label id="colWrap" hidden>Cols <input id="colInput" type="number" min="1" max="8"></label>
-    <label id="sizeWrap" hidden>Size <input id="sizeInput" type="number" min="40" max="160" step="8"></label>
-    <details id="exportMenu" class="menu">
-      <summary>Podium</summary>
-      <div class="menu-list">
-        <button id="btnImgInsta">Instagram — 1:1 · Top 3</button>
-        <button id="btnImgTop10">Poster — Top 10</button>
-      </div>
-    </details>
+    <span id="status"></span>
   </span>
-  <!-- 화면이 바뀌어도 항상 있는 전역 토글 — 오른쪽 끝에 고정해 위치가 흔들리지 않는다 -->
-  <span id="hdrFixed">
-    <button id="btnCup" class="mini" hidden>🏆 WorldCup</button>
-    <button id="btnTheme" title="라이트/다크 전환">🌙</button>
+  <!-- 가운데: 검색 -->
+  <span id="searchWrap" hidden>
+    <button id="btnUndo" class="mini" disabled>↶ Undo</button>
+    <input id="searchInput" type="search" placeholder="Search (초성 지원)">
+    <!-- 기본은 아이템명만 검색한다. 켜면 설명까지 넓힌다 -->
+    <label id="descWrap" title="설명까지 검색합니다"><input id="descChk" type="checkbox"><span>All Text</span></label>
+  </span>
+  <!-- 오른쪽: 보기와 출력 -->
+  <span id="hdrRight">
+    <span id="viewControls" hidden>
+      <span class="seg" id="viewSeg">
+        <button id="btnTier">Tier</button>
+        <button id="btnList">List</button>
+        <button id="btnGrid">Gallery</button>
+      </span>
+      <label id="colWrap" hidden>Cols <input id="colInput" type="number" min="1" max="8"></label>
+      <label id="sizeWrap" hidden>Size <input id="sizeInput" type="number" min="40" max="160" step="8"></label>
+      <details id="exportMenu" class="menu">
+        <summary>Podium</summary>
+        <div class="menu-list">
+          <button id="btnImgInsta">Instagram — 1:1 · Top 3</button>
+          <button id="btnImgTop10">Poster — Top 10</button>
+        </div>
+      </details>
+    </span>
+    <!-- 화면이 바뀌어도 항상 있는 전역 토글 — 오른쪽 끝에 고정해 위치가 흔들리지 않는다 -->
+    <span id="hdrFixed">
+      <button id="btnCup" class="mini" hidden>🏆 WorldCup</button>
+      <button id="btnTheme" title="라이트/다크 전환">🌙</button>
+    </span>
   </span>
 </header>
 
@@ -449,6 +528,26 @@ body.cup-fill main { max-width: none; }
   </section>
   <section id="cup" hidden></section>
 </main>
+
+<!-- 포스터를 만들 때 원격 이미지는 캔버스에 못 그린다 — 파일로 받아 달라고 안내한다 -->
+<dialog id="imgHelp">
+  <h3>포스터를 만들려면 이미지 파일이 필요합니다</h3>
+  <p>아래 항목은 이미지가 <b>주소로만</b> 있습니다. 화면에는 잘 보이지만,
+  이미지가 있는 서버가 다른 사이트의 사용을 허용하지 않아 <b>포스터 그림에는 넣을 수 없습니다</b>
+  (넣으면 이름 카드로 대체됩니다). 브라우저 보안 규칙이라 우회할 방법이 없습니다.</p>
+  <p><b>이렇게 하시면 됩니다</b> — ① <b>[이미지 열기]</b>로 그림을 띄우고 ② 마우스 오른쪽 → <b>다른 이름으로 저장</b> →
+  ③ <code>topics/images/</code> 폴더에 <b>아래 파일명 그대로</b> 저장 → ④ <b>저장 버튼을 다시 누르세요.</b>
+  진행 상황은 그대로 유지되니 월드컵을 다시 하실 필요는 없습니다.</p>
+  <p>이 폴더는 <b>모든 주제가 함께 쓰는 공용 폴더</b>입니다. 한 번 받아 두면 같은 게임을 다루는
+  다른 주제에서도 그대로 쓰이니, 주제마다 따로 받으실 필요는 없습니다.</p>
+  <div id="imgHelpList"></div>
+  <p id="imgHelpRO" hidden>지금은 폴더가 <b>읽기 전용</b>으로 열려 있어 저장한 파일이 자동으로 반영되지 않습니다.
+  파일을 넣은 뒤 <b>Connect Topics Folder</b>(Chrome / Edge)로 다시 열면 반영됩니다.</p>
+  <div class="cup-actions">
+    <button id="imgHelpAnyway" class="mini">이름 카드로 그냥 저장</button>
+    <button id="imgHelpClose" class="mini">닫기</button>
+  </div>
+</dialog>
 
 <footer id="credit">
   RankMaker · made by <a href="mailto:bluekms21@naver.com">CrosS21</a> ·
@@ -486,8 +585,14 @@ const isMetaLine = t => MEDIA_RES.some(re => re.test(t));
 
 let topics = [];        // { name, dirHandle? , files? (Map name->File) }
 let rootPodiumFile = null;  // topics 루트의 공통 podium.* (주제 폴더 것이 우선)
+/* 공용 이미지 폴더 topics/images — 여러 주제가 같은 그림을 쓰므로 한 곳에 모아 둔다.
+   연결 대상은 언제나 topics 폴더 그 자체다(브라우저는 연결한 폴더의 부모로 올라갈 수 없다). */
+const IMAGES_DIR = "images";
+let rootHandle = null;         // 연결된 topics 폴더 핸들 (없으면 읽기 전용 연결이다)
+let sharedImages = null;       // 이름 -> File | 파일 핸들. 폴더를 한 번만 훑어 만든다
 let cur = null;         // current topic state
 let dragItem = null;
+let searchDesc = false;   // 검색창 옆 'Details' — 저장하지 않는다
 let saveTimer = null;
 let themeLocked = !!localStorage.getItem("rm-theme");
 
@@ -558,15 +663,12 @@ $("#btnOpen").onclick = async () => {
 if (!window.showDirectoryPicker) $("#btnOpen").hidden = true;
 
 async function openRoot(handle, remember) {
-  // rankmaker 루트를 골랐다면 그 안의 topics 폴더로 내려간다
-  try {
-    const sub = await handle.getDirectoryHandle("topics");
-    if (sub) handle = sub;
-  } catch (e) {}
+  useImageSource(handle, null);         // 공용 이미지는 이 폴더의 images 하위다 (필요할 때 훑는다)
   const list = [];
   rootPodiumFile = null;
   for await (const c of handle.values()) {
-    if (c.kind === "directory") list.push({ name: c.name, dirHandle: c });
+    // images 는 공용 이미지 폴더다 — 주제로 잡지 않는다
+    if (c.kind === "directory" && c.name.toLowerCase() !== IMAGES_DIR) list.push({ name: c.name, dirHandle: c });
     else if (c.kind === "file" && PODIUM_RE.test(c.name)) rootPodiumFile = await c.getFile();
   }
   if (!list.length) { alert("하위 폴더(주제)가 없습니다. topics 폴더를 연결했는지 확인하세요."); return false; }
@@ -574,6 +676,34 @@ async function openRoot(handle, remember) {
   if (remember) idbSet("root", handle);
   afterOpen();
   return true;
+}
+
+/* ---------- 공용 이미지 원본 ----------
+   폴더를 연결하는 길이 셋(폴더 핸들·드래그·webkitdirectory)이라 여기서 하나로 모은다.
+   핸들이 있으면 필요할 때 폴더를 '한 번' 훑어 표를 만들고, 읽기 전용 연결은
+   그때 읽어둔 File 표를 그대로 넘겨받는다. 이후로는 양쪽 다 이름으로 찾기만 한다. */
+function useImageSource(handle, files) {
+  rootHandle = handle;
+  sharedImages = files;        // null 이면 핸들에서 훑어 온다
+}
+async function imagesFolder(create = false) {
+  if (!rootHandle) return null;
+  try { return await rootHandle.getDirectoryHandle(IMAGES_DIR, { create }); }
+  catch (e) { return null; }
+}
+async function imageTable(refresh) {
+  // 읽기 전용 연결은 다시 훑을 곳이 없다 — 받아둔 표를 그대로 쓴다
+  if (sharedImages && (!refresh || !rootHandle)) return sharedImages;
+  const map = new Map();
+  const dir = await imagesFolder();
+  if (dir) for await (const h of dir.values()) if (h.kind === "file") map.set(h.name, h);
+  return (sharedImages = map);
+}
+async function sharedImageFile(name, refresh) {
+  const v = (await imageTable(refresh)).get(name);
+  if (!v) return null;
+  const f = v.getFile ? await v.getFile() : v;      // 핸들이면 열고, 이미 File 이면 그대로
+  return f && f.size && /^image\//.test(f.type || "") ? f : null;
 }
 
 /* 폴더 드래그&드롭 */
@@ -601,21 +731,17 @@ addEventListener("drop", async e => {
       return;
     }
     if (!entry || !entry.isDirectory) { alert("폴더를 드롭해주세요."); return; }
-    let kids = await allEntries(entry);
-    const tsub = kids.find(k => k.isDirectory && k.name.toLowerCase() === "topics");
-    if (tsub) kids = await allEntries(tsub);
+    const kids = await allEntries(entry);
+    // 공용 이미지 폴더(topics/images)는 주제가 아니라 그림 창고다 — 통째로 읽어 둔다
+    const idir = kids.find(k => k.isDirectory && k.name.toLowerCase() === IMAGES_DIR);
+    useImageSource(null, idir ? await readEntryFiles(idir) : new Map());
     rootPodiumFile = null;
     const pf = kids.find(k => k.isFile && PODIUM_RE.test(k.name));
-    if (pf) rootPodiumFile = await new Promise((res, rej) => pf.file(res, rej));
-    const dirs = kids.filter(k => k.isDirectory);
+    if (pf) rootPodiumFile = await fileOf(pf);
+    const dirs = kids.filter(k => k.isDirectory && k.name.toLowerCase() !== IMAGES_DIR);
     if (!dirs.length) { alert("하위 폴더(주제)가 없습니다. topics 폴더를 드롭했는지 확인하세요."); return; }
     const list = [];
-    for (const d of dirs) {
-      const files = new Map();
-      for (const f of await allEntries(d))
-        if (f.isFile) files.set(f.name, await new Promise((res, rej) => f.file(res, rej)));
-      list.push({ name: d.name, files });
-    }
+    for (const d of dirs) list.push({ name: d.name, files: await readEntryFiles(d) });
     topics = list;
     afterOpen();
   } catch (err) {
@@ -633,18 +759,35 @@ async function allEntries(dirEntry) {
   } while (batch.length);
   return out;
 }
+async function writeFile(dir, name, data) {         // 폴더에 파일 하나 쓰기 — 저장 경로 공통
+  const fh = await dir.getFileHandle(name, { create: true });
+  const w = await fh.createWritable();
+  await w.write(data);
+  await w.close();
+  return fh;
+}
+const fileOf = entry => new Promise((res, rej) => entry.file(res, rej));
+async function readEntryFiles(dirEntry) {          // 폴더 하나를 이름->File 표로
+  const map = new Map();
+  for (const f of await allEntries(dirEntry)) if (f.isFile) map.set(f.name, await fileOf(f));
+  return map;
+}
 
 /* webkitdirectory 폴백 (Firefox/Safari) */
 $("#dirInput").onchange = e => {
   const map = new Map();
+  const shared = new Map();
   rootPodiumFile = null;
   for (const f of e.target.files) {
     const parts = (f.webkitRelativePath || "").split("/");
     if (parts.length === 2 && PODIUM_RE.test(parts[1])) { rootPodiumFile = f; continue; }
     if (parts.length !== 3) continue;           // root/topic/file 만
+    // 고른 것이 topics 폴더이므로 images 하위는 공용 이미지다 — 주제가 아니다
+    if (parts[1].toLowerCase() === IMAGES_DIR) { shared.set(parts[2], f); continue; }
     if (!map.has(parts[1])) map.set(parts[1], new Map());
     map.get(parts[1]).set(parts[2], f);
   }
+  useImageSource(null, shared);
   topics = [...map.entries()].map(([name, files]) => ({ name, files }));
   if (!topics.length) { alert("하위 폴더(주제)가 없습니다."); return; }
   afterOpen();
@@ -657,7 +800,7 @@ function afterOpen() {
   topics.forEach((t, i) => sel.append(new Option(t.name, i)));
   sel.hidden = false;
   sel.onchange = () => loadTopic(topics[sel.value]);
-  $("#searchInput").hidden = false;
+  $("#searchWrap").hidden = false;
   $("#viewControls").hidden = false;
   $("#boardTools").hidden = false;
   $("#btnCup").hidden = false;
@@ -734,16 +877,36 @@ const textCardUri = label =>
 
 /* ---------- topic loading ---------- */
 async function loadTopic(t) {
+  /* 주제 폴더에는 info.md · save.json · cup.save.json · podium.* · 영상만 둔다.
+     항목 그림은 전부 공용 폴더 topics/images 에 모아 두고 파일명으로 찾아 쓴다 —
+     여러 주제가 같은 것을 다룰 때 그림을 한 벌만 두기 위해서다. */
+  // 주제 폴더에 남아 있는 항목 그림은 쓰지 않는다. podium.* 은 주제별 단상이라 예외다.
+  const stray = n => IMG_EXT.test(n) && !PODIUM_RE.test(n);
   const files = new Map();
+  const strays = [];
   if (t.dirHandle) {
-    for await (const h of t.dirHandle.values())
-      if (h.kind === "file") files.set(h.name, await h.getFile());
+    for await (const h of t.dirHandle.values()) {
+      if (h.kind !== "file") continue;
+      if (stray(h.name)) strays.push(h.name);        // 열지 않는다 — 어차피 버릴 것이다
+      else files.set(h.name, await h.getFile());
+    }
   } else {
-    for (const [n, f] of t.files) files.set(n, f);
+    for (const [n, f] of t.files) (stray(n) ? strays.push(n) : files.set(n, f));
+  }
+  if (strays.length) {
+    console.warn(`[${t.name}] 주제 폴더의 그림 ${strays.length}개를 무시했습니다.`
+      + ` topics/${IMAGES_DIR}/ 로 옮기세요: ${strays.slice(0, 5).join(", ")}`
+      + (strays.length > 5 ? " …" : ""));
   }
 
   const info = parseInfo(files.has("info.md") ? await files.get("info.md").text() : "");
-  // info.md 에만 있고 실제 파일이 없는 이미지 섹션 → 썸네일 주소가 있으면 그걸 쓰고,
+
+  // 항목 그림을 공용 폴더에서 끌어온다 (폴더는 한 번만 훑고, 파일 열기는 한꺼번에)
+  const wanted = Object.keys(info.items).filter(h => IMG_EXT.test(h) && !files.has(h));
+  for (const [i, f] of (await Promise.all(wanted.map(h => sharedImageFile(h)))).entries())
+    if (f) files.set(wanted[i], f);
+
+  // 그래도 파일이 없는 이미지 섹션 → 썸네일 주소가 있으면 그걸 쓰고,
   // 없을 때만 이름으로 텍스트 카드를 만든다
   const synth = new Map();
   for (const h of Object.keys(info.items))
@@ -820,8 +983,10 @@ async function loadTopic(t) {
   }
   for (const it of items) {
     const lines = [...info.global, ...(info.items[it.file] || [])].map(l => l.text);
-    it.search = (it.label + " " + lines.join(" ")).toLowerCase();
-    it.searchCho = choseong(it.search);
+    it.searchName = it.label.toLowerCase();          // 기본 검색 범위
+    it.searchNameCho = choseong(it.searchName);
+    it.searchAll = (it.label + " " + lines.join(" ")).toLowerCase();   // '설명 포함' 일 때
+    it.searchAllCho = choseong(it.searchAll);
   }
 
   cur = {
@@ -837,9 +1002,90 @@ async function loadTopic(t) {
   $("#searchInput").value = "";
   try { localStorage.setItem("rm-topic", t.name); } catch (e) {}   // 다음 실행 때 이 주제로 연다
   cup = null;                 // 주제를 바꾸면 진행 중이던 월드컵은 버린다
+  undoStack = [];             // 되돌리기도 주제 단위다 — 다른 주제로 넘어가지 않는다
+  syncUndo();
   cupSetScreen(false);
   syncControls();
   render();
+  cacheRemoteImages(cur);     // 주소로만 있는 이미지를 폴더에 받아둔다 (백그라운드)
+}
+
+/* ---------- 원격 이미지 내려받기 ----------
+   info.md 에 아이템은 있는데 파일이 없고 설명 줄에 이미지 주소가 있으면, 그 주소를 받아
+   '아이템명 그대로' 공용 폴더(images/)에 저장한다. 다음 실행부터는 평범한 로컬 파일이다.
+
+   이걸 하는 이유는 Podium(포스터 출력) 때문이다. 캔버스는 외부 이미지를 crossOrigin 으로
+   받아야 오염되지 않는데, 응답에 Access-Control-Allow-Origin 이 없으면 로드가 실패해
+   이름 카드로 떨어진다. 한 번 받아 파일로 두면 그 문제가 사라진다.
+
+   주의: fetch 도 같은 CORS 정책을 탄다. ACAO 를 주지 않는 호스트(예: cf.geekdo-images.com)는
+   브라우저가 본문을 읽을 수 없어 저장이 불가능하다. 그때는 조용히 포기하고
+   기존처럼 <img> 로 원격 표시만 한다(표시에는 CORS 가 필요 없다). */
+async function cacheRemoteImages(ctx) {
+  if (!ctx || !rootHandle) return;                       // 읽기 전용 소스는 저장할 곳이 없다
+
+  // info.md 에 적힌 주소 — 로컬 파일이 이미 있어도 뽑는다(주소가 바뀌었는지 봐야 하므로)
+  const want = new Map();
+  for (const it of ctx.items) {
+    const u = thumbOf(ctx.info.items[it.file]);
+    if (u && /^https?:/i.test(u)) want.set(it.file, u);
+  }
+  const rec = ctx.save.imgSrc || {};
+  const targets = ctx.items.filter(it => {
+    const u = want.get(it.file);
+    if (!u) return false;
+    return /^https?:/i.test(it.url)      // 파일이 없어 원격으로 떠 있거나
+      || rec[it.file] !== u;             // 받아둔 주소와 info.md 주소가 다르거나
+  });
+  if (!targets.length) return;
+
+  let saved = 0, failed = 0, streak = 0;
+  // 저장할 곳은 공용 폴더다. 실제로 받을 것이 생겼을 때만 폴더를 만든다.
+  let dirOnce = null;
+  const outDir = () => (dirOnce ||= imagesFolder(true));
+  const one = async it => {
+    const src = want.get(it.file);
+    try {
+      const res = await fetch(src, { mode: "cors", credentials: "omit" });
+      if (!res.ok) throw new Error("HTTP " + res.status);
+      const blob = await res.blob();
+      if (!blob.size || !/^image\//.test(blob.type || "")) throw new Error("이미지가 아님");
+      const dir = await outDir();
+      if (!dir) throw new Error("저장할 폴더가 없음");
+      const fh = await writeFile(dir, it.file, blob);
+      sharedImages?.set(it.file, fh);                 // 공용 표에도 바로 올린다
+      streak = 0;
+      if (cur !== ctx) return;                        // 그 사이 주제가 바뀌었으면 버린다
+      useLocalImage(it, blob);
+      (ctx.save.imgSrc ||= {})[it.file] = src;        // 이 주소로 받았다고 기록
+      saved++;
+    } catch (e) {
+      failed++;
+      streak++;
+    }
+  };
+
+  // 동시 4개까지 — 항목이 많은 주제에서 한꺼번에 요청하지 않는다.
+  // CORS 는 호스트 단위라 연달아 실패하면 나머지도 마찬가지다 — 헛요청을 끊는다.
+  const queue = [...targets];
+  await Promise.all(Array.from({ length: Math.min(4, queue.length) }, async () => {
+    // 주제를 떠났으면 남은 것은 받지 않는다 — 안 볼 그림을 계속 내려받지 않도록
+    while (queue.length && streak < 4 && cur === ctx) await one(queue.shift());
+  }));
+  const skipped = queue.length;
+
+  if (cur !== ctx) return;
+  if (saved) {
+    render();
+    await persist();                                  // imgSrc 기록을 save.json 에 남긴다
+    flash(`Saved ✓ · 이미지 ${saved}개` + (failed ? ` · ${failed}개 실패` : ""));
+  } else if (failed) {
+    // 전부 실패 = 대개 해당 호스트가 CORS 를 허용하지 않는 경우다.
+    // 포스터를 뽑을 때 안내창이 뜨므로 여기서는 조용히 넘어간다.
+    console.warn(`원격 이미지 ${failed}개를 저장하지 못했습니다`
+      + (skipped ? ` (같은 호스트로 판단해 ${skipped}개는 건너뜀)` : "")
+      + ". CORS 미허용 호스트일 수 있습니다. 화면 표시는 계속됩니다.");
+  }
 }
 
 /* ---------- 순서 + 티어 경계 모델 ----------
@@ -869,10 +1115,12 @@ function normalize() {
 function commit() { normalize(); render(); scheduleSave(); }
 function moveItem(it, dir) {  // 이웃과 자리 교환 — 티어 경계를 넘으면 소속도 서로 바뀐다
   const q = it.ord + dir;
-  if (q < 0 || q >= cur.items.length) return;
-  const other = sorted()[q];
-  other.ord = it.ord;
-  it.ord = q;
+  if (q < 0 || q >= cur.items.length) return;   // 끝에서는 아무 일도 없다
+  mutate(() => {
+    const other = sorted()[q];
+    other.ord = it.ord;
+    it.ord = q;
+  });
   commit();
 }
 function tierAssignments() {  // 현재 순서·크기에서 각 아이템의 티어(-1=풀)를 계산
@@ -891,18 +1139,21 @@ function moveToTier(it, destTier, posInTier) {
   // 할당 기반 재구성: 나머지 아이템의 티어 소속을 먼저 확정하고,
   // it을 목적 티어(또는 풀)의 posInTier 위치에 끼운 뒤 전체를 다시 조립한다.
   // 경계 산술이 없어 티어↔티어 이동에서도 어긋나지 않는다.
-  const asg = tierAssignments();
-  const ts = tierSizes();
-  const rest = sorted().filter(x => x !== it);
-  const buckets = [];
-  for (let t = 0; t < ts.length; t++) buckets.push(rest.filter(x => asg.get(x) === t));
-  const pool = rest.filter(x => asg.get(x) === -1);
-  const target = (destTier >= 0 && destTier < buckets.length) ? buckets[destTier] : pool;
-  const p = Number.isFinite(posInTier) ? Math.max(0, Math.min(target.length, posInTier)) : target.length;
-  target.splice(p, 0, it);
-  const seq = [...buckets.flat(), ...pool];
-  seq.forEach((x, i) => x.ord = i);
-  cur.save.tierSizes = buckets.map(b => b.length);
+  // 드래그·순위 입력·앞뒤 삽입이 모두 여기로 모이므로 되돌리기 단계도 여기서 한 번만 쌓인다.
+  mutate(() => {
+    const asg = tierAssignments();
+    const ts = tierSizes();
+    const rest = sorted().filter(x => x !== it);
+    const buckets = [];
+    for (let t = 0; t < ts.length; t++) buckets.push(rest.filter(x => asg.get(x) === t));
+    const pool = rest.filter(x => asg.get(x) === -1);
+    const target = (destTier >= 0 && destTier < buckets.length) ? buckets[destTier] : pool;
+    const p = Number.isFinite(posInTier) ? Math.max(0, Math.min(target.length, posInTier)) : target.length;
+    target.splice(p, 0, it);
+    const seq = [...buckets.flat(), ...pool];
+    seq.forEach((x, i) => x.ord = i);
+    cur.save.tierSizes = buckets.map(b => b.length);
+  });
   commit();
 }
 function setRank(it, v) {  // 그 순위 위치로 이동 — 티어 자리면 그 티어의 해당 위치에 합류
@@ -937,6 +1188,66 @@ function shiftTierNames(from, delta) {    // 티어 삽입/삭제 시 저장된 
   }
   cur.save.tierNames = out;
 }
+
+/* ---------- 되돌리기 ----------
+   되돌리는 대상은 '배치'다 — 순서(ord)·티어 크기·티어 이름·체크 표시.
+   전부 한 번의 동작으로 확 바뀌는 것들이라 한 단계로 묶기 좋다.
+
+   메모 입력은 넣지 않는다. 글자마다 단계가 쌓여 되돌리기가 오히려 성가셔지고,
+   입력칸 안에서는 브라우저 기본 Ctrl+Z 가 이미 글자 단위로 처리한다.
+   Load(가져오기)는 주제를 통째로 다시 여는 동작이라 여기서 다루지 않는다. */
+const UNDO_MAX = 50;
+let undoStack = [];
+
+const snapshot = () => JSON.stringify({
+  order: sorted().map(i => i.file),
+  tierSizes: tierSizes(),
+  tierNames: cur.save.tierNames || {},
+  checks: cur.save.checks || {},
+});
+
+/* 배치를 바꾸는 동작은 전부 이걸 거친다. 바뀐 게 있을 때만 단계가 쌓이므로
+   호출 순서를 지킬 필요도, 사이트마다 '정말 바뀌었나'를 따로 볼 필요도 없다. */
+function mutate(fn) {
+  if (!cur) return fn();
+  const before = snapshot();
+  const r = fn();
+  if (before !== snapshot()) {
+    undoStack.push(before);
+    if (undoStack.length > UNDO_MAX) undoStack.shift();
+    syncUndo();
+  }
+  return r;
+}
+function undo() {
+  if (!cur || !undoStack.length) return;
+  const s = JSON.parse(undoStack.pop());
+  const byFile = new Map(cur.items.map(i => [i.file, i]));
+  s.order.forEach((f, i) => { const it = byFile.get(f); if (it) it.ord = i; });
+  cur.save.tierSizes = s.tierSizes;
+  cur.save.tierNames = s.tierNames;
+  cur.save.checks = s.checks;
+  syncUndo();
+  commit();                    // 순서 정리 → 다시 그리기 → 저장 예약
+  flash("Undone ✓" + (undoStack.length ? ` · ${undoStack.length}단계 남음` : ""));
+}
+function syncUndo() {
+  const b = $("#btnUndo");
+  b.disabled = !undoStack.length;
+  b.title = undoStack.length
+    ? `마지막 배치 변경을 되돌립니다 — ${undoStack.length}단계 남음 (Ctrl+Z)`
+    : "되돌릴 변경이 없습니다";
+}
+$("#btnUndo").onclick = undo;
+addEventListener("keydown", e => {
+  if (!(e.ctrlKey || e.metaKey) || e.shiftKey || (e.key || "").toLowerCase() !== "z") return;
+  // 입력칸 안에서는 글자 단위 되돌리기가 우선이다 — 가로채지 않는다
+  const t = e.target;
+  if (t && (t.isContentEditable || /^(input|textarea|select)$/i.test(t.tagName || ""))) return;
+  if (!cur || !undoStack.length) return;
+  e.preventDefault();
+  undo();
+});
 
 /* ---------- rendering ---------- */
 function syncControls() {
@@ -1011,7 +1322,8 @@ function renderTierView(wrap) {
       label.append(inp);
       inp.focus(); inp.select();
       inp.onblur = () => {
-        (cur.save.tierNames ||= {})[labelKey] = inp.value.trim() || defName(labelKey);
+        // 이름을 그대로 두고 빠져나왔으면 mutate 가 알아서 단계를 쌓지 않는다
+        mutate(() => { (cur.save.tierNames ||= {})[labelKey] = inp.value.trim() || defName(labelKey); });
         scheduleSave();
         render();
       };
@@ -1078,12 +1390,14 @@ function renderTierView(wrap) {
     xb.textContent = "×";
     xb.title = n0 ? "티어 삭제 — 아이템은 모두 미분류(…)로 이동합니다" : "이 빈 티어 제거";
     xb.onclick = () => {
-      const arr = sorted();
-      const moved = arr.slice(s0, s0 + n0);     // 삭제된 티어의 아이템은 풀 맨 뒤로
-      const rest = arr.filter(x => !moved.includes(x));
-      [...rest, ...moved].forEach((x, i) => x.ord = i);
-      cur.save.tierSizes.splice(gi, 1);
-      shiftTierNames(gi + 1, -1);
+      mutate(() => {
+        const arr = sorted();
+        const moved = arr.slice(s0, s0 + n0);   // 삭제된 티어의 아이템은 풀 맨 뒤로
+        const rest = arr.filter(x => !moved.includes(x));
+        [...rest, ...moved].forEach((x, i) => x.ord = i);
+        cur.save.tierSizes.splice(gi, 1);
+        shiftTierNames(gi + 1, -1);
+      });
       commit();
     };
     row.append(xb);
@@ -1096,7 +1410,7 @@ function renderTierView(wrap) {
     add.className = "tier-add";
     add.textContent = "+ Add Tier";
     add.title = "빈 티어를 추가합니다";
-    add.onclick = () => { cur.save.tierSizes.push(0); scheduleSave(); render(); };
+    add.onclick = () => { mutate(() => cur.save.tierSizes.push(0)); scheduleSave(); render(); };
     wrap.append(add);
   }
   // 풀("…") = 미분류 아이템 — 항상 가장 아래에 고정
@@ -1125,7 +1439,7 @@ function renderItem(it) {
 
   const name = document.createElement("span");
   name.className = "name";
-  name.textContent = it.label;
+  appendMarked(name, it.label);
 
   const img = document.createElement("img");
   img.className = "thumb";
@@ -1244,7 +1558,7 @@ function renderDescLine(text, it) {
     const stored = cur.save.checks?.[it.file]?.[key];
     cb.checked = stored !== undefined ? !!stored : /x/i.test(m[1] || "");
     cb.onchange = () => {
-      ((cur.save.checks ||= {})[it.file] ||= {})[key] = cb.checked;
+      mutate(() => { ((cur.save.checks ||= {})[it.file] ||= {})[key] = cb.checked; });
       scheduleSave();
     };
     line.append(cb);
@@ -1253,12 +1567,35 @@ function renderDescLine(text, it) {
   appendWithLinks(line, text.slice(last));
   return line;
 }
+/* 검색어와 겹치는 곳을 <mark> 로 감싼다. 초성으로 찾았을 때도 같은 자리를 짚는다 —
+   choseong() 이 글자 하나를 글자 하나로 바꾸므로 위치가 그대로 맞는다. */
+function appendMarked(el, text) {
+  const q = searchQuery();
+  if (!q) { el.append(text); return; }
+  const hay = text.toLowerCase();
+  const cho = /[ㄱ-ㅎ]/.test(q) ? choseong(hay) : null;
+  let i = 0;
+  for (;;) {
+    const a = hay.indexOf(q, i);
+    const b = cho ? cho.indexOf(q, i) : -1;
+    const at = a < 0 ? b : (b < 0 ? a : Math.min(a, b));
+    if (at < 0) break;
+    if (at > i) el.append(text.slice(i, at));
+    const m = document.createElement("mark");
+    m.textContent = text.slice(at, at + q.length);
+    el.append(m);
+    i = at + q.length;
+  }
+  el.append(text.slice(i));
+}
 function appendWithLinks(el, text) {
   // http/https URL만 링크로 — 나머지는 전부 텍스트 노드 (데이터의 코드 해석 없음)
+  // 설명은 '설명 포함' 일 때만 검색 대상이므로 그때만 하이라이트한다.
+  const plain = (t) => (searchDesc ? appendMarked(el, t) : el.append(t));
   const re = /https?:\/\/[^\s<>"']+/g;
   let m, last = 0;
   while ((m = re.exec(text))) {
-    el.append(text.slice(last, m.index));
+    plain(text.slice(last, m.index));
     const a = document.createElement("a");
     a.href = m[0];
     a.textContent = m[0];
@@ -1267,7 +1604,7 @@ function appendWithLinks(el, text) {
     el.append(a);
     last = m.index + m[0].length;
   }
-  el.append(text.slice(last));
+  plain(text.slice(last));
 }
 
 /* ---------- search (이름·설명 전체, 한글 초성 지원) ---------- */
@@ -1280,13 +1617,18 @@ function choseong(str) {
   }
   return out;
 }
+const searchQuery = () => $("#searchInput").value.trim().toLowerCase();
 function matchesQuery(it) {
-  const q = $("#searchInput").value.trim().toLowerCase();
+  const q = searchQuery();
   if (!q) return true;
-  if (it.search.includes(q)) return true;
-  return /[ㄱ-ㅎ]/.test(q) && it.searchCho.includes(q);
+  // 기본은 아이템명만 본다. 'Details' 를 켜면 설명까지 넓힌다 — 초성도 같은 범위다.
+  const wide = searchDesc;
+  const hay = wide ? it.searchAll : it.searchName;
+  const cho = wide ? it.searchAllCho : it.searchNameCho;
+  return hay.includes(q) || (/[ㄱ-ㅎ]/.test(q) && cho.includes(q));
 }
 $("#searchInput").oninput = () => render();
+$("#descChk").onchange = e => { searchDesc = e.target.checked; render(); };
 
 /* ---------- persistence ---------- */
 function scheduleSave() { clearTimeout(saveTimer); saveTimer = setTimeout(persist, 400); }
@@ -1301,23 +1643,19 @@ function saveData() {
     tierSizes: tierSizes(),
     tierMemo: cur.save.tierMemo || "",
     tierMemoH: cur.save.tierMemoH || 0,
+    imgSrc: cur.save.imgSrc || {},   // 파일 -> 그 파일을 받아온 주소 (info.md 주소가 바뀌면 다시 받는다)
   };
 }
-async function writeSaveFile(json) {
-  const fh = await cur.dirHandle.getFileHandle("save.json", { create: true });
-  const w = await fh.createWritable();
-  await w.write(json);
-  await w.close();
-}
+const writeSaveFile = json => writeFile(cur.dirHandle, "save.json", json);
 async function persist() {
   const data = saveData();
   cur.save = Object.assign({}, cur.save, data);
   const json = JSON.stringify(data, null, 2);
   if (cur.dirHandle) {
-    try { await writeSaveFile(json); flash("저장됨 ✓"); return; }
+    try { await writeSaveFile(json); flash("Saved ✓"); return; }
     catch (e) { console.warn("write failed", e); }
   }
-  try { localStorage.setItem("rm:" + cur.name, json); flash("저장됨 ✓ (브라우저)"); }
+  try { localStorage.setItem("rm:" + cur.name, json); flash("Saved ✓ (브라우저)"); }
   catch (e) { flash("저장 실패 — 내보내기로 백업하세요"); }
 }
 function downloadBlob(blob, name) {
@@ -1344,7 +1682,7 @@ $("#importInput").onchange = async e => {
     if (cur.dirHandle) await writeSaveFile(json);
     else localStorage.setItem("rm:" + cur.name, json);
     await loadTopic(topics.find(t => t.name === cur.name));
-    flash("가져오기 완료 ✓");
+    flash("Loaded ✓");
   } catch (err) {
     flash("가져오기 실패 — 올바른 save.json이 아닙니다");
   }
@@ -1352,6 +1690,87 @@ $("#importInput").onchange = async e => {
 
 /* ---------- 이미지 출력 (Canvas 포스터) ---------- */
 const posterImgCache = new Map();   // file -> HTMLImageElement
+
+/* ---------- 포스터에 쓸 이미지 파일 확보 ----------
+   주소로만 있는 이미지는 캔버스에 그릴 수 없다. 캔버스를 PNG 로 뽑으려면 그림이 오염되지
+   않아야 하고, 그러려면 crossOrigin 으로 받아야 하는데 응답에 Access-Control-Allow-Origin
+   이 없는 호스트(BGG 의 cf.geekdo-images.com 등)는 그 로드가 실패한다. 화면 표시는 <img>
+   라서 멀쩡하지만 포스터에서는 이름 카드로 떨어진다.
+
+   그래서 저장을 누른 시점에 "이 파일을 이 폴더에 이 이름으로 받아 달라"고 안내한다.
+   사용자가 파일을 넣고 다시 누르면 주제를 새로 열지 않고 그 파일만 읽어 들인다 —
+   진행 중이던 월드컵이나 순서 편집을 잃지 않기 위해서다. */
+const isRemote = it => /^https?:/i.test(it.url);
+
+// 아이템이 로컬 파일을 쓰도록 바꾼다 — 포스터 캐시를 함께 버리는 것이 요점이다
+function useLocalImage(it, file) {
+  if (it.url.startsWith("blob:")) URL.revokeObjectURL(it.url);
+  it.url = URL.createObjectURL(file);
+  posterImgCache.delete(it.file);
+}
+
+// 새로 생긴 파일만 items 에 반영한다 (loadTopic 을 다시 돌리지 않는다)
+async function adoptSavedImages(list) {
+  await imageTable(true);          // 안내를 보고 파일을 방금 넣었을 수 있다 — 다시 훑는다
+  const files = await Promise.all(list.map(it => sharedImageFile(it.file)));
+  let n = 0;
+  files.forEach((f, i) => { if (f) { useLocalImage(list[i], f); n++; } });
+  return n;
+}
+
+// 포스터에 실제로 들어갈 항목만 검사한다. 진행해도 되면 true.
+async function ensureLocalImages(list, onAdopted) {
+  const remote = list.filter(isRemote);
+  if (!remote.length) return true;
+
+  const got = await adoptSavedImages(remote);      // 다시 눌렀을 때 새 파일을 집어 든다
+  if (got) {
+    render();
+    if (onAdopted) await onAdopted();              // 월드컵 포스터는 새 그림으로 다시 그린다
+  }
+  const left = remote.filter(isRemote);
+  if (!left.length) { flash(`이미지 ${got}개를 읽었습니다 ✓`); return true; }
+
+  return showImgHelp(left);                        // '그냥 저장' 을 고르면 true
+}
+
+function showImgHelp(list) {
+  const dlg = $("#imgHelp");
+  $("#imgHelpRO").hidden = !!rootHandle;   // 읽기 전용 연결에서만 보이는 문단
+
+  const box = $("#imgHelpList");
+  box.textContent = "";
+  for (const it of list) {
+    const row = document.createElement("div");
+    row.className = "ih-row";
+    const nm = document.createElement("span");
+    nm.className = "ih-name";
+    nm.textContent = it.file;              // 저장할 파일명 = 아이템 이름 + 확장자
+    const a = document.createElement("a");
+    a.href = it.url;
+    a.target = "_blank";
+    a.rel = "noopener";
+    a.download = it.file;                  // 같은 출처면 바로 저장된다 (아니면 새 탭에 열린다)
+    a.textContent = "이미지 열기 ↗";
+    row.append(nm, a);
+    box.append(row);
+  }
+
+  return new Promise(res => {
+    let settled = false;
+    const done = v => {
+      if (settled) return;
+      settled = true;
+      dlg.onclose = null;
+      dlg.close();
+      res(v);
+    };
+    $("#imgHelpAnyway").onclick = () => done(true);
+    $("#imgHelpClose").onclick = () => done(false);
+    dlg.onclose = () => done(false);       // Esc 로 닫으면 저장하지 않는다
+    dlg.showModal();
+  });
+}
 
 $("#btnImgInsta").onclick = () => exportImage("insta");
 $("#btnImgTop10").onclick = () => exportImage("top10");
@@ -1364,12 +1783,14 @@ async function exportImage(kind) {
   $("#exportMenu").open = false;
   const items = sorted();
   if (!items.length) { flash("아이템이 없습니다"); return; }
+  // 포스터에 실제로 들어가는 것만 따진다 — insta 는 상위 3개, top10 은 상위 10개
+  if (!await ensureLocalImages(items.slice(0, kind === "insta" ? 3 : 10))) return;
   try {
     const cv = await drawPoster(kind, items);
     cv.toBlob(b => {
       if (!b) return flash("이미지 출력 실패");
       downloadBlob(b, cur.name + (kind === "insta" ? "-top3" : "-top10") + ".png");
-      flash("이미지 저장됨 ✓");
+      flash("Saved ✓ · 포스터");
     }, "image/png");
   } catch (err) { console.error(err); flash("이미지 출력 실패"); }
 }
@@ -1435,7 +1856,7 @@ function posterImage(it) {
       im.onerror = () => (cross ? load(textCardUri(it.label), false) : done(null));
       im.src = src;
     };
-    load(it.url, /^https?:/i.test(it.url));
+    load(it.url, isRemote(it));
   });
 }
 function roundPath(ctx, x, y, w, h, r) {
@@ -1838,9 +2259,9 @@ function cupSetScreen(on) {
   if (!on) document.body.classList.remove("cup-fill");
   $("#cup").hidden = !on;
   $("#board").hidden = on;
-  $("#searchInput").hidden = on;
+  $("#searchWrap").hidden = on;
   // 순위표 전용 컨트롤(Tier·List·Gallery·Cols·Size·Export)은 통째로 감춘다.
-  // Cup·테마는 #hdrFixed 로 오른쪽 끝에 고정돼 있어 위치가 흔들리지 않는다.
+  // Cup·테마는 #hdrRight 의 3번 칸에 못박혀 있어 무엇이 숨겨져도 오른쪽 끝에 남는다.
   $("#viewControls").hidden = on;
   $("#boardTools").hidden = on;
   const cb = $("#btnCup");
@@ -1920,10 +2341,10 @@ function cupMatch(el) {
   const pick = document.createElement("span");
   pick.className = "cup-pick";
   pick.textContent = m.n === 1 ? "Pick 1" : `Pick ${m.n} (${cup.picked.length}/${m.n})`;
-  const undo = document.createElement("button");
-  undo.className = "mini"; undo.textContent = "↶ Undo";
-  undo.disabled = cupLock || !cup.hist.length;
-  undo.onclick = cupUndo;
+  const undoBtn = document.createElement("button");   // 월드컵 전용 — 순위표의 undo() 와 다르다
+  undoBtn.className = "mini"; undoBtn.textContent = "↶ Undo";
+  undoBtn.disabled = cupLock || !cup.hist.length;
+  undoBtn.onclick = cupUndo;
   const quit = document.createElement("button");
   quit.className = "mini"; quit.textContent = "Quit";
   quit.disabled = cupLock;
@@ -1938,7 +2359,7 @@ function cupMatch(el) {
   zi.title = "카드 크기 (%) — 100이면 화면을 가득 채운다";
   zi.onchange = () => cupSetZoom((+zi.value || 100) / 100);
   zw.append(zi, document.createTextNode("%"));
-  head.append(title, prog, pick, zw, undo, quit);
+  head.append(title, prog, pick, zw, undoBtn, quit);
 
   const grid = document.createElement("div");
   grid.className = "cup-grid fill" + (cupLock ? " flash" : "") + (cupBusy ? " locked" : "");
@@ -2075,13 +2496,8 @@ function cupStamp() {
 async function cupPersist() {
   const json = JSON.stringify(cur.cupSave, null, 2);
   if (cur.dirHandle) {
-    try {
-      const fh = await cur.dirHandle.getFileHandle("cup.save.json", { create: true });
-      const w = await fh.createWritable();
-      await w.write(json);
-      await w.close();
-      return;
-    } catch (e) { console.warn("cup save failed", e); }
+    try { await writeFile(cur.dirHandle, "cup.save.json", json); return; }
+    catch (e) { console.warn("cup save failed", e); }
   }
   try { localStorage.setItem("rmcup:" + cur.name, json); } catch (e) {}
 }
@@ -2123,17 +2539,25 @@ function cupResult(el) {
   }
 
   // 포스터는 만들어서 보여주기만 한다 — 저장은 버튼을 눌렀을 때만
-  drawPoster("cup", [it]).then(cv => {
-    cv.toBlob(b => {
-      if (!b) { flash("이미지 출력 실패"); return; }
-      img.src = URL.createObjectURL(b);
-      save.disabled = false;
-      save.onclick = () => {
-        downloadBlob(b, cur.name + "-winner-" + cupStamp() + ".png");
-        flash("이미지 저장됨 ✓");
-      };
-    }, "image/png");
-  }).catch(e => { console.error(e); flash("이미지 출력 실패"); });
+  let posterBlob = null;
+  const build = async () => {
+    save.disabled = true;
+    const cv = await drawPoster("cup", [it]);
+    posterBlob = await new Promise(r => cv.toBlob(r, "image/png"));
+    if (!posterBlob) { flash("이미지 출력 실패"); return; }
+    if (img.src.startsWith("blob:")) URL.revokeObjectURL(img.src);
+    img.src = URL.createObjectURL(posterBlob);
+    save.disabled = false;
+  };
+  // 이미지가 주소로만 있으면 안내하고 멈춘다. 파일을 넣고 다시 누르면
+  // 그 파일만 읽어 포스터를 새로 그린 뒤 저장한다 — 월드컵은 그대로 남는다.
+  save.onclick = async () => {
+    if (!await ensureLocalImages([it], build)) return;
+    if (!posterBlob) return;
+    downloadBlob(posterBlob, cur.name + "-winner-" + cupStamp() + ".png");
+    flash("Saved ✓ · 포스터");
+  };
+  build().catch(e => { console.error(e); flash("이미지 출력 실패"); });
 }
 
 let flashTimer = null;
