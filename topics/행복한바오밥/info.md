@@ -1,5 +1,6 @@
 // 행복한바오밥
-// 174종 (본편 166 · 확장 8) · BGG 평점순
+// 179종 (본편 170 · 확장 9) · BGG 평점순
+// 미드나잇정글(BGG 48587) 5종 포함
 
 # global
 - 🎲 해봤음 [ ]
@@ -41,6 +42,15 @@
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgame/187483/my-big-world-europe
 
+# 틸레툼.jpg
+- 👥 인원: 1 ~ 4 (2~3인 베스트)
+- ⭐ bgg 점수: 7.85
+- 🧠 복잡도: 3.39 / 5
++ 📅 출시 연도: 2022
++ ♟️ 디자이너: Simone Luciani, Daniele Tascini
++ 🎨 아티스트: Giorgio De Michele, Zbigniew Umgelter
++ 🔗 https://boardgamegeek.com/boardgame/351913/tiletum
+
 # 디크립토.jpg
 - 👥 인원: 3 ~ 8 (4, 6인 베스트)
 - ⭐ bgg 점수: 7.76
@@ -59,6 +69,16 @@
 + 🎨 아티스트: Laura Michaud
 + 🔗 https://boardgamegeek.com/boardgame/437938/top-ten-adventures
 
+# 인더스트리아 인터벨룸.jpg
+- 👥 인원: 1 ~ 5 (3~4인 베스트)
+- ⭐ bgg 점수: 7.66
+- 🧠 복잡도: 2.79 / 5
+- 🧩 확장
++ 📅 출시 연도: 2022
++ ♟️ 디자이너: Ivan Lashin
++ 🎨 아티스트: Sergey Dulin, Marta Ivanova, Ilya Konovalov, Anastasia Kukarina, Vadim Poluboyarov, Oleg Yurkov, Egor Zharkov
++ 🔗 https://boardgamegeek.com/boardgameexpansion/363077/furnace-interbellum
+
 # 하나비 거대한 불꽃.jpg
 - 👥 인원: 2 ~ 5 (4인 베스트)
 - ⭐ bgg 점수: 7.62
@@ -76,6 +96,15 @@
 + ♟️ 디자이너: Annick Lobet
 + 🎨 아티스트: Nikao, Rémy Tornior
 + 🔗 https://boardgamegeek.com/boardgame/310448/zombie-teenz-evolution
+
+# 튜링 머신.jpg
+- 👥 인원: 1 ~ 4 (1인 베스트)
+- ⭐ bgg 점수: 7.60
+- 🧠 복잡도: 2.53 / 5
++ 📅 출시 연도: 2022
++ ♟️ 디자이너: Fabien Gridel, Yoann Levet
++ 🎨 아티스트: Sébastien Bizos
++ 🔗 https://boardgamegeek.com/boardgame/356123/turing-machine
 
 # 저스트 원!.png
 - 👥 인원: 3 ~ 7 (6~7인 베스트)
@@ -104,6 +133,15 @@
 + 🎨 아티스트: Cyrille Daujean, Julien Delval
 + 🔗 https://boardgamegeek.com/boardgame/14996/ticket-to-ride-europe
 
+# 브라질 임페리얼.png
+- 👥 인원: 1 ~ 4 (4인 베스트)
+- ⭐ bgg 점수: 7.50
+- 🧠 복잡도: 3.01 / 5
++ 📅 출시 연도: 2021
++ ♟️ 디자이너: Zé Mendes
++ 🎨 아티스트: Adalberto Junio, Isaias Junior, Carlos Eduardo Justino, Vinicius Menezes, Arthur Parisi, Girleyne Costa Ramalho, Victor Sales, Ryan Teo, Tom Ventre
++ 🔗 https://boardgamegeek.com/boardgame/249277/brazil-imperial
+
 # 디크립토 레이저드라이브.jpg
 - 👥 인원: 3 ~ 8 (4인 베스트)
 - ⭐ bgg 점수: 7.48
@@ -122,6 +160,15 @@
 + ♟️ 디자이너: Bruno Cathala
 + 🎨 아티스트: Cyril Bouquet
 + 🔗 https://boardgamegeek.com/boardgame/340041/kingdomino-origins
+
+# 인더스트리아.jpg
+- 👥 인원: 2 ~ 4 (3~4인 베스트)
+- ⭐ bgg 점수: 7.38
+- 🧠 복잡도: 2.33 / 5
++ 📅 출시 연도: 2020
++ ♟️ 디자이너: Ivan Lashin
++ 🎨 아티스트: Sergey Dulin, Marta Ivanova, Ilya Konovalov, Vadim Poluboyarov, Oleg Yurkov, Egor Zharkov
++ 🔗 https://boardgamegeek.com/boardgame/318084/furnace
 
 # 티켓 투 라이드.jpg
 - 👥 인원: 2 ~ 5 (4인 베스트)
@@ -1053,15 +1100,6 @@
 + 🎨 아티스트: François Bruel, Wesly Gibs, Tomasz Larek, Marcel-André Casasola Merkle
 + 🔗 https://boardgamegeek.com/boardgame/14035/piranha-pedro
 
-# 스팟 잇! 1,2,3.png
-- 👥 인원: 2 ~ 6 (4인 베스트)
-- ⭐ bgg 점수: 6.28
-- 🧠 복잡도: 1.03 / 5
-+ 📅 출시 연도: 2012
-+ ♟️ 디자이너: Denis Blanchot, Jacques Cottereau
-+ 🎨 아티스트: Denis Blanchot, Jacques Cottereau, Guillaume Gille-Naves, Anita Głowińska, Igor Polouchine
-+ 🔗 https://boardgamegeek.com/boardgame/117995/spot-it-123
-
 # 셋셋셋.jpg
 - 👥 인원: 2 ~ 4 (4인 베스트)
 - ⭐ bgg 점수: 6.28
@@ -1070,6 +1108,15 @@
 + ♟️ 디자이너: Maureen Hiron
 + 🎨 아티스트: Fian Arroyo
 + 🔗 https://boardgamegeek.com/boardgame/100278/tripolo
+
+# 스팟 잇! 1,2,3.png
+- 👥 인원: 2 ~ 6 (4인 베스트)
+- ⭐ bgg 점수: 6.28
+- 🧠 복잡도: 1.03 / 5
++ 📅 출시 연도: 2012
++ ♟️ 디자이너: Denis Blanchot, Jacques Cottereau
++ 🎨 아티스트: Denis Blanchot, Jacques Cottereau, Guillaume Gille-Naves, Anita Głowińska, Igor Polouchine
++ 🔗 https://boardgamegeek.com/boardgame/117995/spot-it-123
 
 # 고 고 젤라또!.jpg
 - 👥 인원: 2 ~ 4 (3~4인 베스트)
