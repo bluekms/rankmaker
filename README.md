@@ -1,4 +1,22 @@
-# RankMaker
+# RankMaker — 보드게임
+
+> **이 브랜치는 보드게임 전용 데이터 브랜치입니다.**
+> 국내 유통사 아홉 곳의 보드게임 약 1,400종이 주제로 들어 있습니다.
+> 앱 사용법·`info.md` 문법 등 **공통 내용은 원본 README 를 보세요** —
+> [한국어](https://github.com/bluekms/rankmaker/blob/main/README.md) · [English](https://github.com/bluekms/rankmaker/blob/main/README.en.md)
+>
+> 이 브랜치만의 특징은 **그림을 저장소에 담지 않는다**는 점입니다.
+> 각 항목의 `info.md` 에 BGG 이미지 주소가 적혀 있어 화면에는 그대로 보이고,
+> 포스터를 뽑을 때만 안내창에서 받으면 됩니다 — [그림을 주소로 붙이기](docs/image-url.md)
+
+## 들어 있는 주제
+
+| 주제 | 종수 |
+|---|---|
+| 팝콘에듀 · 만두게임즈 · 보드엠 · 아스모디코리아 | 각 200~290 |
+| 행복한바오밥 · MTSGames · 젬블로컴퍼니 | 각 70~180 |
+| 옐로우미플 · 데블다이스 | 각 20~40 |
+
 
 > **한국어** | [English](README.en.md)
 
@@ -114,50 +132,6 @@ List 또는 Gallery 에서 **Podium** 메뉴로 PNG 를 뽑습니다. WorldCup �
 **단상 그림은 교체할 수 있습니다.** `topics/podium.png` 가 전체 공통이고, `topics/<주제>/podium.png` 를 넣으면 그 주제만 바뀝니다.
 
 > 포스터에는 **그림 파일**이 필요합니다. 주소로만 붙인 그림이 섞여 있으면 안내창이 떠서 받는 방법을 알려줍니다 — [그림을 주소로 붙이기](docs/image-url.md)
-
-### BGG 에서 이미지 주소 찾기
-
-보드게임 주제는 그림 파일 대신 **BGG 원본 주소**를 `info.md` 에 적어 둡니다. 찾는 방법입니다.
-
-**1. BGG 항목 번호를 얻습니다.** 게임 페이지 주소에 들어 있습니다.
-
-```
-https://boardgamegeek.com/boardgame/164928/orleans            → 164928
-https://boardgamegeek.com/boardgameexpansion/439816/...       → 439816   (확장도 같은 자리)
-```
-
-**2. API 로 원본 주소를 꺼냅니다.** 확장·버전도 `objecttype=thing` 으로 받습니다.
-
-```
-https://api.geekdo.com/api/geekitems?objectid=164928&objecttype=thing
-```
-
-응답의 **`item.images.original`** 이 원본 해상도 주소입니다.
-
-```json
-{ "item": { "images": {
-    "thumb":    ".../__small/...200x150...",
-    "original": ".../__original/img/.../0x0/filters:format(jpeg)/pic6228507.jpg"
-} } }
-```
-
-**3. 항목 설명에 한 줄 추가합니다.**
-
-```markdown
-# 오를레앙.jpg
-- ⭐ bgg 점수: 8.05
-+ 🔗 https://boardgamegeek.com/boardgame/164928/orleans
-+ 🖼 https://cf.geekdo-images.com/.../__original/img/.../pic6228507.jpg
-```
-
-> **썸네일 주소를 손으로 키우려 하지 마세요.** `__itemrep` 을 `__original` 로 바꿔도 같은 썸네일이 오고,
-> 크기 경로(`/fit-in/246x300/`)를 고치면 서명이 깨져 400 이 납니다. 반드시 API 의 `images.original` 을 쓰세요.
-
-> 주소는 **항목당 하나**, **최대 해상도**로 적습니다. 화면 표시와 포스터 안내창의 다운로드 링크가
-> 같은 주소를 쓰므로, 그 하나가 곧 받게 될 그림의 품질입니다.
-
-**BGG 에 없는 게임**은 주소를 만들 수 없습니다. 국내 유통사 자체 상품이 그렇습니다.
-그때는 예전처럼 그림 파일을 `topics/images/` 에 두면 됩니다.
 
 ## 저장과 백업
 
