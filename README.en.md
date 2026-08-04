@@ -17,6 +17,7 @@
 | 행복한바오밥 · MTSGames · 젬블로컴퍼니 | 70–180 each |
 | 옐로우미플 · 데블다이스 | 20–40 each |
 
+**No pictures in the repo.** They load from the URLs in `info.md`; files are needed only for poster export → **[Attaching pictures by URL](docs/image-url.en.md)**
 
 > [한국어](README.md) | **English**
 
