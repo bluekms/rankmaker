@@ -23,6 +23,7 @@
 + ♟️ 디자이너: Ian Brody
 + 🎨 아티스트: Elena Bonamoneta, Antonio De Luca, Gonzalo Kenny, Ben Wootten, Kuo Yang
 + 🔗 https://boardgamegeek.com/boardgameexpansion/463092/war-of-the-ring-the-card-game-hope-and-despair
++ 🖼 https://cf.geekdo-images.com/S7ebmf5-9Pt2q4dTen2Q3Q__original/img/64OiKduYqvL6GkSl9TrW73-PsDg=/0x0/filters:format(png)/pic9360132.png
 
 # 뉴클리엄 에너지 연구소.jpg
 - 👥 인원: 1 ~ 4 (3~4인 베스트)
@@ -33,6 +34,7 @@
 + ♟️ 디자이너: Borys Bielaś, Simone Luciani, Andrei Novac, Dávid Turczi
 + 🎨 아티스트: Guilherme Olivieri, Andreas Resch, Piotr Sokołowski, Zbigniew Umgelter
 + 🔗 https://boardgamegeek.com/boardgameexpansion/436059/nucleum-energy-research-institute
++ 🖼 https://cf.geekdo-images.com/oEBVB1mHzV9pEAze_WnaAQ__original/img/6_cJQJNpAlrvN-Qv3m-e5kl1mQc=/0x0/filters:format(jpeg)/pic8616290.jpg
 
 # 스위치 온!.png
 - 👥 인원: 1 ~ 6 (1~6, 7~None인 베스트)
@@ -63,6 +65,7 @@
 + ♟️ 디자이너: Luís Brueh
 + 🎨 아티스트: Luís Brueh
 + 🔗 https://boardgamegeek.com/boardgameexpansion/394150/keep-the-heroes-out-boss-battles
++ 🖼 https://cf.geekdo-images.com/aW6ZfL4494d930euj-MGAw__original/img/d0Zr97bSd-we8eSG-OVeexYqTDk=/0x0/filters:format(jpeg)/pic7793981.jpg
 
 # 뉴클리엄 지브롤터.jpg
 - 👥 인원: 1 ~ 4 (3인 베스트)
@@ -73,6 +76,7 @@
 + ♟️ 디자이너: Dávid Turczi
 + 🎨 아티스트: Piotr Orleański, Andreas Resch, Piotr Sokołowski, Zbigniew Umgelter
 + 🔗 https://boardgamegeek.com/boardgameexpansion/455953/nucleum-gibraltar
++ 🖼 https://cf.geekdo-images.com/hNnDV3o2flbt_YhoJ6vZKw__original/img/2gylPYCsrIRQicJ4tiPfSFViNqU=/0x0/filters:format(jpeg)/pic9149199.jpg
 
 # 블러드본 보드게임 - 폐성 카인허스트 추가 구성물.jpg
 - 👥 인원: 1 ~ 4
@@ -83,6 +87,7 @@
 + ♟️ 디자이너: Eric M. Lang, Michael Shinall
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgameexpansion/406649/bloodborne-the-board-game-forsaken-castle-cainhurs
++ 🖼 https://cf.geekdo-images.com/WTr0O8jfrTbsiL6ZjuZRrQ__original/img/JgRmcn2GP9B6PVNrwjsJVXiSubA=/0x0/filters:format(jpeg)/pic8533296.jpg
 
 # 언더워터 시티즈 데이터 시대.jpg
 - 👥 인원: 1 ~ 4 (2인 베스트)
@@ -93,6 +98,7 @@
 + ♟️ 디자이너: Vladimír Suchý
 + 🎨 아티스트: Milan Vavroň
 + 🔗 https://boardgamegeek.com/boardgameexpansion/440715/underwater-cities-data-era
++ 🖼 https://cf.geekdo-images.com/6jth2BLeLCWhOzRV6zbBow__original/img/65DKgr6ikfhQ6nSiP2wGjgJ4LNA=/0x0/filters:format(jpeg)/pic8974495.jpg
 
 # 스타워즈 덱빌딩 게임 - 만달로어인 세력팩.jpg
 - 👥 인원: 2 ~ 3 (2인 베스트)
@@ -103,6 +109,7 @@
 + ♟️ 디자이너: Caleb Grace
 + 🎨 아티스트: Henning Ludvigsen
 + 🔗 https://boardgamegeek.com/boardgameexpansion/453918/star-wars-the-deckbuilding-game-mandalorian-factio
++ 🖼 https://cf.geekdo-images.com/kfFVVstVXNGyfs5UGw7QTQ__original/img/V1MS2fEPb8sz4jxYxcOb6UI9RxM=/0x0/filters:format(jpeg)/pic9292165.jpg
 
 # 뉴클리엄 호주.jpg
 - 👥 인원: 1 ~ 4 (4인 베스트)
@@ -113,6 +120,7 @@
 + ♟️ 디자이너: Simone Luciani, Dávid Turczi
 + 🎨 아티스트: Andreas Resch, Zbigniew Umgelter, Aleksander Zawada
 + 🔗 https://boardgamegeek.com/boardgameexpansion/408223/nucleum-australia
++ 🖼 https://cf.geekdo-images.com/U0RwM7yB6zmKoqSxs1Puhw__original/img/9po8MavVqlOE8JwRRZiG37odyuE=/0x0/filters:format(jpeg)/pic7898418.jpg
 
 # 시계탑에 흐른 피.jpg
 - 👥 인원: 6 ~ 21 (9~12인 베스트)
@@ -133,6 +141,7 @@
 + ♟️ 디자이너: Trevor Benjamin, David Thompson (I)
 + 🎨 아티스트: Brigette Indelicato
 + 🔗 https://boardgamegeek.com/boardgameexpansion/388565/war-chest-nightfall
++ 🖼 https://cf.geekdo-images.com/47svrIp_8WxJAMeyAvn6hA__original/img/Mey-_NmgPc4N1zyTgufxd6eroDo=/0x0/filters:format(png)/pic7522071.png
 
 # 반지 전쟁 카드게임 - 불과 검.png
 - 👥 인원: 2 ~ 6 (2, 4, 6인 베스트)
@@ -143,6 +152,7 @@
 + ♟️ 디자이너: Ian Brody
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgameexpansion/397827/war-of-the-ring-the-card-game-fire-and-swords
++ 🖼 https://cf.geekdo-images.com/eEH7fSNhWabN3ydqQSDUnQ__original/img/DDBl_jLuCEu4FpyABqpLuOTGokg=/0x0/filters:format(png)/pic7988133.png
 
 # 블러드본 보드게임 - 금단의 숲.jpg
 - 👥 인원: 1 ~ 4 (1~2인 베스트)
@@ -153,6 +163,7 @@
 + ♟️ 디자이너: Eric M. Lang, Michael Shinall
 + 🎨 아티스트: Arnaud Boudoiron, Henning Ludvigsen, Aragorn Marks, Mike McVey, Edgar Ramos
 + 🔗 https://boardgamegeek.com/boardgameexpansion/279957/bloodborne-the-board-game-forbidden-woods
++ 🖼 https://cf.geekdo-images.com/0__OtMuLy-h2nbcdacImLQ__original/img/29NW2QD63ofXLx8BwXTSyserUsc=/0x0/filters:format(jpeg)/pic6089467.jpg
 
 # 워 체스트 노빌리티.jpg
 - 👥 인원: 2 ~ 4 (2인 베스트)
@@ -163,6 +174,7 @@
 + ♟️ 디자이너: Trevor Benjamin, David Thompson (I)
 + 🎨 아티스트: Brigette Indelicato
 + 🔗 https://boardgamegeek.com/boardgameexpansion/284444/war-chest-nobility
++ 🖼 https://cf.geekdo-images.com/pPuOyAIrh6qYv0QvpfWP2A__original/img/m60WN2A92kPpdHkt7hSDQimbhp0=/0x0/filters:format(jpeg)/pic4860409.jpg
 
 # 블러드본 보드게임 - 폐성 카인허스트.jpg
 - 👥 인원: 1 ~ 4 (1~2인 베스트)
@@ -173,6 +185,7 @@
 + ♟️ 디자이너: Eric M. Lang, Michael Shinall
 + 🎨 아티스트: Arnaud Boudoiron, Henning Ludvigsen, Aragorn Marks, Mike McVey, Edgar Ramos
 + 🔗 https://boardgamegeek.com/boardgameexpansion/279553/bloodborne-the-board-game-forsaken-cainhurst-castl
++ 🖼 https://cf.geekdo-images.com/JtIwxg1iZEmXZzuQtb9psg__original/img/hIchsJtMTA8xdYgpyRWt2JnSBB8=/0x0/filters:format(jpeg)/pic4849584.jpg
 
 # 쿼터마스터 제너럴 총력전.png
 - 👥 인원: 2 ~ 6 (6인 베스트)
@@ -183,6 +196,7 @@
 + ♟️ 디자이너: Ian Brody
 + 🎨 아티스트: Nicholas Avallone
 + 🔗 https://boardgamegeek.com/boardgameexpansion/312489/quartermaster-general-ww2-total-war
++ 🖼 https://cf.geekdo-images.com/h5nak68B1p_3QV5sTRFcwQ__original/img/DoGqsd42pKwIo34aQoi6wCmUiVU=/0x0/filters:format(png)/pic5489438.png
 
 # 블러드본 보드게임 - 사냥꾼의 꿈.jpg
 - 👥 인원: 1 ~ 4 (1~2인 베스트)
@@ -193,6 +207,7 @@
 + ♟️ 디자이너: Eric M. Lang, Michael Shinall
 + 🎨 아티스트: Arnaud Boudoiron, Henning Ludvigsen, Aragorn Marks, Mike McVey, Edgar Ramos
 + 🔗 https://boardgamegeek.com/boardgameexpansion/279878/bloodborne-the-board-game-hunters-dream
++ 🖼 https://cf.geekdo-images.com/Dpqafs6VvTIrojmvS9-cjg__original/img/V7TAsH3_c3G7wB-dUf0peFJzHPM=/0x0/filters:format(jpeg)/pic5975073.jpg
 
 # 라 그랑하 디럭스 마스터 세트.jpg
 - 👥 인원: 1 ~ 4 (3인 베스트)
@@ -213,6 +228,7 @@
 + ♟️ 디자이너: Hiroken
 + 🎨 아티스트: Nina (イラスト), Ito Taichi
 + 🔗 https://boardgamegeek.com/boardgameexpansion/355404/tricktakers-expansion-set
++ 🖼 https://cf.geekdo-images.com/HwJjiC2xKpFA_439cvtL4g__original/img/Fm_PMO3NbFuqGhJbAWKeTPJ26fQ=/0x0/filters:format(jpeg)/pic6952043.jpg
 
 # 곡예사.png
 - 👥 인원: 2 ~ 5
@@ -233,6 +249,7 @@
 + ♟️ 디자이너: Trevor Benjamin, David Thompson (I)
 + 🎨 아티스트: Brigette Indelicato
 + 🔗 https://boardgamegeek.com/boardgameexpansion/324656/war-chest-siege
++ 🖼 https://cf.geekdo-images.com/8zkpPMJOUW6YF8ZRJmGuFQ__original/img/q5BFOGy2g3CDTgb-1ykhF8pH_hw=/0x0/filters:format(jpeg)/pic6031075.jpg
 
 # 잊혀진 대륙의 철도들.jpg
 - 👥 인원: 1 ~ 5 (4인 베스트)
@@ -253,6 +270,7 @@
 + ♟️ 디자이너: Eric M. Lang, Michael Shinall
 + 🎨 아티스트: Arnaud Boudoiron, Henning Ludvigsen, Aragorn Marks, Mike McVey, Edgar Ramos
 + 🔗 https://boardgamegeek.com/boardgameexpansion/292137/bloodborne-the-board-game-blood-moon-box
++ 🖼 https://cf.geekdo-images.com/cBw_Mb4-zhK0Xv8ubduVlQ__original/img/VZeFv702b7fC9j8wHEhhNltYQ3M=/0x0/filters:format(jpeg)/pic6023924.jpg
 
 # 미스터리 파티 인 더 박스 늑대인간 마을의 축제.jpg
 - 👥 인원: 7 ~ 8
@@ -273,6 +291,7 @@
 + ♟️ 디자이너: Frédéric Guérard
 + 🎨 아티스트: Frédéric Guérard, Anthony Wolff
 + 🔗 https://boardgamegeek.com/boardgameexpansion/298851/its-a-wonderful-world-corruption-and-ascension
++ 🖼 https://cf.geekdo-images.com/Zid_TKFdhrEzxNWm4QK9YQ__original/img/uePB8nLq_ou7eNe5H3cRi2JYPfo=/0x0/filters:format(jpeg)/pic5792120.jpg
 
 # 뉴클리엄.jpg
 - 👥 인원: 1 ~ 4 (3인 베스트)
@@ -293,6 +312,7 @@
 + ♟️ 디자이너: Eric M. Lang, Michael Shinall
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgameexpansion/332694/bloodborne-the-board-game-hunters-dream-extrasenem
++ 🖼 https://cf.geekdo-images.com/ZBOZcNNTLJ6sUlnl_qxmmA__original/img/ebBYsTKs_niP7CumOB1QfqUqFEs=/0x0/filters:format(jpeg)/pic6333259.jpg
 
 # 라이프 오브 아마조니아.png
 - 👥 인원: 1 ~ 4 (2인 베스트)
@@ -313,6 +333,7 @@
 + ♟️ 디자이너: Eric M. Lang, Michael Shinall
 + 🎨 아티스트: Henning Ludvigsen
 + 🔗 https://boardgamegeek.com/boardgameexpansion/279271/bloodborne-the-board-game-byrgenwerth
++ 🖼 https://cf.geekdo-images.com/5HoI_36L1itiwv5GW2BfjQ__original/img/DMRoLHhJDFoQTgyIGQP0DrxnIQ4=/0x0/filters:format(jpeg)/pic4849352.jpg
 
 # 스타워즈 덱빌딩 게임 - 클론 전쟁.jpg
 - 👥 인원: 2 (2인 베스트)
@@ -343,6 +364,7 @@
 + ♟️ 디자이너: Eric M. Lang, Michael Shinall
 + 🎨 아티스트: Henning Ludvigsen
 + 🔗 https://boardgamegeek.com/boardgameexpansion/281938/bloodborne-the-board-game-chalice-dungeon
++ 🖼 https://cf.geekdo-images.com/f62g_p7O-hV0AYF_T9YttA__original/img/hK7VYhT1SvVeiwsbH5ldYlCSwFE=/0x0/filters:format(jpeg)/pic5975235.jpg
 
 # 뉴클리엄 진보의 궁정.jpg
 - 👥 인원: 1 ~ 4 (3~4인 베스트)
@@ -353,6 +375,7 @@
 + ♟️ 디자이너: Simone Luciani, Dávid Turczi
 + 🎨 아티스트: Andreas Resch, Piotr Sokołowski, Zbigniew Umgelter, Aleksander Zawada
 + 🔗 https://boardgamegeek.com/boardgameexpansion/423519/nucleum-court-of-progress
++ 🖼 https://cf.geekdo-images.com/1_6UN-CNLMvV45D0eoyPpQ__original/img/RVovrEh7tjkMiyo47HzUL12fVQ4=/0x0/filters:format(jpeg)/pic8269212.jpg
 
 # 미스터리 파티 인 더 박스 몇 번이고 푸른 달에 불을 붙였다.jpg
 - 👥 인원: 6 ~ 7 (7인 베스트)
@@ -373,6 +396,7 @@
 + ♟️ 디자이너: Eric M. Lang, Michael Shinall
 + 🎨 아티스트: Arnaud Boudoiron, Henning Ludvigsen, Aragorn Marks, Mike McVey, Edgar Ramos
 + 🔗 https://boardgamegeek.com/boardgameexpansion/281937/bloodborne-the-board-game-mergos-loft
++ 🖼 https://cf.geekdo-images.com/4AtOed4DW0m91R8fctWL4g__original/img/-n96Lte2b3s9KEyAlON6P3RNirY=/0x0/filters:format(png)/pic4878572.png
 
 # 블러드본 보드게임 - 숨은 거리, 야하굴.jpg
 - 👥 인원: 1 ~ 4
@@ -383,6 +407,7 @@
 + ♟️ 디자이너: Eric M. Lang, Michael Shinall
 + 🎨 아티스트: Henning Ludvigsen
 + 🔗 https://boardgamegeek.com/boardgameexpansion/279084/bloodborne-the-board-game-yahargul-unseen-village
++ 🖼 https://cf.geekdo-images.com/Xp4c3yc-tnpWTm3-d_Djig__original/img/KEI2lO8qZ07hNPJWAKRAo3wasUU=/0x0/filters:format(jpeg)/pic4849596.jpg
 
 # 파크스 (2판).jpg
 - 👥 인원: 1 ~ 5 (3인 베스트)
@@ -403,6 +428,7 @@
 + ♟️ 디자이너: Eric M. Lang, Michael Shinall
 + 🎨 아티스트: Arnaud Boudoiron, Henning Ludvigsen, Aragorn Marks, Mike McVey, Edgar Ramos
 + 🔗 https://boardgamegeek.com/boardgameexpansion/279749/bloodborne-the-board-game-upper-cathedral-ward
++ 🖼 https://cf.geekdo-images.com/mBRKsHU5fG_CsHwZlMrrlw__original/img/fz_hIoL5al0-yPLwZrVrkJlsB2E=/0x0/filters:format(jpeg)/pic4849593.jpg
 
 # 레츠 고! 투 재팬 최고의 당일 여행.jpg
 - 👥 인원: 1 ~ 5 (4인 베스트)
@@ -413,6 +439,7 @@
 + ♟️ 디자이너: Josh Wood
 + 🎨 아티스트: Erica Ward
 + 🔗 https://boardgamegeek.com/boardgameexpansion/387481/lets-go-to-japan-day-trip
++ 🖼 https://cf.geekdo-images.com/k1KplTUQFFZzqO7M0a-Z6Q__original/img/dNr2gHyOHbFRD6KNpkk1jG4QgMQ=/0x0/filters:format(jpeg)/pic8134653.jpg
 
 # 부동산 거물 첫 번째 도시 - 보드게임 산업 프로모.jpg
 - 👥 인원: 1 ~ 5
@@ -423,6 +450,7 @@
 + ♟️ 디자이너: Donal Hegarty, Cze Lee, James Naylor
 + 🎨 아티스트: James Naylor
 + 🔗 https://boardgamegeek.com/boardgameexpansion/359382/magnate-the-boardgame-economy-promo
++ 🖼 https://cf.geekdo-images.com/YE8qI0gHRh3kJWjZjRfEJA__original/img/hD6_RzVWTEu-e2EV4Np5GclQyzQ=/0x0/filters:format(jpeg)/pic6764635.jpg
 
 # 레츠 고! 투 재팬 여권을 챙기세요.jpg
 - 👥 인원: 1 ~ 5 (4인 베스트)
@@ -433,6 +461,7 @@
 + ♟️ 디자이너: Josh Wood
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgameexpansion/387479/lets-go-to-japan-grab-your-passport
++ 🖼 https://cf.geekdo-images.com/pdvo42G5ZEbA_2wS4_Y9Sw__original/img/doyqxkUEp6rr1hmcmaePLD04DOM=/0x0/filters:format(jpeg)/pic8134660.jpg
 
 # 미스터리 파티 시리즈 마녀는 황혼의 종에 사라진다.jpg
 - 👥 인원: 6 ~ 7
@@ -463,6 +492,7 @@
 + ♟️ 디자이너: Hiroken
 + 🎨 아티스트: Nina (イラスト), Ito Taichi
 + 🔗 https://boardgamegeek.com/boardgameexpansion/366578/tricktakers-little
++ 🖼 https://cf.geekdo-images.com/iZhEn04gObMQ3QXBtlkrUw__original/img/JeM6TaICFQb366TosNcX-e3kBuI=/0x0/filters:format(jpeg)/pic6955594.jpg
 
 # 잊혀진 대륙의 철도들 랜드마크.jpg
 - 👥 인원: 1 ~ 7
@@ -473,6 +503,7 @@
 + ♟️ 디자이너: Kevin Delger, Jacob Schacht
 + 🎨 아티스트: Studio Delger
 + 🔗 https://boardgamegeek.com/boardgameexpansion/438903/railways-of-the-lost-atlas-landmarks-of-the-lost-a
++ 🖼 https://cf.geekdo-images.com/wjrf4VbDFPx3MpnPmbV95w__original/img/bEfx1N8MaTMaNIZ6xJjImyXnZ7o=/0x0/filters:format(jpeg)/pic9715156.jpg
 
 # 워 체스트.png
 - 👥 인원: 2 ~ 4 (2인 베스트)
@@ -513,6 +544,7 @@
 + ♟️ 디자이너: Benoit Bannier, Frédéric Guérard
 + 🎨 아티스트: Anthony Wolff
 + 🔗 https://boardgamegeek.com/boardgameexpansion/298752/its-a-wonderful-world-war-or-peace
++ 🖼 https://cf.geekdo-images.com/ToHfrBwIrS2JgfdMqn01zA__original/img/s2BVL87_A9TVM04OfacRGqfnyXw=/0x0/filters:format(jpeg)/pic5684929.jpg
 
 # 블러드본 보드게임.png
 - 👥 인원: 1 ~ 4 (1~2인 베스트)
@@ -543,6 +575,7 @@
 + ♟️ 디자이너: Frank Heeren, Uwe Rosenberg
 + 🎨 아티스트: Dennis Lohausen
 + 🔗 https://boardgamegeek.com/boardgameexpansion/356147/glass-road-upgrade-promo-pack
++ 🖼 https://cf.geekdo-images.com/bf4qasB3_ROsnExGkVP9jA__original/img/mTpFm2b8zuU8Yg1akdj8Io-rjLQ=/0x0/filters:format(jpeg)/pic6686564.jpg
 
 # 커피 트레이더스.jpg
 - 👥 인원: 2 ~ 5 (4~5인 베스트)
@@ -563,6 +596,7 @@
 + ♟️ 디자이너: -
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgameexpansion/381803/hackclad-cross-fate
++ 🖼 https://cf.geekdo-images.com/BJM6NG_W7T0-5Qc8Cf4bag__original/img/KplDEYKDUVeK2b_Sy2kkw2J3PHs=/0x0/filters:format(png)/pic7458678.png
 
 # 라 그랑하 프로모 카드.jpg
 - 👥 인원: 1 ~ 4 (3~4인 베스트)
@@ -573,6 +607,7 @@
 + ♟️ 디자이너: Michael Keller (II), Andreas Odendahl
 + 🎨 아티스트: Harald Lieske
 + 🔗 https://boardgamegeek.com/boardgameexpansion/178452/la-granja-2nd-edition-promo-cards
++ 🖼 https://cf.geekdo-images.com/OwCtHRfu-FvqCRzupystuA__original/img/mu2P2bJEjukciFg3wutEmuVRS0U=/0x0/filters:format(jpeg)/pic2621743.jpg
 
 # 원더풀 월드.jpg
 - 👥 인원: 1 ~ 5 (4인 베스트)
@@ -653,6 +688,7 @@
 + ♟️ 디자이너: Ian Brody
 + 🎨 아티스트: Mauro Alocci, Domenico Cava, Federica Costantini, Jon Hodgson, John Howe, Matteo Macchi, Francesco Mattioli, Andrea Piparo, Dmitry Prosvirnin, Ben Wootten, Kuo Yang
 + 🔗 https://boardgamegeek.com/boardgameexpansion/388470/war-of-the-ring-the-card-game-against-the-shadow
++ 🖼 https://cf.geekdo-images.com/J9UII8r0vR1lvJzDe1LOXw__original/img/6bSXJFqiQQiNGZIvo9u00u6fflk=/0x0/filters:format(jpeg)/pic7517812.jpg
 
 # 블랙 포레스트.jpg
 - 👥 인원: 1 ~ 4 (3인 베스트)
@@ -793,6 +829,7 @@
 + ♟️ 디자이너: Yoshihiko Koriyama (郡山喜彦)
 + 🎨 아티스트: Osamu Inoue (井上磨)
 + 🔗 https://boardgamegeek.com/boardgameexpansion/405914/habesutoshou-huo-ji-harvest-festival
++ 🖼 https://cf.geekdo-images.com/1M5nlMO51Xhf98bZ3p63ZA__original/img/MzSDMzMOyOAiXExRkSyu5stFEjU=/0x0/filters:format(png)/pic7861514.png
 
 # 글래스 로드.jpg
 - 👥 인원: 1 ~ 4 (2인 베스트)
@@ -853,6 +890,7 @@
 + ♟️ 디자이너: Trevor Benjamin, David Thompson (I)
 + 🎨 아티스트: Brigette Indelicato
 + 🔗 https://boardgamegeek.com/boardgameexpansion/393789/war-chest-tournament-kit
++ 🖼 https://cf.geekdo-images.com/Mt8egSTdDun4Lz1NLovJWQ__original/img/B7QMz3eX3OAD6jZAXp_HaljuSjQ=/0x0/filters:format(jpeg)/pic7611939.jpg
 
 # 넥스트스테이션 파리.jpg
 - 👥 인원: 1 ~ 4 (2인 베스트)
@@ -933,6 +971,7 @@
 + ♟️ 디자이너: Frank Heeren, Uwe Rosenberg
 + 🎨 아티스트: Dennis Lohausen
 + 🔗 https://boardgamegeek.com/boardgameexpansion/189653/die-glasstrasse-die-adventskalendererweiterung
++ 🖼 https://cf.geekdo-images.com/CVXUUAX6QIwWGhAePsT_Sw__original/img/0um0KSS-eTCpEcEWEgjWZ8U-C0A=/0x0/filters:format(jpeg)/pic2796901.jpg
 
 # 카르누타.jpg
 - 👥 인원: 2 ~ 4 (2~3인 베스트)
@@ -973,6 +1012,7 @@
 + ♟️ 디자이너: Nate Linhart
 + 🎨 아티스트: Vincent Dutrait
 + 🔗 https://boardgamegeek.com/boardgameexpansion/381753/tenpenny-parks-fast-pass-mini-expansion
++ 🖼 https://cf.geekdo-images.com/YgnnhoNx4_q8MVwiR5mPdA__original/img/18p6rc9jg2LInEF_5pMCi3_AIMc=/0x0/filters:format(png)/pic7389668.png
 
 # 세버튼.jpg
 - 👥 인원: 1 ~ 5 (5인 베스트)
@@ -993,6 +1033,7 @@
 + ♟️ 디자이너: Uwe Rosenberg
 + 🎨 아티스트: Dennis Lohausen
 + 🔗 https://boardgamegeek.com/boardgameexpansion/167567/die-glasstrasse-oktoberfest
++ 🖼 https://cf.geekdo-images.com/dMELNwl6gnemuClCpc_f-A__original/img/w77OifLh5sqR6f3OrhjU3sw4kSE=/0x0/filters:format(jpeg)/pic2279664.jpg
 
 # 별의 기록 지구.png
 - 👥 인원: 2 ~ 5 (3인 베스트)
@@ -1013,6 +1054,7 @@
 + ♟️ 디자이너: Matthew Dunstan
 + 🎨 아티스트: Maxime Morin
 + 🔗 https://boardgamegeek.com/boardgameexpansion/372324/next-station-london-open-day
++ 🖼 https://cf.geekdo-images.com/LFRy-RCJHa_6u0bBFDwfng__original/img/FYm_3LdvBD8HGpeMAkUiHakhPWI=/0x0/filters:format(png)/pic8181480.png
 
 # 원더풀 킹덤.jpg
 - 👥 인원: 1 ~ 2 (2인 베스트)
@@ -1153,6 +1195,7 @@
 + ♟️ 디자이너: -
 + 🎨 아티스트: Dennis Lohausen
 + 🔗 https://boardgamegeek.com/boardgameexpansion/190602/die-glasstrasse-harlekin
++ 🖼 https://cf.geekdo-images.com/DfMZP-KaTBiHAYQdES0I-Q__original/img/z7dNnzr02ueIfFlVWBSGiPPLjIQ=/0x0/filters:format(png)/pic2896517.png
 
 # 늑대인간 마을의 축제.png
 - 👥 인원: 7 ~ 8
@@ -1353,6 +1396,7 @@
 + ♟️ 디자이너: -
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgameexpansion/382832/budongsan-geomul-ceos-beonjjae-dosi-hangugeopan-te
++ 🖼 https://cf.geekdo-images.com/rtSlQhSIUkRttGI7u3TTFA__original/img/6-RUQ2XadafmAhaHnP-9PYuROAA=/0x0/filters:format(jpeg)/pic7414252.jpg
 
 # 모죠.jpg
 - 👥 인원: 3 ~ 8 (2인 베스트)
