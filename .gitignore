@@ -16,3 +16,7 @@ topics/*/cup.save.json
 # (ex_ 접두사가 붙은 예제 주제만 저장소에 남습니다)
 # topics/*
 # !topics/ex_*/
+
+# 공용 이미지는 info.md 의 BGG 주소로 받는다 — 저장소에는 담지 않는다.
+# 이미 추적 중인 것(BGG 에 없어 파일로만 존재하는 것들)은 그대로 유지된다.
+topics/images/*
