@@ -2,173 +2,130 @@
 
 > [한국어](README.md) | **English**
 
-**An offline ranking board: drop images into a folder, rank them, export share-ready posters.**
+**An offline ranking board: collect images, rank them, export share-ready posters.**
 Runs from a single `index.html` — no server, no install, no build.
 
-## Contents
-
-- [What it does](#what-it-does)
-- [Getting started](#getting-started)
-- [Learn from the examples](#learn-from-the-examples)
-- [Views](#views)
-- [WorldCup](#worldcup)
-- [Podium — image export](#podium--image-export)
-- [Creating your own topic](#creating-your-own-topic)
-- [Saving and backup](#saving-and-backup)
-
-## What it does
-
-1. Sort things roughly with **Tier**,
-2. fine-tune the exact order in **List** / **Gallery**,
-3. export it with **Podium**.
-
-Plus a separate **WorldCup** (bracket) mode that has nothing to do with your ranking.
+Rough them out in **Tier** → refine in **List / Gallery** → export with **Podium**.
+There is also a **WorldCup** (favorite tournament) mode, kept entirely separate from the ranking.
 
 ## Getting started
 
-1. Download the latest zip from [Releases](https://github.com/bluekms/rankmaker/releases/latest) and unzip it.
-2. Open `index.html` in your browser. (Chrome / Edge recommended)
-3. Click **"Connect Topics Folder"** and pick the `topics` folder, or drag & drop it onto the window.
-   This one-time approval is required by browser security; later launches open automatically.
+1. Grab the zip from [Releases](https://github.com/bluekms/rankmaker/releases/latest) and unpack it.
+2. Open `index.html` in a browser. (Chrome / Edge recommended)
+3. Hit **Connect Topics Folder** and pick `topics`, or drag the folder onto the window.
+   The browser asks for permission **once**; after that it reopens on its own.
 
-## Learn from the examples
+## Folder layout
 
-The zip ships three examples under `topics/`, all prefixed `ex_`. Delete them when you're done.
+```
+topics/
+├── images/           ← every picture lives here, shared by all topics
+│   ├── shin.png
+│   └── jin.png
+├── podium.png        ← (optional) shared podium artwork
+└── my topic/
+    ├── info.md       ← what goes in, and how it is described
+    └── save.json     ← ranks and checkboxes — created for you
+```
 
-### `ex_라면` — no images, just `info.md`
+**Topic folders hold no pictures.** If several topics cover the same thing, one copy of the image is enough.
 
-A board works even with zero image files. Items with only a name get an auto-generated color card.
+## Writing `info.md`
 
 ```markdown
-# global
+// Ramen ranking      ← topic name (optional)
+
+# global             ← prepended to every item's description
 - 🍜 tried it [ ]
 
-# 신라면.svg
+# shin.png            ← one item. The name is the filename in topics/images/
 - 🌶️ heat: ★★★☆☆
 + 📅 released: 1986
++ 🖼 https://example.com/shin.png
 ```
 
-- `# global` → lines prepended to every item
-- lines starting with `-` → shown in **both List and Gallery**
-- lines starting with `+` → shown in **List only**
+| Token | Meaning |
+|---|---|
+| `# filename` | One item. Must match the filename in `topics/images/` exactly |
+| `# global` | Prepended to every item's description |
+| `-` / `+` | Always shown / shown in List only |
+| `[ ]` | A checkbox, anywhere you like |
+| `//` | Settings — topic name, `dark`, `grid`, `columns: 4` |
 
-### `ex_chzzk_vtuber` — video, playable right in the browser
+**The image file is optional.** Put an image URL in the description and it is used instead; with neither, you get a card with just the name on it.
 
-Put a CHZZK clip URL in a description line and it **plays inside the WorldCup card**.
-An image URL becomes the card thumbnail. Both are detected from **the URL alone**.
-
-```markdown
-# 시라유키 히나 - 발박수 하는 거 보고 휘둥그레.svg
-- 👤 Shirayuki Hina · 👁 399,168
-+ 🖼 https://video-phinf.pstatic.net/.../ZTIVw2ab9M_05.jpg
-+ 🔗 https://chzzk.naver.com/clips/brl5GPRc6g
-```
-
-> The leading 🖼 and 🔗 are **decoration only** — remove them or use anything else and it still works.
-
-> CHZZK, Naver TV, Vimeo, SOOP, and local `.mp4` / `.webm` files all play inline.
-
-### `ex_youtube_kpop` — YouTube can't play inline
-
-YouTube refuses to embed when `index.html` is opened as a local file (error 153). Clicking the card **opens a new tab** instead.
+> The 🌶️ 📅 🔗 emoji in the examples are **just text**. They carry no meaning — change them freely.
+> Only `#` `-` `+` `[ ]` `//` are actual syntax.
 
 ## Views
 
-Tier, List and Gallery **share one ranking** — change it in one place and the others follow.
-Search supports Korean chosung (`ㅅㄹㅁ` → 신라면).
+Tier, List and Gallery **share one ranking**. Change it in one place and the others follow.
 
 ### Tier — start rough
 
 ![Tier view](docs/tier.png)
 
-Best place to start when you have a lot of items. Drop onto a row to join that tier; **the order inside a tier is the rank**.
-
-- 5 rows by default · `+ Add Tier` to add (max 10) · `×` to delete (its items move to the `…` pool)
-- Click a label to rename it
-- `Size` sets the icon size
+Drop an item onto a tier row to move it there; **its position within the row is its rank**.
+Five rows by default · `+ Add Tier` to add (max 10) · `×` to remove · click a label to rename · `Size` for icon size.
 
 ### List — exact ranks
 
 ![List view](docs/list.png)
 
-- Click the rank number to type one; hover it for ▲▼ to nudge by one
-- Grab the `⣿` handle to drag
-- A memo box per item (List view only)
+Click a rank number to type one, use ▲▼ to nudge, or drag the `⣿` handle. Each item can carry a memo.
 
-> Ranks are always a gapless 1, 2, 3, … — there are no ties. Put items you can't separate in the same tier instead.
+> Ranks run 1, 2, 3 with no gaps and no ties — when two things are too close to call, put them in the same tier.
 
 ### Gallery — see everything
 
 ![Gallery view](docs/gallery.png)
 
-`Cols` sets the number of columns.
+`Cols` sets the column count.
+
+### Search and undo
+
+- **Search** matches item names only, and understands Korean initial consonants (`ㅅㄹㅁ` → 신라면). Turn on `All Text` to search descriptions too; matches are highlighted.
+- **Undo** rewinds order, tier and checkbox changes up to 50 steps. `Ctrl+Z` works too.
 
 ## WorldCup
 
-**Completely independent from the ranking board.** Nothing you pick here changes Tier / List / Gallery.
+**Completely separate from the ranking.** Nothing you pick here changes Tier / List / Gallery.
 
 <p align="center"><img src="docs/cup1.png" width="80%" alt="WorldCup setup"></p>
 
-The default is **pick 1 of 2**; change it with `Pick n of m`.
+By default you pick **1 of 2**; `Pick n of m` changes that.
 
 <p align="center">
   <img src="docs/cup2.png" width="49%" alt="1 of 2">
   <img src="docs/cup3.png" width="49%" alt="2 of 4">
 </p>
 
-`Start from` sets the bracket size (16, 32, …). While playing, `Undo` steps back and `Quit` exits.
+`Start from` sets the bracket size (16, 32 …). While running you can `Undo` or `Quit`.
 Results are recorded separately in `cup.save.json`.
 
 ## Podium — image export
 
-In List or Gallery view, open the **Podium** menu to export a PNG.
-
-| Menu | Result |
-|---|---|
-| Instagram — 1:1 · Top 3 | Square podium image for Instagram |
-| Poster — Top 10 | Tall Top 10 poster |
+Export a PNG from the **Podium** menu in List or Gallery. In WorldCup you get a **Winner** image of the champion.
 
 <p align="center">
   <img src="docs/top3_light.png" width="49%" alt="Top 3 — light">
   <img src="docs/top10_dark.png" width="49%" alt="Top 10 — dark">
 </p>
 
-In WorldCup, the same export produces a single **Winner** image.
+**The podium artwork is replaceable.** `topics/podium.png` applies everywhere; `topics/<topic>/podium.png` overrides it for that topic.
 
-**The podium artwork is replaceable.** `topics/podium.png` applies to every topic; drop `topics/<topic>/podium.png` to override it for one topic.
+### When a picture is only a URL
 
-## Creating your own topic
+The poster needs the picture **as a file**. A URL-only picture shows fine on screen, but if its server forbids other sites from using it, it cannot go into the poster — a browser security rule with no way around it.
 
-One folder under `topics/` = one board.
-
-```
-topics/
-├── podium.png       ← (optional) shared podium artwork
-└── my-topic/
-    ├── item1.png    ← image = item, filename = name
-    ├── item2.jpg
-    ├── info.md      ← (optional) descriptions
-    └── save.json    ← ranks & checks — auto-created
-```
-
-`info.md` rules:
-
-- `# filename` — description for that item; must match the filename exactly.
-  The file doesn't have to exist — a name card, or an image URL from the description, is used instead.
-- `# global` — lines shown at the top of every item's description.
-- `-` required lines (always shown) / `+` extra lines (List view only)
-- `[ ]` — put checkboxes anywhere.
-- `http(s)://` addresses render as clickable links; image and video URLs are picked up as thumbnails and playable media.
-
-> The 🌶️ 📅 🔗 emoji in the examples are **just text**. They aren't syntax — change or drop them freely.
-> Only four things actually mean something: the leading `-` and `+`, the `#` heading, and `[ ]`.
+You get a dialog when that happens. **Copy the image and press `Paste`**, and the app writes it into `topics/images/` under the right filename. Downloading it yourself works too.
 
 ## Saving and backup
 
-- **Chrome / Edge** — every change is auto-saved to `save.json` in the topic folder ("Saved ✓").
-- **Firefox / Safari** — can't write to the folder, so changes are kept in the browser. Use the buttons below to back up.
-- **Save** — downloads the current ranking as a `save.json` file.
-- **Import** — loads a `save.json` back in.
+- **Chrome / Edge** — every change is written straight to the topic's `save.json` (`Saved ✓`).
+- **Firefox / Safari** — no direct folder access, so changes are kept in the browser. Back them up with the buttons below.
+- **Save** — download the current ranking as `save.json`.
+- **Load** — read a downloaded `save.json` back in.
 
 ## License
 
@@ -178,4 +135,4 @@ topics/
 
 **CrosS21** — [bluekms21@naver.com](mailto:bluekms21@naver.com) · [blog.naver.com/bluekms21](https://blog.naver.com/bluekms21)
 
-This project was built by **vibe coding** with [Claude Code](https://claude.com/claude-code).
+Built with [Claude Code](https://claude.com/claude-code) — vibe coding.

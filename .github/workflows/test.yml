@@ -12,12 +12,12 @@ jobs:
   unit:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with:
-          node-version: "20"
+          node-version: "22"
 
       # 의존성이 없으므로 설치 단계가 필요 없다
-      - name: 순수 로직 테스트
+      - name: unit tests
         run: node tests/unit.mjs

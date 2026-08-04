@@ -113,71 +113,62 @@ function resolve(ex, item) {
 const imageItems = ex => Object.keys(ex.info.items).filter(n => IMG_EXT.test(n));
 const strayImages = ex => [...ex.files].filter(f => IMG_EXT.test(f) && !PODIUM_RE.test(f));
 
-/* ================= 예제 주제가 앱이 기대하는 모양인가 ================= */
-describe("예제 주제 공통", () => {
+/* ================= 예제 주제 =================
+   주제마다 그림이 어디서 오는지가 다르다. 기대를 표로 적고 한 번에 훑는다.
+   kinds 는 그 주제에 허용되는 출처다 — 여기 없는 출처가 나오면 실패한다. */
+const EXPECT = {
+  ex_image_boardgame: { kinds: ["remote", "shared"], name: "보드게임 월드컵 (이미지 예제)", min: 10 },
+  ex_chzzk_vtuber:    { kinds: ["remote"] },
+  ex_youtube_kpop:    { kinds: ["card"] },
+  "ex_라면":           { kinds: ["card"] },
+  ex_image_source:    { kinds: ["shared", "remote", "card"] },   // 셋 다 나오는 준비물
+};
+
+describe("예제 주제", () => {
   for (const name of EXAMPLES) {
     const ex = example(name);
     if (!ex) { skipped(`${name} 이(가) 없습니다`); continue; }
-    ok(`${name} — 항목이 있다`, imageItems(ex).length > 0);
+    const want = EXPECT[name] || { kinds: ["shared", "remote", "card"] };
+    const items = imageItems(ex);
+
+    ok(`${name} — 항목이 ${want.min || 1}개 이상`, items.length >= (want.min || 1));
     ok(`${name} — global 설명이 있다`, ex.info.global.length > 0);
-    ok(`${name} — 모든 항목에 설명이 붙어 있다`,
-      imageItems(ex).every(n => ex.info.items[n].length > 0));
-    ok(`${name} — 모든 항목이 이미지 확장자다`,
-      Object.keys(ex.info.items).every(n => IMG_EXT.test(n)));
+    ok(`${name} — 모든 항목에 설명이 붙어 있다`, items.every(n => ex.info.items[n].length > 0));
+    ok(`${name} — 모든 항목이 이미지 확장자다`, Object.keys(ex.info.items).every(n => IMG_EXT.test(n)));
     // 그림은 전부 topics/images 에 모아 둔다 — 주제 폴더에는 두지 않는다
     it(`${name} — 주제 폴더에 그림이 남아 있지 않다`, strayImages(ex), []);
+    it(`${name} — 그림 출처가 ${want.kinds.join("·")} 뿐이다`,
+      [...new Set(items.map(n => resolve(ex, n)))].filter(k => !want.kinds.includes(k)), []);
+    if (want.name) it(`${name} — 주제 이름을 주석에서 읽는다`, ex.info.name, want.name);
   }
 });
 
-/* ================= 이미지가 실제 파일인 예제 ================= */
-describe("ex_image_boardgame — 그림 파일이 있는 예제", () => {
-  const ex = example("ex_image_boardgame");
-  if (!ex) return skipped("예제가 없습니다");
-  const items = imageItems(ex);
-
-  ok("항목이 여럿이다", items.length >= 10);
-  it("모든 항목이 공용 폴더의 파일로 해결된다",
-    items.filter(n => resolve(ex, n) !== "shared"), []);
-  it("BGG 게임 페이지 주소는 썸네일로 쓰지 않는다",
-    items.filter(n => thumbOf(ex.info.items[n])), []);
-  ok("설명에 BGG 링크가 남아 있다",
-    items.some(n => ex.info.items[n].some(l => l.text.includes("boardgamegeek.com/boardgame/"))));
-  ok("BGG 게임 링크는 설명에서 감추지 않는다",
-    !isMetaLine("🔗 https://boardgamegeek.com/boardgame/382350/lost-ruins-of-arnak-the-missing-expedition"));
-  it("주제 이름을 주석에서 읽는다", ex.info.name, "보드게임 월드컵 (이미지 예제)");
-});
-
-/* ================= 주소로만 이미지가 있는 예제 ================= */
-describe("ex_chzzk_vtuber — 파일 없이 주소로 뜨는 예제", () => {
-  const ex = example("ex_chzzk_vtuber");
-  if (!ex) return skipped("예제가 없습니다");
-  const items = imageItems(ex);
-
-  ok("항목이 있다", items.length > 0);
-  it("모두 주소로 해결된다", items.filter(n => resolve(ex, n) !== "remote"), []);
-  ok("뽑아낸 주소가 이미지다",
-    items.every(n => /\.(jpe?g|png|webp|gif|avif)(\?|$)/i.test(thumbOf(ex.info.items[n]))));
-  ok("썸네일 주소는 설명에서 감춘다",
-    items.every(n => ex.info.items[n].filter(l => l.text.includes("pstatic.net")).every(l => isMetaLine(l.text))));
-});
-
-/* ================= 주소가 없어 이름 카드로 가는 예제 ================= */
-describe("ex_라면 · ex_youtube_kpop — 이름 카드로 가는 예제", () => {
-  for (const name of ["ex_라면", "ex_youtube_kpop"]) {
-    const ex = example(name);
-    if (!ex) { skipped(`${name} 이(가) 없습니다`); continue; }
-    const items = imageItems(ex);
-    it(`${name} — 썸네일 주소가 없다`, items.filter(n => thumbOf(ex.info.items[n])), []);
-    it(`${name} — 이름 카드로 해결된다`, items.filter(n => resolve(ex, n) !== "card"), []);
+/* 주소를 뽑아내는 규칙 — 게임 페이지 링크와 그림 주소를 섞지 않아야 한다 */
+describe("예제 주제의 주소 처리", () => {
+  const bg = example("ex_image_boardgame"), cz = example("ex_chzzk_vtuber"), yt = example("ex_youtube_kpop");
+  if (bg) {
+    const items = imageItems(bg);
+    it("BGG 게임 페이지 주소는 썸네일로 오인하지 않는다",
+      items.map(n => thumbOf(bg.info.items[n])).filter(u => u && /boardgamegeek\.com\/boardgame\//.test(u)), []);
+    ok("설명에 BGG 링크가 남아 있다",
+      items.some(n => bg.info.items[n].some(l => l.text.includes("boardgamegeek.com/boardgame/"))));
+    ok("BGG 게임 링크는 설명에서 감추지 않는다",
+      !isMetaLine("🔗 https://boardgamegeek.com/boardgame/382350/lost-ruins-of-arnak-the-missing-expedition"));
   }
-  const yt = example("ex_youtube_kpop");
+  if (cz) {
+    const items = imageItems(cz);
+    ok("뽑아낸 주소가 이미지다",
+      items.every(n => /\.(jpe?g|png|webp|gif|avif)(\?|$)/i.test(thumbOf(cz.info.items[n]))));
+    ok("썸네일 주소는 설명에서 감춘다",
+      items.every(n => cz.info.items[n].filter(l => l.text.includes("pstatic.net")).every(l => isMetaLine(l.text))));
+  }
   if (yt) ok("유튜브 주소는 설명에서 감춘다", isMetaLine("🔗 https://youtu.be/U7mPqycQ0tQ"));
 });
 
 /* ================= 수동 시나리오용 준비물 =================
    tests/SCENARIOS.md 가 그대로 쓰는 주제다. 여섯 항목이 각각 다른 출처를 대표한다.
-   4번·6번은 시나리오를 돌리는 동안 파일이 생길 수 있으므로 '어떻게 해결되는가'가 아니라
-   'info.md 가 무엇을 선언하고 있는가'를 확인한다 — 그쪽이 흔들리지 않는다. */
+   시나리오를 돌리는 동안 파일이 생길 수 있으므로 '어떻게 해결되는가'가 아니라
+   'info.md 가 무엇을 선언하고 있는가'를 주로 확인한다 — 그쪽이 흔들리지 않는다. */
 describe("ex_image_source — 시나리오 준비물", () => {
   const ex = example("ex_image_source");
   if (!ex) return skipped("준비물 주제가 없습니다");
@@ -204,12 +195,11 @@ describe("ex_image_source — 시나리오 준비물", () => {
   ok("그 주소는 이미지 확장자로 끝난다", /\.png$/i.test(src("6 주소 CORS 허용.png") || ""));
 
   /* 저장이 없을 때의 표시 순서는 파일명 순이다(loadTopic).
-     Poster(Insta)는 상위 3개만 쓰므로 그 셋은 모두 그림이 있어야 F9 를 볼 수 있다.
+     Poster(Insta)는 상위 3개만 쓰므로 그 셋은 모두 그림이 있어야 한다.
      번호 접두어가 그 순서를 만든다 — 이름을 바꾸면 조용히 깨지므로 여기서 붙잡는다. */
   const byName = items.slice().sort();
   it("파일명 순 상위 3개가 전용 그림 셋이다", byName.slice(0, 3), own);
-  ok("4위 이하에 주소로만 있는 항목이 있다",
-    byName.slice(3).some(n => resolve(ex, n) === "remote"));
+  ok("4위 이하에 주소가 적힌 항목이 있다", byName.slice(3).some(n => src(n)));
 });
 
 /* ================= 공용 이미지 원본 =================
@@ -317,6 +307,70 @@ describe("검색", () => {
     app(`markedLine("보기 https://a.com/x.jpg", "a.com", true)`), "보기 https://a.com/x.jpg");
 
   app("document.querySelector = origQuery;");   // 뒤 블록에 영향을 남기지 않는다
+});
+
+/* ================= 클립보드 붙여넣기 =================
+   확장자에 맞춰 다시 인코딩하는지, 항목명 그대로 저장하는지를 본다.
+   캔버스는 스텁이므로 '어떤 형식으로 toBlob 을 불렀는가'로 판정한다. */
+await describe("붙여넣기", async () => {
+  app(`
+    flash = () => {}; render = () => {};
+    calls = { toBlob: [], written: [], bitmaps: 0 };
+    createImageBitmap = async () => ({ width: 4, height: 4, close() { calls.bitmaps++; } });
+    document.createElement = tag => {
+      const e = { tagName: (tag || "").toUpperCase(), style: {}, append() {}, className: "", textContent: "" };
+      if (e.tagName === "CANVAS") {
+        e.getContext = () => ({ fillStyle: "", fillRect() {}, drawImage() {} });
+        e.toBlob = (cb, type) => { calls.toBlob.push(type); cb({ size: 9, type }); };
+      }
+      return e;
+    };
+    // 공용 폴더와 파일 쓰기를 가짜로 갈아 끼운다
+    imagesFolder = async () => ({ mark: "dir" });
+    writeFile = async (dir, name, data) => { calls.written.push({ name, type: data.type }); return { mark: name }; };
+    sharedImages = new Map();
+    useLocalImage = () => {};
+    setClip = b => { navigator.clipboard = { read: async () => [{ types: [b.type], getType: async () => b }] }; };
+    item = f => ({ file: f, label: f, url: "https://x/y.png" });
+  `);
+
+  const png = 'setClip({ size: 9, type: "image/png" })';
+  const reset = () => app("calls.toBlob = []; calls.written = []; sharedImages = new Map();");
+
+  ok("클립보드 지원을 감지한다", (app(`(${png}, canPaste())`)));
+
+  // .png 항목 — 형식이 이미 맞으므로 변환하지 않는다
+  reset();
+  ok("png 항목 붙여넣기 성공", await app(`pasteInto(item("사진.png"))`));
+  it("png 는 재인코딩하지 않는다", app("calls.toBlob"), []);
+  it("항목명 그대로 저장한다", app("calls.written"), [{ name: "사진.png", type: "image/png" }]);
+  it("공용 표에도 올린다", app(`[...sharedImages.keys()]`), ["사진.png"]);
+
+  // .jpg 항목 — PNG 를 JPEG 로 바꿔 저장한다
+  reset();
+  ok("jpg 항목 붙여넣기 성공", await app(`pasteInto(item("그림.jpg"))`));
+  it("jpg 로 재인코딩한다", app("calls.toBlob"), ["image/jpeg"]);
+  it("저장된 형식도 jpeg", app("calls.written"), [{ name: "그림.jpg", type: "image/jpeg" }]);
+
+  // 확장자를 모르면 손대지 않는다
+  reset();
+  await app(`pasteInto(item("무슨파일.bmp"))`);
+  it("모르는 확장자는 그대로 둔다", app("calls.toBlob"), []);
+
+  // 클립보드에 이미지가 없으면 아무것도 쓰지 않는다
+  reset();
+  app(`navigator.clipboard = { read: async () => [{ types: ["text/plain"], getType: async () => null }] };`);
+  it("이미지가 없으면 실패", await app(`pasteInto(item("그림.jpg"))`), false);
+  it("아무것도 저장하지 않는다", app("calls.written"), []);
+
+  // 클립보드 읽기가 막히면 조용히 실패한다
+  reset();
+  app(`navigator.clipboard = { read: async () => { throw new Error("denied"); } };`);
+  it("권한이 없으면 실패", await app(`pasteInto(item("그림.jpg"))`), false);
+  it("이때도 저장하지 않는다", app("calls.written"), []);
+
+  app("delete navigator.clipboard;");
+  it("클립보드가 없으면 지원 안 함으로 본다", app("canPaste()"), false);
 });
 
 /* ================= 되돌리기 =================
