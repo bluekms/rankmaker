@@ -243,6 +243,7 @@
 + ♟️ 디자이너: Justin Oh
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgameexpansion/21471/gemblo-expansion-set
++ 🖼 https://cf.geekdo-images.com/L_kRYmaQviBAJ2M03VDdzQ__original/img/LoqJFmWXRBMNJQn2nvXhJV61AvA=/0x0/filters:format(jpeg)/pic1612480.jpg
 
 # 쿠키런 킹덤 보드게임.png
 - 👥 인원: 2 ~ 4 (3인 베스트)
@@ -313,6 +314,7 @@
 + ♟️ 디자이너: Cédric Millet
 + 🎨 아티스트: Angelina Costamagna, Mathieu Leyssenne, Sabrina Tobal
 + 🔗 https://boardgamegeek.com/boardgameexpansion/249087/meeple-circus-tomatoes-and-awards
++ 🖼 https://cf.geekdo-images.com/qDf7Bv23TnKYLyP7lTQtaw__original/img/jiy0SXcdr2NYOXpDp-sUrJDLG-s=/0x0/filters:format(jpeg)/pic4044619.jpg
 
 # 거울 정원.png
 - 👥 인원: 2 ~ 4

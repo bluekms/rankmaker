@@ -24,6 +24,7 @@
 + ♟️ 디자이너: Kristian Amundsen Østby
 + 🎨 아티스트: Gjermund Bohne
 + 🔗 https://boardgamegeek.com/boardgameexpansion/427444/gardlings-missions
++ 🖼 https://cf.geekdo-images.com/WbvEeb8trITphUPss1Cd9g__original/img/VkjcCTn8NUp1xSDuznUEcwa5FJ0=/0x0/filters:format(png)/pic8385275.png
 
 # 섀클턴 베이스.jpg
 - 👥 인원: 1 ~ 4 (3인 베스트)
@@ -84,6 +85,7 @@
 + ♟️ 디자이너: Ivan Lashin
 + 🎨 아티스트: Sergey Dulin, Marta Ivanova, Ilya Konovalov, Anastasia Kukarina, Vadim Poluboyarov, Oleg Yurkov, Egor Zharkov
 + 🔗 https://boardgamegeek.com/boardgameexpansion/363077/furnace-interbellum
++ 🖼 https://cf.geekdo-images.com/7JL6HtyyMMhJLwCwKhxkow__original/img/0MIGZAoz-hfCuHMMIqXm18Ak8yo=/0x0/filters:format(jpeg)/pic6918521.jpg
 
 # 하나비 거대한 불꽃.jpg
 - 👥 인원: 2 ~ 5 (4인 베스트)
@@ -164,6 +166,7 @@
 + ♟️ 디자이너: Thomas Dagenais-Lespérance
 + 🎨 아티스트: Fabien Fulchiron, NILS, Manuel Sanchez
 + 🔗 https://boardgamegeek.com/boardgameexpansion/273938/decrypto-expansion-01-laserdrive
++ 🖼 https://cf.geekdo-images.com/tEX_U-X8sJ1v6_AIz3xYrw__original/img/zuWp6ODOnS6AREY7z74R5vWYhm8=/0x0/filters:format(jpeg)/pic4628941.jpg
 
 # 킹도미노 석기시대.jpg
 - 👥 인원: 2 ~ 4 (2, 4인 베스트)
@@ -324,6 +327,7 @@
 + ♟️ 디자이너: Bruno Cathala
 + 🎨 아티스트: Cyril Bouquet
 + 🔗 https://boardgamegeek.com/boardgameexpansion/240909/kingdomino-age-of-giants
++ 🖼 https://cf.geekdo-images.com/P_7077Juh647GTl3L8Oxow__original/img/jPIqdO5e4pLLo0P7_q6PzJ4jyko=/0x0/filters:format(png)/pic4177705.png
 
 # 퀸도미노.png
 - 👥 인원: 2 ~ 4 (2인 베스트)
@@ -424,6 +428,7 @@
 + ♟️ 디자이너: Masao Suganuma
 + 🎨 아티스트: Taro Hino, Noboru Hotta, Ian Parovel
 + 🔗 https://boardgamegeek.com/boardgameexpansion/143789/machi-koro-harbor
++ 🖼 https://cf.geekdo-images.com/o5EyvF7qZD-VcQnvXqyKsg__original/img/3AG--XYBlK48b44pQqWV6jkuhAg=/0x0/filters:format(jpeg)/pic2034049.jpg
 
 # 하나비.jpg
 - 👥 인원: 2 ~ 5 (4인 베스트)
@@ -694,6 +699,7 @@
 + ♟️ 디자이너: Masao Suganuma
 + 🎨 아티스트: Taro Hino, Noboru Hotta, Ian Parovel
 + 🔗 https://boardgamegeek.com/boardgameexpansion/160154/machi-koro-millionaires-row
++ 🖼 https://cf.geekdo-images.com/5SWmP8J_Xif6nAxTL0k4qw__original/img/D4yIaVAtXdKguq25DCr8Y1e61OQ=/0x0/filters:format(jpeg)/pic4278304.jpg
 
 # 스트림스.jpg
 - 👥 인원: 1 ~ 99 (2~6인 베스트)
@@ -1484,6 +1490,7 @@
 + ♟️ 디자이너: Masao Suganuma
 + 🎨 아티스트: Noboru Hotta
 + 🔗 https://boardgamegeek.com/boardgameexpansion/158624/machi-koro-gaming-mega-store
++ 🖼 https://cf.geekdo-images.com/93m9ENiHleqHb8X6yomE_w__original/img/HHz4n_rjWyKQWMG6FzQOmC1eniU=/0x0/filters:format(jpeg)/pic2452671.jpg
 
 # 닥터 마이크로브.png
 - 👥 인원: 2 ~ 4 (3인 베스트)
@@ -1774,6 +1781,7 @@
 + ♟️ 디자이너: Dave Choi, Yohan Goh
 + 🎨 아티스트: Vincent Dutrait
 + 🔗 https://boardgamegeek.com/boardgameexpansion/316491/battlefold-lion-heart-legendary-sword
++ 🖼 https://cf.geekdo-images.com/L01J0UUCZ4mpdQwOj86Ccg__original/img/1N-xN5ivRPCgS3XypLiZBrizbvc=/0x0/filters:format(jpeg)/pic5581967.jpg
 
 # 트와일라잇 익스프레스.jpg
 - 👥 인원: 2 ~ 5
@@ -1794,3 +1802,4 @@
 + ♟️ 디자이너: Hisashi Hayashi
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgameexpansion/475425/haenyeo-sea-divers-of-jeju-mini-expansion
++ 🖼 https://cf.geekdo-images.com/pV47ZFuPgz8ToK2I95Rn0w__original/img/VjM5NQM_Z5jhUe0gwDoFTyTmf5M=/0x0/filters:format(jpeg)/pic9705971.jpg

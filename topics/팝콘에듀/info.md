@@ -13,6 +13,7 @@
 + ♟️ 디자이너: Trevor Benjamin, David Thompson (I)
 + 🎨 아티스트: Brigette Indelicato
 + 🔗 https://boardgamegeek.com/boardgameexpansion/388565/war-chest-nightfall
++ 🖼 https://cf.geekdo-images.com/47svrIp_8WxJAMeyAvn6hA__original/img/Mey-_NmgPc4N1zyTgufxd6eroDo=/0x0/filters:format(png)/pic7522071.png
 
 # 리스보아 여왕.png
 - 👥 인원: 1 ~ 4 (2~3인 베스트)
@@ -23,6 +24,7 @@
 + ♟️ 디자이너: Vital Lacerda
 + 🎨 아티스트: Ian O'Toole
 + 🔗 https://boardgamegeek.com/boardgameexpansion/301771/lisboa-queen-variant
++ 🖼 https://cf.geekdo-images.com/7pb-_KnLlwwVshDzalf9ug__original/img/BpAUPe6o5LHNp-7LwPCZQT83NDM=/0x0/filters:format(png)/pic7977566.png
 
 # 워 체스트 노빌리티.jpg
 - 👥 인원: 2 ~ 4 (2인 베스트)
@@ -33,6 +35,7 @@
 + ♟️ 디자이너: Trevor Benjamin, David Thompson (I)
 + 🎨 아티스트: Brigette Indelicato
 + 🔗 https://boardgamegeek.com/boardgameexpansion/284444/war-chest-nobility
++ 🖼 https://cf.geekdo-images.com/pPuOyAIrh6qYv0QvpfWP2A__original/img/m60WN2A92kPpdHkt7hSDQimbhp0=/0x0/filters:format(jpeg)/pic4860409.jpg
 
 # 워 체스트 시즈.jpg
 - 👥 인원: 2 ~ 4 (2, 4인 베스트)
@@ -43,6 +46,7 @@
 + ♟️ 디자이너: Trevor Benjamin, David Thompson (I)
 + 🎨 아티스트: Brigette Indelicato
 + 🔗 https://boardgamegeek.com/boardgameexpansion/324656/war-chest-siege
++ 🖼 https://cf.geekdo-images.com/8zkpPMJOUW6YF8ZRJmGuFQ__original/img/q5BFOGy2g3CDTgb-1ykhF8pH_hw=/0x0/filters:format(jpeg)/pic6031075.jpg
 
 # 슈퍼 판타지 브롤 자연의 위력.jpg
 - 👥 인원: 2 ~ 4
@@ -53,6 +57,7 @@
 + ♟️ 디자이너: Jochen Eisenhuth
 + 🎨 아티스트: Emmanuel Bouley, Stéphane Gantiez, Johannes Helgeson, Christophe Madura, Bayard Wu
 + 🔗 https://boardgamegeek.com/boardgameexpansion/322093/super-fantasy-brawl-force-of-nature
++ 🖼 https://cf.geekdo-images.com/MI5oqRqxdiQ5HklQFeXY8A__original/img/4EkA5ZJ_-94ilYesvJ-cP0cHlgA=/0x0/filters:format(jpeg)/pic5747657.jpg
 
 # 슈퍼 판타지 브롤 기발한 속임수.jpg
 - 👥 인원: 2 ~ 4
@@ -63,6 +68,7 @@
 + ♟️ 디자이너: Jochen Eisenhuth
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgameexpansion/356567/super-fantasy-brawl-hot-trick
++ 🖼 https://cf.geekdo-images.com/Ig8IJ1yaibETcHFCzhz0DQ__original/img/upJVVd1YC7_LkeWzsZuizkCbSdI=/0x0/filters:format(jpeg)/pic6806888.jpg
 
 # 슈퍼 판타지 브롤 빛나는 권위.jpg
 - 👥 인원: 2 ~ 4
@@ -73,6 +79,7 @@
 + ♟️ 디자이너: Jochen Eisenhuth
 + 🎨 아티스트: Stéphane Gantiez, Johannes Helgeson, Bayard Wu
 + 🔗 https://boardgamegeek.com/boardgameexpansion/333896/super-fantasy-brawl-radiant-authority
++ 🖼 https://cf.geekdo-images.com/q4y8LmAhNphAukq-32Vprw__original/img/JMEgPyr30lYCSODHFKsOrN3rL30=/0x0/filters:format(jpeg)/pic6806865.jpg
 
 # 디셉션 언더커버.jpg
 - 👥 인원: 4 ~ 14 (7~8, 10인 베스트)
@@ -83,6 +90,7 @@
 + ♟️ 디자이너: Tobey Ho
 + 🎨 아티스트: Tommy Ng
 + 🔗 https://boardgamegeek.com/boardgameexpansion/227748/deception-undercover-allies
++ 🖼 https://cf.geekdo-images.com/Q0ymbSxvWcA7_g55ns96Yg__original/img/IpAnU1uN9PYr3n1gdzzepYX3PHo=/0x0/filters:format(jpeg)/pic4199680.jpg
 
 # 슈퍼 판타지 브롤 유혈사태.png
 - 👥 인원: 2 ~ 4
@@ -93,6 +101,7 @@
 + ♟️ 디자이너: Jochen Eisenhuth
 + 🎨 아티스트: Stéphane Gantiez, Johannes Helgeson, Bayard Wu, Irek Zielinski
 + 🔗 https://boardgamegeek.com/boardgameexpansion/331130/super-fantasy-brawl-circle-of-blood
++ 🖼 https://cf.geekdo-images.com/aoLg6Pu7xxQK4qknP7D2mQ__original/img/xtPR8qjULo9RqQvmXWG73TmZrgQ=/0x0/filters:format(png)/pic6009773.png
 
 # 슈퍼 판타지 브롤 전쟁의 기술.png
 - 👥 인원: 2 ~ 4
@@ -103,6 +112,7 @@
 + ♟️ 디자이너: Jochen Eisenhuth
 + 🎨 아티스트: Emmanuel Bouley, Stéphane Gantiez, Johannes Helgeson, Bayard Wu, Irek Zielinski
 + 🔗 https://boardgamegeek.com/boardgameexpansion/331131/super-fantasy-brawl-art-of-war
++ 🖼 https://cf.geekdo-images.com/bgDVlLOMwB-aV0UqwDws7g__original/img/gf9lRKytHUFIkyijhkovFsLDO9Q=/0x0/filters:format(png)/pic6009777.png
 
 # 슈퍼 판타지 브롤 정신의 힘.jpg
 - 👥 인원: 2 ~ 4
@@ -113,6 +123,7 @@
 + ♟️ 디자이너: Jochen Eisenhuth
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgameexpansion/356566/super-fantasy-brawl-mental-might
++ 🖼 https://cf.geekdo-images.com/9q6waMmLNGfhZkiDET7A0g__original/img/uB0KsAOueEzqghYSk_wbLUQk_u0=/0x0/filters:format(jpeg)/pic6806891.jpg
 
 # 스탁파일 계속되는 부패.jpg
 - 👥 인원: 2 ~ 5 (4~5인 베스트)
@@ -123,6 +134,7 @@
 + ♟️ 디자이너: Brett Sobol, Seth Van Orden
 + 🎨 아티스트: Jacqui Davis, Ian O'Toole
 + 🔗 https://boardgamegeek.com/boardgameexpansion/195034/stockpile-continuing-corruption
++ 🖼 https://cf.geekdo-images.com/cL_e2zlsdhWLpej_y-JCwQ__original/img/hDLs0IWpw23Ci0hAB_jzijwVpXQ=/0x0/filters:format(jpeg)/pic2925556.jpg
 
 # 롱 샷 다이스 게임 - 경주마 세트 4 (부츠) 미니 확장.jpg
 - 👥 인원: 1 ~ 8
@@ -133,6 +145,7 @@
 + ♟️ 디자이너: Chris Handy (I)
 + 🎨 아티스트: Clau Souza
 + 🔗 https://boardgamegeek.com/boardgameexpansion/358455/long-shot-the-dice-game-horse-set-4-boot-mini-expa
++ 🖼 https://cf.geekdo-images.com/Y-OhCDIRJWlxwre0joDYAg__original/img/g0oV-UGgo0RV2J1Tm79wQwvzNVw=/0x0/filters:format(jpeg)/pic6736697.jpg
 
 # 더 게임 10주년.jpg
 - 👥 인원: 1 ~ 5 (3인 베스트)
@@ -153,6 +166,7 @@
 + ♟️ 디자이너: Aske Christiansen
 + 🎨 아티스트: Apolline Etienne
 + 🔗 https://boardgamegeek.com/boardgameexpansion/371429/living-forest-kodama
++ 🖼 https://cf.geekdo-images.com/Ec9pa6lDoUyM7h7Ujuh7Jg__original/img/EYNMKmZnh59IU5Qo_urH7R9wsmc=/0x0/filters:format(jpeg)/pic7318147.jpg
 
 # 롱 샷 다이스 게임 - 경주마 세트 6 (기수) 미니 확장.jpg
 - 👥 인원: 1 ~ 8
@@ -163,6 +177,7 @@
 + ♟️ 디자이너: Chris Handy (I)
 + 🎨 아티스트: Clau Souza
 + 🔗 https://boardgamegeek.com/boardgameexpansion/361177/long-shot-the-dice-game-horse-set-6-jockey-mini-ex
++ 🖼 https://cf.geekdo-images.com/BYxcwieQHrTPrgXSXZeMlw__original/img/1rDGqvsvjsx1EJwnWUUabyXn3UM=/0x0/filters:format(jpeg)/pic6968310.jpg
 
 # 스컬킹 확장팩.jpg
 - 👥 인원: 2 ~ 8 (3~4인 베스트)
@@ -173,6 +188,7 @@
 + ♟️ 디자이너: Brent Beck, Harrison Beck
 + 🎨 아티스트: Apryl Stott
 + 🔗 https://boardgamegeek.com/boardgameexpansion/449808/skull-king-expansion-pack
++ 🖼 https://cf.geekdo-images.com/4syQ3vYw0LEfkrN9CYgB1g__original/img/Hkk05VHBkVpglrWudq-OCDk6dCc=/0x0/filters:format(jpeg)/pic8982812.jpg
 
 # 롱 샷 다이스 게임 - 경주마 세트 5 (핫도그) 미니 확장.jpg
 - 👥 인원: 1 ~ 8
@@ -183,6 +199,7 @@
 + ♟️ 디자이너: Chris Handy (I)
 + 🎨 아티스트: Clau Souza
 + 🔗 https://boardgamegeek.com/boardgameexpansion/358456/long-shot-the-dice-game-horse-set-5-hot-dog-mini-e
++ 🖼 https://cf.geekdo-images.com/xNwvbO13AKj2exI590JKcg__original/img/1uz50nXYrS1uiVcQf3Dg9D9aUH0=/0x0/filters:format(jpeg)/pic6735591.jpg
 
 # 워 체스트.png
 - 👥 인원: 2 ~ 4 (2인 베스트)
@@ -223,6 +240,7 @@
 + ♟️ 디자이너: Malcolm Braff, Bruno Cathala, Sébastien Pauchon
 + 🎨 아티스트: Mathieu Leyssenne
 + 🔗 https://boardgamegeek.com/boardgameexpansion/204807/jamaica-the-crew
++ 🖼 https://cf.geekdo-images.com/YFOgQxYNM697QzOhxxE3pQ__original/img/0qY5ldGVaf0PbsPA9LOGE06XdsY=/0x0/filters:format(jpeg)/pic6797806.jpg
 
 # 상인들의 계곡 컬렉션 세기의 박람회.jpg
 - 👥 인원: 2 ~ 4 (2~3인 베스트)
@@ -263,6 +281,7 @@
 + ♟️ 디자이너: Chris Handy (I)
 + 🎨 아티스트: Clau Souza
 + 🔗 https://boardgamegeek.com/boardgameexpansion/392487/long-shot-the-dice-game-horse-set-7-trophy-mini-ex
++ 🖼 https://cf.geekdo-images.com/Go7w1TRGrlkhBQjEBYGoRA__original/img/X0oF5Fb6LDPFUEGIUvdzmp50Uoc=/0x0/filters:format(jpeg)/pic7601935.jpg
 
 # 히든 리더스 잊힌 전설.jpg
 - 👥 인원: 2 ~ 6 (4인 베스트)
@@ -273,6 +292,7 @@
 + ♟️ 디자이너: Andreas Müller, Markus Müller (II), Raphael Stocker
 + 🎨 아티스트: Satoshi Matsuura
 + 🔗 https://boardgamegeek.com/boardgameexpansion/368627/hidden-leaders-forgotten-legends
++ 🖼 https://cf.geekdo-images.com/tg-VDfi7EcltJQY17iSwuQ__original/img/zv3jypZCSUHcAN0lR6MFXesCZ8U=/0x0/filters:format(jpeg)/pic7047239.jpg
 
 # 다이아톰즈.png
 - 👥 인원: 1 ~ 4 (1~2인 베스트)
@@ -293,6 +313,7 @@
 + ♟️ 디자이너: John Brieger, Chris Handy (I)
 + 🎨 아티스트: Clau Souza
 + 🔗 https://boardgamegeek.com/boardgameexpansion/358454/long-shot-the-dice-game-track-events-mini-expansio
++ 🖼 https://cf.geekdo-images.com/Au_jZRMKVXD7N-wUGMX9Rg__original/img/VE-Fh9LueSHKLI_ram4CYSA3Xqg=/0x0/filters:format(jpeg)/pic6735596.jpg
 
 # 타임즈 업! 파티.jpg
 - 👥 인원: 4 ~ 12 (6, 8, 10인 베스트)
@@ -313,6 +334,7 @@
 + ♟️ 디자이너: Sami Laakso
 + 🎨 아티스트: Sami Laakso
 + 🔗 https://boardgamegeek.com/boardgameexpansion/207108/dale-of-merchants-systematic-eurasian-beavers
++ 🖼 https://cf.geekdo-images.com/Zp0ih28UQjqhTblO3ansRg__original/img/vP0mp9ynQs1tRkwmBYxBgw2sob8=/0x0/filters:format(jpeg)/pic3145601.jpg
 
 # 티 가든.jpg
 - 👥 인원: 2 ~ 4 (3인 베스트)
@@ -353,6 +375,7 @@
 + ♟️ 디자이너: Brett Sobol, Seth Van Orden
 + 🎨 아티스트: Jacqui Davis, Ian O'Toole
 + 🔗 https://boardgamegeek.com/boardgameexpansion/269167/stockpile-illicit-investments
++ 🖼 https://cf.geekdo-images.com/qSNhL7UWoCUpmh-3sP4ztg__original/img/wdVBGgy6j-DjmGAvD774q0mP-bw=/0x0/filters:format(png)/pic4787953.png
 
 # 롱 샷 다이스 게임.jpg
 - 👥 인원: 1 ~ 8 (4~5인 베스트)
@@ -433,6 +456,7 @@
 + ♟️ 디자이너: Alexander Pfister
 + 🎨 아티스트: Klemens Franz, Hans-Georg Schneider
 + 🔗 https://boardgamegeek.com/boardgameexpansion/181899/port-royal-just-one-more-contract
++ 🖼 https://cf.geekdo-images.com/Vzns6XSMQ5osqIROTMe1Cw__original/img/O33E016w3oH8VF1vO7HUj4ScIIE=/0x0/filters:format(jpeg)/pic2635736.jpg
 
 # 디셉션 홍콩 살인 사건.jpg
 - 👥 인원: 4 ~ 12 (6~8인 베스트)
@@ -473,6 +497,7 @@
 + ♟️ 디자이너: Kevin Russ
 + 🎨 아티스트: Beth Sobel
 + 🔗 https://boardgamegeek.com/boardgameexpansion/293834/calico-kickstarter-promo-cats
++ 🖼 https://cf.geekdo-images.com/SVXZ5RE8CZz6aDmy0cUolQ__original/img/ubLfNi3lsADsDqNDFdXltp7aJHY=/0x0/filters:format(jpeg)/pic7227544.jpg
 
 # 크리처 컴포트 메이플 밸리의 겨울나기.jpg
 - 👥 인원: 1 ~ 5 (2인 베스트)
@@ -493,6 +518,7 @@
 + ♟️ 디자이너: -
 + 🎨 아티스트: Jacqui Davis, Ian O'Toole
 + 🔗 https://boardgamegeek.com/boardgameexpansion/287312/stockpile-investor-card-promo-pack-3
++ 🖼 https://cf.geekdo-images.com/GnBtIT7wjFwTpAfyY9idkA__original/img/EvvQGrRy60dDe0AHr2hAjUdNSYA=/0x0/filters:format(png)/pic7743416.png
 
 # 프린세스의 반란.jpg
 - 👥 인원: 3 ~ 6 (4~5인 베스트)
@@ -533,6 +559,7 @@
 + ♟️ 디자이너: -
 + 🎨 아티스트: Jacqui Davis, Ian O'Toole
 + 🔗 https://boardgamegeek.com/boardgameexpansion/287313/stockpile-investment-strategy-card-promo-pack
++ 🖼 https://cf.geekdo-images.com/tJkxZdZ_HD4FboN0AWxE1A__original/img/ubIuLGSEJxDmGGFuRomulgBcmG4=/0x0/filters:format(png)/pic7743417.png
 
 # 워 체스트 토너먼트 키트.jpg
 - 👥 인원: 2 ~ 4
@@ -543,6 +570,7 @@
 + ♟️ 디자이너: Trevor Benjamin, David Thompson (I)
 + 🎨 아티스트: Brigette Indelicato
 + 🔗 https://boardgamegeek.com/boardgameexpansion/393789/war-chest-tournament-kit
++ 🖼 https://cf.geekdo-images.com/Mt8egSTdDun4Lz1NLovJWQ__original/img/B7QMz3eX3OAD6jZAXp_HaljuSjQ=/0x0/filters:format(jpeg)/pic7611939.jpg
 
 # 팬텀 잉크.jpg
 - 👥 인원: 2 ~ 8 (4, 6인 베스트)
@@ -563,6 +591,7 @@
 + ♟️ 디자이너: Malachi Ray Rempen
 + 🎨 아티스트: Malachi Ray Rempen
 + 🔗 https://boardgamegeek.com/boardgameexpansion/356003/roll-camera-flip-table-promo-card
++ 🖼 https://cf.geekdo-images.com/gSkct83COFSDTr9-zYSV8w__original/img/Vvs1jRtWxKBLV7n-GW4kEzm3ocY=/0x0/filters:format(jpeg)/pic7051847.jpg
 
 # 스탁파일 투자자 카드 프로모 팩 #1 - '호화로운' 오프라와 '고귀한' 로빈스.jpg
 - 👥 인원: 2 ~ 5
@@ -573,6 +602,7 @@
 + ♟️ 디자이너: Brett Sobol, Seth Van Orden
 + 🎨 아티스트: Jacqui Davis, Ian O'Toole
 + 🔗 https://boardgamegeek.com/boardgameexpansion/200165/stockpile-investor-card-promo-pack-1-opulent-oprah
++ 🖼 https://cf.geekdo-images.com/T3FguuT8nKnRwn3wcYgFHw__original/img/pf7aBOfav7vVh3wvoUve52fAyuA=/0x0/filters:format(jpeg)/pic3020187.jpg
 
 # 기억해, 우리의 여행을!.png
 - 👥 인원: 2 ~ 4 (3인 베스트)
@@ -603,6 +633,7 @@
 + ♟️ 디자이너: Brett Sobol, Seth Van Orden
 + 🎨 아티스트: Jacqui Davis, Ian O'Toole
 + 🔗 https://boardgamegeek.com/boardgameexpansion/198808/stockpile-investor-card-promo-pack-2-moneymaker-mi
++ 🖼 https://cf.geekdo-images.com/fGG21iaPmxWyTBdBgZEGCg__original/img/BXw3qY52NRoH9Rq5rjW2aI_9yC8=/0x0/filters:format(jpeg)/pic3009123.jpg
 
 # 타케노코 빅 박스.jpg
 - 👥 인원: 2 ~ 4 (2인 베스트)
@@ -653,6 +684,7 @@
 + ♟️ 디자이너: David Alberto Diaz
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgameexpansion/341532/fossilis-kickstarter-edition-expansions
++ 🖼 https://cf.geekdo-images.com/_UP1jyZT_tsK6nXDUAkARQ__original/img/4KUPqaRt_G9aTmEMJct9NH1BuqQ=/0x0/filters:format(jpeg)/pic6274321.jpg
 
 # 한밤의 늑대인간 황혼에서 새벽까지.jpg
 - 👥 인원: 3 ~ 10 (6~8인 베스트)
@@ -1143,6 +1175,7 @@
 + ♟️ 디자이너: Steffen Benndorf, Reinhard Staupe
 + 🎨 아티스트: Oliver Freudenreich
 + 🔗 https://boardgamegeek.com/boardgameexpansion/429938/qwixx-x-change
++ 🖼 https://cf.geekdo-images.com/rCbw91QUy6Fd1yBHETbcTQ__original/img/3dE5vdl9HO0hv9fH7YnpY4-t--s=/0x0/filters:format(png)/pic8454781.png
 
 # 한밤의 늑대인간.png
 - 👥 인원: 3 ~ 10 (6~8인 베스트)
@@ -1173,6 +1206,7 @@
 + ♟️ 디자이너: Joey Vigour
 + 🎨 아티스트: Angelina Chernyak
 + 🔗 https://boardgamegeek.com/boardgameexpansion/344658/geuraul-coehuyi-bam-hwagjang-growl-expansions
++ 🖼 https://cf.geekdo-images.com/5N00BuoBPhzIx4D8fWTx2Q__original/img/a6kw2HxKO8wP3WWEkp-dc_Xct-M=/0x0/filters:format(jpeg)/pic6334138.jpg
 
 # 엘리베이터 앞에서.png
 - 👥 인원: 2 ~ 4 (4인 베스트)
@@ -2883,6 +2917,7 @@
 + ♟️ 디자이너: -
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgameexpansion/468595/3-second-try-korea-expansion
++ 🖼 https://cf.geekdo-images.com/zxVVmggfpHJpmnJY9j-k1w__original/img/eBeOyAv08r-qFkQmVKhtBg_netU=/0x0/filters:format(jpeg)/pic1657689.jpg
 
 # 동물파티.jpg
 - 👥 인원: 3 ~ 5
@@ -2903,6 +2938,7 @@
 + ♟️ 디자이너: Chris Handy (I)
 + 🎨 아티스트: Clau Souza
 + 🔗 https://boardgamegeek.com/boardgameexpansion/432077/rong-syas-daiseu-geim-mini-hwagjang-5jong-longshot
++ 🖼 https://cf.geekdo-images.com/zdYLieeBK9Ecxlsx3pFHGg__original/img/gShrIoh4hgUnn0rbRQLwctyzckk=/0x0/filters:format(jpeg)/pic9349522.jpg
 
 # 반반 밴드.jpg
 - 👥 인원: 2 ~ 6
