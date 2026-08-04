@@ -144,6 +144,50 @@ List 또는 Gallery 에서 **Podium** 메뉴로 PNG 를 뽑습니다. WorldCup �
 
 > 포스터에는 **그림 파일**이 필요합니다. 주소로만 붙인 그림이 섞여 있으면 안내창이 떠서 받는 방법을 알려줍니다 — [그림을 주소로 붙이기](docs/image-url.md)
 
+### BGG 에서 이미지 주소 찾기
+
+보드게임 주제는 그림 파일 대신 **BGG 원본 주소**를 `info.md` 에 적어 둡니다. 찾는 방법입니다.
+
+**1. BGG 항목 번호를 얻습니다.** 게임 페이지 주소에 들어 있습니다.
+
+```
+https://boardgamegeek.com/boardgame/164928/orleans            → 164928
+https://boardgamegeek.com/boardgameexpansion/439816/...       → 439816   (확장도 같은 자리)
+```
+
+**2. API 로 원본 주소를 꺼냅니다.** 확장·버전도 `objecttype=thing` 으로 받습니다.
+
+```
+https://api.geekdo.com/api/geekitems?objectid=164928&objecttype=thing
+```
+
+응답의 **`item.images.original`** 이 원본 해상도 주소입니다.
+
+```json
+{ "item": { "images": {
+    "thumb":    ".../__small/...200x150...",
+    "original": ".../__original/img/.../0x0/filters:format(jpeg)/pic6228507.jpg"
+} } }
+```
+
+**3. 항목 설명에 한 줄 추가합니다.**
+
+```markdown
+# 오를레앙.jpg
+- ⭐ bgg 점수: 8.05
++ 🔗 https://boardgamegeek.com/boardgame/164928/orleans
++ thumbnail-url: https://cf.geekdo-images.com/.../__original/img/.../pic6228507.jpg
+```
+
+> **썸네일 주소를 손으로 키우려 하지 마세요.** `__itemrep` 을 `__original` 로 바꿔도 같은 썸네일이 오고,
+> 크기 경로(`/fit-in/246x300/`)를 고치면 서명이 깨져 400 이 납니다. 반드시 API 의 `images.original` 을 쓰세요.
+
+> 주소는 **항목당 하나**, **최대 해상도**로 적습니다. 화면 표시와 포스터 안내창의 다운로드 링크가
+> 같은 주소를 쓰므로, 그 하나가 곧 받게 될 그림의 품질입니다.
+
+**BGG 에 없는 게임**은 주소를 만들 수 없습니다. 국내 유통사 자체 상품이 그렇습니다.
+그때는 예전처럼 그림 파일을 `topics/images/` 에 두면 됩니다.
+
 ## 저장과 백업
 
 - **Chrome / Edge** — 모든 변경이 주제 폴더의 `save.json` 에 즉시 자동 저장됩니다 (`Saved ✓`).
