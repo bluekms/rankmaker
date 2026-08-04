@@ -1037,13 +1037,23 @@ async function cacheRemoteImages(ctx) {
   // 저장할 곳은 공용 폴더다. 실제로 받을 것이 생겼을 때만 폴더를 만든다.
   let dirOnce = null;
   const outDir = () => (dirOnce ||= imagesFolder(true));
-  const one = async it => {
-    const src = want.get(it.file);
-    try {
+  /* 같은 주소를 가리키는 항목이 여럿일 수 있다 — 이름이 다른 같은 게임.
+     주소당 한 번만 받아 두고 파일만 각각 쓴다. */
+  const fetched = new Map();
+  const grab = src => {
+    if (!fetched.has(src)) fetched.set(src, (async () => {
       const res = await fetch(src, { mode: "cors", credentials: "omit" });
       if (!res.ok) throw new Error("HTTP " + res.status);
       const blob = await res.blob();
       if (!blob.size || !/^image\//.test(blob.type || "")) throw new Error("not an image");
+      return blob;
+    })());
+    return fetched.get(src);
+  };
+  const one = async it => {
+    const src = want.get(it.file);
+    try {
+      const blob = await grab(src);
       const dir = await outDir();
       if (!dir) throw new Error("no folder to save into");
       const fh = await writeFile(dir, it.file, blob);
