@@ -1,0 +1,38 @@
+{
+  "view": {
+    "mode": "list",
+    "columns": 3,
+    "tierSize": 72
+  },
+  "ranks": {
+    "1 그림 있음.png": 1,
+    "2 그림 있음.png": 2,
+    "3 그림 있음.png": 3,
+    "4 그림 없음.svg": 4,
+    "5 주소 CORS 미허용.jpg": 5,
+    "6 주소 CORS 허용.png": 6
+  },
+  "order": [
+    "1 그림 있음.png",
+    "2 그림 있음.png",
+    "3 그림 있음.png",
+    "4 그림 없음.svg",
+    "5 주소 CORS 미허용.jpg",
+    "6 주소 CORS 허용.png"
+  ],
+  "checks": {},
+  "memos": {},
+  "tierNames": {},
+  "tierSizes": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "tierMemo": "",
+  "tierMemoH": 0,
+  "imgSrc": {
+    "6 주소 CORS 허용.png": "https://raw.githubusercontent.com/bluekms/rankmaker/main/topics/images/1%20%EA%B7%B8%EB%A6%BC%20%EC%9E%88%EC%9D%8C.png"
+  }
+}
