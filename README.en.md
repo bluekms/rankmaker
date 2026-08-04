@@ -41,7 +41,6 @@ topics/
 # shin.png            ← one item. The name is the filename in topics/images/
 - 🌶️ heat: ★★★☆☆
 + 📅 released: 1986
-+ 🖼 https://example.com/shin.png
 ```
 
 | Token | Meaning |
@@ -52,7 +51,7 @@ topics/
 | `[ ]` | A checkbox, anywhere you like |
 | `//` | Settings — topic name, `dark`, `grid`, `columns: 4` |
 
-**The image file is optional.** Put an image URL in the description and it is used instead; with neither, you get a card with just the name on it.
+**The image file is optional** — without one you get a card with just the name on it. A web URL can stand in for the file; that is mostly for very large lists, so it lives in [Attaching pictures by URL](docs/image-url.en.md).
 
 > The 🌶️ 📅 🔗 emoji in the examples are **just text**. They carry no meaning — change them freely.
 > Only `#` `-` `+` `[ ]` `//` are actual syntax.
@@ -114,11 +113,7 @@ Export a PNG from the **Podium** menu in List or Gallery. In WorldCup you get a 
 
 **The podium artwork is replaceable.** `topics/podium.png` applies everywhere; `topics/<topic>/podium.png` overrides it for that topic.
 
-### When a picture is only a URL
-
-The poster needs the picture **as a file**. A URL-only picture shows fine on screen, but if its server forbids other sites from using it, it cannot go into the poster — a browser security rule with no way around it.
-
-You get a dialog when that happens. **Copy the image and press `Paste`**, and the app writes it into `topics/images/` under the right filename. Downloading it yourself works too.
+> The poster needs pictures **as files**. If some are attached by URL, a dialog explains how to get them — see [Attaching pictures by URL](docs/image-url.en.md).
 
 ## Saving and backup
 
