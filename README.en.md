@@ -1,4 +1,22 @@
-# RankMaker
+# RankMaker — Board games
+
+> **This branch is a board-game data branch.**
+> It carries roughly 1,400 titles from nine Korean publishers as topics.
+> For how the app works — `info.md` syntax and the rest — **see the original README**:
+> [한국어](https://github.com/bluekms/rankmaker/blob/main/README.md) · [English](https://github.com/bluekms/rankmaker/blob/main/README.en.md)
+>
+> What is special here: **the pictures are not stored in the repository.**
+> Each item carries a BGG image URL in `info.md`, so they display normally;
+> you only fetch files when exporting a poster — see [Attaching pictures by URL](docs/image-url.en.md).
+
+## Topics inside
+
+| Topic | Titles |
+|---|---|
+| 팝콘에듀 · 만두게임즈 · 보드엠 · 아스모디코리아 | 200–290 each |
+| 행복한바오밥 · MTSGames · 젬블로컴퍼니 | 70–180 each |
+| 옐로우미플 · 데블다이스 | 20–40 each |
+
 
 > [한국어](README.md) | **English**
 
@@ -120,51 +138,6 @@ Export a PNG from the **Podium** menu in List or Gallery. In WorldCup you get a 
 **The podium artwork is replaceable.** `topics/podium.png` applies everywhere; `topics/<topic>/podium.png` overrides it for that topic.
 
 > The poster needs pictures **as files**. If some are attached by URL, a dialog explains how to get them — see [Attaching pictures by URL](docs/image-url.en.md).
-
-### Finding an image URL on BGG
-
-Board game topics carry a **BGG original-resolution URL** in `info.md` instead of an image file. Here is how to get one.
-
-**1. Take the BGG item id** from the game's page URL.
-
-```
-https://boardgamegeek.com/boardgame/164928/orleans            → 164928
-https://boardgamegeek.com/boardgameexpansion/439816/...       → 439816   (same slot for expansions)
-```
-
-**2. Pull the original URL from the API.** Expansions and versions also answer to `objecttype=thing`.
-
-```
-https://api.geekdo.com/api/geekitems?objectid=164928&objecttype=thing
-```
-
-**`item.images.original`** in the response is the full-resolution URL.
-
-```json
-{ "item": { "images": {
-    "thumb":    ".../__small/...200x150...",
-    "original": ".../__original/img/.../0x0/filters:format(jpeg)/pic6228507.jpg"
-} } }
-```
-
-**3. Add one line to the item.**
-
-```markdown
-# orleans.jpg
-- ⭐ bgg rating: 8.05
-+ 🔗 https://boardgamegeek.com/boardgame/164928/orleans
-+ 🖼 https://cf.geekdo-images.com/.../__original/img/.../pic6228507.jpg
-```
-
-> **Do not try to upscale a thumbnail URL by hand.** Swapping `__itemrep` for `__original` returns the same
-> thumbnail, and editing the size path (`/fit-in/246x300/`) breaks the signature and 400s. Always use
-> `images.original` from the API.
-
-> One URL per item, at the highest resolution you can get. The on-screen image and the download link in the
-> poster dialog use the same URL, so that one address is the quality you end up with.
-
-**Games that are not on BGG** have no URL to use — locally published items often aren't. Put the image file
-in `topics/images/` for those, as before.
 
 ## Saving and backup
 
