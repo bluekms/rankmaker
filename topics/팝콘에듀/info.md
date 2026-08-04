@@ -142,6 +142,7 @@
 + ♟️ 디자이너: Steffen Benndorf, Hans Christian Hildenbrand, Reinhard Staupe
 + 🎨 아티스트: Oliver Freudenreich, Sandra Freudenreich
 + 🔗 https://boardgamegeek.com/boardgame/454284/the-game-10-jahre
++ 🖼 https://cf.geekdo-images.com/J785mv0NLgJoF5YA9MYg1g__original/img/c0kJ4NUnwU7fTT8h-3ORAcrxjBc=/0x0/filters:format(jpeg)/pic9392348.jpg
 
 # 리빙 포레스트 숲의 정령.jpg
 - 👥 인원: 1 ~ 4 (2~3인 베스트)
@@ -191,6 +192,7 @@
 + ♟️ 디자이너: Trevor Benjamin, David Thompson (I)
 + 🎨 아티스트: Brigette Indelicato
 + 🔗 https://boardgamegeek.com/boardgame/249259/war-chest
++ 🖼 https://cf.geekdo-images.com/BryJNSSDbCohXeaJPx3tpw__original/img/pgmg83e1lUqNo7FTLdscWNDwlPE=/0x0/filters:format(png)/pic4232048.png
 
 # 스카우트.png
 - 👥 인원: 2 ~ 5 (4인 베스트)
@@ -200,6 +202,7 @@
 + ♟️ 디자이너: Kei Kajino (梶野 桂)
 + 🎨 아티스트: Kei Kajino (梶野 桂), Rie Komatsuzaki, Jun Sasaki, Shohei Asaoka (浅岡昇平)
 + 🔗 https://boardgamegeek.com/boardgame/291453/scout
++ 🖼 https://cf.geekdo-images.com/cf0xxkevbwTGF3VUZymKjg__original/img/vkElrRCPJxy7Q3TH9olpq20egA4=/0x0/filters:format(png)/pic6398727.png
 
 # 피드 더 크라켄.jpg
 - 👥 인원: 5 ~ 11 (8~11인 베스트)
@@ -209,6 +212,7 @@
 + ♟️ 디자이너: Maikel Cheney, Dr. Hans Joachim Höh, Tobias Immich
 + 🎨 아티스트: James Churchill, Hendrik Noack
 + 🔗 https://boardgamegeek.com/boardgame/271601/feed-the-kraken
++ 🖼 https://cf.geekdo-images.com/1I9spdDMuRzgM4EVV6BRiQ__original/img/ad-NSXRHuJQSGxMN03ib4EaRYe0=/0x0/filters:format(jpeg)/pic8775698.jpg
 
 # 자메이카 더 크루.jpg
 - 👥 인원: 2 ~ 6 (4~6인 베스트)
@@ -228,6 +232,7 @@
 + ♟️ 디자이너: Sami Laakso
 + 🎨 아티스트: Sami Laakso
 + 🔗 https://boardgamegeek.com/boardgame/251551/dale-of-merchants-collection
++ 🖼 https://cf.geekdo-images.com/imMFmaNwVwePRQV2tBZKSw__original/img/tihxc6wF-qnmMqO9AIJNkbhhj2I=/0x0/filters:format(jpeg)/pic4096852.jpg
 
 # 셀레스티아 빅 박스.jpg
 - 👥 인원: 2 ~ 6 (5~6인 베스트)
@@ -237,6 +242,7 @@
 + ♟️ 디자이너: Aaron Weissblum
 + 🎨 아티스트: Gaetan Noir
 + 🔗 https://boardgamegeek.com/boardgame/429491/celestia-big-box
++ 🖼 https://cf.geekdo-images.com/aVly3SF_ZIwmhpaJ8FeMug__original/img/ZUpME_P7xUqhpcvHdPJRoGRQdQw=/0x0/filters:format(jpeg)/pic8482508.jpg
 
 # 상인들의 계곡3 거대한 대륙 철도.jpg
 - 👥 인원: 2 ~ 4 (2~3인 베스트)
@@ -246,6 +252,7 @@
 + ♟️ 디자이너: Sami Laakso
 + 🎨 아티스트: Jesús Delgado, Sami Laakso
 + 🔗 https://boardgamegeek.com/boardgame/299452/dale-of-merchants-3
++ 🖼 https://cf.geekdo-images.com/6Raxf5KpYBRwLD3nphwwJA__original/img/-XQj6ZLhcfQ4ULYF0RZb1XDs3fg=/0x0/filters:format(jpeg)/pic5245872.jpg
 
 # 롱 샷 다이스 게임 - 경주마 세트 7 (트로피) 미니 확장.jpg
 - 👥 인원: 1 ~ 8
@@ -275,6 +282,7 @@
 + ♟️ 디자이너: Sabrina Culyba
 + 🎨 아티스트: Nim Ben-Reuven
 + 🔗 https://boardgamegeek.com/boardgame/370210/diatoms
++ 🖼 https://cf.geekdo-images.com/ZzSmYZD8Iix-QuHtSWaHbw__original/img/ubwbNAaem1IJZvcKnPyYiQhUuRU=/0x0/filters:format(png)/pic8518419.png
 
 # 롱 샷 다이스 게임 - 경주로 이벤트 미니 확장.jpg
 - 👥 인원: 1 ~ 8
@@ -294,6 +302,7 @@
 + ♟️ 디자이너: Peter Sarrett
 + 🎨 아티스트: Peter Sarrett
 + 🔗 https://boardgamegeek.com/boardgame/38713/times-up-party
++ 🖼 https://cf.geekdo-images.com/vGuFv3zZz486JWRBHpnwTw__original/img/eL7vusrGaBS9EUaLVq7x0ahL2TA=/0x0/filters:format(jpeg)/pic393663.jpg
 
 # 상인들의 계곡 체계적인 유럽 비버.jpg
 - 👥 인원: 2 ~ 4 (2~4인 베스트)
@@ -313,6 +322,7 @@
 + ♟️ 디자이너: Tomáš Holek
 + 🎨 아티스트: Barbora Srp Žižková
 + 🔗 https://boardgamegeek.com/boardgame/422042/tea-garden
++ 🖼 https://cf.geekdo-images.com/LIIX8JddEnTiwVV_cQ-mCA__original/img/6gQqWfyD1yZHfPi_4kBYfmaaczs=/0x0/filters:format(jpeg)/pic8238877.jpg
 
 # 슈퍼 판타지 브롤.jpg
 - 👥 인원: 2 ~ 4 (2인 베스트)
@@ -322,6 +332,7 @@
 + ♟️ 디자이너: Jochen Eisenhuth
 + 🎨 아티스트: Stéphane Gantiez, Johannes Helgeson, Bayard Wu
 + 🔗 https://boardgamegeek.com/boardgame/194517/super-fantasy-brawl
++ 🖼 https://cf.geekdo-images.com/yT5dXJzCpgvBBmXr_zQDSQ__original/img/7hprTnwyGtV-0FhHfn3m8m3-GmI=/0x0/filters:format(jpeg)/pic4808077.jpg
 
 # 스컬킹.jpg
 - 👥 인원: 2 ~ 8 (4~5인 베스트)
@@ -331,6 +342,7 @@
 + ♟️ 디자이너: Brent Beck, Jeffrey Beck
 + 🎨 아티스트: David Bock, Eckhard Freytag, Apryl Stott
 + 🔗 https://boardgamegeek.com/boardgame/150145/skull-king
++ 🖼 https://cf.geekdo-images.com/1qvA21HdRaPYwrn4tGDNaQ__original/img/Vn6PK_Ue5TX14oQ5uau4XICHEJU=/0x0/filters:format(jpeg)/pic8689185.jpg
 
 # 스탁파일 불법 투자.png
 - 👥 인원: 2 ~ 5 (1~5, 6~None인 베스트)
@@ -350,6 +362,7 @@
 + ♟️ 디자이너: Chris Handy (I)
 + 🎨 아티스트: Clau Souza
 + 🔗 https://boardgamegeek.com/boardgame/295374/long-shot-the-dice-game
++ 🖼 https://cf.geekdo-images.com/j9RO81ihYw0_oPj6iqV_bA__original/img/-jPNsFg5d9uA7D4WGDIP3TNLHX4=/0x0/filters:format(jpeg)/pic6682376.jpg
 
 # 러브 레터.png
 - 👥 인원: 2 ~ 6 (4인 베스트)
@@ -359,6 +372,7 @@
 + ♟️ 디자이너: Seiji Kanai, Justin Kemppainen, Alexandar Ortloff-Tang
 + 🎨 아티스트: Andrew Bosley, Samuel R. Shimota
 + 🔗 https://boardgamegeek.com/boardgame/277085/love-letter
++ 🖼 https://cf.geekdo-images.com/V7WQjhAh0AatPXTYOrXtCQ__original/img/peOFPtAkzWUSpOSVTJu3pTDv2ck=/0x0/filters:format(png)/pic4766499.png
 
 # 허니버즈.jpg
 - 👥 인원: 1 ~ 4 (3인 베스트)
@@ -368,6 +382,7 @@
 + ♟️ 디자이너: Paul Salomon
 + 🎨 아티스트: Anne Heidsieck
 + 🔗 https://boardgamegeek.com/boardgame/284742/honey-buzz
++ 🖼 https://cf.geekdo-images.com/q3KbDdmiSkvKucANAdOU1g__original/img/2mJguceZAdOqSem23FEHobaZ0a4=/0x0/filters:format(jpeg)/pic5608344.jpg
 
 # 캘리코.jpg
 - 👥 인원: 1 ~ 4 (2인 베스트)
@@ -377,6 +392,7 @@
 + ♟️ 디자이너: Kevin Russ
 + 🎨 아티스트: Beth Sobel
 + 🔗 https://boardgamegeek.com/boardgame/283155/calico
++ 🖼 https://cf.geekdo-images.com/qGkU6XsF1448F_A4P8TY5Q__original/img/sm-qIkkIoKuYRUgkfP6kkXTm1QY=/0x0/filters:format(jpeg)/pic8124431.jpg
 
 # 큐윅스 10주년 한정판.jpg
 - 👥 인원: 2 ~ 4 (2~4인 베스트)
@@ -386,6 +402,7 @@
 + ♟️ 디자이너: Steffen Benndorf
 + 🎨 아티스트: Oliver Freudenreich
 + 🔗 https://boardgamegeek.com/boardgame/365626/qwixx-10-jahre-limited-edition
++ 🖼 https://cf.geekdo-images.com/S6khfkpUp_4IFuV7nTxFTQ__original/img/0aYzi1Nbh_JAo4knAaSdqCB1918=/0x0/filters:format(jpeg)/pic7088172.jpg
 
 # 나르 바이킹 시대.png
 - 👥 인원: 2 ~ 4 (3인 베스트)
@@ -395,6 +412,7 @@
 + ♟️ 디자이너: Thomas Dupont
 + 🎨 아티스트: Antoine Carrion
 + 🔗 https://boardgamegeek.com/boardgame/379629/knarr
++ 🖼 https://cf.geekdo-images.com/PaYRAlezMGDlLt8LXmR_sQ__original/img/9nndYkVCIDsSHM3CmuiLk-0WCHk=/0x0/filters:format(png)/pic7857343.png
 
 # 도도스 라이딩 다이노스.png
 - 👥 인원: 1 ~ 8 (4, 6인 베스트)
@@ -404,6 +422,7 @@
 + ♟️ 디자이너: Rubén Hernández
 + 🎨 아티스트: Ivan Escalante
 + 🔗 https://boardgamegeek.com/boardgame/254683/dodos-riding-dinos
++ 🖼 https://cf.geekdo-images.com/qqpMTyv4vy-q7qYpl0NLFA__original/img/zOuoaKc0Q3Zc8m1gJLxGJlqvrXI=/0x0/filters:format(png)/pic5182751.png
 
 # 포트 로얄 나랑 계약합시다!.jpg
 - 👥 인원: 1 ~ 5 (3~4인 베스트)
@@ -423,6 +442,7 @@
 + ♟️ 디자이너: Tobey Ho
 + 🎨 아티스트: Marcin Adamski, Ben Carre, Tommy Ng, Ari Wong
 + 🔗 https://boardgamegeek.com/boardgame/156129/deception-murder-in-hong-kong
++ 🖼 https://cf.geekdo-images.com/1COY3oeK9aN2_XNimKaNww__original/img/ZzyzlO15ggCfkLg9ckeM4PWNePI=/0x0/filters:format(jpeg)/pic3033330.jpg
 
 # 메이플 밸리.png
 - 👥 인원: 1 ~ 5 (2인 베스트)
@@ -432,6 +452,7 @@
 + ♟️ 디자이너: Roberta Taylor
 + 🎨 아티스트: Shawna J.C. Tenney
 + 🔗 https://boardgamegeek.com/boardgame/361958/maple-valley
++ 🖼 https://cf.geekdo-images.com/DPzvzMp_wW5jl-340kRfUg__original/img/DqIqvDLDrskSEqubJVOKnz-ECnc=/0x0/filters:format(png)/pic6837649.png
 
 # 스탁파일.jpg
 - 👥 인원: 2 ~ 5 (4~5인 베스트)
@@ -441,6 +462,7 @@
 + ♟️ 디자이너: Brett Sobol, Seth Van Orden
 + 🎨 아티스트: Jacqui Davis, Ian O'Toole
 + 🔗 https://boardgamegeek.com/boardgame/161614/stockpile
++ 🖼 https://cf.geekdo-images.com/T7CvF_oFrEMNgS0Eyrbr5g__original/img/lJ0jHrlXH3mdtjM56LGUSmArmeQ=/0x0/filters:format(jpeg)/pic2537618.jpg
 
 # 캘리코 킥스타터 프로모 고양이들.jpg
 - 👥 인원: 1 ~ 4 (3인 베스트)
@@ -460,6 +482,7 @@
 + ♟️ 디자이너: Roberta Taylor
 + 🎨 아티스트: Shawna J.C. Tenney
 + 🔗 https://boardgamegeek.com/boardgame/304051/creature-comforts
++ 🖼 https://cf.geekdo-images.com/A0ZRM7_H6ecCQ8-lW0MtQQ__original/img/VcraEiTpK1jfGuU_A3-UiaH-cZI=/0x0/filters:format(jpeg)/pic5799638.jpg
 
 # 스탁파일 투자자 카드 프로모 팩 #3.png
 - 👥 인원: 2 ~ 5
@@ -479,6 +502,7 @@
 + ♟️ 디자이너: Daniel Byrne, José Gerardo Guerrero, Kevin Peláez, Tirso Virgós
 + 🎨 아티스트: Alfredo Cáceres
 + 🔗 https://boardgamegeek.com/boardgame/381249/rebel-princess
++ 🖼 https://cf.geekdo-images.com/HuWvVU2tcff-vu3EjPtk6Q__original/img/K2Fopgt-7pfYCu8jtlrcWJ92yeU=/0x0/filters:format(jpeg)/pic7605211.jpg
 
 # 롤 카메라! 영화 제작 보드 게임.png
 - 👥 인원: 1 ~ 6 (3인 베스트)
@@ -488,6 +512,7 @@
 + ♟️ 디자이너: Malachi Ray Rempen
 + 🎨 아티스트: Malachi Ray Rempen
 + 🔗 https://boardgamegeek.com/boardgame/298102/roll-camera-the-filmmaking-board-game
++ 🖼 https://cf.geekdo-images.com/tNLI2NzsOtBKOIMCfS0zEA__original/img/i9vHmhiv3riF-WFMmT3-0h_mb0I=/0x0/filters:format(png)/pic5255217.png
 
 # 오션스.jpg
 - 👥 인원: 2 ~ 4 (3인 베스트)
@@ -497,6 +522,7 @@
 + ♟️ 디자이너: Nick Bentley, Dominic Crapuchettes, Ben Goldman, Brian O'Neill
 + 🎨 아티스트: Guillaume Ducos, Catherine Hamilton
 + 🔗 https://boardgamegeek.com/boardgame/232414/oceans
++ 🖼 https://cf.geekdo-images.com/1J7_qmdohyypZNyvu8B45A__original/img/N4cHTwdthImTVqNrJUN9jQDskRc=/0x0/filters:format(jpeg)/pic4382323.jpg
 
 # 스탁파일 투자 전략 카드 프로모 팩.png
 - 👥 인원: 2 ~ 5
@@ -526,6 +552,7 @@
 + ♟️ 디자이너: Mary Flanagan, Max Seidman
 + 🎨 아티스트: A. Giroux, Spring Yu
 + 🔗 https://boardgamegeek.com/boardgame/330592/phantom-ink
++ 🖼 https://cf.geekdo-images.com/4ZKv2BomLImsuiysPKFoJw__original/img/wtQ_-RojEpCMLyyjYNUkjGHHo_E=/0x0/filters:format(jpeg)/pic9627175.jpg
 
 # 롤 카메라! 테이블 뒤집기 프로모.jpg
 - 👥 인원: 1 ~ 4
@@ -555,6 +582,7 @@
 + ♟️ 디자이너: Daryl Chow, Saashi
 + 🎨 아티스트: Takako Takarai
 + 🔗 https://boardgamegeek.com/boardgame/294230/remember-our-trip
++ 🖼 https://cf.geekdo-images.com/G6nCghq_RVkNuoVQM_2sEQ__original/img/s58TXu8o8I8ANYmKxWrg-3Z4aMU=/0x0/filters:format(png)/pic5051879.png
 
 # 노 터치 크라켄 디럭스.jpg
 - 👥 인원: 4 ~ 8 (7인 베스트)
@@ -564,6 +592,7 @@
 + ♟️ 디자이너: 佐藤 雄介 (Yusuke Sato)
 + 🎨 아티스트: Vincent Dutrait, Luis Francisco, Brandt Peters
 + 🔗 https://boardgamegeek.com/boardgame/253786/dont-mess-with-cthulhu-deluxe
++ 🖼 https://cf.geekdo-images.com/XT80HLRhvDdLhWvIcYlHcw__original/img/ytgGJ9tYD89L_WhfIfxNd-4HjVA=/0x0/filters:format(jpeg)/pic4125190.jpg
 
 # 스탁파일 투자자 카드 프로모 팩 #2 - '돈 냄새를 잘 맡는' 미트와 '사회주의자' 샌더스.jpg
 - 👥 인원: 2 ~ 5
@@ -583,6 +612,7 @@
 + ♟️ 디자이너: Antoine Bauza
 + 🎨 아티스트: Nicolas Fructus, Picksel, Yuio
 + 🔗 https://boardgamegeek.com/boardgame/319765/takenoko-big-bagseu-takenoko-big-box
++ 🖼 https://cf.geekdo-images.com/ftEf8xYezaxOs7k6sMKlTA__original/img/NlvBeodbvcMyGSObcxOvyJQZs9s=/0x0/filters:format(jpeg)/pic5658681.jpg
 
 # 두들 대시.png
 - 👥 인원: 3 ~ 7 (5~7인 베스트)
@@ -592,6 +622,7 @@
 + ♟️ 디자이너: Fridtjof Buvarp, Maija Buvarp, Pauline Buvarp, Eilif Svensson, Åsmund Svensson
 + 🎨 아티스트: Denis Hervouet
 + 🔗 https://boardgamegeek.com/boardgame/334379/doodle-dash
++ 🖼 https://cf.geekdo-images.com/Vg3qEly2Sx379Vo1t73XCw__original/img/LDmpxaaOo_fx21coXhOTgyr7FpM=/0x0/filters:format(png)/pic6102105.png
 
 # 상인들의 계곡2 무역 대가들의 시대.jpg
 - 👥 인원: 2 ~ 4 (2~3인 베스트)
@@ -601,6 +632,7 @@
 + ♟️ 디자이너: Sami Laakso
 + 🎨 아티스트: Sami Laakso
 + 🔗 https://boardgamegeek.com/boardgame/191597/dale-of-merchants-2
++ 🖼 https://cf.geekdo-images.com/3W2uUAqtkK1PjPyrcNYUhA__original/img/DeC8rP3Xq1gBx1xxBFDyvspD3PY=/0x0/filters:format(jpeg)/pic2986642.jpg
 
 # 스컬퀸.jpg
 - 👥 인원: 2 ~ 6 (4인 베스트)
@@ -610,6 +642,7 @@
 + ♟️ 디자이너: Stefan Dorra
 + 🎨 아티스트: Cinthya Álvarez
 + 🔗 https://boardgamegeek.com/boardgame/423432/skull-queen
++ 🖼 https://cf.geekdo-images.com/BoCihTmlH9SQLT51BEOl_A__original/img/Ylu6kHDpE6yZ6Q0eNMuMoaWqjJM=/0x0/filters:format(jpeg)/pic8268132.jpg
 
 # 포실리스 미니 확장 6종.jpg
 - 👥 인원: 1 (1인 전용)
@@ -629,6 +662,7 @@
 + ♟️ 디자이너: Ted Alspach, Akihisa Okui
 + 🎨 아티스트: Ted Alspach, Gus Batts
 + 🔗 https://boardgamegeek.com/boardgame/163166/one-night-ultimate-werewolf-daybreak
++ 🖼 https://cf.geekdo-images.com/-jMVcPlkpLcs-2nA_htb8g__original/img/akA2sjnFZ_b4DVAF4H-G5pK4m5Q=/0x0/filters:format(jpeg)/pic2225958.jpg
 
 # 크라클 오라클.png
 - 👥 인원: 2 ~ 8 (4~6인 베스트)
@@ -638,6 +672,7 @@
 + ♟️ 디자이너: Die 7 Bazis
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgame/419639/mind-the-lines
++ 🖼 https://cf.geekdo-images.com/iSXZ4NR52el43WXTTnUgOA__original/img/8XZHQjDO_r6cRgf3LRPdGbK7Ps8=/0x0/filters:format(png)/pic9435212.png
 
 # 타임즈 업! 패밀리.jpg
 - 👥 인원: 4 ~ 12 (6, 8인 베스트)
@@ -647,6 +682,7 @@
 + ♟️ 디자이너: Peter Sarrett
 + 🎨 아티스트: Peter Sarrett
 + 🔗 https://boardgamegeek.com/boardgame/88126/times-up-family
++ 🖼 https://cf.geekdo-images.com/IaRRFgVPFUkhklzt96Z3sA__original/img/om1i6A7psef4laC7y35CI9VO7Bs=/0x0/filters:format(jpeg)/pic903503.jpg
 
 # 텀블링 다이스.jpg
 - 👥 인원: 1 ~ 6 (4, 6인 베스트)
@@ -656,6 +692,7 @@
 + ♟️ 디자이너: Carey Grayson, Randy Nash, Rick Soued
 + 🎨 아티스트: Carey Grayson
 + 🔗 https://boardgamegeek.com/boardgame/16747/tumblin-dice
++ 🖼 https://cf.geekdo-images.com/c1QnLyOiQ6IcnXJuJacTqw__original/img/68S-1F7zl_seozsuDZzOHVSRXV4=/0x0/filters:format(jpeg)/pic7243922.jpg
 
 # 궁신.jpg
 - 👥 인원: 2 ~ 5 (4인 베스트)
@@ -665,6 +702,7 @@
 + ♟️ 디자이너: Romaric Galonnier, Anthony Perone
 + 🎨 아티스트: Noëmie Chevalier
 + 🔗 https://boardgamegeek.com/boardgame/402283/courtisans
++ 🖼 https://cf.geekdo-images.com/JK1HbIGtiVfsIbnw3Q543w__original/img/kPNCItrb8GwoIwV9R-vjczIkJR4=/0x0/filters:format(jpeg)/pic8004908.jpg
 
 # 라마랜드.jpg
 - 👥 인원: 2 ~ 4 (2인 베스트)
@@ -674,6 +712,7 @@
 + ♟️ 디자이너: Phil Walker-Harding
 + 🎨 아티스트: Klemens Franz
 + 🔗 https://boardgamegeek.com/boardgame/330038/llamaland
++ 🖼 https://cf.geekdo-images.com/SZS3cUukT7DFA04aNMjD5A__original/img/916JpcDbN66156QkN2AcBNZnOY4=/0x0/filters:format(jpeg)/pic6036704.jpg
 
 # 오하나미.png
 - 👥 인원: 2 ~ 4 (3인 베스트)
@@ -683,6 +722,7 @@
 + ♟️ 디자이너: Steffen Benndorf
 + 🎨 아티스트: Christian Opperer
 + 🔗 https://boardgamegeek.com/boardgame/270314/ohanami
++ 🖼 https://cf.geekdo-images.com/U05-_kgQMravE5OLGuYRnw__original/img/2FfV1ZZsBm6rmQrzwmPoCFS2P-I=/0x0/filters:format(png)/pic5591129.png
 
 # 버스 노선을 만들자! 서울편.jpg
 - 👥 인원: 2 ~ 5 (4인 베스트)
@@ -692,6 +732,7 @@
 + ♟️ 디자이너: Saashi
 + 🎨 아티스트: Takako Takarai
 + 🔗 https://boardgamegeek.com/boardgame/251053/lets-make-a-bus-route
++ 🖼 https://cf.geekdo-images.com/ES3P_SfMEvOWLasjBpc4nw__original/img/9RpBNOeWvWxHkeozHl0ZUWujjXQ=/0x0/filters:format(jpeg)/pic4083388.jpg
 
 # 러브 레터 (2012).jpg
 - 👥 인원: 2 ~ 4 (4인 베스트)
@@ -701,6 +742,7 @@
 + ♟️ 디자이너: Seiji Kanai
 + 🎨 아티스트: Kali Fitzgerald, Andrew Hepworth, Jeff Himmelman, John Kovalic, Nina Matsumoto, Robb Miller, Ken Niimura, Noboru Sugiura, Yating Sun, 田中寛崇 (Tanaka Hirotaka)
 + 🔗 https://boardgamegeek.com/boardgame/129622/love-letter
++ 🖼 https://cf.geekdo-images.com/T1ltXwapFUtghS9A7_tf4g__original/img/xIAzJY7rl-mtPStRZSqnTVsAr8Y=/0x0/filters:format(jpeg)/pic1401448.jpg
 
 # 리빙 포레스트.jpg
 - 👥 인원: 1 ~ 4 (3인 베스트)
@@ -710,6 +752,7 @@
 + ♟️ 디자이너: Aske Christiansen
 + 🎨 아티스트: Apolline Etienne
 + 🔗 https://boardgamegeek.com/boardgame/328479/living-forest
++ 🖼 https://cf.geekdo-images.com/fPhdfZX9UTLr4-SVgK0zoQ__original/img/ZPdxDPt1jSRQMNnVgn-qIPhNv0E=/0x0/filters:format(jpeg)/pic5899025.jpg
 
 # 배드 컴퍼니.jpg
 - 👥 인원: 1 ~ 6 (3~4인 베스트)
@@ -719,6 +762,7 @@
 + ♟️ 디자이너: Kenneth Minde, Kristian Amundsen Østby, Eilif Svensson
 + 🎨 아티스트: Gjermund Bohne
 + 🔗 https://boardgamegeek.com/boardgame/340677/bad-company
++ 🖼 https://cf.geekdo-images.com/rL9n8DhlZiC9CL3mZ9pYGA__original/img/V95tb8NJksi5xZg4-rPb_lCze_o=/0x0/filters:format(jpeg)/pic7245173.jpg
 
 # 인사이더 블랙.png
 - 👥 인원: 4 ~ 8 (6~8인 베스트)
@@ -728,6 +772,7 @@
 + ♟️ 디자이너: -
 + 🎨 아티스트: Hiroko Izumida, Jun Sasaki
 + 🔗 https://boardgamegeek.com/boardgame/307997/insider-black
++ 🖼 https://cf.geekdo-images.com/goqvyYR_gRC44BRoZIaNhQ__original/img/69lxD_BtbhK3pu93Mgng8QvkWr0=/0x0/filters:format(png)/pic5797031.png
 
 # 하이 소사이어티.png
 - 👥 인원: 3 ~ 5 (4~5인 베스트)
@@ -737,6 +782,7 @@
 + ♟️ 디자이너: Reiner Knizia
 + 🎨 아티스트: Marie Bergeron, Mateusz Bielski, Medusa Dollmaker, Wesly Gibs, Dahee Lee, Alvin Madden, Yusuke Mamada, Ulf Marckwort, Paul Niemeyer, Björn Pertoft, Piotr Sokołowski, Rolf Vogt, Markus Wagner
 + 🔗 https://boardgamegeek.com/boardgame/220/high-society
++ 🖼 https://cf.geekdo-images.com/lNRG273h6gkd3szSY3EswQ__original/img/M-gutK8AQBBaQ9wBQ3OU8TV14j4=/0x0/filters:format(png)/pic9202764.png
 
 # 스타트업스.png
 - 👥 인원: 3 ~ 7 (4인 베스트)
@@ -746,6 +792,7 @@
 + ♟️ 디자이너: Jun Sasaki
 + 🎨 아티스트: Hiroko Izumida, Jun Sasaki
 + 🔗 https://boardgamegeek.com/boardgame/223770/startups
++ 🖼 https://cf.geekdo-images.com/Y23LsS9HxPgO0XT5RvtwTA__original/img/IJW2fhjS4x88hu8Aap8XHrMfcyg=/0x0/filters:format(png)/pic3678411.png
 
 # 월링 위치크래프트.jpg
 - 👥 인원: 2 ~ 5 (3인 베스트)
@@ -755,6 +802,7 @@
 + ♟️ 디자이너: Erik Andersson Sundén
 + 🎨 아티스트: Luis Francisco, Weberson Santiago
 + 🔗 https://boardgamegeek.com/boardgame/335275/whirling-witchcraft
++ 🖼 https://cf.geekdo-images.com/Vghbon6jnyUg6oPQju7DyQ__original/img/mXoGk0Cpiww8k1OpjyCkC3M6FAM=/0x0/filters:format(jpeg)/pic6088814.jpg
 
 # 실버 & 골드.jpg
 - 👥 인원: 2 ~ 4 (3~4인 베스트)
@@ -764,6 +812,7 @@
 + ♟️ 디자이너: Phil Walker-Harding
 + 🎨 아티스트: Oliver Freudenreich
 + 🔗 https://boardgamegeek.com/boardgame/270673/silver-and-gold
++ 🖼 https://cf.geekdo-images.com/a6DA19Zb8GLJ3wxyamCiJw__original/img/0VTXqGyyc0PC_-AdDcOIllSQDMg=/0x0/filters:format(jpeg)/pic6974604.jpg
 
 # 와일드 듀오.png
 - 👥 인원: 2 (2인 베스트)
@@ -773,6 +822,7 @@
 + ♟️ 디자이너: Khanat Sadomwattana, Mitsuo Yamamoto
 + 🎨 아티스트: Yaiza Ahsen Deserio, Johanna Tarkela
 + 🔗 https://boardgamegeek.com/boardgame/400770/wild-duo
++ 🖼 https://cf.geekdo-images.com/JLnr6qd0yugoy943XOGjNA__original/img/T0V53pWDZZ5vXzZ4A29IJDjREyw=/0x0/filters:format(png)/pic7727253.png
 
 # 더 리치 앤 더 굿.png
 - 👥 인원: 3 ~ 5 (4인 베스트)
@@ -782,6 +832,7 @@
 + ♟️ 디자이너: Carlo A. Rossi
 + 🎨 아티스트: Michael Menzel, Christof Tisch
 + 🔗 https://boardgamegeek.com/boardgame/38863/the-rich-and-the-good
++ 🖼 https://cf.geekdo-images.com/CrAzRoBFWWz6bbDTlzY23Q__original/img/ieUuBn7WH6Iuc-ZQ2zbrecR34Qo=/0x0/filters:format(png)/pic7061922.png
 
 # 바이킹 시소.jpg
 - 👥 인원: 2 ~ 4 (2인 베스트)
@@ -791,6 +842,7 @@
 + ♟️ 디자이너: Reiner Knizia
 + 🎨 아티스트: Yoshiaki Tomioka
 + 🔗 https://boardgamegeek.com/boardgame/351810/viking-see-saw
++ 🖼 https://cf.geekdo-images.com/sZihzTOJUFXSKgDi787gOQ__original/img/-LjmKJOepTVObwvLq2K31XuxdfM=/0x0/filters:format(jpeg)/pic7757953.jpg
 
 # 상인들의 계곡 특별한 상인들의 길드.jpg
 - 👥 인원: 2 ~ 4 (2~3인 베스트)
@@ -800,6 +852,7 @@
 + ♟️ 디자이너: Sami Laakso
 + 🎨 아티스트: Sami Laakso
 + 🔗 https://boardgamegeek.com/boardgame/176165/dale-of-merchants
++ 🖼 https://cf.geekdo-images.com/mK2jITNJ3vgNWKbliMpErQ__original/img/Klr6u2U7Qq7VkfftF6B2zVeza6E=/0x0/filters:format(jpeg)/pic2772192.jpg
 
 # 해저탐험2 부스트 에디션.png
 - 👥 인원: 2 ~ 6 (4~5인 베스트)
@@ -809,6 +862,7 @@
 + ♟️ 디자이너: Jun Sasaki, Goro Sasaki
 + 🎨 아티스트: Jun Sasaki
 + 🔗 https://boardgamegeek.com/boardgame/427866/deep-sea-adventure-boost
++ 🖼 https://cf.geekdo-images.com/rHDvwG45RCSBnVYM65mVIA__original/img/R5Sl-SOfwIOBhAkuz_w0UCXMmHA=/0x0/filters:format(png)/pic8393449.png
 
 # 네코지마.jpg
 - 👥 인원: 1 ~ 5 (2인 베스트)
@@ -818,6 +872,7 @@
 + ♟️ 디자이너: David Carmona, Karen Nguyen
 + 🎨 아티스트: Gilles Warmoes
 + 🔗 https://boardgamegeek.com/boardgame/359029/nekojima
++ 🖼 https://cf.geekdo-images.com/_HROmDrsHuVpvHVyXpyl6Q__original/img/U7X3ToeV78UkuxDQbmP-K4QPLiA=/0x0/filters:format(jpeg)/pic7344964.jpg
 
 # 반디도 10주년판 알카트라즈.jpg
 - 👥 인원: 1 ~ 4 (3인 베스트)
@@ -827,6 +882,7 @@
 + ♟️ 디자이너: Martin Nedergaard Andersen
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgame/460438/bandido-alcatraz-10th-anniversary-edition
++ 🖼 https://cf.geekdo-images.com/yc3-B9wJHiJA81c9K2cphQ__original/img/k95Q7xbsvBD8H5ryDm5Yo2lkmSA=/0x0/filters:format(jpeg)/pic9353931.jpg
 
 # 육식동물 짓이야!.jpg
 - 👥 인원: 1 ~ 5 (1인 베스트)
@@ -836,6 +892,7 @@
 + ♟️ 디자이너: Daumilas Ardickas, Urtis Šulinskas
 + 🎨 아티스트: Cecilia Lonnie
 + 🔗 https://boardgamegeek.com/boardgame/451594/a-carnivore-did-it
++ 🖼 https://cf.geekdo-images.com/xpB49iPD28gLbqPgdnL1mg__original/img/wvVKaQmVsk3tuM5SyJIW_G_LhEc=/0x0/filters:format(jpeg)/pic9027329.jpg
 
 # 카훗.jpg
 - 👥 인원: 1 ~ 4 (2인 베스트)
@@ -845,6 +902,7 @@
 + ♟️ 디자이너: Ken Gruhl
 + 🎨 아티스트: Ronan Le Maître, Tom McKendrick, Manu Palau, Irina Pechenkina
 + 🔗 https://boardgamegeek.com/boardgame/246761/cahoots
++ 🖼 https://cf.geekdo-images.com/HbDx3mCSSnO6XIRhwV3uLg__original/img/2R-FEy1aoczi1skm6wVWc0YFyD0=/0x0/filters:format(jpeg)/pic3989425.jpg
 
 # 이상한 정원의 앨리스.jpg
 - 👥 인원: 1 ~ 4 (3~4인 베스트)
@@ -854,6 +912,7 @@
 + ♟️ 디자이너: Ikhwan Kwon
 + 🎨 아티스트: Eugenia Smolenceva
 + 🔗 https://boardgamegeek.com/boardgame/298635/alices-garden
++ 🖼 https://cf.geekdo-images.com/JhLSvQu1cOBg4Dg5l3BgHw__original/img/mk1IkndkEo9ZA5nm4RumY9lBiCI=/0x0/filters:format(jpeg)/pic5177326.jpg
 
 # 프라이데이.jpg
 - 👥 인원: 1 (1인 전용)
@@ -863,6 +922,7 @@
 + ♟️ 디자이너: Friedemann Friese
 + 🎨 아티스트: Harald Lieske, Marcel-André Casasola Merkle
 + 🔗 https://boardgamegeek.com/boardgame/43570/friday
++ 🖼 https://cf.geekdo-images.com/7bBUuYUIyKIBDh_UnNa_Fw__original/img/_tiZYJMEc26kgt7uNF6IM8A-8As=/0x0/filters:format(jpeg)/pic1513328.jpg
 
 # 좀비 파에야.jpg
 - 👥 인원: 2 ~ 5 (3~4인 베스트)
@@ -872,6 +932,7 @@
 + ♟️ 디자이너: Enric Aguilar Almodóvar
 + 🎨 아티스트: Esther Mendez
 + 🔗 https://boardgamegeek.com/boardgame/151446/la-fallera-calavera
++ 🖼 https://cf.geekdo-images.com/4qRxwBbB3jPEWgu1KyTi5g__original/img/Hy1FhnfAzQ3f8Z_qlH_7BT9Xd5I=/0x0/filters:format(jpeg)/pic7392607.jpg
 
 # 큐윅스 디럭스.jpg
 - 👥 인원: 2 ~ 8 (4~5인 베스트)
@@ -881,6 +942,7 @@
 + ♟️ 디자이너: Steffen Benndorf
 + 🎨 아티스트: Steffen Benndorf
 + 🔗 https://boardgamegeek.com/boardgame/208775/qwixx-deluxe
++ 🖼 https://cf.geekdo-images.com/dReCAjmmyvSVFELMPnKPRg__original/img/Ts6t8ToH60jhEFD3RN0ZlBjxcvY=/0x0/filters:format(jpeg)/pic3264158.jpg
 
 # 포트 로얄.jpg
 - 👥 인원: 2 ~ 5 (3~4인 베스트)
@@ -890,6 +952,7 @@
 + ♟️ 디자이너: Alexander Pfister
 + 🎨 아티스트: Klemens Franz, Atanas Lozanski
 + 🔗 https://boardgamegeek.com/boardgame/156009/port-royal
++ 🖼 https://cf.geekdo-images.com/9lQIIxg_l6G-ZWmTqEHlOA__original/img/NglW8f48YV2Guo7yAcHjPc-wKMM=/0x0/filters:format(jpeg)/pic1949286.jpg
 
 # 한밤의 수수께끼.jpg
 - 👥 인원: 4 ~ 10 (6~7인 베스트)
@@ -899,6 +962,7 @@
 + ♟️ 디자이너: Ted Alspach
 + 🎨 아티스트: Ted Alspach, Jason Boles, Roland MacDonald
 + 🔗 https://boardgamegeek.com/boardgame/219215/werewords
++ 🖼 https://cf.geekdo-images.com/4ngyBZXLLKIOdGuUHE7baw__original/img/26CKXFLZQ1sUlUwdu_kJ3E8F4Bs=/0x0/filters:format(jpeg)/pic4415135.jpg
 
 # 리네이처.jpg
 - 👥 인원: 2 ~ 4 (3인 베스트)
@@ -908,6 +972,7 @@
 + ♟️ 디자이너: Michael Kiesling, Wolfgang Kramer
 + 🎨 아티스트: Dennis Lohausen
 + 🔗 https://boardgamegeek.com/boardgame/300001/renature
++ 🖼 https://cf.geekdo-images.com/w1KgNmpX0_oo3Y9ENmtj0w__original/img/wL8X5HKPPoB4iYCcwBZ0r6WlGz4=/0x0/filters:format(jpeg)/pic5535714.jpg
 
 # 부두 프린스.png
 - 👥 인원: 2 ~ 5 (5인 베스트)
@@ -917,6 +982,7 @@
 + ♟️ 디자이너: Reiner Knizia
 + 🎨 아티스트: Stephanie Böhm
 + 🔗 https://boardgamegeek.com/boardgame/234248/voodoo-prince
++ 🖼 https://cf.geekdo-images.com/VNTwZrI4gyxs2fW1jTs4LQ__original/img/i0hE44o1u0pMISH1pNzcyL-pxNs=/0x0/filters:format(png)/pic3752776.png
 
 # 블루, 샌드, 씨사이드.jpg
 - 👥 인원: 1 ~ 5 (2인 베스트)
@@ -926,6 +992,7 @@
 + ♟️ 디자이너: Bryan Burgoyne
 + 🎨 아티스트: Fanny Saulnier
 + 🔗 https://boardgamegeek.com/boardgame/406660/seaside
++ 🖼 https://cf.geekdo-images.com/kRGRCtnIof68GRLRy4A9Xw__original/img/iFiUgWZJx5glSg3VVqq16px_pHc=/0x0/filters:format(jpeg)/pic7990519.jpg
 
 # 던전 레이더스.jpg
 - 👥 인원: 3 ~ 5 (4~5인 베스트)
@@ -935,6 +1002,7 @@
 + ♟️ 디자이너: Phil Walker-Harding
 + 🎨 아티스트: Albert Monteys
 + 🔗 https://boardgamegeek.com/boardgame/257164/dungeon-raiders
++ 🖼 https://cf.geekdo-images.com/XPVILrCVxga8X-Cw7r6EAw__original/img/FpOQEgt_TIjXo9yJ1a7jpfU_XrM=/0x0/filters:format(jpeg)/pic4034698.jpg
 
 # 드롭폴터(귀신 떨어짐).png
 - 👥 인원: 2 ~ 5 (4인 베스트)
@@ -944,6 +1012,7 @@
 + ♟️ 디자이너: Paul Schulz
 + 🎨 아티스트: Rie Komatsuzaki, Jun Sasaki
 + 🔗 https://boardgamegeek.com/boardgame/405537/dropolter
++ 🖼 https://cf.geekdo-images.com/dK0nQKDFg5VDpKmvkAkIHg__original/img/AkxW8w56y9Ow4G9jd25Ry6TgcZo=/0x0/filters:format(png)/pic8803328.png
 
 # 붐 버스터즈.jpg
 - 👥 인원: 2 ~ 6
@@ -953,6 +1022,7 @@
 + ♟️ 디자이너: Alberto Fernández Perez, Alberto Fernández Jiménez
 + 🎨 아티스트: Isaac Murgadella
 + 🔗 https://boardgamegeek.com/boardgame/348458/boombeados
++ 🖼 https://cf.geekdo-images.com/Z5zbVTzKn2m7bpe6XtXk9Q__original/img/6g_IG4yuNOB9O7gMt5LEPuaIDbA=/0x0/filters:format(jpeg)/pic6432662.jpg
 
 # 스파이 VS 스파이.jpg
 - 👥 인원: 2 (2인 베스트)
@@ -962,6 +1032,7 @@
 + ♟️ 디자이너: Rob Fisher, Adam Porter
 + 🎨 아티스트: Felix Kindelan, Jakob Timm
 + 🔗 https://boardgamegeek.com/boardgame/299569/kompromat
++ 🖼 https://cf.geekdo-images.com/xeIxamKPESmuIxx0OiX-Ew__original/img/g5Zguko2AWZg16ey8r2zbq9p5Pk=/0x0/filters:format(jpeg)/pic5521198.jpg
 
 # 피카마우스.jpg
 - 👥 인원: 2 ~ 6 (4인 베스트)
@@ -971,6 +1042,7 @@
 + ♟️ 디자이너: Elodie Clément, Théo Rivière
 + 🎨 아티스트: Jonathan Aucomte
 + 🔗 https://boardgamegeek.com/boardgame/319754/peek-a-mouse
++ 🖼 https://cf.geekdo-images.com/fxJhhivZVweH0Pek0cSRAw__original/img/NdXk79hWny7fmbaIbyGtxNyhZWY=/0x0/filters:format(jpeg)/pic5661757.jpg
 
 # AI 스페이스 퍼즐.jpg
 - 👥 인원: 2 ~ 5 (3~4인 베스트)
@@ -980,6 +1052,7 @@
 + ♟️ 디자이너: Katarzyna Cioch, Sylwia Smolińska, Wojciech Wiśniewski, Mateusz Wolski
 + 🎨 아티스트: Tomasz Bolik
 + 🔗 https://boardgamegeek.com/boardgame/383064/ai-space-puzzle
++ 🖼 https://cf.geekdo-images.com/1rHgBNqf2jWuQn-31Af47A__original/img/WzeyY7regcBa0823_KIlDVlMTHM=/0x0/filters:format(jpeg)/pic8014122.jpg
 
 # 임페리얼 마이너즈.jpg
 - 👥 인원: 1 ~ 5 (1~2인 베스트)
@@ -989,6 +1062,7 @@
 + ♟️ 디자이너: Tim Armstrong (II)
 + 🎨 아티스트: Hanna Kuik
 + 🔗 https://boardgamegeek.com/boardgame/378758/imperial-miners
++ 🖼 https://cf.geekdo-images.com/g4mqcvod6XKsmzTN2u5aVA__original/img/dAJCD6t8WAU1ShQxUKm92Y_MicY=/0x0/filters:format(jpeg)/pic7296551.jpg
 
 # 제왕의 깃발.jpg
 - 👥 인원: 3 ~ 5 (4인 베스트)
@@ -998,6 +1072,7 @@
 + ♟️ 디자이너: Adrien Hesling, Axel Hesling
 + 🎨 아티스트: Tomasz Jedruszek
 + 🔗 https://boardgamegeek.com/boardgame/287084/oriflamme
++ 🖼 https://cf.geekdo-images.com/8MpTeqlzyIupMpSSxP3PAw__original/img/XoqLo4dQlXvFHZBAcKbZheA8NHA=/0x0/filters:format(jpeg)/pic4949335.jpg
 
 # 루우트.jpg
 - 👥 인원: 2 ~ 4 (3인 베스트)
@@ -1007,6 +1082,7 @@
 + ♟️ 디자이너: Charles Chevallier, Laurent Escoffier
 + 🎨 아티스트: Xavier Gueniffey Durin
 + 🔗 https://boardgamegeek.com/boardgame/410991/looot
++ 🖼 https://cf.geekdo-images.com/8SdHEMhje07oT9_AlqmGPg__original/img/KeL4ek0KJBQHkD-XgTyz3vXrxdE=/0x0/filters:format(jpeg)/pic7963549.jpg
 
 # 사가니.png
 - 👥 인원: 1 ~ 4 (2인 베스트)
@@ -1016,6 +1092,7 @@
 + ♟️ 디자이너: Uwe Rosenberg
 + 🎨 아티스트: Lukas Siegmon
 + 🔗 https://boardgamegeek.com/boardgame/309105/sagani
++ 🖼 https://cf.geekdo-images.com/SvW9cN5oSkHfaU6Znt8hRA__original/img/ugNpPvZxWgGzNyYsd72mSDGlDAI=/0x0/filters:format(png)/pic5410757.png
 
 # 자메이카.png
 - 👥 인원: 2 ~ 6 (5~6인 베스트)
@@ -1025,6 +1102,7 @@
 + ♟️ 디자이너: Malcolm Braff, Bruno Cathala, Sébastien Pauchon
 + 🎨 아티스트: Mathieu Leyssenne
 + 🔗 https://boardgamegeek.com/boardgame/28023/jamaica
++ 🖼 https://cf.geekdo-images.com/jZRfv3isrBG5waCzEx60Cw__original/img/aLqKSqw-RWyR4wyfFUywWMQXUTc=/0x0/filters:format(png)/pic6434838.png
 
 # 초밥 마스터+미니 확장.jpg
 - 👥 인원: 1 ~ 4 (2인 베스트)
@@ -1034,6 +1112,7 @@
 + ♟️ 디자이너: Josh Cappel, Adam Gertzbein
 + 🎨 아티스트: Claire Lin
 + 🔗 https://boardgamegeek.com/boardgame/392455/maki-master
++ 🖼 https://cf.geekdo-images.com/-L7V93c6JsEQXG5GQ7CZXw__original/img/NIMzOmvrocuinT1Ct5ZFrPFZwg4=/0x0/filters:format(jpeg)/pic7970961.jpg
 
 # 빅샷.jpg
 - 👥 인원: 2 ~ 4 (3~4인 베스트)
@@ -1043,6 +1122,7 @@
 + ♟️ 디자이너: Alex Randolph
 + 🎨 아티스트: Wanjin Gill, Dahee Lee, Atelier Wilinski, Klaus Wilinski
 + 🔗 https://boardgamegeek.com/boardgame/1125/big-shot
++ 🖼 https://cf.geekdo-images.com/1hgmcVxQpqQbjGgANRFEbg__original/img/-4J6FFLBHa76e2gcdKKLnh6y7kI=/0x0/filters:format(jpeg)/pic8898750.jpg
 
 # 슈티헤른.png
 - 👥 인원: 3 ~ 8 (4인 베스트)
@@ -1052,6 +1132,7 @@
 + ♟️ 디자이너: Klaus Palesch
 + 🎨 아티스트: Oliver Freudenreich, Sylvain Leroy, Franz Vohwinkel
 + 🔗 https://boardgamegeek.com/boardgame/354/stick-em
++ 🖼 https://cf.geekdo-images.com/y9n_OHYdYjAZ4dEPadZ60w__original/img/zaPFle6nXVIoDXcDf2JXw4pwZ-E=/0x0/filters:format(png)/pic5282281.png
 
 # 큐윅스 X-체인지.png
 - 👥 인원: 2 ~ 5 (2인 베스트)
@@ -1071,6 +1152,7 @@
 + ♟️ 디자이너: Ted Alspach, Akihisa Okui
 + 🎨 아티스트: Ted Alspach, Gus Batts
 + 🔗 https://boardgamegeek.com/boardgame/147949/one-night-ultimate-werewolf
++ 🖼 https://cf.geekdo-images.com/rqLju4uaZq-G9z4g91aPPQ__original/img/eOxUlbCuix0lOjuyBYpjtIXVihc=/0x0/filters:format(png)/pic8783294.png
 
 # 그레이트 플레인스.jpg
 - 👥 인원: 2 (2인 베스트)
@@ -1080,6 +1162,7 @@
 + ♟️ 디자이너: Trevor Benjamin, Brett J. Gilbert
 + 🎨 아티스트: Klemens Franz
 + 🔗 https://boardgamegeek.com/boardgame/330036/great-plains
++ 🖼 https://cf.geekdo-images.com/ueyzy1EXBN8EGunD-p6T5w__original/img/nvHSLpgw4HCcupaP_p1V6PwueCA=/0x0/filters:format(jpeg)/pic6035384.jpg
 
 # 그라울 최후의 밤 - 확장.jpg
 - 👥 인원: 4 ~ 10
@@ -1099,6 +1182,7 @@
 + ♟️ 디자이너: Saashi
 + 🎨 아티스트: Takako Takarai, Hubert Ronek
 + 🔗 https://boardgamegeek.com/boardgame/278751/in-front-of-the-elevators
++ 🖼 https://cf.geekdo-images.com/VrY3Gy9bI9Df1rrzdRPmEw__original/img/fqPTd-0CbuoGQTssyWH4r9o_Wvw=/0x0/filters:format(png)/pic4708322.png
 
 # 텐텐텐.png
 - 👥 인원: 1 ~ 5 (4인 베스트)
@@ -1108,6 +1192,7 @@
 + ♟️ 디자이너: Molly Johnson, Robert Melvin, Shawn Stankewich
 + 🎨 아티스트: Shawn Stankewich
 + 🔗 https://boardgamegeek.com/boardgame/335609/ten
++ 🖼 https://cf.geekdo-images.com/74OIxWD8fvpVGILu7s5I0g__original/img/nJV7yhQ49Y0AxSoq3Z0ML3ZFg8Y=/0x0/filters:format(png)/pic6109559.png
 
 # 푸에블로.jpg
 - 👥 인원: 2 ~ 4 (3~4인 베스트)
@@ -1117,6 +1202,7 @@
 + ♟️ 디자이너: Michael Kiesling, Wolfgang Kramer
 + 🎨 아티스트: Jamel Akib, Wanjin Gill, Ole Höpfner, Joachim Krause, Jiyeon Lee, Pinball, Wolfgang Scheit, SillyJellie
 + 🔗 https://boardgamegeek.com/boardgame/3228/pueblo
++ 🖼 https://cf.geekdo-images.com/x3JdOzqqlGmI7qleiAwT5g__original/img/7K6yhkBVusr8tybf2Ro0DmYdvKs=/0x0/filters:format(jpeg)/pic6861799.jpg
 
 # 누가 치즈를 훔쳤을까.jpg
 - 👥 인원: 4 ~ 8 (6~8인 베스트)
@@ -1126,6 +1212,7 @@
 + ♟️ 디자이너: Dongxu Li
 + 🎨 아티스트: Moyo, 別府さい (Sai Beppu)
 + 🔗 https://boardgamegeek.com/boardgame/294175/cheese-thief
++ 🖼 https://cf.geekdo-images.com/nj9Q18hT16Ij-XdLUkgprg__original/img/Xy8NMoXKE6mmpjMVJPlNzxHaxjY=/0x0/filters:format(jpeg)/pic6951766.jpg
 
 # 펀자이.jpg
 - 👥 인원: 2 (2인 베스트)
@@ -1135,6 +1222,7 @@
 + ♟️ 디자이너: Brent Povis
 + 🎨 아티스트: Vince Dorse, Jarek Nocoń, Brent Povis
 + 🔗 https://boardgamegeek.com/boardgame/122298/morels
++ 🖼 https://cf.geekdo-images.com/79RzPdM2pxmtmNV-bdU7LQ__original/img/viQYXUcyfS3j7BxHRn9o2NUwvZY=/0x0/filters:format(jpeg)/pic1284667.jpg
 
 # 포실리스.png
 - 👥 인원: 2 ~ 5 (3인 베스트)
@@ -1144,6 +1232,7 @@
 + ♟️ 디자이너: David Alberto Diaz
 + 🎨 아티스트: Apolline Etienne
 + 🔗 https://boardgamegeek.com/boardgame/280032/fossilis
++ 🖼 https://cf.geekdo-images.com/rczms2pvajxj5l9Vpo66Hw__original/img/TTJPVAZ-cYy9zXZ6Tt6p7Tuuzxg=/0x0/filters:format(png)/pic4754389.png
 
 # 달빛 아래에서 수를.jpg
 - 👥 인원: 2 (2인 베스트)
@@ -1153,6 +1242,7 @@
 + ♟️ 디자이너: Peter Burley
 + 🎨 아티스트: Peter Burley, Peter Dennis, Steve Tolley, Yoojung Lee
 + 🔗 https://boardgamegeek.com/boardgame/38545/kamisado
++ 🖼 https://cf.geekdo-images.com/w4NMNk5AB3g33W3Q9Klh3g__original/img/97l5bRNj2JTZJQ2TgVcKQBw-Xps=/0x0/filters:format(jpeg)/pic7098640.jpg
 
 # 캔트 스탑.png
 - 👥 인원: 2 ~ 4 (3인 베스트)
@@ -1162,6 +1252,7 @@
 + ♟️ 디자이너: Sid Sackson
 + 🎨 아티스트: Klemens Franz, Wanjin Gill, Heiko Günther, Kim Hong-Do, Gabriel Laulunen (II), Ronan Le Maître, Walter Pepperle, Sid Sackson, Monroy Gómez Verónica, Klaus Wilinski, Atelier Wilinski
 + 🔗 https://boardgamegeek.com/boardgame/41/cant-stop
++ 🖼 https://cf.geekdo-images.com/nMitZr9Lu4Ux7LLqBy7Z8A__original/img/A_bSjGJJXDFfSocVclabxi8ArY8=/0x0/filters:format(png)/pic6875169.png
 
 # 명탐정 멍멍 홈즈.png
 - 👥 인원: 2 ~ 5 (3~4인 베스트)
@@ -1171,6 +1262,7 @@
 + ♟️ 디자이너: Reinhard Staupe
 + 🎨 아티스트: Oliver Freudenreich
 + 🔗 https://boardgamegeek.com/boardgame/330602/inspektor-nase
++ 🖼 https://cf.geekdo-images.com/Tt0lGN4x03opsxYZajtypA__original/img/rbSZE3L1rNF-wGFOypFFeY5uQ4s=/0x0/filters:format(png)/pic5962744.png
 
 # 양말 몬스터.jpg
 - 👥 인원: 2 ~ 4 (4인 베스트)
@@ -1180,6 +1272,7 @@
 + ♟️ 디자이너: Liesbeth Bos, Anja Dreier-Brückner
 + 🎨 아티스트: Irina Pechenkina
 + 🔗 https://boardgamegeek.com/boardgame/304987/sock-monsters
++ 🖼 https://cf.geekdo-images.com/t33w-4QX2etnfOc0jEbIeA__original/img/5BWNkCSwKXdXLouYB0tgEuBapjQ=/0x0/filters:format(jpeg)/pic5294927.jpg
 
 # 쉬피타임.png
 - 👥 인원: 1 ~ 4 (3~4인 베스트)
@@ -1189,6 +1282,7 @@
 + ♟️ 디자이너: Neil Kimball
 + 🎨 아티스트: Zoé Plane
 + 🔗 https://boardgamegeek.com/boardgame/324242/sheepy-time
++ 🖼 https://cf.geekdo-images.com/eNpXmxU-DynH-5ZkMxwksQ__original/img/G3cTjWqD3IQN5OIlgBtjeiwmRA0=/0x0/filters:format(png)/pic5777745.png
 
 # 원더 볼링.jpg
 - 👥 인원: 2 ~ 6 (4인 베스트)
@@ -1198,6 +1292,7 @@
 + ♟️ 디자이너: Susumu Kawasaki
 + 🎨 아티스트: Yoshiaki Tomioka
 + 🔗 https://boardgamegeek.com/boardgame/392842/wonder-bowling
++ 🖼 https://cf.geekdo-images.com/utzh_1pU_pCqvuLqRawkcw__original/img/574QrTbBxrD3veftOeGNAydMn0Y=/0x0/filters:format(jpeg)/pic8418672.jpg
 
 # 첸토.jpg
 - 👥 인원: 2 ~ 6
@@ -1207,6 +1302,7 @@
 + ♟️ 디자이너: Schlomo Mizrahi
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgame/26344/the-100-games
++ 🖼 https://cf.geekdo-images.com/Vy2sI7rvWpuPx30nIbf9Og__original/img/qEnyo3Xg-ftu_cO15n_BXKtkBDU=/0x0/filters:format(jpeg)/pic5279234.jpg
 
 # 유비보.png
 - 👥 인원: 2 ~ 8 (3~6인 베스트)
@@ -1216,6 +1312,7 @@
 + ♟️ 디자이너: MAGNET
 + 🎨 아티스트: Kanako Ichimori (一森加奈子), Kinetic
 + 🔗 https://boardgamegeek.com/boardgame/425602/yubibo
++ 🖼 https://cf.geekdo-images.com/VmcYNOUlo5gS-XUa1tTKPA__original/img/2pDGn6txicBLkHemJZD5yWFLle8=/0x0/filters:format(png)/pic8338650.png
 
 # 퀸토.png
 - 👥 인원: 2 ~ 6 (3~4인 베스트)
@@ -1225,6 +1322,7 @@
 + ♟️ 디자이너: Bernhard Lach, Uwe Rapp
 + 🎨 아티스트: Oliver Freudenreich
 + 🔗 https://boardgamegeek.com/boardgame/183006/qwinto
++ 🖼 https://cf.geekdo-images.com/AtaZZTKaILC7qK2019MZJQ__original/img/CvZukbasuksb88da5oiX5bh08IM=/0x0/filters:format(png)/pic4194080.png
 
 # 타이거&드래곤.png
 - 👥 인원: 2 ~ 5 (4인 베스트)
@@ -1234,6 +1332,7 @@
 + ♟️ 디자이너: Hashimoto Atsushi (橋本淳志)
 + 🎨 아티스트: Rie Komatsuzaki, Jun Sasaki
 + 🔗 https://boardgamegeek.com/boardgame/349992/tiger-and-dragon
++ 🖼 https://cf.geekdo-images.com/gQLXK7DHeF11_7XdPlmJxQ__original/img/7LMAlEcPQHLLe9Ikfum0Tzm2tTE=/0x0/filters:format(png)/pic7607521.png
 
 # 재치와 눈치.jpg
 - 👥 인원: 3 ~ 10 (5~6인 베스트)
@@ -1243,6 +1342,7 @@
 + ♟️ 디자이너: Dominic Crapuchettes
 + 🎨 아티스트: Ali Douglass, Shawn Wilson (I)
 + 🔗 https://boardgamegeek.com/boardgame/66588/wits-and-wagers-family
++ 🖼 https://cf.geekdo-images.com/ScQODaP8QC5mXrRn8qTHOg__original/img/7MXWKE61NrrCY3WF6hixhTNIqVc=/0x0/filters:format(jpeg)/pic664569.jpg
 
 # 포켓팜.png
 - 👥 인원: 1 ~ 4 (1~2인 베스트)
@@ -1252,6 +1352,7 @@
 + ♟️ 디자이너: Eric Hong
 + 🎨 아티스트: DODAM, Boram Jung
 + 🔗 https://boardgamegeek.com/boardgame/373062/pocket-farm
++ 🖼 https://cf.geekdo-images.com/PTPoWPTaEr83iezXJUFJGQ__original/img/aYWI-N3Y49VkIZeVcKD6G6sFpuk=/0x0/filters:format(png)/pic7295995.png
 
 # 나인 타일 패닉.jpg
 - 👥 인원: 2 ~ 5 (4~5인 베스트)
@@ -1261,6 +1362,7 @@
 + ♟️ 디자이너: Jens Merkl, Jean-Claude Pellin
 + 🎨 아티스트: Hiroko Izumida, Jun Sasaki
 + 🔗 https://boardgamegeek.com/boardgame/279869/nine-tiles-panic
++ 🖼 https://cf.geekdo-images.com/QH4xP8EK9Np4UypuZBIxtQ__original/img/i3kFleoOGyxR2ItL9ssmu4U6afY=/0x0/filters:format(jpeg)/pic6092680.jpg
 
 # 두리안.png
 - 👥 인원: 2 ~ 7 (5~7인 베스트)
@@ -1270,6 +1372,7 @@
 + ♟️ 디자이너: Masato Uesugi
 + 🎨 아티스트: Hiroko Izumida
 + 🔗 https://boardgamegeek.com/boardgame/307963/durian
++ 🖼 https://cf.geekdo-images.com/QBwnHLJy8DRV2Mx-ZkB1_A__original/img/_w1yjH6IWzL5doiA6rC54laKO_s=/0x0/filters:format(png)/pic5783560.png
 
 # 큐윅스.jpg
 - 👥 인원: 2 ~ 5 (3~4인 베스트)
@@ -1279,6 +1382,7 @@
 + ♟️ 디자이너: Steffen Benndorf
 + 🎨 아티스트: Oliver Freudenreich, Sandra Freudenreich, Tom McKendrick
 + 🔗 https://boardgamegeek.com/boardgame/131260/qwixx
++ 🖼 https://cf.geekdo-images.com/aOt-bT9nDzZdWl0dUqLy4w__original/img/BBC0kwf7JPYMxYGnsSDRaZ_BRF4=/0x0/filters:format(jpeg)/pic1950487.jpg
 
 # 촵촵 다이스.jpg
 - 👥 인원: 2 ~ 4 (3인 베스트)
@@ -1288,6 +1392,7 @@
 + ♟️ 디자이너: Josh Cappel, Jory Cappel, Rowan Cappel
 + 🎨 아티스트: Claire Lin
 + 🔗 https://boardgamegeek.com/boardgame/381356/diced-veggies
++ 🖼 https://cf.geekdo-images.com/WYW6fkRj6BEazZ75TYcsHA__original/img/E9SD1YnRjc8dpL1A5xspeXpZpHY=/0x0/filters:format(jpeg)/pic7373886.jpg
 
 # 더 마인드 익스트림.png
 - 👥 인원: 2 ~ 4 (4인 베스트)
@@ -1297,6 +1402,7 @@
 + ♟️ 디자이너: Wolfgang Warsch
 + 🎨 아티스트: Oliver Freudenreich
 + 🔗 https://boardgamegeek.com/boardgame/287607/the-mind-extreme
++ 🖼 https://cf.geekdo-images.com/C-ptukCdLj9kEkO3lofqNw__original/img/pfvRcck8ARZOghMok-74ami9xoY=/0x0/filters:format(png)/pic5424402.png
 
 # 브리저튼 러브레터.jpg
 - 👥 인원: 2 ~ 6 (3인 베스트)
@@ -1306,6 +1412,7 @@
 + ♟️ 디자이너: Seiji Kanai
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgame/406459/love-letter-bridgerton
++ 🖼 https://cf.geekdo-images.com/R_TQ9j-mH91UZhZULgUysw__original/img/N7dIbZiaLGiwG3fVAa9PcPUJVDI=/0x0/filters:format(jpeg)/pic8028555.jpg
 
 # 타코 백 고트 치즈 피자.png
 - 👥 인원: 2 ~ 8 (5~6인 베스트)
@@ -1315,6 +1422,7 @@
 + ♟️ 디자이너: Dave Campbell (II)
 + 🎨 아티스트: Dave Campbell (II)
 + 🔗 https://boardgamegeek.com/boardgame/341876/taco-back-goat-cheese-pizza
++ 🖼 https://cf.geekdo-images.com/_1J_XrlwF59TBIZDCxcv-Q__original/img/XaDj0cHZM7M7xaFwA9F_u5gBmOU=/0x0/filters:format(png)/pic6927514.png
 
 # 로얄 파티.png
 - 👥 인원: 1 ~ 4 (3~4인 베스트)
@@ -1324,6 +1432,7 @@
 + ♟️ 디자이너: Wouter van Strien
 + 🎨 아티스트: Zhenya Lyapina
 + 🔗 https://boardgamegeek.com/boardgame/415063/royale-party-at-louis
++ 🖼 https://cf.geekdo-images.com/q2QfEF4uVNWWDqt7iDp4nA__original/img/8UvcmE4rbwKhl-l4Ns_b0LGLtuA=/0x0/filters:format(png)/pic8048771.png
 
 # 링큐.png
 - 👥 인원: 4 ~ 8 (6인 베스트)
@@ -1333,6 +1442,7 @@
 + ♟️ 디자이너: Andrea Meyer, Erik Nielsen
 + 🎨 아티스트: Design Edge, Stéphane Escapa, Jean Laurent, Pierô, David Raphet, Sensit Communication GmbH, Sebastian Wagner
 + 🔗 https://boardgamegeek.com/boardgame/11945/linq
++ 🖼 https://cf.geekdo-images.com/v0tBL165ZpANe4Ov0K1bgg__original/img/8ohTSSnoouBvzijGIxIdQ7naCuE=/0x0/filters:format(png)/pic8170026.png
 
 # 사운드 박스.png
 - 👥 인원: 4 ~ 7 (5, 7인 베스트)
@@ -1342,6 +1452,7 @@
 + ♟️ 디자이너: Hjalmar Hach, Lorenzo Silva
 + 🎨 아티스트: Noa Vassalli
 + 🔗 https://boardgamegeek.com/boardgame/302876/sound-box
++ 🖼 https://cf.geekdo-images.com/o1Xjv_eEjtyaRPy-Pw1Kog__original/img/_t6Yjk-kuHKVfNXldisvLtClT2o=/0x0/filters:format(png)/pic6918056.png
 
 # 아니오리다!.png
 - 👥 인원: 2 ~ 10 (4~7인 베스트)
@@ -1351,6 +1462,7 @@
 + ♟️ 디자이너: Rodrigo Rego
 + 🎨 아티스트: Gjermund Bohne, Luis Francisco, Diego Sá
 + 🔗 https://boardgamegeek.com/boardgame/387763/how-dare-you
++ 🖼 https://cf.geekdo-images.com/aX5cbihQ7AvylUIVugOCkA__original/img/6Qt-NA3grERPh4Egqy9VHctdMSI=/0x0/filters:format(png)/pic7533010.png
 
 # 우리 중에 범인이.png
 - 👥 인원: 4 ~ 30 (7~9인 베스트)
@@ -1360,6 +1472,7 @@
 + ♟️ 디자이너: Songsit Phraephet
 + 🎨 아티스트: TANSAN Inc., Nipun Thunyatananun, VisualizeLab, X2Nat
 + 🔗 https://boardgamegeek.com/boardgame/401110/dying-message
++ 🖼 https://cf.geekdo-images.com/Ihjv-LvNxpPq089q-86o-g__original/img/XAlHce83i4btJjjcv3ecQv7pIAU=/0x0/filters:format(png)/pic7742488.png
 
 # 트러플 셔플.jpg
 - 👥 인원: 2 ~ 4 (2인 베스트)
@@ -1369,6 +1482,7 @@
 + ♟️ 디자이너: Molly Johnson, Robert Melvin, Shawn Stankewich
 + 🎨 아티스트: Dylan Mangini
 + 🔗 https://boardgamegeek.com/boardgame/298060/truffle-shuffle
++ 🖼 https://cf.geekdo-images.com/nTEKC1bZ2GGANIoV204T3Q__original/img/Ajd-NvwUtnHPR8XCb9NAbm3TxtQ=/0x0/filters:format(jpeg)/pic5159393.jpg
 
 # 날아라, 고블린.jpg
 - 👥 인원: 2 ~ 4 (4인 베스트)
@@ -1378,6 +1492,7 @@
 + ♟️ 디자이너: Corentin Lebrat, Théo Rivière
 + 🎨 아티스트: Tomasz Larek
 + 🔗 https://boardgamegeek.com/boardgame/293275/flyin-goblin
++ 🖼 https://cf.geekdo-images.com/YP-bTHKHlUNT5bjiUdiJpw__original/img/sDSuLlDIczWh6e9oi5omN_CByf4=/0x0/filters:format(jpeg)/pic5105268.jpg
 
 # 다 죽었DAY.jpg
 - 👥 인원: 2 ~ 5 (4~5인 베스트)
@@ -1387,6 +1502,7 @@
 + ♟️ 디자이너: Matthew Dunstan, Brett J. Gilbert
 + 🎨 아티스트: Nele Brönner, Stéphane Escapa
 + 🔗 https://boardgamegeek.com/boardgame/234260/prey-another-day
++ 🖼 https://cf.geekdo-images.com/pfEw73TNwLWHNKwssoI4mg__original/img/8I-KwzsUfrqwN3MA4hTn49m4QHc=/0x0/filters:format(jpeg)/pic7615075.jpg
 
 # 부메랑 호주.jpg
 - 👥 인원: 2 ~ 4 (4인 베스트)
@@ -1396,6 +1512,7 @@
 + ♟️ 디자이너: Scott Almes
 + 🎨 아티스트: Kerri Aitken
 + 🔗 https://boardgamegeek.com/boardgame/296167/boomerang-australia
++ 🖼 https://cf.geekdo-images.com/dhFW0s-IilUusfRPHWcXXg__original/img/z6fRs7hEOuSlt9iSQ8biYIBjzMQ=/0x0/filters:format(jpeg)/pic5106800.jpg
 
 # 주문이 너무 많아 카페.jpg
 - 👥 인원: 2 ~ 6 (4인 베스트)
@@ -1405,6 +1522,7 @@
 + ♟️ 디자이너: Jun Sasaki
 + 🎨 아티스트: Jun Sasaki
 + 🔗 https://boardgamegeek.com/boardgame/361214/order-overload-cafe
++ 🖼 https://cf.geekdo-images.com/vGLuM4WQnd8pxJxxNkrZtQ__original/img/hQnW2DqTu0VhOU9uWibYLVJsqJM=/0x0/filters:format(jpeg)/pic7212733.jpg
 
 # 그림 도둑들.jpg
 - 👥 인원: 2 ~ 5 (4인 베스트)
@@ -1414,6 +1532,7 @@
 + ♟️ 디자이너: Reiner Knizia
 + 🎨 아티스트: Petra Eriksson
 + 🔗 https://boardgamegeek.com/boardgame/341935/art-robbery
++ 🖼 https://cf.geekdo-images.com/WyAsf2gIerHgvOenVtxGKw__original/img/8g9PCeNJigtHKdpVFCrGkfPA4aA=/0x0/filters:format(jpeg)/pic6279084.jpg
 
 # 더 마인드 소울메이트.png
 - 👥 인원: 2 ~ 4 (3인 베스트)
@@ -1423,6 +1542,7 @@
 + ♟️ 디자이너: Reinhard Staupe, Wolfgang Warsch
 + 🎨 아티스트: Oliver Freudenreich
 + 🔗 https://boardgamegeek.com/boardgame/378851/the-mind-soulmates
++ 🖼 https://cf.geekdo-images.com/KuUSKJDwy01HZfTdJTUqpg__original/img/AyoGntWaeE2MobstLCTW2HgeGr4=/0x0/filters:format(png)/pic7296951.png
 
 # 스파이폴 2.jpg
 - 👥 인원: 3 ~ 12 (6~8인 베스트)
@@ -1432,6 +1552,7 @@
 + ♟️ 디자이너: Alexandr Ushan
 + 🎨 아티스트: Sergey Dulin, Anton Kvasovarov
 + 🔗 https://boardgamegeek.com/boardgame/193308/spyfall-2
++ 🖼 https://cf.geekdo-images.com/4nE3EGcIVJnItZOdZ2NrxA__original/img/_6mflaWrgVpkFbJJICGTB8WAiiI=/0x0/filters:format(jpeg)/pic4141398.jpg
 
 # 오 마이 삭스!.jpg
 - 👥 인원: 2 ~ 5 (3~4인 베스트)
@@ -1441,6 +1562,7 @@
 + ♟️ 디자이너: Antoine Bauza, Théo Rivière
 + 🎨 아티스트: Camille Chaussy
 + 🔗 https://boardgamegeek.com/boardgame/448756/oh-my-socks
++ 🖼 https://cf.geekdo-images.com/jS7C0rUNTn86dluKcabLpg__original/img/r1Vw0Bl_PlazIFOB_BSXxnACJQE=/0x0/filters:format(jpeg)/pic9338426.jpg
 
 # 섀도우 레이더스.jpg
 - 👥 인원: 4 ~ 8 (6인 베스트)
@@ -1450,6 +1572,7 @@
 + ♟️ 디자이너: Yasutaka Ikeda
 + 🎨 아티스트: Eiichiro Mashin
 + 🔗 https://boardgamegeek.com/boardgame/288098/shadow-raiders
++ 🖼 https://cf.geekdo-images.com/ZwpbIuhbIVfHBRhD5A44LA__original/img/VKPaz_BijGpfl4bac25RjUpFLQw=/0x0/filters:format(jpeg)/pic4989267.jpg
 
 # 데들리즈.png
 - 👥 인원: 3 ~ 6 (5인 베스트)
@@ -1459,6 +1582,7 @@
 + ♟️ 디자이너: Paul Saxberg
 + 🎨 아티스트: Leah Fuhrman
 + 🔗 https://boardgamegeek.com/boardgame/292907/the-deadlies
++ 🖼 https://cf.geekdo-images.com/uGTrtZe-MCjwWphX5BdFYg__original/img/PHa5lZbs6SKuCp8C872e1VzF4FQ=/0x0/filters:format(png)/pic5040031.png
 
 # 줄라이.png
 - 👥 인원: 1 ~ 6 (4인 베스트)
@@ -1468,6 +1592,7 @@
 + ♟️ 디자이너: Chris Priscott
 + 🎨 아티스트: Chris Priscott
 + 🔗 https://boardgamegeek.com/boardgame/338467/zuuli
++ 🖼 https://cf.geekdo-images.com/yZfARB4RXEjz_R5nKqt_kg__original/img/SA3QjXc7tPJ9c1nF5i7KzOJ3_Pg=/0x0/filters:format(png)/pic7200105.png
 
 # 마이 드림 카페.jpg
 - 👥 인원: 2 ~ 5 (4인 베스트)
@@ -1477,6 +1602,7 @@
 + ♟️ 디자이너: Kevin Kim
 + 🎨 아티스트: Hami, Kevin Kim, Marcin Minor, Playoff Inc., Earl Rhym
 + 🔗 https://boardgamegeek.com/boardgame/39534/paper-safari
++ 🖼 https://cf.geekdo-images.com/2YmSOUDOpnVqkuUppZruRA__original/img/VwB2PHFPXJ2dJd-mPfN-FsQGKBk=/0x0/filters:format(jpeg)/pic4498044.jpg
 
 # 스파이폴.jpg
 - 👥 인원: 3 ~ 8 (6인 베스트)
@@ -1486,6 +1612,7 @@
 + ♟️ 디자이너: Alexandr Ushan
 + 🎨 아티스트: Sergey Dulin, Uildrim
 + 🔗 https://boardgamegeek.com/boardgame/166384/spyfall
++ 🖼 https://cf.geekdo-images.com/Ehx72XRdSeQHISVXcZVnHg__original/img/bI3PgKtvAGiD59QYya-pqasF_tk=/0x0/filters:format(jpeg)/pic2453926.jpg
 
 # 너 좀 빠른데.png
 - 👥 인원: 3 ~ 6 (5~6인 베스트)
@@ -1495,6 +1622,7 @@
 + ♟️ 디자이너: Jeff Lai
 + 🎨 아티스트: Chris McCoy
 + 🔗 https://boardgamegeek.com/boardgame/241796/nut-so-fast
++ 🖼 https://cf.geekdo-images.com/IZmkEZz-exze-qw0qAAs9A__original/img/E0mgV7sZgV5r_jRkwJnbs8ybAL4=/0x0/filters:format(png)/pic3926183.png
 
 # 더 게임.png
 - 👥 인원: 1 ~ 5 (3인 베스트)
@@ -1504,6 +1632,7 @@
 + ♟️ 디자이너: Steffen Benndorf
 + 🎨 아티스트: Oliver Freudenreich, Sandra Freudenreich, Jason D. Kingsley, Kwanchai Moriya
 + 🔗 https://boardgamegeek.com/boardgame/173090/the-game
++ 🖼 https://cf.geekdo-images.com/g4pn1ieUKfIhERl5Ym6joQ__original/img/ZcwvBXraym0wfre1sm9t1d44BBA=/0x0/filters:format(png)/pic4203279.png
 
 # 더 마인드.png
 - 👥 인원: 2 ~ 4 (4인 베스트)
@@ -1513,6 +1642,7 @@
 + ♟️ 디자이너: Wolfgang Warsch
 + 🎨 아티스트: Oliver Freudenreich
 + 🔗 https://boardgamegeek.com/boardgame/244992/the-mind
++ 🖼 https://cf.geekdo-images.com/q_JGK291hrhnhiRB0667oA__original/img/8VjZEG278faO9JZwzce3v3EKssI=/0x0/filters:format(png)/pic3979766.png
 
 # 벼룩서커스.jpg
 - 👥 인원: 2 ~ 5 (4인 베스트)
@@ -1522,6 +1652,7 @@
 + ♟️ 디자이너: Reiner Knizia
 + 🎨 아티스트: Heiko Günther, JBJ, Yusuke Mamada, Łukasz Silski, Franz Vohwinkel
 + 🔗 https://boardgamegeek.com/boardgame/337/circus-flohcati
++ 🖼 https://cf.geekdo-images.com/h-HgnES2sJu6_j_L00HYxA__original/img/CvJmtKrLzIITDXqIYJdFKAkR80s=/0x0/filters:format(jpeg)/pic7594785.jpg
 
 # 월면탐험.png
 - 👥 인원: 2 ~ 5 (2~3인 베스트)
@@ -1531,6 +1662,7 @@
 + ♟️ 디자이너: Jun Sasaki
 + 🎨 아티스트: Jun Sasaki
 + 🔗 https://boardgamegeek.com/boardgame/330403/moon-adventure
++ 🖼 https://cf.geekdo-images.com/NkIgyVpeeoKW7i1t5M6YlA__original/img/QiAiU7wzVdokq2zcXdPhgKCqHGY=/0x0/filters:format(png)/pic6388850.png
 
 # 카멜룻.png
 - 👥 인원: 3 ~ 6 (4~6인 베스트)
@@ -1540,6 +1672,7 @@
 + ♟️ 디자이너: Fred Boulle, Cédric NH, Grégory Grard, Mathieu Roussel
 + 🎨 아티스트: Ingenious Studios
 + 🔗 https://boardgamegeek.com/boardgame/331635/kameloot
++ 🖼 https://cf.geekdo-images.com/kAAllrKaOmn4e5p0G7ZKpA__original/img/OuxoW1ab6weOh3z2YHWw4i64Llo=/0x0/filters:format(png)/pic5991084.png
 
 # 폭발하는 비둘기.jpg
 - 👥 인원: 2 ~ 5 (4인 베스트)
@@ -1549,6 +1682,7 @@
 + ♟️ 디자이너: Roberto Pellei
 + 🎨 아티스트: Mokoko
 + 🔗 https://boardgamegeek.com/boardgame/434443/pigeon-explosion
++ 🖼 https://cf.geekdo-images.com/tJAkyZbZ1ehY2RYS3tqoCw__original/img/rpe_PTXW9ojAhxfAFSNGhsEiP-M=/0x0/filters:format(jpeg)/pic8587788.jpg
 
 # 더 브릿지.png
 - 👥 인원: 1 ~ 4 (2~3인 베스트)
@@ -1558,6 +1692,7 @@
 + ♟️ 디자이너: Jeffrey D. Allers
 + 🎨 아티스트: Oliver Freudenreich, Sandra Freudenreich
 + 🔗 https://boardgamegeek.com/boardgame/330532/hashi
++ 🖼 https://cf.geekdo-images.com/vMEtC5q1AzegtTXZZG9UoA__original/img/byud-mE6pQ54nzXZmYpGVtgXaT4=/0x0/filters:format(png)/pic5960689.png
 
 # 볼트 로봇배틀.jpg
 - 👥 인원: 2 ~ 4 (4인 베스트)
@@ -1567,6 +1702,7 @@
 + ♟️ 디자이너: Emerson Matsuuchi
 + 🎨 아티스트: Annika Brüning, Marina Fahrenbach, Steven Hamilton
 + 🔗 https://boardgamegeek.com/boardgame/211454/volt
++ 🖼 https://cf.geekdo-images.com/KDJRG69U9fN5JhodWgZROg__original/img/VLjJzWax4d2ozQ-4Tt61HE_0EFI=/0x0/filters:format(jpeg)/pic4216065.jpg
 
 # 래프터 파이브(서까래 다섯).png
 - 👥 인원: 1 ~ 6 (4인 베스트)
@@ -1576,6 +1712,7 @@
 + ♟️ 디자이너: ましう (Mashiu), Jun Sasaki
 + 🎨 아티스트: ましう (Mashiu), Jun Sasaki
 + 🔗 https://boardgamegeek.com/boardgame/405538/rafter-five
++ 🖼 https://cf.geekdo-images.com/M5AoYZd5BOV0B5R0APkQ3A__original/img/WygeTuhltBna6veys-dGPd6QUUc=/0x0/filters:format(png)/pic8933840.png
 
 # 골드.png
 - 👥 인원: 2 ~ 5 (3~4인 베스트)
@@ -1585,6 +1722,7 @@
 + ♟️ 디자이너: Reiner Knizia
 + 🎨 아티스트: Melanie Friedli
 + 🔗 https://boardgamegeek.com/boardgame/306680/gold
++ 🖼 https://cf.geekdo-images.com/O2Dsoc2CfpnQXxojyLGB1A__original/img/5ZTE5Hvds-YXdZzskmpZwiRTcX4=/0x0/filters:format(png)/pic5529511.png
 
 # 쿠키런 용감한 파티!.png
 - 👥 인원: 2 ~ 6 (4인 베스트)
@@ -1594,6 +1732,7 @@
 + ♟️ 디자이너: Reiner Knizia
 + 🎨 아티스트: Wanjin Gill, Okamoto Kanako, Ana Marco, Ewa Podleś, TANSAN Inc., Markus Wagner, Kaori "Goo" Yamaguchi
 + 🔗 https://boardgamegeek.com/boardgame/56933/penguin-party
++ 🖼 https://cf.geekdo-images.com/9vU5xTgzZzv0eClFA7Aqjw__original/img/UAAU3JMqwoFu5XR2Q_BFhFS_rdg=/0x0/filters:format(png)/pic7976026.png
 
 # 마피아 코드.jpg
 - 👥 인원: 2 ~ 4 (3인 베스트)
@@ -1603,6 +1742,7 @@
 + ♟️ 디자이너: René Puttin
 + 🎨 아티스트: Rolf Vogt
 + 🔗 https://boardgamegeek.com/boardgame/192762/gauner-raus
++ 🖼 https://cf.geekdo-images.com/JvT0EB60dOZwbtNwJS7oeg__original/img/rI1q_ZU3ubefokmBADbVsf2YGEE=/0x0/filters:format(jpeg)/pic2975855.jpg
 
 # 이야기 재단사.jpg
 - 👥 인원: 2 ~ 6 (6인 베스트)
@@ -1612,6 +1752,7 @@
 + ♟️ 디자이너: Marie Fort, Wilfried Fort
 + 🎨 아티스트: Irina Pechenkina, Eugene Smolenceva
 + 🔗 https://boardgamegeek.com/boardgame/287591/storytailors
++ 🖼 https://cf.geekdo-images.com/jum8MffRBQLbqFKNtDpxaQ__original/img/fQjOo_CLgg6w8aMf_iNx5UFSq0U=/0x0/filters:format(jpeg)/pic4961481.jpg
 
 # 클랜 앤 글로리.jpg
 - 👥 인원: 2 ~ 4 (3~4인 베스트)
@@ -1621,6 +1762,7 @@
 + ♟️ 디자이너: Gabriele Bubola, Leo Colovini
 + 🎨 아티스트: Toshihiko Ishibashi, Michael Menzel
 + 🔗 https://boardgamegeek.com/boardgame/410705/clans-and-glory
++ 🖼 https://cf.geekdo-images.com/8jNaVwrGJk78knKTaJa01A__original/img/AQNM-Au0-ejjDswiYmXmJBbqpUQ=/0x0/filters:format(jpeg)/pic7978566.jpg
 
 # 검은 탑의 비밀.jpg
 - 👥 인원: 2 (2인 베스트)
@@ -1630,6 +1772,7 @@
 + ♟️ 디자이너: Susumu Kawasaki
 + 🎨 아티스트: Susumu Kawasaki
 + 🔗 https://boardgamegeek.com/boardgame/155195/tower-of-doubt
++ 🖼 https://cf.geekdo-images.com/JnYZlvDv7WvkkBGgqu_S5w__original/img/KXdbUb-1fq7oUC6LWRBvU2ssNWs=/0x0/filters:format(jpeg)/pic8418671.jpg
 
 # 더 게임 퀵 & 이지.png
 - 👥 인원: 2 ~ 5 (2, 4인 베스트)
@@ -1639,6 +1782,7 @@
 + ♟️ 디자이너: Steffen Benndorf
 + 🎨 아티스트: Oliver Freudenreich
 + 🔗 https://boardgamegeek.com/boardgame/296512/the-game-quick-and-easy
++ 🖼 https://cf.geekdo-images.com/yjiydbDL32MavkUll4yUVg__original/img/XLCgM89D86noyVr2LgN766tkkOo=/0x0/filters:format(png)/pic5591143.png
 
 # 10일 간의 유럽 여행.png
 - 👥 인원: 2 ~ 4 (2인 베스트)
@@ -1648,6 +1792,7 @@
 + ♟️ 디자이너: Alan R. Moon, Aaron Weissblum
 + 🎨 아티스트: Jacqui Davis, John Kovalic, Max Winter Osterhaus, Cathleen Quinn-Kinney
 + 🔗 https://boardgamegeek.com/boardgame/5867/10-days-in-europe
++ 🖼 https://cf.geekdo-images.com/7jXx06W2pr66YKWrZ7Dywg__original/img/ylUIeQ-GifItuTGgLWGWhyA1cus=/0x0/filters:format(png)/pic4895073.png
 
 # 리버 플로우.jpg
 - 👥 인원: 1 ~ 4 (4인 베스트)
@@ -1657,6 +1802,7 @@
 + ♟️ 디자이너: Wojciech Grajkowski
 + 🎨 아티스트: Natalia Kordowska, Bartłomiej Kordowski
 + 🔗 https://boardgamegeek.com/boardgame/271693/wodny-szlak
++ 🖼 https://cf.geekdo-images.com/iEQ2T_Ipv3vx2aN3O9JzIQ__original/img/ohW03ZxPasRw7iu-Z8mViGCorBM=/0x0/filters:format(jpeg)/pic4572645.jpg
 
 # 아티초크.png
 - 👥 인원: 2 ~ 4 (4인 베스트)
@@ -1666,6 +1812,7 @@
 + ♟️ 디자이너: Emma Larkins
 + 🎨 아티스트: Bonnie Pang
 + 🔗 https://boardgamegeek.com/boardgame/302260/abandon-all-artichokes
++ 🖼 https://cf.geekdo-images.com/qwFz_zhMjIxRjgAIx__8WQ__original/img/pxX6W95d3V38ZuynABAtorApTc8=/0x0/filters:format(png)/pic5335069.png
 
 # 푼토.png
 - 👥 인원: 2 ~ 4 (4인 베스트)
@@ -1675,6 +1822,7 @@
 + ♟️ 디자이너: Bernhard Weber
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgame/259069/punto
++ 🖼 https://cf.geekdo-images.com/rdiSqN0X8kiawUSe1CqZUw__original/img/uk7NpAHq2-cz6iQyo5Mpkbi-DYE=/0x0/filters:format(png)/pic5727017.png
 
 # 손님이 오기 전에.png
 - 👥 인원: 2 ~ 4 (3인 베스트)
@@ -1684,6 +1832,7 @@
 + ♟️ 디자이너: Saashi
 + 🎨 아티스트: Ewelina Proczko, Takako Takarai
 + 🔗 https://boardgamegeek.com/boardgame/361211/before-the-guests-arrive
++ 🖼 https://cf.geekdo-images.com/Lo7WncdF2rOPV2E1fN7roQ__original/img/PdufvRO0VTy74n_TNGYD8jjJvaM=/0x0/filters:format(png)/pic6819161.png
 
 # 아이벡스의 춤.jpg
 - 👥 인원: 2 ~ 8 (4인 베스트)
@@ -1693,6 +1842,7 @@
 + ♟️ 디자이너: Wolfgang Kramer
 + 🎨 아티스트: Oliver Freudenreich, Wanjin Gill, Jiyeon Lee
 + 🔗 https://boardgamegeek.com/boardgame/13005/dance-of-ibexes
++ 🖼 https://cf.geekdo-images.com/clb-nd3z9_8ns7nmvi9KpQ__original/img/EDpFTuv8O5BXw6exxbBEY2Q-jjw=/0x0/filters:format(jpeg)/pic7679268.jpg
 
 # 펠리시티 자루 속 고양이.jpg
 - 👥 인원: 3 ~ 5 (5인 베스트)
@@ -1702,6 +1852,7 @@
 + ♟️ 디자이너: Friedemann Friese
 + 🎨 아티스트: Lars-Arne "Maura" Kalusky
 + 🔗 https://boardgamegeek.com/boardgame/32125/felicity-the-cat-in-the-sack
++ 🖼 https://cf.geekdo-images.com/TKN7K14OhKpQXwVtezC-5A__original/img/WxfOGpugRp51XDPiYSBRJVOMQwo=/0x0/filters:format(jpeg)/pic3530209.jpg
 
 # 바운스 잇!.jpg
 - 👥 인원: 2 ~ 6
@@ -1711,6 +1862,7 @@
 + ♟️ 디자이너: Christoph Cantzler
 + 🎨 아티스트: Annika Heller
 + 🔗 https://boardgamegeek.com/boardgame/464313/bounce-it
++ 🖼 https://cf.geekdo-images.com/Vn4rk_Cu7TMyviwTeXxheg__original/img/42Uzt7xOvjq0YZBIFkKkT0KMCGQ=/0x0/filters:format(jpeg)/pic9617188.jpg
 
 # 트릭과 괴인.png
 - 👥 인원: 2 ~ 4 (4인 베스트)
@@ -1720,6 +1872,7 @@
 + ♟️ 디자이너: Takashi Saito
 + 🎨 아티스트: Jun Sasaki, Yog Akase (赤瀬 よぐ)
 + 🔗 https://boardgamegeek.com/boardgame/242325/tricks-and-the-phantom
++ 🖼 https://cf.geekdo-images.com/q8EjU4y-sCwxe50KG4BV3Q__original/img/jQsaHMaXvwk5oe8WgHwlZHsAn5M=/0x0/filters:format(png)/pic5797064.png
 
 # 플롯섬 파이트.png
 - 👥 인원: 2 ~ 6 (4인 베스트)
@@ -1729,6 +1882,7 @@
 + ♟️ 디자이너: 丸田ともゆき (Tomoyuki Maruta)
 + 🎨 아티스트: Hiroko Izumida
 + 🔗 https://boardgamegeek.com/boardgame/256478/flotsam-fight
++ 🖼 https://cf.geekdo-images.com/mLaRve8FiQ9YdbCOB8vg3w__original/img/9vHQkfIo2mM08pPmUKOK25Q-4fg=/0x0/filters:format(png)/pic5797028.png
 
 # 히트&아웃.png
 - 👥 인원: 2 (2인 베스트)
@@ -1738,6 +1892,7 @@
 + ♟️ 디자이너: Ronald Halliday
 + 🎨 아티스트: Yoshiaki Tomioka
 + 🔗 https://boardgamegeek.com/boardgame/443146/hits-and-outs
++ 🖼 https://cf.geekdo-images.com/8lHTjRbMrVY8wFME9q5Yqg__original/img/DaewbSe_lLJ2eqovCBoBQjiOspY=/0x0/filters:format(png)/pic8806812.png
 
 # 레벨 10.jpg
 - 👥 인원: 1 ~ 5 (2인 베스트)
@@ -1747,6 +1902,7 @@
 + ♟️ 디자이너: Hisashi Hayashi
 + 🎨 아티스트: Francisco Coda, Ryo Nyamo
 + 🔗 https://boardgamegeek.com/boardgame/211940/level-10
++ 🖼 https://cf.geekdo-images.com/MEBRXJCPDlRDlCah7qNoyA__original/img/Pnu2XIarbRYcvvPP4-dB5FGqBO8=/0x0/filters:format(jpeg)/pic7245178.jpg
 
 # 메르카두 드 리스보아.png
 - 👥 인원: 1 ~ 4 (3인 베스트)
@@ -1756,6 +1912,7 @@
 + ♟️ 디자이너: Vital Lacerda, Julián Pombo
 + 🎨 아티스트: Pedro Soto
 + 🔗 https://boardgamegeek.com/boardgame/262477/mercado-de-lisboa
++ 🖼 https://cf.geekdo-images.com/_bw5JwjsvGOBZliGe1wm2w__original/img/-xMKUYKAjLS77CEDvLnYMW0i1z0=/0x0/filters:format(png)/pic5410206.png
 
 # 닌자 마스터.png
 - 👥 인원: 2 ~ 5 (3~4인 베스트)
@@ -1765,6 +1922,7 @@
 + ♟️ 디자이너: Reiner Knizia
 + 🎨 아티스트: Yoshiaki Tomioka
 + 🔗 https://boardgamegeek.com/boardgame/361314/ninja-master
++ 🖼 https://cf.geekdo-images.com/G5L_wMoBthz8WhIIInEDtw__original/img/q-VnJpDHHZ03s6lMS9rvld2Vtw0=/0x0/filters:format(png)/pic7084385.png
 
 # 범고래 고래.jpg
 - 👥 인원: 2 ~ 5 (4인 베스트)
@@ -1774,6 +1932,7 @@
 + ♟️ 디자이너: Bruno Faidutti, Jun Sasaki
 + 🎨 아티스트: Rie Komatsuzaki, Jun Sasaki
 + 🔗 https://boardgamegeek.com/boardgame/388413/whale-to-look
++ 🖼 https://cf.geekdo-images.com/xxU1HKdkf1HIotFGyYO2bQ__original/img/cnGPfeD1TqnhWPlcAN0P0gzKzdc=/0x0/filters:format(jpeg)/pic7837610.jpg
 
 # 치킨 치킨.png
 - 👥 인원: 2 ~ 8 (4~6인 베스트)
@@ -1783,6 +1942,7 @@
 + ♟️ 디자이너: Charles Bossart
 + 🎨 아티스트: Pauline Berdal
 + 🔗 https://boardgamegeek.com/boardgame/280203/chicken-chicken
++ 🖼 https://cf.geekdo-images.com/uZv5uPfjhoTJNl6rothr4g__original/img/U9W4aqvqZWM4YUG8cNEf1iiL47o=/0x0/filters:format(png)/pic6256482.png
 
 # 펫티켓.png
 - 👥 인원: 2 ~ 6 (5~6인 베스트)
@@ -1792,6 +1952,7 @@
 + ♟️ 디자이너: Thomas Sellner
 + 🎨 아티스트: Hisanori Hiraoka
 + 🔗 https://boardgamegeek.com/boardgame/443982/petiquette
++ 🖼 https://cf.geekdo-images.com/CLYJHynseem945RbaogeUg__original/img/v8XcWd_B8i_pqnVcJ9hXtT6CHwA=/0x0/filters:format(png)/pic8821090.png
 
 # 스틱스택.jpg
 - 👥 인원: 2 ~ 99 (6인 베스트)
@@ -1801,6 +1962,7 @@
 + ♟️ 디자이너: Forrest-Pruzan Creative, Brad Ross, Jim Winslow
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgame/204734/stick-stack
++ 🖼 https://cf.geekdo-images.com/CFYHrg61ph-Et4YQkedWnA__original/img/v0uO6tolsMEc7GXdv1L0SJv9IfQ=/0x0/filters:format(jpeg)/pic3107661.jpg
 
 # 10일 간의 미국 여행.jpg
 - 👥 인원: 2 ~ 4 (3인 베스트)
@@ -1810,6 +1972,7 @@
 + ♟️ 디자이너: Alan R. Moon, Aaron Weissblum
 + 🎨 아티스트: Jacqui Davis, Gustaf Ö. Hjalmars, John Kovalic, Cathleen Quinn-Kinney
 + 🔗 https://boardgamegeek.com/boardgame/7866/10-days-in-the-usa
++ 🖼 https://cf.geekdo-images.com/VM1bHHwUGN4J8CLpdP3dwg__original/img/3PyeNx4ZzBi70paE78Ija7ZKMeI=/0x0/filters:format(jpeg)/pic8002627.jpg
 
 # 다크 호스.jpg
 - 👥 인원: 2 ~ 6 (5인 베스트)
@@ -1819,6 +1982,7 @@
 + ♟️ 디자이너: Lee Ju-Hwa
 + 🎨 아티스트: Lee Ju-Hwa
 + 🔗 https://boardgamegeek.com/boardgame/158356/dark-horse
++ 🖼 https://cf.geekdo-images.com/wbctQEH93UXCqc3AvTGrWA__original/img/WgSIiYlZsuh6c-891hXqhyLW1dk=/0x0/filters:format(jpeg)/pic4543776.jpg
 
 # 동글봉글.jpg
 - 👥 인원: 2 ~ 6 (4~6인 베스트)
@@ -1828,6 +1992,7 @@
 + ♟️ 디자이너: Alena Lebedeva
 + 🎨 아티스트: Nadegda Fedotova, Maria Nemova
 + 🔗 https://boardgamegeek.com/boardgame/191895/toddles-bobbles
++ 🖼 https://cf.geekdo-images.com/Zg0iRnApTARe30VsI3MgjQ__original/img/9Hb17RXpr0Nm3xtnYSXXRHELiy4=/0x0/filters:format(jpeg)/pic6192553.jpg
 
 # 카멜레온.png
 - 👥 인원: 3 ~ 8 (6~7인 베스트)
@@ -1837,6 +2002,7 @@
 + ♟️ 디자이너: Rikki Tahta
 + 🎨 아티스트: Ben Drummond, Luis Francisco, Zoe Lee, Rikki Tahta
 + 🔗 https://boardgamegeek.com/boardgame/227072/the-chameleon
++ 🖼 https://cf.geekdo-images.com/-uBkiypUVyRKxNuOI_-ZpQ__original/img/Y_12y74FIaAXMfiQ0tFhpfkrN1U=/0x0/filters:format(png)/pic3552344.png
 
 # 푸시 피시.jpg
 - 👥 인원: 2 ~ 6
@@ -1846,6 +2012,7 @@
 + ♟️ 디자이너: Yeon Kim
 + 🎨 아티스트: Yeon Kim
 + 🔗 https://boardgamegeek.com/boardgame/369001/push-fish
++ 🖼 https://cf.geekdo-images.com/T6TQULv82u4X-AVKLpZyKQ__original/img/CM1lNjacsq9a6OCZ5I91b-M-sc4=/0x0/filters:format(jpeg)/pic7023160.jpg
 
 # 마법사의 레시피.jpg
 - 👥 인원: 2 ~ 4 (3~4인 베스트)
@@ -1855,6 +2022,7 @@
 + ♟️ 디자이너: Günter Burkhardt
 + 🎨 아티스트: Studio July, Franz Vohwinkel
 + 🔗 https://boardgamegeek.com/boardgame/144526/glastonbury
++ 🖼 https://cf.geekdo-images.com/NSsuuHDKAqQ3J8mnNGxy8g__original/img/4X-4kA3vYrGbWiI02FakWzkYDhs=/0x0/filters:format(jpeg)/pic1757300.jpg
 
 # 뱀파이어 퀸.png
 - 👥 인원: 3 ~ 12 (5~6인 베스트)
@@ -1864,6 +2032,7 @@
 + ♟️ 디자이너: Wolfgang Kramer
 + 🎨 아티스트: Irene Bressel, Eckhard Freytag, Wanjin Gill, Hami
 + 🔗 https://boardgamegeek.com/boardgame/191073/vampire-queen
++ 🖼 https://cf.geekdo-images.com/EpeH-L7442ujdThVdn19Fw__original/img/GJ2xy731GbBc1RGoKVxyG01VXG0=/0x0/filters:format(png)/pic6518975.png
 
 # 그라울 최후의 밤.jpg
 - 👥 인원: 4 ~ 10 (6~9인 베스트)
@@ -1873,6 +2042,7 @@
 + ♟️ 디자이너: Joey Vigour
 + 🎨 아티스트: Angelina Chernyak, Rob Joseph
 + 🔗 https://boardgamegeek.com/boardgame/235451/growl
++ 🖼 https://cf.geekdo-images.com/N_pofOI2WNOzJFNSBzX4yw__original/img/0hhvRjWigHrVn-ZKzjDM3D5HVwY=/0x0/filters:format(jpeg)/pic4617766.jpg
 
 # 실리 카우.jpg
 - 👥 인원: 3 ~ 6 (4~6인 베스트)
@@ -1882,6 +2052,7 @@
 + ♟️ 디자이너: Florian Racky
 + 🎨 아티스트: Florian Biege
 + 🔗 https://boardgamegeek.com/boardgame/261262/blode-kuh
++ 🖼 https://cf.geekdo-images.com/xXUwxVJoAWem0HHUq-pWmw__original/img/cJyrNVy28Av-7ZDJHMcGx3U8bUs=/0x0/filters:format(jpeg)/pic4321545.jpg
 
 # 타코 캣 고트 치즈 피자.png
 - 👥 인원: 2 ~ 8 (4~6인 베스트)
@@ -1891,6 +2062,7 @@
 + ♟️ 디자이너: Dave Campbell (II)
 + 🎨 아티스트: Dave Campbell (II), Ottie Tâm
 + 🔗 https://boardgamegeek.com/boardgame/253664/taco-cat-goat-cheese-pizza
++ 🖼 https://cf.geekdo-images.com/GHrnr-Khb0LvBU_QkrC_qA__original/img/1BR5aHWIz_v4ki-YB2IiMuS-uIs=/0x0/filters:format(png)/pic7192024.png
 
 # 13일의 금요일.jpg
 - 👥 인원: 3 ~ 6 (4~5인 베스트)
@@ -1900,6 +2072,7 @@
 + ♟️ 디자이너: Reiner Knizia
 + 🎨 아티스트: Jessica R. E. Bethke, Design Edge, Paul Herbert, Kugatsuhime, Jessica Lindsay, Aleksandra Sawik, Elisa Teague, Markus Wagner
 + 🔗 https://boardgamegeek.com/boardgame/17025/poison
++ 🖼 https://cf.geekdo-images.com/tTaHGpCEQLnl3B4s078Dwg__original/img/3i27aT0vrkZCBW8ilLwbvvUkcoo=/0x0/filters:format(jpeg)/pic8968937.jpg
 
 # 반디다.jpg
 - 👥 인원: 1 ~ 4 (2~3인 베스트)
@@ -1909,6 +2082,7 @@
 + ♟️ 디자이너: Martin Nedergaard Andersen
 + 🎨 아티스트: Odile Sageat
 + 🔗 https://boardgamegeek.com/boardgame/299571/bandida
++ 🖼 https://cf.geekdo-images.com/NxzxMSGrXnhZHEQc_1_zfQ__original/img/PqjOV4zujhvuAohuS5NsyNgo06I=/0x0/filters:format(jpeg)/pic5471628.jpg
 
 # 투칸.jpg
 - 👥 인원: 2 ~ 4 (2인 베스트)
@@ -1918,6 +2092,7 @@
 + ♟️ 디자이너: Théo Rivière
 + 🎨 아티스트: Odile Sageat
 + 🔗 https://boardgamegeek.com/boardgame/318556/tucano
++ 🖼 https://cf.geekdo-images.com/eXwFMfsSOUNMDy9itigbPw__original/img/IxnyL_VpY64a0AHzyFtSnLNQ140=/0x0/filters:format(jpeg)/pic5854467.jpg
 
 # 퀵 스탑.png
 - 👥 인원: 2 ~ 7 (4~5인 베스트)
@@ -1927,6 +2102,7 @@
 + ♟️ 디자이너: Rémy Wannerbroucq
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgame/419421/slingz
++ 🖼 https://cf.geekdo-images.com/4zIkoE-cALEcZK_aYBw0xg__original/img/eqymq_ep7j_1yWibXa-o-_2QaBU=/0x0/filters:format(png)/pic8308472.png
 
 # 키노코.jpg
 - 👥 인원: 2 ~ 4 (2, 4인 베스트)
@@ -1936,6 +2112,7 @@
 + ♟️ 디자이너: Tim Rogasch
 + 🎨 아티스트: Polina Ozean
 + 🔗 https://boardgamegeek.com/boardgame/348072/kinoko
++ 🖼 https://cf.geekdo-images.com/g0jEmHLtia7irum8u5suKw__original/img/bDJWG2L6S_-LNUf4uOPmmZos42s=/0x0/filters:format(jpeg)/pic6831860.jpg
 
 # 맨티스.jpg
 - 👥 인원: 2 ~ 4 (2인 베스트)
@@ -1945,6 +2122,7 @@
 + ♟️ 디자이너: Ken Gruhl, Jeremy Posner
 + 🎨 아티스트: Matthew Inman
 + 🔗 https://boardgamegeek.com/boardgame/430592/mantis-grab-and-game
++ 🖼 https://cf.geekdo-images.com/L5Fi9r5VXPdYwSWz97Fhrg__original/img/0xoPUIIFLcN9agkOCwu8CaxnYQc=/0x0/filters:format(jpeg)/pic8699250.jpg
 
 # 배럴 다이스.jpg
 - 👥 인원: 3 ~ 6 (4~5인 베스트)
@@ -1954,6 +2132,7 @@
 + ♟️ 디자이너: Andreas Schmidt
 + 🎨 아티스트: Wanjin Gill, Alexander Jung, Rsseau
 + 🔗 https://boardgamegeek.com/boardgame/148531/beer-mug-dice
++ 🖼 https://cf.geekdo-images.com/yiESulMf2-1Opb54BP9EJw__original/img/zrtp8jItPm_8UBZEor9bhUMd73s=/0x0/filters:format(jpeg)/pic8905595.jpg
 
 # 3초 트라이.jpg
 - 👥 인원: 2 ~ 7 (5인 베스트)
@@ -1963,6 +2142,7 @@
 + ♟️ 디자이너: Daichi Chihara, Masayuki Ikegami
 + 🎨 아티스트: Yoshiaki Tomioka
 + 🔗 https://boardgamegeek.com/boardgame/355473/3-second-try
++ 🖼 https://cf.geekdo-images.com/oPqj4e-OJffDpNNGeZmUnw__original/img/tKGo923v5EDdYAYZYIjOYiBnKmc=/0x0/filters:format(jpeg)/pic7757954.jpg
 
 # 봉 잡았다!.jpg
 - 👥 인원: 2 ~ 5 (4인 베스트)
@@ -1972,6 +2152,7 @@
 + ♟️ 디자이너: Yoshihisa Itsubaki
 + 🎨 아티스트: Yoshihisa Itsubaki, Yoshiaki Tomioka
 + 🔗 https://boardgamegeek.com/boardgame/351809/stick-collection
++ 🖼 https://cf.geekdo-images.com/stn2vDM3Bf2NAsJCKZIimA__original/img/mg-mW0f-3mLkQJhErvtHnEDVla8=/0x0/filters:format(jpeg)/pic7757952.jpg
 
 # 인트리게.jpg
 - 👥 인원: 3 ~ 5 (5인 베스트)
@@ -1981,6 +2162,7 @@
 + ♟️ 디자이너: Stefan Dorra
 + 🎨 아티스트: Eckhard Freytag, Clément Masson, Ian Parovel, Renate Seelig, Markus Wagner
 + 🔗 https://boardgamegeek.com/boardgame/265/intrigue
++ 🖼 https://cf.geekdo-images.com/l8ki305GFjjmrRworLUzLw__original/img/8Gjm0OPOkdkuZBovbvB951n_g0g=/0x0/filters:format(jpeg)/pic182825.jpg
 
 # 도코종.png
 - 👥 인원: 2 ~ 5 (3인 베스트)
@@ -1990,6 +2172,7 @@
 + ♟️ 디자이너: Jun Sasaki, Hayashi Shiina (椎名隼也)
 + 🎨 아티스트: Jun Sasaki
 + 🔗 https://boardgamegeek.com/boardgame/330401/dokojong
++ 🖼 https://cf.geekdo-images.com/1UcX8v-QSa-forq5Jh9Zaw__original/img/T4DiQ3WSP6g_3FsdYRBGzK87-Vg=/0x0/filters:format(png)/pic6003561.png
 
 # 타코 캣 고트 치즈 피자 체험판.jpg
 - 👥 인원: 2 ~ 3 (3인 베스트)
@@ -1999,6 +2182,7 @@
 + ♟️ 디자이너: Dave Campbell (II)
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgame/313802/taco-cat-goat-cheese-pizza-demo-deck
++ 🖼 https://cf.geekdo-images.com/savBfgO05TQCEA9njQfEXw__original/img/7ywGAkzWyqT1wZJ3LBADC62RXhU=/0x0/filters:format(jpeg)/pic5519335.jpg
 
 # 뱀장어인가 뱀인가.png
 - 👥 인원: 2 ~ 8 (4~5인 베스트)
@@ -2008,6 +2192,7 @@
 + ♟️ 디자이너: Bruno Faidutti, Jun Sasaki
 + 🎨 아티스트: Jun Sasaki
 + 🔗 https://boardgamegeek.com/boardgame/443829/wriggle-roulette
++ 🖼 https://cf.geekdo-images.com/skXRM_7Bmo1EUyhASUejhw__original/img/GAWo7V2w_a4ENdga_2uKf4yMv94=/0x0/filters:format(png)/pic8821050.png
 
 # 타코 햇 케익 기프트 피자.png
 - 👥 인원: 2 ~ 8 (4~6인 베스트)
@@ -2017,6 +2202,7 @@
 + ♟️ 디자이너: Dave Campbell (II)
 + 🎨 아티스트: Dave Campbell (II), Simon Douchy
 + 🔗 https://boardgamegeek.com/boardgame/338678/taco-hat-cake-gift-pizza
++ 🖼 https://cf.geekdo-images.com/nqkt7fUY1v6Sm1dMc7H8qg__original/img/Owy-iC61izhpij_afxjZiu8mC1E=/0x0/filters:format(png)/pic6191346.png
 
 # 팬시 페더스.jpg
 - 👥 인원: 2 (2, 3~None인 베스트)
@@ -2026,6 +2212,7 @@
 + ♟️ 디자이너: Friedemann Friese
 + 🎨 아티스트: Harald Lieske
 + 🔗 https://boardgamegeek.com/boardgame/363481/fancy-feathers
++ 🖼 https://cf.geekdo-images.com/kywCNsXHaHLEkiayTedxKg__original/img/eD3bOBGGCDs6ITYDdNXU7gE0hXY=/0x0/filters:format(jpeg)/pic6893165.jpg
 
 # 퀀텀.jpg
 - 👥 인원: 2 ~ 4 (2인 베스트)
@@ -2035,6 +2222,7 @@
 + ♟️ 디자이너: Stefan Kloß, Anna Oppolzer, Reinhard Staupe
 + 🎨 아티스트: Oliver Freudenreich
 + 🔗 https://boardgamegeek.com/boardgame/262388/qwantum
++ 🖼 https://cf.geekdo-images.com/jlavnyH175fE8BpVWk9W2Q__original/img/crjhXO9p86MtoCH0oo3hqHRhAco=/0x0/filters:format(jpeg)/pic4340705.jpg
 
 # 노 스왑 노 페이!.jpg
 - 👥 인원: 3 ~ 5 (4~5인 베스트)
@@ -2044,6 +2232,7 @@
 + ♟️ 디자이너: Olivier Cipière
 + 🎨 아티스트: Jonathan Aucomte
 + 🔗 https://boardgamegeek.com/boardgame/255962/no-swap-no-pay
++ 🖼 https://cf.geekdo-images.com/mSBZU_gIZ8Jqq_2OHmJGHA__original/img/GRBOmxGyY61r9085xagQOJkDmdg=/0x0/filters:format(jpeg)/pic4287949.jpg
 
 # 용의 동굴.jpg
 - 👥 인원: 2 ~ 4 (4인 베스트)
@@ -2053,6 +2242,7 @@
 + ♟️ 디자이너: Marco Teubner
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgame/272636/dragons-cave
++ 🖼 https://cf.geekdo-images.com/-toR_Js3M6TiO_TSX1C5-A__original/img/ltwMANdmxGCPAAXza2HujohgYyw=/0x0/filters:format(jpeg)/pic4945873.jpg
 
 # 피자의 달인.jpg
 - 👥 인원: 1 ~ 6 (2~4인 베스트)
@@ -2062,6 +2252,7 @@
 + ♟️ 디자이너: Jeffrey D. Allers
 + 🎨 아티스트: Maciej Szymanowicz
 + 🔗 https://boardgamegeek.com/boardgame/319593/pizzeria
++ 🖼 https://cf.geekdo-images.com/TLhVIaXbAokhUNz0fjcQoQ__original/img/D_lG01qdzTh1-bpaKag9fR6VzPs=/0x0/filters:format(jpeg)/pic5607321.jpg
 
 # 수학 트레인 도형.jpg
 - 👥 인원: 2 ~ 4
@@ -2071,6 +2262,7 @@
 + ♟️ 디자이너: Aiko Oyama, Toru Oyama
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgame/391769/jiu-jiu-ziyan-kukujan
++ 🖼 https://cf.geekdo-images.com/UgJp6_mm0Uu46KLRRyIYEQ__original/img/GJLcZspsdT3n8YpW2YS9SvYDw64=/0x0/filters:format(jpeg)/pic7583226.jpg
 
 # 블랙 스완.png
 - 👥 인원: 2 ~ 4 (2, 4인 베스트)
@@ -2080,6 +2272,7 @@
 + ♟️ 디자이너: Gary Kim
 + 🎨 아티스트: Hami
 + 🔗 https://boardgamegeek.com/boardgame/132598/black-swan
++ 🖼 https://cf.geekdo-images.com/mu90YKCLCn9dyXCYHZ3_TA__original/img/RG75J6J3yN1PD_UodtzPcdKew9g=/0x0/filters:format(png)/pic4644235.png
 
 # 젠 마스터.jpg
 - 👥 인원: 3 ~ 5 (3인 베스트)
@@ -2089,6 +2282,7 @@
 + ♟️ 디자이너: Reiner Knizia
 + 🎨 아티스트: Charlie Bink, Marek Bláha, Lucas Guidetti Perez
 + 🔗 https://boardgamegeek.com/boardgame/83197/zen-master
++ 🖼 https://cf.geekdo-images.com/yH4lJHui8OKeh3brqA0qxg__original/img/NP0xoxuCmYVrFgxYtmnJlpXXpMc=/0x0/filters:format(jpeg)/pic8540445.jpg
 
 # 하베스트 밸리.png
 - 👥 인원: 2 ~ 5 (3인 베스트)
@@ -2098,6 +2292,7 @@
 + ♟️ 디자이너: Bruno Faidutti
 + 🎨 아티스트: Francisco Coda
 + 🔗 https://boardgamegeek.com/boardgame/440016/harvest-valley
++ 🖼 https://cf.geekdo-images.com/GDqqku9Y6jfGsvmq25AN2g__original/img/Y-uDn_LmoXtSkYjjUBTuJWPYXS4=/0x0/filters:format(png)/pic8897470.png
 
 # 노아.jpg
 - 👥 인원: 2 ~ 5 (3~4인 베스트)
@@ -2107,6 +2302,7 @@
 + ♟️ 디자이너: Bruno Cathala, Ludovic Maublanc
 + 🎨 아티스트: Xavier Collette
 + 🔗 https://boardgamegeek.com/boardgame/116858/noah
++ 🖼 https://cf.geekdo-images.com/P4MilYMfpEzcWOXLWsCZ8g__original/img/n86gfpAhlar8E4_FB9u9g0hjuKk=/0x0/filters:format(jpeg)/pic3483889.jpg
 
 # 테이크 댓.jpg
 - 👥 인원: 2 ~ 4 (3~4인 베스트)
@@ -2116,6 +2312,7 @@
 + ♟️ 디자이너: Andreas Spies, Reinhard Staupe
 + 🎨 아티스트: Oliver Freudenreich
 + 🔗 https://boardgamegeek.com/boardgame/211450/take-that
++ 🖼 https://cf.geekdo-images.com/-zdvshUDq6JhvSRK3_DETA__original/img/VubT45yZ6I-4lpiwRAmwRe6M1Nw=/0x0/filters:format(jpeg)/pic3227467.jpg
 
 # 헤이, 요!.png
 - 👥 인원: 2 ~ 10 (6인 베스트)
@@ -2125,6 +2322,7 @@
 + ♟️ 디자이너: Takashi Saito
 + 🎨 아티스트: Jun Sasaki, 佐々木隼 (Hayashi Sasaki)
 + 🔗 https://boardgamegeek.com/boardgame/324467/hey-yo
++ 🖼 https://cf.geekdo-images.com/gdL3oocd-YZdV-eov01mzQ__original/img/d02WcE870rwtUbk5j65oQVApTzo=/0x0/filters:format(png)/pic6388848.png
 
 # 해독제.jpg
 - 👥 인원: 2 ~ 7 (5인 베스트)
@@ -2134,6 +2332,7 @@
 + ♟️ 디자이너: Dennis Hoyle
 + 🎨 아티스트: Jonathan Logan Clark, Dennis Hoyle
 + 🔗 https://boardgamegeek.com/boardgame/150783/antidote
++ 🖼 https://cf.geekdo-images.com/FyG1Ex5iY_MubDjC3EHD3A__original/img/FFXRXBk-rZ7ttRWE-xKzWC1SJEY=/0x0/filters:format(jpeg)/pic2056454.jpg
 
 # 스티키 카멜레온.jpg
 - 👥 인원: 2 ~ 5 (4~5인 베스트)
@@ -2143,6 +2342,7 @@
 + ♟️ 디자이너: Cédric Barbé, Théo Rivière
 + 🎨 아티스트: Rémy Tornior
 + 🔗 https://boardgamegeek.com/boardgame/220778/sticky-chameleons
++ 🖼 https://cf.geekdo-images.com/IVlPc1rUS6moDJVwTJn6oQ__original/img/tMXTLJ5brd5AnfEDf_GeG81tISI=/0x0/filters:format(jpeg)/pic3613442.jpg
 
 # 도토리산.jpg
 - 👥 인원: -
@@ -2152,6 +2352,7 @@
 + ♟️ 디자이너: Yoshihisa Itsubaki
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgame/281480/donguri-yama
++ 🖼 https://cf.geekdo-images.com/md2gLP2UFaJgWabc6M3MDA__original/img/zNocWffhxz9a8GoRy2AZw5Uzrx8=/0x0/filters:format(jpeg)/pic4773939.jpg
 
 # 방구석 보물 사냥꾼.png
 - 👥 인원: 2 ~ 6 (3~6인 베스트)
@@ -2161,6 +2362,7 @@
 + ♟️ 디자이너: Simone Luciani, Lorenzo Tucci Sorrentino
 + 🎨 아티스트: Mister Phil
 + 🔗 https://boardgamegeek.com/boardgame/366464/pick-it-up
++ 🖼 https://cf.geekdo-images.com/4-kkd1xDTm5w4KoS4OZHTg__original/img/Ozrj15kMz7iHQYRSNGutY8T49qM=/0x0/filters:format(png)/pic6950941.png
 
 # 베니스의 기념품.png
 - 👥 인원: 2 ~ 5 (5인 베스트)
@@ -2170,6 +2372,7 @@
 + ♟️ 디자이너: Jun Sasaki, Goro Sasaki
 + 🎨 아티스트: Jun Sasaki, Goro Sasaki
 + 🔗 https://boardgamegeek.com/boardgame/427865/souvenirs-from-venice
++ 🖼 https://cf.geekdo-images.com/SkcCRMs_-JYVQP8yfCIJLA__original/img/K3O-MCeD-qqlU0Unk3t690qVNLs=/0x0/filters:format(png)/pic8393377.png
 
 # 나랏말싸미.png
 - 👥 인원: 2 ~ 5
@@ -2179,6 +2382,7 @@
 + ♟️ 디자이너: -
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgame/317990/narasmalssami
++ 🖼 https://cf.geekdo-images.com/Gg0vuU80RuyqsS6ZDlO-Jg__original/img/TZeRdMAOxc8QCJAlsSRR2XatVQo=/0x0/filters:format(png)/pic5670946.png
 
 # 찐데신.png
 - 👥 인원: 3 ~ 6 (6인 베스트)
@@ -2188,6 +2392,7 @@
 + ♟️ 디자이너: Jason Anarchy
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgame/360377/master-dater
++ 🖼 https://cf.geekdo-images.com/6_G1ZCW1y56E4tjcUgz_5A__original/img/gSUzK3gFy-qpJ44Mar6Te3P3YME=/0x0/filters:format(png)/pic6800380.png
 
 # 핸즈업.jpg
 - 👥 인원: 3 ~ 8 (8인 베스트)
@@ -2197,6 +2402,7 @@
 + ♟️ 디자이너: Martijn Haddering, Chislaine van den Bulk
 + 🎨 아티스트: Martijn Haddering, Alexandre Roche
 + 🔗 https://boardgamegeek.com/boardgame/171950/hands
++ 🖼 https://cf.geekdo-images.com/1YN_jWjmmIuCQsI7QatshA__original/img/CXFzIvW4wsPOr-p03Ji_Kj1w1jQ=/0x0/filters:format(jpeg)/pic4610139.jpg
 
 # 다이스 아카데미.png
 - 👥 인원: 2 ~ 6 (5~6인 베스트)
@@ -2206,6 +2412,7 @@
 + ♟️ 디자이너: Yannick Gobert
 + 🎨 아티스트: Marc Chouinard
 + 🔗 https://boardgamegeek.com/boardgame/271756/dice-academy
++ 🖼 https://cf.geekdo-images.com/fnq46WOIxiBus4T73u3FAA__original/img/rlgy6Usza1wUxjQrFDfAWP98UDQ=/0x0/filters:format(png)/pic4563698.png
 
 # 스틱업.jpg
 - 👥 인원: 2 ~ 5 (3~5인 베스트)
@@ -2215,6 +2422,7 @@
 + ♟️ 디자이너: Martin Nedergaard Andersen
 + 🎨 아티스트: Katie Burk
 + 🔗 https://boardgamegeek.com/boardgame/209487/stickup
++ 🖼 https://cf.geekdo-images.com/mjyxRmrN-qnTd2wCEv-MaQ__original/img/J4Uiu_OUpvDckoyxeE99GGBp3u8=/0x0/filters:format(jpeg)/pic6881637.jpg
 
 # 레이지.jpg
 - 👥 인원: 2 ~ 10 (5~6인 베스트)
@@ -2224,6 +2432,7 @@
 + ♟️ 디자이너: -
 + 🎨 아티스트: Oliver Freudenreich
 + 🔗 https://boardgamegeek.com/boardgame/568/rage
++ 🖼 https://cf.geekdo-images.com/k0qwnUecex8xUTaY0eQj0g__original/img/tCGjLf6utW7_S3bj3UYgluNCVHI=/0x0/filters:format(jpeg)/pic1067621.jpg
 
 # 스트라테고 오리지널.jpg
 - 👥 인원: 2 (2인 베스트)
@@ -2233,6 +2442,7 @@
 + ♟️ 디자이너: Jacques Johan Mogendorff
 + 🎨 아티스트: Donato Giancola, Paul Windle
 + 🔗 https://boardgamegeek.com/boardgame/1917/stratego
++ 🖼 https://cf.geekdo-images.com/FCOo5cVkf6Le5brx_B7zDg__original/img/11KrFk07h0PEw9qDo5zmDSmBZRU=/0x0/filters:format(jpeg)/pic9063233.jpg
 
 # 마코코.jpg
 - 👥 인원: 2 ~ 6 (2인 베스트)
@@ -2242,6 +2452,7 @@
 + ♟️ 디자이너: Klaus Kreowski
 + 🎨 아티스트: Wanjin Gill, Marcin Minor
 + 🔗 https://boardgamegeek.com/boardgame/371638/macoco
++ 🖼 https://cf.geekdo-images.com/YEH2dq_KDhS6rGtmhyMFvw__original/img/nMUPHzjixewhA0cLvr86wn0v1vQ=/0x0/filters:format(jpeg)/pic7096154.jpg
 
 # 타코로코.jpg
 - 👥 인원: 2 ~ 5 (3~5인 베스트)
@@ -2251,6 +2462,7 @@
 + ♟️ 디자이너: Treo Game Designers
 + 🎨 아티스트: Crocotame
 + 🔗 https://boardgamegeek.com/boardgame/438465/taco-loco
++ 🖼 https://cf.geekdo-images.com/ldoJB0nhaDSsyTJP4NR4PA__original/img/e43cpSDrHjYuJho6KRGR8hdIFEg=/0x0/filters:format(jpeg)/pic8686533.jpg
 
 # 카르텔.jpg
 - 👥 인원: 2 ~ 6 (4인 베스트)
@@ -2260,6 +2472,7 @@
 + ♟️ 디자이너: Reiner Knizia
 + 🎨 아티스트: Felix Kindelan
 + 🔗 https://boardgamegeek.com/boardgame/244584/kartel
++ 🖼 https://cf.geekdo-images.com/mbs4HqZvSM-lr5rkIBMFtg__original/img/LPAnuPzMni2f3vgGvZvwJ2rWz0A=/0x0/filters:format(jpeg)/pic3934919.jpg
 
 # 글로브 트위스터.jpg
 - 👥 인원: 1 ~ 5 (4인 베스트)
@@ -2269,6 +2482,7 @@
 + ♟️ 디자이너: Richard Champion
 + 🎨 아티스트: Eric Cousin
 + 🔗 https://boardgamegeek.com/boardgame/257924/globe-twister
++ 🖼 https://cf.geekdo-images.com/sFcxNCKHiiqjQdBSo4O1Hg__original/img/WGB3cgHS6K8BsuoQ6ReBL_L7YUM=/0x0/filters:format(jpeg)/pic4261553.jpg
 
 # 히포.png
 - 👥 인원: 2 ~ 4 (4인 베스트)
@@ -2278,6 +2492,7 @@
 + ♟️ 디자이너: Martin Nedergaard Andersen
 + 🎨 아티스트: Sarah Bourquin
 + 🔗 https://boardgamegeek.com/boardgame/234105/hippo
++ 🖼 https://cf.geekdo-images.com/5cOnF5uy0E1cDHNjnfX6DA__original/img/pvJ7Md0hmwPbEVnxHT85AzsqnOo=/0x0/filters:format(png)/pic6349725.png
 
 # 세븐 에이트 나인.jpg
 - 👥 인원: 2 ~ 4 (4인 베스트)
@@ -2287,6 +2502,7 @@
 + ♟️ 디자이너: Maureen Hiron
 + 🎨 아티스트: Christine Hoffmeyer, John Kovalic, Cathleen Quinn-Kinney, Małgorzata Wójcicka
 + 🔗 https://boardgamegeek.com/boardgame/42206/7-ate-9
++ 🖼 https://cf.geekdo-images.com/Fd2GDAyPA18EBk6cXRI0Mw__original/img/mkKPiVdaUsMOpB6GQNJY_TC5XfU=/0x0/filters:format(jpeg)/pic585440.jpg
 
 # 미스티.jpg
 - 👥 인원: 2 ~ 5 (3인 베스트)
@@ -2296,6 +2512,7 @@
 + ♟️ 디자이너: Florian Fay
 + 🎨 아티스트: Felix Kindelan
 + 🔗 https://boardgamegeek.com/boardgame/270443/misty
++ 🖼 https://cf.geekdo-images.com/VLK1vvHsuzJ55T5WGCmYuw__original/img/0BsLcZMFHdcpWkJBN9rmTNlLeKg=/0x0/filters:format(jpeg)/pic4546844.jpg
 
 # 버펄로 체스.jpg
 - 👥 인원: 2 (2인 베스트)
@@ -2305,6 +2522,7 @@
 + ♟️ 디자이너: Alex Randolph
 + 🎨 아티스트: Wanjin Gill, Dahee Lee, Lisa Plangger
 + 🔗 https://boardgamegeek.com/boardgame/32/buffalo-chess
++ 🖼 https://cf.geekdo-images.com/1FMn5-piF5TwGO1-D_k_ug__original/img/SB9DY87UMPbeEWeFJhT2bqrMDZc=/0x0/filters:format(jpeg)/pic7679110.jpg
 
 # 익스플로딩 키튼.png
 - 👥 인원: 2 ~ 5 (4~5인 베스트)
@@ -2314,6 +2532,7 @@
 + ♟️ 디자이너: Matthew Inman, Elan Lee, Shane Small
 + 🎨 아티스트: Matthew Inman, Elan Lee, Shane Small
 + 🔗 https://boardgamegeek.com/boardgame/172225/exploding-kittens
++ 🖼 https://cf.geekdo-images.com/N8bL53-pRU7zaXDTrEaYrw__original/img/0ciN1VZYifUd0qIDO0e8cGXmiss=/0x0/filters:format(png)/pic2691976.png
 
 # 캣 블루스.jpg
 - 👥 인원: 2 ~ 6 (3인 베스트)
@@ -2323,6 +2542,7 @@
 + ♟️ 디자이너: Reiner Knizia
 + 🎨 아티스트: Franz Vohwinkel
 + 🔗 https://boardgamegeek.com/boardgame/363/cat-blues
++ 🖼 https://cf.geekdo-images.com/nwLMuyqj24tIk_zkZqsYPA__original/img/yn8dxFjwGCMOHaKnAJda6lJINV8=/0x0/filters:format(jpeg)/pic4899604.jpg
 
 # 드림캐처.jpg
 - 👥 인원: 3 ~ 7 (3~4인 베스트)
@@ -2332,6 +2552,7 @@
 + ♟️ 디자이너: Oliver Igelhaut
 + 🎨 아티스트: Christof Tisch
 + 🔗 https://boardgamegeek.com/boardgame/262398/wunschmaschine-20
++ 🖼 https://cf.geekdo-images.com/AbbRsYEodK6OLlTn_YX6oA__original/img/w8LjgOJ3ntVnYv-n-NXwtb38NrU=/0x0/filters:format(jpeg)/pic4340990.jpg
 
 # 트리올렛 위대한 숫자 게임.jpg
 - 👥 인원: 2 ~ 4
@@ -2341,6 +2562,7 @@
 + ♟️ 디자이너: André Perriolat, John Perriolat
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgame/13103/triolet
++ 🖼 https://cf.geekdo-images.com/YduVenrgNe31iWiIsoOy3w__original/img/QmfnVvz4sOTpXNN9tkzoQSUQx38=/0x0/filters:format(jpeg)/pic6838222.jpg
 
 # 더 로봇.png
 - 👥 인원: 2 ~ 6 (3~4인 베스트)
@@ -2350,6 +2572,7 @@
 + ♟️ 디자이너: Reinhard Staupe
 + 🎨 아티스트: Oliver Freudenreich
 + 🔗 https://boardgamegeek.com/boardgame/296514/robots
++ 🖼 https://cf.geekdo-images.com/enksQURc-t405is2d8Xz6A__original/img/sBRx9ZwaZYj0HIh7WMfgnVIpwUw=/0x0/filters:format(png)/pic5591132.png
 
 # 보스의 지갑.jpg
 - 👥 인원: 2 ~ 7 (4~6, 8~None인 베스트)
@@ -2359,6 +2582,7 @@
 + ♟️ 디자이너: Wilfried Fort, Marie Fort
 + 🎨 아티스트: Oksana Dmitrienko, Anastasia Voropina
 + 🔗 https://boardgamegeek.com/boardgame/232300/wallet
++ 🖼 https://cf.geekdo-images.com/YvD1Jbs2O1BonAptm1Kwjg__original/img/QBTxGAFgCIKSl_J80ojf_ZfTPvI=/0x0/filters:format(jpeg)/pic4025353.jpg
 
 # 놉! 놉! 테이블.png
 - 👥 인원: 3 ~ 8
@@ -2368,6 +2592,7 @@
 + ♟️ 디자이너: Olivier Mousseau
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgame/365979/tap-the-table
++ 🖼 https://cf.geekdo-images.com/D28xtLCtLpJfsMwXqJltYA__original/img/QPbjWgky1ADQxut1o8rCUH8Cr9M=/0x0/filters:format(png)/pic6939227.png
 
 # 와일드 와일드 타코.png
 - 👥 인원: 2 ~ 8
@@ -2377,6 +2602,7 @@
 + ♟️ 디자이너: Dave Campbell (II)
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgame/421631/wild-wild-taco
++ 🖼 https://cf.geekdo-images.com/wYXPzUMmMaZIV_iCMcdeDQ__original/img/7LPJOODHncUr6theQfMwLi3F1yo=/0x0/filters:format(png)/pic8223315.png
 
 # 패럿다임.png
 - 👥 인원: 2 ~ 6
@@ -2386,6 +2612,7 @@
 + ♟️ 디자이너: Michel Matschoss
 + 🎨 아티스트: Wanjin Gill
 + 🔗 https://boardgamegeek.com/boardgame/352434/parrotdigm
++ 🖼 https://cf.geekdo-images.com/AzSC0B8Im4yXcdzG0XAHvw__original/img/1lmOwX-5SN2rZgNdPOKvIcnKNeU=/0x0/filters:format(png)/pic9266654.png
 
 # 시바견 하우스.jpg
 - 👥 인원: 1 ~ 5 (4~5인 베스트)
@@ -2395,6 +2622,7 @@
 + ♟️ 디자이너: Aza Chen
 + 🎨 아티스트: Aza Chen
 + 🔗 https://boardgamegeek.com/boardgame/195179/shiba-inu-house
++ 🖼 https://cf.geekdo-images.com/frpukoG0JhGU1-7yzz1dhg__original/img/A0SQFFZD8D8nfKqMcCjAEmk42yY=/0x0/filters:format(jpeg)/pic3496087.jpg
 
 # 라인-잇.jpg
 - 👥 인원: 2 ~ 5 (3인 베스트)
@@ -2404,6 +2632,7 @@
 + ♟️ 디자이너: Tim Juretzki
 + 🎨 아티스트: Joey & Grumpy
 + 🔗 https://boardgamegeek.com/boardgame/382960/line-it
++ 🖼 https://cf.geekdo-images.com/p2dw7oi8hfGVK57nQMoJgg__original/img/zS90BWfYhu_QHSA2qoNCdc_V-z0=/0x0/filters:format(jpeg)/pic7427524.jpg
 
 # 매직 만달라.jpg
 - 👥 인원: 2 ~ 4 (4인 베스트)
@@ -2413,6 +2642,7 @@
 + ♟️ 디자이너: Manu Palau
 + 🎨 아티스트: Manu Palau, Anastasia Voropina
 + 🔗 https://boardgamegeek.com/boardgame/246203/magic-mandala
++ 🖼 https://cf.geekdo-images.com/3bgbq9ROUIqQjh-Rydjsdg__original/img/Zaoi0fdq-YTjGYSnkt0f48gvCno=/0x0/filters:format(jpeg)/pic4287708.jpg
 
 # 방방 날아라 돼지!.jpg
 - 👥 인원: 2 ~ 3 (3인 베스트)
@@ -2422,6 +2652,7 @@
 + ♟️ 디자이너: Kim Vandenbroucke
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgame/386831/pigs-on-trampolines
++ 🖼 https://cf.geekdo-images.com/ndf7slAMzALCdaPTbbypfg__original/img/DKJaqaN1nh2k4Q786bjaVw7Duhg=/0x0/filters:format(jpeg)/pic7900953.jpg
 
 # 저지 도미노.png
 - 👥 인원: 2 ~ 5
@@ -2431,6 +2662,7 @@
 + ♟️ 디자이너: Tsukii Yosuke (つきい　ようすけ)
 + 🎨 아티스트: Yoshiaki Tomioka
 + 🔗 https://boardgamegeek.com/boardgame/358666/judge-domino
++ 🖼 https://cf.geekdo-images.com/LmwvsH5LM4rzMKO3lIONNw__original/img/GvoaO-qHc37LFr41pcOmUlrbnvU=/0x0/filters:format(png)/pic7084384.png
 
 # 캔디매치.jpg
 - 👥 인원: 2 ~ 6 (4인 베스트)
@@ -2440,6 +2672,7 @@
 + ♟️ 디자이너: Reiner Knizia
 + 🎨 아티스트: Christian Fiore
 + 🔗 https://boardgamegeek.com/boardgame/218993/candy-match
++ 🖼 https://cf.geekdo-images.com/Hi_f-Prh3yAs-NA82fABwA__original/img/k6k6Fs7XKZQqifD6hMeFJDEOU1Q=/0x0/filters:format(jpeg)/pic3518079.jpg
 
 # 귀여워.jpg
 - 👥 인원: 3 ~ 5 (3, 5인 베스트)
@@ -2449,6 +2682,7 @@
 + ♟️ 디자이너: Marc-Antoine Hofmann, Ismaël Perrin
 + 🎨 아티스트: Felix Kindelan, Noëlle Zweiacker
 + 🔗 https://boardgamegeek.com/boardgame/270501/kawaii
++ 🖼 https://cf.geekdo-images.com/Thb29onkGQC29LMV4xaesw__original/img/dVcOZ2RGTvAmhqnWcey2XOkVpHM=/0x0/filters:format(jpeg)/pic5471655.jpg
 
 # 윈스턴.jpg
 - 👥 인원: 2 ~ 6 (3인 베스트)
@@ -2458,6 +2692,7 @@
 + ♟️ 디자이너: Christoph Cantzler, Anja Wrede
 + 🎨 아티스트: Felix Kindelan
 + 🔗 https://boardgamegeek.com/boardgame/260334/winston
++ 🖼 https://cf.geekdo-images.com/LpM67aGBJu4T01AVRbW2wg__original/img/WFqwEHkeiRVcJYmp-IXaIihiIy8=/0x0/filters:format(jpeg)/pic4297626.jpg
 
 # 본파이어 파티.png
 - 👥 인원: 2 ~ 4 (2인 베스트)
@@ -2467,6 +2702,7 @@
 + ♟️ 디자이너: Yoshiaki Tomioka
 + 🎨 아티스트: Yoshiaki Tomioka
 + 🔗 https://boardgamegeek.com/boardgame/351815/bonfire-party
++ 🖼 https://cf.geekdo-images.com/ak9mAQUU6Z9edJ2Ho3Y-RA__original/img/nLK6P5-EMecMhR4DUclpbJIoqvw=/0x0/filters:format(png)/pic6805669.png
 
 # 기묘한 이야기 마인드 플레이어의 공격.png
 - 👥 인원: 4 ~ 10 (7~8인 베스트)
@@ -2476,6 +2712,7 @@
 + ♟️ 디자이너: Joey Vigour
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgame/361457/stranger-things-attack-of-the-mind-flayer
++ 🖼 https://cf.geekdo-images.com/RzwBW2Fm-VOfaGzOxbvVrg__original/img/MtrejFfjuot6VmatNKQU-pRIvps=/0x0/filters:format(png)/pic6832156.png
 
 # 퀸스 갬빗.jpg
 - 👥 인원: 2 ~ 4 (3인 베스트)
@@ -2485,6 +2722,7 @@
 + ♟️ 디자이너: Rebecca Bleau, Nicholas Cravotta
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgame/346101/the-queens-gambit-the-board-game
++ 🖼 https://cf.geekdo-images.com/rXvACwKrT6KRXhHJoR_wbQ__original/img/Xf9XjLCVHLZ61Rq96AmmAGP8D_s=/0x0/filters:format(jpeg)/pic6365159.jpg
 
 # 멍 야옹 비스킷.png
 - 👥 인원: 2 ~ 5 (2, 4인 베스트)
@@ -2494,6 +2732,7 @@
 + ♟️ 디자이너: Chih-Fan Chen
 + 🎨 아티스트: Reola
 + 🔗 https://boardgamegeek.com/boardgame/169755/woof-meow-biscuits
++ 🖼 https://cf.geekdo-images.com/Arj7MwxSk79WIJCsQANnTw__original/img/0wRz1vtSpdtnfjskwpWIU3J6Jqw=/0x0/filters:format(png)/pic2334770.png
 
 # 애니모크레이지.png
 - 👥 인원: 4 ~ 10 (7인 베스트)
@@ -2503,6 +2742,7 @@
 + ♟️ 디자이너: Bruno Faidutti
 + 🎨 아티스트: Gérard Mathieu, Pat Piper
 + 🔗 https://boardgamegeek.com/boardgame/542/animocrazy
++ 🖼 https://cf.geekdo-images.com/A-2RIDMwgJPF77pXp_0igQ__original/img/Xz3qslwBBbdUhI_DbmI23H_lJbo=/0x0/filters:format(png)/pic9415778.png
 
 # 업 앤 다운.jpg
 - 👥 인원: 3 ~ 7
@@ -2512,6 +2752,7 @@
 + ♟️ 디자이너: Ed Pegg, Jr.
 + 🎨 아티스트: Franz-Josef Schulte
 + 🔗 https://boardgamegeek.com/boardgame/8600/up-n-dn
++ 🖼 https://cf.geekdo-images.com/hvyIrxieHwPring6GoUzPw__original/img/beU_9XayA-qpIZlbdUDszIpPFD4=/0x0/filters:format(jpeg)/pic4899610.jpg
 
 # 골드 헌팅.png
 - 👥 인원: 2
@@ -2521,6 +2762,7 @@
 + ♟️ 디자이너: Naotaka Shimamoto
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgame/355474/gold-hunting
++ 🖼 https://cf.geekdo-images.com/SmvmfY2RPL4l2JVIJhqjXg__original/img/xYGQf312FOT0uu3-BRFSuHR3tEI=/0x0/filters:format(png)/pic6805672.png
 
 # 토마토마토.png
 - 👥 인원: 3 ~ 6
@@ -2530,6 +2772,7 @@
 + ♟️ 디자이너: Taisei Kato
 + 🎨 아티스트: Jun Sasaki, 高橋里衣 (Rie Takahashi), yanaginagi
 + 🔗 https://boardgamegeek.com/boardgame/256479/tomatomato
++ 🖼 https://cf.geekdo-images.com/jsFKLv6Bz-MmeNLSZLYXKA__original/img/QTmBpSxqdRcYi3OkpAOdneFvZKs=/0x0/filters:format(png)/pic5797062.png
 
 # 그래비티 쓰리.jpg
 - 👥 인원: 2 ~ 3 (3인 베스트)
@@ -2539,6 +2782,7 @@
 + ♟️ 디자이너: Masayuki Ikegami, Yoshiaki Tomioka
 + 🎨 아티스트: Yoshiaki Tomioka
 + 🔗 https://boardgamegeek.com/boardgame/431243/gravity-three
++ 🖼 https://cf.geekdo-images.com/oCygZvr-UpIFDiosVeE8-Q__original/img/BvIIa9wXM4c6U4YwNbpZ3_Co9gU=/0x0/filters:format(jpeg)/pic8497075.jpg
 
 # 포레스트.jpg
 - 👥 인원: 2 ~ 5 (4인 베스트)
@@ -2548,6 +2792,7 @@
 + ♟️ 디자이너: Leo Colovini, Fabio Visintin
 + 🎨 아티스트: Sarah Bourquin
 + 🔗 https://boardgamegeek.com/boardgame/235251/forest
++ 🖼 https://cf.geekdo-images.com/djMae_0-NxGdQKcZtVsaJQ__original/img/KtqmBrjmqzwExEQaIRXADp3EftE=/0x0/filters:format(jpeg)/pic3739074.jpg
 
 # 콘택트.jpg
 - 👥 인원: 2 ~ 5 (2인 베스트)
@@ -2557,6 +2802,7 @@
 + ♟️ 디자이너: Steffen Benndorf
 + 🎨 아티스트: Christian Opperer
 + 🔗 https://boardgamegeek.com/boardgame/296517/contact-signals-from-outer-space
++ 🖼 https://cf.geekdo-images.com/zv_8d-nq-BySsAwBuo_5fg__original/img/7O60IOVbJi8kfcoKoK8rPWqojXk=/0x0/filters:format(jpeg)/pic5121787.jpg
 
 # 컨티뉴오.png
 - 👥 인원: 1 ~ 5 (3인 베스트)
@@ -2566,6 +2812,7 @@
 + ♟️ 디자이너: Maureen Hiron
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgame/1190/continuo
++ 🖼 https://cf.geekdo-images.com/NZ3A5ecQ6BhX2sryz6Tw8Q__original/img/rdLlfWDwTf6SuhawwNgOvXPU4Qo=/0x0/filters:format(png)/pic2249680.png
 
 # 듀오 미니.jpg
 - 👥 인원: 2 ~ 6 (3인 베스트)
@@ -2575,6 +2822,7 @@
 + ♟️ 디자이너: Maureen Hiron
 + 🎨 아티스트: Othmar Geser, Walter Pepperle, Jennifer Urti
 + 🔗 https://boardgamegeek.com/boardgame/1464/duo
++ 🖼 https://cf.geekdo-images.com/XnBebdhxxTREP7nr8Dgo9g__original/img/TX11lM28oM-a4wn3vd35f_bxijQ=/0x0/filters:format(jpeg)/pic290418.jpg
 
 # 돌진소녀.jpg
 - 👥 인원: 3 ~ 5
@@ -2584,6 +2832,7 @@
 + ♟️ 디자이너: Yeon-Min Jung
 + 🎨 아티스트: Hami
 + 🔗 https://boardgamegeek.com/boardgame/232211/doljinsonyeo-rush-girl
++ 🖼 https://cf.geekdo-images.com/shD3cMtA2sKDcJ_BCBdVIg__original/img/bcNT263aMuNMxRAERz64kVqlLh0=/0x0/filters:format(jpeg)/pic3673181.jpg
 
 # 우리집 돼지저금통을 훔쳤다!.png
 - 👥 인원: 2 ~ 6
@@ -2593,6 +2842,7 @@
 + ♟️ 디자이너: 이재웅
 + 🎨 아티스트: 소금
 + 🔗 https://boardgamegeek.com/boardgame/403464/urijib-dwaejijeogeumtongeul-humcyeossda-piggy-bank
++ 🖼 https://cf.geekdo-images.com/TIlArie2HvfSyjGA3xQSkg__original/img/9RfgdEpKxnPLaF0dCUjfeWu0k5s=/0x0/filters:format(png)/pic7795827.png
 
 # 오리지널 마피아 카드 게임.jpg
 - 👥 인원: 6 ~ 20 (10인 베스트)
@@ -2602,6 +2852,7 @@
 + ♟️ 디자이너: -
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgame/142191/mafiia
++ 🖼 https://cf.geekdo-images.com/Q1hMVTitKvytWXLQIWJJ-Q__original/img/zsaKVGbjZEfMLk-GfmHH-xMkbEU=/0x0/filters:format(jpeg)/pic1656260.jpg
 
 # 카론의 포커.jpg
 - 👥 인원: 3 ~ 5
@@ -2611,6 +2862,7 @@
 + ♟️ 디자이너: Yeon-Min Jung
 + 🎨 아티스트: Hami
 + 🔗 https://boardgamegeek.com/boardgame/281984/charons-poker
++ 🖼 https://cf.geekdo-images.com/eEalILpLDDdoSHUNZgFulQ__original/img/YZpvA-3wEy6PLJhkkZEZ7A81tzo=/0x0/filters:format(jpeg)/pic5014834.jpg
 
 # 조선의 임금.jpg
 - 👥 인원: 2 ~ 6
@@ -2620,6 +2872,7 @@
 + ♟️ 디자이너: Rok Kim
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgame/181396/the-king-of-joseon
++ 🖼 https://cf.geekdo-images.com/6N75ytc7zSKJaGoESIN7SQ__original/img/rhY_2htyVYDb4ZU4z4OYE9_AlaU=/0x0/filters:format(jpeg)/pic6376971.jpg
 
 # 3초 트라이 코리아 확장.jpg
 - 👥 인원: 2 ~ 7
@@ -2639,6 +2892,7 @@
 + ♟️ 디자이너: -
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgame/469752/doubutsupatei-animal-party
++ 🖼 https://cf.geekdo-images.com/Jq45TWPv0agr2bGQtJgL_A__original/img/eIGs67wpbkHKKotY_22vHjs0MB8=/0x0/filters:format(jpeg)/pic9628292.jpg
 
 # 롱 샷 다이스 게임 미니 확장 5종.jpg
 - 👥 인원: 1 ~ 8
@@ -2658,6 +2912,7 @@
 + ♟️ 디자이너: Treo Game Designers
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgame/403836/the-loony-barn-band
++ 🖼 https://cf.geekdo-images.com/DGl8v3OS8X_2WFuUMjxLbA__original/img/q1QK7pxwTRtbYa6I0-BsPlyhvEc=/0x0/filters:format(jpeg)/pic7807602.jpg
 
 # 피시앤칩스 다이스.jpg
 - 👥 인원: 2 ~ 4
@@ -2667,3 +2922,4 @@
 + ♟️ 디자이너: -
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgame/472053/fish-n-chips
++ 🖼 https://cf.geekdo-images.com/_KahKo9PYiglLLGQrGDYwA__original/img/AWDT037IRpd8DZRSlkpYk9dwIUw=/0x0/filters:format(jpeg)/pic9632059.jpg
