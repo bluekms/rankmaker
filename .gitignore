@@ -8,9 +8,11 @@ desktop.ini
 .idea/
 *.log
 
-# 개인 순위 데이터 — 저장소에 올리지 않는다 (앱이 첫 조작 때 자동 생성)
-topics/*/save.json
-topics/*/cup.save.json
+# 개인 순위 데이터 — main 에서는 올리지 않는다 (앱이 첫 조작 때 자동 생성).
+# 이 브랜치(CrosS21-Boardgame-Rank)는 내 순위 자체가 내용물이라 save 파일을 함께 추적한다.
+# main 으로 병합할 때 이 두 줄을 되살릴 것.
+# topics/*/save.json
+# topics/*/cup.save.json
 
 # 개인 주제 폴더를 커밋하고 싶지 않다면 아래 주석을 해제하세요.
 # (ex_ 접두사가 붙은 예제 주제만 저장소에 남습니다)
