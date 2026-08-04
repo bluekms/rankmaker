@@ -33,6 +33,7 @@
 + ♟️ 디자이너: Jonny Pac, Carl Van Ostrand, Drake Villareal
 + 🎨 아티스트: Mihajlo Dimitrievski
 + 🔗 https://boardgamegeek.com/boardgameexpansion/286986/merchants-cove-the-oracle
++ 🖼 https://cf.geekdo-images.com/7cbtLCnmJXRBs4_SOqFPSA__original/img/PKbdM_bDj-w924pQU9YTFIj7WQg=/0x0/filters:format(jpeg)/pic6136543.jpg
 
 # 상인들의 항구 용 조련사 확장.jpg
 - 👥 인원: 1 ~ 5 (3인 베스트)
@@ -43,6 +44,7 @@
 + ♟️ 디자이너: Jonny Pac, Carl Van Ostrand, Drake Villareal
 + 🎨 아티스트: Mihajlo Dimitrievski
 + 🔗 https://boardgamegeek.com/boardgameexpansion/295361/merchants-cove-the-dragon-rancher
++ 🖼 https://cf.geekdo-images.com/WMYSqszFHthJ4N5NcqXSAA__original/img/Cq8qQmkW-H_gtOQIe0MVS1Ha71E=/0x0/filters:format(jpeg)/pic6138566.jpg
 
 # 페이퍼 던전 숨겨진 임무 확장.png
 - 👥 인원: 1 ~ 8 (3~4인 베스트)
@@ -53,6 +55,7 @@
 + ♟️ 디자이너: Leandro Pires
 + 🎨 아티스트: Dan Ramos
 + 🔗 https://boardgamegeek.com/boardgameexpansion/370933/paper-dungeons-side-quest-expansion
++ 🖼 https://cf.geekdo-images.com/XuzkNCQH7VJxuzF-bAGpSQ__original/img/Jahq0igm7YDhZPs5wumgm2gYyDU=/0x0/filters:format(png)/pic7595619.png
 
 # 상인들의 항구 여관주인.jpg
 - 👥 인원: 1 ~ 5 (2인 베스트)
@@ -63,6 +66,7 @@
 + ♟️ 디자이너: Jonny Pac, Carl Van Ostrand, Drake Villareal
 + 🎨 아티스트: Mihajlo Dimitrievski
 + 🔗 https://boardgamegeek.com/boardgameexpansion/286985/merchants-cove-the-innkeeper
++ 🖼 https://cf.geekdo-images.com/33pm1iZL3X8tzqqG0Ba8RA__original/img/fTjyBQHpaPCVzVyDsbUXLHd2CNM=/0x0/filters:format(jpeg)/pic6136541.jpg
 
 # 스펙터 옵스 무너진 서약.jpg
 - 👥 인원: 2 ~ 5 (3, 5인 베스트)

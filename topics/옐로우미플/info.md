@@ -13,6 +13,7 @@
 + ♟️ 디자이너: Totsuca Chuo
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgameexpansion/461171/dino-garden-brute-hunters
++ 🖼 https://cf.geekdo-images.com/DV1LDxdrRwGzkisE_NktUQ__original/img/2fnGMpY-Uw-ylwQKUT-fWmLHQGE=/0x0/filters:format(png)/pic9391701.png
 
 # 다이노 가든 온화한 거인들.png
 - 👥 인원: 1 ~ 4
@@ -23,6 +24,7 @@
 + ♟️ 디자이너: Totsuca Chuo
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgameexpansion/461172/dino-garden-gentle-titans
++ 🖼 https://cf.geekdo-images.com/rTxaqjZ3irAtP12hwV-UsQ__original/img/I_E7c1wfQJnS-KrXBoK9Cv4XFmo=/0x0/filters:format(png)/pic9391702.png
 
 # 스카이 가든 위장 알.png
 - 👥 인원: 1 ~ 4
@@ -33,6 +35,7 @@
 + ♟️ 디자이너: Totsuca Chuo
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgameexpansion/461169/sky-garden-imitation-egg
++ 🖼 https://cf.geekdo-images.com/QzaexM7ySHibWG9fGxQg0Q__original/img/WnY-6ZtHy0kI6BP2QIj61lQ3ON8=/0x0/filters:format(png)/pic9391700.png
 
 # 스카이 가든 짝궁.png
 - 👥 인원: 1 ~ 4
@@ -43,6 +46,7 @@
 + ♟️ 디자이너: Totsuca Chuo
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgameexpansion/461170/sky-garden-bonded-pair
++ 🖼 https://cf.geekdo-images.com/F_ageTeP6xkwvCwJTqvijQ__original/img/4ctlw3wRqn-vp4Hj05KbbrUPYUU=/0x0/filters:format(png)/pic9391699.png
 
 # 키스톤 북아메리카 해안 확장.png
 - 👥 인원: 1 ~ 2
@@ -53,6 +57,7 @@
 + ♟️ 디자이너: Lindsey Rode, Isaac Vega
 + 🎨 아티스트: Irem Erbilir, Alyssa Menold
 + 🔗 https://boardgamegeek.com/boardgameexpansion/420622/keystone-north-america-coastal-expansion
++ 🖼 https://cf.geekdo-images.com/yqYnYN6tITVpvDEY7dfIyA__original/img/n5H37scZON-B8DGPpyJhGjY7hWE=/0x0/filters:format(png)/pic8188958.png
 
 # 코지 스티커빌.png
 - 👥 인원: 1 ~ 6 (2인 베스트)
@@ -83,6 +88,7 @@
 + ♟️ 디자이너: Maxime Tardif
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgameexpansion/414734/earth-abundance
++ 🖼 https://cf.geekdo-images.com/Ho_6cxN6KcHTNIUQ_LXvVw__original/img/kYKCpNKxcQaoqM90_JlQn8YZHPY=/0x0/filters:format(png)/pic8033429.png
 
 # 포르마지오.jpg
 - 👥 인원: 1 ~ 4 (4인 베스트)
@@ -163,6 +169,7 @@
 + ♟️ 디자이너: Maxime Tardif
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgameexpansion/442298/earth-animal-kingdom
++ 🖼 https://cf.geekdo-images.com/0s2S2dqYygSWgGGq0-oQ6Q__original/img/SO93GQv_1Shb37KmwOlPYU1xwSI=/0x0/filters:format(png)/pic8842222.png
 
 # 어스 킥스타터 구디즈.png
 - 👥 인원: -
@@ -173,6 +180,7 @@
 + ♟️ 디자이너: -
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgameexpansion/383124/earth-kickstarter-goodies
++ 🖼 https://cf.geekdo-images.com/MpWtL4c2d_7uYyOKBAZ6FQ__original/img/NoVbmB88bxmtdTBK7mZwnbnFsDY=/0x0/filters:format(png)/pic7514017.png
 
 # 프로마쥬.jpg
 - 👥 인원: 1 ~ 4 (4인 베스트)
@@ -233,6 +241,7 @@
 + ♟️ 디자이너: -
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgameexpansion/420913/earth-weather-module
++ 🖼 https://cf.geekdo-images.com/wSI_v2Seq9CvcOre2VJPGw__original/img/zX9AetkSN8ohalcGWuvck-uUSHc=/0x0/filters:format(png)/pic8197997.png
 
 # 마이셀리아.jpg
 - 👥 인원: 1 ~ 4 (3~4인 베스트)
@@ -313,6 +322,7 @@
 + ♟️ 디자이너: -
 + 🎨 아티스트: Ari Oliver
 + 🔗 https://boardgamegeek.com/boardgameexpansion/438157/perch-goodies
++ 🖼 https://cf.geekdo-images.com/Ppa-YNlAM23UUP2NYQSfEQ__original/img/mG6CelaYc430U1ZMpx40olF_LDk=/0x0/filters:format(jpeg)/pic8683368.jpg
 
 # 퍼치.png
 - 👥 인원: 2 ~ 5 (4인 베스트)
@@ -353,6 +363,7 @@
 + ♟️ 디자이너: -
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgameexpansion/445470/earth-disasters-module
++ 🖼 https://cf.geekdo-images.com/5x2pjf_JFvltCLbNSmY_7g__original/img/iR3p1u08zzMC53gElW1zWOznRko=/0x0/filters:format(jpeg)/pic9647990.jpg
 
 # 덕 & 커버.png
 - 👥 인원: 2 ~ 7 (6인 베스트)
@@ -393,3 +404,4 @@
 + ♟️ 디자이너: Douglas Hettrick
 + 🎨 아티스트: Ari Oliver
 + 🔗 https://boardgamegeek.com/boardgameexpansion/461448/perch-birds-of-play
++ 🖼 https://cf.geekdo-images.com/YcsplHDWEjI0v59yek98gQ__original/img/kXrFPYPGshoJwlCHe-g2j2lkxDU=/0x0/filters:format(png)/pic9387040.png
