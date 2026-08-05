@@ -781,7 +781,7 @@ async function topicInfoTexts() {
     } catch (e) { /* info.md 가 없는 주제는 부르는 이름도 없다 */ }
   }
   return out;
-};
+}
 
 const kb = n => (n < 1024 * 1024 ? Math.round(n / 1024) + " KB" : (n / 1048576).toFixed(1) + " MB");
 
@@ -867,11 +867,6 @@ function showCleanup() {
   showUnused();
 }
 
-/* 주제 목록에서 '+ New Topic' 을 고르면 뜨는 화면.
-   시작 화면은 한 번 보고 마는 자리라 여기로 옮겼다. */
-function showNewTopic() {
-  showScreen("#newTopic");
-}
 $("#btnPickFolder").onclick = async () => {
   try { await importFolderAsTopic(await showDirectoryPicker({ id: "rankmaker-import" })); }
   catch (e) { /* 취소 */ }
@@ -891,11 +886,10 @@ async function importFolderAsTopic(dir) {
   if (!imgDir) { alert("Cannot write into the topics folder."); return; }
 
   flash(`Importing ${picks.length} image(s)…`);
+  const had = await imageTable();               // 이미 있는 이름은 그것을 쓴다 — 다시 쓰지 않는다
   let copied = 0;
   for (const h of picks) {
-    let exists = false;
-    try { await imgDir.getFileHandle(h.name); exists = true; } catch (e) {}
-    if (exists) continue;                       // 같은 이름이 이미 있으면 그것을 쓴다
+    if (had.has(h.name)) continue;
     const fh = await writeFile(imgDir, h.name, await h.getFile());
     sharedImages?.set(h.name, fh);
     copied++;
@@ -906,9 +900,7 @@ async function importFolderAsTopic(dir) {
   await writeFile(topicDir, "info.md", infoSkeleton(name, names));
 
   topics.push({ name, dirHandle: topicDir });
-  afterOpen();
-  await loadTopic(topics.find(t => t.name === name));
-  $("#topicSelect").value = topics.findIndex(t => t.name === name);
+  await afterOpen(name);
   flash(`Added "${name}" ✓ · ${names.length} item(s)`
     + (copied < names.length ? ` · ${names.length - copied} already in the folder` : ""));
 }
@@ -1008,7 +1000,9 @@ $("#dirInput").onchange = e => {
   afterOpen();
 };
 
-function afterOpen() {
+/* openName 을 주면 그 주제를 연다. 안 주면 지난번에 보던 것.
+   들여오기 직후에 쓴다 — 안 그러면 엉뚱한 주제를 한 번 열었다 버리게 된다. */
+function afterOpen(openName) {
   topics.sort((a, b) => a.name.localeCompare(b.name));
   const sel = $("#topicSelect");
   sel.innerHTML = "";
@@ -1016,8 +1010,9 @@ function afterOpen() {
   sel.append(new Option("+ New Topic", NEW_TOPIC));       // 목록 맨 끝 — 만들기 화면
   sel.append(new Option("- Unused Images", CLEAN_TOPIC)); // 그 아래 — 정리 화면
   sel.hidden = false;
+  // '+ New Topic' 화면은 시작 화면이 한 번 보고 마는 자리라 이 목록으로 옮겨 왔다
   sel.onchange = () => {
-    if (sel.value === NEW_TOPIC) showNewTopic();
+    if (sel.value === NEW_TOPIC) showScreen("#newTopic");
     else if (sel.value === CLEAN_TOPIC) showCleanup();
     else loadTopic(topics[sel.value]);
   };
@@ -1025,10 +1020,10 @@ function afterOpen() {
   $("#welcome").hidden = true;
   $("#board").hidden = false;
   // 지난번에 보던 주제로 연다 — 그 주제가 없어졌으면 첫 번째
-  const last = localStorage.getItem("rm-topic");
-  const i = Math.max(0, topics.findIndex(t => t.name === last));
+  const want = openName ?? localStorage.getItem("rm-topic");
+  const i = Math.max(0, topics.findIndex(t => t.name === want));
   sel.value = i;
-  loadTopic(topics[i]);
+  return loadTopic(topics[i]);
 }
 boot();
 

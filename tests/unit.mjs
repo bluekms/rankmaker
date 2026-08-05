@@ -82,7 +82,12 @@ const IMG_EXT = app("IMG_EXT"), IMAGES_DIR = app("IMAGES_DIR"), PODIUM_RE = app(
 /* ---------- 조촐한 테스트 러너 ---------- */
 let pass = 0, fail = 0, skip = 0, group = "";
 const eq = (a, b) => JSON.stringify(a) === JSON.stringify(b);
-const describe = async (name, fn) => { group = name; await fn(); };   // 비동기 블록도 받는다
+// 비동기 블록도 받는다. 블록이 도중에 터지면 남은 it 이 조용히 사라지므로 실패로 잡는다.
+const describe = async (name, fn) => {
+  group = name;
+  try { await fn(); }
+  catch (e) { fail++; console.log(`  ✗ ${group} — 블록이 중단됨: ${e && e.message}`); }
+};
 function it(what, got, want) {
   if (eq(got, want)) { pass++; return; }
   fail++;
@@ -441,7 +446,7 @@ describe("화면별 컨트롤", () => {
   it("순위표만 보인다", shown(), [false, true, true]);
   it("순위표에서는 컨트롤이 켜진다", JSON.parse(state()), [false, false, false, false]);
 
-  app("showNewTopic()");
+  app('showScreen("#newTopic")');
   it("New Topic 만 보인다", shown(), [true, false, true]);
   it("New Topic 에서는 컨트롤이 꺼진다", JSON.parse(state()), [true, true, true, true]);
 
