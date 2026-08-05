@@ -16,3 +16,11 @@ topics/*/cup.save.json
 # (ex_ 접두사가 붙은 예제 주제만 저장소에 남습니다)
 # topics/*
 # !topics/ex_*/
+
+# 공용 그림 폴더는 저장소에 담지 않는다 — 로컬에 두거나 info.md 의 주소로 받는다.
+# 수백 장이 통째로 올라가면 되돌리기 어려우므로 통로 자체를 막아 둔다.
+# 예외는 tests/SCENARIOS.md 가 쓰는 준비물 세 장뿐이다.
+topics/images/*
+!topics/images/1 그림 있음.png
+!topics/images/2 그림 있음.png
+!topics/images/3 그림 있음.png
