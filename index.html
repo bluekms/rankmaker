@@ -655,65 +655,31 @@ setTheme(localStorage.getItem("rm-theme") ||
 $("#btnTheme").onclick = () =>
   setTheme(document.documentElement.dataset.theme === "dark" ? "light" : "dark");
 
-/* ---------- tiny IndexedDB kv (폴더 핸들 기억용) ---------- */
-function idb() {
-  return new Promise((res, rej) => {
-    const rq = indexedDB.open("rankmaker", 1);
-    rq.onupgradeneeded = () => rq.result.createObjectStore("kv");
-    rq.onsuccess = () => res(rq.result);
-    rq.onerror = () => rej(rq.error);
-  });
-}
-async function idbGet(k) {
-  try {
-    const db = await idb();
-    return await new Promise(res => {
-      const r = db.transaction("kv").objectStore("kv").get(k);
-      r.onsuccess = () => res(r.result);
-      r.onerror = () => res(undefined);
-    });
-  } catch (e) { return undefined; }
-}
-async function idbSet(k, v) {
-  try {
-    const db = await idb();
-    await new Promise(res => {
-      const tx = db.transaction("kv", "readwrite");
-      tx.objectStore("kv").put(v, k);
-      tx.oncomplete = res; tx.onerror = res;
-    });
-  } catch (e) {}
-}
-
-/* ---------- open sources: FSA(기억) / 드래그&드롭 / webkitdirectory ---------- */
-async function boot() {
-  if (await tryResume(true)) return;          // 연결해둔 폴더가 있으면 소리 없이 자동 오픈
-  $("#welcome").hidden = false;
-}
-async function tryResume(silent) {
-  const h = await idbGet("root");
-  if (!h || !h.queryPermission) return false;
-  try {
-    let p = await h.queryPermission({ mode: "readwrite" });
-    if (p === "prompt" && !silent) p = await h.requestPermission({ mode: "readwrite" });
-    if (p !== "granted") return false;
-    return await openRoot(h, false);
-  } catch (e) { return false; }
-}
-/* 버튼 하나가 둘을 겸한다 — 기억해 둔 폴더가 있으면 그걸 열고(권한만 다시 받으면 된다),
-   없거나 거절당하면 폴더 선택 창을 띄운다. */
+/* ---------- open sources: 폴더 선택 / 드래그&드롭 / webkitdirectory ----------
+   폴더 핸들을 기억해 두지 않는다. 열 때마다 고르는 대신, 어느 폴더를 보고 있는지가
+   늘 분명하고 다른 폴더로 갈아타기도 쉽다. 브라우저는 마지막 위치를 기억하므로
+   (showDirectoryPicker 의 id) 실제로는 두 번 누르면 끝난다. */
 $("#btnOpen").onclick = async () => {
-  if (await tryResume(false)) return;
   try {
-    const h = await showDirectoryPicker({ mode: "readwrite", id: "rankmaker-topics" });
-    await openRoot(h, true);
+    await openRoot(await showDirectoryPicker({ mode: "readwrite", id: "rankmaker-topics" }));
   } catch (e) { /* cancelled */ }
 };
 // 브라우저가 할 수 있는 쪽만 보여준다 — 고를 필요가 없다
 if (window.showDirectoryPicker) $("#btnOpen").hidden = false;
 else $("#dirPick").hidden = false;
 
-async function openRoot(handle, remember) {
+/* topics 루트인가, 아니면 그림이 든 보통 폴더인가.
+   하위에 images/ 가 있거나 info.md 를 가진 폴더가 하나라도 있으면 topics 루트로 본다. */
+async function looksLikeTopicsRoot(dir) {
+  for await (const c of dir.values()) {
+    if (c.kind !== "directory") continue;
+    if (c.name.toLowerCase() === IMAGES_DIR) return true;
+    try { await c.getFileHandle("info.md"); return true; } catch (e) { /* 주제가 아니다 */ }
+  }
+  return false;
+}
+
+async function openRoot(handle) {
   useImageSource(handle, null);         // 공용 이미지는 이 폴더의 images 하위다 (필요할 때 훑는다)
   const list = [];
   rootPodiumFile = null;
@@ -722,11 +688,9 @@ async function openRoot(handle, remember) {
     if (c.kind === "directory" && c.name.toLowerCase() !== IMAGES_DIR) list.push({ name: c.name, dirHandle: c });
     else if (c.kind === "file" && PODIUM_RE.test(c.name)) rootPodiumFile = await c.getFile();
   }
-  if (!list.length) { alert("No topic folders found. Make sure you connected the topics folder."); return false; }
+  if (!list.length) { alert("No topic folders found. Make sure you picked the topics folder."); return; }
   topics = list;
-  if (remember) idbSet("root", handle);
   afterOpen();
-  return true;
 }
 
 /* ---------- 공용 이미지 원본 ----------
@@ -932,9 +896,10 @@ addEventListener("drop", async e => {
     if (handlePromise) {
       const h = await handlePromise;
       if (!h || h.kind !== "directory") { alert("Please drop a folder."); return; }
-      // 아직 연결 전이면 이건 topics 폴더다. 이미 연결돼 있으면 새 주제로 들여온다.
-      if (rootHandle) await importFolderAsTopic(h);
-      else await openRoot(h, true);
+      // 무엇을 떨어뜨렸는지는 연결 상태가 아니라 폴더 내용으로 판단한다.
+      // topics 루트면 연결을 그쪽으로 갈아타고, 그림만 든 폴더면 새 주제로 들여온다.
+      if (!rootHandle || await looksLikeTopicsRoot(h)) await openRoot(h);
+      else await importFolderAsTopic(h);
       return;
     }
     if (!entry || !entry.isDirectory) { alert("Please drop a folder."); return; }
@@ -1025,7 +990,7 @@ function afterOpen(openName) {
   sel.value = i;
   return loadTopic(topics[i]);
 }
-boot();
+$("#welcome").hidden = false;      // 시작은 언제나 시작 화면 — 폴더는 열 때마다 고른다
 
 /* ---------- info.md ---------- */
 function parseInfo(text) {
@@ -1563,6 +1528,10 @@ function renderTierView(wrap) {
       if (q && !matchesQuery(it)) continue;   // 검색 시 안 맞는 아이템만 감춘다 (행 구조 유지)
       const im = document.createElement("img");
       im.className = "tier-item";
+      // 주소로 뜨는 그림은 원본 해상도라 한 장에 수백 KB다. 300종짜리 주제에서
+      // 한꺼번에 받으면 화면이 멈춘다 — 보이는 것부터 받는다 (List·Gallery 와 동일)
+      im.loading = "lazy";
+      im.decoding = "async";
       im.src = it.url;
       im.alt = im.title = it.label;
       im.draggable = true;
@@ -1667,9 +1636,12 @@ function renderItem(it) {
 
   const img = document.createElement("img");
   img.className = "thumb";
+  // loading 은 src 보다 먼저 정해야 한다 — src 를 먼저 넣으면 그 자리에서 로딩이 시작돼
+  // 지연 로딩이 걸리지 않는다
+  img.loading = "lazy";
+  img.decoding = "async";
   img.src = it.url;
   img.alt = it.label;
-  img.loading = "lazy";
 
   const content = document.createElement("div");
   content.className = "content";

@@ -323,6 +323,7 @@ await describe("붙여넣기", async () => {
     flash = () => {}; render = () => {};
     calls = { toBlob: [], written: [], bitmaps: 0 };
     createImageBitmap = async () => ({ width: 4, height: 4, close() { calls.bitmaps++; } });
+    origCreate = document.createElement;          // 블록 끝에서 되돌린다 — 뒤 블록으로 새면 안 된다
     document.createElement = tag => {
       const e = { tagName: (tag || "").toUpperCase(), style: {}, append() {}, className: "", textContent: "" };
       if (e.tagName === "CANVAS") {
@@ -377,6 +378,7 @@ await describe("붙여넣기", async () => {
 
   app("delete navigator.clipboard;");
   it("클립보드가 없으면 지원 안 함으로 본다", app("canPaste()"), false);
+  app("document.createElement = origCreate;");
 });
 
 /* ================= 새 주제 만들기 =================
@@ -455,6 +457,50 @@ describe("화면별 컨트롤", () => {
   it("정리 화면에서도 컨트롤이 꺼진다", JSON.parse(state()), [true, true, true, true]);
 
   app("document.querySelector = origQ2;");
+});
+
+/* ================= 그림 지연 로딩 =================
+   loading 은 src 보다 먼저 정해야 한다. src 를 먼저 넣으면 그 자리에서 로딩이 시작돼
+   지연 로딩이 걸리지 않는다 — 300종짜리 주제에서 원본 수백 MB 를 한꺼번에 받게 된다.
+   속성이 '설정되었는가' 가 아니라 '어떤 순서로' 설정됐는지를 봐야 잡히는 종류다. */
+describe("그림 지연 로딩", () => {
+  // 대입 순서를 기록하는 가짜 img
+  app(`
+    origCreate = document.createElement;
+    imgLogs = [];
+    document.createElement = tag => {
+      const base = origCreate(tag);
+      if (tag !== "img") return base;
+      const log = [];
+      imgLogs.push(log);
+      return new Proxy(base, { set(t, k, v) { log.push(k); t[k] = v; return true; } });
+    };
+  `);
+  const orderOf = () => JSON.parse(app("JSON.stringify(imgLogs.map(l => l.filter(k => k === 'loading' || k === 'src')))"));
+
+  app(`
+    render = () => {}; scheduleSave = () => {}; flash = () => {};
+    cur = {
+      name: "t", dirHandle: null,
+      info: { global: [], items: {} },
+      save: { tierSizes: [1], tierNames: {}, checks: {} },
+      items: [{ file: "a.png", label: "a", url: "https://x/a.png", ord: 0 }],
+      view: { mode: "list", columns: 3, tierSize: 72 },
+    };
+    normalize();
+  `);
+
+  app("imgLogs = []; renderItem(cur.items[0]);");
+  const list = orderOf().filter(l => l.length);
+  ok("List·Gallery — img 를 만든다", list.length > 0);
+  it("List·Gallery — loading 을 src 보다 먼저 정한다", list[0], ["loading", "src"]);
+
+  app(`imgLogs = []; cur.view.mode = "tier"; renderTierView(origCreate("div"));`);
+  const tier = orderOf().filter(l => l.length);
+  ok("Tier — img 를 만든다", tier.length > 0);
+  it("Tier — loading 을 src 보다 먼저 정한다", tier[0], ["loading", "src"]);
+
+  app("document.createElement = origCreate; cur = null;");
 });
 
 /* ================= 되돌리기 =================
