@@ -155,9 +155,7 @@ main { max-width: 1100px; margin: 0 auto; padding: 1rem; }
   padding: .7rem; border-radius: .7rem; border: 0; cursor: pointer;
   background: var(--accent); color: #fff; font-weight: 600; font-size: 1rem;
 }
-#welcome .actions .sub { opacity: .7; font-weight: 400; font-size: .88em; }
 #welcome .actions .alt { background: var(--card); color: var(--text); border: 1px solid var(--border); font-weight: 500; }
-#welcome .drop-hint { font-size: .85rem; margin-top: 1.1rem; }
 #welcome.dragging { outline: 3px dashed var(--accent); outline-offset: -8px; }
 
 /* ---------- items ---------- */
@@ -430,6 +428,34 @@ mark {
   text-align: left; background: var(--card); border: 1px solid var(--border);
   border-radius: .8rem; padding: 1rem 1.2rem; font-size: .88rem; color: var(--muted);
 }
+#cleanup { max-width: 620px; margin: 6vh auto 0; }
+#cleanup h1 { margin: 0 0 .3rem; font-size: 1.5rem; text-align: center; }
+#cleanup > p { color: var(--muted); font-size: .9rem; text-align: center; margin: 0 0 1.2rem; }
+#cleanList {
+  max-height: 56vh; overflow: auto; margin-bottom: 1rem;
+  border: 1px solid var(--border); border-radius: .6rem; background: var(--card);
+}
+.cl-row {
+  display: flex; align-items: center; gap: .7rem;
+  padding: .45rem .7rem; border-bottom: 1px solid var(--border); font-size: .88rem;
+}
+.cl-row:last-child { border-bottom: 0; }
+.cl-row img {
+  width: 44px; height: 44px; flex: none; object-fit: cover;
+  border-radius: .35rem; background: var(--bg);
+}
+.cl-open {
+  display: flex; align-items: center; gap: .7rem; flex: 1; min-width: 0;
+  color: inherit; text-decoration: none;
+}
+.cl-open:hover .nm { color: var(--accent); text-decoration: underline; }
+.cl-row .nm { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.cl-row .sz { flex: none; color: var(--muted); font-size: .8rem; }
+#btnClean { display: block; margin: 0 auto; }
+.nt-note pre {
+  margin: .5rem 0 .9rem; padding: .6rem .8rem; overflow-x: auto;
+  background: var(--bg); border-radius: .5rem; font-size: .84rem; color: var(--text);
+}
 .nt-note ol { margin: .4rem 0 .8rem; padding-left: 1.2rem; }
 .nt-note li { margin: .25rem 0; }
 #credit a { color: var(--muted); }
@@ -538,15 +564,19 @@ mark {
       <button id="btnPickFolder">📁 Choose a folder of images</button>
     </div>
     <div class="nt-note">
-      <p><b>What happens</b></p>
-      <ol>
-        <li>The folder name becomes the topic name.</li>
-        <li>Every image inside is copied into <code>topics/images/</code>, shared by all topics.</li>
-        <li><code>info.md</code> is written with one entry per image — names only.</li>
-      </ol>
-      <p>Add descriptions later by editing <code>info.md</code>. A picture already in
-      <code>topics/images/</code> is reused instead of copied again.</p>
+      <p>Dropping a folder named <b>Food</b> gives you:</p>
+<pre>topics/<b>Food</b>/info.md   ← one entry per image, names only
+topics/images/*.png     ← the pictures, shared by every topic</pre>
+      <p>Write the descriptions into <code>info.md</code> whenever you like.
+      Pictures already in <code>topics/images/</code> are reused, not copied again.</p>
     </div>
+  </section>
+  <section id="cleanup" hidden>
+    <h1>Unused Images</h1>
+    <p>Pictures in <code>topics/images/</code> that no <code>info.md</code> refers to.</p>
+    <p id="cleanNone" hidden>Every picture is in use. ✓</p>
+    <div id="cleanList"></div>
+    <button id="btnClean"></button>
   </section>
   <section id="board" hidden>
     <div id="items"></div>
@@ -726,19 +756,121 @@ async function imageTable(refresh) {
      topics/images/*             ← 그림은 여기로 복사 (모든 주제가 함께 쓴다)
    설명은 나중에 info.md 에 손으로 붙이면 된다. */
 const infoSkeleton = (name, files) =>
-  [`// ${name}`, "", "# global", "", ...files.flatMap(f => [`# ${f}`, ""])].join(String.fromCharCode(10));
+  [`// ${name}`, "", "# global", "", ...files.flatMap(f => [`# ${f}`, ""])].join("\n");
+
+/* 순위표에 딸린 컨트롤 — 순위표를 보고 있을 때만 의미가 있다.
+   따로따로 켜고 끄면 한둘을 빠뜨려 엉뚱한 화면에서 눌리게 된다. */
+const boardChrome = on =>
+  ["#searchWrap", "#viewControls", "#boardTools", "#btnCup"].forEach(id => ($(id).hidden = !on));
+
+/* ---------- 쓰이지 않는 그림 ----------
+   공용 폴더의 그림 중 어느 info.md 도 이름을 부르지 않는 것. 주제를 지우거나
+   항목 이름을 바꾸면 남는다. 판정은 이름 대조뿐이라 파일을 열지 않는다. */
+const unusedImageNames = (imageNames, infoTexts) => {
+  const used = new Set();
+  for (const text of infoTexts) for (const h of Object.keys(parseInfo(text).items)) used.add(h);
+  return imageNames.filter(n => !PODIUM_RE.test(n) && !used.has(n));
+};
+
+async function topicInfoTexts() {
+  const out = [];
+  for (const t of topics) {
+    try {
+      if (t.dirHandle) out.push(await (await (await t.dirHandle.getFileHandle("info.md")).getFile()).text());
+      else if (t.files?.has("info.md")) out.push(await t.files.get("info.md").text());
+    } catch (e) { /* info.md 가 없는 주제는 부르는 이름도 없다 */ }
+  }
+  return out;
+};
+
+const kb = n => (n < 1024 * 1024 ? Math.round(n / 1024) + " KB" : (n / 1048576).toFixed(1) + " MB");
+
+let cleanUrls = [];                       // 미리보기용 objectURL — 다시 그릴 때 반납한다
+async function showUnused() {
+  const list = $("#cleanList"), btn = $("#btnClean"), none = $("#cleanNone");
+  cleanUrls.forEach(URL.revokeObjectURL);
+  cleanUrls = [];
+  list.textContent = "";
+
+  const dir = await imagesFolder();
+  const names = dir
+    ? unusedImageNames([...(await imageTable(true)).keys()], await topicInfoTexts())
+    : [];
+  // 치울 게 없어도 그렇다고 알려 준다. 아무것도 안 뜨면 기능이 있는지조차 알 수 없다.
+  none.hidden = !!names.length;
+  list.hidden = btn.hidden = !names.length;
+  if (!names.length) return;
+
+  const rows = [];
+  for (const name of names.sort()) {
+    let file = null;
+    try { file = await (await dir.getFileHandle(name)).getFile(); } catch (e) {}
+    const row = document.createElement("div");
+    row.className = "cl-row";
+    const cb = document.createElement("input");
+    cb.type = "checkbox"; cb.checked = true;
+    const im = document.createElement("img");
+    im.alt = name;
+    // 그림과 이름을 누르면 새 탭에서 원본을 연다 — 지우기 전에 눈으로 확인하라고
+    const open = document.createElement("a");
+    open.className = "cl-open";
+    open.target = "_blank";
+    open.rel = "noopener";
+    open.title = name;
+    if (file) {
+      const u = URL.createObjectURL(file);
+      cleanUrls.push(u);
+      im.src = u;
+      open.href = u;
+    }
+    const nm = document.createElement("span");
+    nm.className = "nm"; nm.textContent = name;
+    open.append(im, nm);
+    const sz = document.createElement("span");
+    sz.className = "sz"; sz.textContent = kb(file ? file.size : 0);
+    row.append(cb, open, sz);
+    list.append(row);
+    rows.push({ name, size: file ? file.size : 0, cb });
+    cb.onchange = sync;
+  }
+  function sync() {
+    const on = rows.filter(r => r.cb.checked);
+    btn.disabled = !on.length;
+    btn.textContent = on.length
+      ? `Delete ${on.length} file(s) · ${kb(on.reduce((a, r) => a + r.size, 0))}`
+      : "Nothing selected";
+  }
+  sync();
+  btn.onclick = async () => {
+    const on = rows.filter(r => r.cb.checked);
+    if (!on.length) return;
+    btn.disabled = true;
+    for (const r of on) {
+      try { await dir.removeEntry(r.name); sharedImages?.delete(r.name); } catch (e) {}
+    }
+    flash(`Deleted ${on.length} file(s) ✓`);
+    await showUnused();                   // 남은 것으로 다시 그린다
+  };
+}
 
 const NEW_TOPIC = "__new__";
+const CLEAN_TOPIC = "__clean__";
+
+/* 화면은 셋 중 하나만 보인다 — 순위표 · 새 주제 · 정리 */
+function showScreen(id) {
+  cupSetScreen(false);   // 먼저 닫는다 — 이 함수가 #board 를 다시 켜므로 순서가 중요하다
+  for (const s of ["#board", "#newTopic", "#cleanup"]) $(s).hidden = s !== id;
+  boardChrome(id === "#board");
+}
+function showCleanup() {
+  showScreen("#cleanup");
+  showUnused();
+}
 
 /* 주제 목록에서 '+ New Topic' 을 고르면 뜨는 화면.
    시작 화면은 한 번 보고 마는 자리라 여기로 옮겼다. */
 function showNewTopic() {
-  cupSetScreen(false);
-  $("#board").hidden = true;
-  $("#newTopic").hidden = false;
-  $("#searchWrap").hidden = true;
-  $("#viewControls").hidden = true;
-  $("#boardTools").hidden = true;
+  showScreen("#newTopic");
 }
 $("#btnPickFolder").onclick = async () => {
   try { await importFolderAsTopic(await showDirectoryPicker({ id: "rankmaker-import" })); }
@@ -881,13 +1013,15 @@ function afterOpen() {
   const sel = $("#topicSelect");
   sel.innerHTML = "";
   topics.forEach((t, i) => sel.append(new Option(t.name, i)));
-  sel.append(new Option("+ New Topic", NEW_TOPIC));   // 목록 맨 끝 — 고르면 만들기 화면으로
+  sel.append(new Option("+ New Topic", NEW_TOPIC));       // 목록 맨 끝 — 만들기 화면
+  sel.append(new Option("- Unused Images", CLEAN_TOPIC)); // 그 아래 — 정리 화면
   sel.hidden = false;
-  sel.onchange = () => (sel.value === NEW_TOPIC ? showNewTopic() : loadTopic(topics[sel.value]));
-  $("#searchWrap").hidden = false;
-  $("#viewControls").hidden = false;
-  $("#boardTools").hidden = false;
-  $("#btnCup").hidden = false;
+  sel.onchange = () => {
+    if (sel.value === NEW_TOPIC) showNewTopic();
+    else if (sel.value === CLEAN_TOPIC) showCleanup();
+    else loadTopic(topics[sel.value]);
+  };
+  boardChrome(true);
   $("#welcome").hidden = true;
   $("#board").hidden = false;
   // 지난번에 보던 주제로 연다 — 그 주제가 없어졌으면 첫 번째
@@ -1085,8 +1219,7 @@ async function loadTopic(t) {
   if (!themeLocked && info.theme) setTheme(info.theme, false);
   $("#searchInput").value = "";
   try { localStorage.setItem("rm-topic", t.name); } catch (e) {}   // 다음 실행 때 이 주제로 연다
-  $("#newTopic").hidden = true;
-  $("#board").hidden = false;
+  showScreen("#board");
   cup = null;                 // 주제를 바꾸면 진행 중이던 월드컵은 버린다
   undoStack = [];             // 되돌리기도 주제 단위다 — 다른 주제로 넘어가지 않는다
   syncUndo();
@@ -1129,13 +1262,23 @@ async function cacheRemoteImages(ctx) {
   // 저장할 곳은 공용 폴더다. 실제로 받을 것이 생겼을 때만 폴더를 만든다.
   let dirOnce = null;
   const outDir = () => (dirOnce ||= imagesFolder(true));
-  const one = async it => {
-    const src = want.get(it.file);
-    try {
+  /* 같은 주소를 가리키는 항목이 여럿일 수 있다 — 이름이 다른 같은 게임.
+     주소당 한 번만 받아 두고 파일만 각각 쓴다. */
+  const fetched = new Map();
+  const grab = src => {
+    if (!fetched.has(src)) fetched.set(src, (async () => {
       const res = await fetch(src, { mode: "cors", credentials: "omit" });
       if (!res.ok) throw new Error("HTTP " + res.status);
       const blob = await res.blob();
       if (!blob.size || !/^image\//.test(blob.type || "")) throw new Error("not an image");
+      return blob;
+    })());
+    return fetched.get(src);
+  };
+  const one = async it => {
+    const src = want.get(it.file);
+    try {
+      const blob = await grab(src);
       const dir = await outDir();
       if (!dir) throw new Error("no folder to save into");
       const fh = await writeFile(dir, it.file, blob);

@@ -91,6 +91,7 @@ function it(what, got, want) {
   console.log(`      실제: ${JSON.stringify(got)}`);
 }
 const ok = (what, cond) => it(what, !!cond, true);
+const NL = String.fromCharCode(10);
 function skipped(why) { skip++; console.log(`  · 건너뜀 — ${why}`); }
 
 /* ---------- 예제 주제 읽기 ---------- */
@@ -379,7 +380,6 @@ describe("info.md 뼈대", () => {
   const infoSkeleton = app("infoSkeleton");
   const out = infoSkeleton("내 주제", ["가.png", "나.jpg"]);
 
-  const NL = String.fromCharCode(10);
   it("주제 이름을 주석으로 적는다", out.split(NL)[0], "// 내 주제");
   ok("global 절이 있다", /^# global$/m.test(out));
   it("항목이 순서대로 들어간다", out.match(/^# .+$/gm), ["# global", "# 가.png", "# 나.jpg"]);
@@ -390,6 +390,66 @@ describe("info.md 뼈대", () => {
   const back = parseInfo(out);
   it("스스로 파싱된다", Object.keys(back.items), ["가.png", "나.jpg"]);
   it("주제 이름도 읽힌다", back.name, "내 주제");
+});
+
+/* ================= 쓰이지 않는 그림 =================
+   공용 폴더의 그림 중 어느 info.md 도 부르지 않는 것. 지우는 판단의 근거이므로
+   '멀쩡한 그림을 미사용으로 잘못 세는 일'이 없어야 한다. */
+describe("미사용 그림 판정", () => {
+  const unused = app("unusedImageNames");
+  const info = n => `# global${NL}- x${NL}${NL}# ${n}${NL}- y${NL}`;
+
+  it("아무도 안 부르면 전부 미사용", unused(["가.png", "나.jpg"], []), ["가.png", "나.jpg"]);
+  it("부르는 주제가 있으면 빠진다", unused(["가.png", "나.jpg"], [info("가.png")]), ["나.jpg"]);
+  it("여러 주제의 합집합을 본다",
+    unused(["가.png", "나.jpg", "다.png"], [info("가.png"), info("다.png")]), ["나.jpg"]);
+  it("주소로만 쓰는 항목도 이름을 부른 것이다",
+    unused(["가.png"], [`# 가.png${NL}+ thumbnail-url: https://a.com/x.jpg${NL}`]), []);
+  it("podium 은 세지 않는다", unused(["podium.png", "가.png"], []), ["가.png"]);
+  it("파일이 없으면 빈 목록", unused([], [info("가.png")]), []);
+  it("이름이 정확히 같아야 한다 — 확장자가 다르면 다른 파일",
+    unused(["가.png"], [info("가.jpg")]), ["가.png"]);
+});
+
+/* ================= 화면 전환 =================
+   순위표에 딸린 컨트롤은 순위표를 볼 때만 켜져야 한다. New Topic 화면에서
+   월드컵이 눌리던 문제가 하나를 빠뜨린 데서 나왔으므로, 묶음 전체를 확인한다. */
+describe("화면별 컨트롤", () => {
+  const IDS = ["#searchWrap", "#viewControls", "#boardTools", "#btnCup"];
+  app(`
+    boxes = {};
+    origQ2 = document.querySelector;
+    document.querySelector = sel => (boxes[sel] ||= {
+      hidden: null, id: sel, textContent: "", title: "", disabled: false, value: "",
+      classList: { add() {}, remove() {}, toggle() {} },
+    });
+  `);
+  const state = () => app("JSON.stringify(" + JSON.stringify(IDS) + ".map(i => boxes[i] && boxes[i].hidden))");
+
+  app("boardChrome(false)");
+  it("끄면 넷 다 숨는다", JSON.parse(state()), [true, true, true, true]);
+  app("boardChrome(true)");
+  it("켜면 넷 다 보인다", JSON.parse(state()), [false, false, false, false]);
+
+  /* 화면은 셋 중 하나만 보인다.
+     cupSetScreen 은 가짜로 바꾸지 않는다 — 그 함수가 #board 를 다시 켜기 때문에,
+     showScreen 안에서의 호출 순서가 틀리면 순위표가 되살아난다. 그걸 잡아야 한다. */
+  app("showUnused = () => {}; render = () => {}; cur = null; cup = null;");
+  const shown = () => JSON.parse(app('JSON.stringify(["#board","#newTopic","#cleanup"].map(i => boxes[i] && boxes[i].hidden))'));
+
+  app('showScreen("#board")');
+  it("순위표만 보인다", shown(), [false, true, true]);
+  it("순위표에서는 컨트롤이 켜진다", JSON.parse(state()), [false, false, false, false]);
+
+  app("showNewTopic()");
+  it("New Topic 만 보인다", shown(), [true, false, true]);
+  it("New Topic 에서는 컨트롤이 꺼진다", JSON.parse(state()), [true, true, true, true]);
+
+  app("showCleanup()");
+  it("정리 화면만 보인다", shown(), [true, true, false]);
+  it("정리 화면에서도 컨트롤이 꺼진다", JSON.parse(state()), [true, true, true, true]);
+
+  app("document.querySelector = origQ2;");
 });
 
 /* ================= 되돌리기 =================
