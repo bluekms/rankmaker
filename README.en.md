@@ -16,7 +16,7 @@
 | 팝콘에듀 · 만두게임즈 · 보드엠 · 아스모디코리아 | 200–290 each |
 | 행복한바오밥 · MTSGames · 젬블로컴퍼니 | 70–180 each |
 | 옐로우미플 · 데블다이스 | 20–40 each |
-| **BggTop100_260805** | 100 (BGG overall rank 1–100) |
+| **BggTop300_260805** | 300 (BGG overall rank 1–300, titles in Korean) |
 
 **No pictures in the repo.** They load from the URLs in `info.md`; files are needed only for poster export → **[Attaching pictures by URL](docs/image-url.en.md)**
 
