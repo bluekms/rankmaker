@@ -373,6 +373,25 @@ await describe("붙여넣기", async () => {
   it("클립보드가 없으면 지원 안 함으로 본다", app("canPaste()"), false);
 });
 
+/* ================= 새 주제 만들기 =================
+   폴더를 들여올 때 쓰는 info.md 뼈대. 이름만 채우고 설명은 사람이 붙인다. */
+describe("info.md 뼈대", () => {
+  const infoSkeleton = app("infoSkeleton");
+  const out = infoSkeleton("내 주제", ["가.png", "나.jpg"]);
+
+  const NL = String.fromCharCode(10);
+  it("주제 이름을 주석으로 적는다", out.split(NL)[0], "// 내 주제");
+  ok("global 절이 있다", /^# global$/m.test(out));
+  it("항목이 순서대로 들어간다", out.match(/^# .+$/gm), ["# global", "# 가.png", "# 나.jpg"]);
+  ok("항목마다 빈 줄로 떨어져 있다", out.includes("# 가.png" + NL + NL + "# 나.jpg"));
+  it("항목이 없으면 뼈대만", infoSkeleton("빈 주제", []).match(/^# .+$/gm), ["# global"]);
+
+  // 만든 결과를 그대로 다시 읽을 수 있어야 한다
+  const back = parseInfo(out);
+  it("스스로 파싱된다", Object.keys(back.items), ["가.png", "나.jpg"]);
+  it("주제 이름도 읽힌다", back.name, "내 주제");
+});
+
 /* ================= 되돌리기 =================
    가짜 주제를 만들어 실제 배치 함수를 돌린다. 화면을 그리는 부분만 비워 둔다. */
 describe("되돌리기", () => {
