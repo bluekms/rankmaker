@@ -1159,7 +1159,7 @@
 + 🔗 https://boardgamegeek.com/boardgame/72125/eclipse-new-dawn-for-the-galaxy
 + thumbnail-url: https://cf.geekdo-images.com/cnFppsVNOSTJ-W3APQFuTg__original/img/AbcjscBi-x3tVrsJsBhXq2RxLbc=/0x0/filters:format(jpeg)/pic1974056.jpg
 
-# 106 아컴 호러 - 카드 게임 (Revised Edition).jpg
+# 106 아컴 호러 - 카드 게임 (개정판).jpg
 - 👥 인원: 1 ~ 4 (2인 베스트)
 - ⭐ bgg 점수: 7.58
 - 🧠 복잡도: 3.74 / 5
@@ -2270,7 +2270,7 @@
 + 🔗 https://boardgamegeek.com/boardgame/2511/sherlock-holmes-consulting-detective-the-thames-mu
 + thumbnail-url: https://cf.geekdo-images.com/ptDZ2tJ6dSNiONAx3HH8Tw__original/img/iu21NR45DwHyFY-UPW0m7hwY_vw=/0x0/filters:format(jpeg)/pic3514298.jpg
 
-# 207 Star Wars - X-Wing 미니어처 게임.jpg
+# 207 스타워즈 - X-윙 미니어처 게임.jpg
 - 👥 인원: 2 ~ 2 (2인 베스트)
 - ⭐ bgg 점수: 7.36
 - 🧠 복잡도: 2.49 / 5
@@ -3216,7 +3216,7 @@
 + 🔗 https://boardgamegeek.com/boardgame/176189/zombicide-black-plague
 + thumbnail-url: https://cf.geekdo-images.com/kVHuMBxmathfnq42XINBQg__original/img/Xak18xf2xfSedYFS9-ZKwjSk7yc=/0x0/filters:format(jpeg)/pic2482309.jpg
 
-# 293 언매치드 - 배틀 오브 레전드, Volume One.jpg
+# 293 언매치드 - 배틀 오브 레전드 볼륨 1.jpg
 - 👥 인원: 2 ~ 4 (2인 베스트)
 - ⭐ bgg 점수: 7.21
 - 🧠 복잡도: 1.96 / 5
