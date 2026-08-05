@@ -9,12 +9,12 @@
 
 ## 쓰는 법
 
-항목 설명에 그림 주소를 한 줄 적으면 됩니다. `🖼` 는 눈에 띄라고 붙인 장식일 뿐, 문법이 아닙니다.
+항목 설명에 그림 주소를 한 줄 적으면 됩니다. 앞의 `thumbnail-url:` 은 사람이 읽기 좋으라고 붙인 이름일 뿐이라, 빼거나 다른 말로 바꿔도 똑같이 동작합니다. 앱은 **주소만 보고** 판단합니다.
 
 ```markdown
 # 오를레앙.jpg
 - ⭐ bgg 점수: 8.05
-+ 🖼 https://example.com/images/orleans.jpg
++ thumbnail-url: https://example.com/images/orleans.jpg
 ```
 
 - 같은 이름의 **파일이 있으면 파일이 이깁니다.** 주소는 파일이 없을 때만 쓰입니다.

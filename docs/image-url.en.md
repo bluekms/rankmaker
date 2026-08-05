@@ -9,12 +9,12 @@ Normally you drop the image file into `topics/images/` and you're done. **This p
 
 ## How to write it
 
-Put the image URL on a description line. The `🖼` is decoration to make it stand out — it isn't syntax.
+Put the image URL on a description line. The `thumbnail-url:` label in front is there for whoever reads the file — drop it or write something else and it still works. The app goes by **the URL alone**.
 
 ```markdown
 # orleans.jpg
 - ⭐ bgg rating: 8.05
-+ 🖼 https://example.com/images/orleans.jpg
++ thumbnail-url: https://example.com/images/orleans.jpg
 ```
 
 - **A file with the same name wins.** The URL is used only when no file exists.
