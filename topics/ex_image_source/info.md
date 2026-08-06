@@ -21,7 +21,9 @@
 # 5 주소 CORS 미허용.jpg
 - 그림 파일이 없고 주소만 있다. 이 호스트는 다른 사이트의 사용을 허용하지 않는다(BGG).
 - 화면에는 보이지만 포스터에는 못 들어간다. 저장을 누르면 안내창이 떠야 한다.
+- 화면용 썸네일과 포스터용 원본을 따로 적어 둔 항목이다. 안내창의 [Open image] 는 원본을 연다.
 + thumbnail-url: https://cf.geekdo-images.com/fUOKaaWYVnBagDKj4AQb2Q__itemrep/img/eYRdtO0y3v7z0wuCUrnds6QZjVs=/fit-in/246x300/filters:strip_icc()/pic8075053.jpg
++ podium-url: https://cf.geekdo-images.com/fUOKaaWYVnBagDKj4AQb2Q__original/img/hatQoun0oFaitZLGBDsJqDXbFTM=/0x0/filters:format(jpeg)/pic8075053.jpg
 
 # 6 주소 CORS 허용.png
 - 그림 파일이 없고 주소만 있는데, 이 호스트는 사용을 허용한다(raw.githubusercontent.com).

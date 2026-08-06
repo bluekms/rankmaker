@@ -619,13 +619,28 @@ const SOOP_LIVE_RE = /play\.(?:sooplive\.co\.kr|afreecatv\.com)\/([A-Za-z0-9_-]+
 // 썸네일로 쓸 주소 — 확장자가 이미지이거나, 알려진 썸네일 호스트
 const THUMB_EXT_RE = /https?:\/\/\S+?\.(?:jpe?g|png|webp|gif|avif)(?:\?\S*)?(?=\s|$)/i;
 const THUMB_HOST_RE = /https?:\/\/(?:videoimg\.(?:sooplive\.com|afreecatv\.com)|video-phinf\.pstatic\.net|img\.youtube\.com)\/\S+/i;
+const urlIn = t => (t.match(THUMB_EXT_RE) || t.match(THUMB_HOST_RE) || [])[0] || null;
+/* 그림 주소가 둘로 갈린다 — 화면에 뜨는 썸네일과, 포스터에 쓰는 원본.
+   `podium-url:` 이라 적힌 줄만 원본이고 나머지 주소 줄은 지금까지처럼 썸네일이다.
+   한쪽만 있어도 다른 쪽이 그것을 갈아 쓴다 — 둘 다 적을 의무는 없다. */
+const PODIUM_LABEL_RE = /^\s*podium-url\s*[:=]/i;
 const thumbOf = lines => {
+  let podium = null;
   for (const l of lines || []) {
-    const m = l.text.match(THUMB_EXT_RE) || l.text.match(THUMB_HOST_RE);
-    if (m) return m[0];
+    const u = urlIn(l.text);
+    if (!u) continue;
+    if (!PODIUM_LABEL_RE.test(l.text)) return u;
+    podium ||= u;                            // 썸네일이 없으면 이것으로 띄운다
   }
-  return null;
+  return podium;
 };
+const podiumOf = lines => {
+  for (const l of lines || [])
+    if (PODIUM_LABEL_RE.test(l.text)) { const u = urlIn(l.text); if (u) return u; }
+  return thumbOf(lines);                     // 원본이 없으면 썸네일이 곧 원본이다
+};
+// 아이템 하나를 '가장 좋은 그림'으로 여는 자리들이 쓴다 — 포스터 저장·안내창·캔버스
+const podiumSrc = (ctx, it) => podiumOf(ctx.info.items[it.file]) || it.url;
 // 후보 설명 줄에서 미디어·썸네일로 해석되는 주소들 — 설명에는 보이지 않게 한다
 const MEDIA_RES = [YT_RE, CHZZK_RE, VIMEO_RE, NAVERTV_RE, SOOP_VOD_RE, SOOP_LIVE_RE,
   THUMB_EXT_RE, THUMB_HOST_RE];
@@ -1203,18 +1218,21 @@ async function loadTopic(t) {
 async function cacheRemoteImages(ctx) {
   if (!ctx || !rootHandle) return;                       // 읽기 전용 소스는 저장할 곳이 없다
 
-  // info.md 에 적힌 주소 — 로컬 파일이 이미 있어도 뽑는다(주소가 바뀌었는지 봐야 하므로)
+  // info.md 에 적힌 주소 — 로컬 파일이 이미 있어도 뽑는다(주소가 바뀌었는지 봐야 하므로).
+  // 받아 두는 목적이 포스터라 원본(podium-url)을 먼저 노린다 — 없으면 썸네일이 원본이다.
   const want = new Map();
   for (const it of ctx.items) {
-    const u = thumbOf(ctx.info.items[it.file]);
-    if (u && /^https?:/i.test(u)) want.set(it.file, u);
+    const u = podiumSrc(ctx, it);
+    if (/^https?:/i.test(u)) want.set(it.file, u);
   }
   const rec = ctx.save.imgSrc || {};
   const targets = ctx.items.filter(it => {
     const u = want.get(it.file);
     if (!u) return false;
-    return /^https?:/i.test(it.url)      // 파일이 없어 원격으로 떠 있거나
-      || rec[it.file] !== u;             // 받아둔 주소와 info.md 주소가 다르거나
+    // 파일이 있으면 손대지 않는다 — 있는 파일을 쓰는 것이 언제나 가장 빠르고,
+    // 사용자가 직접 넣은 그림을 주소로 덮어쓰지도 않는다.
+    return /^https?:/i.test(it.url)                  // 파일이 없어 원격으로 떠 있거나
+      || (rec[it.file] && rec[it.file] !== u);       // 우리가 받아둔 파일인데 그 주소가 바뀌었거나
   });
   if (!targets.length) return;
 
@@ -1993,7 +2011,8 @@ function showImgHelp(list) {
       nm.className = "ih-name";
       nm.textContent = it.file;            // 저장할 파일명 = 아이템 이름 + 확장자
       const a = document.createElement("a");
-      a.href = it.url;
+      // 포스터에 넣을 그림이니 원본을 연다 — 화면에 뜨는 저화질 썸네일이 아니다
+      a.href = podiumSrc(cur, it);
       a.target = "_blank";
       a.rel = "noopener";
       a.download = it.file;                // 같은 출처면 바로 저장된다 (아니면 새 탭에 열린다)
@@ -2118,7 +2137,9 @@ function posterImage(it) {
       im.onerror = () => (cross ? load(textCardUri(it.label), false) : done(null));
       im.src = src;
     };
-    load(it.url, isRemote(it));
+    // 로컬 파일이 있으면 그것이 우선이고, 주소로만 있는 그림은 원본(podium-url)으로 그린다
+    const remote = isRemote(it);
+    load(remote ? podiumSrc(cur, it) : it.url, remote);
   });
 }
 function roundPath(ctx, x, y, w, h, r) {

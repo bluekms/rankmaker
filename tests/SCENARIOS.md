@@ -41,11 +41,11 @@
 | 2 그림 있음.png | `topics/images/` |
 | 3 그림 있음.png | `topics/images/` |
 | 4 그림 없음.svg | 없음 |
-| 5 주소 CORS 미허용.jpg | 주소만 — BGG |
+| 5 주소 CORS 미허용.jpg | 주소만 — BGG (썸네일 + `podium-url` 원본) |
 | 6 주소 CORS 허용.png | 주소만 — raw.githubusercontent |
 
-> **주소 규칙** — 항목당 이미지 주소는 **하나만** 쓰고, 구할 수 있는 **최대 해상도**로 적는다.
-> 화면 표시와 안내창의 [Open image] 링크가 같은 주소를 쓰므로, 그 하나가 곧 다운로드 품질이다.
+> **주소 규칙** — 화면에 뜨는 것은 `thumbnail-url:`(작게, 빠르게), 포스터에 쓰는 것은 `podium-url:`(최대 해상도)이다.
+> `podium-url:` 은 없어도 되고, 없으면 썸네일이 포스터에도 쓰인다. 안내창의 [Open image] 링크와 자동 저장은 원본 쪽을 쓴다.
 
 되돌리기 — 무엇을 지울지 먼저 보여주고, `--yes` 를 붙여야 실제로 지운다:
 
@@ -117,6 +117,8 @@ node tests/reset.mjs --yes    실행
 | D2 | 그 항목 설명 (List) | `🖼 https://…` 줄이 설명에 안 보인다 |
 | D3 | **4 그림 없음** 항목 | 이름 카드가 나온다 |
 | D4 | `ex_image_boardgame` 아무 항목 (List) | BGG 게임 페이지 링크는 설명에 그대로 보인다 |
+| D5 | **5 주소 CORS 미허용** 항목 (List) | `thumbnail-url` · `podium-url` 두 줄 다 설명에 안 보인다 |
+| D6 | 그 항목을 1위로 올리고 **Podium → Poster (Insta)** → 안내창의 **Open image ↗** | 썸네일(`__itemrep`)이 아니라 **원본(`__original`)** 이 새 탭에 열린다 |
 
 ## E. 원격 이미지 자동 저장
 
@@ -127,6 +129,7 @@ node tests/reset.mjs --yes    실행
 | E3 | `info.md` 의 6번 주소를 다른 그림으로 바꾸고 새로고침 | 다시 받아 파일이 바뀐다 |
 | E4 | 콘솔 확인 | BGG 항목은 저장 실패하지만 화면 표시는 정상, 경고 1줄 |
 | E5 | BGG 주소가 많은 주제를 연다 | 요청이 몇 개에서 멈춘다 |
+| E6 | 주소가 적힌 항목의 그림을 `topics/images/` 에 **직접** 넣고 재연결 | 그 파일이 그대로 쓰이고, 주소로 다시 받아 덮어쓰지 않는다 |
 
 ## F. 포스터 저장 안내 ★
 

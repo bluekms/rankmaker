@@ -77,6 +77,7 @@ vm.runInContext(scripts.join("\n;\n"), ctx, { filename: "index.html" });
 // const/let 로 선언된 것은 전역 객체의 속성이 아니므로 컨텍스트 안에서 평가해 꺼낸다
 const app = name => vm.runInContext(name, ctx);
 const parseInfo = app("parseInfo"), thumbOf = app("thumbOf"), isMetaLine = app("isMetaLine");
+const podiumOf = app("podiumOf");
 const IMG_EXT = app("IMG_EXT"), IMAGES_DIR = app("IMAGES_DIR"), PODIUM_RE = app("PODIUM_RE");
 
 /* ---------- 조촐한 테스트 러너 ---------- */
@@ -199,6 +200,13 @@ describe("ex_image_source — 시나리오 준비물", () => {
   ok("CORS 를 주지 않는 호스트 항목", (src("5 주소 CORS 미허용.jpg") || "").includes("cf.geekdo-images.com"));
   ok("CORS 를 주는 호스트 항목", (src("6 주소 CORS 허용.png") || "").includes("raw.githubusercontent.com"));
   ok("그 주소는 이미지 확장자로 끝난다", /\.png$/i.test(src("6 주소 CORS 허용.png") || ""));
+
+  // 5번은 화면용 썸네일과 포스터용 원본을 따로 갖는 항목이다 (시나리오 D5·D6)
+  const five = "5 주소 CORS 미허용.jpg";
+  ok("5번 화면 썸네일은 축소본", /__itemrep/.test(src(five) || ""));
+  ok("5번 포스터 원본은 원본", /__original/.test(podiumOf(ex.info.items[five]) || ""));
+  ok("둘은 서로 다른 주소다", src(five) !== podiumOf(ex.info.items[five]));
+  ok("6번은 원본을 따로 적지 않아도 된다", podiumOf(ex.info.items["6 주소 CORS 허용.png"]) === src("6 주소 CORS 허용.png"));
 
   /* 저장이 없을 때의 표시 순서는 파일명 순이다(loadTopic).
      Poster(Insta)는 상위 3개만 쓰므로 그 셋은 모두 그림이 있어야 한다.
@@ -637,6 +645,32 @@ describe("thumbOf", () => {
   it("이미지가 아닌 주소는 무시", thumbOf(L("https://boardgamegeek.com/boardgame/416059/gardlings")), null);
   it("주소가 없으면 null", thumbOf(L("👥 인원: 1 ~ 4")), null);
   it("빈 입력", thumbOf(null), null);
+});
+
+/* ================= 썸네일 / 포스터 원본 갈라 쓰기 ================= */
+describe("podiumOf — 화면은 썸네일, 포스터는 원본", () => {
+  const L = (...xs) => xs.map(text => ({ text, extra: false }));
+  const both = L("thumbnail-url: https://a.com/small.jpg", "podium-url: https://a.com/big.jpg");
+  it("둘 다 있으면 화면은 썸네일", thumbOf(both), "https://a.com/small.jpg");
+  it("둘 다 있으면 포스터는 원본", podiumOf(both), "https://a.com/big.jpg");
+
+  const order = L("podium-url: https://a.com/big.jpg", "thumbnail-url: https://a.com/small.jpg");
+  it("적은 순서가 뒤바뀌어도 같다", [thumbOf(order), podiumOf(order)],
+    ["https://a.com/small.jpg", "https://a.com/big.jpg"]);
+
+  const onlyPodium = L("podium-url: https://a.com/big.jpg");
+  it("원본만 있으면 화면에도 그것을 쓴다", thumbOf(onlyPodium), "https://a.com/big.jpg");
+  it("원본만 있으면 포스터도 그것", podiumOf(onlyPodium), "https://a.com/big.jpg");
+
+  const onlyThumb = L("thumbnail-url: https://a.com/small.jpg");
+  it("썸네일만 있으면 포스터도 그것으로 갈음", podiumOf(onlyThumb), "https://a.com/small.jpg");
+
+  it("라벨 없는 주소는 지금까지처럼 썸네일", thumbOf(L("https://a.com/x.jpg")), "https://a.com/x.jpg");
+  it("라벨 없는 주소만 있으면 포스터도 그것", podiumOf(L("https://a.com/x.jpg")), "https://a.com/x.jpg");
+  it("대소문자·등호 표기도 원본으로 본다",
+    podiumOf(L("thumbnail-url: https://a.com/s.jpg", "Podium-URL= https://a.com/b.jpg")), "https://a.com/b.jpg");
+  it("주소가 없으면 null", podiumOf(L("👥 인원: 1 ~ 4")), null);
+  ok("원본 줄도 설명에서 감춘다", isMetaLine("podium-url: https://a.com/big.jpg"));
 });
 
 /* ================= 포스터 이미지 판정 ================= */
