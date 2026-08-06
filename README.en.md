@@ -8,6 +8,9 @@
 > What is special here: **the pictures are not stored in the repository.**
 > Each item carries a BGG image URL in `info.md`, so they display normally;
 > you only fetch files when exporting a poster — see [Attaching pictures by URL](docs/image-url.en.md).
+>
+> There are two URLs per item: **`thumbnail-url:`** is the small one for the screen (under 500px), which keeps
+> a several-hundred-item topic light to open, and **`podium-url:`** is the full-size original for the poster.
 
 ## Topics inside
 
