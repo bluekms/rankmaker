@@ -13,7 +13,8 @@
 + ♟️ 디자이너: R. Eric Reuss
 + 🎨 아티스트: Kat G Birmelin, Shawn Daley, Lucas Durham, Emily Hancock, Jorge Ramos, Moro Rogers, Damon Westenhofer, Joshua Wright (I)
 + 🔗 https://boardgamegeek.com/boardgameexpansion/262722/spirit-island-jagged-earth
-+ thumbnail-url: https://cf.geekdo-images.com/zpJWXV6NH8layu6mp4tPKQ__original/img/qI4bslEHcc7XiTTTU3dJ9a0BRtc=/0x0/filters:format(jpeg)/pic7825275.jpg
++ thumbnail-url: https://cf.geekdo-images.com/zpJWXV6NH8layu6mp4tPKQ__medium/img/Ccs7MQGyLClXH91KmuXXe4yjS0o=/fit-in/500x500/filters:no_upscale():strip_icc()/pic7825275.jpg
++ podium-url: https://cf.geekdo-images.com/zpJWXV6NH8layu6mp4tPKQ__original/img/qI4bslEHcc7XiTTTU3dJ9a0BRtc=/0x0/filters:format(jpeg)/pic7825275.jpg
 
 # 정령섬 자연의 화신.png
 - 👥 인원: 1 ~ 6 (2인 베스트)
@@ -24,7 +25,8 @@
 + ♟️ 디자이너: R. Eric Reuss
 + 🎨 아티스트: Agnieszka Dabrowiecka, Katherine Guevara, Emily Hancock, SaRae Henderson, Darrell Louder, David Markiwsky, Nolan Nasser
 + 🔗 https://boardgamegeek.com/boardgameexpansion/365137/spirit-island-nature-incarnate
-+ thumbnail-url: https://cf.geekdo-images.com/hE1lnC_WJ4TFDkmjpucUbQ__original/img/Fc4tFMGEwr2vM7HDmghA1YxM6I0=/0x0/filters:format(png)/pic8114391.png
++ thumbnail-url: https://cf.geekdo-images.com/hE1lnC_WJ4TFDkmjpucUbQ__medium/img/uJ5tAAMNV59MapchzeV3r90jO00=/fit-in/500x500/filters:no_upscale():strip_icc()/pic8114391.png
++ podium-url: https://cf.geekdo-images.com/hE1lnC_WJ4TFDkmjpucUbQ__original/img/Fc4tFMGEwr2vM7HDmghA1YxM6I0=/0x0/filters:format(png)/pic8114391.png
 
 # 정령섬 깃털과 화염.jpg
 - 👥 인원: 1 ~ 4 (2인 베스트)
@@ -35,7 +37,8 @@
 + ♟️ 디자이너: R. Eric Reuss
 + 🎨 아티스트: Nolan Nasser, Jorge Ramos
 + 🔗 https://boardgamegeek.com/boardgameexpansion/356510/spirit-island-feather-and-flame
-+ thumbnail-url: https://cf.geekdo-images.com/pj16t5oYcSnd4UK1HVbKwQ__original/img/ND4fk03hdv4UmZXlLnyim7RvnN0=/0x0/filters:format(jpeg)/pic7126074.jpg
++ thumbnail-url: https://cf.geekdo-images.com/pj16t5oYcSnd4UK1HVbKwQ__medium/img/pNGqUANAdyo0PNSVCRCc-HUYXXk=/fit-in/500x500/filters:no_upscale():strip_icc()/pic7126074.jpg
++ podium-url: https://cf.geekdo-images.com/pj16t5oYcSnd4UK1HVbKwQ__original/img/ND4fk03hdv4UmZXlLnyim7RvnN0=/0x0/filters:format(jpeg)/pic7126074.jpg
 
 # 정령섬 가지와 발톱.jpg
 - 👥 인원: 1 ~ 4 (2인 베스트)
@@ -46,7 +49,8 @@
 + ♟️ 디자이너: R. Eric Reuss
 + 🎨 아티스트: Jason Behnke, Loïc Billiau, Kat G Birmelin, Cari Corene, Lucas Durham, Rocky Hammer, Sydni Kruger, Nolan Nasser, Jorge Ramos, Adam Rebottaro, Moro Rogers, Graham Sternberg, Shane Tyree, Joshua Wright (I)
 + 🔗 https://boardgamegeek.com/boardgameexpansion/193065/spirit-island-branch-and-claw
-+ thumbnail-url: https://cf.geekdo-images.com/l1k4gxERlIuhCNIn3TPU_g__original/img/IfWWkvqshUOSNPCOqjX7tP_iP0g=/0x0/filters:format(jpeg)/pic7010668.jpg
++ thumbnail-url: https://cf.geekdo-images.com/l1k4gxERlIuhCNIn3TPU_g__medium/img/Syp0XeSCepqn5jQQY2QcdrhYyqM=/fit-in/500x500/filters:no_upscale():strip_icc()/pic7010668.jpg
++ podium-url: https://cf.geekdo-images.com/l1k4gxERlIuhCNIn3TPU_g__original/img/IfWWkvqshUOSNPCOqjX7tP_iP0g=/0x0/filters:format(jpeg)/pic7010668.jpg
 
 # 크툴루 죽음마저 죽으리니 - 시즌 4 확장팩.png
 - 👥 인원: 1 ~ 5 (2인 베스트)
@@ -57,7 +61,8 @@
 + ♟️ 디자이너: Rob Daviau, Marco Portugal
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgameexpansion/374590/cthulhu-death-may-die-season-4-expansion
-+ thumbnail-url: https://cf.geekdo-images.com/Jvkw1yX7W9PH1BBLsbxzmQ__original/img/rQJmMx_ISHA8CEpSk5TI26f8LHs=/0x0/filters:format(png)/pic9712887.png
++ thumbnail-url: https://cf.geekdo-images.com/Jvkw1yX7W9PH1BBLsbxzmQ__medium/img/pO53AbhNEa8kpvVXnckxtPy6KW4=/fit-in/500x500/filters:no_upscale():strip_icc()/pic9712887.png
++ podium-url: https://cf.geekdo-images.com/Jvkw1yX7W9PH1BBLsbxzmQ__original/img/rQJmMx_ISHA8CEpSk5TI26f8LHs=/0x0/filters:format(png)/pic9712887.png
 
 # 크툴루 죽음마저 죽으리니 - 알 수 없는 상자.png
 - 👥 인원: 1 ~ 5 (2~3인 베스트)
@@ -68,7 +73,8 @@
 + ♟️ 디자이너: Rob Daviau, Marco Portugal
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgameexpansion/375366/cthulhu-death-may-die-unknowable-box
-+ thumbnail-url: https://cf.geekdo-images.com/2pX0cQ3q9Wyy1cR9-Lg7dw__original/img/SkBeqDdJbIAJidLB2n0E6Qmchz0=/0x0/filters:format(png)/pic7491904.png
++ thumbnail-url: https://cf.geekdo-images.com/2pX0cQ3q9Wyy1cR9-Lg7dw__medium/img/PacQvalt6vmnwvrUkijsS9GP3zI=/fit-in/500x500/filters:no_upscale():strip_icc()/pic7491904.png
++ podium-url: https://cf.geekdo-images.com/2pX0cQ3q9Wyy1cR9-Lg7dw__original/img/SkBeqDdJbIAJidLB2n0E6Qmchz0=/0x0/filters:format(png)/pic7491904.png
 
 # 정령섬 섬 아래 잠자는 뱀 들불의 심장 프로모.jpg
 - 👥 인원: 1 ~ 4 (2인 베스트)
@@ -79,7 +85,8 @@
 + ♟️ 디자이너: R. Eric Reuss
 + 🎨 아티스트: Nolan Nasser, Jorge Ramos
 + 🔗 https://boardgamegeek.com/boardgameexpansion/232394/spirit-island-promo-pack-1
-+ thumbnail-url: https://cf.geekdo-images.com/FV8X1IeL5ejAXnzt5unNZg__original/img/1yAy4WrwCyhtAvfv2SqgM1z6wLk=/0x0/filters:format(jpeg)/pic3726021.jpg
++ thumbnail-url: https://cf.geekdo-images.com/FV8X1IeL5ejAXnzt5unNZg__medium/img/dZlnKvhzDHoIczS80xUSXNKQTTk=/fit-in/500x500/filters:no_upscale():strip_icc()/pic3726021.jpg
++ podium-url: https://cf.geekdo-images.com/FV8X1IeL5ejAXnzt5unNZg__original/img/1yAy4WrwCyhtAvfv2SqgM1z6wLk=/0x0/filters:format(jpeg)/pic3726021.jpg
 
 # 헤게모니 당신의 사회 계층을 승리로 이끄세요.jpg
 - 👥 인원: 1 ~ 4 (4인 베스트)
@@ -89,7 +96,8 @@
 + ♟️ 디자이너: Vangelis Bagiartakis, Varnavas Timotheou
 + 🎨 아티스트: Jakub Skop
 + 🔗 https://boardgamegeek.com/boardgame/406767/hegemony-lead-your-class-to-victory-extended-editi
-+ thumbnail-url: https://cf.geekdo-images.com/E-iBB-oZKIxrQQX7pbdiMg__original/img/AQBkn4Qof_tVEqplEfzVRSU7ekY=/0x0/filters:format(jpeg)/pic7482447.jpg
++ thumbnail-url: https://cf.geekdo-images.com/E-iBB-oZKIxrQQX7pbdiMg__medium/img/Yfh2jQDn_ufWFZlNcubvsPbmTSk=/fit-in/500x500/filters:no_upscale():strip_icc()/pic7482447.jpg
++ podium-url: https://cf.geekdo-images.com/E-iBB-oZKIxrQQX7pbdiMg__original/img/AQBkn4Qof_tVEqplEfzVRSU7ekY=/0x0/filters:format(jpeg)/pic7482447.jpg
 
 # 마블 좀비 좀비사이드 게임 - 프로모 박스.jpg
 - 👥 인원: 1 ~ 6 (1, 4인 베스트)
@@ -100,7 +108,8 @@
 + ♟️ 디자이너: Fábio Cury, Michael Shinall
 + 🎨 아티스트: Marco Checchetto
 + 🔗 https://boardgamegeek.com/boardgameexpansion/356731/marvel-zombies-a-zombicide-game-promos-box
-+ thumbnail-url: https://cf.geekdo-images.com/WqM7tGz2d6FAOs_57-s8wQ__original/img/bIh2Xaa5oIogiopNrjSHXmAaqa4=/0x0/filters:format(jpeg)/pic6673842.jpg
++ thumbnail-url: https://cf.geekdo-images.com/WqM7tGz2d6FAOs_57-s8wQ__medium/img/w8rOw6hi05S6bryuYGgQB8Ev_PE=/fit-in/500x500/filters:no_upscale():strip_icc()/pic6673842.jpg
++ podium-url: https://cf.geekdo-images.com/WqM7tGz2d6FAOs_57-s8wQ__original/img/bIh2Xaa5oIogiopNrjSHXmAaqa4=/0x0/filters:format(jpeg)/pic6673842.jpg
 
 # 크툴루 죽음마저 죽으리니 - 미지의 공포.png
 - 👥 인원: 1 ~ 5 (3인 베스트)
@@ -110,7 +119,8 @@
 + ♟️ 디자이너: Rob Daviau, Eric M. Lang, Marco Portugal
 + 🎨 아티스트: Helder Almeida, Nicolas Fructus, Stef Kopinski, Karl Kopinski, Prosper Tipaldi, Iwo Widulinski, Daniel Zrom
 + 🔗 https://boardgamegeek.com/boardgame/373600/cthulhu-death-may-die-fear-of-the-unknown
-+ thumbnail-url: https://cf.geekdo-images.com/asStsgtyfmFidfGwjrZv9A__original/img/OcWVltP0JuyjNaLLfd0dru16XtI=/0x0/filters:format(png)/pic7155574.png
++ thumbnail-url: https://cf.geekdo-images.com/asStsgtyfmFidfGwjrZv9A__medium/img/NLvnR0jbWnsLMbcw9Wzs-PYk3ec=/fit-in/500x500/filters:no_upscale():strip_icc()/pic7155574.png
++ podium-url: https://cf.geekdo-images.com/asStsgtyfmFidfGwjrZv9A__original/img/OcWVltP0JuyjNaLLfd0dru16XtI=/0x0/filters:format(png)/pic7155574.png
 
 # 크툴루 죽음마저 죽으리니 - 시즌 2 확장팩.png
 - 👥 인원: 1 ~ 5 (3인 베스트)
@@ -121,7 +131,8 @@
 + ♟️ 디자이너: Rob Daviau, Eric M. Lang
 + 🎨 아티스트: Nicolas Fructus, Karl Kopinski, Adrian Smith, Richard Wright
 + 🔗 https://boardgamegeek.com/boardgameexpansion/256972/cthulhu-death-may-die-season-2-expansion
-+ thumbnail-url: https://cf.geekdo-images.com/z7uDZDxXl6b71Hm3j0m44w__original/img/MWMYbT6Jb20r9Q_-atpYHraOGj0=/0x0/filters:format(png)/pic9712889.png
++ thumbnail-url: https://cf.geekdo-images.com/z7uDZDxXl6b71Hm3j0m44w__medium/img/IFq3SwH8hBfw_G5PZQZs_512hpY=/fit-in/500x500/filters:no_upscale():strip_icc()/pic9712889.png
++ podium-url: https://cf.geekdo-images.com/z7uDZDxXl6b71Hm3j0m44w__original/img/MWMYbT6Jb20r9Q_-atpYHraOGj0=/0x0/filters:format(png)/pic9712889.png
 
 # 크툴루 죽음마저 죽으리니 - 말할 수 없는 상자.png
 - 👥 인원: 1 ~ 5 (3인 베스트)
@@ -132,7 +143,8 @@
 + ♟️ 디자이너: Rob Daviau, Eric M. Lang
 + 🎨 아티스트: Karl Kopinski, Adrian Smith
 + 🔗 https://boardgamegeek.com/boardgameexpansion/256986/cthulhu-death-may-die-unspeakable-box
-+ thumbnail-url: https://cf.geekdo-images.com/2IrL_Ewi0NxeTTX7CAh_XQ__original/img/eRZzmaYKI1se9k_p5b7Ibl15IyI=/0x0/filters:format(png)/pic9712929.png
++ thumbnail-url: https://cf.geekdo-images.com/2IrL_Ewi0NxeTTX7CAh_XQ__medium/img/i6barol-Krf6klQvSwood8xbgSc=/fit-in/500x500/filters:no_upscale():strip_icc()/pic9712929.png
++ podium-url: https://cf.geekdo-images.com/2IrL_Ewi0NxeTTX7CAh_XQ__original/img/eRZzmaYKI1se9k_p5b7Ibl15IyI=/0x0/filters:format(png)/pic9712929.png
 
 # 크툴루 죽음마저 죽으리니 - 고대의 존재 이타쿠아.png
 - 👥 인원: 1 ~ 5 (2~3인 베스트)
@@ -143,7 +155,8 @@
 + ♟️ 디자이너: Rob Daviau, Marco Portugal
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgameexpansion/374971/cthulhu-death-may-die-ithaqua-the-wind-walker
-+ thumbnail-url: https://cf.geekdo-images.com/6_mW_z_8cgOS8WvHfinacA__original/img/wClBrmP10X8mcxc3VH4WrhZD2ZA=/0x0/filters:format(png)/pic9712907.png
++ thumbnail-url: https://cf.geekdo-images.com/6_mW_z_8cgOS8WvHfinacA__medium/img/s46Z3O3ffJOILiBlfN9BcliROdo=/fit-in/500x500/filters:no_upscale():strip_icc()/pic9712907.png
++ podium-url: https://cf.geekdo-images.com/6_mW_z_8cgOS8WvHfinacA__original/img/wClBrmP10X8mcxc3VH4WrhZD2ZA=/0x0/filters:format(png)/pic9712907.png
 
 # 마블 좀비 좀비사이드 게임 - 센티널 스트라이크.jpg
 - 👥 인원: 1 ~ 6 (1, 4인 베스트)
@@ -154,7 +167,8 @@
 + ♟️ 디자이너: Fábio Cury, Michael Shinall
 + 🎨 아티스트: Marco Checchetto
 + 🔗 https://boardgamegeek.com/boardgameexpansion/356435/marvel-zombies-a-zombicide-game-sentinel-strike
-+ thumbnail-url: https://cf.geekdo-images.com/XZWHItIhZo-UeJYGYXBMwg__original/img/BQQQnfatnRo_lHeWCK6VclUncjU=/0x0/filters:format(jpeg)/pic6667216.jpg
++ thumbnail-url: https://cf.geekdo-images.com/XZWHItIhZo-UeJYGYXBMwg__medium/img/ZnQkEA6eiG33VkAevjkIcwwKQoA=/fit-in/500x500/filters:no_upscale():strip_icc()/pic6667216.jpg
++ podium-url: https://cf.geekdo-images.com/XZWHItIhZo-UeJYGYXBMwg__original/img/BQQQnfatnRo_lHeWCK6VclUncjU=/0x0/filters:format(jpeg)/pic6667216.jpg
 
 # 마블 좀비 포식자 갤럭투스.jpg
 - 👥 인원: 1 ~ 6
@@ -165,7 +179,8 @@
 + ♟️ 디자이너: Fábio Cury, Michael Shinall
 + 🎨 아티스트: Marco Checchetto
 + 🔗 https://boardgamegeek.com/boardgameexpansion/355179/marvel-zombies-a-zombicide-game-galactus-the-devou
-+ thumbnail-url: https://cf.geekdo-images.com/2Ax6Mm-nevaxzSlGTgkmsg__original/img/7UmpiNh1gKKfktK5opfRMYVxDok=/0x0/filters:format(jpeg)/pic7523861.jpg
++ thumbnail-url: https://cf.geekdo-images.com/2Ax6Mm-nevaxzSlGTgkmsg__medium/img/ec0Wit44om0Uhh7mM24Nga1hbJI=/fit-in/500x500/filters:no_upscale():strip_icc()/pic7523861.jpg
++ podium-url: https://cf.geekdo-images.com/2Ax6Mm-nevaxzSlGTgkmsg__original/img/7UmpiNh1gKKfktK5opfRMYVxDok=/0x0/filters:format(jpeg)/pic7523861.jpg
 
 # 브라스 버밍엄.jpg
 - 👥 인원: 2 ~ 4 (3~4인 베스트)
@@ -175,7 +190,8 @@
 + ♟️ 디자이너: Gavan Brown, Matt Tolman, Martin Wallace
 + 🎨 아티스트: Gavan Brown, Lina Cossette, David Forest, Gui Landgraf, Damien Mammoliti, Mr. Cuddington, Matt Tolman
 + 🔗 https://boardgamegeek.com/boardgame/224517/brass-birmingham
-+ thumbnail-url: https://cf.geekdo-images.com/x3zxjr-Vw5iU4yDPg70Jgw__original/img/FpyxH41Y6_ROoePAilPNEhXnzO8=/0x0/filters:format(jpeg)/pic3490053.jpg
++ thumbnail-url: https://cf.geekdo-images.com/x3zxjr-Vw5iU4yDPg70Jgw__medium/img/9wVrtaYtTdh_FeISZkFa4wDEUrk=/fit-in/500x500/filters:no_upscale():strip_icc()/pic3490053.jpg
++ podium-url: https://cf.geekdo-images.com/x3zxjr-Vw5iU4yDPg70Jgw__original/img/FpyxH41Y6_ROoePAilPNEhXnzO8=/0x0/filters:format(jpeg)/pic3490053.jpg
 
 # 마블 좀비 좀비사이드 게임 - 하이드라 부활.jpg
 - 👥 인원: 1 ~ 6 (1, 4인 베스트)
@@ -186,7 +202,8 @@
 + ♟️ 디자이너: Fábio Cury, Michael Shinall
 + 🎨 아티스트: Marco Checchetto, Henning Ludvigsen
 + 🔗 https://boardgamegeek.com/boardgameexpansion/355979/marvel-zombies-a-zombicide-game-hydra-resurrection
-+ thumbnail-url: https://cf.geekdo-images.com/3Li5DgBVgbNx_TdqC8bvRw__original/img/ZeZLiKfGS1lgFSIlA7trs9kpPno=/0x0/filters:format(jpeg)/pic7177346.jpg
++ thumbnail-url: https://cf.geekdo-images.com/3Li5DgBVgbNx_TdqC8bvRw__medium/img/G_1Miz-3robwGPZi7s1Qvo-AdyI=/fit-in/500x500/filters:no_upscale():strip_icc()/pic7177346.jpg
++ podium-url: https://cf.geekdo-images.com/3Li5DgBVgbNx_TdqC8bvRw__original/img/ZeZLiKfGS1lgFSIlA7trs9kpPno=/0x0/filters:format(jpeg)/pic7177346.jpg
 
 # 크툴루 죽음마저 죽으리니 - 숲의 검은 염소.png
 - 👥 인원: 1 ~ 5 (2~3인 베스트)
@@ -197,7 +214,8 @@
 + ♟️ 디자이너: Rob Daviau, Eric M. Lang
 + 🎨 아티스트: Karl Kopinski, Adrian Smith
 + 🔗 https://boardgamegeek.com/boardgameexpansion/256988/cthulhu-death-may-die-black-goat-of-the-woods
-+ thumbnail-url: https://cf.geekdo-images.com/mk5F_VdfxbM_pViEBZAiQA__original/img/z1olcM3sLdkg7S0bUX_gpn9F7ps=/0x0/filters:format(png)/pic9712927.png
++ thumbnail-url: https://cf.geekdo-images.com/mk5F_VdfxbM_pViEBZAiQA__medium/img/KyiL4kk_Cs93OxV5BGIdaZt5TPc=/fit-in/500x500/filters:no_upscale():strip_icc()/pic9712927.png
++ podium-url: https://cf.geekdo-images.com/mk5F_VdfxbM_pViEBZAiQA__original/img/z1olcM3sLdkg7S0bUX_gpn9F7ps=/0x0/filters:format(png)/pic9712927.png
 
 # 매시브 다크니스 2 어둠의 인도자 팩.png
 - 👥 인원: 1 ~ 6 (2~4인 베스트)
@@ -208,7 +226,8 @@
 + ♟️ 디자이너: Alex Olteanu, Marco Portugal
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgameexpansion/318370/massive-darkness-2-darkbringer-pack
-+ thumbnail-url: https://cf.geekdo-images.com/wNoVEbeqCA3y5hZttaIobA__original/img/sTqlZTmmPuQocrcJ_C6BoXqyrIQ=/0x0/filters:format(png)/pic7278017.png
++ thumbnail-url: https://cf.geekdo-images.com/wNoVEbeqCA3y5hZttaIobA__medium/img/PdoKda_HiKQKpJNwMTjk81K_WLc=/fit-in/500x500/filters:no_upscale():strip_icc()/pic7278017.png
++ podium-url: https://cf.geekdo-images.com/wNoVEbeqCA3y5hZttaIobA__original/img/sTqlZTmmPuQocrcJ_C6BoXqyrIQ=/0x0/filters:format(png)/pic7278017.png
 
 # 마블 좀비 시니스터 식스 - 충돌.jpg
 - 👥 인원: 1 ~ 6
@@ -219,7 +238,8 @@
 + ♟️ 디자이너: Fábio Cury, Michael Shinall
 + 🎨 아티스트: Marco Checchetto
 + 🔗 https://boardgamegeek.com/boardgameexpansion/356524/marvel-zombies-a-zombicide-game-clash-of-the-sinis
-+ thumbnail-url: https://cf.geekdo-images.com/5xfU26DTgA-IDkBQeSdexw__original/img/qZoNHuAp3jkIqexA8ifKN_VdYtY=/0x0/filters:format(jpeg)/pic7177338.jpg
++ thumbnail-url: https://cf.geekdo-images.com/5xfU26DTgA-IDkBQeSdexw__medium/img/4n7H2P4UQxjOi71ZL9s7qvx-7Vo=/fit-in/500x500/filters:no_upscale():strip_icc()/pic7177338.jpg
++ podium-url: https://cf.geekdo-images.com/5xfU26DTgA-IDkBQeSdexw__original/img/qZoNHuAp3jkIqexA8ifKN_VdYtY=/0x0/filters:format(jpeg)/pic7177338.jpg
 
 # 마블 좀비 좀비사이드 게임 - 판타스틱 4 포화속에서.jpg
 - 👥 인원: 1 ~ 6
@@ -230,7 +250,8 @@
 + ♟️ 디자이너: Fábio Cury, Michael Shinall
 + 🎨 아티스트: Marco Checchetto, Henning Ludvigsen
 + 🔗 https://boardgamegeek.com/boardgameexpansion/355481/marvel-zombies-a-zombicide-game-fantastic-4-under
-+ thumbnail-url: https://cf.geekdo-images.com/yYv3BAfIWzbOIUF0dkBi2Q__original/img/EarPGcJe5Y76FNrdw86H4qB-05c=/0x0/filters:format(jpeg)/pic7177340.jpg
++ thumbnail-url: https://cf.geekdo-images.com/yYv3BAfIWzbOIUF0dkBi2Q__medium/img/JFsmZyWIsPOZo3XTMSTu1c2auyo=/fit-in/500x500/filters:no_upscale():strip_icc()/pic7177340.jpg
++ podium-url: https://cf.geekdo-images.com/yYv3BAfIWzbOIUF0dkBi2Q__original/img/EarPGcJe5Y76FNrdw86H4qB-05c=/0x0/filters:format(jpeg)/pic7177340.jpg
 
 # 서머너 워즈 클로크 종족 덱.png
 - 👥 인원: 2 (2인 베스트)
@@ -241,7 +262,8 @@
 + ♟️ 디자이너: Colby Dauch, J. Arthur Ellis
 + 🎨 아티스트: Martin Abel, Madison D. Johnson
 + 🔗 https://boardgamegeek.com/boardgameexpansion/348354/summoner-wars-second-edition-cloaks-faction-deck
-+ thumbnail-url: https://cf.geekdo-images.com/GrZzf34sIju2r2g_Oh2SBw__original/img/iLCuaZB_vuG0ftC3HcyTIBD8vow=/0x0/filters:format(png)/pic6432330.png
++ thumbnail-url: https://cf.geekdo-images.com/GrZzf34sIju2r2g_Oh2SBw__medium/img/1HsV9cWEOLzVDGwepLe3lf9mcaA=/fit-in/500x500/filters:no_upscale():strip_icc()/pic6432330.png
++ podium-url: https://cf.geekdo-images.com/GrZzf34sIju2r2g_Oh2SBw__original/img/iLCuaZB_vuG0ftC3HcyTIBD8vow=/0x0/filters:format(png)/pic6432330.png
 
 # 서머너 워즈 하늘창 조류족 종족 덱.png
 - 👥 인원: 2 (2인 베스트)
@@ -252,7 +274,8 @@
 + ♟️ 디자이너: Colby Dauch, J. Arthur Ellis
 + 🎨 아티스트: Martin Abel, Madison D. Johnson
 + 🔗 https://boardgamegeek.com/boardgameexpansion/348353/summoner-wars-second-edition-the-skyspear-avians-f
-+ thumbnail-url: https://cf.geekdo-images.com/vcVfeJNL-3hrPSiNSQKpAQ__original/img/m9V6wxox7-joqByMdIq_1x5xrdo=/0x0/filters:format(png)/pic6432313.png
++ thumbnail-url: https://cf.geekdo-images.com/vcVfeJNL-3hrPSiNSQKpAQ__medium/img/bh7nU3Lpsh1RJFNSjAopZCa9WpY=/fit-in/500x500/filters:no_upscale():strip_icc()/pic6432313.png
++ podium-url: https://cf.geekdo-images.com/vcVfeJNL-3hrPSiNSQKpAQ__original/img/m9V6wxox7-joqByMdIq_1x5xrdo=/0x0/filters:format(png)/pic6432313.png
 
 # 마블 좀비 엑스맨 레지스탕스.jpg
 - 👥 인원: 1 ~ 6 (1~2, 4인 베스트)
@@ -262,7 +285,8 @@
 + ♟️ 디자이너: Fábio Cury, Michael Shinall
 + 🎨 아티스트: Marco Checchetto, Henning Ludvigsen
 + 🔗 https://boardgamegeek.com/boardgame/355200/marvel-zombies-x-men-resistance
-+ thumbnail-url: https://cf.geekdo-images.com/fSkaoBXcVmw2Iyme-niJaQ__original/img/ZXfKl1AIqzIcJ5gayrsL8W1P6EY=/0x0/filters:format(jpeg)/pic7177337.jpg
++ thumbnail-url: https://cf.geekdo-images.com/fSkaoBXcVmw2Iyme-niJaQ__medium/img/l_7qAtatihDLQHVwoQ0qKiKA0QY=/fit-in/500x500/filters:no_upscale():strip_icc()/pic7177337.jpg
++ podium-url: https://cf.geekdo-images.com/fSkaoBXcVmw2Iyme-niJaQ__original/img/ZXfKl1AIqzIcJ5gayrsL8W1P6EY=/0x0/filters:format(jpeg)/pic7177337.jpg
 
 # 서머너 워즈 균류 드워프 종족 덱.png
 - 👥 인원: 2 (2인 베스트)
@@ -273,7 +297,8 @@
 + ♟️ 디자이너: Colby Dauch
 + 🎨 아티스트: Martin Abel
 + 🔗 https://boardgamegeek.com/boardgameexpansion/361330/summoner-wars-second-edition-fungal-dwarves-factio
-+ thumbnail-url: https://cf.geekdo-images.com/MWoLL-mmT7YhjG6YcwQY1g__original/img/qqXM1OxyMz7RQVES0U290LUcSKY=/0x0/filters:format(png)/pic6851881.png
++ thumbnail-url: https://cf.geekdo-images.com/MWoLL-mmT7YhjG6YcwQY1g__medium/img/LOCagbEnFeZ86NeCb0YY1YdZ-2Q=/fit-in/500x500/filters:no_upscale():strip_icc()/pic6851881.png
++ podium-url: https://cf.geekdo-images.com/MWoLL-mmT7YhjG6YcwQY1g__original/img/qqXM1OxyMz7RQVES0U290LUcSKY=/0x0/filters:format(png)/pic6851881.png
 
 # 서머너 워즈 모래 고블린 종족팩.png
 - 👥 인원: 2 (2인 베스트)
@@ -284,7 +309,8 @@
 + ♟️ 디자이너: Colby Dauch
 + 🎨 아티스트: Martin Abel
 + 🔗 https://boardgamegeek.com/boardgameexpansion/370268/summoner-wars-second-edition-sand-goblins-faction
-+ thumbnail-url: https://cf.geekdo-images.com/GO4-N8v7zr8SiqSUDLzV0A__original/img/mpgjTSIlcbce7YgISxtv5hGncEw=/0x0/filters:format(png)/pic7075977.png
++ thumbnail-url: https://cf.geekdo-images.com/GO4-N8v7zr8SiqSUDLzV0A__medium/img/zbd8liOaj5kvY4VgfJfnL9w3VvA=/fit-in/500x500/filters:no_upscale():strip_icc()/pic7075977.png
++ podium-url: https://cf.geekdo-images.com/GO4-N8v7zr8SiqSUDLzV0A__original/img/mpgjTSIlcbce7YgISxtv5hGncEw=/0x0/filters:format(png)/pic7075977.png
 
 # 좀비사이드 그린호드 호드박스.jpg
 - 👥 인원: 1 ~ 6 (3~4인 베스트)
@@ -295,7 +321,8 @@
 + ♟️ 디자이너: Raphaël Guiton, Jean-Baptiste Lullien, Nicolas Raoult
 + 🎨 아티스트: Jérémy Masson
 + 🔗 https://boardgamegeek.com/boardgameexpansion/250534/zombicide-green-horde-horde-box
-+ thumbnail-url: https://cf.geekdo-images.com/65rylqjtA5nWlsmWGGEBZg__original/img/dsFkjTYHP5jIedxv0bS6dU-9WDo=/0x0/filters:format(jpeg)/pic4218026.jpg
++ thumbnail-url: https://cf.geekdo-images.com/65rylqjtA5nWlsmWGGEBZg__medium/img/RvTAawejfwHtjMw1fTH49Kl9FJQ=/fit-in/500x500/filters:no_upscale():strip_icc()/pic4218026.jpg
++ podium-url: https://cf.geekdo-images.com/65rylqjtA5nWlsmWGGEBZg__original/img/dsFkjTYHP5jIedxv0bS6dU-9WDo=/0x0/filters:format(jpeg)/pic4218026.jpg
 
 # 서머너 워즈 늪지대 오크 종족 덱.png
 - 👥 인원: 2 (2인 베스트)
@@ -306,7 +333,8 @@
 + ♟️ 디자이너: Colby Dauch
 + 🎨 아티스트: Martin Abel
 + 🔗 https://boardgamegeek.com/boardgameexpansion/378469/summoner-wars-second-edition-swamp-orcs-faction-de
-+ thumbnail-url: https://cf.geekdo-images.com/yPR67kF4MADdz3ghJM3W4Q__original/img/L_LnUP7xLP8CWOX0rd0ZZgp7Yqk=/0x0/filters:format(png)/pic7385934.png
++ thumbnail-url: https://cf.geekdo-images.com/yPR67kF4MADdz3ghJM3W4Q__medium/img/1wZIFCgQ32HSeXYFP-MqDs27vyQ=/fit-in/500x500/filters:no_upscale():strip_icc()/pic7385934.png
++ podium-url: https://cf.geekdo-images.com/yPR67kF4MADdz3ghJM3W4Q__original/img/L_LnUP7xLP8CWOX0rd0ZZgp7Yqk=/0x0/filters:format(png)/pic7385934.png
 
 # 좀비사이드 (2판) 리부트 박스.jpg
 - 👥 인원: 1 ~ 6
@@ -317,7 +345,8 @@
 + ♟️ 디자이너: Raphaël Guiton, Jean-Baptiste Lullien, Nicolas Raoult
 + 🎨 아티스트: Édouard Guiton, Saeed Jalabi, Giorgia Lanza, Jérémy Masson, Eric Nouhaut, Dany Orizio
 + 🔗 https://boardgamegeek.com/boardgameexpansion/336637/zombicide-2nd-edition-reboot-box
-+ thumbnail-url: https://cf.geekdo-images.com/khnBypDsEpTV73sfuuvaBQ__original/img/j8ZuaNjeWbU0ITaM6vpZzlwoKYE=/0x0/filters:format(jpeg)/pic7476078.jpg
++ thumbnail-url: https://cf.geekdo-images.com/khnBypDsEpTV73sfuuvaBQ__medium/img/ZVSBxzg4lG4d3MTHz-jcnLD29sg=/fit-in/500x500/filters:no_upscale():strip_icc()/pic7476078.jpg
++ podium-url: https://cf.geekdo-images.com/khnBypDsEpTV73sfuuvaBQ__original/img/j8ZuaNjeWbU0ITaM6vpZzlwoKYE=/0x0/filters:format(jpeg)/pic7476078.jpg
 
 # 앙크 이집트의 신들 - 불가사의 무덤.jpg
 - 👥 인원: 2 ~ 5 (2, 4인 베스트)
@@ -328,7 +357,8 @@
 + ♟️ 디자이너: Eric M. Lang
 + 🎨 아티스트: Adrian Smith
 + 🔗 https://boardgamegeek.com/boardgameexpansion/308966/ankh-gods-of-egypt-tomb-of-wonders
-+ thumbnail-url: https://cf.geekdo-images.com/5iv7MvXuuUsdd03SamF4Pw__original/img/uQPeIaumxwHK_mQiwP_GGG-U7M8=/0x0/filters:format(jpeg)/pic6614659.jpg
++ thumbnail-url: https://cf.geekdo-images.com/5iv7MvXuuUsdd03SamF4Pw__medium/img/-F-53yC5of5qoatAA4rvjfffGYU=/fit-in/500x500/filters:no_upscale():strip_icc()/pic6614659.jpg
++ podium-url: https://cf.geekdo-images.com/5iv7MvXuuUsdd03SamF4Pw__original/img/uQPeIaumxwHK_mQiwP_GGG-U7M8=/0x0/filters:format(jpeg)/pic6614659.jpg
 
 # 서머너 워즈 영원한 의회 종족 덱.png
 - 👥 인원: 2 (2인 베스트)
@@ -339,7 +369,8 @@
 + ♟️ 디자이너: Colby Dauch
 + 🎨 아티스트: Martin Abel
 + 🔗 https://boardgamegeek.com/boardgameexpansion/361382/summoner-wars-second-edition-eternal-council-facti
-+ thumbnail-url: https://cf.geekdo-images.com/E6_NUFQICnZJTiPIEHAWXw__original/img/v7hK8u5PcdgQil1hEqTmt_1W_vA=/0x0/filters:format(png)/pic6851882.png
++ thumbnail-url: https://cf.geekdo-images.com/E6_NUFQICnZJTiPIEHAWXw__medium/img/9ThDmGR2xs5QWdMVbcPc7NyoQ4w=/fit-in/500x500/filters:no_upscale():strip_icc()/pic6851882.png
++ podium-url: https://cf.geekdo-images.com/E6_NUFQICnZJTiPIEHAWXw__original/img/v7hK8u5PcdgQil1hEqTmt_1W_vA=/0x0/filters:format(png)/pic6851882.png
 
 # 매시브 다크니스 2 천상의 몰락.png
 - 👥 인원: 1 ~ 6 (1~3인 베스트)
@@ -350,7 +381,8 @@
 + ♟️ 디자이너: Alex Olteanu, Marco Portugal
 + 🎨 아티스트: Édouard Guiton
 + 🔗 https://boardgamegeek.com/boardgameexpansion/317844/massive-darkness-2-heavenfall
-+ thumbnail-url: https://cf.geekdo-images.com/fLX8MlX3-xIKBbJfcoCDkw__original/img/jzY9oTUE1OKrVRAdNSvv_t3L_Io=/0x0/filters:format(png)/pic6107855.png
++ thumbnail-url: https://cf.geekdo-images.com/fLX8MlX3-xIKBbJfcoCDkw__medium/img/hQ6Ir1oA_sdcLNiYIZPSZdPNnUU=/fit-in/500x500/filters:no_upscale():strip_icc()/pic6107855.png
++ podium-url: https://cf.geekdo-images.com/fLX8MlX3-xIKBbJfcoCDkw__original/img/jzY9oTUE1OKrVRAdNSvv_t3L_Io=/0x0/filters:format(png)/pic6107855.png
 
 # 얼티밋 레일로드.jpg
 - 👥 인원: 1 ~ 4 (2인 베스트)
@@ -360,7 +392,8 @@
 + ♟️ 디자이너: Helmut Ohley, Leonhard "Lonny" Orgler
 + 🎨 아티스트: Martin Hoffmann, Claus Stephan
 + 🔗 https://boardgamegeek.com/boardgame/329591/ultimate-railroads
-+ thumbnail-url: https://cf.geekdo-images.com/zwAQWL7YfL8kC5Bgp67soQ__original/img/EFELpTEE1l-Vn_5ZqYSS5jmMxlc=/0x0/filters:format(jpeg)/pic6378170.jpg
++ thumbnail-url: https://cf.geekdo-images.com/zwAQWL7YfL8kC5Bgp67soQ__medium/img/BPg2Ig967WzUDChwbHkbxtkclxc=/fit-in/500x500/filters:no_upscale():strip_icc()/pic6378170.jpg
++ podium-url: https://cf.geekdo-images.com/zwAQWL7YfL8kC5Bgp67soQ__original/img/EFELpTEE1l-Vn_5ZqYSS5jmMxlc=/0x0/filters:format(jpeg)/pic6378170.jpg
 
 # 마블 좀비 좀비사이드 게임 - 가디언즈 오브 갤럭시 세트.jpg
 - 👥 인원: 1 ~ 6
@@ -371,7 +404,8 @@
 + ♟️ 디자이너: Fábio Cury, Michael Shinall
 + 🎨 아티스트: Marco Checchetto
 + 🔗 https://boardgamegeek.com/boardgameexpansion/355817/marvel-zombies-a-zombicide-game-guardians-of-the-g
-+ thumbnail-url: https://cf.geekdo-images.com/JGEVDrwcolHhpPQLQF-AHA__original/img/nuQjr_HT7juJlLUL15TyeVkh73c=/0x0/filters:format(jpeg)/pic7177342.jpg
++ thumbnail-url: https://cf.geekdo-images.com/JGEVDrwcolHhpPQLQF-AHA__medium/img/QuqzvFWnlxBaoNvnWANn5Am0fuI=/fit-in/500x500/filters:no_upscale():strip_icc()/pic7177342.jpg
++ podium-url: https://cf.geekdo-images.com/JGEVDrwcolHhpPQLQF-AHA__original/img/nuQjr_HT7juJlLUL15TyeVkh73c=/0x0/filters:format(jpeg)/pic7177342.jpg
 
 # 정령섬.jpg
 - 👥 인원: 1 ~ 4 (2인 베스트)
@@ -381,7 +415,8 @@
 + ♟️ 디자이너: R. Eric Reuss
 + 🎨 아티스트: Jason Behnke, Loïc Berger, Loïc Billiau, Kat G Birmelin, Cari Corene, Lucas Durham, Rocky Hammer, Sydni Kruger, Nolan Nasser, Jorge Ramos, Adam Rebottaro, Moro Rogers, Graham Sternberg, Shane Tyree, Joshua Wright (I)
 + 🔗 https://boardgamegeek.com/boardgame/162886/spirit-island
-+ thumbnail-url: https://cf.geekdo-images.com/kjCm4ZvPjIZxS-mYgSPy1g__original/img/9uLd9C3XAvInLCLhAoXqKVk56zs=/0x0/filters:format(jpeg)/pic7013651.jpg
++ thumbnail-url: https://cf.geekdo-images.com/kjCm4ZvPjIZxS-mYgSPy1g__medium/img/U5zCLCtEBtWesWamBAqCYEge8ao=/fit-in/500x500/filters:no_upscale():strip_icc()/pic7013651.jpg
++ podium-url: https://cf.geekdo-images.com/kjCm4ZvPjIZxS-mYgSPy1g__original/img/9uLd9C3XAvInLCLhAoXqKVk56zs=/0x0/filters:format(jpeg)/pic7013651.jpg
 
 # 서머너 워즈 그림자 엘프 종족 덱.png
 - 👥 인원: 2 (2인 베스트)
@@ -392,7 +427,8 @@
 + ♟️ 디자이너: Colby Dauch
 + 🎨 아티스트: Martin Abel
 + 🔗 https://boardgamegeek.com/boardgameexpansion/375413/summoner-wars-second-edition-shadow-elves-faction
-+ thumbnail-url: https://cf.geekdo-images.com/ziIB3qE6pk16j3zk2qq6Sw__original/img/fVgbd3wz1HBBqQxdXT4qypetHNg=/0x0/filters:format(png)/pic7269055.png
++ thumbnail-url: https://cf.geekdo-images.com/ziIB3qE6pk16j3zk2qq6Sw__medium/img/pxxuIGT4S0-I-I_9mQ1qJYi3sxY=/fit-in/500x500/filters:no_upscale():strip_icc()/pic7269055.png
++ podium-url: https://cf.geekdo-images.com/ziIB3qE6pk16j3zk2qq6Sw__original/img/fVgbd3wz1HBBqQxdXT4qypetHNg=/0x0/filters:format(png)/pic7269055.png
 
 # 서머너 워즈 흑요석 드워프 종족팩.png
 - 👥 인원: 2 (2인 베스트)
@@ -403,7 +439,8 @@
 + ♟️ 디자이너: Colby Dauch
 + 🎨 아티스트: Martin Abel
 + 🔗 https://boardgamegeek.com/boardgameexpansion/370269/summoner-wars-second-edition-obsidian-dwarves-fact
-+ thumbnail-url: https://cf.geekdo-images.com/k7BejCD_f5F5A5gk5iOwyg__original/img/SO6LhKHjstz75yj6ZuplFsu2eXA=/0x0/filters:format(png)/pic7075968.png
++ thumbnail-url: https://cf.geekdo-images.com/k7BejCD_f5F5A5gk5iOwyg__medium/img/176yo0XmO18dtklphdfrIHxu0wI=/fit-in/500x500/filters:no_upscale():strip_icc()/pic7075968.png
++ podium-url: https://cf.geekdo-images.com/k7BejCD_f5F5A5gk5iOwyg__original/img/SO6LhKHjstz75yj6ZuplFsu2eXA=/0x0/filters:format(png)/pic7075968.png
 
 # 서머너 워즈 하이 엘프 종족 덱.png
 - 👥 인원: 2 (2인 베스트)
@@ -414,7 +451,8 @@
 + ♟️ 디자이너: Colby Dauch
 + 🎨 아티스트: Martin Abel
 + 🔗 https://boardgamegeek.com/boardgameexpansion/378470/summoner-wars-second-edition-high-elves-faction-de
-+ thumbnail-url: https://cf.geekdo-images.com/mhm_Q1zmVwckmFRT4QUtfw__original/img/-3gyl3SbyAp5Zu7nbbQpEIqL8fA=/0x0/filters:format(png)/pic7385935.png
++ thumbnail-url: https://cf.geekdo-images.com/mhm_Q1zmVwckmFRT4QUtfw__medium/img/y1EasWG0F7V1xy4aqLVu6Hq3x7w=/fit-in/500x500/filters:no_upscale():strip_icc()/pic7385935.png
++ podium-url: https://cf.geekdo-images.com/mhm_Q1zmVwckmFRT4QUtfw__original/img/-3gyl3SbyAp5Zu7nbbQpEIqL8fA=/0x0/filters:format(png)/pic7385935.png
 
 # 매시브 다크니스 2 종말의 네 기수.png
 - 👥 인원: 1 ~ 6
@@ -425,7 +463,8 @@
 + ♟️ 디자이너: Alex Olteanu, Marco Portugal
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgameexpansion/317946/massive-darkness-2-enemy-box-four-horsemen
-+ thumbnail-url: https://cf.geekdo-images.com/gfmOV_4sSJUTmJ9EqWkMYA__original/img/Ohf057oDjQ9CzB0x5AICV6zcYEM=/0x0/filters:format(png)/pic6107859.png
++ thumbnail-url: https://cf.geekdo-images.com/gfmOV_4sSJUTmJ9EqWkMYA__medium/img/DygXcdPZ_869JhwQiuqeP1VBJkw=/fit-in/500x500/filters:no_upscale():strip_icc()/pic6107859.png
++ podium-url: https://cf.geekdo-images.com/gfmOV_4sSJUTmJ9EqWkMYA__original/img/Ohf057oDjQ9CzB0x5AICV6zcYEM=/0x0/filters:format(png)/pic6107859.png
 
 # 좀비사이드 (2판) 도시 전설 어보미네이션팩.jpg
 - 👥 인원: 1 ~ 6 (3인 베스트)
@@ -436,7 +475,8 @@
 + ♟️ 디자이너: Raphaël Guiton, Jean-Baptiste Lullien, Nicolas Raoult
 + 🎨 아티스트: Édouard Guiton, Eric Nouhaut
 + 🔗 https://boardgamegeek.com/boardgameexpansion/299071/zombicide-2nd-edition-urban-legends-abominations
-+ thumbnail-url: https://cf.geekdo-images.com/Tk1tIG3ih7nWpCM0xOY_mw__original/img/4JweoYrk069L5iKTgidLQXwu8cU=/0x0/filters:format(jpeg)/pic8798612.jpg
++ thumbnail-url: https://cf.geekdo-images.com/Tk1tIG3ih7nWpCM0xOY_mw__medium/img/3OBgeIRAxAejnyRl5rpZ-dZsfYM=/fit-in/500x500/filters:no_upscale():strip_icc()/pic8798612.jpg
++ podium-url: https://cf.geekdo-images.com/Tk1tIG3ih7nWpCM0xOY_mw__original/img/4JweoYrk069L5iKTgidLQXwu8cU=/0x0/filters:format(jpeg)/pic8798612.jpg
 
 # 매시브 다크니스 2 드루이드 VS 베엘제붑.jpg
 - 👥 인원: 1 ~ 6 (2~4인 베스트)
@@ -447,7 +487,8 @@
 + ♟️ 디자이너: Alex Olteanu, Marco Portugal
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgameexpansion/317949/massive-darkness-2-heroes-and-monster-set-druids-v
-+ thumbnail-url: https://cf.geekdo-images.com/HbSOL7ew9gneHfu7BCDHHw__original/img/BYzGPSfm5RX9IxlwmCsYlK_fba8=/0x0/filters:format(jpeg)/pic5623889.jpg
++ thumbnail-url: https://cf.geekdo-images.com/HbSOL7ew9gneHfu7BCDHHw__medium/img/FpmHF7YbKCID_1PVuA7VDXs12L4=/fit-in/500x500/filters:no_upscale():strip_icc()/pic5623889.jpg
++ podium-url: https://cf.geekdo-images.com/HbSOL7ew9gneHfu7BCDHHw__original/img/BYzGPSfm5RX9IxlwmCsYlK_fba8=/0x0/filters:format(jpeg)/pic5623889.jpg
 
 # 좀비사이드 인베이더 - 민간인 팩.jpg
 - 👥 인원: 1 ~ 6 (2~3인 베스트)
@@ -458,7 +499,8 @@
 + ♟️ 디자이너: -
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgameexpansion/286540/zombicide-invader-civilian-extras
-+ thumbnail-url: https://cf.geekdo-images.com/pLcFW5TyYWnKNLMlyMRRWg__original/img/08prs4IbRWHDm1ygTgLuu5Xkt3A=/0x0/filters:format(jpeg)/pic4902455.jpg
++ thumbnail-url: https://cf.geekdo-images.com/pLcFW5TyYWnKNLMlyMRRWg__medium/img/HUev2_6BGSOPLn3DMQ0vnwVPz1E=/fit-in/500x500/filters:no_upscale():strip_icc()/pic4902455.jpg
++ podium-url: https://cf.geekdo-images.com/pLcFW5TyYWnKNLMlyMRRWg__original/img/08prs4IbRWHDm1ygTgLuu5Xkt3A=/0x0/filters:format(jpeg)/pic4902455.jpg
 
 # 좀비사이드 (2판) 헨드릭스 요새.jpg
 - 👥 인원: 1 ~ 6 (3, 6인 베스트)
@@ -469,7 +511,8 @@
 + ♟️ 디자이너: Raphaël Guiton, Jean-Baptiste Lullien, Nicolas Raoult
 + 🎨 아티스트: Édouard Guiton, Antonio Maínez, Eric Nouhaut
 + 🔗 https://boardgamegeek.com/boardgameexpansion/293546/zombicide-2nd-edition-fort-hendrix
-+ thumbnail-url: https://cf.geekdo-images.com/QZOh_HZWFqs7WVPqTP3O0A__original/img/ZVL93Xk38ytHglUt2kKqBGQ2N6Y=/0x0/filters:format(jpeg)/pic6164850.jpg
++ thumbnail-url: https://cf.geekdo-images.com/QZOh_HZWFqs7WVPqTP3O0A__medium/img/J5xIXX36sWTtpVpL3XwkEMnMch8=/fit-in/500x500/filters:no_upscale():strip_icc()/pic6164850.jpg
++ podium-url: https://cf.geekdo-images.com/QZOh_HZWFqs7WVPqTP3O0A__original/img/ZVL93Xk38ytHglUt2kKqBGQ2N6Y=/0x0/filters:format(jpeg)/pic6164850.jpg
 
 # 아카디아 퀘스트 묘지 너머로.jpg
 - 👥 인원: 2 ~ 4 (4인 베스트)
@@ -480,7 +523,8 @@
 + ♟️ 디자이너: Thiago Aranha, Guilherme Goulart, Eric M. Lang, Fred Perret
 + 🎨 아티스트: Andrea Cofrancesco, Nicolas Fructus, Mathieu Harlaut
 + 🔗 https://boardgamegeek.com/boardgameexpansion/156089/arcadia-quest-beyond-the-grave
-+ thumbnail-url: https://cf.geekdo-images.com/eX8DW74gfSomQOJJtFx8mg__original/img/njFzq_Q2QMnYQvdC6Vy38SttLxQ=/0x0/filters:format(jpeg)/pic2672519.jpg
++ thumbnail-url: https://cf.geekdo-images.com/eX8DW74gfSomQOJJtFx8mg__medium/img/c5osXjofm3obrtceTrJGcrUhRyc=/fit-in/500x500/filters:no_upscale():strip_icc()/pic2672519.jpg
++ podium-url: https://cf.geekdo-images.com/eX8DW74gfSomQOJJtFx8mg__original/img/njFzq_Q2QMnYQvdC6Vy38SttLxQ=/0x0/filters:format(jpeg)/pic2672519.jpg
 
 # 서머너 워즈 방랑자 종족 덱.png
 - 👥 인원: 2 (2인 베스트)
@@ -491,7 +535,8 @@
 + ♟️ 디자이너: Colby Dauch
 + 🎨 아티스트: Martin Abel
 + 🔗 https://boardgamegeek.com/boardgameexpansion/375414/summoner-wars-second-edition-wayfarers-faction-dec
-+ thumbnail-url: https://cf.geekdo-images.com/-IXKODfLsHhC6GMUFcPAzQ__original/img/NoyYQgtVI0lm51-uzhkTIuQpo1Q=/0x0/filters:format(png)/pic7269056.png
++ thumbnail-url: https://cf.geekdo-images.com/-IXKODfLsHhC6GMUFcPAzQ__medium/img/UPQ0JWY3bk5HxCa2je3wenK5I_A=/fit-in/500x500/filters:no_upscale():strip_icc()/pic7269056.png
++ podium-url: https://cf.geekdo-images.com/-IXKODfLsHhC6GMUFcPAzQ__original/img/NoyYQgtVI0lm51-uzhkTIuQpo1Q=/0x0/filters:format(png)/pic7269056.png
 
 # 앙크 이집트의 신들 - 판테온.jpg
 - 👥 인원: 2 ~ 5 (2인 베스트)
@@ -502,7 +547,8 @@
 + ♟️ 디자이너: Eric M. Lang
 + 🎨 아티스트: Adrian Smith
 + 🔗 https://boardgamegeek.com/boardgameexpansion/307807/ankh-gods-of-egypt-pantheon
-+ thumbnail-url: https://cf.geekdo-images.com/fcTteCczL3arRRooHsnSMA__original/img/KOW_RfRjTAGHd8GkXdada6LCvl8=/0x0/filters:format(jpeg)/pic6107852.jpg
++ thumbnail-url: https://cf.geekdo-images.com/fcTteCczL3arRRooHsnSMA__medium/img/8EWxJ04n2rICyzakELyAKR68AEM=/fit-in/500x500/filters:no_upscale():strip_icc()/pic6107852.jpg
++ podium-url: https://cf.geekdo-images.com/fcTteCczL3arRRooHsnSMA__original/img/KOW_RfRjTAGHd8GkXdada6LCvl8=/0x0/filters:format(jpeg)/pic6107852.jpg
 
 # 크툴루 죽음마저 죽으리니 - 동물 조력자.jpg
 - 👥 인원: 1 ~ 5 (2~3인 베스트)
@@ -513,7 +559,8 @@
 + ♟️ 디자이너: Rob Daviau, Marco Portugal
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgameexpansion/374972/cthulhu-death-may-die-fear-of-the-unknown-animal-a
-+ thumbnail-url: https://cf.geekdo-images.com/xDJArqD3-VTTk9mLOcAUVQ__original/img/5AbUFLnNiMQXf3b48Zu1dhLPM0k=/0x0/filters:format(jpeg)/pic7193325.jpg
++ thumbnail-url: https://cf.geekdo-images.com/xDJArqD3-VTTk9mLOcAUVQ__medium/img/w3rOl6qMSY4gGJhyEFeY4mppRp0=/fit-in/500x500/filters:no_upscale():strip_icc()/pic7193325.jpg
++ podium-url: https://cf.geekdo-images.com/xDJArqD3-VTTk9mLOcAUVQ__original/img/5AbUFLnNiMQXf3b48Zu1dhLPM0k=/0x0/filters:format(jpeg)/pic7193325.jpg
 
 # 헤게모니 당신의 사회 계층을 승리로 이끄세요 - 역사적 사건들.jpg
 - 👥 인원: 1 ~ 4 (4인 베스트)
@@ -524,7 +571,8 @@
 + ♟️ 디자이너: Vangelis Bagiartakis, Anastasios Grigoriadis, Varnavas Timotheou
 + 🎨 아티스트: Dimitris Anastasiadis, Jakub Skop, Katerina Xerovasila
 + 🔗 https://boardgamegeek.com/boardgameexpansion/351611/hegemony-lead-your-class-to-victory-historical-eve
-+ thumbnail-url: https://cf.geekdo-images.com/inqXEFDylNyhzxm43kCQ2w__original/img/lkD71cLuQP9TOINaL6lK4Mko5l4=/0x0/filters:format(jpeg)/pic7605938.jpg
++ thumbnail-url: https://cf.geekdo-images.com/inqXEFDylNyhzxm43kCQ2w__medium/img/ctp8UhCmmR6sdlzCeYHeymMhIRg=/fit-in/500x500/filters:no_upscale():strip_icc()/pic7605938.jpg
++ podium-url: https://cf.geekdo-images.com/inqXEFDylNyhzxm43kCQ2w__original/img/lkD71cLuQP9TOINaL6lK4Mko5l4=/0x0/filters:format(jpeg)/pic7605938.jpg
 
 # 마이 머더 미스터리 원숭이의 죽음.jpg
 - 👥 인원: 5 ~ 7 (7인 베스트)
@@ -534,7 +582,8 @@
 + ♟️ 디자이너: Emanuele Briano
 + 🎨 아티스트: Alex Twin
 + 🔗 https://boardgamegeek.com/boardgame/454077/my-murder-mystery-a-dead-monkey
-+ thumbnail-url: https://cf.geekdo-images.com/JZx1OkRx1GZimWPGlPNQUQ__original/img/gR3FFx7Tp8dPFPLd7Y6C50Cq3KU=/0x0/filters:format(jpeg)/pic9096578.jpg
++ thumbnail-url: https://cf.geekdo-images.com/JZx1OkRx1GZimWPGlPNQUQ__medium/img/l_D4rZqGOnbtKk7d9-v9g7vMyu8=/fit-in/500x500/filters:no_upscale():strip_icc()/pic9096578.jpg
++ podium-url: https://cf.geekdo-images.com/JZx1OkRx1GZimWPGlPNQUQ__original/img/gR3FFx7Tp8dPFPLd7Y6C50Cq3KU=/0x0/filters:format(jpeg)/pic9096578.jpg
 
 # 매시브 다크니스 2 영혼의 전쟁.png
 - 👥 인원: 1 ~ 6 (2~4인 베스트)
@@ -545,7 +594,8 @@
 + ♟️ 디자이너: Alex Olteanu, Marco Portugal
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgameexpansion/317947/massive-darkness-2-enemy-box-war-of-souls
-+ thumbnail-url: https://cf.geekdo-images.com/OWja1yCc58wpcSG5AmKwrg__original/img/b6uW5E27_7CnJoXjsJ4Bs93hPu8=/0x0/filters:format(png)/pic6107856.png
++ thumbnail-url: https://cf.geekdo-images.com/OWja1yCc58wpcSG5AmKwrg__medium/img/eh15fxlT4AvGmZABTU--kpB9Hzk=/fit-in/500x500/filters:no_upscale():strip_icc()/pic6107856.png
++ podium-url: https://cf.geekdo-images.com/OWja1yCc58wpcSG5AmKwrg__original/img/b6uW5E27_7CnJoXjsJ4Bs93hPu8=/0x0/filters:format(png)/pic6107856.png
 
 # 좀비사이드 (2판) 대니 트레호 - 난폭한 생존자와 좀비세트.jpg
 - 👥 인원: 1 ~ 6
@@ -556,7 +606,8 @@
 + ♟️ 디자이너: Raphaël Guiton, Jean-Baptiste Lullien, Nicolas Raoult
 + 🎨 아티스트: Édouard Guiton, Eric Nouhaut
 + 🔗 https://boardgamegeek.com/boardgameexpansion/294327/zombicide-2nd-edition-danny-trejo-badass-survivor
-+ thumbnail-url: https://cf.geekdo-images.com/3zX-GWtHOvmntglVlFAJWg__original/img/Ok0iI6o7bhzA_EnzC972298cx5o=/0x0/filters:format(jpeg)/pic6101882.jpg
++ thumbnail-url: https://cf.geekdo-images.com/3zX-GWtHOvmntglVlFAJWg__medium/img/3DIPC5J8vBRftgnFMiT5Szrilw4=/fit-in/500x500/filters:no_upscale():strip_icc()/pic6101882.jpg
++ podium-url: https://cf.geekdo-images.com/3zX-GWtHOvmntglVlFAJWg__original/img/Ok0iI6o7bhzA_EnzC972298cx5o=/0x0/filters:format(jpeg)/pic6101882.jpg
 
 # 브라스 랭커셔.jpg
 - 👥 인원: 2 ~ 4 (4인 베스트)
@@ -566,7 +617,8 @@
 + ♟️ 디자이너: Martin Wallace
 + 🎨 아티스트: Gavan Brown, Lina Cossette, Peter Dennis, David Forest, Eckhard Freytag, Damien Mammoliti, Mr. Cuddington
 + 🔗 https://boardgamegeek.com/boardgame/28720/brass-lancashire
-+ thumbnail-url: https://cf.geekdo-images.com/tHVtPzu82mBpeQbbZkV6EA__original/img/3ffdJj5Pz6HQrg09Kh8ecTen-TY=/0x0/filters:format(jpeg)/pic3469216.jpg
++ thumbnail-url: https://cf.geekdo-images.com/tHVtPzu82mBpeQbbZkV6EA__medium/img/cI7qvmGPBGyvXlY-iHa6yoK1zO8=/fit-in/500x500/filters:no_upscale():strip_icc()/pic3469216.jpg
++ podium-url: https://cf.geekdo-images.com/tHVtPzu82mBpeQbbZkV6EA__original/img/3ffdJj5Pz6HQrg09Kh8ecTen-TY=/0x0/filters:format(jpeg)/pic3469216.jpg
 
 # 좀비사이드 인베이더 - 군인 엑스트라 팩.jpg
 - 👥 인원: 1 ~ 6
@@ -577,7 +629,8 @@
 + ♟️ 디자이너: -
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgameexpansion/286538/zombicide-invader-soldier-extras
-+ thumbnail-url: https://cf.geekdo-images.com/JBWUZwHakPx4LuwClf5neQ__original/img/7viPzYiZjXDiV2uH5ti4dUD2Pio=/0x0/filters:format(jpeg)/pic4902433.jpg
++ thumbnail-url: https://cf.geekdo-images.com/JBWUZwHakPx4LuwClf5neQ__medium/img/nuIoUD0GtxvClFH5Pr07N1n4f94=/fit-in/500x500/filters:no_upscale():strip_icc()/pic4902433.jpg
++ podium-url: https://cf.geekdo-images.com/JBWUZwHakPx4LuwClf5neQ__original/img/7viPzYiZjXDiV2uH5ti4dUD2Pio=/0x0/filters:format(jpeg)/pic4902433.jpg
 
 # 크툴루 죽음마저 죽으리니.png
 - 👥 인원: 1 ~ 5 (3인 베스트)
@@ -587,7 +640,8 @@
 + ♟️ 디자이너: Rob Daviau, Eric M. Lang
 + 🎨 아티스트: Nicolas Fructus, Karl Kopinski, Thierry Masson, Adrian Smith, Richard Wright
 + 🔗 https://boardgamegeek.com/boardgame/253344/cthulhu-death-may-die
-+ thumbnail-url: https://cf.geekdo-images.com/SPpzri7fwLRgVWMKOocHxw__original/img/4TI0rpw6w0EpkgfvQpusj5Idmpw=/0x0/filters:format(png)/pic9712872.png
++ thumbnail-url: https://cf.geekdo-images.com/SPpzri7fwLRgVWMKOocHxw__medium/img/lYUMdIswo84Yx422kr_83wv70YM=/fit-in/500x500/filters:no_upscale():strip_icc()/pic9712872.png
++ podium-url: https://cf.geekdo-images.com/SPpzri7fwLRgVWMKOocHxw__original/img/4TI0rpw6w0EpkgfvQpusj5Idmpw=/0x0/filters:format(png)/pic9712872.png
 
 # 마블 좀비 좀비사이드 게임 - 아티스트 스페셜 에디션 세트.jpg
 - 👥 인원: 1 ~ 6
@@ -598,7 +652,8 @@
 + ♟️ 디자이너: Fábio Cury, Michael Shinall
 + 🎨 아티스트: Marco Checchetto
 + 🔗 https://boardgamegeek.com/boardgameexpansion/356203/marvel-zombies-a-zombicide-game-artists-special-ed
-+ thumbnail-url: https://cf.geekdo-images.com/GBthKoZx_R6SfFiZyr8mPg__original/img/jEHeUDyhhDUK7OE2ZU2NkYcRSGg=/0x0/filters:format(jpeg)/pic6659966.jpg
++ thumbnail-url: https://cf.geekdo-images.com/GBthKoZx_R6SfFiZyr8mPg__medium/img/AwNonj3MnbtqDhVVyI2B8BFnhjo=/fit-in/500x500/filters:no_upscale():strip_icc()/pic6659966.jpg
++ podium-url: https://cf.geekdo-images.com/GBthKoZx_R6SfFiZyr8mPg__original/img/jEHeUDyhhDUK7OE2ZU2NkYcRSGg=/0x0/filters:format(jpeg)/pic6659966.jpg
 
 # 매시브 다크니스 2 악마의 드래곤.jpg
 - 👥 인원: 1 ~ 6
@@ -609,7 +664,8 @@
 + ♟️ 디자이너: Alex Olteanu, Marco Portugal
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgameexpansion/317942/massive-darkness-2-enemy-box-demon-dragon
-+ thumbnail-url: https://cf.geekdo-images.com/aek41oZDI0FiCQBeU_b7kw__original/img/550hiSz7Cnf-OvN8hegIllE4sFg=/0x0/filters:format(jpeg)/pic5623880.jpg
++ thumbnail-url: https://cf.geekdo-images.com/aek41oZDI0FiCQBeU_b7kw__medium/img/Nvpo43psl4B9YtwodC9NOh1MTOk=/fit-in/500x500/filters:no_upscale():strip_icc()/pic5623880.jpg
++ podium-url: https://cf.geekdo-images.com/aek41oZDI0FiCQBeU_b7kw__original/img/550hiSz7Cnf-OvN8hegIllE4sFg=/0x0/filters:format(jpeg)/pic5623880.jpg
 
 # 매시브 다크니스 2 좀비사이드 판타지 크로스오버.jpg
 - 👥 인원: 1 ~ 6 (2~4인 베스트)
@@ -620,7 +676,8 @@
 + ♟️ 디자이너: Alex Olteanu, Marco Portugal
 + 🎨 아티스트: Édouard Guiton
 + 🔗 https://boardgamegeek.com/boardgameexpansion/348091/massive-darkness-2-zombicide-fantasy-crossover-pac
-+ thumbnail-url: https://cf.geekdo-images.com/SresfjW18eAP0d8vrzMZfQ__original/img/HaTXCT-lHNZtbnlFe0OjgC2s8bY=/0x0/filters:format(jpeg)/pic6857534.jpg
++ thumbnail-url: https://cf.geekdo-images.com/SresfjW18eAP0d8vrzMZfQ__medium/img/8t0VNVBDWikwsgSZzD_rP2h5o8o=/fit-in/500x500/filters:no_upscale():strip_icc()/pic6857534.jpg
++ podium-url: https://cf.geekdo-images.com/SresfjW18eAP0d8vrzMZfQ__original/img/HaTXCT-lHNZtbnlFe0OjgC2s8bY=/0x0/filters:format(jpeg)/pic6857534.jpg
 
 # 매시브 다크니스 2 수도사와 강령술사 VS 파라곤.jpg
 - 👥 인원: 1 ~ 6 (2~4인 베스트)
@@ -631,7 +688,8 @@
 + ♟️ 디자이너: Alex Olteanu, Marco Portugal
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgameexpansion/318364/massive-darkness-2-heroes-and-monster-set-monks-an
-+ thumbnail-url: https://cf.geekdo-images.com/tb-qt20VuSXjUYoShPaRYg__original/img/PDxVsFwTjsyn7zj9HjU9TRrrsfE=/0x0/filters:format(jpeg)/pic6344637.jpg
++ thumbnail-url: https://cf.geekdo-images.com/tb-qt20VuSXjUYoShPaRYg__medium/img/FqukN0LPz5gF_2lG6txcsHeecSM=/fit-in/500x500/filters:no_upscale():strip_icc()/pic6344637.jpg
++ podium-url: https://cf.geekdo-images.com/tb-qt20VuSXjUYoShPaRYg__original/img/PDxVsFwTjsyn7zj9HjU9TRrrsfE=/0x0/filters:format(jpeg)/pic6344637.jpg
 
 # 매시브 다크니스 2 음유시인과 땜장이 VS 금속 천사.jpg
 - 👥 인원: 1 ~ 6 (2~4인 베스트)
@@ -642,7 +700,8 @@
 + ♟️ 디자이너: Alex Olteanu, Marco Portugal
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgameexpansion/318366/massive-darkness-2-heroes-and-monster-set-bards-an
-+ thumbnail-url: https://cf.geekdo-images.com/BWlZN1TTxBVKCamz5W0Q_A__original/img/srG-_8kPMFg3rbU28tXvEqCiCW8=/0x0/filters:format(jpeg)/pic6344642.jpg
++ thumbnail-url: https://cf.geekdo-images.com/BWlZN1TTxBVKCamz5W0Q_A__medium/img/ozV1HIlIn249Lb0yCkbgAoI3ekc=/fit-in/500x500/filters:no_upscale():strip_icc()/pic6344642.jpg
++ podium-url: https://cf.geekdo-images.com/BWlZN1TTxBVKCamz5W0Q_A__original/img/srG-_8kPMFg3rbU28tXvEqCiCW8=/0x0/filters:format(jpeg)/pic6344642.jpg
 
 # 서머너 워즈 스타터 세트.jpg
 - 👥 인원: 2 (2인 베스트)
@@ -652,7 +711,8 @@
 + ♟️ 디자이너: Colby Dauch
 + 🎨 아티스트: Martin Abel, Madison D. Johnson
 + 🔗 https://boardgamegeek.com/boardgame/339263/summoner-wars-second-edition-starter-set
-+ thumbnail-url: https://cf.geekdo-images.com/7HqcikGcx8K05T4DfDH3Ug__original/img/urBqF8SyHwkc9aOZGYOoHnmqtQ0=/0x0/filters:format(jpeg)/pic6279190.jpg
++ thumbnail-url: https://cf.geekdo-images.com/7HqcikGcx8K05T4DfDH3Ug__medium/img/oeNm96q2UXdLpZdZYtXbGGgkMXg=/fit-in/500x500/filters:no_upscale():strip_icc()/pic6279190.jpg
++ podium-url: https://cf.geekdo-images.com/7HqcikGcx8K05T4DfDH3Ug__original/img/urBqF8SyHwkc9aOZGYOoHnmqtQ0=/0x0/filters:format(jpeg)/pic6279190.jpg
 
 # 좀비사이드 (2판) 워싱턴 Z.C.jpg
 - 👥 인원: 1 ~ 6 (6인 베스트)
@@ -663,7 +723,8 @@
 + ♟️ 디자이너: Raphaël Guiton, Jean-Baptiste Lullien, Nicolas Raoult
 + 🎨 아티스트: Édouard Guiton, Eric Nouhaut
 + 🔗 https://boardgamegeek.com/boardgameexpansion/292122/zombicide-2nd-edition-washington-zc
-+ thumbnail-url: https://cf.geekdo-images.com/4X20_SxkPlY1ctZOaqizvw__original/img/xBpQmY3ZROIVleKS1M2-gE_R3vg=/0x0/filters:format(jpeg)/pic6105993.jpg
++ thumbnail-url: https://cf.geekdo-images.com/4X20_SxkPlY1ctZOaqizvw__medium/img/MpNGbr9opyX4NPbJ8HBFXAyo_rY=/fit-in/500x500/filters:no_upscale():strip_icc()/pic6105993.jpg
++ podium-url: https://cf.geekdo-images.com/4X20_SxkPlY1ctZOaqizvw__original/img/xBpQmY3ZROIVleKS1M2-gE_R3vg=/0x0/filters:format(jpeg)/pic6105993.jpg
 
 # 좀비사이드 흑사병 - 좀비 보스들 어보미네이션 팩.jpg
 - 👥 인원: 1 ~ 6 (2~3인 베스트)
@@ -674,7 +735,8 @@
 + ♟️ 디자이너: -
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgameexpansion/180483/zombicide-black-plague-zombie-bosses-abomination-p
-+ thumbnail-url: https://cf.geekdo-images.com/qLYt9DjGVfMfK0WkzlltvQ__original/img/AY-eP7efM2uVW4gj0qvDhCFmz4k=/0x0/filters:format(jpeg)/pic3084765.jpg
++ thumbnail-url: https://cf.geekdo-images.com/qLYt9DjGVfMfK0WkzlltvQ__medium/img/-4Iuu8QANgct6UnVOaJsnuOSfKs=/fit-in/500x500/filters:no_upscale():strip_icc()/pic3084765.jpg
++ podium-url: https://cf.geekdo-images.com/qLYt9DjGVfMfK0WkzlltvQ__original/img/AY-eP7efM2uVW4gj0qvDhCFmz4k=/0x0/filters:format(jpeg)/pic3084765.jpg
 
 # 앙크 이집트의 신들 - 파라오.jpg
 - 👥 인원: 2 ~ 5 (3~4인 베스트)
@@ -685,7 +747,8 @@
 + ♟️ 디자이너: Eric M. Lang
 + 🎨 아티스트: Adrian Smith
 + 🔗 https://boardgamegeek.com/boardgameexpansion/308505/ankh-gods-of-egypt-pharaoh
-+ thumbnail-url: https://cf.geekdo-images.com/93jYEXdOY36PgeKH0J6fdg__original/img/EX5DTNbJL-XQ3dxAaqnacOrKhL0=/0x0/filters:format(jpeg)/pic6107850.jpg
++ thumbnail-url: https://cf.geekdo-images.com/93jYEXdOY36PgeKH0J6fdg__medium/img/XOLzDW28ftsumWEW-F2zLBLs_Kk=/fit-in/500x500/filters:no_upscale():strip_icc()/pic6107850.jpg
++ podium-url: https://cf.geekdo-images.com/93jYEXdOY36PgeKH0J6fdg__original/img/EX5DTNbJL-XQ3dxAaqnacOrKhL0=/0x0/filters:format(jpeg)/pic6107850.jpg
 
 # 크툴루 죽음마저 죽으리니 - 스칼렛 헤이즈.png
 - 👥 인원: 1 ~ 5
@@ -696,7 +759,8 @@
 + ♟️ 디자이너: Rob Daviau, Eric M. Lang
 + 🎨 아티스트: Karl Kopinski, Adrian Smith
 + 🔗 https://boardgamegeek.com/boardgameexpansion/256987/cthulhu-death-may-die-scarlett-hayes
-+ thumbnail-url: https://cf.geekdo-images.com/AAMfzv9B6bLsaI-EzYqooA__original/img/nGUUYL3yvWKi8C7oYpEBw6yrDbk=/0x0/filters:format(png)/pic4275190.png
++ thumbnail-url: https://cf.geekdo-images.com/AAMfzv9B6bLsaI-EzYqooA__medium/img/jAew080ospsu4FRhackgGffIeFE=/fit-in/500x500/filters:no_upscale():strip_icc()/pic4275190.png
++ podium-url: https://cf.geekdo-images.com/AAMfzv9B6bLsaI-EzYqooA__original/img/nGUUYL3yvWKi8C7oYpEBw6yrDbk=/0x0/filters:format(png)/pic4275190.png
 
 # 매시브 다크니스 2 지옥의 관문.png
 - 👥 인원: 1 ~ 6
@@ -707,7 +771,8 @@
 + ♟️ 디자이너: Alex Olteanu, Marco Portugal
 + 🎨 아티스트: Édouard Guiton
 + 🔗 https://boardgamegeek.com/boardgameexpansion/317945/massive-darkness-2-enemy-box-gates-of-hell
-+ thumbnail-url: https://cf.geekdo-images.com/WqaonAQ4tZIlPzL8ouQwyA__original/img/y5kjtAQvdrVB-nBD95YlDbuAbEE=/0x0/filters:format(png)/pic6107857.png
++ thumbnail-url: https://cf.geekdo-images.com/WqaonAQ4tZIlPzL8ouQwyA__medium/img/DSmtJVBsVevqCe55XDfUZrDhKiI=/fit-in/500x500/filters:no_upscale():strip_icc()/pic6107857.png
++ podium-url: https://cf.geekdo-images.com/WqaonAQ4tZIlPzL8ouQwyA__original/img/y5kjtAQvdrVB-nBD95YlDbuAbEE=/0x0/filters:format(png)/pic6107857.png
 
 # 서머너 워즈 마스터 세트.jpg
 - 👥 인원: 2 (2인 베스트)
@@ -717,7 +782,8 @@
 + ♟️ 디자이너: Colby Dauch
 + 🎨 아티스트: Martin Abel, Madison D. Johnson
 + 🔗 https://boardgamegeek.com/boardgame/332800/summoner-wars-second-edition
-+ thumbnail-url: https://cf.geekdo-images.com/HDPEZ_KvztEkzYI8YQDtCg__original/img/C_LKXVJSKt9SauHPSAAWqWbUJS0=/0x0/filters:format(jpeg)/pic6019321.jpg
++ thumbnail-url: https://cf.geekdo-images.com/HDPEZ_KvztEkzYI8YQDtCg__medium/img/WKJlxJ61KaBL0gPddyZIB2R_Ps4=/fit-in/500x500/filters:no_upscale():strip_icc()/pic6019321.jpg
++ podium-url: https://cf.geekdo-images.com/HDPEZ_KvztEkzYI8YQDtCg__original/img/C_LKXVJSKt9SauHPSAAWqWbUJS0=/0x0/filters:format(jpeg)/pic6019321.jpg
 
 # 좀비사이드 그린호드 - 친구와 적들.jpg
 - 👥 인원: 1 ~ 6 (3인 베스트)
@@ -728,7 +794,8 @@
 + ♟️ 디자이너: Raphaël Guiton, Jean-Baptiste Lullien, Nicolas Raoult
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgameexpansion/228719/zombicide-friends-and-foes
-+ thumbnail-url: https://cf.geekdo-images.com/39MT__DUvcSix0AT91724A__original/img/xaI2OD5MYzcYHb5wGUIsslfhM8E=/0x0/filters:format(jpeg)/pic7528312.jpg
++ thumbnail-url: https://cf.geekdo-images.com/39MT__DUvcSix0AT91724A__medium/img/kDazfN63kcf6mMz7uCER6J-o1_g=/fit-in/500x500/filters:no_upscale():strip_icc()/pic7528312.jpg
++ podium-url: https://cf.geekdo-images.com/39MT__DUvcSix0AT91724A__original/img/xaI2OD5MYzcYHb5wGUIsslfhM8E=/0x0/filters:format(jpeg)/pic7528312.jpg
 
 # 매시브 다크니스 2 무지개 저편.png
 - 👥 인원: 1 ~ 6 (1인 베스트)
@@ -739,7 +806,8 @@
 + ♟️ 디자이너: Alex Olteanu, Marco Portugal
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgameexpansion/318369/massive-darkness-2-enemy-box-rainbow-crossing
-+ thumbnail-url: https://cf.geekdo-images.com/wacEOeti__VafthaU0PwZg__original/img/C6mChK6ohUi9HvyqJ6tIJMRZems=/0x0/filters:format(png)/pic6107858.png
++ thumbnail-url: https://cf.geekdo-images.com/wacEOeti__VafthaU0PwZg__medium/img/-lUPGFmLSEwHqdU2yaQ_92e8PtE=/fit-in/500x500/filters:no_upscale():strip_icc()/pic6107858.png
++ podium-url: https://cf.geekdo-images.com/wacEOeti__VafthaU0PwZg__original/img/C6mChK6ohUi9HvyqJ6tIJMRZems=/0x0/filters:format(png)/pic6107858.png
 
 # 좀비사이드 사악한 자에게 쉴 곳은 없다.png
 - 👥 인원: 1 ~ 6 (3인 베스트)
@@ -750,7 +818,8 @@
 + ♟️ 디자이너: Raphaël Guiton, Jean-Baptiste Lullien, Nicolas Raoult
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgameexpansion/229316/zombicide-no-rest-for-the-wicked
-+ thumbnail-url: https://cf.geekdo-images.com/YWDjSHp6Q7DKRJaXnGhFRQ__original/img/RoypKMufjygSUv2iE4e3jiPRgy4=/0x0/filters:format(png)/pic3610369.png
++ thumbnail-url: https://cf.geekdo-images.com/YWDjSHp6Q7DKRJaXnGhFRQ__medium/img/rNF3qtTqYZjt774WLzLHKh0zjJA=/fit-in/500x500/filters:no_upscale():strip_icc()/pic3610369.png
++ podium-url: https://cf.geekdo-images.com/YWDjSHp6Q7DKRJaXnGhFRQ__original/img/RoypKMufjygSUv2iE4e3jiPRgy4=/0x0/filters:format(png)/pic3610369.png
 
 # 에이다의 꿈.jpg
 - 👥 인원: 1 ~ 4 (3인 베스트)
@@ -760,7 +829,8 @@
 + ♟️ 디자이너: Toni López
 + 🎨 아티스트: Javier González Cava
 + 🔗 https://boardgamegeek.com/boardgame/413469/adas-dream
-+ thumbnail-url: https://cf.geekdo-images.com/i3YeleJsNmnvcKdwgW3TKA__original/img/0bHPZadTVedYlWrXsy0LKZ0Kwf8=/0x0/filters:format(jpeg)/pic8030666.jpg
++ thumbnail-url: https://cf.geekdo-images.com/i3YeleJsNmnvcKdwgW3TKA__medium/img/cefHjZe6y1qx-GBtAll1MHrMbLQ=/fit-in/500x500/filters:no_upscale():strip_icc()/pic8030666.jpg
++ podium-url: https://cf.geekdo-images.com/i3YeleJsNmnvcKdwgW3TKA__original/img/0bHPZadTVedYlWrXsy0LKZ0Kwf8=/0x0/filters:format(jpeg)/pic8030666.jpg
 
 # 좀비사이드 흑사병 - 울프스버그.png
 - 👥 인원: 1 ~ 10 (2~3인 베스트)
@@ -771,7 +841,8 @@
 + ♟️ 디자이너: Raphaël Guiton, Jean-Baptiste Lullien, Nicolas Raoult
 + 🎨 아티스트: Raphaël Guiton
 + 🔗 https://boardgamegeek.com/boardgameexpansion/178485/zombicide-black-plague-wulfsburg
-+ thumbnail-url: https://cf.geekdo-images.com/M-5-DGGKPOh2bARbckdYvg__original/img/a214HAPxRy-bNoprcLaS9D929IM=/0x0/filters:format(png)/pic8861885.png
++ thumbnail-url: https://cf.geekdo-images.com/M-5-DGGKPOh2bARbckdYvg__medium/img/ThbbhRtuu6Aaojf-sHiILZUyJyQ=/fit-in/500x500/filters:no_upscale():strip_icc()/pic8861885.png
++ podium-url: https://cf.geekdo-images.com/M-5-DGGKPOh2bARbckdYvg__original/img/a214HAPxRy-bNoprcLaS9D929IM=/0x0/filters:format(png)/pic8861885.png
 
 # 마블 유나이티드 가디언즈 오브 갤럭시 리믹스.jpg
 - 👥 인원: 1 ~ 4 (3인 베스트)
@@ -782,7 +853,8 @@
 + ♟️ 디자이너: Andrea Chiarvesio, Eric M. Lang
 + 🎨 아티스트: Édouard Guiton
 + 🔗 https://boardgamegeek.com/boardgameexpansion/302670/marvel-united-guardians-of-the-galaxy-remix
-+ thumbnail-url: https://cf.geekdo-images.com/p-Jcd8eGV2_R244JTm4jYg__original/img/6Dnxq-mc-7eNXmuFPmJo2JHw42w=/0x0/filters:format(jpeg)/pic5263263.jpg
++ thumbnail-url: https://cf.geekdo-images.com/p-Jcd8eGV2_R244JTm4jYg__medium/img/C7XotVhlHcHc7lIKOemJs2Rk5c0=/fit-in/500x500/filters:no_upscale():strip_icc()/pic5263263.jpg
++ podium-url: https://cf.geekdo-images.com/p-Jcd8eGV2_R244JTm4jYg__original/img/6Dnxq-mc-7eNXmuFPmJo2JHw42w=/0x0/filters:format(jpeg)/pic5263263.jpg
 
 # 마이 머더 미스터리 최종 프로토콜.jpg
 - 👥 인원: 5 ~ 7 (7인 베스트)
@@ -792,7 +864,8 @@
 + ♟️ 디자이너: Emanuele Briano
 + 🎨 아티스트: Alex Twin
 + 🔗 https://boardgamegeek.com/boardgame/454078/my-murder-mystery-the-final-protocol
-+ thumbnail-url: https://cf.geekdo-images.com/bSH5D3AFjn6yu9VErHGxPg__original/img/0BZP4Dcg8RPKGcfDqhYuP3PTEHI=/0x0/filters:format(jpeg)/pic9096577.jpg
++ thumbnail-url: https://cf.geekdo-images.com/bSH5D3AFjn6yu9VErHGxPg__medium/img/0kFmuMY5mkujMzPRoBNxqwzyQVU=/fit-in/500x500/filters:no_upscale():strip_icc()/pic9096577.jpg
++ podium-url: https://cf.geekdo-images.com/bSH5D3AFjn6yu9VErHGxPg__original/img/0BZP4Dcg8RPKGcfDqhYuP3PTEHI=/0x0/filters:format(jpeg)/pic9096577.jpg
 
 # 매시브 다크니스 2 헬스케이프.png
 - 👥 인원: 1 ~ 6 (3인 베스트)
@@ -802,7 +875,8 @@
 + ♟️ 디자이너: Alex Olteanu, Marco Portugal
 + 🎨 아티스트: Édouard Guiton
 + 🔗 https://boardgamegeek.com/boardgame/315610/massive-darkness-2-hellscape
-+ thumbnail-url: https://cf.geekdo-images.com/e-QmT0KuEc0E4bWNih6EVQ__original/img/alQDRawS3Soxpe-sCU3_WBNUCNk=/0x0/filters:format(png)/pic6107854.png
++ thumbnail-url: https://cf.geekdo-images.com/e-QmT0KuEc0E4bWNih6EVQ__medium/img/qf99V0o7jXZzYPtN2BHgs3NpA6M=/fit-in/500x500/filters:no_upscale():strip_icc()/pic6107854.png
++ podium-url: https://cf.geekdo-images.com/e-QmT0KuEc0E4bWNih6EVQ__original/img/alQDRawS3Soxpe-sCU3_WBNUCNk=/0x0/filters:format(png)/pic6107854.png
 
 # 매시브 다크니스 2 요정족.jpg
 - 👥 인원: 1 ~ 6 (2~4인 베스트)
@@ -813,7 +887,8 @@
 + ♟️ 디자이너: Alex Olteanu, Marco Portugal
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgameexpansion/318367/massive-darkness-2-enemy-box-feyfolk
-+ thumbnail-url: https://cf.geekdo-images.com/H6a0fTFa7Wav0wzTLQwr4g__original/img/STCuesoneEp92_UxXzlSC3YbEeY=/0x0/filters:format(jpeg)/pic6127069.jpg
++ thumbnail-url: https://cf.geekdo-images.com/H6a0fTFa7Wav0wzTLQwr4g__medium/img/KMEM2orLBGcktL4eoDDbZdWcTV0=/fit-in/500x500/filters:no_upscale():strip_icc()/pic6127069.jpg
++ podium-url: https://cf.geekdo-images.com/H6a0fTFa7Wav0wzTLQwr4g__original/img/STCuesoneEp92_UxXzlSC3YbEeY=/0x0/filters:format(jpeg)/pic6127069.jpg
 
 # 판타스틱 팩토리 확장팩 - 새로운 회사들.png
 - 👥 인원: 1 ~ 5 (3인 베스트)
@@ -824,7 +899,8 @@
 + ♟️ 디자이너: Joseph Z. Chen, Justin Faulkner
 + 🎨 아티스트: Joseph Z. Chen, Martha Webby
 + 🔗 https://boardgamegeek.com/boardgameexpansion/319035/fantastic-factories-manufactions
-+ thumbnail-url: https://cf.geekdo-images.com/LyNcfaP1rVltc-6t0MGoWQ__original/img/ZfQS72pQ5LUYkYVp0Uh1Ws2Qk8o=/0x0/filters:format(png)/pic5658435.png
++ thumbnail-url: https://cf.geekdo-images.com/LyNcfaP1rVltc-6t0MGoWQ__medium/img/ymOToOnj69LEtaSGQ8Ju2SWSgLk=/fit-in/500x500/filters:no_upscale():strip_icc()/pic5658435.png
++ podium-url: https://cf.geekdo-images.com/LyNcfaP1rVltc-6t0MGoWQ__original/img/ZfQS72pQ5LUYkYVp0Uh1Ws2Qk8o=/0x0/filters:format(png)/pic5658435.png
 
 # 미니 익스프레스 확장 맵 팩 1 & 맵 팩 2.jpg
 - 👥 인원: 1 ~ 3 (3인 베스트)
@@ -835,7 +911,8 @@
 + ♟️ 디자이너: Jay Bernardo, Tony Boydell, Christian V. Tunn Cabrera, Mark Gerrits, Hisashi Hayashi
 + 🎨 아티스트: Mark Gerrits
 + 🔗 https://boardgamegeek.com/boardgameexpansion/406874/mini-express-expansion-map-pack-1-and-map-pack-2
-+ thumbnail-url: https://cf.geekdo-images.com/xJiulGJ6IIphXBVxmS2-cQ__original/img/Tg0ufzBdT48_2LGEF4eaqF9KjSU=/0x0/filters:format(jpeg)/pic7874690.jpg
++ thumbnail-url: https://cf.geekdo-images.com/xJiulGJ6IIphXBVxmS2-cQ__medium/img/7RBoQZ6mvw-bofQKX8T5TmUx5TY=/fit-in/500x500/filters:no_upscale():strip_icc()/pic7874690.jpg
++ podium-url: https://cf.geekdo-images.com/xJiulGJ6IIphXBVxmS2-cQ__original/img/Tg0ufzBdT48_2LGEF4eaqF9KjSU=/0x0/filters:format(jpeg)/pic7874690.jpg
 
 # 라 파밀리아 대규모 마피아 전쟁.jpg
 - 👥 인원: 4 (4인 베스트)
@@ -845,7 +922,8 @@
 + ♟️ 디자이너: Maximilian Maria Thiel
 + 🎨 아티스트: Weberson Santiago
 + 🔗 https://boardgamegeek.com/boardgame/367517/la-famiglia-the-great-mafia-war
-+ thumbnail-url: https://cf.geekdo-images.com/zM3cPLHv2smrTSDI565a3A__original/img/uMqWKO2eqgAWfa4DU7P7Zo8wOhE=/0x0/filters:format(jpeg)/pic7322524.jpg
++ thumbnail-url: https://cf.geekdo-images.com/zM3cPLHv2smrTSDI565a3A__medium/img/IyF7XIivaKAXEEeeLiR6KZrNzhk=/fit-in/500x500/filters:no_upscale():strip_icc()/pic7322524.jpg
++ podium-url: https://cf.geekdo-images.com/zM3cPLHv2smrTSDI565a3A__original/img/uMqWKO2eqgAWfa4DU7P7Zo8wOhE=/0x0/filters:format(jpeg)/pic7322524.jpg
 
 # 마라카이보.jpg
 - 👥 인원: 1 ~ 4 (3인 베스트)
@@ -855,7 +933,8 @@
 + ♟️ 디자이너: Alexander Pfister
 + 🎨 아티스트: Fiore GmbH, Aline Kirrmann
 + 🔗 https://boardgamegeek.com/boardgame/276025/maracaibo
-+ thumbnail-url: https://cf.geekdo-images.com/rMNa0k05zMdKgSEp26Q3Tw__original/img/yhnCcq9UplffqjSCe08mjTFvgOM=/0x0/filters:format(jpeg)/pic4917407.jpg
++ thumbnail-url: https://cf.geekdo-images.com/rMNa0k05zMdKgSEp26Q3Tw__medium/img/EWIUa29ULNY-thOfRCaoXOr6yIQ=/fit-in/500x500/filters:no_upscale():strip_icc()/pic4917407.jpg
++ podium-url: https://cf.geekdo-images.com/rMNa0k05zMdKgSEp26Q3Tw__original/img/yhnCcq9UplffqjSCe08mjTFvgOM=/0x0/filters:format(jpeg)/pic4917407.jpg
 
 # 클랜 오브 칼레도니아.png
 - 👥 인원: 1 ~ 4 (4인 베스트)
@@ -865,7 +944,8 @@
 + ♟️ 디자이너: Juma Al-JouJou
 + 🎨 아티스트: Klemens Franz
 + 🔗 https://boardgamegeek.com/boardgame/216132/clans-of-caledonia
-+ thumbnail-url: https://cf.geekdo-images.com/SPuwc6RJ6y4PnTH36Pegsg__original/img/GcuvCavv-ZZP5_O1kCTrZELuZdY=/0x0/filters:format(png)/pic3511783.png
++ thumbnail-url: https://cf.geekdo-images.com/SPuwc6RJ6y4PnTH36Pegsg__medium/img/OKHs2ICqiU5JkY-zC7_9zlmDLio=/fit-in/500x500/filters:no_upscale():strip_icc()/pic3511783.png
++ podium-url: https://cf.geekdo-images.com/SPuwc6RJ6y4PnTH36Pegsg__original/img/GcuvCavv-ZZP5_O1kCTrZELuZdY=/0x0/filters:format(png)/pic3511783.png
 
 # 마블 좀비 좀비사이드 게임.jpg
 - 👥 인원: 1 ~ 6 (2, 4인 베스트)
@@ -875,7 +955,8 @@
 + ♟️ 디자이너: Fábio Cury, Michael Shinall
 + 🎨 아티스트: Marco Checchetto, Henning Ludvigsen
 + 🔗 https://boardgamegeek.com/boardgame/351817/marvel-zombies-a-zombicide-game
-+ thumbnail-url: https://cf.geekdo-images.com/1nxn5PtVk-cbS3tHDg4Xlg__original/img/o3-QpsK2whgEm0teQ3IqwoC9zyk=/0x0/filters:format(jpeg)/pic6619019.jpg
++ thumbnail-url: https://cf.geekdo-images.com/1nxn5PtVk-cbS3tHDg4Xlg__medium/img/A3amNZtuzQhq0FG-e4bK7mJwdQU=/fit-in/500x500/filters:no_upscale():strip_icc()/pic6619019.jpg
++ podium-url: https://cf.geekdo-images.com/1nxn5PtVk-cbS3tHDg4Xlg__original/img/o3-QpsK2whgEm0teQ3IqwoC9zyk=/0x0/filters:format(jpeg)/pic6619019.jpg
 
 # 스카이마인.jpg
 - 👥 인원: 1 ~ 4 (4인 베스트)
@@ -885,7 +966,8 @@
 + ♟️ 디자이너: Viktor Kobilke, Alexander Pfister
 + 🎨 아티스트: Javier González Cava
 + 🔗 https://boardgamegeek.com/boardgame/359438/skymines
-+ thumbnail-url: https://cf.geekdo-images.com/loa-OQHFaTlKV2eU_WKVFw__original/img/x7qsiqjs4OLfVfrcvlMDIvyCuDA=/0x0/filters:format(jpeg)/pic6800089.jpg
++ thumbnail-url: https://cf.geekdo-images.com/loa-OQHFaTlKV2eU_WKVFw__medium/img/i34KbQ68_d8OifJqcM8HLye3hnk=/fit-in/500x500/filters:no_upscale():strip_icc()/pic6800089.jpg
++ podium-url: https://cf.geekdo-images.com/loa-OQHFaTlKV2eU_WKVFw__original/img/x7qsiqjs4OLfVfrcvlMDIvyCuDA=/0x0/filters:format(jpeg)/pic6800089.jpg
 
 # 좀비사이드 (2판).jpg
 - 👥 인원: 1 ~ 6 (3인 베스트)
@@ -895,7 +977,8 @@
 + ♟️ 디자이너: Raphaël Guiton, Jean-Baptiste Lullien, Nicolas Raoult
 + 🎨 아티스트: Édouard Guiton, Thierry Masson, Eric Nouhaut
 + 🔗 https://boardgamegeek.com/boardgame/286751/zombicide-2nd-edition
-+ thumbnail-url: https://cf.geekdo-images.com/81AiTz4hp4TlnzeCMqQMAw__original/img/YJv_Ah9d-me5hoy9s49g3eW1h3c=/0x0/filters:format(jpeg)/pic6091316.jpg
++ thumbnail-url: https://cf.geekdo-images.com/81AiTz4hp4TlnzeCMqQMAw__medium/img/jIUpd4moMyJaUDPwM69vxqpdmug=/fit-in/500x500/filters:no_upscale():strip_icc()/pic6091316.jpg
++ podium-url: https://cf.geekdo-images.com/81AiTz4hp4TlnzeCMqQMAw__original/img/YJv_Ah9d-me5hoy9s49g3eW1h3c=/0x0/filters:format(jpeg)/pic6091316.jpg
 
 # 블러드 레이지.jpg
 - 👥 인원: 2 ~ 4 (4인 베스트)
@@ -905,7 +988,8 @@
 + ♟️ 디자이너: Eric M. Lang
 + 🎨 아티스트: Henning Ludvigsen, Thierry Masson, Mike McVey, Adrian Smith
 + 🔗 https://boardgamegeek.com/boardgame/170216/blood-rage
-+ thumbnail-url: https://cf.geekdo-images.com/HkZSJfQnZ3EpS214xtuplg__original/img/Myy6IPDJDzLoPdXrPXVZcddBQoQ=/0x0/filters:format(jpeg)/pic2439223.jpg
++ thumbnail-url: https://cf.geekdo-images.com/HkZSJfQnZ3EpS214xtuplg__medium/img/kZprsv_uzXEa3r4oVXOzSUpSD_I=/fit-in/500x500/filters:no_upscale():strip_icc()/pic2439223.jpg
++ podium-url: https://cf.geekdo-images.com/HkZSJfQnZ3EpS214xtuplg__original/img/Myy6IPDJDzLoPdXrPXVZcddBQoQ=/0x0/filters:format(jpeg)/pic2439223.jpg
 
 # 에스노스 2판 - 프로모 팩.png
 - 👥 인원: 1 ~ 6
@@ -916,7 +1000,8 @@
 + ♟️ 디자이너: Paolo Mori
 + 🎨 아티스트: Davide Tosello
 + 🔗 https://boardgamegeek.com/boardgameexpansion/436382/ethnos-2nd-edition-promo-pack
-+ thumbnail-url: https://cf.geekdo-images.com/LIHd8NG6H-063LpiugzYvg__original/img/raHZuYQ2_nqNUNH968_H8G84rnI=/0x0/filters:format(png)/pic9304749.png
++ thumbnail-url: https://cf.geekdo-images.com/LIHd8NG6H-063LpiugzYvg__medium/img/nasTqgULG5nApLQBX3qoDrYy1Ek=/fit-in/500x500/filters:no_upscale():strip_icc()/pic9304749.png
++ podium-url: https://cf.geekdo-images.com/LIHd8NG6H-063LpiugzYvg__original/img/raHZuYQ2_nqNUNH968_H8G84rnI=/0x0/filters:format(png)/pic9304749.png
 
 # 마블 유나이티드 아스가르드 이야기.jpg
 - 👥 인원: 1 ~ 4 (3인 베스트)
@@ -927,7 +1012,8 @@
 + ♟️ 디자이너: Andrea Chiarvesio, Eric M. Lang
 + 🎨 아티스트: Édouard Guiton
 + 🔗 https://boardgamegeek.com/boardgameexpansion/302668/marvel-united-tales-of-asgard
-+ thumbnail-url: https://cf.geekdo-images.com/ijm2UokbdVe3DatVe89x9g__original/img/uN21zwKdBv4BelP6lc0bBa5fNqM=/0x0/filters:format(jpeg)/pic5263262.jpg
++ thumbnail-url: https://cf.geekdo-images.com/ijm2UokbdVe3DatVe89x9g__medium/img/Nyh5aE5nhpUf-RGAyx9QPBhnp5o=/fit-in/500x500/filters:no_upscale():strip_icc()/pic5263262.jpg
++ podium-url: https://cf.geekdo-images.com/ijm2UokbdVe3DatVe89x9g__original/img/uN21zwKdBv4BelP6lc0bBa5fNqM=/0x0/filters:format(jpeg)/pic5263262.jpg
 
 # 좀비사이드 (2판) 프레지던트 박스.jpg
 - 👥 인원: 1 ~ 6
@@ -938,7 +1024,8 @@
 + ♟️ 디자이너: Raphaël Guiton, Jean-Baptiste Lullien, Nicolas Raoult
 + 🎨 아티스트: Édouard Guiton
 + 🔗 https://boardgamegeek.com/boardgameexpansion/336634/zombicide-2nd-edition-presidential-box
-+ thumbnail-url: https://cf.geekdo-images.com/grPKvOgPH7X-ImCWh1nc-g__original/img/jHhfBGFefZF9uF_V4yMB6sLtVcE=/0x0/filters:format(jpeg)/pic6144421.jpg
++ thumbnail-url: https://cf.geekdo-images.com/grPKvOgPH7X-ImCWh1nc-g__medium/img/d9kkC_tdt3xARrBpvGjyNQXu9WM=/fit-in/500x500/filters:no_upscale():strip_icc()/pic6144421.jpg
++ podium-url: https://cf.geekdo-images.com/grPKvOgPH7X-ImCWh1nc-g__original/img/jHhfBGFefZF9uF_V4yMB6sLtVcE=/0x0/filters:format(jpeg)/pic6144421.jpg
 
 # 마블 유나이티드 블랙 팬서의 부상.jpg
 - 👥 인원: 1 ~ 4 (2~3인 베스트)
@@ -949,7 +1036,8 @@
 + ♟️ 디자이너: Andrea Chiarvesio, Eric M. Lang
 + 🎨 아티스트: Édouard Guiton
 + 🔗 https://boardgamegeek.com/boardgameexpansion/302669/marvel-united-rise-of-the-black-panther
-+ thumbnail-url: https://cf.geekdo-images.com/9oQJGvSl2QcVucUuN5nEjA__original/img/0p1v8kdeWBv3tPM44avTVOpPK7Y=/0x0/filters:format(jpeg)/pic5263265.jpg
++ thumbnail-url: https://cf.geekdo-images.com/9oQJGvSl2QcVucUuN5nEjA__medium/img/Cvkl2AIToSe2FDQXJxG9XkhPZwg=/fit-in/500x500/filters:no_upscale():strip_icc()/pic5263265.jpg
++ podium-url: https://cf.geekdo-images.com/9oQJGvSl2QcVucUuN5nEjA__original/img/0p1v8kdeWBv3tPM44avTVOpPK7Y=/0x0/filters:format(jpeg)/pic5263265.jpg
 
 # 앙크 이집트의 신들 - 수호자 세트.jpg
 - 👥 인원: 2 ~ 5 (2인 베스트)
@@ -960,7 +1048,8 @@
 + ♟️ 디자이너: Eric M. Lang
 + 🎨 아티스트: Adrian Smith
 + 🔗 https://boardgamegeek.com/boardgameexpansion/308321/ankh-gods-of-egypt-guardians-set
-+ thumbnail-url: https://cf.geekdo-images.com/XMjgIV1cYdvIwSaKuIj2Ig__original/img/m1vdLRbrIaAnbX4LHnhz8qarpLo=/0x0/filters:format(jpeg)/pic5375786.jpg
++ thumbnail-url: https://cf.geekdo-images.com/XMjgIV1cYdvIwSaKuIj2Ig__medium/img/pcZetyEiK-zIBm069SlmpO14MKM=/fit-in/500x500/filters:no_upscale():strip_icc()/pic5375786.jpg
++ podium-url: https://cf.geekdo-images.com/XMjgIV1cYdvIwSaKuIj2Ig__original/img/m1vdLRbrIaAnbX4LHnhz8qarpLo=/0x0/filters:format(jpeg)/pic5375786.jpg
 
 # 테케누 세트의 시간.jpg
 - 👥 인원: 1 ~ 4 (3인 베스트)
@@ -971,7 +1060,8 @@
 + ♟️ 디자이너: Daniele Tascini, Dávid Turczi
 + 🎨 아티스트: Jakub Fajtanowski, Zbigniew Umgelter, Aleksander Zawada
 + 🔗 https://boardgamegeek.com/boardgameexpansion/341943/tekhenu-time-of-seth
-+ thumbnail-url: https://cf.geekdo-images.com/Q5GZxGO41UPLAeh9qK31ig__original/img/vGfocWy1KXFDiiwRZ3-vN9FDqPI=/0x0/filters:format(jpeg)/pic6273928.jpg
++ thumbnail-url: https://cf.geekdo-images.com/Q5GZxGO41UPLAeh9qK31ig__medium/img/BxZhFEVAc1eYCu5DEPlmNM-UcJM=/fit-in/500x500/filters:no_upscale():strip_icc()/pic6273928.jpg
++ podium-url: https://cf.geekdo-images.com/Q5GZxGO41UPLAeh9qK31ig__original/img/vGfocWy1KXFDiiwRZ3-vN9FDqPI=/0x0/filters:format(jpeg)/pic6273928.jpg
 
 # 마블 유나이티드 확장팩 스파이더버스.jpg
 - 👥 인원: 1 ~ 4 (3인 베스트)
@@ -982,7 +1072,8 @@
 + ♟️ 디자이너: Andrea Chiarvesio, Eric M. Lang
 + 🎨 아티스트: Édouard Guiton
 + 🔗 https://boardgamegeek.com/boardgameexpansion/303600/marvel-united-enter-the-spider-verse
-+ thumbnail-url: https://cf.geekdo-images.com/CYhpAKbeFFk5OUc-5RAVoQ__original/img/gp1yCqfWaohOxPZhNV3DOYletow=/0x0/filters:format(jpeg)/pic5263274.jpg
++ thumbnail-url: https://cf.geekdo-images.com/CYhpAKbeFFk5OUc-5RAVoQ__medium/img/AB56JVT1B20Eugok4LR82_E4Fos=/fit-in/500x500/filters:no_upscale():strip_icc()/pic5263274.jpg
++ podium-url: https://cf.geekdo-images.com/CYhpAKbeFFk5OUc-5RAVoQ__original/img/gp1yCqfWaohOxPZhNV3DOYletow=/0x0/filters:format(jpeg)/pic5263274.jpg
 
 # 좀비사이드 (2판) 가브리엘.jpg
 - 👥 인원: 1 ~ 6
@@ -993,7 +1084,8 @@
 + ♟️ 디자이너: Raphaël Guiton, Jean-Baptiste Lullien, Nicolas Raoult
 + 🎨 아티스트: Édouard Guiton
 + 🔗 https://boardgamegeek.com/boardgameexpansion/336729/zombicide-2nd-edition-gabriel
-+ thumbnail-url: https://cf.geekdo-images.com/m2SSSQhnUGu8Dj7V5oksZQ__original/img/eh6Bqqkmfda7jJnwObvyBQIxcBk=/0x0/filters:format(jpeg)/pic6116255.jpg
++ thumbnail-url: https://cf.geekdo-images.com/m2SSSQhnUGu8Dj7V5oksZQ__medium/img/0lYYsnBXZj_FZX__q3qf7UKpnac=/fit-in/500x500/filters:no_upscale():strip_icc()/pic6116255.jpg
++ podium-url: https://cf.geekdo-images.com/m2SSSQhnUGu8Dj7V5oksZQ__original/img/eh6Bqqkmfda7jJnwObvyBQIxcBk=/0x0/filters:format(jpeg)/pic6116255.jpg
 
 # 크툴루 워즈.png
 - 👥 인원: 2 ~ 4 (4인 베스트)
@@ -1003,7 +1095,8 @@
 + ♟️ 디자이너: Sandy Petersen, Lincoln Petersen
 + 🎨 아티스트: Kev Adams, Peter Bartholdy, Ian Brumby, Jo Brumby, Sonny Bundgaard, Chaz Elliott, Mark Evans (I), Rich Fleider, Richard Luong, Andrew May, Stephen May (II), Neil McKenzie
 + 🔗 https://boardgamegeek.com/boardgame/139976/cthulhu-wars
-+ thumbnail-url: https://cf.geekdo-images.com/o7tGTkPv322I-qCHuisP3g__original/img/71_5dM41youEYIsVgC3rEwINb08=/0x0/filters:format(png)/pic9616343.png
++ thumbnail-url: https://cf.geekdo-images.com/o7tGTkPv322I-qCHuisP3g__medium/img/8VPlwA9Wx4vvD5vIbuQZlP0q31c=/fit-in/500x500/filters:no_upscale():strip_icc()/pic9616343.png
++ podium-url: https://cf.geekdo-images.com/o7tGTkPv322I-qCHuisP3g__original/img/71_5dM41youEYIsVgC3rEwINb08=/0x0/filters:format(png)/pic9616343.png
 
 # 파러웨이 아래쪽 사람들.jpg
 - 👥 인원: 2 ~ 7 (2, 4~5인 베스트)
@@ -1014,7 +1107,8 @@
 + ♟️ 디자이너: Johannes Goupy, Corentin Lebrat
 + 🎨 아티스트: Maxime Morin
 + 🔗 https://boardgamegeek.com/boardgameexpansion/425029/faraway-people-from-below
-+ thumbnail-url: https://cf.geekdo-images.com/IAm2HJ23ikP6ixbm3Cbcbw__original/img/gs8wZCRecDoc29xB8OJF8Cg-ROI=/0x0/filters:format(jpeg)/pic8557413.jpg
++ thumbnail-url: https://cf.geekdo-images.com/IAm2HJ23ikP6ixbm3Cbcbw__medium/img/7fcuosGhUg6Is-V2TTWeCuHEq9I=/fit-in/500x500/filters:no_upscale():strip_icc()/pic8557413.jpg
++ podium-url: https://cf.geekdo-images.com/IAm2HJ23ikP6ixbm3Cbcbw__original/img/gs8wZCRecDoc29xB8OJF8Cg-ROI=/0x0/filters:format(jpeg)/pic8557413.jpg
 
 # 좀비사이드 인베이더 - 오펀 갱 생존자 팩.jpg
 - 👥 인원: 1 ~ 6
@@ -1025,7 +1119,8 @@
 + ♟️ 디자이너: Karl Kopinski
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgameexpansion/259338/zombicide-invader-orphans-gang-survivor-pack
-+ thumbnail-url: https://cf.geekdo-images.com/fXcyjUHSb9yVdZFQj2KktQ__original/img/agSEBw98x8BhpSilh7SGPYu9vbc=/0x0/filters:format(jpeg)/pic4902475.jpg
++ thumbnail-url: https://cf.geekdo-images.com/fXcyjUHSb9yVdZFQj2KktQ__medium/img/3eqaZUrPHED62LwpTtcfSB1ALpU=/fit-in/500x500/filters:no_upscale():strip_icc()/pic4902475.jpg
++ podium-url: https://cf.geekdo-images.com/fXcyjUHSb9yVdZFQj2KktQ__original/img/agSEBw98x8BhpSilh7SGPYu9vbc=/0x0/filters:format(jpeg)/pic4902475.jpg
 
 # 다이스 쓰론 저주받은 해적 vs 기술자.jpg
 - 👥 인원: 2 (2인 베스트)
@@ -1035,7 +1130,8 @@
 + ♟️ 디자이너: Nate Chatellier, Manny Trembley
 + 🎨 아티스트: Gavan Brown, Manny Trembley
 + 🔗 https://boardgamegeek.com/boardgame/266967/dice-throne-season-two-cursed-pirate-v-artificer
-+ thumbnail-url: https://cf.geekdo-images.com/-nz9-f2sOJoafon2frlawg__original/img/cVp_wmXMU6-p2eI-0THE8PkKyFM=/0x0/filters:format(jpeg)/pic4457038.jpg
++ thumbnail-url: https://cf.geekdo-images.com/-nz9-f2sOJoafon2frlawg__medium/img/aT9J8ULFThYD3RWYg1_CIcPGd4Q=/fit-in/500x500/filters:no_upscale():strip_icc()/pic4457038.jpg
++ podium-url: https://cf.geekdo-images.com/-nz9-f2sOJoafon2frlawg__original/img/cVp_wmXMU6-p2eI-0THE8PkKyFM=/0x0/filters:format(jpeg)/pic4457038.jpg
 
 # 랠리맨 GT - GT5.jpg
 - 👥 인원: 1 ~ 6 (3~4인 베스트)
@@ -1046,7 +1142,8 @@
 + ♟️ 디자이너: Jean-Christophe Bouvier
 + 🎨 아티스트: Loïc Muzy
 + 🔗 https://boardgamegeek.com/boardgameexpansion/272058/rallyman-gt-gt5
-+ thumbnail-url: https://cf.geekdo-images.com/5kTJmv1CDPwHwylE7RS-QQ__original/img/dS2a-DRAhFt7dX1tX4JMpwHzytQ=/0x0/filters:format(jpeg)/pic5180021.jpg
++ thumbnail-url: https://cf.geekdo-images.com/5kTJmv1CDPwHwylE7RS-QQ__medium/img/E3dQQsIZsbn8dzhdHiHAZJQvOe4=/fit-in/500x500/filters:no_upscale():strip_icc()/pic5180021.jpg
++ podium-url: https://cf.geekdo-images.com/5kTJmv1CDPwHwylE7RS-QQ__original/img/dS2a-DRAhFt7dX1tX4JMpwHzytQ=/0x0/filters:format(jpeg)/pic5180021.jpg
 
 # 랠리맨 GT - 월드 투어.jpg
 - 👥 인원: 1 ~ 6 (1, 3~5인 베스트)
@@ -1057,7 +1154,8 @@
 + ♟️ 디자이너: Jean-Christophe Bouvier
 + 🎨 아티스트: Loïc Muzy
 + 🔗 https://boardgamegeek.com/boardgameexpansion/289748/rallyman-gt-world-tour
-+ thumbnail-url: https://cf.geekdo-images.com/wWf3u9wkYkltID71VBj1IA__original/img/gBusMkRrRtBXZwrrPdKsPJDxa9A=/0x0/filters:format(jpeg)/pic5180044.jpg
++ thumbnail-url: https://cf.geekdo-images.com/wWf3u9wkYkltID71VBj1IA__medium/img/xpha0gfin4EbdmfZf8LXdYo_79c=/fit-in/500x500/filters:no_upscale():strip_icc()/pic5180044.jpg
++ podium-url: https://cf.geekdo-images.com/wWf3u9wkYkltID71VBj1IA__original/img/gBusMkRrRtBXZwrrPdKsPJDxa9A=/0x0/filters:format(jpeg)/pic5180044.jpg
 
 # 스마트폰 주식회사 업데이트 1.1.jpg
 - 👥 인원: 1 ~ 5 (3, 5인 베스트)
@@ -1068,7 +1166,8 @@
 + ♟️ 디자이너: Ivan Lashin
 + 🎨 아티스트: Viktor Miller Gausa
 + 🔗 https://boardgamegeek.com/boardgameexpansion/306864/smartphone-inc-update-11
-+ thumbnail-url: https://cf.geekdo-images.com/xv4GPMRjLArv-rWyLmd1GQ__original/img/klWw5y586psIY17FwbsBRxqn1kI=/0x0/filters:format(jpeg)/pic5378984.jpg
++ thumbnail-url: https://cf.geekdo-images.com/xv4GPMRjLArv-rWyLmd1GQ__medium/img/lm6RPBfEdNr9OABqno8liK2TkOo=/fit-in/500x500/filters:no_upscale():strip_icc()/pic5378984.jpg
++ podium-url: https://cf.geekdo-images.com/xv4GPMRjLArv-rWyLmd1GQ__original/img/klWw5y586psIY17FwbsBRxqn1kI=/0x0/filters:format(jpeg)/pic5378984.jpg
 
 # 요코하마.png
 - 👥 인원: 2 ~ 4 (3인 베스트)
@@ -1078,7 +1177,8 @@
 + ♟️ 디자이너: Hisashi Hayashi
 + 🎨 아티스트: The Creation Studio, Adam P. McIver, Ryo Nyamo
 + 🔗 https://boardgamegeek.com/boardgame/196340/yokohama
-+ thumbnail-url: https://cf.geekdo-images.com/3edsEXwH21uaO8HXXdD1Dg__original/img/O-03BIpt7yhPbsffYjDwZc68zbQ=/0x0/filters:format(png)/pic7745916.png
++ thumbnail-url: https://cf.geekdo-images.com/3edsEXwH21uaO8HXXdD1Dg__medium/img/1QiXR08vCFKKTNbrZI8gkVhaDuU=/fit-in/500x500/filters:no_upscale():strip_icc()/pic7745916.png
++ podium-url: https://cf.geekdo-images.com/3edsEXwH21uaO8HXXdD1Dg__original/img/O-03BIpt7yhPbsffYjDwZc68zbQ=/0x0/filters:format(png)/pic7745916.png
 
 # 랠리맨 GT - 챔피언십.jpg
 - 👥 인원: 1 ~ 6 (1, 3~4인 베스트)
@@ -1089,7 +1189,8 @@
 + ♟️ 디자이너: Jean-Christophe Bouvier
 + 🎨 아티스트: Loïc Muzy
 + 🔗 https://boardgamegeek.com/boardgameexpansion/272113/rallyman-gt-championship
-+ thumbnail-url: https://cf.geekdo-images.com/DvQTkZzmLEw5UUS8v7KafQ__original/img/8xtLMbuKuvUQZ15-a53O6fr2JAc=/0x0/filters:format(jpeg)/pic6984650.jpg
++ thumbnail-url: https://cf.geekdo-images.com/DvQTkZzmLEw5UUS8v7KafQ__medium/img/BImv02HLlyI8y5K95kYmFapFDic=/fit-in/500x500/filters:no_upscale():strip_icc()/pic6984650.jpg
++ podium-url: https://cf.geekdo-images.com/DvQTkZzmLEw5UUS8v7KafQ__original/img/8xtLMbuKuvUQZ15-a53O6fr2JAc=/0x0/filters:format(jpeg)/pic6984650.jpg
 
 # 파러웨이 별이 빛나는 밤.jpg
 - 👥 인원: 2 ~ 6 (2~5인 베스트)
@@ -1100,7 +1201,8 @@
 + ♟️ 디자이너: Johannes Goupy, Corentin Lebrat
 + 🎨 아티스트: Maxime Morin
 + 🔗 https://boardgamegeek.com/boardgameexpansion/451708/faraway-under-starry-skies
-+ thumbnail-url: https://cf.geekdo-images.com/dCc29ngMNPfMSgWDS2OcEw__original/img/8fKyeBbZa3guH9SHhXN005yOSuQ=/0x0/filters:format(jpeg)/pic9344596.jpg
++ thumbnail-url: https://cf.geekdo-images.com/dCc29ngMNPfMSgWDS2OcEw__medium/img/xpoxcThoH0cOPLxS4QMnD9tgwbw=/fit-in/500x500/filters:no_upscale():strip_icc()/pic9344596.jpg
++ podium-url: https://cf.geekdo-images.com/dCc29ngMNPfMSgWDS2OcEw__original/img/8fKyeBbZa3guH9SHhXN005yOSuQ=/0x0/filters:format(jpeg)/pic9344596.jpg
 
 # 마라카이보 함대.jpg
 - 👥 인원: 1 ~ 4 (1인 베스트)
@@ -1111,7 +1213,8 @@
 + ♟️ 디자이너: Alexander Pfister
 + 🎨 아티스트: Fiore GmbH, Aline Kirrmann
 + 🔗 https://boardgamegeek.com/boardgameexpansion/296519/maracaibo-la-armada
-+ thumbnail-url: https://cf.geekdo-images.com/WaQI8nhkMggpfWohZzhq9Q__original/img/ckzSokiml8FxvYhm8ZyI6HE_eh0=/0x0/filters:format(jpeg)/pic5589938.jpg
++ thumbnail-url: https://cf.geekdo-images.com/WaQI8nhkMggpfWohZzhq9Q__medium/img/fKLediRVAs5cJJAdHPomXxuw8us=/fit-in/500x500/filters:no_upscale():strip_icc()/pic5589938.jpg
++ podium-url: https://cf.geekdo-images.com/WaQI8nhkMggpfWohZzhq9Q__original/img/ckzSokiml8FxvYhm8ZyI6HE_eh0=/0x0/filters:format(jpeg)/pic5589938.jpg
 
 # 좀비사이드 인베이더.jpg
 - 👥 인원: 1 ~ 6 (3인 베스트)
@@ -1121,7 +1224,8 @@
 + ♟️ 디자이너: Raphaël Guiton, Jean-Baptiste Lullien, Nicolas Raoult
 + 🎨 아티스트: Henning Ludvigsen, Adrian Smith
 + 🔗 https://boardgamegeek.com/boardgame/248065/zombicide-invader
-+ thumbnail-url: https://cf.geekdo-images.com/J90Wl4tMo74tS5LtKSSopA__original/img/lYc-4gZdkEtHvp4SP59qH_dMPU4=/0x0/filters:format(jpeg)/pic4023671.jpg
++ thumbnail-url: https://cf.geekdo-images.com/J90Wl4tMo74tS5LtKSSopA__medium/img/HWmCTqxjCKMd_td8HUjk-AYjRFc=/fit-in/500x500/filters:no_upscale():strip_icc()/pic4023671.jpg
++ podium-url: https://cf.geekdo-images.com/J90Wl4tMo74tS5LtKSSopA__original/img/lYc-4gZdkEtHvp4SP59qH_dMPU4=/0x0/filters:format(jpeg)/pic4023671.jpg
 
 # 판타스틱 팩토리 팩션 팩 1.png
 - 👥 인원: 1 ~ 5
@@ -1132,7 +1236,8 @@
 + ♟️ 디자이너: Joseph Z. Chen, Justin Faulkner
 + 🎨 아티스트: Joseph Z. Chen
 + 🔗 https://boardgamegeek.com/boardgameexpansion/323297/fantastic-factories-faction-pack-1
-+ thumbnail-url: https://cf.geekdo-images.com/KVDUlQ4tS7IR9MfE2yhhyA__original/img/L9DI1oNU6o5paGYDSMeWS--99XM=/0x0/filters:format(png)/pic5745918.png
++ thumbnail-url: https://cf.geekdo-images.com/KVDUlQ4tS7IR9MfE2yhhyA__medium/img/LVMunoNC8OggFFVsHaV5bKc-4qs=/fit-in/500x500/filters:no_upscale():strip_icc()/pic5745918.png
++ podium-url: https://cf.geekdo-images.com/KVDUlQ4tS7IR9MfE2yhhyA__original/img/L9DI1oNU6o5paGYDSMeWS--99XM=/0x0/filters:format(png)/pic5745918.png
 
 # 다이스 쓰론 세라프 vs 뱀파이어 군주.jpg
 - 👥 인원: 2 (2인 베스트)
@@ -1142,7 +1247,8 @@
 + ♟️ 디자이너: Nate Chatellier, Manny Trembley
 + 🎨 아티스트: Gavan Brown, Manny Trembley
 + 🔗 https://boardgamegeek.com/boardgame/266964/dice-throne-season-two-seraph-v-vampire-lord
-+ thumbnail-url: https://cf.geekdo-images.com/fuBOHEdaBJ0OOee-SqN2sw__original/img/zSe020GhEyCYnbCXaz2IUwmvd3o=/0x0/filters:format(jpeg)/pic4457040.jpg
++ thumbnail-url: https://cf.geekdo-images.com/fuBOHEdaBJ0OOee-SqN2sw__medium/img/plOAqV4ZK8azR-k6w-0WMuNvPLI=/fit-in/500x500/filters:no_upscale():strip_icc()/pic4457040.jpg
++ podium-url: https://cf.geekdo-images.com/fuBOHEdaBJ0OOee-SqN2sw__original/img/zSe020GhEyCYnbCXaz2IUwmvd3o=/0x0/filters:format(jpeg)/pic4457040.jpg
 
 # 테이크 타임.png
 - 👥 인원: 2 ~ 4 (3~4인 베스트)
@@ -1152,7 +1258,8 @@
 + ♟️ 디자이너: Alexi Piovesan, Julien Prothière
 + 🎨 아티스트: Maud Chalmel
 + 🔗 https://boardgamegeek.com/boardgame/440540/take-time
-+ thumbnail-url: https://cf.geekdo-images.com/h6Bg4PZkapMB-fYfugoBrw__original/img/-lDv1CgLGKvgwJE60okL_RSYv3U=/0x0/filters:format(png)/pic8751380.png
++ thumbnail-url: https://cf.geekdo-images.com/h6Bg4PZkapMB-fYfugoBrw__medium/img/jWDLsbhN54UYqxIx4Pp6ZYRIZog=/fit-in/500x500/filters:no_upscale():strip_icc()/pic8751380.png
++ podium-url: https://cf.geekdo-images.com/h6Bg4PZkapMB-fYfugoBrw__original/img/-lDv1CgLGKvgwJE60okL_RSYv3U=/0x0/filters:format(png)/pic8751380.png
 
 # 앙크 이집트의 신들.jpg
 - 👥 인원: 2 ~ 5 (2, 4인 베스트)
@@ -1162,7 +1269,8 @@
 + ♟️ 디자이너: Eric M. Lang
 + 🎨 아티스트: Nicolas Fructus, Thierry Masson, Adrian Smith
 + 🔗 https://boardgamegeek.com/boardgame/285967/ankh-gods-of-egypt
-+ thumbnail-url: https://cf.geekdo-images.com/_al0scMG_pQfGVM31Scf1Q__original/img/h4jBTaOjznJgWELa6tTrfPqqSeA=/0x0/filters:format(jpeg)/pic6107853.jpg
++ thumbnail-url: https://cf.geekdo-images.com/_al0scMG_pQfGVM31Scf1Q__medium/img/id-i8Im_VjXqm4nFF0YvrS2gXD4=/fit-in/500x500/filters:no_upscale():strip_icc()/pic6107853.jpg
++ podium-url: https://cf.geekdo-images.com/_al0scMG_pQfGVM31Scf1Q__original/img/h4jBTaOjznJgWELa6tTrfPqqSeA=/0x0/filters:format(jpeg)/pic6107853.jpg
 
 # 랠리맨 GT - 팀 챌린지.jpg
 - 👥 인원: 1 ~ 12 (3~6인 베스트)
@@ -1173,7 +1281,8 @@
 + ♟️ 디자이너: Jean-Christophe Bouvier
 + 🎨 아티스트: Loïc Muzy
 + 🔗 https://boardgamegeek.com/boardgameexpansion/271856/rallyman-gt-team-challenge
-+ thumbnail-url: https://cf.geekdo-images.com/qdMEDG3q98rjfgSfVwurZQ__original/img/rWoDEp9Yrj1LzTLCHWIU4oEWP98=/0x0/filters:format(jpeg)/pic5180042.jpg
++ thumbnail-url: https://cf.geekdo-images.com/qdMEDG3q98rjfgSfVwurZQ__medium/img/W8FrckPBodKfctjsSj6ilcao3mc=/fit-in/500x500/filters:no_upscale():strip_icc()/pic5180042.jpg
++ podium-url: https://cf.geekdo-images.com/qdMEDG3q98rjfgSfVwurZQ__original/img/rWoDEp9Yrj1LzTLCHWIU4oEWP98=/0x0/filters:format(jpeg)/pic5180042.jpg
 
 # 다이스 쓰론 화염술사 vs 그림자 도둑.jpg
 - 👥 인원: 2 (2인 베스트)
@@ -1183,7 +1292,8 @@
 + ♟️ 디자이너: Nate Chatellier, Manny Trembley
 + 🎨 아티스트: Manny Trembley
 + 🔗 https://boardgamegeek.com/boardgame/322563/dice-throne-season-one-rerolled-pyromancer-v-shado
-+ thumbnail-url: https://cf.geekdo-images.com/X2jCYzYfmNsYWikzYPwmBw__original/img/e1mJ2cqbpmRd08PxvF7HqwOz40A=/0x0/filters:format(jpeg)/pic8662669.jpg
++ thumbnail-url: https://cf.geekdo-images.com/X2jCYzYfmNsYWikzYPwmBw__medium/img/1kEKqHGNmP2WBDpLKIc8rQUE7TA=/fit-in/500x500/filters:no_upscale():strip_icc()/pic8662669.jpg
++ podium-url: https://cf.geekdo-images.com/X2jCYzYfmNsYWikzYPwmBw__original/img/e1mJ2cqbpmRd08PxvF7HqwOz40A=/0x0/filters:format(jpeg)/pic8662669.jpg
 
 # 다이스 쓰론 수도승 vs 성기사.png
 - 👥 인원: 2 (2인 베스트)
@@ -1193,7 +1303,8 @@
 + ♟️ 디자이너: Nate Chatellier, Manny Trembley
 + 🎨 아티스트: Manny Trembley
 + 🔗 https://boardgamegeek.com/boardgame/322562/dice-throne-season-one-rerolled-monk-v-paladin
-+ thumbnail-url: https://cf.geekdo-images.com/jdn0fNjlZdd5Ntog_SDZhA__original/img/UqJZ-D3XiVVchzcBRzcGOMrSQjQ=/0x0/filters:format(png)/pic6018347.png
++ thumbnail-url: https://cf.geekdo-images.com/jdn0fNjlZdd5Ntog_SDZhA__medium/img/NFtq3hBg3XUpaNeHLF2sp51ABc0=/fit-in/500x500/filters:no_upscale():strip_icc()/pic6018347.png
++ podium-url: https://cf.geekdo-images.com/jdn0fNjlZdd5Ntog_SDZhA__original/img/UqJZ-D3XiVVchzcBRzcGOMrSQjQ=/0x0/filters:format(png)/pic6018347.png
 
 # 다이스 쓰론 전술가 vs 사냥꾼.jpg
 - 👥 인원: 2 (2인 베스트)
@@ -1203,7 +1314,8 @@
 + ♟️ 디자이너: Nate Chatellier, Manny Trembley
 + 🎨 아티스트: Gavan Brown, Manny Trembley
 + 🔗 https://boardgamegeek.com/boardgame/266965/dice-throne-season-two-tactician-v-huntress
-+ thumbnail-url: https://cf.geekdo-images.com/B5L8PfhD0CTDYHIYIpTOFw__original/img/8axTxgZq7NCA6KKPUCgXahP6-y4=/0x0/filters:format(jpeg)/pic4455600.jpg
++ thumbnail-url: https://cf.geekdo-images.com/B5L8PfhD0CTDYHIYIpTOFw__medium/img/9ueHdw1rfQZNZnW3dyXR9fc0vYo=/fit-in/500x500/filters:no_upscale():strip_icc()/pic4455600.jpg
++ podium-url: https://cf.geekdo-images.com/B5L8PfhD0CTDYHIYIpTOFw__original/img/8axTxgZq7NCA6KKPUCgXahP6-y4=/0x0/filters:format(jpeg)/pic4455600.jpg
 
 # 좀비사이드 (2판) 니코.jpg
 - 👥 인원: 1 ~ 6
@@ -1214,7 +1326,8 @@
 + ♟️ 디자이너: -
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgameexpansion/337356/zombicide-2nd-edition-nico
-+ thumbnail-url: https://cf.geekdo-images.com/BxrLkZBrJhtfXPbf5MzI6A__original/img/kMf7Db6iiaOcAS-7J0ePDE3Kolw=/0x0/filters:format(jpeg)/pic6151416.jpg
++ thumbnail-url: https://cf.geekdo-images.com/BxrLkZBrJhtfXPbf5MzI6A__medium/img/GUfF8z_OU_KKqVDGCnp3LUU2QFo=/fit-in/500x500/filters:no_upscale():strip_icc()/pic6151416.jpg
++ podium-url: https://cf.geekdo-images.com/BxrLkZBrJhtfXPbf5MzI6A__original/img/kMf7Db6iiaOcAS-7J0ePDE3Kolw=/0x0/filters:format(jpeg)/pic6151416.jpg
 
 # 다이스 쓰론 나무 정령 vs 닌자.jpg
 - 👥 인원: 2 (2인 베스트)
@@ -1224,7 +1337,8 @@
 + ♟️ 디자이너: Nate Chatellier, Manny Trembley
 + 🎨 아티스트: Gavan Brown, Manny Trembley
 + 🔗 https://boardgamegeek.com/boardgame/320527/dice-throne-season-one-rerolled-treant-v-ninja
-+ thumbnail-url: https://cf.geekdo-images.com/QR3rljlWtcArSs9yv061_g__original/img/WDqqH97q1RGeZmdUVDlW_9Ov4Fs=/0x0/filters:format(jpeg)/pic7486291.jpg
++ thumbnail-url: https://cf.geekdo-images.com/QR3rljlWtcArSs9yv061_g__medium/img/YiES2gZXMdHRxHJkPrgd9GLGJA0=/fit-in/500x500/filters:no_upscale():strip_icc()/pic7486291.jpg
++ podium-url: https://cf.geekdo-images.com/QR3rljlWtcArSs9yv061_g__original/img/WDqqH97q1RGeZmdUVDlW_9Ov4Fs=/0x0/filters:format(jpeg)/pic7486291.jpg
 
 # 에스노스 2판.jpg
 - 👥 인원: 1 ~ 6 (4~5인 베스트)
@@ -1234,7 +1348,8 @@
 + ♟️ 디자이너: Paolo Mori
 + 🎨 아티스트: Davide Tosello
 + 🔗 https://boardgamegeek.com/boardgame/432527/ethnos-2nd-edition
-+ thumbnail-url: https://cf.geekdo-images.com/3pOKNbsS7iV-9foX1GPQFw__original/img/Y7x1iJKATpsn6QME7aat5iCx30A=/0x0/filters:format(jpeg)/pic8542015.jpg
++ thumbnail-url: https://cf.geekdo-images.com/3pOKNbsS7iV-9foX1GPQFw__medium/img/9lM6OxS888NXqlhQO7eCq9qpr2Q=/fit-in/500x500/filters:no_upscale():strip_icc()/pic8542015.jpg
++ podium-url: https://cf.geekdo-images.com/3pOKNbsS7iV-9foX1GPQFw__original/img/Y7x1iJKATpsn6QME7aat5iCx30A=/0x0/filters:format(jpeg)/pic8542015.jpg
 
 # 좀비사이드 그린호드.jpg
 - 👥 인원: 1 ~ 6 (3인 베스트)
@@ -1244,7 +1359,8 @@
 + ♟️ 디자이너: Raphaël Guiton, Jean-Baptiste Lullien, Nicolas Raoult
 + 🎨 아티스트: Nicolas Fructus, Mathieu Harlaut, Jérémy Masson, Thierry Masson
 + 🔗 https://boardgamegeek.com/boardgame/224710/zombicide-green-horde
-+ thumbnail-url: https://cf.geekdo-images.com/rtJTab2_kHN2k4_nUddRTQ__original/img/Xs4zH6y3WpZ8XFq-X4T1p5XWncY=/0x0/filters:format(jpeg)/pic3564805.jpg
++ thumbnail-url: https://cf.geekdo-images.com/rtJTab2_kHN2k4_nUddRTQ__medium/img/999v2I1CeIvlFvMsNlPcrPyq2gQ=/fit-in/500x500/filters:no_upscale():strip_icc()/pic3564805.jpg
++ podium-url: https://cf.geekdo-images.com/rtJTab2_kHN2k4_nUddRTQ__original/img/Xs4zH6y3WpZ8XFq-X4T1p5XWncY=/0x0/filters:format(jpeg)/pic3564805.jpg
 
 # 판타스틱 팩토리 프로모 팩 2.png
 - 👥 인원: 1 ~ 5 (1인 베스트)
@@ -1255,7 +1371,8 @@
 + ♟️ 디자이너: Joseph Z. Chen, Justin Faulkner
 + 🎨 아티스트: Joseph Z. Chen
 + 🔗 https://boardgamegeek.com/boardgameexpansion/323296/fantastic-factories-promo-pack-2
-+ thumbnail-url: https://cf.geekdo-images.com/RDp9E4mGz-B7kVleA9QsZQ__original/img/-gPt6RENuaLi4S0xGsRvy3ab_ZY=/0x0/filters:format(png)/pic5745921.png
++ thumbnail-url: https://cf.geekdo-images.com/RDp9E4mGz-B7kVleA9QsZQ__medium/img/kbGfd1etPROjPXbvmN1EDFvA6cw=/fit-in/500x500/filters:no_upscale():strip_icc()/pic5745921.png
++ podium-url: https://cf.geekdo-images.com/RDp9E4mGz-B7kVleA9QsZQ__original/img/-gPt6RENuaLi4S0xGsRvy3ab_ZY=/0x0/filters:format(png)/pic5745921.png
 
 # 테케누 태양의 오벨리스크.jpg
 - 👥 인원: 1 ~ 4 (3인 베스트)
@@ -1265,7 +1382,8 @@
 + ♟️ 디자이너: Daniele Tascini, Dávid Turczi
 + 🎨 아티스트: Michał Długaj, Jakub Fajtanowski, Zbigniew Umgelter, Aleksander Zawada
 + 🔗 https://boardgamegeek.com/boardgame/297030/tekhenu-obelisk-of-the-sun
-+ thumbnail-url: https://cf.geekdo-images.com/CBLtzgG8zsqDkUZ_hN5-ew__original/img/jEL4WHl98vZHaZFcw9hDXxsxjSo=/0x0/filters:format(jpeg)/pic5313583.jpg
++ thumbnail-url: https://cf.geekdo-images.com/CBLtzgG8zsqDkUZ_hN5-ew__medium/img/Feu8i2a0jXJPfZ6nBqvMrlj5Kw4=/fit-in/500x500/filters:no_upscale():strip_icc()/pic5313583.jpg
++ podium-url: https://cf.geekdo-images.com/CBLtzgG8zsqDkUZ_hN5-ew__original/img/jEL4WHl98vZHaZFcw9hDXxsxjSo=/0x0/filters:format(jpeg)/pic5313583.jpg
 
 # 기즈모 추가 혜택을 받자! 프로모 세트.jpg
 - 👥 인원: 2 ~ 4
@@ -1276,7 +1394,8 @@
 + ♟️ 디자이너: Marco Portugal, Phil Walker-Harding
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgameexpansion/303673/gizmos-extra-credits-promo
-+ thumbnail-url: https://cf.geekdo-images.com/TJ01QNNTnL5yYCOYAESLXw__original/img/Ayl9Ql5M2Tkgzr_LT6HsvFdlFbs=/0x0/filters:format(jpeg)/pic5269490.jpg
++ thumbnail-url: https://cf.geekdo-images.com/TJ01QNNTnL5yYCOYAESLXw__medium/img/YtOmHA0SMAeIJ3T8aA6DwxXhNPQ=/fit-in/500x500/filters:no_upscale():strip_icc()/pic5269490.jpg
++ podium-url: https://cf.geekdo-images.com/TJ01QNNTnL5yYCOYAESLXw__original/img/Ayl9Ql5M2Tkgzr_LT6HsvFdlFbs=/0x0/filters:format(jpeg)/pic5269490.jpg
 
 # 좀비사이드 흑사병.jpg
 - 👥 인원: 1 ~ 6 (3인 베스트)
@@ -1286,7 +1405,8 @@
 + ♟️ 디자이너: Raphaël Guiton, Jean-Baptiste Lullien, Nicolas Raoult
 + 🎨 아티스트: Nicolas Fructus, Jérémy Masson
 + 🔗 https://boardgamegeek.com/boardgame/176189/zombicide-black-plague
-+ thumbnail-url: https://cf.geekdo-images.com/kVHuMBxmathfnq42XINBQg__original/img/Xak18xf2xfSedYFS9-ZKwjSk7yc=/0x0/filters:format(jpeg)/pic2482309.jpg
++ thumbnail-url: https://cf.geekdo-images.com/kVHuMBxmathfnq42XINBQg__medium/img/doCeB9T40DBgloV8tO_6oiW7ci0=/fit-in/500x500/filters:no_upscale():strip_icc()/pic2482309.jpg
++ podium-url: https://cf.geekdo-images.com/kVHuMBxmathfnq42XINBQg__original/img/Xak18xf2xfSedYFS9-ZKwjSk7yc=/0x0/filters:format(jpeg)/pic2482309.jpg
 
 # 파운데이션 메트로폴리스.png
 - 👥 인원: 2 ~ 4 (4인 베스트)
@@ -1296,7 +1416,8 @@
 + ♟️ 디자이너: Emerson Matsuuchi
 + 🎨 아티스트: Joe Shawcross
 + 🔗 https://boardgamegeek.com/boardgame/412865/foundations-of-metropolis
-+ thumbnail-url: https://cf.geekdo-images.com/w63l98O0Rm5yg5HW8ZNaBA__original/img/Ir-ywg7E99DFLbQ2eMhc3NcRTLo=/0x0/filters:format(png)/pic7991147.png
++ thumbnail-url: https://cf.geekdo-images.com/w63l98O0Rm5yg5HW8ZNaBA__medium/img/Yg6DS-Ii2uOLU0266-tvrGZUtII=/fit-in/500x500/filters:no_upscale():strip_icc()/pic7991147.png
++ podium-url: https://cf.geekdo-images.com/w63l98O0Rm5yg5HW8ZNaBA__original/img/Ir-ywg7E99DFLbQ2eMhc3NcRTLo=/0x0/filters:format(png)/pic7991147.png
 
 # 랠리맨 GT - GT4.jpg
 - 👥 인원: 1 ~ 6 (1, 3~5인 베스트)
@@ -1307,7 +1428,8 @@
 + ♟️ 디자이너: Jean-Christophe Bouvier
 + 🎨 아티스트: Loïc Muzy
 + 🔗 https://boardgamegeek.com/boardgameexpansion/271854/rallyman-gt-gt4
-+ thumbnail-url: https://cf.geekdo-images.com/dwfkbrvwzqiQcBLKBaPUIg__original/img/UDa504_vMZlNTEZHnCFtyRBD9Ec=/0x0/filters:format(jpeg)/pic5180031.jpg
++ thumbnail-url: https://cf.geekdo-images.com/dwfkbrvwzqiQcBLKBaPUIg__medium/img/5cX80xqN4PluLptmmLhog1BNmeo=/fit-in/500x500/filters:no_upscale():strip_icc()/pic5180031.jpg
++ podium-url: https://cf.geekdo-images.com/dwfkbrvwzqiQcBLKBaPUIg__original/img/UDa504_vMZlNTEZHnCFtyRBD9Ec=/0x0/filters:format(jpeg)/pic5180031.jpg
 
 # 아카디아 퀘스트.jpg
 - 👥 인원: 2 ~ 4 (4인 베스트)
@@ -1317,7 +1439,8 @@
 + ♟️ 디자이너: Thiago Aranha, Guilherme Goulart, Eric M. Lang, Fred Perret
 + 🎨 아티스트: Andrea Cofrancesco, Mathieu Harlaut
 + 🔗 https://boardgamegeek.com/boardgame/155068/arcadia-quest
-+ thumbnail-url: https://cf.geekdo-images.com/8qyLCqvdZkSpT2lEbwVpeg__original/img/8oGnjG0FUHy9Mo6VkbZVXZmDnwU=/0x0/filters:format(jpeg)/pic2305263.jpg
++ thumbnail-url: https://cf.geekdo-images.com/8qyLCqvdZkSpT2lEbwVpeg__medium/img/YusgYuuTK52rvf66NcDWE6zgRKk=/fit-in/500x500/filters:no_upscale():strip_icc()/pic2305263.jpg
++ podium-url: https://cf.geekdo-images.com/8qyLCqvdZkSpT2lEbwVpeg__original/img/8oGnjG0FUHy9Mo6VkbZVXZmDnwU=/0x0/filters:format(jpeg)/pic2305263.jpg
 
 # 스마트폰 주식회사.jpg
 - 👥 인원: 1 ~ 5 (5인 베스트)
@@ -1327,7 +1450,8 @@
 + ♟️ 디자이너: Ivan Lashin
 + 🎨 아티스트: Viktor Miller Gausa
 + 🔗 https://boardgamegeek.com/boardgame/246684/smartphone-inc
-+ thumbnail-url: https://cf.geekdo-images.com/Ndctxvd7kBXYubeYRKRqzw__original/img/gGL8Fh-pFgTqB3lF-47ClLYLu8s=/0x0/filters:format(jpeg)/pic4258616.jpg
++ thumbnail-url: https://cf.geekdo-images.com/Ndctxvd7kBXYubeYRKRqzw__medium/img/f0I4E07wkjGklczprAs1Gz-YVa8=/fit-in/500x500/filters:no_upscale():strip_icc()/pic4258616.jpg
++ podium-url: https://cf.geekdo-images.com/Ndctxvd7kBXYubeYRKRqzw__original/img/gGL8Fh-pFgTqB3lF-47ClLYLu8s=/0x0/filters:format(jpeg)/pic4258616.jpg
 
 # 판타스틱 팩토리 프로모 팩 1.jpg
 - 👥 인원: 1 ~ 5 (3인 베스트)
@@ -1338,7 +1462,8 @@
 + ♟️ 디자이너: Joseph Z. Chen, Justin Faulkner
 + 🎨 아티스트: Joseph Z. Chen
 + 🔗 https://boardgamegeek.com/boardgameexpansion/291840/fantastic-factories-promo-pack-1
-+ thumbnail-url: https://cf.geekdo-images.com/RN2-L3jjgYZ4GACCzEE1ew__original/img/P5x2gh-Ff_QEpoo8_f2WoWZPi8Y=/0x0/filters:format(jpeg)/pic6637851.jpg
++ thumbnail-url: https://cf.geekdo-images.com/RN2-L3jjgYZ4GACCzEE1ew__medium/img/8vju--nWO8C2uj2MguKnW6-XzMc=/fit-in/500x500/filters:no_upscale():strip_icc()/pic6637851.jpg
++ podium-url: https://cf.geekdo-images.com/RN2-L3jjgYZ4GACCzEE1ew__original/img/P5x2gh-Ff_QEpoo8_f2WoWZPi8Y=/0x0/filters:format(jpeg)/pic6637851.jpg
 
 # 파러웨이.png
 - 👥 인원: 2 ~ 6 (3인 베스트)
@@ -1348,7 +1473,8 @@
 + ♟️ 디자이너: Johannes Goupy, Corentin Lebrat
 + 🎨 아티스트: Maxime Morin
 + 🔗 https://boardgamegeek.com/boardgame/385761/faraway
-+ thumbnail-url: https://cf.geekdo-images.com/u1cwi9BWSKsPxSkVO0BzbA__original/img/jTY6_PRF6FrUgInfMajzobVy0S8=/0x0/filters:format(png)/pic7570101.png
++ thumbnail-url: https://cf.geekdo-images.com/u1cwi9BWSKsPxSkVO0BzbA__medium/img/BTEkHc1a99LcKrWy4aXQd2iZYlg=/fit-in/500x500/filters:no_upscale():strip_icc()/pic7570101.png
++ podium-url: https://cf.geekdo-images.com/u1cwi9BWSKsPxSkVO0BzbA__original/img/jTY6_PRF6FrUgInfMajzobVy0S8=/0x0/filters:format(png)/pic7570101.png
 
 # 마블 유나이티드.jpg
 - 👥 인원: 1 ~ 4 (3인 베스트)
@@ -1358,7 +1484,8 @@
 + ♟️ 디자이너: Andrea Chiarvesio, Eric M. Lang
 + 🎨 아티스트: Édouard Guiton
 + 🔗 https://boardgamegeek.com/boardgame/298047/marvel-united
-+ thumbnail-url: https://cf.geekdo-images.com/-19XPXmTn9QyyvqwpcFkBw__original/img/zgZcNusSm7mFMP3N6MJvJRe_gKY=/0x0/filters:format(jpeg)/pic5231006.jpg
++ thumbnail-url: https://cf.geekdo-images.com/-19XPXmTn9QyyvqwpcFkBw__medium/img/_JZhXiIwjCbv8PBVG603D83uHcE=/fit-in/500x500/filters:no_upscale():strip_icc()/pic5231006.jpg
++ podium-url: https://cf.geekdo-images.com/-19XPXmTn9QyyvqwpcFkBw__original/img/zgZcNusSm7mFMP3N6MJvJRe_gKY=/0x0/filters:format(jpeg)/pic5231006.jpg
 
 # 포션 폭발 다섯 번째 재료.png
 - 👥 인원: 2 ~ 4 (2인 베스트)
@@ -1369,7 +1496,8 @@
 + ♟️ 디자이너: Stefano Castelli, Andrea Crespi, Lorenzo Silva
 + 🎨 아티스트: Giulia Ghigini
 + 🔗 https://boardgamegeek.com/boardgameexpansion/203542/potion-explosion-the-fifth-ingredient
-+ thumbnail-url: https://cf.geekdo-images.com/HNY4dGRmFxa9bBAkwXFiQQ__original/img/av0139d8SrY1gjWazlczwTP0t18=/0x0/filters:format(png)/pic3387514.png
++ thumbnail-url: https://cf.geekdo-images.com/HNY4dGRmFxa9bBAkwXFiQQ__medium/img/0xI_ksYqqZen8VEsHNrKjbX-4E8=/fit-in/500x500/filters:no_upscale():strip_icc()/pic3387514.png
++ podium-url: https://cf.geekdo-images.com/HNY4dGRmFxa9bBAkwXFiQQ__original/img/av0139d8SrY1gjWazlczwTP0t18=/0x0/filters:format(png)/pic3387514.png
 
 # 피아이 (2판).jpg
 - 👥 인원: 2 ~ 5
@@ -1379,7 +1507,8 @@
 + ♟️ 디자이너: Martin Wallace
 + 🎨 아티스트: COSMOS
 + 🔗 https://boardgamegeek.com/boardgame/463574/pi-second-edition
-+ thumbnail-url: https://cf.geekdo-images.com/b1ZtdKOPY4p4fRYAUt2gyg__original/img/wsSsAFmNPtuf3gPe-qHi72pvZTg=/0x0/filters:format(jpeg)/pic9475573.jpg
++ thumbnail-url: https://cf.geekdo-images.com/b1ZtdKOPY4p4fRYAUt2gyg__medium/img/GbahoMadxuzQM0pT5WpxiPjLRrM=/fit-in/500x500/filters:no_upscale():strip_icc()/pic9475573.jpg
++ podium-url: https://cf.geekdo-images.com/b1ZtdKOPY4p4fRYAUt2gyg__original/img/wsSsAFmNPtuf3gPe-qHi72pvZTg=/0x0/filters:format(jpeg)/pic9475573.jpg
 
 # 다이스 쓰론 야만인 vs 달의 엘프.jpg
 - 👥 인원: 2 (2인 베스트)
@@ -1389,7 +1518,8 @@
 + ♟️ 디자이너: Nate Chatellier, Manny Trembley
 + 🎨 아티스트: Manny Trembley
 + 🔗 https://boardgamegeek.com/boardgame/322561/dice-throne-season-one-rerolled-battle-1-barbarian
-+ thumbnail-url: https://cf.geekdo-images.com/XlZwILRgLY2u-DGUsW5D4A__original/img/v8jej5Rk6yHK1voqqhdfJOgm2s4=/0x0/filters:format(jpeg)/pic7486290.jpg
++ thumbnail-url: https://cf.geekdo-images.com/XlZwILRgLY2u-DGUsW5D4A__medium/img/E3HR-S30f2U5kq_ct8-R_NJzmOs=/fit-in/500x500/filters:no_upscale():strip_icc()/pic7486290.jpg
++ podium-url: https://cf.geekdo-images.com/XlZwILRgLY2u-DGUsW5D4A__original/img/v8jej5Rk6yHK1voqqhdfJOgm2s4=/0x0/filters:format(jpeg)/pic7486290.jpg
 
 # 다이스 쓰론 총잡이 vs 사무라이.jpg
 - 👥 인원: 2 (2인 베스트)
@@ -1399,7 +1529,8 @@
 + ♟️ 디자이너: Nate Chatellier, Manny Trembley
 + 🎨 아티스트: Nick Malara, Damien Mammoliti, Manny Trembley
 + 🔗 https://boardgamegeek.com/boardgame/266966/dice-throne-season-two-gunslinger-v-samurai
-+ thumbnail-url: https://cf.geekdo-images.com/Xs6ViyWdJdK4f3_x9ofV4Q__original/img/vAIU4PGNrjdVccFuzGN2sg6r3WY=/0x0/filters:format(jpeg)/pic4455104.jpg
++ thumbnail-url: https://cf.geekdo-images.com/Xs6ViyWdJdK4f3_x9ofV4Q__medium/img/b3-mw_2ZVLB2_IXZfbXunMGjzGU=/fit-in/500x500/filters:no_upscale():strip_icc()/pic4455104.jpg
++ podium-url: https://cf.geekdo-images.com/Xs6ViyWdJdK4f3_x9ofV4Q__original/img/vAIU4PGNrjdVccFuzGN2sg6r3WY=/0x0/filters:format(jpeg)/pic4455104.jpg
 
 # 러브 레터.png
 - 👥 인원: 2 ~ 6 (4인 베스트)
@@ -1409,7 +1540,8 @@
 + ♟️ 디자이너: Seiji Kanai, Justin Kemppainen, Alexandar Ortloff-Tang
 + 🎨 아티스트: Andrew Bosley, Samuel R. Shimota
 + 🔗 https://boardgamegeek.com/boardgame/277085/love-letter
-+ thumbnail-url: https://cf.geekdo-images.com/V7WQjhAh0AatPXTYOrXtCQ__original/img/peOFPtAkzWUSpOSVTJu3pTDv2ck=/0x0/filters:format(png)/pic4766499.png
++ thumbnail-url: https://cf.geekdo-images.com/V7WQjhAh0AatPXTYOrXtCQ__medium/img/be977I9Ss72I8MIyt1RX2ZM7xHQ=/fit-in/500x500/filters:no_upscale():strip_icc()/pic4766499.png
++ podium-url: https://cf.geekdo-images.com/V7WQjhAh0AatPXTYOrXtCQ__original/img/peOFPtAkzWUSpOSVTJu3pTDv2ck=/0x0/filters:format(png)/pic4766499.png
 
 # 오리진스 고대의 불가사의.jpg
 - 👥 인원: 1 ~ 4 (3인 베스트)
@@ -1420,7 +1552,8 @@
 + ♟️ 디자이너: Adam Kwapiński
 + 🎨 아티스트: Zbigniew Umgelter, Aleksander Zawada
 + 🔗 https://boardgamegeek.com/boardgameexpansion/363480/origins-ancient-wonders
-+ thumbnail-url: https://cf.geekdo-images.com/hYeI-bmRwIVQWnKQYvTe6w__original/img/e3dIdkxUA4yXMRT46hnnW0O5ybY=/0x0/filters:format(jpeg)/pic6875521.jpg
++ thumbnail-url: https://cf.geekdo-images.com/hYeI-bmRwIVQWnKQYvTe6w__medium/img/Ub6g0DK5fdN3IWAeMwe2-dC49LE=/fit-in/500x500/filters:no_upscale():strip_icc()/pic6875521.jpg
++ podium-url: https://cf.geekdo-images.com/hYeI-bmRwIVQWnKQYvTe6w__original/img/e3dIdkxUA4yXMRT46hnnW0O5ybY=/0x0/filters:format(jpeg)/pic6875521.jpg
 
 # 판타지 왕국.jpg
 - 👥 인원: 2 ~ 6 (2~3인 베스트)
@@ -1430,7 +1563,8 @@
 + ♟️ 디자이너: Bruce Glassco
 + 🎨 아티스트: Anthony Cournoyer, Octographics
 + 🔗 https://boardgamegeek.com/boardgame/223040/fantasy-realms
-+ thumbnail-url: https://cf.geekdo-images.com/A7IOpPt-lHrMYsbRmxXWdQ__original/img/kaYIVoFZkbWe0z80bvcqJdFCNlo=/0x0/filters:format(jpeg)/pic6177962.jpg
++ thumbnail-url: https://cf.geekdo-images.com/A7IOpPt-lHrMYsbRmxXWdQ__medium/img/P067DHgLxHEuRqq0Qd77j6Jzm5I=/fit-in/500x500/filters:no_upscale():strip_icc()/pic6177962.jpg
++ podium-url: https://cf.geekdo-images.com/A7IOpPt-lHrMYsbRmxXWdQ__original/img/kaYIVoFZkbWe0z80bvcqJdFCNlo=/0x0/filters:format(jpeg)/pic6177962.jpg
 
 # 휘슬 마운틴.jpg
 - 👥 인원: 2 ~ 4 (3인 베스트)
@@ -1440,7 +1574,8 @@
 + ♟️ 디자이너: Scott Caputo, Luke Laurie
 + 🎨 아티스트: Mila Harbar, Alanna Kelsey, T. B. (II)
 + 🔗 https://boardgamegeek.com/boardgame/301255/whistle-mountain
-+ thumbnail-url: https://cf.geekdo-images.com/BkPVVNEJxnF2ouque0ov8A__original/img/KBbDQ_YZG_JF_rkniAKYupJLYnI=/0x0/filters:format(jpeg)/pic5275651.jpg
++ thumbnail-url: https://cf.geekdo-images.com/BkPVVNEJxnF2ouque0ov8A__medium/img/9y4k1vwPKoj4cY1chtUlyqkMrXM=/fit-in/500x500/filters:no_upscale():strip_icc()/pic5275651.jpg
++ podium-url: https://cf.geekdo-images.com/BkPVVNEJxnF2ouque0ov8A__original/img/KBbDQ_YZG_JF_rkniAKYupJLYnI=/0x0/filters:format(jpeg)/pic5275651.jpg
 
 # 포션 폭발 여섯 번째 학생.jpg
 - 👥 인원: 2 ~ 6 (4인 베스트)
@@ -1451,7 +1586,8 @@
 + ♟️ 디자이너: Stefano Castelli, Andrea Crespi, Lorenzo Silva
 + 🎨 아티스트: Giulia Ghigini
 + 🔗 https://boardgamegeek.com/boardgameexpansion/257729/potion-explosion-the-6th-student
-+ thumbnail-url: https://cf.geekdo-images.com/_nR-NCdUMBRpGf4xOgUHYA__original/img/5-4xEv7k2WLoAQRo3Mc1CTrpLPg=/0x0/filters:format(jpeg)/pic4253868.jpg
++ thumbnail-url: https://cf.geekdo-images.com/_nR-NCdUMBRpGf4xOgUHYA__medium/img/P_KH9CrYc-1bassPDIAYsTsle9Y=/fit-in/500x500/filters:no_upscale():strip_icc()/pic4253868.jpg
++ podium-url: https://cf.geekdo-images.com/_nR-NCdUMBRpGf4xOgUHYA__original/img/5-4xEv7k2WLoAQRo3Mc1CTrpLPg=/0x0/filters:format(jpeg)/pic4253868.jpg
 
 # 아컴호러 러브크래프트 레터.png
 - 👥 인원: 2 ~ 6 (4인 베스트)
@@ -1461,7 +1597,8 @@
 + ♟️ 디자이너: Seiji Kanai
 + 🎨 아티스트: Walter Brocca, Joshua Cairós, Matthew Cowdery, Mauro dal Bo, Stanislav Dikolenko, Graey Erb, Anders Finér, Tony Foti, Aleksander Karcz, Robert Laskey, Pixoloid Studios, Adam Shumpert, Stephen Somers, Shane Tyree, Magali Villeneuve
 + 🔗 https://boardgamegeek.com/boardgame/424784/arkham-horror-lovecraft-letter
-+ thumbnail-url: https://cf.geekdo-images.com/hLfQAtkN8m06_L3xAtqXEQ__original/img/EdWsCpTM0VqDLQuSTsTuGjGUuKY=/0x0/filters:format(png)/pic8544768.png
++ thumbnail-url: https://cf.geekdo-images.com/hLfQAtkN8m06_L3xAtqXEQ__medium/img/tMomDfJ9Aq7lgXWCPcGm2vPBtg8=/fit-in/500x500/filters:no_upscale():strip_icc()/pic8544768.png
++ podium-url: https://cf.geekdo-images.com/hLfQAtkN8m06_L3xAtqXEQ__original/img/EdWsCpTM0VqDLQuSTsTuGjGUuKY=/0x0/filters:format(png)/pic8544768.png
 
 # 에스노스.png
 - 👥 인원: 2 ~ 6 (4인 베스트)
@@ -1471,7 +1608,8 @@
 + ♟️ 디자이너: Paolo Mori
 + 🎨 아티스트: John Howe
 + 🔗 https://boardgamegeek.com/boardgame/206718/ethnos
-+ thumbnail-url: https://cf.geekdo-images.com/UIKUXkcnH3Bd4fjcPGINcA__original/img/IrqDqjjm1LY66Zkw7l4RwppaBBI=/0x0/filters:format(png)/pic3304124.png
++ thumbnail-url: https://cf.geekdo-images.com/UIKUXkcnH3Bd4fjcPGINcA__medium/img/IHhPcXgjWYccVR6IWQSYs9B1Jn8=/fit-in/500x500/filters:no_upscale():strip_icc()/pic3304124.png
++ podium-url: https://cf.geekdo-images.com/UIKUXkcnH3Bd4fjcPGINcA__original/img/IrqDqjjm1LY66Zkw7l4RwppaBBI=/0x0/filters:format(png)/pic3304124.png
 
 # 캣 레이디 프리미엄 에디션.jpg
 - 👥 인원: 2 ~ 4 (2~3인 베스트)
@@ -1481,7 +1619,8 @@
 + ♟️ 디자이너: Josh Wood
 + 🎨 아티스트: Josh Wood
 + 🔗 https://boardgamegeek.com/boardgame/281073/cat-lady-premium-edition
-+ thumbnail-url: https://cf.geekdo-images.com/qFmeTFHa92DhiBKTY2baXQ__original/img/gMiYgXv9l9-N2r0bLvdq5GXBC6g=/0x0/filters:format(jpeg)/pic4827402.jpg
++ thumbnail-url: https://cf.geekdo-images.com/qFmeTFHa92DhiBKTY2baXQ__medium/img/9jmtEKzpcJk1cLzoqBlchvtujCw=/fit-in/500x500/filters:no_upscale():strip_icc()/pic4827402.jpg
++ podium-url: https://cf.geekdo-images.com/qFmeTFHa92DhiBKTY2baXQ__original/img/gMiYgXv9l9-N2r0bLvdq5GXBC6g=/0x0/filters:format(jpeg)/pic4827402.jpg
 
 # 마라카이보 플라잉 더치맨.jpg
 - 👥 인원: 1 ~ 4 (1~2인 베스트)
@@ -1492,7 +1631,8 @@
 + ♟️ 디자이너: -
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgameexpansion/316190/maracaibo-flying-dutchman-promo-tile
-+ thumbnail-url: https://cf.geekdo-images.com/w0bQNj2OO-4uYD3Xd-d89g__original/img/E7vI9xVVDUjbQLatX9OBAUYbvEQ=/0x0/filters:format(jpeg)/pic5575739.jpg
++ thumbnail-url: https://cf.geekdo-images.com/w0bQNj2OO-4uYD3Xd-d89g__medium/img/yXLaqu2Rc6nnq6__zC3pYFMU5wI=/fit-in/500x500/filters:no_upscale():strip_icc()/pic5575739.jpg
++ podium-url: https://cf.geekdo-images.com/w0bQNj2OO-4uYD3Xd-d89g__original/img/E7vI9xVVDUjbQLatX9OBAUYbvEQ=/0x0/filters:format(jpeg)/pic5575739.jpg
 
 # 숨겨진 이야기 불길.jpg
 - 👥 인원: 1 ~ 6
@@ -1502,7 +1642,8 @@
 + ♟️ 디자이너: Jules Messaud, Anthony Perone
 + 🎨 아티스트: Cyrille Bertin
 + 🔗 https://boardgamegeek.com/boardgame/436150/backstories-lembrasement
-+ thumbnail-url: https://cf.geekdo-images.com/JjOy4xJ5Orltb1VBD_R46A__original/img/0f587D_60nj-eey7ry1amv46_6Y=/0x0/filters:format(jpeg)/pic8801714.jpg
++ thumbnail-url: https://cf.geekdo-images.com/JjOy4xJ5Orltb1VBD_R46A__medium/img/yy-_f7ollIq8FuqMocdYt9t3f8s=/fit-in/500x500/filters:no_upscale():strip_icc()/pic8801714.jpg
++ podium-url: https://cf.geekdo-images.com/JjOy4xJ5Orltb1VBD_R46A__original/img/0f587D_60nj-eey7ry1amv46_6Y=/0x0/filters:format(jpeg)/pic8801714.jpg
 
 # 스마트 10.jpg
 - 👥 인원: 2 ~ 8 (3~4인 베스트)
@@ -1512,7 +1653,8 @@
 + ♟️ 디자이너: Christoph Reiser, Arno Steinwender
 + 🎨 아티스트: Aleksi Michelsson
 + 🔗 https://boardgamegeek.com/boardgame/241590/smart10
-+ thumbnail-url: https://cf.geekdo-images.com/ulWDdnx-cyzHpAXYTxqMXA__original/img/RijbFfw4z7V0KYQ3rG545lgBXmg=/0x0/filters:format(jpeg)/pic9086289.jpg
++ thumbnail-url: https://cf.geekdo-images.com/ulWDdnx-cyzHpAXYTxqMXA__medium/img/fH7ymN2xVUWc3oM2uGC3MYySwno=/fit-in/500x500/filters:no_upscale():strip_icc()/pic9086289.jpg
++ podium-url: https://cf.geekdo-images.com/ulWDdnx-cyzHpAXYTxqMXA__original/img/RijbFfw4z7V0KYQ3rG545lgBXmg=/0x0/filters:format(jpeg)/pic9086289.jpg
 
 # 에스노스 프로모션 확장 - 페어리.png
 - 👥 인원: 2 ~ 6
@@ -1523,7 +1665,8 @@
 + ♟️ 디자이너: Paolo Mori
 + 🎨 아티스트: John Howe
 + 🔗 https://boardgamegeek.com/boardgameexpansion/226318/ethnos-promo-tribe-fairies
-+ thumbnail-url: https://cf.geekdo-images.com/iWRqe5K92yMAOtGiyj0Ejw__original/img/kJJi_qavsvMHLM6sHCVh_cBlrT0=/0x0/filters:format(png)/pic3529762.png
++ thumbnail-url: https://cf.geekdo-images.com/iWRqe5K92yMAOtGiyj0Ejw__medium/img/CCCDF6TcMs3Up2x4MJ9qLiOgClw=/fit-in/500x500/filters:no_upscale():strip_icc()/pic3529762.png
++ podium-url: https://cf.geekdo-images.com/iWRqe5K92yMAOtGiyj0Ejw__original/img/kJJi_qavsvMHLM6sHCVh_cBlrT0=/0x0/filters:format(png)/pic3529762.png
 
 # 판타스틱 팩토리.png
 - 👥 인원: 1 ~ 5 (3인 베스트)
@@ -1533,7 +1676,8 @@
 + ♟️ 디자이너: Joseph Z. Chen, Justin Faulkner
 + 🎨 아티스트: Joseph Z. Chen
 + 🔗 https://boardgamegeek.com/boardgame/216600/fantastic-factories
-+ thumbnail-url: https://cf.geekdo-images.com/AzNYQ2o-SXBAHFpPPtRBIw__original/img/QSapQT41vJZkBMzXx5ZkTbuTVf8=/0x0/filters:format(png)/pic4095959.png
++ thumbnail-url: https://cf.geekdo-images.com/AzNYQ2o-SXBAHFpPPtRBIw__medium/img/9OQ8BQmcHcB5SF2KOeEj6_Zahfo=/fit-in/500x500/filters:no_upscale():strip_icc()/pic4095959.png
++ podium-url: https://cf.geekdo-images.com/AzNYQ2o-SXBAHFpPPtRBIw__original/img/QSapQT41vJZkBMzXx5ZkTbuTVf8=/0x0/filters:format(png)/pic4095959.png
 
 # 레지사이드.jpg
 - 👥 인원: 1 ~ 4 (2인 베스트)
@@ -1543,7 +1687,8 @@
 + ♟️ 디자이너: Paul Abrahams, Luke Badger, Andy Richdale
 + 🎨 아티스트: Sketchgoblin
 + 🔗 https://boardgamegeek.com/boardgame/307002/regicide
-+ thumbnail-url: https://cf.geekdo-images.com/C9U2E51tkzLljewFEGQ74g__original/img/Q-a5lAydzhwNLLhy8n326tlxuYE=/0x0/filters:format(jpeg)/pic5837347.jpg
++ thumbnail-url: https://cf.geekdo-images.com/C9U2E51tkzLljewFEGQ74g__medium/img/r-4G7zouNpdPZ1OdZI8h93xUf6s=/fit-in/500x500/filters:no_upscale():strip_icc()/pic5837347.jpg
++ podium-url: https://cf.geekdo-images.com/C9U2E51tkzLljewFEGQ74g__original/img/Q-a5lAydzhwNLLhy8n326tlxuYE=/0x0/filters:format(jpeg)/pic5837347.jpg
 
 # 숨겨진 이야기 에메랄드 결혼기념일.png
 - 👥 인원: 1 ~ 6 (1~2인 베스트)
@@ -1553,7 +1698,8 @@
 + ♟️ 디자이너: Jules Messaud, Anthony Perone
 + 🎨 아티스트: Gong Studios
 + 🔗 https://boardgamegeek.com/boardgame/425610/backstories-the-emerald-wedding-anniversary
-+ thumbnail-url: https://cf.geekdo-images.com/RESjgzKA-ddnnmDXMDXR7w__original/img/uELkxd9oL00HgWHCw7hw_lr_07w=/0x0/filters:format(png)/pic8664853.png
++ thumbnail-url: https://cf.geekdo-images.com/RESjgzKA-ddnnmDXMDXR7w__medium/img/Q91--2vY5ugepv9Z_D0rd2H_QvY=/fit-in/500x500/filters:no_upscale():strip_icc()/pic8664853.png
++ podium-url: https://cf.geekdo-images.com/RESjgzKA-ddnnmDXMDXR7w__original/img/uELkxd9oL00HgWHCw7hw_lr_07w=/0x0/filters:format(png)/pic8664853.png
 
 # 아쿠아티카 잔혹한 라움 & 법의 수호자 네린.jpg
 - 👥 인원: 1 ~ 4 (4, 5~None인 베스트)
@@ -1564,7 +1710,8 @@
 + ♟️ 디자이너: Ivan Tuzovsky
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgameexpansion/327481/aquatica-raum-the-cruel-and-nerine-the-law-keeper
-+ thumbnail-url: https://cf.geekdo-images.com/ttSyGNgagbQBv51tqrr0ww__original/img/LyFVADg8IAarYULrXpl-3QOgoSM=/0x0/filters:format(jpeg)/pic7145490.jpg
++ thumbnail-url: https://cf.geekdo-images.com/ttSyGNgagbQBv51tqrr0ww__medium/img/_LhY5urZdqNEo9-KI1wx-JUJnHs=/fit-in/500x500/filters:no_upscale():strip_icc()/pic7145490.jpg
++ podium-url: https://cf.geekdo-images.com/ttSyGNgagbQBv51tqrr0ww__original/img/LyFVADg8IAarYULrXpl-3QOgoSM=/0x0/filters:format(jpeg)/pic7145490.jpg
 
 # 징크스오.jpg
 - 👥 인원: 4 ~ 7 (5~6인 베스트)
@@ -1574,7 +1721,8 @@
 + ♟️ 디자이너: Martin Ang
 + 🎨 아티스트: Untai Studio
 + 🔗 https://boardgamegeek.com/boardgame/400495/jinxo
-+ thumbnail-url: https://cf.geekdo-images.com/SWf1TYdfZR82C3cm6YIUEg__original/img/CNODE55poaLklfRx3mij5yfIm6U=/0x0/filters:format(jpeg)/pic8402537.jpg
++ thumbnail-url: https://cf.geekdo-images.com/SWf1TYdfZR82C3cm6YIUEg__medium/img/rXuy9SDzkXBrP1D5ZeiA0FjDwtI=/fit-in/500x500/filters:no_upscale():strip_icc()/pic8402537.jpg
++ podium-url: https://cf.geekdo-images.com/SWf1TYdfZR82C3cm6YIUEg__original/img/CNODE55poaLklfRx3mij5yfIm6U=/0x0/filters:format(jpeg)/pic8402537.jpg
 
 # 기즈모.png
 - 👥 인원: 2 ~ 4 (3인 베스트)
@@ -1584,7 +1732,8 @@
 + ♟️ 디자이너: Phil Walker-Harding
 + 🎨 아티스트: Hannah Cardoso, Júlia Ferrari, Giovanna BC Guimarães, Mathieu Harlaut, Saeed Jalabi
 + 🔗 https://boardgamegeek.com/boardgame/246192/gizmos
-+ thumbnail-url: https://cf.geekdo-images.com/zin82Hg4MXck86t8fzbsdA__original/img/_S-XINN0voB1OzExPPgePrOWurM=/0x0/filters:format(png)/pic4169718.png
++ thumbnail-url: https://cf.geekdo-images.com/zin82Hg4MXck86t8fzbsdA__medium/img/lqIxanmX9DfVOuMirBUs8f3YVCg=/fit-in/500x500/filters:no_upscale():strip_icc()/pic4169718.png
++ podium-url: https://cf.geekdo-images.com/zin82Hg4MXck86t8fzbsdA__original/img/_S-XINN0voB1OzExPPgePrOWurM=/0x0/filters:format(png)/pic4169718.png
 
 # 아쿠아티카.jpg
 - 👥 인원: 1 ~ 4 (3인 베스트)
@@ -1594,7 +1743,8 @@
 + ♟️ 디자이너: Ivan Tuzovsky
 + 🎨 아티스트: Irina Kuzmina, Andrew Modestov, Oleg Proshin, Artur Varenyev, Marat Zakirov
 + 🔗 https://boardgamegeek.com/boardgame/283393/aquatica
-+ thumbnail-url: https://cf.geekdo-images.com/_8WvjlAU1_Y0qhwTjXvbnA__original/img/q01FWyijYaqvGhuwz-lkPBoxaRo=/0x0/filters:format(jpeg)/pic5578646.jpg
++ thumbnail-url: https://cf.geekdo-images.com/_8WvjlAU1_Y0qhwTjXvbnA__medium/img/hMzw-bTm1d3Cpqaes8R9BC7LQwQ=/fit-in/500x500/filters:no_upscale():strip_icc()/pic5578646.jpg
++ podium-url: https://cf.geekdo-images.com/_8WvjlAU1_Y0qhwTjXvbnA__original/img/q01FWyijYaqvGhuwz-lkPBoxaRo=/0x0/filters:format(jpeg)/pic5578646.jpg
 
 # 대만 차 연대기.jpg
 - 👥 인원: 2 ~ 4 (4인 베스트)
@@ -1604,7 +1754,8 @@
 + ♟️ 디자이너: Chu-Lan Kao
 + 🎨 아티스트: Sammixyz, Huang Yu Wen
 + 🔗 https://boardgamegeek.com/boardgame/287941/formosa-tea
-+ thumbnail-url: https://cf.geekdo-images.com/zUU7fyzcPmC5dJ9ovT90vQ__original/img/qhjkgE38WiKvIANM2vTrsdb_4-w=/0x0/filters:format(jpeg)/pic4928296.jpg
++ thumbnail-url: https://cf.geekdo-images.com/zUU7fyzcPmC5dJ9ovT90vQ__medium/img/DvWZBLOcXdpta79peD8gqNgaXVU=/fit-in/500x500/filters:no_upscale():strip_icc()/pic4928296.jpg
++ podium-url: https://cf.geekdo-images.com/zUU7fyzcPmC5dJ9ovT90vQ__original/img/qhjkgE38WiKvIANM2vTrsdb_4-w=/0x0/filters:format(jpeg)/pic4928296.jpg
 
 # 도망자 2판.jpg
 - 👥 인원: 2 (2인 베스트)
@@ -1614,7 +1765,8 @@
 + ♟️ 디자이너: Tim Fowers
 + 🎨 아티스트: Ryan Goldsberry
 + 🔗 https://boardgamegeek.com/boardgame/370597/fugitive-second-edition
-+ thumbnail-url: https://cf.geekdo-images.com/YK7u_s-KQbQGpMLmWEw_kg__original/img/msWFCdLHV7RY3_l93PrSjGn-hmE=/0x0/filters:format(jpeg)/pic7087639.jpg
++ thumbnail-url: https://cf.geekdo-images.com/YK7u_s-KQbQGpMLmWEw_kg__medium/img/0WkMX7oFwmiNiqD58cCc2JuofOI=/fit-in/500x500/filters:no_upscale():strip_icc()/pic7087639.jpg
++ podium-url: https://cf.geekdo-images.com/YK7u_s-KQbQGpMLmWEw_kg__original/img/msWFCdLHV7RY3_l93PrSjGn-hmE=/0x0/filters:format(jpeg)/pic7087639.jpg
 
 # 큐이.png
 - 👥 인원: 3 ~ 5 (5인 베스트)
@@ -1624,7 +1776,8 @@
 + ♟️ 디자이너: Gavin Birnbaum
 + 🎨 아티스트: Anca Gavril
 + 🔗 https://boardgamegeek.com/boardgame/266830/qe
-+ thumbnail-url: https://cf.geekdo-images.com/47o_swlkRbfpMH3hnFZgtA__original/img/V6-uacjfLFXQyOVHcLmEOVoZgf8=/0x0/filters:format(png)/pic4383594.png
++ thumbnail-url: https://cf.geekdo-images.com/47o_swlkRbfpMH3hnFZgtA__medium/img/pxTz8NNRnwlDBrr1ppgEjeKhEf8=/fit-in/500x500/filters:no_upscale():strip_icc()/pic4383594.png
++ podium-url: https://cf.geekdo-images.com/47o_swlkRbfpMH3hnFZgtA__original/img/V6-uacjfLFXQyOVHcLmEOVoZgf8=/0x0/filters:format(png)/pic4383594.png
 
 # 마운틴 고트 확장팩.jpg
 - 👥 인원: 2 ~ 5 (3~4인 베스트)
@@ -1635,7 +1788,8 @@
 + ♟️ 디자이너: Stefan Risthaus
 + 🎨 아티스트: Anca Gavril, Daniel Profiri
 + 🔗 https://boardgamegeek.com/boardgameexpansion/326964/mountain-goats-expansion-pack
-+ thumbnail-url: https://cf.geekdo-images.com/vQWMVIbxznJlsQTPuaanwg__original/img/y2-BdGntE_Tv70oZFUxP5vk3ST4=/0x0/filters:format(jpeg)/pic7440869.jpg
++ thumbnail-url: https://cf.geekdo-images.com/vQWMVIbxznJlsQTPuaanwg__medium/img/xA3ZQFUT0xhMGgB-8ElPFo9b2ys=/fit-in/500x500/filters:no_upscale():strip_icc()/pic7440869.jpg
++ podium-url: https://cf.geekdo-images.com/vQWMVIbxznJlsQTPuaanwg__original/img/y2-BdGntE_Tv70oZFUxP5vk3ST4=/0x0/filters:format(jpeg)/pic7440869.jpg
 
 # 판타스틱 팩토리 확장팩 - 기업 전쟁.png
 - 👥 인원: 1 ~ 5 (2~3인 베스트)
@@ -1646,7 +1800,8 @@
 + ♟️ 디자이너: Joseph Z. Chen, Justin Faulkner
 + 🎨 아티스트: Joseph Z. Chen, Martha Webby
 + 🔗 https://boardgamegeek.com/boardgameexpansion/320242/fantastic-factories-subterfuge
-+ thumbnail-url: https://cf.geekdo-images.com/NE97ipgG10IXiHsnMVpMXQ__original/img/O-_sHw0Pe56vkcwoHYV4UyTn9jg=/0x0/filters:format(png)/pic5672730.png
++ thumbnail-url: https://cf.geekdo-images.com/NE97ipgG10IXiHsnMVpMXQ__medium/img/1D3rvYShM81dSPmulg5-7gtjT5g=/fit-in/500x500/filters:no_upscale():strip_icc()/pic5672730.png
++ podium-url: https://cf.geekdo-images.com/NE97ipgG10IXiHsnMVpMXQ__original/img/O-_sHw0Pe56vkcwoHYV4UyTn9jg=/0x0/filters:format(png)/pic5672730.png
 
 # 플라멩코.jpg
 - 👥 인원: 2 ~ 5 (4인 베스트)
@@ -1656,7 +1811,8 @@
 + ♟️ 디자이너: Nutgoo.Lee
 + 🎨 아티스트: Nutgoo.Lee, 別府さい (Sai Beppu)
 + 🔗 https://boardgamegeek.com/boardgame/456709/flamenco
-+ thumbnail-url: https://cf.geekdo-images.com/S_vRjHVcbkH8jR-Snb9H9w__original/img/Vi29iTt0u3dYG_IhwBOWOzCC6jQ=/0x0/filters:format(jpeg)/pic9421897.jpg
++ thumbnail-url: https://cf.geekdo-images.com/S_vRjHVcbkH8jR-Snb9H9w__medium/img/XQy5X9V7KumjqWc5wULvbMy5ml8=/fit-in/500x500/filters:no_upscale():strip_icc()/pic9421897.jpg
++ podium-url: https://cf.geekdo-images.com/S_vRjHVcbkH8jR-Snb9H9w__original/img/Vi29iTt0u3dYG_IhwBOWOzCC6jQ=/0x0/filters:format(jpeg)/pic9421897.jpg
 
 # 실버 불릿.jpg
 - 👥 인원: 2 ~ 4 (4인 베스트)
@@ -1666,7 +1822,8 @@
 + ♟️ 디자이너: Ted Alspach
 + 🎨 아티스트: Ted Alspach, Jason Boles, Andrey Gordeev, T. B. (II)
 + 🔗 https://boardgamegeek.com/boardgame/278554/silver-bullet
-+ thumbnail-url: https://cf.geekdo-images.com/bfIuuGelSjsjQbuh1gvWYw__original/img/INoMAuppyf04LR1kG-uIobULBc8=/0x0/filters:format(jpeg)/pic4741832.jpg
++ thumbnail-url: https://cf.geekdo-images.com/bfIuuGelSjsjQbuh1gvWYw__medium/img/bhkkN0cFqgiudQiYceZcaJ4nExs=/fit-in/500x500/filters:no_upscale():strip_icc()/pic4741832.jpg
++ podium-url: https://cf.geekdo-images.com/bfIuuGelSjsjQbuh1gvWYw__original/img/INoMAuppyf04LR1kG-uIobULBc8=/0x0/filters:format(jpeg)/pic4741832.jpg
 
 # 미니 익스프레스.jpg
 - 👥 인원: 1 ~ 5 (3~4인 베스트)
@@ -1676,7 +1833,8 @@
 + ♟️ 디자이너: Mark Gerrits
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgame/300751/mini-express
-+ thumbnail-url: https://cf.geekdo-images.com/VN2KUKs_Kgfq2LrobCC87g__original/img/aOMianmjDmnmXfHoHn6nKzmC6AA=/0x0/filters:format(jpeg)/pic5333823.jpg
++ thumbnail-url: https://cf.geekdo-images.com/VN2KUKs_Kgfq2LrobCC87g__medium/img/sxrFqpIA4T0lNjE9Y0IZJZxmIDM=/fit-in/500x500/filters:no_upscale():strip_icc()/pic5333823.jpg
++ podium-url: https://cf.geekdo-images.com/VN2KUKs_Kgfq2LrobCC87g__original/img/aOMianmjDmnmXfHoHn6nKzmC6AA=/0x0/filters:format(jpeg)/pic5333823.jpg
 
 # 항해.jpg
 - 👥 인원: 2 (2인 베스트)
@@ -1686,7 +1844,8 @@
 + ♟️ 디자이너: Akiyama Koryo, Kozu Yusei
 + 🎨 아티스트: Weberson Santiago
 + 🔗 https://boardgamegeek.com/boardgame/377470/sail
-+ thumbnail-url: https://cf.geekdo-images.com/WdYRHQ_ILHTV_ECMGF27Gw__original/img/i9rMBmWzjVl2Aep-xUqWg4u0ADA=/0x0/filters:format(jpeg)/pic7267575.jpg
++ thumbnail-url: https://cf.geekdo-images.com/WdYRHQ_ILHTV_ECMGF27Gw__medium/img/GFi7Vf_9z0aB9K_Gi3CJzsgNXZs=/fit-in/500x500/filters:no_upscale():strip_icc()/pic7267575.jpg
++ podium-url: https://cf.geekdo-images.com/WdYRHQ_ILHTV_ECMGF27Gw__original/img/i9rMBmWzjVl2Aep-xUqWg4u0ADA=/0x0/filters:format(jpeg)/pic7267575.jpg
 
 # 판타지 왕국 광대.jpg
 - 👥 인원: 2 ~ 7 (2~3인 베스트)
@@ -1697,7 +1856,8 @@
 + ♟️ 디자이너: -
 + 🎨 아티스트: Octographics
 + 🔗 https://boardgamegeek.com/boardgameexpansion/232120/fantasy-realms-jester-promo-card
-+ thumbnail-url: https://cf.geekdo-images.com/QKPohKcra3atBSI88_nNtg__original/img/bPWqA-mI9jngM1i83YoTLNz0NX8=/0x0/filters:format(jpeg)/pic4714259.jpg
++ thumbnail-url: https://cf.geekdo-images.com/QKPohKcra3atBSI88_nNtg__medium/img/uKu3a8rL3bIwaSraCE8jg933Tso=/fit-in/500x500/filters:no_upscale():strip_icc()/pic4714259.jpg
++ podium-url: https://cf.geekdo-images.com/QKPohKcra3atBSI88_nNtg__original/img/bPWqA-mI9jngM1i83YoTLNz0NX8=/0x0/filters:format(jpeg)/pic4714259.jpg
 
 # 러브 레터 (2012).jpg
 - 👥 인원: 2 ~ 4 (4인 베스트)
@@ -1707,7 +1867,8 @@
 + ♟️ 디자이너: Seiji Kanai
 + 🎨 아티스트: Kali Fitzgerald, Andrew Hepworth, Jeff Himmelman, John Kovalic, Nina Matsumoto, Robb Miller, Ken Niimura, Noboru Sugiura, Yating Sun, 田中寛崇 (Tanaka Hirotaka)
 + 🔗 https://boardgamegeek.com/boardgame/129622/love-letter
-+ thumbnail-url: https://cf.geekdo-images.com/T1ltXwapFUtghS9A7_tf4g__original/img/xIAzJY7rl-mtPStRZSqnTVsAr8Y=/0x0/filters:format(jpeg)/pic1401448.jpg
++ thumbnail-url: https://cf.geekdo-images.com/T1ltXwapFUtghS9A7_tf4g__medium/img/CkNSIz4NeX31r0YWfOX6aZ9FWl8=/fit-in/500x500/filters:no_upscale():strip_icc()/pic1401448.jpg
++ podium-url: https://cf.geekdo-images.com/T1ltXwapFUtghS9A7_tf4g__original/img/xIAzJY7rl-mtPStRZSqnTVsAr8Y=/0x0/filters:format(jpeg)/pic1401448.jpg
 
 # 노팅엄의 지방관.jpg
 - 👥 인원: 3 ~ 6 (5인 베스트)
@@ -1717,7 +1878,8 @@
 + ♟️ 디자이너: Sérgio Halaban, André Zatz
 + 🎨 아티스트: Davide Tosello
 + 🔗 https://boardgamegeek.com/boardgame/298638/sheriff-of-nottingham-2nd-edition
-+ thumbnail-url: https://cf.geekdo-images.com/VHiB06XHhK6G3vxH9QAwHw__original/img/qmBX9dnhhCo66x4C7vlEpslSxMw=/0x0/filters:format(jpeg)/pic5169196.jpg
++ thumbnail-url: https://cf.geekdo-images.com/VHiB06XHhK6G3vxH9QAwHw__medium/img/UZ4YRZY3KOwuP8opaWi0xnyJxhM=/fit-in/500x500/filters:no_upscale():strip_icc()/pic5169196.jpg
++ podium-url: https://cf.geekdo-images.com/VHiB06XHhK6G3vxH9QAwHw__original/img/qmBX9dnhhCo66x4C7vlEpslSxMw=/0x0/filters:format(jpeg)/pic5169196.jpg
 
 # 판타지 왕국 저주받은 무리.jpg
 - 👥 인원: 3 ~ 6 (3~4인 베스트)
@@ -1728,7 +1890,8 @@
 + ♟️ 디자이너: Bruce Glassco
 + 🎨 아티스트: Anthony Cournoyer, Octographics
 + 🔗 https://boardgamegeek.com/boardgameexpansion/315200/fantasy-realms-the-cursed-hoard
-+ thumbnail-url: https://cf.geekdo-images.com/9n-ST3TYos_nj3vlHpT46w__original/img/fUFepZQJC-SEBd2IqAilw9QcI2w=/0x0/filters:format(jpeg)/pic5757154.jpg
++ thumbnail-url: https://cf.geekdo-images.com/9n-ST3TYos_nj3vlHpT46w__medium/img/hA7lqDAdfVCne3tOnDQ0suAQIaw=/fit-in/500x500/filters:no_upscale():strip_icc()/pic5757154.jpg
++ podium-url: https://cf.geekdo-images.com/9n-ST3TYos_nj3vlHpT46w__original/img/fUFepZQJC-SEBd2IqAilw9QcI2w=/0x0/filters:format(jpeg)/pic5757154.jpg
 
 # 기즈모 잃어버린 설계 프로모 세트.jpg
 - 👥 인원: 2 ~ 4 (4인 베스트)
@@ -1739,7 +1902,8 @@
 + ♟️ 디자이너: Phil Walker-Harding
 + 🎨 아티스트: Hannah Cardoso, Júlia Ferrari, Giovanna BC Guimarães, Mathieu Harlaut, Saeed Jalabi
 + 🔗 https://boardgamegeek.com/boardgameexpansion/258067/gizmos-lost-designs-promo-set
-+ thumbnail-url: https://cf.geekdo-images.com/JQK6xArTccX6ubjxewZNXQ__original/img/l05ZFu0Nb08JtPjQTaS73sVEIR0=/0x0/filters:format(jpeg)/pic8945476.jpg
++ thumbnail-url: https://cf.geekdo-images.com/JQK6xArTccX6ubjxewZNXQ__medium/img/KAsi7N8VjyDjtng4aH9JEkPlRaU=/fit-in/500x500/filters:no_upscale():strip_icc()/pic8945476.jpg
++ podium-url: https://cf.geekdo-images.com/JQK6xArTccX6ubjxewZNXQ__original/img/l05ZFu0Nb08JtPjQTaS73sVEIR0=/0x0/filters:format(jpeg)/pic8945476.jpg
 
 # 도망자.png
 - 👥 인원: 2 (2인 베스트)
@@ -1749,7 +1913,8 @@
 + ♟️ 디자이너: Tim Fowers
 + 🎨 아티스트: Ryan Goldsberry
 + 🔗 https://boardgamegeek.com/boardgame/197443/fugitive
-+ thumbnail-url: https://cf.geekdo-images.com/Jeukp3NUs-u6i3SuF-yE4A__original/img/X8-dbZ1EzlwOUAe3CuwKBRztTMY=/0x0/filters:format(png)/pic3481216.png
++ thumbnail-url: https://cf.geekdo-images.com/Jeukp3NUs-u6i3SuF-yE4A__medium/img/0xnYwVhhfGPl8TTMmUQjOtq0YWI=/fit-in/500x500/filters:no_upscale():strip_icc()/pic3481216.png
++ podium-url: https://cf.geekdo-images.com/Jeukp3NUs-u6i3SuF-yE4A__original/img/X8-dbZ1EzlwOUAe3CuwKBRztTMY=/0x0/filters:format(png)/pic3481216.png
 
 # 틱 택 트렉.jpg
 - 👥 인원: 2 (2인 베스트)
@@ -1759,7 +1924,8 @@
 + ♟️ 디자이너: Trevor Benjamin, Brett J. Gilbert
 + 🎨 아티스트: Rory Muldoon
 + 🔗 https://boardgamegeek.com/boardgame/438940/tic-tac-trek
-+ thumbnail-url: https://cf.geekdo-images.com/pn-NrXBTby9aqkfhtdAuLA__original/img/FUoAKds-FQc23Z2pQ5GYRb12zhA=/0x0/filters:format(jpeg)/pic8853818.jpg
++ thumbnail-url: https://cf.geekdo-images.com/pn-NrXBTby9aqkfhtdAuLA__medium/img/H_aWmFS_3Knl-kuWXnIbSsjLCJ8=/fit-in/500x500/filters:no_upscale():strip_icc()/pic8853818.jpg
++ podium-url: https://cf.geekdo-images.com/pn-NrXBTby9aqkfhtdAuLA__original/img/FUoAKds-FQc23Z2pQ5GYRb12zhA=/0x0/filters:format(jpeg)/pic8853818.jpg
 
 # 포션 폭발.jpg
 - 👥 인원: 2 ~ 4 (3인 베스트)
@@ -1769,7 +1935,8 @@
 + ♟️ 디자이너: Stefano Castelli, Andrea Crespi, Lorenzo Silva
 + 🎨 아티스트: Giulia Ghigini
 + 🔗 https://boardgamegeek.com/boardgame/180974/potion-explosion
-+ thumbnail-url: https://cf.geekdo-images.com/vwjYMFporFhvAU48k73MIw__original/img/6sAfG89R42SJRv2wjiItRTMmcoQ=/0x0/filters:format(jpeg)/pic7298696.jpg
++ thumbnail-url: https://cf.geekdo-images.com/vwjYMFporFhvAU48k73MIw__medium/img/qagdRYXTGe-wtWF_cP4x5dWH-XM=/fit-in/500x500/filters:no_upscale():strip_icc()/pic7298696.jpg
++ podium-url: https://cf.geekdo-images.com/vwjYMFporFhvAU48k73MIw__original/img/6sAfG89R42SJRv2wjiItRTMmcoQ=/0x0/filters:format(jpeg)/pic7298696.jpg
 
 # 병사들의 귀향.png
 - 👥 인원: 2 ~ 5 (4~5인 베스트)
@@ -1779,7 +1946,8 @@
 + ♟️ 디자이너: Fabien Riffaud, Juan Rodriguez
 + 🎨 아티스트: Tignous
 + 🔗 https://boardgamegeek.com/boardgame/171668/the-grizzled
-+ thumbnail-url: https://cf.geekdo-images.com/5JuQCtSAeSZpAL3WgWdwow__original/img/hn5gRpKVlmB3Ds9gIxD7k2SrVt4=/0x0/filters:format(png)/pic3719610.png
++ thumbnail-url: https://cf.geekdo-images.com/5JuQCtSAeSZpAL3WgWdwow__medium/img/YqAlfof3ybeG2f4ibaQsaaQkzDY=/fit-in/500x500/filters:no_upscale():strip_icc()/pic3719610.png
++ podium-url: https://cf.geekdo-images.com/5JuQCtSAeSZpAL3WgWdwow__original/img/hn5gRpKVlmB3Ds9gIxD7k2SrVt4=/0x0/filters:format(png)/pic3719610.png
 
 # 랠리맨 GT.jpg
 - 👥 인원: 1 ~ 6 (4인 베스트)
@@ -1789,7 +1957,8 @@
 + ♟️ 디자이너: Jean-Christophe Bouvier
 + 🎨 아티스트: Loïc Muzy
 + 🔗 https://boardgamegeek.com/boardgame/256589/rallyman-gt
-+ thumbnail-url: https://cf.geekdo-images.com/j60l2hVjQna2-Kwdsu2ZtA__original/img/1tzgj_xYONNVOYGRKQZGlCQdbCg=/0x0/filters:format(jpeg)/pic7976587.jpg
++ thumbnail-url: https://cf.geekdo-images.com/j60l2hVjQna2-Kwdsu2ZtA__medium/img/vhW9Pc51FG08BCpmwnorLGqJMD4=/fit-in/500x500/filters:no_upscale():strip_icc()/pic7976587.jpg
++ podium-url: https://cf.geekdo-images.com/j60l2hVjQna2-Kwdsu2ZtA__original/img/1tzgj_xYONNVOYGRKQZGlCQdbCg=/0x0/filters:format(jpeg)/pic7976587.jpg
 
 # 좀비사이드.jpg
 - 👥 인원: 1 ~ 6 (3, 6인 베스트)
@@ -1799,7 +1968,8 @@
 + ♟️ 디자이너: Raphaël Guiton, Jean-Baptiste Lullien, Nicolas Raoult
 + 🎨 아티스트: Miguel Coimbra, Nicolas Fructus, Édouard Guiton, Mathieu Harlaut, Eric Nouhaut
 + 🔗 https://boardgamegeek.com/boardgame/113924/zombicide
-+ thumbnail-url: https://cf.geekdo-images.com/ZqjfzvtaTIT5FYp1D2CfKw__original/img/Arh3sc5cBx5FYg92vCvwtx-lKJw=/0x0/filters:format(jpeg)/pic1196191.jpg
++ thumbnail-url: https://cf.geekdo-images.com/ZqjfzvtaTIT5FYp1D2CfKw__medium/img/nG18gIn62gSEYPRVRipFioeNgcc=/fit-in/500x500/filters:no_upscale():strip_icc()/pic1196191.jpg
++ podium-url: https://cf.geekdo-images.com/ZqjfzvtaTIT5FYp1D2CfKw__original/img/Arh3sc5cBx5FYg92vCvwtx-lKJw=/0x0/filters:format(jpeg)/pic1196191.jpg
 
 # 실버 아뮬렛.jpg
 - 👥 인원: 2 ~ 4 (2, 4인 베스트)
@@ -1809,7 +1979,8 @@
 + ♟️ 디자이너: Ted Alspach
 + 🎨 아티스트: Ted Alspach, Jason Boles, Andrey Gordeev, T. B. (II)
 + 🔗 https://boardgamegeek.com/boardgame/278553/silver
-+ thumbnail-url: https://cf.geekdo-images.com/e7ii83ya4tVD-4f1E-Alpg__original/img/Rse9-NttkulEmnV-k4cGp9WWAyM=/0x0/filters:format(jpeg)/pic4741826.jpg
++ thumbnail-url: https://cf.geekdo-images.com/e7ii83ya4tVD-4f1E-Alpg__medium/img/7Py2EFYfAgkbEiUGvAA62l0q9C0=/fit-in/500x500/filters:no_upscale():strip_icc()/pic4741826.jpg
++ podium-url: https://cf.geekdo-images.com/e7ii83ya4tVD-4f1E-Alpg__original/img/Rse9-NttkulEmnV-k4cGp9WWAyM=/0x0/filters:format(jpeg)/pic4741826.jpg
 
 # 오리진스 최초의 건축가들.jpg
 - 👥 인원: 1 ~ 4 (3인 베스트)
@@ -1819,7 +1990,8 @@
 + ♟️ 디자이너: Adam Kwapiński
 + 🎨 아티스트: Zbigniew Umgelter, Aleksander Zawada
 + 🔗 https://boardgamegeek.com/boardgame/322588/origins-first-builders
-+ thumbnail-url: https://cf.geekdo-images.com/U838tX7bb7tJfrBKGOkSzQ__original/img/It9rMH1wdbhsMCUrfGtWWFWst1I=/0x0/filters:format(jpeg)/pic5735711.jpg
++ thumbnail-url: https://cf.geekdo-images.com/U838tX7bb7tJfrBKGOkSzQ__medium/img/nxHqvvpOqJkRnatfbCAt9ACFBF0=/fit-in/500x500/filters:no_upscale():strip_icc()/pic5735711.jpg
++ podium-url: https://cf.geekdo-images.com/U838tX7bb7tJfrBKGOkSzQ__original/img/It9rMH1wdbhsMCUrfGtWWFWst1I=/0x0/filters:format(jpeg)/pic5735711.jpg
 
 # 좀비사이드 무기를 들어라.png
 - 👥 인원: 1 ~ 6 (1인 베스트)
@@ -1829,7 +2001,8 @@
 + ♟️ 디자이너: Jordy Adan, Marco Portugal
 + 🎨 아티스트: Dany Orizio
 + 🔗 https://boardgamegeek.com/boardgame/364792/zombicide-gear-up
-+ thumbnail-url: https://cf.geekdo-images.com/rVFd-Ig14IlvwTZ96MAA5A__original/img/m4POw7fVzldVbrCwihE4NGs2kH8=/0x0/filters:format(png)/pic6989906.png
++ thumbnail-url: https://cf.geekdo-images.com/rVFd-Ig14IlvwTZ96MAA5A__medium/img/2U5GVjwMqeoXXlk1zgVnWxAhO8w=/fit-in/500x500/filters:no_upscale():strip_icc()/pic6989906.png
++ podium-url: https://cf.geekdo-images.com/rVFd-Ig14IlvwTZ96MAA5A__original/img/m4POw7fVzldVbrCwihE4NGs2kH8=/0x0/filters:format(png)/pic6989906.png
 
 # 숨겨진 이야기 얼음 아래 홀로.jpg
 - 👥 인원: 1 ~ 6 (1~2인 베스트)
@@ -1839,7 +2012,8 @@
 + ♟️ 디자이너: Jules Messaud, Anthony Perone
 + 🎨 아티스트: Cyrille Bertin
 + 🔗 https://boardgamegeek.com/boardgame/415921/backstories-alone-under-the-ice
-+ thumbnail-url: https://cf.geekdo-images.com/XoNr0ImZ12f2tMUvoAp_ww__original/img/dHqbYpDqdYE1hov3Hdyckvmcbvs=/0x0/filters:format(jpeg)/pic8134255.jpg
++ thumbnail-url: https://cf.geekdo-images.com/XoNr0ImZ12f2tMUvoAp_ww__medium/img/PiuZED9t3F38NWRaM5f3WGT2FjA=/fit-in/500x500/filters:no_upscale():strip_icc()/pic8134255.jpg
++ podium-url: https://cf.geekdo-images.com/XoNr0ImZ12f2tMUvoAp_ww__original/img/dHqbYpDqdYE1hov3Hdyckvmcbvs=/0x0/filters:format(jpeg)/pic8134255.jpg
 
 # 링코.jpg
 - 👥 인원: 2 ~ 5 (4인 베스트)
@@ -1849,7 +2023,8 @@
 + ♟️ 디자이너: Michael Kiesling, Wolfgang Kramer
 + 🎨 아티스트: Oliver Freudenreich, Ans Kim, Sergi Marcet
 + 🔗 https://boardgamegeek.com/boardgame/153065/linko
-+ thumbnail-url: https://cf.geekdo-images.com/93dmjdpiUd5J3Vf95uF0HQ__original/img/4Bf2Yn4Zejbv_NFHJ1X9IWldeI0=/0x0/filters:format(jpeg)/pic7634588.jpg
++ thumbnail-url: https://cf.geekdo-images.com/93dmjdpiUd5J3Vf95uF0HQ__medium/img/7-JJsKNK2Noa-j4ByJYHphpmGi0=/fit-in/500x500/filters:no_upscale():strip_icc()/pic7634588.jpg
++ podium-url: https://cf.geekdo-images.com/93dmjdpiUd5J3Vf95uF0HQ__original/img/4Bf2Yn4Zejbv_NFHJ1X9IWldeI0=/0x0/filters:format(jpeg)/pic7634588.jpg
 
 # 우리 사이 냥이.png
 - 👥 인원: 2 ~ 6 (3인 베스트)
@@ -1859,7 +2034,8 @@
 + ♟️ 디자이너: Sky Huang
 + 🎨 아티스트: Fabio Frencl, Wanjin Gill, Sky Huang, Midjourney AI
 + 🔗 https://boardgamegeek.com/boardgame/433074/cat-between-us
-+ thumbnail-url: https://cf.geekdo-images.com/x9ReeH79kyuLLMu_weSezQ__original/img/cbHhdVrO2YqeTQ8ezLEgBq1ExjQ=/0x0/filters:format(png)/pic8746816.png
++ thumbnail-url: https://cf.geekdo-images.com/x9ReeH79kyuLLMu_weSezQ__medium/img/3bVaO2g65TB0364NvJZ6Zx0hI_o=/fit-in/500x500/filters:no_upscale():strip_icc()/pic8746816.png
++ podium-url: https://cf.geekdo-images.com/x9ReeH79kyuLLMu_weSezQ__original/img/cbHhdVrO2YqeTQ8ezLEgBq1ExjQ=/0x0/filters:format(png)/pic8746816.png
 
 # 바로 너!.png
 - 👥 인원: 4 ~ 8 (6~7인 베스트)
@@ -1869,7 +2045,8 @@
 + ♟️ 디자이너: Yusak Arief Jatmiko, Arya Wirahadi
 + 🎨 아티스트: Liliana Harefa, Hami
 + 🔗 https://boardgamegeek.com/boardgame/402267/thats-you
-+ thumbnail-url: https://cf.geekdo-images.com/eNOR0znSP1y_1sBAV9Sb_A__original/img/BGNVUAnrWV0wCqwZ14NcS7-MKxc=/0x0/filters:format(png)/pic8402536.png
++ thumbnail-url: https://cf.geekdo-images.com/eNOR0znSP1y_1sBAV9Sb_A__medium/img/ThxEZThlAOaLkBXHse17cIKui4k=/fit-in/500x500/filters:no_upscale():strip_icc()/pic8402536.png
++ podium-url: https://cf.geekdo-images.com/eNOR0znSP1y_1sBAV9Sb_A__original/img/BGNVUAnrWV0wCqwZ14NcS7-MKxc=/0x0/filters:format(png)/pic8402536.png
 
 # 퍼스트 콘택트.jpg
 - 👥 인원: 2 ~ 7 (5~6인 베스트)
@@ -1879,7 +2056,8 @@
 + ♟️ 디자이너: Damir Khusnatdinov
 + 🎨 아티스트: Viktor Eredel, Alexandr Kiselev, Alexandra Sharyapova
 + 🔗 https://boardgamegeek.com/boardgame/258309/first-contact
-+ thumbnail-url: https://cf.geekdo-images.com/6XFaGyeG_ZrvO7lna8kDQA__original/img/z1DgjKhNsUMeX0I45RYPx20a-bQ=/0x0/filters:format(jpeg)/pic4419988.jpg
++ thumbnail-url: https://cf.geekdo-images.com/6XFaGyeG_ZrvO7lna8kDQA__medium/img/jweBrqibE2JsgsNRdoigvoQzYM8=/fit-in/500x500/filters:no_upscale():strip_icc()/pic4419988.jpg
++ podium-url: https://cf.geekdo-images.com/6XFaGyeG_ZrvO7lna8kDQA__original/img/z1DgjKhNsUMeX0I45RYPx20a-bQ=/0x0/filters:format(jpeg)/pic4419988.jpg
 
 # 기적의 궁전.jpg
 - 👥 인원: 2 ~ 5 (4인 베스트)
@@ -1889,7 +2067,8 @@
 + ♟️ 디자이너: Vincent Brugeas, Guilhem Gautrand
 + 🎨 아티스트: Ronan Toulhoat
 + 🔗 https://boardgamegeek.com/boardgame/270956/the-court-of-miracles
-+ thumbnail-url: https://cf.geekdo-images.com/pKYyeNMJi9OEcrd0ktbLGA__original/img/-wZ5vZzzm783O5d5blwfya481aQ=/0x0/filters:format(jpeg)/pic5604048.jpg
++ thumbnail-url: https://cf.geekdo-images.com/pKYyeNMJi9OEcrd0ktbLGA__medium/img/pGkZJ2mP0lWSIgEl3OOxMJ_F5AI=/fit-in/500x500/filters:no_upscale():strip_icc()/pic5604048.jpg
++ podium-url: https://cf.geekdo-images.com/pKYyeNMJi9OEcrd0ktbLGA__original/img/-wZ5vZzzm783O5d5blwfya481aQ=/0x0/filters:format(jpeg)/pic5604048.jpg
 
 # 북타워.jpg
 - 👥 인원: 1 ~ 6 (1인 베스트)
@@ -1899,7 +2078,8 @@
 + ♟️ 디자이너: Caezar Al-Jassar
 + 🎨 아티스트: Rory Muldoon
 + 🔗 https://boardgamegeek.com/boardgame/458571/bookshelf
-+ thumbnail-url: https://cf.geekdo-images.com/1gy_22IJLIpaSMUzQ0LjuA__original/img/PzW_5i8RbdMrQM5FYmE52CE4IJ4=/0x0/filters:format(jpeg)/pic9464953.jpg
++ thumbnail-url: https://cf.geekdo-images.com/1gy_22IJLIpaSMUzQ0LjuA__medium/img/aaU7Qg8BF75gtGccNNfLuhCaKx8=/fit-in/500x500/filters:no_upscale():strip_icc()/pic9464953.jpg
++ podium-url: https://cf.geekdo-images.com/1gy_22IJLIpaSMUzQ0LjuA__original/img/PzW_5i8RbdMrQM5FYmE52CE4IJ4=/0x0/filters:format(jpeg)/pic9464953.jpg
 
 # 인피니티 건틀렛.png
 - 👥 인원: 2 ~ 6 (4~5인 베스트)
@@ -1909,7 +2089,8 @@
 + ♟️ 디자이너: Seiji Kanai, Alexandar Ortloff-Tang
 + 🎨 아티스트: Monica Helland
 + 🔗 https://boardgamegeek.com/boardgame/304285/infinity-gauntlet-a-love-letter-game
-+ thumbnail-url: https://cf.geekdo-images.com/z0VOKlGc9AcsXj_ywL6Alw__original/img/GpfxJ-7qUM-LSbzYD141infQkfs=/0x0/filters:format(png)/pic5509189.png
++ thumbnail-url: https://cf.geekdo-images.com/z0VOKlGc9AcsXj_ywL6Alw__medium/img/0LxMV5i6Hc9CGKcnNUCmT95z__U=/fit-in/500x500/filters:no_upscale():strip_icc()/pic5509189.png
++ podium-url: https://cf.geekdo-images.com/z0VOKlGc9AcsXj_ywL6Alw__original/img/GpfxJ-7qUM-LSbzYD141infQkfs=/0x0/filters:format(png)/pic5509189.png
 
 # 팀3 그린.png
 - 👥 인원: 3 ~ 6 (3인 베스트)
@@ -1919,7 +2100,8 @@
 + ♟️ 디자이너: Alex Cutler, Matt Fantastic
 + 🎨 아티스트: Reinis Pētersons
 + 🔗 https://boardgamegeek.com/boardgame/275870/team3-green
-+ thumbnail-url: https://cf.geekdo-images.com/7XazX55Q-s9AaBiPxtfkWw__original/img/TXp-iXw0A-dZk6HifcVg3hx5glw=/0x0/filters:format(png)/pic4651080.png
++ thumbnail-url: https://cf.geekdo-images.com/7XazX55Q-s9AaBiPxtfkWw__medium/img/-mEyL9w3UK2tCFdtGLaQ69_la34=/fit-in/500x500/filters:no_upscale():strip_icc()/pic4651080.png
++ podium-url: https://cf.geekdo-images.com/7XazX55Q-s9AaBiPxtfkWw__original/img/TXp-iXw0A-dZk6HifcVg3hx5glw=/0x0/filters:format(png)/pic4651080.png
 
 # 팀3 핑크.png
 - 👥 인원: 3 ~ 6 (3인 베스트)
@@ -1929,7 +2111,8 @@
 + ♟️ 디자이너: Alex Cutler, Matt Fantastic
 + 🎨 아티스트: Reinis Pētersons
 + 🔗 https://boardgamegeek.com/boardgame/247694/team3-pink
-+ thumbnail-url: https://cf.geekdo-images.com/AQy4zZUzOlouGFxSe3Mu9w__original/img/iMne3SycjCvcc-zO7BUA1WsxyXU=/0x0/filters:format(png)/pic4633748.png
++ thumbnail-url: https://cf.geekdo-images.com/AQy4zZUzOlouGFxSe3Mu9w__medium/img/8A9aBiApFoIA556f9dsLBiqFzjE=/fit-in/500x500/filters:no_upscale():strip_icc()/pic4633748.png
++ podium-url: https://cf.geekdo-images.com/AQy4zZUzOlouGFxSe3Mu9w__original/img/iMne3SycjCvcc-zO7BUA1WsxyXU=/0x0/filters:format(png)/pic4633748.png
 
 # 길드홀.jpg
 - 👥 인원: 2 ~ 4 (2인 베스트)
@@ -1939,7 +2122,8 @@
 + ♟️ 디자이너: Hope S. Hwang
 + 🎨 아티스트: Michael Perry, Fabio Porfidia
 + 🔗 https://boardgamegeek.com/boardgame/132372/guildhall
-+ thumbnail-url: https://cf.geekdo-images.com/fc-_VofOh2-CQVGDrJR-Nw__original/img/3fQdC7oGbeZSJPzrJMmxslkc_KE=/0x0/filters:format(jpeg)/pic1448983.jpg
++ thumbnail-url: https://cf.geekdo-images.com/fc-_VofOh2-CQVGDrJR-Nw__medium/img/Hrfz7r6L3QcDcG6Aq8qnzj-GViI=/fit-in/500x500/filters:no_upscale():strip_icc()/pic1448983.jpg
++ podium-url: https://cf.geekdo-images.com/fc-_VofOh2-CQVGDrJR-Nw__original/img/3fQdC7oGbeZSJPzrJMmxslkc_KE=/0x0/filters:format(jpeg)/pic1448983.jpg
 
 # 데드 맨스 드로우.jpg
 - 👥 인원: 2 ~ 4 (4인 베스트)
@@ -1949,7 +2133,8 @@
 + ♟️ 디자이너: Chris Bray, Leo Li, Derek Paxton
 + 🎨 아티스트: Leo Li, Felideus Bubastis, Vincent Dutrait
 + 🔗 https://boardgamegeek.com/boardgame/149155/dead-mans-draw
-+ thumbnail-url: https://cf.geekdo-images.com/m6tC_KsilZUQsKFIzDXIpA__original/img/yhZIPwPWPnesvMA1ChdANxEcBzM=/0x0/filters:format(jpeg)/pic6489882.jpg
++ thumbnail-url: https://cf.geekdo-images.com/m6tC_KsilZUQsKFIzDXIpA__medium/img/OTX3OtP53-8ByOaQsm85LoJeaRI=/fit-in/500x500/filters:no_upscale():strip_icc()/pic6489882.jpg
++ podium-url: https://cf.geekdo-images.com/m6tC_KsilZUQsKFIzDXIpA__original/img/yhZIPwPWPnesvMA1ChdANxEcBzM=/0x0/filters:format(jpeg)/pic6489882.jpg
 
 # 마운틴 고트.jpg
 - 👥 인원: 2 ~ 4 (4인 베스트)
@@ -1959,7 +2144,8 @@
 + ♟️ 디자이너: Stefan Risthaus
 + 🎨 아티스트: Anca Gavril, Dennis Lohausen, Daniel Profiri, 別府さい (Sai Beppu)
 + 🔗 https://boardgamegeek.com/boardgame/63975/mountain-goats
-+ thumbnail-url: https://cf.geekdo-images.com/p4DD5TGFNFQy_ayFtT-x_A__original/img/o8zVhEu7BaQo1sE9jH-yu2YBE_4=/0x0/filters:format(jpeg)/pic5313595.jpg
++ thumbnail-url: https://cf.geekdo-images.com/p4DD5TGFNFQy_ayFtT-x_A__medium/img/8ceceg4GoIJ04Px3wq8sk-VnhiE=/fit-in/500x500/filters:no_upscale():strip_icc()/pic5313595.jpg
++ podium-url: https://cf.geekdo-images.com/p4DD5TGFNFQy_ayFtT-x_A__original/img/o8zVhEu7BaQo1sE9jH-yu2YBE_4=/0x0/filters:format(jpeg)/pic5313595.jpg
 
 # 스누피 장기자랑!.png
 - 👥 인원: 2 ~ 4 (4인 베스트)
@@ -1969,7 +2155,8 @@
 + ♟️ 디자이너: Koudai Tateno, root (ルート)
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgame/454523/peanuts-talent-show
-+ thumbnail-url: https://cf.geekdo-images.com/-DqkzS_EzSLoOJ-jxS1qvQ__original/img/bx4yLliLD1lZQSi_W9qbxTpR_hc=/0x0/filters:format(png)/pic9123042.png
++ thumbnail-url: https://cf.geekdo-images.com/-DqkzS_EzSLoOJ-jxS1qvQ__medium/img/NFSu1XoiEDkGtbEQH3tXePs1gCU=/fit-in/500x500/filters:no_upscale():strip_icc()/pic9123042.png
++ podium-url: https://cf.geekdo-images.com/-DqkzS_EzSLoOJ-jxS1qvQ__original/img/bx4yLliLD1lZQSi_W9qbxTpR_hc=/0x0/filters:format(png)/pic9123042.png
 
 # 플로터스 주식회사.png
 - 👥 인원: 4 ~ 6 (4인 베스트)
@@ -1979,7 +2166,8 @@
 + ♟️ 디자이너: Klaus Palesch
 + 🎨 아티스트: Hailey Ha Jung, Makiko Kodama, 別府さい (Sai Beppu)
 + 🔗 https://boardgamegeek.com/boardgame/113/plotters-inc
-+ thumbnail-url: https://cf.geekdo-images.com/s_iMDLyXrvDyd5R1UU48ww__original/img/mhnypXcmsRANJJgnVcjAEmBI1Ks=/0x0/filters:format(png)/pic6518969.png
++ thumbnail-url: https://cf.geekdo-images.com/s_iMDLyXrvDyd5R1UU48ww__medium/img/7YdR0yjpc4Nio7d9duVIhg0WKdA=/fit-in/500x500/filters:no_upscale():strip_icc()/pic6518969.png
++ podium-url: https://cf.geekdo-images.com/s_iMDLyXrvDyd5R1UU48ww__original/img/mhnypXcmsRANJJgnVcjAEmBI1Ks=/0x0/filters:format(png)/pic6518969.png
 
 # 바베큐브.jpg
 - 👥 인원: 2 ~ 6 (3인 베스트)
@@ -1989,7 +2177,8 @@
 + ♟️ 디자이너: Brett J. Gilbert, Rob Sparks
 + 🎨 아티스트: Rory Muldoon
 + 🔗 https://boardgamegeek.com/boardgame/393114/barbecubes
-+ thumbnail-url: https://cf.geekdo-images.com/envLnPKZufFHsp2KQ9Pg8Q__original/img/CJkr0fY6ZEs9YrTRTYT9O_lT0SI=/0x0/filters:format(jpeg)/pic8853821.jpg
++ thumbnail-url: https://cf.geekdo-images.com/envLnPKZufFHsp2KQ9Pg8Q__medium/img/bnAW9HMS4ukDUULzVuANCm5fU-A=/fit-in/500x500/filters:no_upscale():strip_icc()/pic8853821.jpg
++ podium-url: https://cf.geekdo-images.com/envLnPKZufFHsp2KQ9Pg8Q__original/img/CJkr0fY6ZEs9YrTRTYT9O_lT0SI=/0x0/filters:format(jpeg)/pic8853821.jpg
 
 # 시에라 웨스트.jpg
 - 👥 인원: 1 ~ 4 (2인 베스트)
@@ -1999,7 +2188,8 @@
 + ♟️ 디자이너: Jonny Pac
 + 🎨 아티스트: Michał Długaj, Jakub Fajtanowski
 + 🔗 https://boardgamegeek.com/boardgame/257066/sierra-west
-+ thumbnail-url: https://cf.geekdo-images.com/zNA2nt58of806l-aNOqRJw__original/img/y9JdxKf1NqmMSh2zWqU0T_wq7mg=/0x0/filters:format(jpeg)/pic4705378.jpg
++ thumbnail-url: https://cf.geekdo-images.com/zNA2nt58of806l-aNOqRJw__medium/img/ZYBeq3FENeqUjgrVjSz8QShk6M4=/fit-in/500x500/filters:no_upscale():strip_icc()/pic4705378.jpg
++ podium-url: https://cf.geekdo-images.com/zNA2nt58of806l-aNOqRJw__original/img/y9JdxKf1NqmMSh2zWqU0T_wq7mg=/0x0/filters:format(jpeg)/pic4705378.jpg
 
 # 염소 위에 염소.jpg
 - 👥 인원: 2 ~ 5 (2~4인 베스트)
@@ -2009,7 +2199,8 @@
 + ♟️ 디자이너: Hisashi Hayashi
 + 🎨 아티스트: Ryo Nyamo
 + 🔗 https://boardgamegeek.com/boardgame/294237/goat-n-goat
-+ thumbnail-url: https://cf.geekdo-images.com/Xeo_VTXKeE-abG1HGXaYCA__original/img/RKNJaIQX8pPwXDb-Zb0VqWvFEd8=/0x0/filters:format(jpeg)/pic5128780.jpg
++ thumbnail-url: https://cf.geekdo-images.com/Xeo_VTXKeE-abG1HGXaYCA__medium/img/H0qCKfG7anfcRR0p2ooKyVoe2UQ=/fit-in/500x500/filters:no_upscale():strip_icc()/pic5128780.jpg
++ podium-url: https://cf.geekdo-images.com/Xeo_VTXKeE-abG1HGXaYCA__original/img/RKNJaIQX8pPwXDb-Zb0VqWvFEd8=/0x0/filters:format(jpeg)/pic5128780.jpg
 
 # 캠프파이어.png
 - 👥 인원: 2 ~ 6 (3~4인 베스트)
@@ -2019,7 +2210,8 @@
 + ♟️ 디자이너: Rob Sparks
 + 🎨 아티스트: Rory Muldoon
 + 🔗 https://boardgamegeek.com/boardgame/295192/tinderblox
-+ thumbnail-url: https://cf.geekdo-images.com/RswtgTJ47UP-DcxucKMhSQ__original/img/HivCaidlsASHUqVQJmd1wwSlVXU=/0x0/filters:format(png)/pic5076448.png
++ thumbnail-url: https://cf.geekdo-images.com/RswtgTJ47UP-DcxucKMhSQ__medium/img/zlahEnoF7GBrGavpmk0bVt5HkqA=/fit-in/500x500/filters:no_upscale():strip_icc()/pic5076448.png
++ podium-url: https://cf.geekdo-images.com/RswtgTJ47UP-DcxucKMhSQ__original/img/HivCaidlsASHUqVQJmd1wwSlVXU=/0x0/filters:format(png)/pic5076448.png
 
 # 스파이폴.jpg
 - 👥 인원: 3 ~ 8 (6인 베스트)
@@ -2029,7 +2221,8 @@
 + ♟️ 디자이너: Alexandr Ushan
 + 🎨 아티스트: Sergey Dulin, Uildrim
 + 🔗 https://boardgamegeek.com/boardgame/166384/spyfall
-+ thumbnail-url: https://cf.geekdo-images.com/Ehx72XRdSeQHISVXcZVnHg__original/img/bI3PgKtvAGiD59QYya-pqasF_tk=/0x0/filters:format(jpeg)/pic2453926.jpg
++ thumbnail-url: https://cf.geekdo-images.com/Ehx72XRdSeQHISVXcZVnHg__medium/img/nqWTtbAUkJVJHTM6YofaEAjML3U=/fit-in/500x500/filters:no_upscale():strip_icc()/pic2453926.jpg
++ podium-url: https://cf.geekdo-images.com/Ehx72XRdSeQHISVXcZVnHg__original/img/bI3PgKtvAGiD59QYya-pqasF_tk=/0x0/filters:format(jpeg)/pic2453926.jpg
 
 # 역사의 흐름.png
 - 👥 인원: 2 ~ 5 (4인 베스트)
@@ -2039,7 +2232,8 @@
 + ♟️ 디자이너: Jesse Li
 + 🎨 아티스트: Desnet Amane, SY Li, Marcin Makowski, Adam P. McIver
 + 🔗 https://boardgamegeek.com/boardgame/204574/the-flow-of-history
-+ thumbnail-url: https://cf.geekdo-images.com/nWBBzTSCAnA57UheyeWtCA__original/img/Z-p_eb7Osu4WCMWwnO2eSXK9aGI=/0x0/filters:format(png)/pic3475236.png
++ thumbnail-url: https://cf.geekdo-images.com/nWBBzTSCAnA57UheyeWtCA__medium/img/ux9tTbyyBHncMsLa4RMeIu6eLMs=/fit-in/500x500/filters:no_upscale():strip_icc()/pic3475236.png
++ podium-url: https://cf.geekdo-images.com/nWBBzTSCAnA57UheyeWtCA__original/img/Z-p_eb7Osu4WCMWwnO2eSXK9aGI=/0x0/filters:format(png)/pic3475236.png
 
 # 우걱우걱.jpg
 - 👥 인원: 1 ~ 4 (2인 베스트)
@@ -2049,7 +2243,8 @@
 + ♟️ 디자이너: Clarence Simpson
 + 🎨 아티스트: Anca Gavril, Daniel Profiri
 + 🔗 https://boardgamegeek.com/boardgame/377449/chomp
-+ thumbnail-url: https://cf.geekdo-images.com/gbDXHH0B0JlSVoKOVVmDag__original/img/nviBGdRsK5MMpYWyLDHhHq0_dOI=/0x0/filters:format(jpeg)/pic7267586.jpg
++ thumbnail-url: https://cf.geekdo-images.com/gbDXHH0B0JlSVoKOVVmDag__medium/img/cfTbsURmcfilJ1QwP2q86YQRC7s=/fit-in/500x500/filters:no_upscale():strip_icc()/pic7267586.jpg
++ podium-url: https://cf.geekdo-images.com/gbDXHH0B0JlSVoKOVVmDag__original/img/nviBGdRsK5MMpYWyLDHhHq0_dOI=/0x0/filters:format(jpeg)/pic7267586.jpg
 
 # 드림 온!.jpg
 - 👥 인원: 2 ~ 8 (4~6인 베스트)
@@ -2059,7 +2254,8 @@
 + ♟️ 디자이너: Alexandre Droit, Julien Prothière
 + 🎨 아티스트: Valentina Moscon
 + 🔗 https://boardgamegeek.com/boardgame/232980/dream-on
-+ thumbnail-url: https://cf.geekdo-images.com/qqvOP6FnA3HqUASCFWj7OA__original/img/bJ1uI8uBCPUvMKCVcrkt5AXo5IA=/0x0/filters:format(jpeg)/pic3688062.jpg
++ thumbnail-url: https://cf.geekdo-images.com/qqvOP6FnA3HqUASCFWj7OA__medium/img/SYF61WQwL4rodMdPW2AikSgnqbw=/fit-in/500x500/filters:no_upscale():strip_icc()/pic3688062.jpg
++ podium-url: https://cf.geekdo-images.com/qqvOP6FnA3HqUASCFWj7OA__original/img/bJ1uI8uBCPUvMKCVcrkt5AXo5IA=/0x0/filters:format(jpeg)/pic3688062.jpg
 
 # 야채주식.jpg
 - 👥 인원: 2 ~ 6 (4인 베스트)
@@ -2069,7 +2265,8 @@
 + ♟️ 디자이너: Zong-Ger(蔥哥)
 + 🎨 아티스트: Nadia Carrim, Poki Chen, Stevo Torres, Zong-Ger(蔥哥)
 + 🔗 https://boardgamegeek.com/boardgame/328211/vegetable-stock
-+ thumbnail-url: https://cf.geekdo-images.com/EekcSlWY5dqasbMMm12aPg__original/img/tN-wfCkwUJg2wMbfXu5ezIDRiU0=/0x0/filters:format(jpeg)/pic8172467.jpg
++ thumbnail-url: https://cf.geekdo-images.com/EekcSlWY5dqasbMMm12aPg__medium/img/7G2moCk-wBp_chTgKUEW0aOtqFY=/fit-in/500x500/filters:no_upscale():strip_icc()/pic8172467.jpg
++ podium-url: https://cf.geekdo-images.com/EekcSlWY5dqasbMMm12aPg__original/img/tN-wfCkwUJg2wMbfXu5ezIDRiU0=/0x0/filters:format(jpeg)/pic8172467.jpg
 
 # 훈트.png
 - 👥 인원: 2 ~ 5 (4인 베스트)
@@ -2079,7 +2276,8 @@
 + ♟️ 디자이너: Klaus Geis
 + 🎨 아티스트: Heiko Günther, Ronja Hähnlein
 + 🔗 https://boardgamegeek.com/boardgame/143882/hund
-+ thumbnail-url: https://cf.geekdo-images.com/8UajaMECbrYyJFnXbnpXJQ__original/img/qLFkFpjzrr-GYPyuFYQRt83VMeg=/0x0/filters:format(png)/pic7591952.png
++ thumbnail-url: https://cf.geekdo-images.com/8UajaMECbrYyJFnXbnpXJQ__medium/img/miURG6R2dPISdblQR637gCu1Q5o=/fit-in/500x500/filters:no_upscale():strip_icc()/pic7591952.png
++ podium-url: https://cf.geekdo-images.com/8UajaMECbrYyJFnXbnpXJQ__original/img/qLFkFpjzrr-GYPyuFYQRt83VMeg=/0x0/filters:format(png)/pic7591952.png
 
 # 주사위 풀 파티.jpg
 - 👥 인원: 2 ~ 8 (2, 4~5인 베스트)
@@ -2089,7 +2287,8 @@
 + ♟️ 디자이너: Christoph Cantzler, Torsten Marold
 + 🎨 아티스트: Annika Heller
 + 🔗 https://boardgamegeek.com/boardgame/445045/dice-pool-party
-+ thumbnail-url: https://cf.geekdo-images.com/KqIGUpgWR4w-ncK5uI_R_Q__original/img/HxoW_GQCYl5jIQXPXvrxDKhgNSw=/0x0/filters:format(jpeg)/pic8968207.jpg
++ thumbnail-url: https://cf.geekdo-images.com/KqIGUpgWR4w-ncK5uI_R_Q__medium/img/lYMEuBSmUU1fQFilxono_GoJua4=/fit-in/500x500/filters:no_upscale():strip_icc()/pic8968207.jpg
++ podium-url: https://cf.geekdo-images.com/KqIGUpgWR4w-ncK5uI_R_Q__original/img/HxoW_GQCYl5jIQXPXvrxDKhgNSw=/0x0/filters:format(jpeg)/pic8968207.jpg
 
 # 온다.png
 - 👥 인원: 2 ~ 5 (4인 베스트)
@@ -2099,7 +2298,8 @@
 + ♟️ 디자이너: Arthur Lacerda
 + 🎨 아티스트: Arthur Lacerda
 + 🔗 https://boardgamegeek.com/boardgame/416952/onda
-+ thumbnail-url: https://cf.geekdo-images.com/Bf5dkTbOlpXz9LI3E6cHrQ__original/img/m8sohUbyyaIbxUohPegGpIU9P1U=/0x0/filters:format(png)/pic8931630.png
++ thumbnail-url: https://cf.geekdo-images.com/Bf5dkTbOlpXz9LI3E6cHrQ__medium/img/vSXqtwYT0Va8l-Qdt_s95aX4OmM=/fit-in/500x500/filters:no_upscale():strip_icc()/pic8931630.png
++ podium-url: https://cf.geekdo-images.com/Bf5dkTbOlpXz9LI3E6cHrQ__original/img/m8sohUbyyaIbxUohPegGpIU9P1U=/0x0/filters:format(png)/pic8931630.png
 
 # 루터즈 프로모션 팩.jpg
 - 👥 인원: 2 ~ 6
@@ -2110,7 +2310,8 @@
 + ♟️ 디자이너: -
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgameexpansion/230723/looterz-promo-pack
-+ thumbnail-url: https://cf.geekdo-images.com/vXk8aokRZAR_8E6CiCcSFQ__original/img/locU-NVanyLSRa7o6f-3CBNYsgc=/0x0/filters:format(jpeg)/pic3640036.jpg
++ thumbnail-url: https://cf.geekdo-images.com/vXk8aokRZAR_8E6CiCcSFQ__medium/img/7MTQMwW51glJqKUHZZOoLvDhLh0=/fit-in/500x500/filters:no_upscale():strip_icc()/pic3640036.jpg
++ podium-url: https://cf.geekdo-images.com/vXk8aokRZAR_8E6CiCcSFQ__original/img/locU-NVanyLSRa7o6f-3CBNYsgc=/0x0/filters:format(jpeg)/pic3640036.jpg
 
 # 스타일 마스터.jpg
 - 👥 인원: 2
@@ -2120,7 +2321,8 @@
 + ♟️ 디자이너: Splash Duang
 + 🎨 아티스트: Collin Wang
 + 🔗 https://boardgamegeek.com/boardgame/417721/tailor-master
-+ thumbnail-url: https://cf.geekdo-images.com/aR1pldZyxqBLvnGpVeidBQ__original/img/jdcY3rjJVnbvUuJk40OLSdDPzBw=/0x0/filters:format(jpeg)/pic8107171.jpg
++ thumbnail-url: https://cf.geekdo-images.com/aR1pldZyxqBLvnGpVeidBQ__medium/img/53753OkYvnPlggYhc321hDu7gc4=/fit-in/500x500/filters:no_upscale():strip_icc()/pic8107171.jpg
++ podium-url: https://cf.geekdo-images.com/aR1pldZyxqBLvnGpVeidBQ__original/img/jdcY3rjJVnbvUuJk40OLSdDPzBw=/0x0/filters:format(jpeg)/pic8107171.jpg
 
 # 모던 아트 카드 게임.jpg
 - 👥 인원: 2 ~ 5 (4인 베스트)
@@ -2130,7 +2332,8 @@
 + ♟️ 디자이너: Reiner Knizia
 + 🎨 아티스트: Edgar Degas, Wagner Kuroiwa, Mariana Martins, Claude Monet, Paul Niemeyer, Pixel Productions Inc., Pierre-Auguste Renoir, Nicolás Sánchez, Denise Jillian Tan, TEC, Vincent van Gogh, Johannes Vermeer
 + 🔗 https://boardgamegeek.com/boardgame/40381/modern-art-card-game
-+ thumbnail-url: https://cf.geekdo-images.com/IaDnOasIk_DG1AqGWOGrnw__original/img/QxOHmUjU4Rl4N5iJQ1D3_ej_qwc=/0x0/filters:format(jpeg)/pic5476259.jpg
++ thumbnail-url: https://cf.geekdo-images.com/IaDnOasIk_DG1AqGWOGrnw__medium/img/9svjjOe7uNDylnDanOvwPzhNozQ=/fit-in/500x500/filters:no_upscale():strip_icc()/pic5476259.jpg
++ podium-url: https://cf.geekdo-images.com/IaDnOasIk_DG1AqGWOGrnw__original/img/QxOHmUjU4Rl4N5iJQ1D3_ej_qwc=/0x0/filters:format(jpeg)/pic5476259.jpg
 
 # 더 돔.png
 - 👥 인원: 2 ~ 4 (3~4인 베스트)
@@ -2140,7 +2343,8 @@
 + ♟️ 디자이너: Hope S. Hwang
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgame/174403/the-dome
-+ thumbnail-url: https://cf.geekdo-images.com/DBnxXY2JuRTwdVAVprup_w__original/img/WeM2Njlmh6-xI3lVuyNKoPvYwtI=/0x0/filters:format(png)/pic2442576.png
++ thumbnail-url: https://cf.geekdo-images.com/DBnxXY2JuRTwdVAVprup_w__medium/img/Ij82A43upa8qG7M5zsinsAOVuXo=/fit-in/500x500/filters:no_upscale():strip_icc()/pic2442576.png
++ podium-url: https://cf.geekdo-images.com/DBnxXY2JuRTwdVAVprup_w__original/img/WeM2Njlmh6-xI3lVuyNKoPvYwtI=/0x0/filters:format(png)/pic2442576.png
 
 # 뮤즈.jpg
 - 👥 인원: 2 ~ 12 (4, 6인 베스트)
@@ -2150,7 +2354,8 @@
 + ♟️ 디자이너: Jordan Sorenson
 + 🎨 아티스트: Ciruelo, Apolline Etienne, Andre Garcia, Daniela Giubellini, Will Nunes, Kristen Plescow
 + 🔗 https://boardgamegeek.com/boardgame/234396/muse
-+ thumbnail-url: https://cf.geekdo-images.com/6gDD73LSCMrr7ab1LHCXCg__original/img/PD8dhfO_eTUCZrAxFt_ihXOg3Ig=/0x0/filters:format(jpeg)/pic3719954.jpg
++ thumbnail-url: https://cf.geekdo-images.com/6gDD73LSCMrr7ab1LHCXCg__medium/img/n2qQkIietjf6ay3TVxVlE_dOMzk=/fit-in/500x500/filters:no_upscale():strip_icc()/pic3719954.jpg
++ podium-url: https://cf.geekdo-images.com/6gDD73LSCMrr7ab1LHCXCg__original/img/PD8dhfO_eTUCZrAxFt_ihXOg3Ig=/0x0/filters:format(jpeg)/pic3719954.jpg
 
 # 갓 오브 워 카드 게임.png
 - 👥 인원: 1 ~ 4 (2인 베스트)
@@ -2160,7 +2365,8 @@
 + ♟️ 디자이너: Fel Barros, Alex Olteanu
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgame/278120/god-of-war-the-card-game
-+ thumbnail-url: https://cf.geekdo-images.com/9teuz6hO5dK_rSGzQ86oiQ__original/img/zV99W7CPfRlYwINdI22IiAqG_hg=/0x0/filters:format(png)/pic4694072.png
++ thumbnail-url: https://cf.geekdo-images.com/9teuz6hO5dK_rSGzQ86oiQ__medium/img/Zjko88CswbRNXm1qTAUjfEJED9s=/fit-in/500x500/filters:no_upscale():strip_icc()/pic4694072.png
++ podium-url: https://cf.geekdo-images.com/9teuz6hO5dK_rSGzQ86oiQ__original/img/zV99W7CPfRlYwINdI22IiAqG_hg=/0x0/filters:format(png)/pic4694072.png
 
 # 루터즈.jpg
 - 👥 인원: 2 ~ 6 (3인 베스트)
@@ -2170,7 +2376,8 @@
 + ♟️ 디자이너: Fel Barros, Marco Portugal
 + 🎨 아티스트: Ivan Freire, Peter Wocken
 + 🔗 https://boardgamegeek.com/boardgame/199780/looterz
-+ thumbnail-url: https://cf.geekdo-images.com/NUH3HU7HmHpesY8Du4IpyQ__original/img/ohsZugN73KhvlRgw58D4oo7hSpQ=/0x0/filters:format(jpeg)/pic3090550.jpg
++ thumbnail-url: https://cf.geekdo-images.com/NUH3HU7HmHpesY8Du4IpyQ__medium/img/d1ffW2gkVN8mcBXB3CrkBvhi2S8=/fit-in/500x500/filters:no_upscale():strip_icc()/pic3090550.jpg
++ podium-url: https://cf.geekdo-images.com/NUH3HU7HmHpesY8Du4IpyQ__original/img/ohsZugN73KhvlRgw58D4oo7hSpQ=/0x0/filters:format(jpeg)/pic3090550.jpg
 
 # 팁-킥.jpg
 - 👥 인원: 2 (2인 베스트)
@@ -2180,7 +2387,8 @@
 + ♟️ 디자이너: Carl Mayer
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgame/1644/tipp-kick
-+ thumbnail-url: https://cf.geekdo-images.com/nJsoiGWYqHcR7dyCMxWagw__original/img/9Pp-2bXvzdTF6wpGz3u6fklgra8=/0x0/filters:format(jpeg)/pic9442477.jpg
++ thumbnail-url: https://cf.geekdo-images.com/nJsoiGWYqHcR7dyCMxWagw__medium/img/NSYdE0aNSW1xq7SuQ4_OQn5WgN8=/fit-in/500x500/filters:no_upscale():strip_icc()/pic9442477.jpg
++ podium-url: https://cf.geekdo-images.com/nJsoiGWYqHcR7dyCMxWagw__original/img/9Pp-2bXvzdTF6wpGz3u6fklgra8=/0x0/filters:format(jpeg)/pic9442477.jpg
 
 # 프리터 로마 집정관.png
 - 👥 인원: 2 ~ 5 (4인 베스트)
@@ -2190,7 +2398,8 @@
 + ♟️ 디자이너: Andrei Novac
 + 🎨 아티스트: David J. Coffey, Agnieszka Kopera, David Szilagyi
 + 🔗 https://boardgamegeek.com/boardgame/137776/praetor
-+ thumbnail-url: https://cf.geekdo-images.com/lda6XfSeUyAF3vaqm_L2LQ__original/img/-mdqPjzQwV4xgOZEJaPDP97nbbw=/0x0/filters:format(png)/pic1963503.png
++ thumbnail-url: https://cf.geekdo-images.com/lda6XfSeUyAF3vaqm_L2LQ__medium/img/GRWfGqotSKEapIgBZIj4XN625ck=/fit-in/500x500/filters:no_upscale():strip_icc()/pic1963503.png
++ podium-url: https://cf.geekdo-images.com/lda6XfSeUyAF3vaqm_L2LQ__original/img/-mdqPjzQwV4xgOZEJaPDP97nbbw=/0x0/filters:format(png)/pic1963503.png
 
 # 맨덤의 던전.jpg
 - 👥 인원: 2 ~ 4 (3인 베스트)
@@ -2200,7 +2409,8 @@
 + ♟️ 디자이너: Hisanori Hiraoka, Masato Uesugi
 + 🎨 아티스트: Dimitri Chappuis, Bastien Grivet, Paul Mafayon, Igor Polouchine, Masato Uesugi
 + 🔗 https://boardgamegeek.com/boardgame/150312/welcome-to-the-dungeon
-+ thumbnail-url: https://cf.geekdo-images.com/6eQXDEMIWldaut9w7jXihg__original/img/E_d5wpS2jEaH7mdO6humOGULycA=/0x0/filters:format(jpeg)/pic6771265.jpg
++ thumbnail-url: https://cf.geekdo-images.com/6eQXDEMIWldaut9w7jXihg__medium/img/NUHUpSZBFZrL6MGpVhW2A-lB4BM=/fit-in/500x500/filters:no_upscale():strip_icc()/pic6771265.jpg
++ podium-url: https://cf.geekdo-images.com/6eQXDEMIWldaut9w7jXihg__original/img/E_d5wpS2jEaH7mdO6humOGULycA=/0x0/filters:format(jpeg)/pic6771265.jpg
 
 # 응급 상황 병사들의 귀향 게임.jpg
 - 👥 인원: 2 ~ 5 (3~5인 베스트)
@@ -2210,7 +2420,8 @@
 + ♟️ 디자이너: Fabien Riffaud, Juan Rodriguez
 + 🎨 아티스트: Étienne Le Roux
 + 🔗 https://boardgamegeek.com/boardgame/335541/we-care-a-grizzled-game
-+ thumbnail-url: https://cf.geekdo-images.com/o7p2hv92c6e0Ho0UQsivqg__original/img/URpNSgRIqOuNxyY97HzolT1ZFPw=/0x0/filters:format(jpeg)/pic6089443.jpg
++ thumbnail-url: https://cf.geekdo-images.com/o7p2hv92c6e0Ho0UQsivqg__medium/img/CwLLkFxBCvNPOxTFuK1aTi5ydG0=/fit-in/500x500/filters:no_upscale():strip_icc()/pic6089443.jpg
++ podium-url: https://cf.geekdo-images.com/o7p2hv92c6e0Ho0UQsivqg__original/img/URpNSgRIqOuNxyY97HzolT1ZFPw=/0x0/filters:format(jpeg)/pic6089443.jpg
 
 # 더 게이트.jpg
 - 👥 인원: 2 (2인 베스트)
@@ -2220,7 +2431,8 @@
 + ♟️ 디자이너: Hope S. Hwang
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgame/182273/the-gate
-+ thumbnail-url: https://cf.geekdo-images.com/Se6mgI4mIXKX16St_-Wexw__original/img/G22wL7m8xw-gniF8GfCUuFkCWgs=/0x0/filters:format(jpeg)/pic2625212.jpg
++ thumbnail-url: https://cf.geekdo-images.com/Se6mgI4mIXKX16St_-Wexw__medium/img/AHHHdbY3QxhRuZ5yWrOv_J9TagM=/fit-in/500x500/filters:no_upscale():strip_icc()/pic2625212.jpg
++ podium-url: https://cf.geekdo-images.com/Se6mgI4mIXKX16St_-Wexw__original/img/G22wL7m8xw-gniF8GfCUuFkCWgs=/0x0/filters:format(jpeg)/pic2625212.jpg
 
 # 먼치킨 2 어색한 도끼.jpg
 - 👥 인원: 3 ~ 6 (4~5인 베스트)
@@ -2231,7 +2443,8 @@
 + ♟️ 디자이너: Steve Jackson (I)
 + 🎨 아티스트: John Kovalic
 + 🔗 https://boardgamegeek.com/boardgameexpansion/3943/munchkin-2-unnatural-axe
-+ thumbnail-url: https://cf.geekdo-images.com/aodU82mIunaDBUb8jC2RBQ__original/img/oKNR6agxKgVzTOQuCTmaKFGRwcc=/0x0/filters:format(jpeg)/pic2428682.jpg
++ thumbnail-url: https://cf.geekdo-images.com/aodU82mIunaDBUb8jC2RBQ__medium/img/iY80KHBEWlgrb27T3wJqw9bpnEw=/fit-in/500x500/filters:no_upscale():strip_icc()/pic2428682.jpg
++ podium-url: https://cf.geekdo-images.com/aodU82mIunaDBUb8jC2RBQ__original/img/oKNR6agxKgVzTOQuCTmaKFGRwcc=/0x0/filters:format(jpeg)/pic2428682.jpg
 
 # 사이언시아.png
 - 👥 인원: 2 ~ 4
@@ -2241,7 +2454,8 @@
 + ♟️ 디자이너: Evan Song
 + 🎨 아티스트: Vincent Dutrait
 + 🔗 https://boardgamegeek.com/boardgame/245600/scientia
-+ thumbnail-url: https://cf.geekdo-images.com/tA2TzwvsJiT7TD5FgjCNPw__original/img/VtrnU4daEpZTLTNu1PKE3M2O4ZM=/0x0/filters:format(png)/pic4314574.png
++ thumbnail-url: https://cf.geekdo-images.com/tA2TzwvsJiT7TD5FgjCNPw__medium/img/Kc9zN-Ms9reP2JIiY1lz4Z5w9Jc=/fit-in/500x500/filters:no_upscale():strip_icc()/pic4314574.png
++ podium-url: https://cf.geekdo-images.com/tA2TzwvsJiT7TD5FgjCNPw__original/img/VtrnU4daEpZTLTNu1PKE3M2O4ZM=/0x0/filters:format(png)/pic4314574.png
 
 # 셜록 13.jpg
 - 👥 인원: 2 ~ 4 (4인 베스트)
@@ -2251,7 +2465,8 @@
 + ♟️ 디자이너: Hope S. Hwang
 + 🎨 아티스트: Vincent Dutrait
 + 🔗 https://boardgamegeek.com/boardgame/149869/sherlock-13
-+ thumbnail-url: https://cf.geekdo-images.com/qUqySSzXr8QXZbfg8k_M1Q__original/img/Y3OJmx5Ly7z708aYDV_VrzLfd2o=/0x0/filters:format(jpeg)/pic5857846.jpg
++ thumbnail-url: https://cf.geekdo-images.com/qUqySSzXr8QXZbfg8k_M1Q__medium/img/LgfMvb3RrINgem-dSHZuPVdL4iU=/fit-in/500x500/filters:no_upscale():strip_icc()/pic5857846.jpg
++ podium-url: https://cf.geekdo-images.com/qUqySSzXr8QXZbfg8k_M1Q__original/img/Y3OJmx5Ly7z708aYDV_VrzLfd2o=/0x0/filters:format(jpeg)/pic5857846.jpg
 
 # 플라워즈.png
 - 👥 인원: 1 ~ 4 (2인 베스트)
@@ -2261,7 +2476,8 @@
 + ♟️ 디자이너: Paul-Henri Argiot
 + 🎨 아티스트: Julie Gruet
 + 🔗 https://boardgamegeek.com/boardgame/404041/flowers
-+ thumbnail-url: https://cf.geekdo-images.com/h4spxwmyggLNmb46Bbg4Lg__original/img/LDpmig3KBXHeOKcK1b6Gb_IkiYU=/0x0/filters:format(png)/pic7810232.png
++ thumbnail-url: https://cf.geekdo-images.com/h4spxwmyggLNmb46Bbg4Lg__medium/img/4xH4wKgVBTOiS-c8e7KEg5fHk24=/fit-in/500x500/filters:no_upscale():strip_icc()/pic7810232.png
++ podium-url: https://cf.geekdo-images.com/h4spxwmyggLNmb46Bbg4Lg__original/img/LDpmig3KBXHeOKcK1b6Gb_IkiYU=/0x0/filters:format(png)/pic7810232.png
 
 # 카드 vs 중력.jpg
 - 👥 인원: 2 ~ 8 (3~5인 베스트)
@@ -2271,7 +2487,8 @@
 + ♟️ 디자이너: Steve Howe
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgame/399104/cards-vs-gravity
-+ thumbnail-url: https://cf.geekdo-images.com/FlsPH3nGFZUvL4_ZlldXnQ__original/img/M4Z95L1ImVi_lvj_r5LpNr3uvRw=/0x0/filters:format(jpeg)/pic8453290.jpg
++ thumbnail-url: https://cf.geekdo-images.com/FlsPH3nGFZUvL4_ZlldXnQ__medium/img/Pz9O6J3r4j6JVtw8TPyLnmSFDEQ=/fit-in/500x500/filters:no_upscale():strip_icc()/pic8453290.jpg
++ podium-url: https://cf.geekdo-images.com/FlsPH3nGFZUvL4_ZlldXnQ__original/img/M4Z95L1ImVi_lvj_r5LpNr3uvRw=/0x0/filters:format(jpeg)/pic8453290.jpg
 
 # 나의 최애 명대사.jpg
 - 👥 인원: 2 ~ 6
@@ -2281,7 +2498,8 @@
 + ♟️ 디자이너: Yabuchi Ryoko
 + 🎨 아티스트: Yabuchi Ryoko
 + 🔗 https://boardgamegeek.com/boardgame/427325/tui-shiserihuoshiserihu-my-best-lines
-+ thumbnail-url: https://cf.geekdo-images.com/voRqOl7BVVzKJg7IJOsKMA__original/img/c5SNsk8i04rhpcUTgntX2FUch8w=/0x0/filters:format(jpeg)/pic8380372.jpg
++ thumbnail-url: https://cf.geekdo-images.com/voRqOl7BVVzKJg7IJOsKMA__medium/img/5NlJkEJn_CSiLbsZQ1iNRMeEOvE=/fit-in/500x500/filters:no_upscale():strip_icc()/pic8380372.jpg
++ podium-url: https://cf.geekdo-images.com/voRqOl7BVVzKJg7IJOsKMA__original/img/c5SNsk8i04rhpcUTgntX2FUch8w=/0x0/filters:format(jpeg)/pic8380372.jpg
 
 # 발렌타인 데이.jpg
 - 👥 인원: 3 ~ 6 (3~4인 베스트)
@@ -2291,7 +2509,8 @@
 + ♟️ 디자이너: Ken Gruhl
 + 🎨 아티스트: Sabrina Miramon
 + 🔗 https://boardgamegeek.com/boardgame/300090/rose-ceremony
-+ thumbnail-url: https://cf.geekdo-images.com/9BEFj2D_gb_Ad1wdkhj2Lg__original/img/pH1hQYklv8x--gy0pFmrBFdE0uY=/0x0/filters:format(jpeg)/pic5532611.jpg
++ thumbnail-url: https://cf.geekdo-images.com/9BEFj2D_gb_Ad1wdkhj2Lg__medium/img/FvQNHBeAmJIexAKQZRzpNFwRKhg=/fit-in/500x500/filters:no_upscale():strip_icc()/pic5532611.jpg
++ podium-url: https://cf.geekdo-images.com/9BEFj2D_gb_Ad1wdkhj2Lg__original/img/pH1hQYklv8x--gy0pFmrBFdE0uY=/0x0/filters:format(jpeg)/pic5532611.jpg
 
 # 번 레이트.jpg
 - 👥 인원: 2 ~ 4 (4인 베스트)
@@ -2301,7 +2520,8 @@
 + ♟️ 디자이너: Rich Koehler
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgame/3341/burn-rate
-+ thumbnail-url: https://cf.geekdo-images.com/lzW2e64kLOUVBYSYUD3Y5w__original/img/hfuL1yoGzMuxOvpK5RtRum3DIec=/0x0/filters:format(jpeg)/pic643192.jpg
++ thumbnail-url: https://cf.geekdo-images.com/lzW2e64kLOUVBYSYUD3Y5w__medium/img/xjLAWLEkmWwFZE2DnJQJg-JVD0Y=/fit-in/500x500/filters:no_upscale():strip_icc()/pic643192.jpg
++ podium-url: https://cf.geekdo-images.com/lzW2e64kLOUVBYSYUD3Y5w__original/img/hfuL1yoGzMuxOvpK5RtRum3DIec=/0x0/filters:format(jpeg)/pic643192.jpg
 
 # 꽁냥꽁냥.jpg
 - 👥 인원: 2 ~ 4
@@ -2311,7 +2531,8 @@
 + ♟️ 디자이너: -
 + 🎨 아티스트: -
 + 🔗 https://boardgamegeek.com/boardgame/421170/ggongnyangggongnyang-cat-fist
-+ thumbnail-url: https://cf.geekdo-images.com/qMxwapdKkc5bhVAozHw5gw__original/img/tBK78PFsHcD_Vo9fW1Y7IqLQ9jg=/0x0/filters:format(jpeg)/pic8202980.jpg
++ thumbnail-url: https://cf.geekdo-images.com/qMxwapdKkc5bhVAozHw5gw__medium/img/4OgNa_0buqbEK3rodsVhsipGe1c=/fit-in/500x500/filters:no_upscale():strip_icc()/pic8202980.jpg
++ podium-url: https://cf.geekdo-images.com/qMxwapdKkc5bhVAozHw5gw__original/img/tBK78PFsHcD_Vo9fW1Y7IqLQ9jg=/0x0/filters:format(jpeg)/pic8202980.jpg
 
 # 베니스 커넥션.png
 - 👥 인원: 2 (2인 베스트)
@@ -2321,7 +2542,8 @@
 + ♟️ 디자이너: Alex Randolph
 + 🎨 아티스트: Wanjin Gill, Kathi Kappler, Johann Rüttinger, Rolf Vogt
 + 🔗 https://boardgamegeek.com/boardgame/1910/venice-connection
-+ thumbnail-url: https://cf.geekdo-images.com/GfKJJ4ieo9I2ZWcaU3RweQ__original/img/VSKcF4amm9BMFxBd7CnUkg-FDgM=/0x0/filters:format(png)/pic6518977.png
++ thumbnail-url: https://cf.geekdo-images.com/GfKJJ4ieo9I2ZWcaU3RweQ__medium/img/BcM9_VZUMgVfZCbuTeHcbSyP1ac=/fit-in/500x500/filters:no_upscale():strip_icc()/pic6518977.png
++ podium-url: https://cf.geekdo-images.com/GfKJJ4ieo9I2ZWcaU3RweQ__original/img/VSKcF4amm9BMFxBd7CnUkg-FDgM=/0x0/filters:format(png)/pic6518977.png
 
 # 먼치킨.jpg
 - 👥 인원: 3 ~ 6 (4인 베스트)
@@ -2331,7 +2553,8 @@
 + ♟️ 디자이너: Steve Jackson (I)
 + 🎨 아티스트: Alex Fernandez (I), Edwin Huang, Steve Jackson (I), John Kovalic, Ian McGinty, Heather Oliver, Philip Reed, Gabby Ruenes
 + 🔗 https://boardgamegeek.com/boardgame/1927/munchkin
-+ thumbnail-url: https://cf.geekdo-images.com/J-ts3MW0UhDzs621TR6cog__original/img/FbqPPCilgZKND2xmhWJgkfjZiYE=/0x0/filters:format(jpeg)/pic1871016.jpg
++ thumbnail-url: https://cf.geekdo-images.com/J-ts3MW0UhDzs621TR6cog__medium/img/aIQNgIqkdnKuEd1W7WxJTIFp4P0=/fit-in/500x500/filters:no_upscale():strip_icc()/pic1871016.jpg
++ podium-url: https://cf.geekdo-images.com/J-ts3MW0UhDzs621TR6cog__original/img/FbqPPCilgZKND2xmhWJgkfjZiYE=/0x0/filters:format(jpeg)/pic1871016.jpg
 
 # 두 잇!.png
 - 👥 인원: 2 (2인 베스트)
@@ -2341,7 +2564,8 @@
 + ♟️ 디자이너: Yeon-Min Jung
 + 🎨 아티스트: Hami
 + 🔗 https://boardgamegeek.com/boardgame/212902/do-eat
-+ thumbnail-url: https://cf.geekdo-images.com/2ce7dXsGclZ1El1AL0S7bg__original/img/CHvrZOUXtQjCGc7xRIB_DlygnH0=/0x0/filters:format(png)/pic4296126.png
++ thumbnail-url: https://cf.geekdo-images.com/2ce7dXsGclZ1El1AL0S7bg__medium/img/awsS7zHH_Eq41nZEZgdSkSzJq3w=/fit-in/500x500/filters:no_upscale():strip_icc()/pic4296126.png
++ podium-url: https://cf.geekdo-images.com/2ce7dXsGclZ1El1AL0S7bg__original/img/CHvrZOUXtQjCGc7xRIB_DlygnH0=/0x0/filters:format(png)/pic4296126.png
 
 # 캐시.png
 - 👥 인원: 3 ~ 6 (4~6인 베스트)
@@ -2351,7 +2575,8 @@
 + ♟️ 디자이너: Jürgen P. Grunau, Wolfgang Kramer
 + 🎨 아티스트: E. Dietl, Wanjin Gill, Studio July
 + 🔗 https://boardgamegeek.com/boardgame/2310/club-unlock
-+ thumbnail-url: https://cf.geekdo-images.com/uLbXQ2qU9FQK1Mz1LL4D9g__original/img/mRVwPs7OC-E2Ul7pAvtwwyTkNBc=/0x0/filters:format(png)/pic8953048.png
++ thumbnail-url: https://cf.geekdo-images.com/uLbXQ2qU9FQK1Mz1LL4D9g__medium/img/SYz8WrCFfE2pDb5RLAT8svPAbgk=/fit-in/500x500/filters:no_upscale():strip_icc()/pic8953048.png
++ podium-url: https://cf.geekdo-images.com/uLbXQ2qU9FQK1Mz1LL4D9g__original/img/mRVwPs7OC-E2Ul7pAvtwwyTkNBc=/0x0/filters:format(png)/pic8953048.png
 
 # 개구리 수프.jpg
 - 👥 인원: 1 ~ 4 (4인 베스트)
@@ -2361,7 +2586,8 @@
 + ♟️ 디자이너: Jean Philippe Sahut
 + 🎨 아티스트: Camille Chaussy
 + 🔗 https://boardgamegeek.com/boardgame/266155/frog-soup
-+ thumbnail-url: https://cf.geekdo-images.com/ZzfPoZBdzygFYJqyAvF_gA__original/img/-uc0iYvL2waHLc7f80HUEb58cME=/0x0/filters:format(jpeg)/pic4473972.jpg
++ thumbnail-url: https://cf.geekdo-images.com/ZzfPoZBdzygFYJqyAvF_gA__medium/img/ZH4x5Ppyf6Qweg0JweByI93welA=/fit-in/500x500/filters:no_upscale():strip_icc()/pic4473972.jpg
++ podium-url: https://cf.geekdo-images.com/ZzfPoZBdzygFYJqyAvF_gA__original/img/-uc0iYvL2waHLc7f80HUEb58cME=/0x0/filters:format(jpeg)/pic4473972.jpg
 
 # 메모리 베이커리.png
 - 👥 인원: 2 ~ 4
@@ -2371,4 +2597,5 @@
 + ♟️ 디자이너: Gary Kim
 + 🎨 아티스트: Lilia
 + 🔗 https://boardgamegeek.com/boardgame/371785/memory-island
-+ thumbnail-url: https://cf.geekdo-images.com/45NJP9VEd_1q7LUgQbSItg__original/img/HiwLL53k01ZeoEbaNMEfD38zfO8=/0x0/filters:format(png)/pic9377489.png
++ thumbnail-url: https://cf.geekdo-images.com/45NJP9VEd_1q7LUgQbSItg__medium/img/XRvJTxBnV2ah2ZcmxT8Z8Iy8gVA=/fit-in/500x500/filters:no_upscale():strip_icc()/pic9377489.png
++ podium-url: https://cf.geekdo-images.com/45NJP9VEd_1q7LUgQbSItg__original/img/HiwLL53k01ZeoEbaNMEfD38zfO8=/0x0/filters:format(png)/pic9377489.png
