@@ -75,9 +75,11 @@ header {
   display: inline-flex; align-items: center; gap: .4rem;
   min-width: 0; max-width: 100%; grid-column: 2; justify-self: center;
 }
-#btnUndo { flex: none; margin-right: .3rem; }
-#btnUndo[disabled] { opacity: .4; cursor: default; }
-#btnUndo[disabled]:hover { border-color: var(--border); }
+#btnUndo, #btnRedo { flex: none; margin-right: .3rem; }
+/* 글자 없이 화살표만 — 대신 조금 굵고 진하게 해서 가시성을 지킨다 */
+.mini.arrow { font-size: 1rem; font-weight: 700; color: var(--text); }   /* 순위 ▲▼(.rank .arrow)와 분리 */
+.mini.arrow[disabled] { opacity: .4; cursor: default; }
+.mini.arrow[disabled]:hover { border-color: var(--border); }
 /* 양옆 묶음이 쓰는 폭(대략 60rem)을 뺀 '남는 자리'를 그대로 쓴다.
    넓으면 24rem 에서 멈추고, 좁아도 4.5rem 아래로는 내려가지 않는다 —
    placeholder 의 'Sea' 정도는 보여야 검색창인 줄 알 수 있다. */
@@ -105,7 +107,7 @@ header {
 }
 #viewControls[hidden] + #hdrFixed { padding-left: 0; border-left: 0; }   /* 선만 남지 않게 */
 #btnCup { min-width: 8.2rem; text-align: center; }
-#btnTheme { font-size: 1.05rem; padding: .3rem .55rem; }
+#btnTheme, #btnSfx { font-size: 1.05rem; padding: .3rem .55rem; }
 
 /* ---------- 공통 컨트롤 ---------- */
 select, button, input {
@@ -259,11 +261,13 @@ main { max-width: 1100px; margin: 0 auto; padding: 1rem; }
   padding: .5rem; cursor: pointer; user-select: none;
 }
 .tier-add:hover { border-color: var(--accent); color: var(--accent); }
-.tier-x {
+.tier-x, .tier-clear {
   flex: none; align-self: center; border: 0; background: transparent;
   color: var(--muted); font-size: 1.15rem; padding: 0 .7rem; cursor: pointer;
 }
 .tier-x:hover { color: #e03131; }
+.tier-clear { font-size: .95rem; padding-right: 0; }   /* × 의 왼쪽 여백이 둘 사이 간격이 된다 */
+.tier-clear:hover { color: var(--accent); }
 .tier-memo {
   width: 100%; max-width: 100%; min-width: 100%;   /* 가로는 티어 행과 동일, 조절 불가 */
   /* 5줄(line-height 1.5 × 5) + 상하 패딩 = 기본·최소 높이 */
@@ -515,7 +519,8 @@ mark {
   </span>
   <!-- 가운데: 검색 -->
   <span id="searchWrap" hidden>
-    <button id="btnUndo" class="mini" disabled>↶ Undo</button>
+    <button id="btnUndo" class="mini arrow" disabled>↶</button>
+    <button id="btnRedo" class="mini arrow" disabled>↷</button>
     <input id="searchInput" type="search" placeholder="Search (초성 검색 가능)">
     <!-- 기본은 아이템명만 검색한다. 켜면 설명까지 넓힌다 -->
     <label id="descWrap" title="Search descriptions too"><input id="descChk" type="checkbox"><span>All Text</span></label>
@@ -541,6 +546,7 @@ mark {
     <!-- 화면이 바뀌어도 항상 있는 전역 토글 — 오른쪽 끝에 고정해 위치가 흔들리지 않는다 -->
     <span id="hdrFixed">
       <button id="btnCup" class="mini" hidden>🏆 WorldCup</button>
+      <button id="btnSfx" title="Sound effects on / off">🔊</button>
       <button id="btnTheme" title="Light / dark">🌙</button>
     </span>
   </span>
@@ -651,7 +657,7 @@ let rootPodiumFile = null;  // topics 루트의 공통 podium.* (주제 폴더 �
 /* 공용 이미지 폴더 topics/images — 여러 주제가 같은 그림을 쓰므로 한 곳에 모아 둔다.
    연결 대상은 언제나 topics 폴더 그 자체다(브라우저는 연결한 폴더의 부모로 올라갈 수 없다). */
 const IMAGES_DIR = "images";
-let rootHandle = null;         // 연결된 topics 폴더 핸들 (없으면 읽기 전용 연결이다)
+let rootHandle = null;         // 연결된 topics 폴더 핸들 — 없으면 읽기 전용, 있어도 쓰기 권한은 writeGranted 가 따로 본다
 let sharedImages = null;       // 이름 -> File | 파일 핸들. 폴더를 한 번만 훑어 만든다
 let cur = null;         // current topic state
 let dragItem = null;
@@ -669,6 +675,35 @@ setTheme(localStorage.getItem("rm-theme") ||
   (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"), false);
 $("#btnTheme").onclick = () =>
   setTheme(document.documentElement.dataset.theme === "dark" ? "light" : "dark");
+
+/* ---------- sfx — 방송용 효과음 (Mixkit Sound Effects Free License) ----------
+   파일을 품지 않고 Mixkit 미리듣기 mp3 를 그대로 튼다 — 오프라인이면 소리만 조용히 빠진다. */
+const SFX = {
+  fanfare: [722, 631, 226],   // 포디엄 완성 — horns · brass · medieval fanfare 중 하나
+  round: [960],               // 월드컵 라운드 전환 — Tile game reveal
+  pick: [1530],               // 월드컵 선택 확정 — Paper slide (종이 넘기는 슥-)
+};
+let sfxOn = localStorage.getItem("rm-sfx") !== "off";
+const sfxBank = {};
+const sfxLoad = id => sfxBank[id] ??= Object.assign(
+  new Audio(`https://assets.mixkit.co/active_storage/sfx/${id}/${id}-preview.mp3`), { preload: "auto" });
+function sfxPlay(name) {
+  if (!sfxOn) return;
+  const ids = SFX[name];
+  const a = sfxLoad(ids[Math.floor(Math.random() * ids.length)]);
+  a.currentTime = 0;
+  a.play().catch(() => {});   // 오프라인·자동재생 차단이면 소리만 빠진다
+}
+function sfxApply() {   // 버튼 표시를 맞추고, 켜져 있으면 전부 미리 받아 둔다 — 첫 재생이 늦지 않게
+  $("#btnSfx").textContent = sfxOn ? "🔊" : "🔇";
+  if (sfxOn) Object.values(SFX).flat().forEach(sfxLoad);
+}
+$("#btnSfx").onclick = () => {
+  sfxOn = !sfxOn;
+  localStorage.setItem("rm-sfx", sfxOn ? "on" : "off");
+  sfxApply();
+};
+sfxApply();
 
 /* ---------- open sources: 폴더 선택 / 드래그&드롭 / webkitdirectory ----------
    폴더 핸들을 기억해 두지 않는다. 열 때마다 고르는 대신, 어느 폴더를 보고 있는지가
@@ -893,14 +928,17 @@ async function sharedImageFile(name, refresh) {
 
 /* 폴더 드래그&드롭 */
 addEventListener("dragover", e => {
+  if (dragItem) { e.preventDefault(); return; }   // 앱 안 아이템 드래그 — 폴더 열기가 아니다
   if ([...(e.dataTransfer?.items || [])].some(i => i.kind === "file")) {
     e.preventDefault();
     $("#welcome").classList.add("dragging");
   }
 });
 addEventListener("dragleave", () => $("#welcome").classList.remove("dragging"));
+addEventListener("dragend", () => { dragItem = null; });   // 내부 드래그가 취소돼도 전역 가드가 남지 않게
 addEventListener("drop", async e => {
   $("#welcome").classList.remove("dragging");
+  if (dragItem) { e.preventDefault(); return; }   // 잘못 놓은 앱 안 아이템은 조용히 무시
   const item = [...(e.dataTransfer?.items || [])].find(i => i.kind === "file");
   if (!item) return;
   e.preventDefault();
@@ -946,7 +984,10 @@ async function allEntries(dirEntry) {
   } while (batch.length);
   return out;
 }
-async function writeFile(dir, name, data) {         // 폴더에 파일 하나 쓰기 — 저장 경로 공통
+/* 폴더에 파일 하나 쓰기 — 저장 경로 공통.
+   주의: 사용자 제스처 밖(자동 저장·백그라운드 캐시)에서 부르면 권한 팝업이 뜰 수 있다 —
+   그런 호출자는 trySaveFile() 이나 writeGranted() 를 먼저 거친다. */
+async function writeFile(dir, name, data) {
   const fh = await dir.getFileHandle(name, { create: true });
   const w = await fh.createWritable();
   await w.write(data);
@@ -1106,13 +1147,15 @@ async function loadTopic(t) {
     if (IMG_EXT.test(h) && !files.has(h))
       synth.set(h, thumbOf(info.items[h]) || textCardUri(h.replace(/\.[^.]+$/, "")));
 
+  // 파일로 저장 못 하는 연결(핸들 없음, 또는 쓰기 권한을 아직 안 받음)은 브라우저 저장을 겹쳐 읽는다
+  const overlay = !(await writeGranted(t.dirHandle));
   const save = { view: {}, ranks: {}, checks: {} };
   if (files.has("save.json")) {
     try { Object.assign(save, JSON.parse(await files.get("save.json").text())); }
     catch (e) { console.warn("save.json parse error", e); }
   }
-  if (!t.dirHandle) {
-    // 읽기 전용 소스에서는 이후 조작분이 브라우저(localStorage)에 겹쳐 저장돼 있다
+  if (overlay) {
+    // 이후 조작분이 브라우저(localStorage)에 겹쳐 저장돼 있다
     try { Object.assign(save, JSON.parse(localStorage.getItem("rm:" + t.name) || "null") || {}); }
     catch (e) {}
   }
@@ -1123,7 +1166,7 @@ async function loadTopic(t) {
     try { Object.assign(cupSave, JSON.parse(await files.get("cup.save.json").text())); }
     catch (e) { console.warn("cup.save.json parse error", e); }
   }
-  if (!t.dirHandle) {
+  if (overlay) {
     try { Object.assign(cupSave, JSON.parse(localStorage.getItem("rmcup:" + t.name) || "null") || {}); }
     catch (e) {}
   }
@@ -1197,6 +1240,7 @@ async function loadTopic(t) {
   showScreen("#board");
   cup = null;                 // 주제를 바꾸면 진행 중이던 월드컵은 버린다
   undoStack = [];             // 되돌리기도 주제 단위다 — 다른 주제로 넘어가지 않는다
+  redoStack = [];
   syncUndo();
   cupSetScreen(false);
   syncControls();
@@ -1216,7 +1260,7 @@ async function loadTopic(t) {
    브라우저가 본문을 읽을 수 없어 저장이 불가능하다. 그때는 조용히 포기하고
    기존처럼 <img> 로 원격 표시만 한다(표시에는 CORS 가 필요 없다). */
 async function cacheRemoteImages(ctx) {
-  if (!ctx || !rootHandle) return;                       // 읽기 전용 소스는 저장할 곳이 없다
+  if (!ctx || !await writeGranted(rootHandle)) return;   // 파일로 저장 못 하는 연결이면 받아 둘 곳이 없다
 
   // info.md 에 적힌 주소 — 로컬 파일이 이미 있어도 뽑는다(주소가 바뀌었는지 봐야 하므로).
   // 받아 두는 목적이 포스터라 원본(podium-url)을 먼저 노린다 — 없으면 썸네일이 원본이다.
@@ -1343,6 +1387,7 @@ function tierAssignments() {  // 현재 순서·크기에서 각 아이템의 �
   return map;
 }
 function moveToTier(it, destTier, posInTier) {
+  dragItem = null;   // 드롭의 종착점 — 드롭 뒤 render 로 원소가 사라지면 dragend 가 안 오므로 여기서 끝낸다
   // 할당 기반 재구성: 나머지 아이템의 티어 소속을 먼저 확정하고,
   // it을 목적 티어(또는 풀)의 posInTier 위치에 끼운 뒤 전체를 다시 조립한다.
   // 경계 산술이 없어 티어↔티어 이동에서도 어긋나지 않는다.
@@ -1360,6 +1405,19 @@ function moveToTier(it, destTier, posInTier) {
     const seq = [...buckets.flat(), ...pool];
     seq.forEach((x, i) => x.ord = i);
     cur.save.tierSizes = buckets.map(b => b.length);
+  });
+  commit();
+}
+function tierItemsToPool(from, count) {   // 그 구간을 떼어 풀 맨 뒤(전체 맨 뒤)에 붙인다
+  const arr = sorted();
+  arr.push(...arr.splice(from, count));
+  arr.forEach((x, i) => x.ord = i);
+}
+function clearTier(gi) {  // 티어 비우기 — 아이템은 풀 맨 뒤로, 티어는 빈 채로 남는다
+  mutate(() => {
+    const ts = tierSizes();
+    tierItemsToPool(ts.slice(0, gi).reduce((a, b) => a + b, 0), ts[gi]);
+    ts[gi] = 0;
   });
   commit();
 }
@@ -1405,6 +1463,7 @@ function shiftTierNames(from, delta) {    // 티어 삽입/삭제 시 저장된 
    Load(가져오기)는 주제를 통째로 다시 여는 동작이라 여기서 다루지 않는다. */
 const UNDO_MAX = 50;
 let undoStack = [];
+let redoStack = [];   // 다시하기 — 새 변경이 생기면 갈림길이 사라지므로 비운다
 
 const snapshot = () => JSON.stringify({
   order: sorted().map(i => i.file),
@@ -1422,13 +1481,12 @@ function mutate(fn) {
   if (before !== snapshot()) {
     undoStack.push(before);
     if (undoStack.length > UNDO_MAX) undoStack.shift();
+    redoStack = [];
     syncUndo();
   }
   return r;
 }
-function undo() {
-  if (!cur || !undoStack.length) return;
-  const s = JSON.parse(undoStack.pop());
+function restore(s) {
   const byFile = new Map(cur.items.map(i => [i.file, i]));
   s.order.forEach((f, i) => { const it = byFile.get(f); if (it) it.ord = i; });
   cur.save.tierSizes = s.tierSizes;
@@ -1436,7 +1494,18 @@ function undo() {
   cur.save.checks = s.checks;
   syncUndo();
   commit();                    // 순서 정리 → 다시 그리기 → 저장 예약
+}
+function undo() {
+  if (!cur || !undoStack.length) return;
+  redoStack.push(snapshot());
+  restore(JSON.parse(undoStack.pop()));
   flash("Undone ✓" + (undoStack.length ? ` · ${undoStack.length} left` : ""));
+}
+function redo() {
+  if (!cur || !redoStack.length) return;
+  undoStack.push(snapshot());
+  restore(JSON.parse(redoStack.pop()));
+  flash("Redone ✓" + (redoStack.length ? ` · ${redoStack.length} left` : ""));
 }
 function syncUndo() {
   const b = $("#btnUndo");
@@ -1444,16 +1513,35 @@ function syncUndo() {
   b.title = undoStack.length
     ? `Undo the last arrangement change — ${undoStack.length} left (Ctrl+Z)`
     : "Nothing to undo";
+  const r = $("#btnRedo");
+  r.disabled = !redoStack.length;
+  r.title = redoStack.length
+    ? `Redo the undone change — ${redoStack.length} left (Ctrl+Y)`
+    : "Nothing to redo";
 }
 $("#btnUndo").onclick = undo;
+$("#btnRedo").onclick = redo;
 addEventListener("keydown", e => {
-  if (!(e.ctrlKey || e.metaKey) || e.shiftKey || (e.key || "").toLowerCase() !== "z") return;
+  if (!(e.ctrlKey || e.metaKey)) return;
+  const k = (e.key || "").toLowerCase();
+  if (k !== "z" && k !== "y") return;
+  const wantUndo = k === "z" && !e.shiftKey;   // 나머지(Ctrl+Y · Ctrl+Shift+Z)는 redo
   // 입력칸 안에서는 글자 단위 되돌리기가 우선이다 — 가로채지 않는다
   const t = e.target;
   if (t && (t.isContentEditable || /^(input|textarea|select)$/i.test(t.tagName || ""))) return;
-  if (!cur || !undoStack.length) return;
+  // 월드컵 화면에서는 월드컵 몫이다 — 숨은 순위표를 건드리면 안 된다
+  if (cupOpen) { e.preventDefault(); wantUndo ? cupUndo() : cupRedo(); return; }
+  if (!cur || !(wantUndo ? undoStack : redoStack).length) return;
   e.preventDefault();
-  undo();
+  wantUndo ? undo() : redo();
+});
+
+// Escape — 입력칸 포커스를 놓는다. 방송 중 검색창·메모·숫자칸의 캐럿을 즉시 없애는 용도다.
+// (티어/순위 이름 편집칸은 자체 Escape 처리가 있고, 이 리스너와도 자연히 맞물린다)
+addEventListener("keydown", e => {
+  if (e.key !== "Escape") return;
+  const t = document.activeElement;
+  if (t && /^(input|textarea|select)$/i.test(t.tagName || "")) t.blur();
 });
 
 /* ---------- rendering ---------- */
@@ -1471,16 +1559,14 @@ const setMode = m => { cupSetScreen(false); cur.view.mode = m; syncControls(); r
 $("#btnList").onclick = () => setMode("list");
 $("#btnGrid").onclick = () => setMode("grid");
 $("#btnTier").onclick = () => setMode("tier");
-$("#colInput").onchange = e => {
-  cur.view.columns = Math.max(1, Math.min(8, +e.target.value || 3));
-  e.target.value = cur.view.columns;
+const numInput = (sel, key, lo, hi, dflt) => $(sel).onchange = e => {
+  cur.view[key] = Math.max(lo, Math.min(hi, +e.target.value || dflt));
+  e.target.value = cur.view[key];
+  e.target.blur();   // 값을 정했으면 포커스를 놓는다 — 방송 화면에 캐럿이 깜빡이지 않게
   render(); scheduleSave();
 };
-$("#sizeInput").onchange = e => {
-  cur.view.tierSize = Math.max(40, Math.min(160, +e.target.value || 72));
-  e.target.value = cur.view.tierSize;
-  render(); scheduleSave();
-};
+numInput("#colInput", "columns", 1, 8, 3);
+numInput("#sizeInput", "tierSize", 40, 160, 72);
 
 function render() {
   const wrap = $("#items");
@@ -1557,7 +1643,6 @@ function renderTierView(wrap) {
         dragItem = it;
         e.dataTransfer.effectAllowed = "move";
       });
-      im.addEventListener("dragend", () => { dragItem = null; });
       // 같은 티어 안에서 앞뒤 이동: 아이템 위에 드롭하면 좌/우 절반 기준으로 그 앞/뒤에 삽입
       im.addEventListener("dragover", e => {
         if (!dragItem || dragItem === it) return;
@@ -1602,15 +1687,20 @@ function renderTierView(wrap) {
     xb.title = n0 ? "Delete tier — its items move to Unranked (…)" : "Remove this empty tier";
     xb.onclick = () => {
       mutate(() => {
-        const arr = sorted();
-        const moved = arr.slice(s0, s0 + n0);   // 삭제된 티어의 아이템은 풀 맨 뒤로
-        const rest = arr.filter(x => !moved.includes(x));
-        [...rest, ...moved].forEach((x, i) => x.ord = i);
+        tierItemsToPool(s0, n0);   // 삭제된 티어의 아이템은 풀 맨 뒤로
         cur.save.tierSizes.splice(gi, 1);
         shiftTierNames(gi + 1, -1);
       });
       commit();
     };
+    if (n0) {   // 비우기 — 티어는 남기고 아이템만 풀로 보낸다 (빈 티어에는 안 보인다)
+      const cb = document.createElement("button");
+      cb.className = "tier-clear";
+      cb.textContent = "⌫";
+      cb.title = "Clear tier — its items move to Unranked (…)";
+      cb.onclick = () => clearTier(gi);
+      row.append(cb);
+    }
     row.append(xb);
     wrap.append(row);
     start += sz;
@@ -1700,8 +1790,8 @@ function renderItem(it) {
     e.dataTransfer.effectAllowed = "move";
     row.classList.add("dragging");
   });
-  row.addEventListener("dragend", () => {
-    dragItem = null; row.draggable = false; row.classList.remove("dragging");
+  row.addEventListener("dragend", () => {   // dragItem 은 전역 dragend 백스톱이 지운다
+    row.draggable = false; row.classList.remove("dragging");
     document.querySelectorAll(".drop-before,.drop-after")
       .forEach(el => el.classList.remove("drop-before", "drop-after"));
   });
@@ -1749,6 +1839,7 @@ function renderRank(it) {
     inp.focus(); inp.select();
     inp.onblur = () => setRank(it, parseInt(inp.value, 10));
     inp.onkeydown = e => {
+      e.stopPropagation();
       if (e.key === "Enter") inp.blur();
       if (e.key === "Escape") { inp.onblur = null; render(); }
     };
@@ -1860,15 +1951,25 @@ function saveData() {
     imgSrc: cur.save.imgSrc || {},   // 파일 -> 그 파일을 받아온 주소 (info.md 주소가 바뀌면 다시 받는다)
   };
 }
-const writeSaveFile = json => writeFile(cur.dirHandle, "save.json", json);
+/* 드래그로 연결한 폴더는 쓰기 권한이 '물어보기' 상태다. 저장하려고 팝업을 띄우지 않는다 —
+   권한이 이미 있을 때만 파일로 쓰고, 아니면 읽기 전용 연결처럼 브라우저에 겹쳐 저장한다. */
+async function writeGranted(dir) {
+  if (!dir) return false;   // 핸들 없는 연결(드래그 entry·webkitdirectory)은 파일 저장 자체가 없다
+  try { return await dir.queryPermission({ mode: "readwrite" }) === "granted"; }
+  catch (e) { return true; }   // 권한 API 가 없거나 실패하면 일단 써 본다 — 실제 쓰기가 최종 심판
+}
+/* 파일 쓰기를 시도한다 — 성공하면 낡은 브라우저 그림자를 지우고 true.
+   권한이 없거나 실패하면 false — 호출자는 브라우저(localStorage)로 넘어간다. */
+async function trySaveFile(name, key, json) {
+  if (!await writeGranted(cur.dirHandle)) return false;
+  try { await writeFile(cur.dirHandle, name, json); localStorage.removeItem(key); return true; }
+  catch (e) { console.warn(name, "write failed", e); return false; }
+}
 async function persist() {
   const data = saveData();
   cur.save = Object.assign({}, cur.save, data);
   const json = JSON.stringify(data, null, 2);
-  if (cur.dirHandle) {
-    try { await writeSaveFile(json); flash("Saved ✓"); return; }
-    catch (e) { console.warn("write failed", e); }
-  }
+  if (await trySaveFile("save.json", "rm:" + cur.name, json)) return flash("Saved ✓");
   try { localStorage.setItem("rm:" + cur.name, json); flash("Saved ✓ (browser)"); }
   catch (e) { flash("Save failed — use Save to back it up"); }
 }
@@ -1893,8 +1994,8 @@ $("#importInput").onchange = async e => {
   try {
     const data = JSON.parse(await f.text());
     const json = JSON.stringify(data, null, 2);
-    if (cur.dirHandle) await writeSaveFile(json);
-    else localStorage.setItem("rm:" + cur.name, json);
+    if (!await trySaveFile("save.json", "rm:" + cur.name, json))
+      localStorage.setItem("rm:" + cur.name, json);
     await loadTopic(topics.find(t => t.name === cur.name));
     flash("Loaded ✓");
   } catch (err) {
@@ -2071,6 +2172,7 @@ async function exportImage(kind) {
     cv.toBlob(b => {
       if (!b) return flash("Could not render the image");
       downloadBlob(b, cur.name + (kind === "insta" ? "-top3" : "-top10") + ".png");
+      sfxPlay("fanfare");
       flash("Saved ✓ · poster");
     }, "image/png");
   } catch (err) { console.error(err); flash("Could not render the image"); }
@@ -2471,7 +2573,7 @@ function shuffled(a) {
 }
 function cupStart(size, k, m) {
   cup = { k, m, size, roundNo: 0, pool: [], queue: [], qi: 0,
-    picked: [], winners: [], byes: [], done: null, recorded: false, hist: [] };
+    picked: [], winners: [], byes: [], done: null, recorded: false, hist: [], redo: [] };
   cupLock = false;
   cupBusy = false;
   cupLastRound = 0;
@@ -2504,15 +2606,19 @@ function cupBuildRound(pool) {
   if (rest.length >= 2) cup.queue.push({ c: rest, n: Math.min(cup.m, rest.length - 1) });
   else cup.byes = rest;
 }
+const cupState = () => { const { hist, redo, ...s } = cup; return JSON.stringify(s); };  // 스택은 스냅샷에 안 섞는다
 function cupSnap() {   // 상태가 전부 문자열이라 스냅샷이 싸다 — Undo 는 무제한
-  const { hist, ...s } = cup;
-  cup.hist.push(JSON.stringify(s));
+  cup.hist.push(cupState());
+  cup.redo = [];       // 새 선택이 생기면 다시하기 갈림길은 사라진다
 }
-function cupUndo() {
-  if (cupLock || !cup || !cup.hist.length) return;
-  Object.assign(cup, JSON.parse(cup.hist.pop()));
+function cupHop(from, to) {   // undo·redo 는 방향만 다르다 — from 을 꺼내고 현재를 to 에 쌓는다
+  if (cupLock || !cup || !cup[from].length) return;
+  cup[to].push(cupState());
+  Object.assign(cup, JSON.parse(cup[from].pop()));
   cupRender();
 }
+const cupUndo = () => cupHop("hist", "redo");
+const cupRedo = () => cupHop("redo", "hist");
 function cupToggle(file) {
   if (cupLock || cupBusy) return;
   const m = cup.queue[cup.qi];
@@ -2524,6 +2630,7 @@ function cupToggle(file) {
   if (cup.picked.length < m.n) { cupRender(); return; }
   // 다 골랐으면 바로 넘기지 않고, 고른 것을 잠깐 강조해 보여준 뒤 진행한다
   cupLock = true;
+  sfxPlay("pick");
   cupRender();
   setTimeout(() => {
     cupLock = false;
@@ -2625,9 +2732,13 @@ function cupMatch(el) {
   pick.className = "cup-pick";
   pick.textContent = m.n === 1 ? "Pick 1" : `Pick ${m.n} (${cup.picked.length}/${m.n})`;
   const undoBtn = document.createElement("button");   // 월드컵 전용 — 순위표의 undo() 와 다르다
-  undoBtn.className = "mini"; undoBtn.textContent = "↶ Undo";
+  undoBtn.className = "mini arrow"; undoBtn.textContent = "↶"; undoBtn.title = "Undo";
   undoBtn.disabled = cupLock || !cup.hist.length;
   undoBtn.onclick = cupUndo;
+  const redoBtn = document.createElement("button");
+  redoBtn.className = "mini arrow"; redoBtn.textContent = "↷"; redoBtn.title = "Redo";
+  redoBtn.disabled = cupLock || !cup.redo.length;
+  redoBtn.onclick = cupRedo;
   const quit = document.createElement("button");
   quit.className = "mini"; quit.textContent = "Quit";
   quit.disabled = cupLock;
@@ -2642,7 +2753,7 @@ function cupMatch(el) {
   zi.title = "Card size (%) — 100 fills the screen";
   zi.onchange = () => cupSetZoom((+zi.value || 100) / 100);
   zw.append(zi, document.createTextNode("%"));
-  head.append(title, prog, pick, zw, undoBtn, quit);
+  head.append(title, prog, pick, zw, undoBtn, redoBtn, quit);
 
   const grid = document.createElement("div");
   grid.className = "cup-grid fill" + (cupLock ? " flash" : "") + (cupBusy ? " locked" : "");
@@ -2667,6 +2778,7 @@ function cupMatch(el) {
     s.textContent = cupRoundName();
     b.append(bg, s);
     document.body.append(b);
+    sfxPlay("round");
     // 연출이 끝날 때까지 카드 선택을 막는다 (Undo·Quit 은 계속 눌린다)
     cupBusy = true;
     grid.classList.add("locked");
@@ -2778,10 +2890,7 @@ function cupStamp() {
 }
 async function cupPersist() {
   const json = JSON.stringify(cur.cupSave, null, 2);
-  if (cur.dirHandle) {
-    try { await writeFile(cur.dirHandle, "cup.save.json", json); return; }
-    catch (e) { console.warn("cup save failed", e); }
-  }
+  if (await trySaveFile("cup.save.json", "rmcup:" + cur.name, json)) return;
   try { localStorage.setItem("rmcup:" + cur.name, json); } catch (e) {}
 }
 function cupResult(el) {
@@ -2813,6 +2922,7 @@ function cupResult(el) {
 
   if (!cup.recorded) {
     cup.recorded = true;
+    sfxPlay("fanfare");
     cur.cupSave.config = { round: cup.size, k: cup.k, m: cup.m };
     (cur.cupSave.history ||= []).unshift({
       at: cupStamp(), round: cup.size, k: cup.k, m: cup.m, winner: it.label,

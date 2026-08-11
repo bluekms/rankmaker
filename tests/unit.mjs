@@ -58,6 +58,12 @@ const sandbox = {
   setTimeout, clearTimeout, setInterval, clearInterval,
   URL: Object.assign(URL, { createObjectURL: () => "blob:stub", revokeObjectURL() {} }),
   Image: class { set src(_) {} },
+  // 효과음 검증용 — 무엇을 만들었고 몇 번 틀었는지를 기록한다
+  __sfxLog: [],
+  Audio: class {
+    constructor(src) { this.src = src; this.plays = 0; sandbox.__sfxLog.push(this); }
+    play() { this.plays++; return Promise.resolve(); }
+  },
   fetch: () => Promise.reject(new Error("네트워크는 테스트하지 않는다")),
   alert() {}, confirm: () => false, prompt: () => null,
   navigator: { userAgent: "node" },
@@ -511,27 +517,32 @@ describe("그림 지연 로딩", () => {
   app("document.createElement = origCreate; cur = null;");
 });
 
-/* ================= 되돌리기 =================
-   가짜 주제를 만들어 실제 배치 함수를 돌린다. 화면을 그리는 부분만 비워 둔다. */
-describe("되돌리기", () => {
-  const order = () => app("sorted().map(i => i.file)");
-  const sizes = () => app("[...cur.save.tierSizes]");
-  const depth = () => app("undoStack.length");
-  const item = f => `cur.items.find(i => i.file === ${JSON.stringify(f)})`;
-  const setup = () => app(`
-    render = () => {}; scheduleSave = () => {}; flash = () => {};
-    cur = {
-      name: "t", dirHandle: null,
-      info: { global: [], items: {} },
-      save: { tierSizes: [2, 2], tierNames: {}, checks: {} },
-      items: ["a.jpg", "b.jpg", "c.jpg", "d.jpg"].map((f, i) => ({ file: f, label: f, url: "blob:x", ord: i })),
-      view: { mode: "tier", columns: 3, tierSize: 72 },
-    };
-    undoStack = [];
-    normalize();
-  `);
+/* ---------- 배치 테스트 공용 ----------
+   a~d 네 아이템, 티어 [2,2] 짜리 가짜 주제. 화면을 그리는 부분만 비워 둔다.
+   되돌리기·다시하기·티어 비우기 세 블록이 같이 쓴다. */
+const order = () => app("sorted().map(i => i.file)");
+const sizes = () => app("[...cur.save.tierSizes]");
+const depth = () => app("undoStack.length");
+const ahead = () => app("redoStack.length");
+const item = f => `cur.items.find(i => i.file === ${JSON.stringify(f)})`;
+const boardSetup = () => app(`
+  render = () => {}; scheduleSave = () => {}; flash = () => {};
+  cur = {
+    name: "t", dirHandle: null,
+    info: { global: [], items: {} },
+    save: { tierSizes: [2, 2], tierNames: {}, checks: {} },
+    items: ["a.jpg", "b.jpg", "c.jpg", "d.jpg"].map((f, i) => ({ file: f, label: f, url: "blob:x", ord: i })),
+    view: { mode: "tier", columns: 3, tierSize: 72 },
+  };
+  undoStack = []; redoStack = [];
+  normalize();
+`);
 
-  setup();
+/* ================= 되돌리기 =================
+   가짜 주제로 실제 배치 함수를 돌린다. */
+describe("되돌리기", () => {
+
+  boardSetup();
   it("시작 순서", order(), ["a.jpg", "b.jpg", "c.jpg", "d.jpg"]);
   it("시작 티어 크기", sizes(), [2, 2]);
   it("되돌릴 것이 없다", depth(), 0);
@@ -551,7 +562,7 @@ describe("되돌리기", () => {
   it("음수로 내려가지 않는다", depth(), 0);
 
   // 여러 단계
-  setup();
+  boardSetup();
   app(`moveToTier(${item("d.jpg")}, 0, 0)`);
   app(`moveToTier(${item("c.jpg")}, 0, 0)`);
   it("두 번 옮긴 결과", order(), ["c.jpg", "d.jpg", "a.jpg", "b.jpg"]);
@@ -562,7 +573,7 @@ describe("되돌리기", () => {
   it("두 단계 되돌림", order(), ["a.jpg", "b.jpg", "c.jpg", "d.jpg"]);
 
   // 끝에서의 이동은 단계를 쌓지 않는다
-  setup();
+  boardSetup();
   app(`moveItem(${item("a.jpg")}, -1)`);
   it("맨 앞에서 위로 — 순서 그대로", order(), ["a.jpg", "b.jpg", "c.jpg", "d.jpg"]);
   it("맨 앞에서 위로 — 단계 없음", depth(), 0);
@@ -575,7 +586,7 @@ describe("되돌리기", () => {
   it("교환도 되돌아온다", order(), ["a.jpg", "b.jpg", "c.jpg", "d.jpg"]);
 
   // 체크 표시 — mutate() 를 거치면 UI 핸들러와 같은 경로를 탄다
-  setup();
+  boardSetup();
   app(`cur.save.checks["a.jpg"] = { "해봤음#0": false };`);
   app(`mutate(() => { cur.save.checks["a.jpg"]["해봤음#0"] = true; })`);
   it("체크가 켜졌다", app(`cur.save.checks["a.jpg"]["해봤음#0"]`), true);
@@ -584,13 +595,13 @@ describe("되돌리기", () => {
   it("체크도 되돌아온다", app(`cur.save.checks["a.jpg"]["해봤음#0"]`), false);
 
   // 티어 이름
-  setup();
+  boardSetup();
   app(`mutate(() => { cur.save.tierNames["0"] = "최고"; })`);
   app("undo()");
   it("티어 이름도 되돌아온다", app(`cur.save.tierNames["0"]`), undefined);
 
   // 아무것도 바꾸지 않은 동작은 단계를 쌓지 않는다 — mutate() 가 스스로 판단한다
-  setup();
+  boardSetup();
   app(`mutate(() => { cur.save.tierNames["0"] = "A"; })`);
   it("이름을 바꾸면 한 단계", depth(), 1);
   app(`mutate(() => { cur.save.tierNames["0"] = "A"; })`);
@@ -599,13 +610,159 @@ describe("되돌리기", () => {
   it("빈 동작도 그대로", depth(), 1);
 
   // 쌓이는 단계 수 상한
-  setup();
+  boardSetup();
   app(`for (let i = 0; i < ${app("UNDO_MAX")} + 20; i++) mutate(() => cur.save.tierNames["x"] = String(i));`);
   it("상한을 넘지 않는다", depth(), app("UNDO_MAX"));
 
   // 주제를 바꾸면 되돌리기도 비워진다 (loadTopic 이 하는 일)
   app("undoStack = []; syncUndo();");
   it("주제 전환 후 비어 있다", depth(), 0);
+});
+
+/* ================= 다시하기 (Redo) =================
+   undo 와 같은 스냅샷을 반대로 오간다. 관건은 스택 규율 —
+   undo 가 redo 를 쌓고, redo 가 undo 를 쌓고, 새 변경이 redo 를 지우는 것. */
+describe("다시하기", () => {
+
+  boardSetup();
+  app(`moveToTier(${item("d.jpg")}, 0, 0)`);
+  it("변경 직후엔 다시할 것이 없다", ahead(), 0);
+  app("undo()");
+  it("undo 가 다시하기 한 단계를 쌓는다", ahead(), 1);
+  app("redo()");
+  it("redo 로 변경한 상태가 돌아온다", order(), ["d.jpg", "a.jpg", "b.jpg", "c.jpg"]);
+  it("티어 크기도 함께 돌아온다", sizes(), [3, 1]);
+  it("redo 가 되돌리기 한 단계를 도로 쌓는다", depth(), 1);
+  it("다시할 것은 사라졌다", ahead(), 0);
+  app("undo()");
+  it("undo·redo 왕복이 안정적이다", order(), ["a.jpg", "b.jpg", "c.jpg", "d.jpg"]);
+
+  // 새 변경은 갈림길을 지운다 — 지워진 미래로는 못 돌아간다
+  boardSetup();
+  app(`moveToTier(${item("d.jpg")}, 0, 0)`);
+  app("undo()");
+  it("다시하기 대기 중", ahead(), 1);
+  app(`moveToTier(${item("c.jpg")}, 0, 0)`);
+  it("새 변경이 다시하기를 지운다", ahead(), 0);
+  app("redo()");
+  it("빈 다시하기는 아무것도 안 한다", order(), ["c.jpg", "a.jpg", "b.jpg", "d.jpg"]);
+
+  // 여러 단계도 순서대로 오간다
+  boardSetup();
+  app(`moveToTier(${item("d.jpg")}, 0, 0)`);
+  app(`moveToTier(${item("c.jpg")}, 0, 0)`);
+  app("undo(); undo();");
+  it("두 단계가 다시하기로 쌓였다", ahead(), 2);
+  app("redo()");
+  it("한 단계 다시하기", order(), ["d.jpg", "a.jpg", "b.jpg", "c.jpg"]);
+  app("redo()");
+  it("두 단계 다시하기", order(), ["c.jpg", "d.jpg", "a.jpg", "b.jpg"]);
+  it("전부 되돌리기 쪽으로 넘어갔다", [depth(), ahead()], [2, 0]);
+
+  // 주제를 바꾸면 다시하기도 비워진다 (loadTopic 이 하는 일)
+  app("undoStack = []; redoStack = []; syncUndo();");
+  it("주제 전환 후 비어 있다", ahead(), 0);
+});
+
+/* ================= 티어 비우기 =================
+   티어 삭제(×)와 같은 이동 규칙 — 아이템은 풀 맨 뒤로. 다른 점은 티어가 남는 것. */
+describe("티어 비우기", () => {
+
+  boardSetup();
+  app("clearTier(0)");   // 티어 번호만 받는다 — 구간은 tierSizes() 에서 스스로 구한다
+  it("비운 아이템은 풀 맨 뒤로 간다", order(), ["c.jpg", "d.jpg", "a.jpg", "b.jpg"]);
+  it("티어는 빈 채로 남는다", sizes(), [0, 2]);
+  it("다른 티어는 흔들리지 않는다 — c·d 가 그대로 2티어", order().slice(0, 2), ["c.jpg", "d.jpg"]);
+  it("한 단계로 쌓인다", depth(), 1);
+  app("undo()");
+  it("되돌리면 순서가 돌아온다", order(), ["a.jpg", "b.jpg", "c.jpg", "d.jpg"]);
+  it("티어 크기도 돌아온다", sizes(), [2, 2]);
+  app("redo()");
+  it("다시하기도 된다", sizes(), [0, 2]);
+
+  // 마지막 티어를 비우면 아이템 순서는 그대로, 소속만 풀로 바뀐다
+  boardSetup();
+  app("clearTier(1)");
+  it("순서는 그대로", order(), ["a.jpg", "b.jpg", "c.jpg", "d.jpg"]);
+  it("크기만 0 — c·d 는 이제 풀이다", sizes(), [2, 0]);
+});
+
+/* ================= 월드컵 되돌리기·다시하기 =================
+   화면만 비우고 실제 엔진(cupStart·cupToggle)을 돌린다.
+   선택 확정 뒤 620ms 의 강조 연출은 타이머를 가로채 손으로 돌린다 — 기다리지 않는다. */
+describe("월드컵 되돌리기·다시하기", () => {
+  boardSetup();   // 같은 가짜 주제 위에 월드컵에 필요한 것만 얹는다
+  app(`
+    cupRender = () => {};
+    __timers = []; __rt = setTimeout; setTimeout = f => __timers.push(f);
+    cupStart(4, 2, 1);
+  `);
+  const state = () => app("[cup.qi, cup.winners.length, cup.picked.length]");
+
+  it("시작 — 1라운드 매치 2개", app("cup.queue.length"), 2);
+  it("시작 — 스냅샷·다시하기 비어 있다", app("[cup.hist.length, cup.redo.length]"), [0, 0]);
+
+  app("cupToggle(cup.queue[0].c[0])");
+  it("선택하면 스냅샷이 쌓인다", app("cup.hist.length"), 1);
+  it("확정 연출 동안 잠긴다", app("cupLock"), true);
+  app("__timers.splice(0).forEach(f => f())");   // 연출 종료
+  it("연출이 끝나면 다음 매치다", state(), [1, 1, 0]);
+
+  app("cupUndo()");
+  it("선택 전으로 돌아온다", state(), [0, 0, 0]);
+  it("다시하기가 쌓였다", app("cup.redo.length"), 1);   // 스냅샷에 redo 가 섞이면 여기서 무너진다
+  app("cupRedo()");
+  it("다시하기 — 넘어간 상태로 복귀", state(), [1, 1, 0]);
+  it("스냅샷이 도로 쌓였다", app("cup.hist.length"), 1);
+
+  app("cupUndo()");
+  app("cupToggle(cup.queue[0].c[1])");
+  it("새 선택이 다시하기를 지운다", app("cup.redo.length"), 0);
+  app("__timers.splice(0).forEach(f => f())");
+  it("다른 카드로 진행됐다", app("cup.winners[0] === cup.queue[0].c[1]"), true);
+  it("남은 연출 타이머가 없다", app("__timers.length"), 0);
+
+  app("setTimeout = __rt; cup = null; cupLock = false; cupLastRound = 0;");
+});
+
+/* ================= 효과음 =================
+   소리 자체는 못 듣지만, '무엇을 언제 만들고 트는가'는 스텁으로 다 보인다. */
+describe("효과음", () => {
+  const SFX_IDS = app("Object.values(SFX).flat()");
+
+  it("쓰는 소리는 다섯 개다", SFX_IDS.length, 5);
+  it("로드하면서 전부 미리 받아 둔다 — 첫 재생 지연 방지",
+    app("__sfxLog.map(a => a.src).sort()"),
+    SFX_IDS.map(id => `https://assets.mixkit.co/active_storage/sfx/${id}/${id}-preview.mp3`).sort());
+  ok("전부 preload 지정", app(`__sfxLog.every(a => a.preload === "auto")`));
+
+  it("포디엄 팡파레는 3종 랜덤 풀", app("SFX.fanfare.length"), 3);
+  it("선택 확정음은 Paper slide", app("SFX.pick"), [1530]);
+  it("라운드 전환음은 Tile game reveal", app("SFX.round"), [960]);
+
+  app("sfxOn = true; __sfxBefore = __sfxLog.length; sfxPlay('round'); sfxPlay('round');");
+  it("재생은 만들어 둔 오디오를 재사용한다", app("__sfxLog.length - __sfxBefore"), 0);
+  it("두 번 불렀으면 두 번 튼다", app("sfxBank[SFX.round[0]].plays"), 2);
+
+  app("__fan = SFX.fanfare.map(id => sfxBank[id]); __fan0 = __fan.reduce((s, a) => s + a.plays, 0);"
+    + "for (let i = 0; i < 20; i++) sfxPlay('fanfare');");
+  it("팡파레 20번이 전부 3종 풀 안에서 나온다",
+    app("__fan.reduce((s, a) => s + a.plays, 0) - __fan0"), 20);
+
+  app("sfxOn = false; __pick0 = sfxBank[SFX.pick[0]].plays; sfxPlay('pick');");
+  it("꺼 두면 틀지 않는다", app("sfxBank[SFX.pick[0]].plays - __pick0"), 0);
+  app("sfxOn = true;");
+});
+
+/* ================= 저장 경로 판정 =================
+   드래그로 연결한 폴더(권한 '물어보기')에 저장하려고 권한 팝업을 띄우지 않는다는 정책.
+   writeGranted 가 false 면 저장은 조용히 브라우저(localStorage)로 간다. */
+await describe("저장 경로 판정 (writeGranted)", async () => {
+  it("핸들이 없으면 파일 저장 없음", await app("writeGranted(null)"), false);
+  it("허용된 폴더만 파일로 쓴다", await app(`writeGranted({ queryPermission: async () => "granted" })`), true);
+  it("'물어보기' 상태면 안 쓴다 — 권한 팝업 방지", await app(`writeGranted({ queryPermission: async () => "prompt" })`), false);
+  it("권한 API 가 없으면 일단 써 본다", await app("writeGranted({})"), true);
+  it("권한 API 가 터져도 써 본다", await app(`writeGranted({ queryPermission: () => { throw 0; } })`), true);
 });
 
 /* ================= info.md 문법 ================= */
