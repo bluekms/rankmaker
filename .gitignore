@@ -24,3 +24,6 @@ topics/images/*
 !topics/images/1 그림 있음.png
 !topics/images/2 그림 있음.png
 !topics/images/3 그림 있음.png
+
+# Claude 작업 보고 — 로컬 전용
+.claude/claude.output.html

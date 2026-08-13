@@ -355,6 +355,10 @@ body.cup-fill main { max-width: none; }
   transition: transform .12s, border-color .12s, opacity .25s, filter .25s;
 }
 .cup-card:hover { transform: translateY(-3px); border-color: var(--accent); }
+/* 🍀 부전승 자리 — 점선 테두리에 클로버만. 눌리지 않는다 */
+.cup-card.bye { pointer-events: none; box-shadow: none; border-style: dashed; }
+.cup-card.bye .cup-media { display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: clamp(3rem, 12vw, 7rem); }
+.cup-card.bye .cup-bye-tag { font-size: clamp(1rem, 2.6vw, 1.6rem); font-weight: 800; letter-spacing: .2em; margin-right: -.2em; color: var(--muted); }
 /* 고른 카드 — 진행 중에도 한눈에 보이도록 테두리·링·체크 배지를 함께 준다 */
 .cup-card.picked {
   border-color: var(--accent);
@@ -414,6 +418,15 @@ body.cup-fill main { max-width: none; }
 }
 @keyframes cupIn { from { opacity: 0; transform: scale(.94); } to { opacity: 1; transform: none; } }
 .cup-actions { display: flex; justify-content: center; gap: .6rem; margin-top: 1.1rem; flex-wrap: wrap; }
+/* 결과 아래 — 강별 탈락자 리스트. 행 모양은 List 보기(#items.list .item)를 따른다 */
+.cup-rounds { max-width: 540px; margin: 1.6rem auto 0; text-align: left; display: flex; flex-direction: column; gap: .7rem; }
+.cup-round { background: var(--card); border: 1px solid var(--border); border-radius: .8rem; padding: .7rem .9rem; box-shadow: var(--shadow); }
+.cup-round h3 { margin: 0 0 .55rem; font-size: .92rem; color: var(--accent); }
+.cup-outs { display: flex; flex-direction: column; gap: .5rem; }
+.cup-out { display: flex; align-items: center; gap: .9rem; }
+.cup-out + .cup-out { border-top: 1px solid var(--border); padding-top: .5rem; }
+.cup-out img { width: 56px; height: 56px; border-radius: .6rem; object-fit: cover; flex: none; }
+.cup-out .content { flex: 1; min-width: 0; overflow-x: auto; }
 @media (max-width: 560px) { .cup-grid { grid-template-columns: 1fr 1fr; } }
 
 #credit {
@@ -2363,7 +2376,7 @@ function drawPosterBg(ctx, W, H, V) {
   ctx.fillStyle = vg;
   ctx.fillRect(0, 0, W, H);
 }
-async function drawPoster(kind, all) {
+async function drawPoster(kind, all, sections = []) {
   const css = getComputedStyle(document.documentElement);
   const V = n => css.getPropertyValue(n).trim();
   const medals = ["#f2c94c", "#c8ccd4", "#cd9a6c"];   // 금 · 은 · 동
@@ -2372,12 +2385,15 @@ async function drawPoster(kind, all) {
   // 단상부는 인스타(정사각형) 구도를 기준으로 잡고, 전체 출력은 그 아래에 리스트를 잇는다.
   // podiumBottom 960: 단상을 바닥에서 띄워 아이템 무리가 세로 중앙 부근에 오게 한다.
   const W = 1080, pad = 40, rowH = 100, rowGap = 14, listTop = 1020;
-  const square = kind !== "top10";          // insta·cup = 1:1
+  const square = kind !== "top10";          // 1:1 포디엄 구도 (cupfull 은 그 아래로 절이 이어진다)
   // 전체(Top 10) 출력은 단상을 10% 더 올려 리스트와의 간격·하단 여유를 확보한다
   const podiumBottom = square ? 960 : 852;
-  const H = square ? 1080
+  // cupfull — 정사각 포디엄(위 1080px 은 cup 과 동일) 아래에 강별 탈락자 절이 붙는다
+  const secH = sections.reduce((a, sec) => a + 62 + sec.items.length * (rowH + rowGap), 0);
+  const H = kind === "cupfull" ? 1080 + secH + 46
+    : square ? 1080
     : (rest.length ? listTop + rest.length * (rowH + rowGap) + 120 : 1020);
-  const imgOf = kind === "cup" ? cupPosterImage : posterImage;
+  const imgOf = kind.startsWith("cup") ? cupPosterImage : posterImage;
   const cv = document.createElement("canvas");
   cv.width = W; cv.height = H;
   const ctx = cv.getContext("2d");
@@ -2390,7 +2406,7 @@ async function drawPoster(kind, all) {
   fitText(ctx, cur.info.name || cur.name, W / 2, 106, W - pad * 2);
   ctx.fillStyle = V("--accent");
   ctx.font = "700 26px system-ui, sans-serif";
-  ctx.fillText(kind === "cup" ? "WINNER" : kind === "insta" ? "TOP 3" : "TOP 10", W / 2, 150);
+  ctx.fillText(kind.startsWith("cup") ? "WINNER" : kind === "insta" ? "TOP 3" : "TOP 10", W / 2, 150);
 
   // 단상: 2위 - 1위 - 3위 순서로 배치.
   // topics/<주제>/podium.png(또는 topics/podium.png)이 있으면 그 그림을 단상으로 사용.
@@ -2433,7 +2449,7 @@ async function drawPoster(kind, all) {
       ctx.fillStyle = "rgba(255,255,255,.95)";
       ctx.font = "800 72px system-ui, sans-serif";
       ctx.textAlign = "center"; ctx.textBaseline = "middle";
-      ctx.fillText(String(kind === "cup" ? 1 : it.rank), x + colW / 2, bt + bh / 2 + 4);
+      ctx.fillText(String(kind.startsWith("cup") ? 1 : it.rank), x + colW / 2, bt + bh / 2 + 4);
       ctx.textBaseline = "alphabetic";
       ctx.fillStyle = V("--text");
       ctx.font = "700 30px system-ui, sans-serif";
@@ -2480,6 +2496,26 @@ async function drawPoster(kind, all) {
     fitText(ctx, it.label, pad + 208, y + rowH / 2 + 12, W - pad * 2 - 230);
   }
 
+  // 강별 탈락자 절 (cupfull) — 포디엄 아래에 결승부터 차례로
+  let sy = 1080;
+  for (const sec of sections) {
+    ctx.fillStyle = V("--accent");
+    ctx.font = "800 32px system-ui, sans-serif";
+    ctx.textAlign = "left"; ctx.textBaseline = "alphabetic";
+    ctx.fillText(sec.title, pad + 6, sy + 42);
+    sy += 62;
+    for (const it of sec.items) {
+      ctx.fillStyle = V("--card");
+      roundPath(ctx, pad, sy, W - pad * 2, rowH, 16); ctx.fill();
+      drawCover(ctx, await imgOf(it), pad + 20, sy + 14, rowH - 28, rowH - 28, 12, V("--border"));
+      ctx.fillStyle = V("--text");
+      ctx.font = "700 34px system-ui, sans-serif";
+      ctx.textAlign = "left"; ctx.textBaseline = "middle";
+      fitText(ctx, it.label, pad + 116, sy + rowH / 2 + 2, W - pad * 2 - 150);
+      sy += rowH + rowGap;
+    }
+  }
+
   // 개발자 워터마크 — 출력 이미지 픽셀에 직접 새겨진다
   ctx.fillStyle = V("--muted");
   ctx.font = "600 20px system-ui, sans-serif";
@@ -2498,6 +2534,8 @@ let cupBusy = false;     // 라운드 전환 연출 중 — 카드 클릭만 막
 let cupPlaying = null;   // 지금 재생 중인 카드를 원래대로 되돌리는 함수 (한 번에 하나만 재생)
 function cupStopPlaying() { const f = cupPlaying; cupPlaying = null; if (f) f(); }
 let cupLastRound = 0;    // 라운드가 바뀔 때만 배너를 띄우기 위한 표식
+const CUP_BYE = "__cup_bye__";   // 🍀 자리 채움 후보의 id 접두사 — 실제 후보가 아니다
+const isCupBye = f => f.startsWith(CUP_BYE);
 
 function itemOf(file) { return cur.items.find(i => i.file === file); }
 function loadYtThumb(id, cross) {
@@ -2573,7 +2611,7 @@ function shuffled(a) {
 }
 function cupStart(size, k, m) {
   cup = { k, m, size, roundNo: 0, pool: [], queue: [], qi: 0,
-    picked: [], winners: [], byes: [], done: null, recorded: false, hist: [], redo: [] };
+    picked: [], winners: [], done: null, recorded: false, rounds: [], hist: [], redo: [] };
   cupLock = false;
   cupBusy = false;
   cupLastRound = 0;
@@ -2588,7 +2626,7 @@ function cupRoundsLeft() {   // 우승까지 남은 라운드 수 — 연출 강
   while (n > 1 && r < 30) {
     if (n <= cup.k) return r + 1;
     const q = Math.floor(n / cup.k), rest = n % cup.k;
-    n = q * cup.m + (rest >= 2 ? Math.min(cup.m, rest - 1) : rest);
+    n = q * cup.m + Math.min(cup.m, rest);
     r++;
   }
   return r;
@@ -2596,15 +2634,19 @@ function cupRoundsLeft() {   // 우승까지 남은 라운드 수 — 연출 강
 function cupBuildRound(pool) {
   cup.roundNo++;
   cup.pool = pool;
-  cup.queue = []; cup.qi = 0; cup.picked = []; cup.winners = []; cup.byes = [];
+  cup.queue = []; cup.qi = 0; cup.picked = []; cup.winners = [];
   if (pool.length <= 1) { cup.done = pool[0] || null; return; }
+  cup.rounds.push({ name: cupRoundName(), pool });   // 결과 화면 강별 리스트용 — 이 강에 속했던 후보들
   if (pool.length <= cup.k) { cup.queue = [{ c: pool, n: 1 }]; return; }   // 결승 — 1등만 뽑는다
   const q = Math.floor(pool.length / cup.k);
   for (let i = 0; i < q; i++) cup.queue.push({ c: pool.slice(i * cup.k, (i + 1) * cup.k), n: cup.m });
-  // 나머지도 2명 이상이면 그들끼리 매치를 연다 — 부전승은 딱 1명 남을 때만 생긴다
+  // 짝이 안 맞는 나머지는 🍀 로 채워 매치를 연다 — 🍀 는 고를 수 없으니 부전승이 화면에 보인다
   const rest = pool.slice(q * cup.k);
-  if (rest.length >= 2) cup.queue.push({ c: rest, n: Math.min(cup.m, rest.length - 1) });
-  else cup.byes = rest;
+  if (rest.length) {
+    const c = [...rest];
+    while (c.length < cup.k) c.push(CUP_BYE + c.length);
+    cup.queue.push({ c, n: Math.min(cup.m, rest.length) });
+  }
 }
 const cupState = () => { const { hist, redo, ...s } = cup; return JSON.stringify(s); };  // 스택은 스냅샷에 안 섞는다
 function cupSnap() {   // 상태가 전부 문자열이라 스냅샷이 싸다 — Undo 는 무제한
@@ -2620,7 +2662,7 @@ function cupHop(from, to) {   // undo·redo 는 방향만 다르다 — from 을
 const cupUndo = () => cupHop("hist", "redo");
 const cupRedo = () => cupHop("redo", "hist");
 function cupToggle(file) {
-  if (cupLock || cupBusy) return;
+  if (cupLock || cupBusy || isCupBye(file)) return;
   const m = cup.queue[cup.qi];
   if (!m) return;
   cupSnap();
@@ -2637,7 +2679,7 @@ function cupToggle(file) {
     cup.winners.push(...cup.picked);
     cup.picked = [];
     cup.qi++;
-    if (cup.qi >= cup.queue.length) cupBuildRound([...cup.winners, ...cup.byes]);
+    if (cup.qi >= cup.queue.length) cupBuildRound([...cup.winners]);
     cupRender();
   }, 620);
 }
@@ -2662,6 +2704,9 @@ function cupSetScreen(on) {
   else if (cur) syncControls();
 }
 $("#btnCup").onclick = () => cupSetScreen(!cupOpen);
+// 월드컵 화면에서는 그림을 끌 일이 없다 — 실수로 끌면 브라우저 기본 이미지 드래그가
+// 시작되고, 놓는 순간 전역 drop(폴더 열기)이 받아 엉뚱한 안내를 띄운다. 시작부터 막는다.
+$("#cup").addEventListener("dragstart", e => e.preventDefault());
 
 function cupZoom() {
   const z = (cur.cupSave.config || {}).zoom;
@@ -2790,7 +2835,30 @@ function cupMatch(el) {
   }
 }
 
+// 카드·결과 리스트가 함께 쓰는 설명 줄 — 메타(주소) 줄은 빼고 체크박스 표기는 지운다
+function cupDescLines(file) {
+  const out = [];
+  for (const l of (cur.info.items[file] || [])) {
+    if (l.extra || MEDIA_RES.some(re => re.test(l.text))) continue;
+    const t = l.text.replace(/\[( |x|X)?\]/g, "").trim();   // 체크박스는 순위표 전용
+    if (t) out.push(t);
+  }
+  return out;
+}
 function cupCard(file) {
+  if (isCupBye(file)) {   // 짝이 없어 🍀 와 붙는 자리 — 부전승 표시일 뿐, 고를 수 없다
+    const card = document.createElement("div");
+    card.className = "cup-card bye";
+    const box = document.createElement("div");
+    box.className = "cup-media";
+    box.textContent = "🍀";
+    const tag = document.createElement("div");
+    tag.className = "cup-bye-tag";
+    tag.textContent = "BYE";
+    box.append(tag);
+    card.append(box);
+    return card;
+  }
   const it = itemOf(file);
   const pickedAt = cup.picked.indexOf(file);
   const card = document.createElement("div");
@@ -2851,11 +2919,10 @@ function cupCard(file) {
   name.textContent = it.label;
   const desc = document.createElement("div");
   desc.className = "cup-desc";
-  for (const l of (cur.info.items[file] || [])) {
-    if (l.extra || MEDIA_RES.some(re => re.test(l.text))) continue;
+  for (const t of cupDescLines(file)) {
     const d = document.createElement("div");
-    d.textContent = l.text.replace(/\[( |x|X)?\]/g, "").trim();   // 체크박스는 순위표 전용
-    if (d.textContent) desc.append(d);
+    d.textContent = t;
+    desc.append(d);
   }
   card.append(box, name, desc);
   card.onclick = () => cupToggle(file);
@@ -2893,6 +2960,59 @@ async function cupPersist() {
   if (await trySaveFile("cup.save.json", "rmcup:" + cur.name, json)) return;
   try { localStorage.setItem("rmcup:" + cur.name, json); } catch (e) {}
 }
+// i번째 강의 탈락자 — 그 강의 풀에 있었지만 다음 강(없으면 우승자)에 못 낀 후보
+function cupOutsAt(i) {
+  const alive = new Set(i + 1 < cup.rounds.length ? cup.rounds[i + 1].pool : [cup.done]);
+  return cup.rounds[i].pool.filter(f => !alive.has(f));
+}
+/* 강별 탈락자 절 — 결승부터 거슬러 내려간다.
+   결과 화면은 전부 쓰고, Top 8 포스터는 풀 8명 이하의 강만(maxPool = 8) 쓴다. */
+function cupOutSections(maxPool = Infinity) {
+  const out = [];
+  for (let i = cup.rounds.length - 1; i >= 0; i--)
+    if (cup.rounds[i].pool.length <= maxPool)
+      out.push({ title: cup.rounds[i].name, items: cupOutsAt(i).map(itemOf) });
+  return out;
+}
+/* 결과 화면의 강별 탈락자 리스트 — 우승자는 단상에 있으므로 여기 없다 */
+function cupRoundsList() {
+  const wrap = document.createElement("div");
+  wrap.className = "cup-rounds";
+  for (const sec of cupOutSections()) {
+    const box = document.createElement("div");
+    box.className = "cup-round";
+    const h = document.createElement("h3");
+    h.textContent = sec.title;
+    const list = document.createElement("div");
+    list.className = "cup-outs";
+    for (const it of sec.items) list.append(cupOutRow(it));
+    box.append(h, list);
+    wrap.append(box);
+  }
+  return wrap;
+}
+function cupOutRow(it) {   // List 보기의 행 모양 — 그림 + 이름 + 설명
+  const row = document.createElement("div");
+  row.className = "cup-out";
+  const im = document.createElement("img");
+  im.loading = "lazy";
+  im.decoding = "async";
+  im.src = it.url; im.alt = it.label;
+  const content = document.createElement("div");
+  content.className = "content";
+  const name = document.createElement("div");
+  name.className = "name";
+  name.textContent = it.label;
+  content.append(name);
+  for (const t of cupDescLines(it.file)) {
+    const d = document.createElement("div");
+    d.className = "desc-line";
+    d.textContent = t;
+    content.append(d);
+  }
+  row.append(im, content);
+  return row;
+}
 function cupResult(el) {
   const it = itemOf(cup.done);
   const box = document.createElement("div");
@@ -2916,8 +3036,26 @@ function cupResult(el) {
   const close = document.createElement("button");
   close.className = "mini"; close.textContent = "Close";
   close.onclick = () => cupSetScreen(false);
-  acts.append(save, again, close);
-  box.append(h, nm, img, acts);
+  // 포스터 한 장을 PNG blob 으로 — 기본(정사각형)과 Top 8 세로 버전이 함께 쓴다
+  const posterPng = async (kind, secs) => {
+    const cv = await drawPoster(kind, [it], secs);
+    return new Promise(r => cv.toBlob(r, "image/png"));
+  };
+  // 8강부터의 탈락자 리스트까지 담는 세로 버전 — 기본 저장은 지금처럼 정사각형
+  const saveTop8 = document.createElement("button");
+  saveTop8.className = "mini"; saveTop8.textContent = "Save Image · Top 8";
+  saveTop8.onclick = async () => {
+    const secs = cupOutSections(8);
+    let blob = null;
+    const draw = async () => { blob = await posterPng("cupfull", secs); };
+    if (!await ensureLocalImages([it, ...secs.flatMap(s => s.items)], draw)) return;
+    if (!blob) await draw();
+    if (!blob) { flash("Could not render the image"); return; }
+    downloadBlob(blob, cur.name + "-winner-top8-" + cupStamp() + ".png");
+    flash("Saved ✓ · poster");
+  };
+  acts.append(save, saveTop8, again, close);
+  box.append(h, nm, img, acts, cupRoundsList());
   el.append(box);
 
   if (!cup.recorded) {
@@ -2935,8 +3073,7 @@ function cupResult(el) {
   let posterBlob = null;
   const build = async () => {
     save.disabled = true;
-    const cv = await drawPoster("cup", [it]);
-    posterBlob = await new Promise(r => cv.toBlob(r, "image/png"));
+    posterBlob = await posterPng("cup");
     if (!posterBlob) { flash("Could not render the image"); return; }
     if (img.src.startsWith("blob:")) URL.revokeObjectURL(img.src);
     img.src = URL.createObjectURL(posterBlob);

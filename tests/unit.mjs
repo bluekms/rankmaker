@@ -725,6 +725,86 @@ describe("월드컵 되돌리기·다시하기", () => {
   app("setTimeout = __rt; cup = null; cupLock = false; cupLastRound = 0;");
 });
 
+/* ================= 월드컵 강별 기록 =================
+   결과 화면의 강별 리스트가 쓰는 cup.rounds — 라운드가 만들어질 때마다
+   그 강에 속했던 후보를 남긴다. 되돌리기·다시하기와 함께 움직여야 한다. */
+describe("월드컵 강별 기록", () => {
+  boardSetup();
+  app(`
+    cupRender = () => {};
+    __timers = []; __rt = setTimeout; setTimeout = f => __timers.push(f);
+    cupStart(4, 2, 1);
+  `);
+  const tick = () => app("__timers.splice(0).forEach(f => f())");
+
+  it("시작 — 1라운드가 기록된다", app("cup.rounds.map(r => r.name)"), ["Round of 4"]);
+  ok("기록된 풀이 실제 풀과 같다", app("JSON.stringify(cup.rounds[0].pool) === JSON.stringify(cup.pool)"));
+
+  // 1라운드 두 매치를 이기고 결승으로
+  app("cupToggle(cup.queue[0].c[0])"); tick();
+  app("cupToggle(cup.queue[1].c[0])"); tick();
+  it("결승이 기록된다", app("cup.rounds.map(r => r.name)"), ["Round of 4", "Final"]);
+
+  // 되돌리면 기록도 같이 돌아간다 — 스냅샷에 rounds 가 실려 있어야 한다
+  app("cupUndo()");
+  it("되돌리면 결승 기록이 사라진다", app("cup.rounds.map(r => r.name)"), ["Round of 4"]);
+  app("cupRedo()");
+  it("다시하면 결승 기록이 돌아온다", app("cup.rounds.length"), 2);
+
+  // 우승 확정 — done 만 정해지고 강 기록은 그대로다
+  app("cupToggle(cup.queue[0].c[0])"); tick();
+  it("우승 뒤에도 기록은 두 강", app("cup.rounds.length"), 2);
+
+  // 강별 탈락자 판정 — 결과 화면 리스트·Top 8 포스터가 그대로 쓴다
+  it("1라운드 탈락자는 두 명", app("cupOutsAt(0).length"), 2);
+  it("결승 탈락자는 한 명", app("cupOutsAt(1).length"), 1);
+  ok("우승자는 어느 강의 탈락자에도 없다",
+    app("!cup.rounds.some((r, i) => cupOutsAt(i).includes(cup.done))"));
+
+  // Top 8 포스터 절 — 8강(풀 8명 이하)부터, 결승부터 거슬러 탈락자만 담는다
+  it("Top8 절 — 결승부터 강별 탈락자",
+    app("cupOutSections(8).map(s => [s.title, s.items.length])"), [["Final", 1], ["Round of 4", 2]]);
+  app("__r8 = cup.rounds; cup.rounds = [{ name: 'Round of 16', pool: Array.from({ length: 16 }, (x, i) => 'p' + i) }, ...__r8];");
+  ok("풀 8명 초과 강은 절에서 뺀다", app("cupOutSections(8).every(s => s.title !== 'Round of 16')"));
+  app("cup.rounds = __r8;");
+
+  app("setTimeout = __rt; cup = null; cupLock = false; cupLastRound = 0;");
+});
+
+/* ================= 월드컵 부전승 🍀 =================
+   짝이 안 맞으면 매치를 🍀 자리 채움 후보로 채운다 — 부전승이 화면에 보인다.
+   🍀 는 골라지지 않고, 다음 풀·우승에 절대 끼지 않는다. */
+describe("월드컵 부전승 🍀", () => {
+  boardSetup();
+  app(`
+    cupRender = () => {};
+    __timers = []; __rt = setTimeout; setTimeout = f => __timers.push(f);
+    cupStart(3, 2, 1);
+  `);
+  const tick = () => app("__timers.splice(0).forEach(f => f())");
+
+  it("홀수 풀 — 매치가 두 개 열린다", app("cup.queue.length"), 2);
+  it("남는 자리는 🍀 로 채운다", app("cup.queue[1].c.filter(isCupBye).length"), 1);
+  it("남은 라운드 계산도 부전승을 안다", app("cupRoundsLeft()"), 2);
+
+  app("cupToggle(cup.queue[0].c[0])"); tick();
+  app("__h = cup.hist.length; cupToggle(cup.queue[1].c.find(isCupBye))");
+  it("🍀 는 골라지지 않는다 — 스냅샷도 안 쌓인다", app("[cup.picked.length, cup.hist.length - __h]"), [0, 0]);
+  app("cupToggle(cup.queue[1].c.find(f => !isCupBye(f)))"); tick();
+  it("부전승 확정 — 결승이 열린다", app("cup.rounds.map(r => r.name)"), ["Round of 3", "Final"]);
+  it("결승 풀에 🍀 가 없다", app("cup.pool.some(isCupBye)"), false);
+
+  app("cupToggle(cup.queue[0].c[0])"); tick();
+  ok("우승자가 났고 🍀 가 아니다", app("!!cup.done && !isCupBye(cup.done)"));
+
+  // k=3 — 🍀 를 여러 개 채워야 할 때도 id 가 겹치지 않는다
+  app("cupStart(4, 3, 1);");
+  it("🍀 를 두 개 채운다", app("cup.queue[1].c.filter(isCupBye).length"), 2);
+  it("🍀 id 는 서로 다르다", app("new Set(cup.queue[1].c).size"), 3);
+
+  app("setTimeout = __rt; cup = null; cupLock = false; cupLastRound = 0;");
+});
+
 /* ================= 효과음 =================
    소리 자체는 못 듣지만, '무엇을 언제 만들고 트는가'는 스텁으로 다 보인다. */
 describe("효과음", () => {
