@@ -33,6 +33,8 @@ topics/
 > **You do not have to build this by hand.** Pick **`+ New Topic`** at the end of the topic list and drop a folder of
 > images on it: the folder name becomes the topic, the pictures are copied into `topics/images/`, and `info.md` is
 > written for you with one entry per image.
+> If the folder already carries an `info.md`, that file is imported as-is instead of the skeleton — a folder with
+> just an `info.md` and no pictures works too.
 >
 > Below it, **`- Unused Images`** lists pictures no `info.md` refers to, so you can pick them off.
 

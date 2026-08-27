@@ -578,7 +578,7 @@ mark {
   </section>
   <section id="newTopic" hidden>
     <h1>New Topic</h1>
-    <p>Drop a folder of images onto this window, or pick one below.</p>
+    <p>Drop a folder of images — or one with just an <code>info.md</code> — onto this window, or pick one below.</p>
     <div class="actions">
       <button id="btnPickFolder">📁 Choose a folder of images</button>
     </div>
@@ -587,7 +587,8 @@ mark {
 <pre>topics/<b>Food</b>/info.md   ← one entry per image, names only
 topics/images/*.png     ← the pictures, shared by every topic</pre>
       <p>Write the descriptions into <code>info.md</code> whenever you like.
-      Pictures already in <code>topics/images/</code> are reused, not copied again.</p>
+      Pictures already in <code>topics/images/</code> are reused, not copied again.
+      If the folder already has an <code>info.md</code>, it is imported as-is — pictures are optional.</p>
     </div>
   </section>
   <section id="cleanup" hidden>
@@ -781,6 +782,8 @@ async function imageTable(refresh) {
    그림이 든 폴더를 창에 끌어다 놓으면
      topics/<폴더이름>/info.md   ← 그림 이름만 채운 뼈대
      topics/images/*             ← 그림은 여기로 복사 (모든 주제가 함께 쓴다)
+   폴더에 info.md 가 이미 있으면 뼈대 대신 그 파일을 그대로 들여온다 —
+   그림 없이 info.md 만 든 폴더도 주제가 된다.
    설명은 나중에 info.md 에 손으로 붙이면 된다. */
 const infoSkeleton = (name, files) =>
   [`// ${name}`, "", "# global", "", ...files.flatMap(f => [`# ${f}`, ""])].join("\n");
@@ -903,33 +906,43 @@ if (!window.showDirectoryPicker) $("#btnPickFolder").hidden = true;
 async function importFolderAsTopic(dir) {
   const name = dir.name;
   // 그림만 골라낸다. podium.* 은 단상 그림이라 아이템이 아니다.
+  // 폴더에 info.md 가 들어 있으면 뼈대 대신 그 파일을 그대로 쓴다 — 그림 없는(이름만) 폴더도 주제가 된다.
   const picks = [];
-  for await (const h of dir.values())
-    if (h.kind === "file" && IMG_EXT.test(h.name) && !PODIUM_RE.test(h.name)) picks.push(h);
-  if (!picks.length) { alert(`No images in "${name}".`); return; }
+  let infoHandle = null;
+  for await (const h of dir.values()) {
+    if (h.kind !== "file") continue;
+    if (h.name.toLowerCase() === "info.md") { infoHandle = h; continue; }
+    if (IMG_EXT.test(h.name) && !PODIUM_RE.test(h.name)) picks.push(h);
+  }
+  if (!picks.length && !infoHandle) { alert(`No images or info.md in "${name}".`); return; }
   if (topics.some(t => t.name === name)) { alert(`A topic named "${name}" already exists.`); return; }
 
-  const imgDir = await imagesFolder(true);
-  if (!imgDir) { alert("Cannot write into the topics folder."); return; }
-
-  flash(`Importing ${picks.length} image(s)…`);
-  const had = await imageTable();               // 이미 있는 이름은 그것을 쓴다 — 다시 쓰지 않는다
   let copied = 0;
-  for (const h of picks) {
-    if (had.has(h.name)) continue;
-    const fh = await writeFile(imgDir, h.name, await h.getFile());
-    sharedImages?.set(h.name, fh);
-    copied++;
+  if (picks.length) {
+    const imgDir = await imagesFolder(true);
+    if (!imgDir) { alert("Cannot write into the topics folder."); return; }
+
+    flash(`Importing ${picks.length} image(s)…`);
+    const had = await imageTable();             // 이미 있는 이름은 그것을 쓴다 — 다시 쓰지 않는다
+    for (const h of picks) {
+      if (had.has(h.name)) continue;
+      const fh = await writeFile(imgDir, h.name, await h.getFile());
+      sharedImages?.set(h.name, fh);
+      copied++;
+    }
   }
 
-  const names = picks.map(h => h.name).sort();
+  const infoText = infoHandle
+    ? await (await infoHandle.getFile()).text()
+    : infoSkeleton(name, picks.map(h => h.name).sort());
   const topicDir = await rootHandle.getDirectoryHandle(name, { create: true });
-  await writeFile(topicDir, "info.md", infoSkeleton(name, names));
+  await writeFile(topicDir, "info.md", infoText);
 
+  const count = infoHandle ? Object.keys(parseInfo(infoText).items).length : picks.length;
   topics.push({ name, dirHandle: topicDir });
   await afterOpen(name);
-  flash(`Added "${name}" ✓ · ${names.length} item(s)`
-    + (copied < names.length ? ` · ${names.length - copied} already in the folder` : ""));
+  flash(`Added "${name}" ✓ · ${count} item(s)`
+    + (copied < picks.length ? ` · ${picks.length - copied} already in the folder` : ""));
 }
 
 async function sharedImageFile(name, refresh) {
@@ -963,7 +976,7 @@ addEventListener("drop", async e => {
       const h = await handlePromise;
       if (!h || h.kind !== "directory") { alert("Please drop a folder."); return; }
       // 무엇을 떨어뜨렸는지는 연결 상태가 아니라 폴더 내용으로 판단한다.
-      // topics 루트면 연결을 그쪽으로 갈아타고, 그림만 든 폴더면 새 주제로 들여온다.
+      // topics 루트면 연결을 그쪽으로 갈아타고, 그림이나 info.md 가 든 폴더면 새 주제로 들여온다.
       if (!rootHandle || await looksLikeTopicsRoot(h)) await openRoot(h);
       else await importFolderAsTopic(h);
       return;
