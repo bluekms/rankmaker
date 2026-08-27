@@ -130,7 +130,7 @@ const strayImages = ex => [...ex.files].filter(f => IMG_EXT.test(f) && !PODIUM_R
    주제마다 그림이 어디서 오는지가 다르다. 기대를 표로 적고 한 번에 훑는다.
    kinds 는 그 주제에 허용되는 출처다 — 여기 없는 출처가 나오면 실패한다. */
 const EXPECT = {
-  ex_image_boardgame: { kinds: ["remote", "shared"], name: "보드게임 월드컵 (이미지 예제)", min: 10 },
+  ex_image_boardgame: { kinds: ["remote", "shared"], min: 10 },
   ex_chzzk_vtuber:    { kinds: ["remote"] },
   ex_youtube_kpop:    { kinds: ["card"] },
   "ex_라면":           { kinds: ["card"] },
@@ -152,7 +152,6 @@ describe("예제 주제", () => {
     it(`${name} — 주제 폴더에 그림이 남아 있지 않다`, strayImages(ex), []);
     it(`${name} — 그림 출처가 ${want.kinds.join("·")} 뿐이다`,
       [...new Set(items.map(n => resolve(ex, n)))].filter(k => !want.kinds.includes(k)), []);
-    if (want.name) it(`${name} — 주제 이름을 주석에서 읽는다`, ex.info.name, want.name);
   }
 });
 
@@ -410,7 +409,6 @@ describe("info.md 뼈대", () => {
   // 만든 결과를 그대로 다시 읽을 수 있어야 한다
   const back = parseInfo(out);
   it("스스로 파싱된다", Object.keys(back.items), ["가.png", "나.jpg"]);
-  it("주제 이름도 읽힌다", back.name, "내 주제");
 });
 
 /* ================= 쓰이지 않는 그림 =================
@@ -854,9 +852,7 @@ describe("parseInfo", () => {
     "# 공룡섬.png", "- ⭐ 7.65",
   ].join("\n"));
 
-  it("주석에서 이름을 읽는다", info.name, "내 순위표");
-  it("테마", info.theme, "dark");
-  it("열 수", info.columns, 4);
+  ok("주석 줄은 읽지 않는다", !("name" in info) && !("theme" in info) && !("columns" in info));
   it("global 섹션", info.global.map(l => l.text), ["공통 설명"]);
   it("항목 목록", Object.keys(info.items), ["가들링.jpg", "공룡섬.png"]);
   it("'-' 는 필수 설명", info.items["가들링.jpg"][0], { text: "👥 인원: 1 ~ 4", extra: false });
@@ -864,7 +860,7 @@ describe("parseInfo", () => {
   it("빈 줄은 무시", info.items["공룡섬.png"].length, 1);
 
   const empty = parseInfo("");
-  it("빈 입력도 형태는 유지", [empty.name, empty.global.length, Object.keys(empty.items).length], [null, 0, 0]);
+  it("빈 입력도 형태는 유지", [empty.global.length, Object.keys(empty.items).length], [0, 0]);
 });
 
 /* ================= 이미지 주소 인식 ================= */

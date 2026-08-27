@@ -41,7 +41,7 @@ topics/
 ## Writing `info.md`
 
 ```markdown
-// Ramen ranking      ← topic name (optional)
+// Ramen ranking      ← a comment — the app ignores it (optional)
 
 # global             ← prepended to every item's description
 - 🍜 tried it [ ]
@@ -57,12 +57,12 @@ topics/
 | `# global` | Prepended to every item's description |
 | `-` / `+` | Always shown / shown in List only |
 | `[ ]` | A checkbox, anywhere you like |
-| `//` | Settings — topic name, `dark`, `grid`, `columns: 4` |
+| `//` | A comment — the app ignores it |
 
 **The image file is optional** — without one you get a card with just the name on it. A web URL can stand in for the file; that is mostly for very large lists, so it lives in [Attaching pictures by URL](docs/image-url.en.md).
 
 > The 🌶️ 📅 🔗 emoji in the examples are **just text**. They carry no meaning — change them freely.
-> Only `#` `-` `+` `[ ]` `//` are actual syntax.
+> Only `#` `-` `+` `[ ]` are actual syntax.
 
 ## Views
 

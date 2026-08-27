@@ -1076,19 +1076,12 @@ $("#welcome").hidden = false;      // 시작은 언제나 시작 화면 — 폴�
 
 /* ---------- info.md ---------- */
 function parseInfo(text) {
-  const info = { name: null, theme: null, view: null, columns: null, global: [], items: {} };
+  const info = { global: [], items: {} };
   let cursec = null;
   for (const raw of (text || "").split(/\r?\n/)) {
     const t = raw.trim();
-    if (!t) continue;
-    if (t.startsWith("//")) {
-      const v = t.slice(2).trim();
-      const col = v.match(/^columns?\s*[:=]?\s*(\d+)$/i);
-      if (/^(light|dark)$/i.test(v)) info.theme = v.toLowerCase();
-      else if (/^(grid|list|tier)$/i.test(v)) info.view = v.toLowerCase();
-      else if (col) info.columns = +col[1];
-      else if (!info.name) info.name = v;
-    } else if (t.startsWith("#")) {
+    if (!t || t.startsWith("//")) continue;   // 빈 줄과 주석 — 앱은 읽지 않는다
+    if (t.startsWith("#")) {
       const h = t.replace(/^#+\s*/, "");
       cursec = /^global$/i.test(h) ? info.global : (info.items[h] = info.items[h] || []);
     } else if ((t.startsWith("-") || t.startsWith("+")) && cursec) {
@@ -1254,13 +1247,12 @@ async function loadTopic(t) {
   cur = {
     name: t.name, dirHandle: t.dirHandle || null, info, save, items, podiumUrl, videos, cupSave,
     view: {
-      mode: ["grid", "list", "tier"].includes(save.view.mode || info.view) ? (save.view.mode || info.view) : "tier",
-      columns: save.view.columns || info.columns || 3,
+      mode: ["grid", "list", "tier"].includes(save.view.mode) ? save.view.mode : "tier",
+      columns: save.view.columns || 3,
       tierSize: Math.max(40, Math.min(160, save.view.tierSize || 72)),
     },
   };
   normalize();
-  if (!themeLocked && info.theme) setTheme(info.theme, false);
   $("#searchInput").value = "";
   try { localStorage.setItem("rm-topic", t.name); } catch (e) {}   // 다음 실행 때 이 주제로 연다
   showScreen("#board");
@@ -2416,7 +2408,7 @@ async function drawPoster(kind, all, sections = []) {
   ctx.textAlign = "center"; ctx.textBaseline = "alphabetic";
   ctx.fillStyle = V("--text");
   ctx.font = "800 58px system-ui, sans-serif";
-  fitText(ctx, cur.info.name || cur.name, W / 2, 106, W - pad * 2);
+  fitText(ctx, cur.name, W / 2, 106, W - pad * 2);
   ctx.fillStyle = V("--accent");
   ctx.font = "700 26px system-ui, sans-serif";
   ctx.fillText(kind.startsWith("cup") ? "WINNER" : kind === "insta" ? "TOP 3" : "TOP 10", W / 2, 150);
