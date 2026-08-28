@@ -803,6 +803,42 @@ describe("월드컵 부전승 🍀", () => {
   app("setTimeout = __rt; cup = null; cupLock = false; cupLastRound = 0;");
 });
 
+/* ================= 월드컵 우승 기록 =================
+   결과 화면(cupResult)이 cup.save.json 에 남기는 history — 개수 제한 없이 전부 쌓인다.
+   포스터 그리기는 캔버스가 없으므로 비워 두고, 기록·설정 저장만 본다. */
+describe("월드컵 우승 기록", () => {
+  boardSetup();
+  app(`
+    cupRender = () => {};
+    __dp = drawPoster; drawPoster = async () => ({ toBlob(cb) { cb(null); } });
+    __timers = []; __rt = setTimeout; setTimeout = f => __timers.push(f);
+    cur.cupSave = { config: { round: 4, k: 2, m: 1, zoom: 0.7 }, history: [] };
+    // 이미 60판을 치른 주제 — 예전에는 여기서 50개로 잘렸다
+    for (let i = 0; i < 60; i++)
+      cur.cupSave.history.push({ at: "x" + i, round: 4, k: 2, m: 1, winner: "w" });
+    cupStart(4, 2, 1);
+  `);
+  const tick = () => app("__timers.splice(0).forEach(f => f())");
+
+  // 세 매치를 이겨 우승자를 내고 결과 화면을 연다
+  app("cupToggle(cup.queue[0].c[0])"); tick();
+  app("cupToggle(cup.queue[1].c[0])"); tick();
+  app("cupToggle(cup.queue[0].c[0])"); tick();
+  ok("우승자가 났다", app("!!cup.done"));
+  app("cupResult(document.createElement('div'))");
+
+  it("기록이 맨 앞에 쌓인다", app("cur.cupSave.history[0].winner === itemOf(cup.done).label"), true);
+  it("개수 제한 없이 전부 남는다", app("cur.cupSave.history.length"), 61);
+  it("마지막 설정이 저장된다", app("[cur.cupSave.config.round, cur.cupSave.config.k, cur.cupSave.config.m]"), [4, 2, 1]);
+  it("확대 배율은 기록 뒤에도 남는다", app("cur.cupSave.config.zoom"), 0.7);
+
+  // 결과 화면이 다시 그려져도(줌 변경 등) 같은 우승은 한 번만 남는다
+  app("cupResult(document.createElement('div'))");
+  it("같은 우승은 한 번만 기록된다", app("cur.cupSave.history.length"), 61);
+
+  app("setTimeout = __rt; drawPoster = __dp; cup = null; cupLock = false; cupLastRound = 0;");
+});
+
 /* ================= 효과음 =================
    소리 자체는 못 듣지만, '무엇을 언제 만들고 트는가'는 스텁으로 다 보인다. */
 describe("효과음", () => {

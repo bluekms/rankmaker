@@ -3066,11 +3066,11 @@ function cupResult(el) {
   if (!cup.recorded) {
     cup.recorded = true;
     sfxPlay("fanfare");
-    cur.cupSave.config = { round: cup.size, k: cup.k, m: cup.m };
+    // 통째로 갈아끼우면 cupSetZoom 이 넣어 둔 zoom 이 사라진다 — 겹쳐 쓴다
+    cur.cupSave.config = { ...cur.cupSave.config, round: cup.size, k: cup.k, m: cup.m };
     (cur.cupSave.history ||= []).unshift({
       at: cupStamp(), round: cup.size, k: cup.k, m: cup.m, winner: it.label,
     });
-    cur.cupSave.history.splice(50);
     cupPersist();
   }
 
