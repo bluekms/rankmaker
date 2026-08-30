@@ -1,7 +1,7 @@
 # BGG 플레이 게임 목록 (bluekms21)
 
 - 계정: https://boardgamegeek.com/user/bluekms21
-- 총 플레이 기록 211회 (2026-08-05 기준) · 목록 134종
+- 총 플레이 기록 211회 (2026-08-05 기준) · 목록 140종
 - 🏠 보유중(집에 있음) · 👋 보유했음(떠나보냄) · 🚫 구입안함
 
 # 7 원더스 (2판).jpg
@@ -63,6 +63,18 @@
 + 🔗 https://boardgamegeek.com/boardgame/426362/gift-craft
 + thumbnail-url: https://cf.geekdo-images.com/moaHSKTfXiV3Biax4n7_wA__medium/img/PDsDoglF8Vd5LVMdXNSUwUYDa3A=/fit-in/500x500/filters:no_upscale():strip_icc()/pic8354193.jpg
 + podium-url: https://cf.geekdo-images.com/moaHSKTfXiV3Biax4n7_wA__original/img/5OC5qVXwMUpXF0Uh6xBaVLku4Gs=/0x0/filters:format(jpeg)/pic8354193.jpg
+
+# 나이트 플라워.jpg
+- 👥 인원: 1 ~ 4 (3인 베스트)
+- ⭐ bgg 점수: 7.11
+- 🧠 복잡도: 3.38 / 5
++ 🏠 보유중
++ 📅 출시 연도: 2023
++ ♟️ 디자이너: Ashita Miyamoto
++ 🎨 아티스트: Kanemaki Thomas
++ 🔗 https://boardgamegeek.com/boardgame/387742/night-flowers
++ thumbnail-url: https://cf.geekdo-images.com/yPJbrwMXb3FO8EpdXlX1cA__medium/img/qJMe-aXdJ_QhEBQbwkQziRoJYFo=/fit-in/500x500/filters:no_upscale():strip_icc()/pic9663352.jpg
++ podium-url: https://cf.geekdo-images.com/yPJbrwMXb3FO8EpdXlX1cA__original/img/c_jgAmdEo-uk-9_2c2UtmvWZ82E=/0x0/filters:format(jpeg)/pic9663352.jpg
 
 # 네메시스 - 락다운.jpg
 - 👥 인원: 1 ~ 5 (4인 베스트)
@@ -351,6 +363,18 @@
 + 🔗 https://boardgamegeek.com/boardgame/248562/mage-knight-ultimate-edition
 + thumbnail-url: https://cf.geekdo-images.com/jgsT5y5qKlOR08CuHG7xfw__medium/img/FnyH-9vfLNb-d0RsM-F9gdGa4dw=/fit-in/500x500/filters:no_upscale():strip_icc()/pic4411189.jpg
 + podium-url: https://cf.geekdo-images.com/jgsT5y5qKlOR08CuHG7xfw__original/img/mnPgX4nM_l1JnXFE16dAZjGS8sw=/0x0/filters:format(jpeg)/pic4411189.jpg
+
+# 메종 드 나이트메어.jpg
+- 👥 인원: 2 ~ 5
+- ⭐ bgg 점수: -
+- 🧠 복잡도: -
++ 🏠 보유중
++ 📅 출시 연도: 2025
++ ♟️ 디자이너: hatituki
++ 🎨 아티스트: オオタユウ
++ 🔗 https://boardlife.co.kr/game/22112
++ thumbnail-url: https://img.boardlife.co.kr/data/photo/2026/04/29/1777423466-702583.jpg
++ podium-url: https://img.boardlife.co.kr/data/photo/2026/04/29/1777423466-702583.jpg
 
 # 모험소녀길드.png
 - 👥 인원: 2 ~ 4
@@ -832,6 +856,42 @@
 + thumbnail-url: https://cf.geekdo-images.com/SoU8p28Sk1s8MSvoM4N8pQ__medium/img/vMyJbeODI1Qqs5jVtAQS2Tfug2Y=/fit-in/500x500/filters:no_upscale():strip_icc()/pic6293412.jpg
 + podium-url: https://cf.geekdo-images.com/SoU8p28Sk1s8MSvoM4N8pQ__original/img/g4S18szTdrXCdIwVKzMKrZrYAcM=/0x0/filters:format(jpeg)/pic6293412.jpg
 
+# 안드로메다 엣지.jpg
+- 👥 인원: 2 ~ 4 (3인 베스트)
+- ⭐ bgg 점수: 8.24
+- 🧠 복잡도: 3.75 / 5
++ 🏠 보유중
++ 📅 출시 연도: 2024
++ ♟️ 디자이너: Luke Laurie, Maximus Laurie
++ 🎨 아티스트: Sergio Chaves
++ 🔗 https://boardgamegeek.com/boardgame/358661/andromedas-edge
++ thumbnail-url: https://cf.geekdo-images.com/n3gYugbvd_LHVynDhfoVbw__medium/img/cnxHfgeX_q1CtFGFUy_PZ9T9bMo=/fit-in/500x500/filters:no_upscale():strip_icc()/pic7334483.jpg
++ podium-url: https://cf.geekdo-images.com/n3gYugbvd_LHVynDhfoVbw__original/img/wpassO7P8Vb-3tke2X3Ou5Pn0LE=/0x0/filters:format(jpeg)/pic7334483.jpg
+
+# 안드로메다 엣지 - 제네시스.png
+- 👥 인원: 2 ~ 4
+- ⭐ bgg 점수: 8.20
+- 🧠 복잡도: -
++ 🏠 보유중
++ 📅 출시 연도: 2026
++ ♟️ 디자이너: Luke Laurie, Maximus Laurie
++ 🎨 아티스트: Sergio Chaves, Tani Pettit
++ 🔗 https://boardgamegeek.com/boardgameexpansion/452835/andromedas-edge-genesis
++ thumbnail-url: https://cf.geekdo-images.com/HUCBOU12fOB73rgeTdwQHg__medium/img/ZmXY8Babv0RLeybnqq2WQxGaPwQ=/fit-in/500x500/filters:no_upscale():strip_icc()/pic9069917.png
++ podium-url: https://cf.geekdo-images.com/HUCBOU12fOB73rgeTdwQHg__original/img/HaE62a49UIQDx7caoUx7GAxgKuY=/0x0/filters:format(png)/pic9069917.png
+
+# 앨리스의 시간 미궁.jpg
+- 👥 인원: 1 (1인 전용)
+- ⭐ bgg 점수: 6.69
+- 🧠 복잡도: -
++ 🏠 보유중
++ 📅 출시 연도: 2023
++ ♟️ 디자이너: -
++ 🎨 아티스트: -
++ 🔗 https://boardgamegeek.com/boardgame/436868/alices-time-labyrinth
++ thumbnail-url: https://cf.geekdo-images.com/Bx3Kciel_hce9d37xrj6og__medium/img/1QXfXdlssaLdqaFjPMaC6GbzgQQ=/fit-in/500x500/filters:no_upscale():strip_icc()/pic8789069.jpg
++ podium-url: https://cf.geekdo-images.com/Bx3Kciel_hce9d37xrj6og__original/img/gAeHMmPsRdWHedXlI2vGlzKvlew=/0x0/filters:format(jpeg)/pic8789069.jpg
+
 # 언더다크의 폭군들.jpg
 - 👥 인원: 2 ~ 4 (4인 베스트)
 - ⭐ bgg 점수: 7.91
@@ -1268,7 +1328,7 @@
 - 👥 인원: 1 ~ 4 (4인 베스트)
 - ⭐ bgg 점수: 7.94
 - 🧠 복잡도: 3.47 / 5
-+ 🚫 구입안함
++ 🏠 보유중
 + 📅 출시 연도: 2017
 + ♟️ 디자이너: Juma Al-JouJou
 + 🎨 아티스트: Klemens Franz
@@ -1588,6 +1648,18 @@
 + thumbnail-url: https://cf.geekdo-images.com/G89maghPscRqvi9jjkgMEQ__medium/img/etgfHfDzuK6SxCILdT63dG6ZQ20=/fit-in/500x500/filters:no_upscale():strip_icc()/pic6715998.png
 + podium-url: https://cf.geekdo-images.com/G89maghPscRqvi9jjkgMEQ__original/img/Xb_enFHYum3AQ4GhLKCU7oFJklg=/0x0/filters:format(png)/pic6715998.png
 
+# 핵 클래드 델타.png
+- 👥 인원: 1 ~ 4 (4인 베스트)
+- ⭐ bgg 점수: 7.50
+- 🧠 복잡도: 3.00 / 5
++ 🏠 보유중
++ 📅 출시 연도: 2024
++ ♟️ 디자이너: kaku
++ 🎨 아티스트: Masakazu Takizawa, tokiki, Yoko Tsukamoto
++ 🔗 https://boardgamegeek.com/boardgame/465034/hackcladdelta
++ thumbnail-url: https://cf.geekdo-images.com/qzeVKpfvsfTCYbR1BA-7lQ__medium/img/gMGZ8Z1QnZNCXmOYvgl_-Cu82Bc=/fit-in/500x500/filters:no_upscale():strip_icc()/pic9411733.png
++ podium-url: https://cf.geekdo-images.com/qzeVKpfvsfTCYbR1BA-7lQ__original/img/7ZPY4cO4cuZxVd9rfvMaiXwPaFc=/0x0/filters:format(png)/pic9411733.png
+
 # 핵 클래드 크로스 페이트.png
 - 👥 인원: 1 ~ 4 (4인 베스트)
 - ⭐ bgg 점수: 7.67
@@ -1611,3 +1683,4 @@
 + 🔗 https://boardgamegeek.com/boardgame/217372/the-quest-for-el-dorado
 + thumbnail-url: https://cf.geekdo-images.com/b5VyYjNfAxJ4Z-Dx2UWlqg__medium/img/ID1333MB6cQv6N-Tu9lxqPqiNx8=/fit-in/500x500/filters:no_upscale():strip_icc()/pic7945692.jpg
 + podium-url: https://cf.geekdo-images.com/b5VyYjNfAxJ4Z-Dx2UWlqg__original/img/-GqQ0EOfg9e3yFVpKgJbPdlunso=/0x0/filters:format(jpeg)/pic7945692.jpg
+
