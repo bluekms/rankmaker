@@ -1,0 +1,34 @@
+name: boardgame-release
+
+# Boardgame 브랜치가 푸시될 때마다 boardgame-latest 태그를 그 커밋으로 옮겨,
+# release 페이지의 Source code (zip) 이 항상 최신 Boardgame 브랜치가 되게 한다.
+on:
+  push:
+    branches: [Boardgame]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-latest-release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Move boardgame-latest tag to current commit
+        run: |
+          git tag -f boardgame-latest
+          git push origin -f refs/tags/boardgame-latest
+
+      - name: Create or update rolling release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          NOTE="Boardgame 브랜치 최신 스냅샷 — $(date -u '+%Y-%m-%d %H:%M UTC') / ${GITHUB_SHA:0:7}. 아래 Source code (zip) 이 최신 Boardgame 브랜치 전체입니다."
+          TITLE="RankMaker 보드게임 데이터판 (최신 Boardgame 브랜치)"
+          if gh release view boardgame-latest > /dev/null 2>&1; then
+            gh release edit boardgame-latest --title "$TITLE" --notes "$NOTE" --latest=false
+          else
+            gh release create boardgame-latest --title "$TITLE" --notes "$NOTE" --latest=false
+          fi
