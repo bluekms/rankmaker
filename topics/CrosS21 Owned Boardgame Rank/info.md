@@ -471,6 +471,18 @@
 + thumbnail-url: https://cf.geekdo-images.com/SPuwc6RJ6y4PnTH36Pegsg__medium/img/OKHs2ICqiU5JkY-zC7_9zlmDLio=/fit-in/500x500/filters:no_upscale():strip_icc()/pic3511783.png
 + podium-url: https://cf.geekdo-images.com/SPuwc6RJ6y4PnTH36Pegsg__original/img/GcuvCavv-ZZP5_O1kCTrZELuZdY=/0x0/filters:format(png)/pic3511783.png
 
+# 클랜 오브 칼레도니아 - 인더스트리아.jpg
+- 👥 인원: 1 ~ 4 (4인 베스트)
+- ⭐ bgg 점수: 8.05
+- 🧠 복잡도: 3.77 / 5
++ 🏠 보유중
++ 📅 출시 연도: 2025
++ ♟️ 디자이너: Juma Al-JouJou
++ 🎨 아티스트: Klemens Franz
++ 🔗 https://boardgamegeek.com/boardgameexpansion/391913/clans-of-caledonia-industria
++ thumbnail-url: https://cf.geekdo-images.com/SNvmpN5KWVTYdRZofjM0Pw__medium/img/FvJI2fPXk0KhSnN_oQZbhN2stiQ=/fit-in/500x500/filters:no_upscale():strip_icc()/pic8967173.jpg
++ podium-url: https://cf.geekdo-images.com/SNvmpN5KWVTYdRZofjM0Pw__original/img/nn_WLALLmr_8Zn3I-2P1V0c2nQw=/0x0/filters:format(jpeg)/pic8967173.jpg
+
 # 킵 더 히어로즈 아웃!.jpg
 - 👥 인원: 1 ~ 4 (2인 베스트)
 - ⭐ bgg 점수: 7.88
