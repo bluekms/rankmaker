@@ -27,3 +27,6 @@ topics/images/*
 
 # Claude 작업 보고 — 로컬 전용
 .claude/claude.output.html
+
+# Claude 로컬 경로 레지스트리 — 커밋하지 않는다
+CLAUDE.local.md
