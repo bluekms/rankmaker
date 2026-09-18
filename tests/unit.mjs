@@ -428,6 +428,30 @@ describe("미사용 그림 판정", () => {
   it("파일이 없으면 빈 목록", unused([], [info("가.png")]), []);
   it("이름이 정확히 같아야 한다 — 확장자가 다르면 다른 파일",
     unused(["가.png"], [info("가.jpg")]), ["가.png"]);
+  it("이름만 적은 항목은 같은 줄기의 그림을 전부 부른 것이다",
+    unused(["가.png", "가.jpg", "나.png"], [info("가")]), ["나.png"]);
+});
+
+/* ================= 이름만 적은 항목 =================
+   info.md 에 "# 신라면" 처럼 확장자 없이 적어도 항목이다 (#1).
+   그림은 공용 폴더에서 같은 줄기의 파일로 찾고, 없으면 이름 카드가 된다. */
+describe("확장자 없는 항목명", () => {
+  const itemLabel = app("itemLabel"), byStem = app("byStem"), imageFileName = app("imageFileName");
+  const items = Object.keys(parseInfo(`# global${NL}- x${NL}${NL}# 신라면${NL}- y${NL}${NL}# 진라면.png${NL}- z${NL}`).items);
+  it("parseInfo 는 확장자 유무와 상관없이 항목으로 읽는다", items, ["신라면", "진라면.png"]);
+
+  it("라벨 — 그림 확장자만 뗀다", ["신라면.png", "신라면", "Ver.2", "Ver.2.jpg"].map(itemLabel),
+    ["신라면", "신라면", "Ver.2", "Ver.2"]);
+
+  const table = new Map([["나.PNG", 1], ["가.png", 2], ["가.jpg", 3], ["podium.png", 4], ["info.md", 5]]);
+  it("줄기로 파일을 찾는다", byStem(table, "나"), "나.PNG");
+  it("같은 줄기가 여럿이면 이름순 첫 것", byStem(table, "가"), "가.jpg");
+  it("podium 과 그림 아닌 파일은 줄기가 아니다", [byStem(table, "podium"), byStem(table, "info")], [undefined, undefined]);
+  it("없으면 undefined", byStem(table, "다"), undefined);
+
+  it("확장자 있는 이름은 그대로 저장", imageFileName("가.jpg", { type: "image/png" }), "가.jpg");
+  it("이름만이면 받은 그림의 종류를 따른다", imageFileName("가", { type: "image/jpeg" }), "가.jpg");
+  it("종류를 모르면 png", [imageFileName("가"), imageFileName("가", { type: "" })], ["가.png", "가.png"]);
 });
 
 /* ================= 화면 전환 =================

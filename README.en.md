@@ -53,13 +53,13 @@ topics/
 
 | Token | Meaning |
 |---|---|
-| `# filename` | One item. Must match the filename in `topics/images/` exactly |
+| `# filename` | One item. Must match the filename in `topics/images/` exactly. You may also drop the extension and write `# shin` — then a picture with the same name, such as `shin.png`, is picked up |
 | `# global` | Prepended to every item's description |
 | `-` / `+` | Always shown / shown in List only |
 | `[ ]` | A checkbox, anywhere you like |
 | `//` | A comment — the app ignores it |
 
-**The image file is optional** — without one you get a card with just the name on it. A web URL can stand in for the file; that is mostly for very large lists, so it lives in [Attaching pictures by URL](docs/image-url.en.md).
+**The image file is optional** — without one you get a card with just the name on it, so an `info.md` that is nothing but a list of names works as-is. A web URL can stand in for the file; that is mostly for very large lists, so it lives in [Attaching pictures by URL](docs/image-url.en.md).
 
 > The 🌶️ 📅 🔗 emoji in the examples are **just text**. They carry no meaning — change them freely.
 > Only `#` `-` `+` `[ ]` are actual syntax.
