@@ -1,7 +1,7 @@
 # BGG 플레이 게임 목록 (bluekms21)
 
 - 계정: https://boardgamegeek.com/user/bluekms21
-- 총 플레이 기록 211회 (2026-08-05 기준) · 목록 141종
+- 총 플레이 기록 211회 (2026-08-05 기준) · 목록 142종
 - 🏠 보유중(집에 있음) · 👋 보유했음(떠나보냄) · 🚫 구입안함
 
 # 7 원더스 (2판).jpg
@@ -51,6 +51,18 @@
 + 🔗 https://boardgamegeek.com/boardgame/318009/dinosaur-island-rawr-n-write
 + thumbnail-url: https://cf.geekdo-images.com/xRP9jo5gfwhfFkgxQBgWTw__medium/img/4b7NGCukM-PDz8o5rdp3Q8Xj6bo=/fit-in/500x500/filters:no_upscale():strip_icc()/pic5622932.png
 + podium-url: https://cf.geekdo-images.com/xRP9jo5gfwhfFkgxQBgWTw__original/img/h-5jmA7e2JrfO9DM9OKy0S2MDjw=/0x0/filters:format(png)/pic5622932.png
+
+# 기차섬 - 탑승하세요.jpg
+- 👥 인원: 1 ~ 4 (3인 베스트)
+- ⭐ bgg 점수: 6.90
+- 🧠 복잡도: 2.26 / 5
++ 🏠 보유중
++ 📅 출시 연도: 2023
++ ♟️ 디자이너: Seth Jaffee, Dan Keltner
++ 🎨 아티스트: Denis Martynets
++ 🔗 https://boardgamegeek.com/boardgame/355224/isle-of-trains-all-aboard
++ thumbnail-url: https://cf.geekdo-images.com/ZOqxfvKkln8ewIYpKjPY6Q__medium/img/qFgRFfMVRYCI8XqBjXBDZqkA-Gk=/fit-in/500x500/filters:no_upscale():strip_icc()/pic7237833.jpg
++ podium-url: https://cf.geekdo-images.com/ZOqxfvKkln8ewIYpKjPY6Q__original/img/o9fOVAvI7EnKUPxjdueOqiqp4B0=/0x0/filters:format(jpeg)/pic7237833.jpg
 
 # 기프트크래프트.jpg
 - 👥 인원: 1 ~ 6 (3~5인 베스트)
@@ -1662,7 +1674,7 @@
 
 # 핵 클래드 델타.png
 - 👥 인원: 1 ~ 4 (4인 베스트)
-- ⭐ bgg 점수: 7.50
+- ⭐ bgg 점수: 7.92
 - 🧠 복잡도: 3.00 / 5
 + 🏠 보유중
 + 📅 출시 연도: 2024
