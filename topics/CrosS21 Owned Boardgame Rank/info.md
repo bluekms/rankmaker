@@ -1,8 +1,3 @@
-# CrosS21 보유 보드게임 목록 (bluekms21)
-
-- 계정: https://boardgamegeek.com/user/bluekms21
-- CrosS21 Boardgame Rank 에서 🏠 보유중(집에 있음)만 추린 목록 (2026-08-06 기준)
-
 # 가들링.jpg
 - 👥 인원: 1 ~ 4 (4인 베스트)
 - ⭐ bgg 점수: 7.16
@@ -387,18 +382,6 @@
 + thumbnail-url: https://cf.geekdo-images.com/1Plr8IRp0aXsfWOslhAgZQ__medium/img/1oDWdk_fl3arkwsCrO1C-AIpFJM=/fit-in/500x500/filters:no_upscale():strip_icc()/pic4017301.jpg
 + podium-url: https://cf.geekdo-images.com/1Plr8IRp0aXsfWOslhAgZQ__original/img/obry31vcOZx4Fg_bNFa_6mcJgRE=/0x0/filters:format(jpeg)/pic4017301.jpg
 
-# 잠만보 다이스.jpg
-- 👥 인원: 1 ~ 5
-- ⭐ bgg 점수: 6.81
-- 🧠 복잡도: -
-+ 🏠 보유중
-+ 📅 출시 연도: 2023
-+ ♟️ 디자이너: -
-+ 🎨 아티스트: -
-+ 🔗 https://boardgamegeek.com/boardgame/411245/pokemon-dice-game
-+ thumbnail-url: https://cf.geekdo-images.com/PcHmBfyIy9Km7NiyAlyCtQ__medium/img/cOZJIqblonxTcH_JxWSz6q2nB5I=/fit-in/500x500/filters:no_upscale():strip_icc()/pic7966787.jpg
-+ podium-url: https://cf.geekdo-images.com/PcHmBfyIy9Km7NiyAlyCtQ__original/img/ZMbk0CDya4FBk9M6ig-uSH53Ec0=/0x0/filters:format(jpeg)/pic7966787.jpg
-
 # 좀비사이드 무기를 들어라.png
 - 👥 인원: 1 ~ 6 (1인 베스트)
 - ⭐ bgg 점수: 7.02
@@ -566,30 +549,6 @@
 + 🔗 https://boardgamegeek.com/boardgame/420087/flip-7
 + thumbnail-url: https://cf.geekdo-images.com/YrQxEB9Ef0kQorRApzG5vQ__medium/img/GxroK7oYXFJTWoJpdoxmoqxMV4o=/fit-in/500x500/filters:no_upscale():strip_icc()/pic8780246.jpg
 + podium-url: https://cf.geekdo-images.com/YrQxEB9Ef0kQorRApzG5vQ__original/img/hK6k-x_GYfooemrkkRuF0bTvKxE=/0x0/filters:format(jpeg)/pic8780246.jpg
-
-# 플립타운.jpg
-- 👥 인원: 1 ~ 4 (1인 베스트)
-- ⭐ bgg 점수: 7.76
-- 🧠 복잡도: 2.39 / 5
-+ 🏠 보유중
-+ 📅 출시 연도: 2023
-+ ♟️ 디자이너: Steven Aramini
-+ 🎨 아티스트: Naomi Ferrall
-+ 🔗 https://boardgamegeek.com/boardgame/352418/fliptown
-+ thumbnail-url: https://cf.geekdo-images.com/IeFNM8pY6qBIMRONuJ9Irg__medium/img/fABKK9IQTjgHESRRZLB5b9hSc2k=/fit-in/500x500/filters:no_upscale():strip_icc()/pic7318155.jpg
-+ podium-url: https://cf.geekdo-images.com/IeFNM8pY6qBIMRONuJ9Irg__original/img/VovCirukPgK3modEBZx-f1tMsD8=/0x0/filters:format(jpeg)/pic7318155.jpg
-
-# 플립타운 고독한 총잡이.jpg
-- 👥 인원: 1 (1인 베스트)
-- ⭐ bgg 점수: 8.36
-- 🧠 복잡도: 2.60 / 5
-+ 🏠 보유중
-+ 📅 출시 연도: 2024
-+ ♟️ 디자이너: Steven Aramini
-+ 🎨 아티스트: Naomi Ferrall
-+ 🔗 https://boardgamegeek.com/boardgame/425027/fliptown-the-lone-gun
-+ thumbnail-url: https://cf.geekdo-images.com/gCpafupHS0u_IyTpZgXhow__medium/img/eqXkyXZLPgju3jjCj3ujq-ElAYI=/fit-in/500x500/filters:no_upscale():strip_icc()/pic8317680.jpg
-+ podium-url: https://cf.geekdo-images.com/gCpafupHS0u_IyTpZgXhow__original/img/fBH1C6PdQbeXTR68tz5xoo7dUl0=/0x0/filters:format(jpeg)/pic8317680.jpg
 
 # 하모니즈.png
 - 👥 인원: 1 ~ 4 (2~3인 베스트)
