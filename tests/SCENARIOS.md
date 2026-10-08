@@ -61,7 +61,9 @@ node tests/reset.mjs --yes    실행
 | # | 조작 | 기대 |
 |---|---|---|
 | A1 | **Connect Topics Folder** 로 `topics` 선택 | 주제 목록이 채워지고 첫 주제가 열린다 |
-| A2 | 새로고침 후 **Reopen Last Folder** | 다시 고르지 않아도, 마지막에 보던 주제로 열린다 |
+| A2 | 새로고침 | 시작 화면 없이 같은 폴더가 바로 열리고, 마지막에 보던 주제가 뜬다 |
+| A2b | 브라우저를 껐다 켠 뒤 **🔗 Reopen "topics"** | 권한 확인창 한 번 뒤 A2 와 같다. **Choose Topics Folder** 는 여전히 선택 창을 연다 |
+| A2c | `topics` 폴더를 옮기거나 지운 뒤 켠다 | 자동으로 열리지 않고 시작 화면이 뜬다(기억은 지워진다) |
 | A3 | `topics` 폴더를 창에 끌어다 놓기 | A1 과 같다 |
 | A4 | **📁 Select Topics Folder** 로 `topics` 선택 (읽기 전용 경로) | 열린다. 저장하면 `Saved ✓ (browser)` 가 뜬다 |
 | A5 | 주제 목록 확인 | `images` 가 목록에 없다 |

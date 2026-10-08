@@ -570,6 +570,7 @@ mark {
     <h1>RankMaker</h1>
     <p>Drag your <code>topics</code> folder onto this window.</p>
     <div class="actions">
+      <button id="btnReopen" hidden>🔗 Reopen Last Folder</button>
       <button id="btnOpen" hidden>📂 Choose Topics Folder <span class="sub">(Chrome / Edge)</span></button>
       <label class="alt" id="dirPick" hidden>📁 Select Topics Folder
         <input id="dirInput" type="file" webkitdirectory>
@@ -744,13 +745,54 @@ $("#btnSfx").onclick = () => {
 sfxApply();
 
 /* ---------- open sources: 폴더 선택 / 드래그&드롭 / webkitdirectory ----------
-   폴더 핸들을 기억해 두지 않는다. 열 때마다 고르는 대신, 어느 폴더를 보고 있는지가
-   늘 분명하고 다른 폴더로 갈아타기도 쉽다. 브라우저는 마지막 위치를 기억하므로
-   (showDirectoryPicker 의 id) 실제로는 두 번 누르면 끝난다. */
+   핸들로 연 topics 폴더는 IndexedDB 에 기억해 둔다. 다음에 켤 때 권한이 살아 있으면
+   (같은 세션의 새로고침) 그대로 열고, 크롬이 다시 물어야 하는 상태면 시작 화면에
+   Reopen 버튼을 내어 클릭 한 번(권한 확인)으로 잇는다. 다른 폴더로 갈아타는 길은
+   그대로다 — Choose 버튼은 늘 선택 창을 열고, topics 폴더를 떨어뜨려도 된다.
+   열쇠에 이 파일의 주소를 섞는다 — file:// 은 모든 로컬 HTML 이 저장소를 공유하므로
+   사본을 다른 자리에서 열었을 때 예전 폴더가 따라붙지 않게. */
+const ROOT_KEY = "root:" + location.href.split(/[?#]/)[0];
+const IDB_WAIT = 1500;   // file:// 에서 열기 요청이 멎어 버릴 때 끊는 시간
+function idb(mode, fn) {
+  return new Promise((res, rej) => {
+    const stop = setTimeout(() => rej(new Error("indexedDB timeout")), IDB_WAIT);
+    const done = (f, v) => { clearTimeout(stop); f(v); };
+    let rq;
+    try { rq = indexedDB.open("rankmaker", 1); } catch (e) { done(rej, e); return; }
+    rq.onupgradeneeded = () => rq.result.createObjectStore("kv");
+    rq.onerror = () => done(rej, rq.error);
+    rq.onblocked = () => done(rej, new Error("indexedDB blocked"));
+    rq.onsuccess = () => {
+      const db = rq.result;   // 연결은 매번 닫는다 — 열어 둔 채면 deleteDatabase 가 막힌다
+      try {
+        const tx = db.transaction("kv", mode);
+        const r = fn(tx.objectStore("kv"));
+        tx.oncomplete = () => { db.close(); done(res, r && r.result); };
+        tx.onerror = () => { db.close(); done(rej, tx.error); };
+      } catch (e) { db.close(); done(rej, e); }
+    };
+  });
+}
+const rememberRoot = h => idb("readwrite", s => s.put(h, ROOT_KEY)).catch(() => {});
+const forgetRoot = () => idb("readwrite", s => s.delete(ROOT_KEY)).catch(() => {});
+let lastRoot = null;   // 기억해 둔 핸들 가운데 권한을 다시 물어야 해서 아직 열지 못한 것
+
 $("#btnOpen").onclick = async () => {
   try {
     await openRoot(await showDirectoryPicker({ mode: "readwrite", id: "rankmaker-topics" }));
   } catch (e) { /* cancelled */ }
+};
+// 기억해 둔 폴더 — 권한 요청은 클릭(사용자 제스처) 안에서만 뜬다
+const dropReopen = () => { forgetRoot(); lastRoot = null; $("#btnReopen").hidden = true; };
+$("#btnReopen").onclick = async () => {
+  if (!lastRoot) return;
+  try {
+    if (await lastRoot.requestPermission({ mode: "readwrite" }) !== "granted") return;
+    if (!await openRoot(lastRoot)) dropReopen();   // 비어 있다 — openRoot 가 이미 알렸다
+  } catch (e) {   // 폴더가 옮겨졌거나 지워졌다
+    dropReopen();
+    alert("The remembered folder could not be opened. Pick it again.");
+  }
 };
 // 브라우저가 할 수 있는 쪽만 보여준다 — 고를 필요가 없다
 if (window.showDirectoryPicker) $("#btnOpen").hidden = false;
@@ -768,7 +810,6 @@ async function looksLikeTopicsRoot(dir) {
 }
 
 async function openRoot(handle) {
-  useImageSource(handle, null);         // 공용 이미지는 이 폴더의 images 하위다 (필요할 때 훑는다)
   const list = [];
   rootPodiumFile = null;
   for await (const c of handle.values()) {
@@ -776,9 +817,12 @@ async function openRoot(handle) {
     if (c.kind === "directory" && c.name.toLowerCase() !== IMAGES_DIR) list.push({ name: c.name, dirHandle: c });
     else if (c.kind === "file" && PODIUM_RE.test(c.name)) rootPodiumFile = await c.getFile();
   }
-  if (!list.length) { alert("No topic folders found. Make sure you picked the topics folder."); return; }
+  if (!list.length) { alert("No topic folders found. Make sure you picked the topics folder."); return false; }
+  useImageSource(handle, null);         // 공용 이미지는 이 폴더의 images 하위다 (필요할 때 훑는다) — 연결이 확정된 뒤에만 바꾼다
   topics = list;
   afterOpen();
+  rememberRoot(handle);
+  return true;
 }
 
 /* ---------- 공용 이미지 원본 ----------
@@ -1098,7 +1142,24 @@ function afterOpen(openName) {
   sel.value = i;
   return loadTopic(topics[i]);
 }
-$("#welcome").hidden = false;      // 시작은 언제나 시작 화면 — 폴더는 열 때마다 고른다
+/* 시작 — 기억해 둔 topics 폴더가 있으면 그걸로 연다. 권한이 살아 있으면 조용히,
+   다시 물어야 하면 시작 화면의 Reopen 버튼으로. 없으면 시작 화면만 띄운다. */
+(async () => {
+  let h = null;
+  try { h = await idb("readonly", s => s.get(ROOT_KEY)); } catch (e) { /* file:// 등 — 기억 없이 간다 */ }
+  if (h) {
+    try {
+      if (await h.queryPermission({ mode: "read" }) === "granted") { if (!await openRoot(h)) forgetRoot(); }
+      else {
+        lastRoot = h;
+        const b = $("#btnReopen");
+        b.textContent = `🔗 Reopen "${h.name}"`;
+        b.hidden = false;
+      }
+    } catch (e) { forgetRoot(); }   // 폴더가 옮겨졌거나 지워졌다
+  }
+  if ($("#board").hidden) $("#welcome").hidden = false;
+})();
 
 /* ---------- info.md ---------- */
 function parseInfo(text) {
