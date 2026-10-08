@@ -13,7 +13,8 @@
 1. [Releases](https://github.com/bluekms/rankmaker/releases/latest) 에서 zip 을 받아 풉니다.
 2. `index.html` 을 브라우저로 엽니다. (Chrome / Edge 권장)
 3. **Choose Topics Folder** 로 `topics` 폴더를 고르거나 창에 끌어다 놓습니다.
-   열 때마다 한 번 고릅니다 — 브라우저가 마지막 위치를 기억하므로 두 번 누르면 끝입니다.
+   한 번 고른 폴더는 기억합니다 — 새로고침하면 그대로 열리고, 브라우저를 다시 켠 뒤에는
+   **Reopen** 버튼 한 번(권한 확인)으로 이어집니다. 다른 폴더로 바꾸려면 그 `topics` 폴더를 창에 끌어다 놓습니다.
 
 ## 폴더 구조
 
