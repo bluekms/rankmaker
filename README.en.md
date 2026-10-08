@@ -13,6 +13,8 @@ There is also a **WorldCup** (favorite tournament) mode, kept entirely separate 
 1. Grab the zip from [Releases](https://github.com/bluekms/rankmaker/releases/latest) and unpack it.
 2. Open `index.html` in a browser. (Chrome / Edge recommended)
 3. Hit **Choose Topics Folder** and pick `topics`, or drag the folder onto the window.
+   The folder is remembered — a refresh reopens it as is, and after restarting the browser one click on
+   **Reopen** (a permission check) brings it back. To switch, drag another `topics` folder onto the window.
    You pick it once per visit — the browser remembers the last location, so it is two clicks.
 
 ## Folder layout
