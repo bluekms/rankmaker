@@ -133,8 +133,17 @@ select, button, input {
   border-radius: .55rem;
   padding: .35rem .7rem;
 }
-button { cursor: pointer; }
-button:hover { border-color: var(--accent); }
+button {
+  cursor: pointer;
+  transition: border-color var(--dur-ui) ease, background-color var(--dur-ui) ease,
+    color var(--dur-ui) ease, transform var(--dur-press) var(--ease-out);
+}
+@media (hover: hover) { button:hover { border-color: var(--accent); } }
+/* 눌렀다는 확인 — 아주 작게만 줄인다 */
+button:active:not(:disabled) { transform: scale(.97); }
+/* 키보드 포커스 — 마우스 클릭에는 뜨지 않고, 나타날 때 움직이지 않는다 */
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+button:focus-visible, select:focus-visible, summary:focus-visible { transition: none; }
 .mini { font-size: .82rem; padding: .3rem .55rem; color: var(--muted); }
 .seg { display: inline-flex; border: 1px solid var(--border); border-radius: .55rem; overflow: hidden; }
 .seg button { border: 0; border-radius: 0; background: transparent; }
@@ -637,20 +646,21 @@ mark {
       <button id="btnImport" class="mini" title="Load a backed-up save.json">Load</button>
       <input id="importInput" type="file" accept=".json,application/json">
     </span>
-    <span id="status"></span>
+    <span id="status" role="status" aria-live="polite"></span>
   </span>
   <!-- 가운데: 검색 -->
   <span id="searchWrap" hidden>
-    <button id="btnUndo" class="mini arrow" disabled>↶</button>
-    <button id="btnRedo" class="mini arrow" disabled>↷</button>
-    <input id="searchInput" type="search" placeholder="Search (초성 검색 가능)">
+    <button id="btnUndo" class="mini arrow" aria-label="Undo" disabled>↶</button>
+    <button id="btnRedo" class="mini arrow" aria-label="Redo" disabled>↷</button>
+    <input id="searchInput" type="search" placeholder="Search (초성 검색 가능)" aria-label="Search items"
+      autocomplete="off" spellcheck="false">
     <!-- 기본은 아이템명만 검색한다. 켜면 설명까지 넓힌다 -->
     <label id="descWrap" title="Search descriptions too"><input id="descChk" type="checkbox"><span>All Text</span></label>
   </span>
   <!-- 오른쪽: 보기와 출력 -->
   <span id="hdrRight">
     <span id="viewControls" hidden>
-      <span class="seg">
+      <span class="seg" role="group" aria-label="View">
         <button id="btnTier">Tier</button>
         <button id="btnList">List</button>
         <button id="btnGrid">Gallery</button>
@@ -668,16 +678,17 @@ mark {
     <!-- 화면이 바뀌어도 항상 있는 전역 토글 — 오른쪽 끝에 고정해 위치가 흔들리지 않는다 -->
     <span id="hdrFixed">
       <button id="btnCup" class="mini" hidden>🏆 WorldCup</button>
-      <button id="btnSfx" title="Sound effects on / off">🔊</button>
-      <button id="btnTheme" title="Light / dark">🌙</button>
+      <button id="btnSfx" title="Sound effects on / off" aria-label="Sound effects">🔊</button>
+      <button id="btnTheme" title="Light / dark" aria-label="Toggle light or dark theme">🌙</button>
     </span>
   </span>
 </header>
 
 <main>
   <section id="welcome" hidden>
-    <h1>RankMaker</h1>
-    <p>Drag your <code>topics</code> folder onto this window.</p>
+    <h1 translate="no">RankMaker</h1>
+    <p class="lede">Rank a folder of pictures, then export the result as a poster.</p>
+    <p class="drop"><b>Drop your <code>topics</code> folder here</b>or pick it with the button below.</p>
     <div class="actions">
       <button id="btnReopen" hidden>🔗 Reopen Last Folder</button>
       <button id="btnOpen" hidden>📂 Choose Topics Folder <span class="sub">(Chrome / Edge)</span></button>
@@ -709,6 +720,7 @@ topics/images/*.png     ← the pictures, shared by every topic</pre>
     <button id="btnClean"></button>
   </section>
   <section id="board" hidden>
+    <p id="tierKeysHint" class="sr-only">Arrow keys move this item: left and right within its tier, up and down to another tier.</p>
     <div id="items"></div>
   </section>
   <section id="cup" hidden></section>
@@ -809,6 +821,8 @@ function byStem(table, stem) {
 }
 let cur = null;         // current topic state
 let dragItem = null;
+let landedFile = null;   // 방금 포인터로 놓은 아이템 — 다음 render 한 번만 표시한다
+let focusFile = null;    // 키보드로 옮긴 아이템 — 다시 그린 뒤 포커스를 돌려준다
 let searchDesc = false;   // 검색창 옆 'Details' — 저장하지 않는다
 let saveTimer = null;
 let themeLocked = !!localStorage.getItem("rm-theme");
@@ -844,6 +858,7 @@ function sfxPlay(name) {
 }
 function sfxApply() {   // 버튼 표시를 맞추고, 켜져 있으면 전부 미리 받아 둔다 — 첫 재생이 늦지 않게
   $("#btnSfx").textContent = sfxOn ? "🔊" : "🔇";
+  $("#btnSfx").setAttribute("aria-pressed", String(sfxOn));
   if (sfxOn) Object.values(SFX).flat().forEach(sfxLoad);
 }
 $("#btnSfx").onclick = () => {
@@ -1600,6 +1615,7 @@ function tierAssignments() {  // 현재 순서·크기에서 각 아이템의 �
   return map;
 }
 function moveToTier(it, destTier, posInTier) {
+  if (dragItem) landedFile = it.file;   // 포인터로 놓았을 때만 '여기 놓였다' 표시 — 키보드·순위 입력은 조용히
   dragItem = null;   // 드롭의 종착점 — 드롭 뒤 render 로 원소가 사라지면 dragend 가 안 오므로 여기서 끝낸다
   // 할당 기반 재구성: 나머지 아이템의 티어 소속을 먼저 확정하고,
   // it을 목적 티어(또는 풀)의 posInTier 위치에 끼운 뒤 전체를 다시 조립한다.
@@ -1798,15 +1814,20 @@ function render() {
   wrap.className = cur.view.mode;
   wrap.style.setProperty("--cols", cur.view.columns);
   wrap.style.setProperty("--tiersize", (cur.view.tierSize || 72) + "px");
-  if (cur.view.mode === "tier") { renderTierView(wrap); return; }
-  const shown = sorted().filter(matchesQuery);
-  for (const it of shown) wrap.append(renderItem(it));
-  if (!shown.length) {
-    const d = document.createElement("div");
-    d.id = "noResult";
-    d.textContent = "No matches";
-    wrap.append(d);
+  if (cur.view.mode === "tier") renderTierView(wrap);
+  else {
+    const shown = sorted().filter(matchesQuery);
+    for (const it of shown) wrap.append(renderItem(it));
+    if (!shown.length) {
+      const d = document.createElement("div");
+      d.id = "noResult";
+      const q = $("#searchInput").value.trim();
+      d.textContent = q ? `No items match "${q}" — clear the search to see all ${cur.items.length}.`
+        : "This topic has no items yet — add entries to its info.md.";
+      wrap.append(d);
+    }
   }
+  landedFile = null;   // 표시는 한 번뿐 — 다음 render(검색 입력 등)에서 다시 번쩍이지 않게
 }
 
 /* ---------- tier view (티어표) ----------
@@ -1853,10 +1874,18 @@ function renderTierView(wrap) {
     };
     const cell = document.createElement("div");
     cell.className = "tier-items";
+    // 빈 칸 안내 — CSS 의 :empty::before 가 이 글자를 띄운다 (아이템이 하나라도 있으면 안 보인다)
+    cell.dataset.empty = q ? "" : dropTier < 0 ? "Everything is ranked" : "Drag items here";
     for (const it of items) {
       if (q && !matchesQuery(it)) continue;   // 검색 시 안 맞는 아이템만 감춘다 (행 구조 유지)
       const im = document.createElement("img");
       im.className = "tier-item";
+      im.dataset.file = it.file;
+      if (it.file === landedFile) im.classList.add("landed");
+      // 드래그 대신 키보드로도 옮길 수 있다 — 화살표 ←→ 는 티어 안에서, ↑↓ 는 위아래 티어로
+      im.tabIndex = 0;
+      im.setAttribute("aria-describedby", "tierKeysHint");
+      im.addEventListener("keydown", e => moveTierItemByKey(e, it, dropTier));
       // 주소로 뜨는 그림은 원본 해상도라 한 장에 수백 KB다. 300종짜리 주제에서
       // 한꺼번에 받으면 화면이 멈춘다 — 보이는 것부터 받는다 (List·Gallery 와 동일)
       im.loading = "lazy";
@@ -1867,6 +1896,12 @@ function renderTierView(wrap) {
       im.addEventListener("dragstart", e => {
         dragItem = it;
         e.dataTransfer.effectAllowed = "move";
+        // 드래그 이미지가 찍힌 뒤에 원본을 '빈 자리'로 바꾼다 — 바로 바꾸면 흐린 모습이 따라다닌다
+        requestAnimationFrame(() => im.classList.add("dragging"));
+      });
+      im.addEventListener("dragend", () => {
+        im.classList.remove("dragging");
+        document.querySelectorAll(".drop-into").forEach(el => el.classList.remove("drop-into"));
       });
       // 같은 티어 안에서 앞뒤 이동: 아이템 위에 드롭하면 좌/우 절반 기준으로 그 앞/뒤에 삽입
       im.addEventListener("dragover", e => {
@@ -1910,6 +1945,7 @@ function renderTierView(wrap) {
     xb.className = "tier-x";
     xb.textContent = "×";
     xb.title = n0 ? "Delete tier — its items move to Unranked (…)" : "Remove this empty tier";
+    xb.setAttribute("aria-label", xb.title);
     xb.onclick = () => {
       mutate(() => {
         tierItemsToPool(s0, n0);   // 삭제된 티어의 아이템은 풀 맨 뒤로
@@ -1946,6 +1982,7 @@ function renderTierView(wrap) {
   const memo = document.createElement("textarea");
   memo.className = "tier-memo";
   memo.placeholder = "Memo";
+  memo.setAttribute("aria-label", "Tier list memo");
   memo.value = cur.save.tierMemo || "";
   if (cur.save.tierMemoH) memo.style.height = cur.save.tierMemoH + "px";
   memo.oninput = () => { cur.save.tierMemo = memo.value; scheduleSave(); };
@@ -1954,11 +1991,43 @@ function renderTierView(wrap) {
     if (h && h !== cur.save.tierMemoH) { cur.save.tierMemoH = h; scheduleSave(); }
   });
   wrap.append(memo);
+  // 키보드로 옮긴 직후 — 다시 그려진 같은 아이템에 포커스를 돌려줘 화살표를 계속 누를 수 있게
+  if (focusFile) {
+    const back = [...wrap.querySelectorAll(".tier-item")].find(el => el.dataset.file === focusFile);
+    focusFile = null;
+    if (back) back.focus();
+  }
+}
+
+/* 티어 아이템의 키보드 이동 — 드래그의 대안(WCAG 2.5.7).
+   ←→ 같은 티어 안에서 한 칸, ↑ 윗 티어의 맨 뒤, ↓ 아랫 티어의 맨 앞(마지막 티어 아래는 풀).
+   전부 moveToTier 하나로 모아 되돌리기 단계도 드래그와 똑같이 쌓인다. 움직임 연출은 없다. */
+function moveTierItemByKey(e, it, tier) {
+  const ts = tierSizes();
+  let dest = tier, pos;
+  if (e.key === "ArrowLeft" || e.key === "ArrowRight") {
+    const asg = tierAssignments();
+    const peers = sorted().filter(x => asg.get(x) === tier);
+    pos = peers.indexOf(it) + (e.key === "ArrowLeft" ? -1 : 1);
+    if (pos < 0 || pos >= peers.length) return;
+  } else if (e.key === "ArrowUp") {
+    dest = tier < 0 ? ts.length - 1 : tier - 1;
+    if (dest < 0) return;
+    pos = Infinity;
+  } else if (e.key === "ArrowDown") {
+    if (tier < 0) return;
+    dest = tier + 1 < ts.length ? tier + 1 : -1;
+    pos = 0;
+  } else return;
+  e.preventDefault();
+  focusFile = it.file;
+  moveToTier(it, dest, pos);
 }
 
 function renderItem(it) {
   const row = document.createElement("article");
   row.className = "item";
+  if (it.file === landedFile) row.classList.add("landed");
 
   const head = document.createElement("div");
   head.className = "head";
@@ -1989,6 +2058,7 @@ function renderItem(it) {
     const memo = document.createElement("input");
     memo.className = "memo";
     memo.placeholder = "Memo…";
+    memo.setAttribute("aria-label", `Memo for ${it.label}`);
     memo.value = (cur.save.memos || {})[it.file] || "";
     memo.oninput = () => {
       (cur.save.memos ||= {})[it.file] = memo.value;
@@ -2049,6 +2119,7 @@ function renderRank(it) {
   box.className = "rank";
   const up = document.createElement("button");
   up.className = "arrow"; up.textContent = "▲"; up.title = "Move up";
+  up.setAttribute("aria-label", `Move ${it.label} up`);
   up.onclick = () => moveItem(it, -1);
   const down = document.createElement("button");
   down.className = "arrow"; down.textContent = "▼"; down.title = "Move down";
@@ -2058,6 +2129,8 @@ function renderRank(it) {
   num.className = "num";
   num.textContent = it.rank;
   num.title = "Click to type a rank";
+  pressable(num);                         // 키보드로도 순위를 직접 입력한다
+  num.setAttribute("aria-label", `Rank ${it.rank} — press Enter to type a new rank`);
   num.onclick = () => {
     const inp = document.createElement("input");
     inp.type = "number"; inp.min = 1; inp.max = cur.items.length;
