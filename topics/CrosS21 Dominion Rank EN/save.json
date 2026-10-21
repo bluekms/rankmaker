@@ -1,0 +1,61 @@
+{
+  "view": {
+    "mode": "tier",
+    "columns": 3,
+    "tierSize": 72
+  },
+  "ranks": {
+    "Dominion - Empires.jpg": 1,
+    "Dominion - Base Game.jpg": 2,
+    "Dominion - Intrigue.jpg": 3,
+    "Dominion - Renaissance.jpg": 4,
+    "Dominion - Cornucopia.jpg": 5,
+    "Dominion - Guilds.jpg": 6,
+    "Dominion - Menagerie.jpg": 7,
+    "Dominion - Prosperity.jpg": 8,
+    "Dominion - Seaside.jpg": 9,
+    "Dominion - Allies.jpg": 10,
+    "Dominion - Rising Sun.jpg": 11,
+    "Dominion - Alchemy.jpg": 12,
+    "Dominion - Hinterlands.jpg": 13,
+    "Dominion - Dark Ages.jpg": 14,
+    "Dominion - Adventures.jpg": 15,
+    "Dominion - Nocturne.jpg": 16,
+    "Dominion - Plunder.jpg": 17
+  },
+  "order": [
+    "Dominion - Empires.jpg",
+    "Dominion - Base Game.jpg",
+    "Dominion - Intrigue.jpg",
+    "Dominion - Renaissance.jpg",
+    "Dominion - Cornucopia.jpg",
+    "Dominion - Guilds.jpg",
+    "Dominion - Menagerie.jpg",
+    "Dominion - Prosperity.jpg",
+    "Dominion - Seaside.jpg",
+    "Dominion - Allies.jpg",
+    "Dominion - Rising Sun.jpg",
+    "Dominion - Alchemy.jpg",
+    "Dominion - Hinterlands.jpg",
+    "Dominion - Dark Ages.jpg",
+    "Dominion - Adventures.jpg",
+    "Dominion - Nocturne.jpg",
+    "Dominion - Plunder.jpg"
+  ],
+  "checks": {},
+  "memos": {},
+  "tierNames": {
+    "5": "Unplayed"
+  },
+  "tierSizes": [
+    1,
+    3,
+    3,
+    1,
+    3,
+    6
+  ],
+  "tierMemo": "Graded on how each expansion felt to me at the table (2026-10-21). The Unplayed row is for expansions I have not played yet, mostly because they never got a Korean edition.",
+  "tierMemoH": 0,
+  "imgSrc": {}
+}

@@ -1,7 +1,7 @@
 # BGG 플레이 게임 목록 (bluekms21)
 
 - 계정: https://boardgamegeek.com/user/bluekms21
-- 총 플레이 기록 211회 (2026-08-05 기준) · 목록 142종
+- 총 플레이 기록 211회 (2026-08-05 기준) · 목록 143종
 - 🏠 보유중(집에 있음) · 👋 보유했음(떠나보냄) · 🚫 구입안함
 
 # 7 원더스 (2판).jpg
@@ -999,6 +999,18 @@
 + 🔗 https://boardgamegeek.com/boardgame/164928/orleans
 + thumbnail-url: https://cf.geekdo-images.com/nagl1li6kYt9elV9jbfVQw__medium/img/Lf1dMGrBl75IhPf4gnjhlmY_E0Q=/fit-in/500x500/filters:no_upscale():strip_icc()/pic6228507.jpg
 + podium-url: https://cf.geekdo-images.com/nagl1li6kYt9elV9jbfVQw__original/img/Qn6vlBaTUaHNFsqohIUjd0EA4z0=/0x0/filters:format(jpeg)/pic6228507.jpg
+
+# 와일드 벤처.png
+- 👥 인원: 2 (2인 베스트)
+- ⭐ bgg 점수: 7.98
+- 🧠 복잡도: 2.62 / 5
++ 🏠 보유중
++ 📅 출시 연도: 2025
++ ♟️ 디자이너: Iain Everett
++ 🎨 아티스트: Pennie Jo Everett
++ 🔗 https://boardgamegeek.com/boardgame/447174/a-wild-venture
++ thumbnail-url: https://cf.geekdo-images.com/TMMfAqvZP3g4HdgYyCpHPQ__medium/img/UELebXw7-tjzhhX1v_JTgPiVqcA=/fit-in/500x500/filters:no_upscale():strip_icc()/pic8920149.png
++ podium-url: https://cf.geekdo-images.com/TMMfAqvZP3g4HdgYyCpHPQ__original/img/d5oJDK7GyI5udbJ7SdtnstdrfFc=/0x0/filters:format(png)/pic8920149.png
 
 # 요코하마.png
 - 👥 인원: 2 ~ 4 (3인 베스트)
