@@ -358,6 +358,18 @@
 + thumbnail-url: https://cf.geekdo-images.com/nagl1li6kYt9elV9jbfVQw__medium/img/Lf1dMGrBl75IhPf4gnjhlmY_E0Q=/fit-in/500x500/filters:no_upscale():strip_icc()/pic6228507.jpg
 + podium-url: https://cf.geekdo-images.com/nagl1li6kYt9elV9jbfVQw__original/img/Qn6vlBaTUaHNFsqohIUjd0EA4z0=/0x0/filters:format(jpeg)/pic6228507.jpg
 
+# 와일드 벤처.png
+- 👥 인원: 2 (2인 베스트)
+- ⭐ bgg 점수: 7.98
+- 🧠 복잡도: 2.62 / 5
++ 🏠 보유중
++ 📅 출시 연도: 2025
++ ♟️ 디자이너: Iain Everett
++ 🎨 아티스트: Pennie Jo Everett
++ 🔗 https://boardgamegeek.com/boardgame/447174/a-wild-venture
++ thumbnail-url: https://cf.geekdo-images.com/TMMfAqvZP3g4HdgYyCpHPQ__medium/img/UELebXw7-tjzhhX1v_JTgPiVqcA=/fit-in/500x500/filters:no_upscale():strip_icc()/pic8920149.png
++ podium-url: https://cf.geekdo-images.com/TMMfAqvZP3g4HdgYyCpHPQ__original/img/d5oJDK7GyI5udbJ7SdtnstdrfFc=/0x0/filters:format(png)/pic8920149.png
+
 # 육식동물 짓이야!.jpg
 - 👥 인원: 1 ~ 5 (1인 베스트)
 - ⭐ bgg 점수: 7.12

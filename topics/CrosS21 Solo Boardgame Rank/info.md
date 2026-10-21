@@ -1,7 +1,7 @@
 # BGG 플레이 게임 목록 — 1인 플레이 (bluekms21)
 
 - 계정: https://boardgamegeek.com/user/bluekms21
-- `CrosS21 Boardgame Rank` 142종 중 1인 플레이가 가능한 65종
+- `CrosS21 Boardgame Rank` 143종 중 1인 플레이가 가능한 65종
 - 🏠 보유중(집에 있음) · 👋 보유했음(떠나보냄) · 🚫 구입안함
 - 🎲 표시는 공식 솔로모드가 없어 유저메이드 배리언트로 플레이한 게임
 
