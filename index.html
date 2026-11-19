@@ -483,6 +483,8 @@ body.cup-fill main { max-width: none; }
 .cup-name { font-weight: 800; padding: .55rem .7rem .1rem; }
 .cup-desc { padding: 0 .7rem .6rem; color: var(--muted); font-size: .85rem; }
 .cup-desc div { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.cup-desc a { color: var(--accent); text-decoration: none; }
+.cup-desc a:hover { text-decoration: underline; }
 .cup-result { text-align: center; }
 .cup-winner-name { font-size: 1.6rem; font-weight: 800; margin: .2rem 0 1rem; }
 .cup-poster {
@@ -3132,6 +3134,23 @@ function cupDescLines(file) {
   }
   return out;
 }
+// 설명 줄에 주소가 보이면 누를 수 있게 한다 — 카드 안에서 링크를 눌러도 후보가 골라지면 안 된다
+function cupDescFill(el, text) {
+  const re = /https?:\/\/[^\s<>"']+/g;
+  let m, last = 0;
+  while ((m = re.exec(text))) {
+    if (m.index > last) el.append(text.slice(last, m.index));
+    const a = document.createElement("a");
+    a.href = m[0];
+    a.textContent = m[0];
+    a.target = "_blank";
+    a.rel = "noopener";
+    a.onclick = e => e.stopPropagation();
+    el.append(a);
+    last = m.index + m[0].length;
+  }
+  if (last < text.length) el.append(text.slice(last));
+}
 function cupCard(file) {
   if (isCupBye(file)) {   // 짝이 없어 🍀 와 붙는 자리 — 부전승 표시일 뿐, 고를 수 없다
     const card = document.createElement("div");
@@ -3208,7 +3227,7 @@ function cupCard(file) {
   desc.className = "cup-desc";
   for (const t of cupDescLines(file)) {
     const d = document.createElement("div");
-    d.textContent = t;
+    cupDescFill(d, t);
     desc.append(d);
   }
   card.append(box, name, desc);
@@ -3294,7 +3313,7 @@ function cupOutRow(it) {   // List 보기의 행 모양 — 그림 + 이름 + �
   for (const t of cupDescLines(it.file)) {
     const d = document.createElement("div");
     d.className = "desc-line";
-    d.textContent = t;
+    cupDescFill(d, t);
     content.append(d);
   }
   row.append(im, content);
