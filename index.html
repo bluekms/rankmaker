@@ -411,15 +411,11 @@ main { max-width: 1100px; margin: 0 auto; padding: 1rem; }
   100% { opacity: 0; }
 }
 .cup-grid { display: grid; grid-template-columns: repeat(var(--n, 2), minmax(0, 1fr)); gap: 1rem; }
-/* 화면 가득 채우기 — 남은 세로 공간을 카드가 나눠 갖는다. 배율로 줄일 수 있다. */
+/* 창에 맞추기 — 그림 틀의 비율(--cup-ar)은 창 모양이 아니라 후보 그림이 정하고, 카드 묶음의
+   폭과 열 수는 cupFit() 이 창에 통째로 들어가는 가장 큰 값으로 정한다. */
 body.cup-fill main { max-width: none; }
-.cup-grid.fill {
-  height: calc((100dvh - var(--cup-chrome, 178px)) * var(--cup-zoom, 1));
-  width: calc(100% * var(--cup-zoom, 1));
-  margin-inline: auto;
-}
-.cup-grid.fill .cup-card { height: 100%; display: flex; flex-direction: column; min-height: 0; }
-.cup-grid.fill .cup-media { flex: 1; aspect-ratio: auto; min-height: 0; }
+.cup-grid.fill { max-width: 100%; margin-inline: auto; }
+.cup-grid.fill .cup-media { aspect-ratio: var(--cup-ar, 4 / 3); }
 #cupZoomWrap { display: inline-flex; align-items: center; gap: .35rem; font-size: .85rem; color: var(--muted); }
 #cupZoom { width: 4.2rem; padding: .25rem .4rem; text-align: center; }
 .cup-card {
@@ -502,7 +498,7 @@ body.cup-fill main { max-width: none; }
 .cup-out + .cup-out { border-top: 1px solid var(--border); padding-top: .5rem; }
 .cup-out img { width: 56px; height: 56px; border-radius: .6rem; object-fit: cover; flex: none; }
 .cup-out .content { flex: 1; min-width: 0; overflow-x: auto; }
-@media (max-width: 560px) { .cup-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 560px) { .cup-grid:not(.fill) { grid-template-columns: 1fr 1fr; } }
 
 #credit {
   text-align: center; padding: 1.2rem 0 1.6rem;
@@ -3006,6 +3002,64 @@ function cupSetZoom(z) {
   cupPersist();
   cupRender();
 }
+/* 카드 크기 맞춤. 그림 틀의 비율은 창 모양과 무관하게 지금 붙은 후보 그림들의 원래 비율을 따른다
+   (서로 다르면 기하평균이라 틀은 모두 같고, 그림은 여백 없이 틀을 채우며 넘치는 만큼만 잘린다).
+   그림을 아직 못 읽었으면 4:3 이다. 카드는 설명 줄까지 창에 다 들어오는
+   가장 큰 크기로 잡는다. 열 수도 여기서 고른다 — 세로로 긴 창이면 위아래로 쌓는 쪽이 더 크다.
+   Size 배율은 그렇게 구한 크기에 곱해질 뿐이라 비율은 변하지 않는다. */
+let cupAr = 4 / 3;            // 그림이 아직 안 읽혔을 때는 직전 대진의 비율을 그대로 쓴다
+const cupDims = new Map();    // file → 가로/세로
+let cupFitQueued = false;
+function cupFitSoon() {
+  if (cupFitQueued) return;
+  cupFitQueued = true;
+  requestAnimationFrame(() => { cupFitQueued = false; cupFit(); });
+}
+function cupSeen(file, w, h) {   // 그림·영상의 원래 크기를 알게 된 순간 — 달라졌을 때만 다시 맞춘다
+  if (!w || !h || cupDims.get(file) === w / h) return;
+  cupDims.set(file, w / h);
+  cupFitSoon();
+}
+function cupFit() {
+  const grid = $("#cup .cup-grid.fill");
+  if (!grid) return;
+  const cards = [...grid.children], c = cards.length;
+  const rs = cards.map(k => cupDims.get(k.dataset.file)).filter(Boolean);
+  if (rs.length) cupAr = Math.max(.6, Math.min(2, Math.exp(rs.reduce((s, r) => s + Math.log(r), 0) / rs.length)));
+  grid.style.setProperty("--cup-ar", cupAr);
+  const host = $("#cup"), cs = getComputedStyle(host);
+  const gap = parseFloat(getComputedStyle(grid).columnGap) || 16;
+  const W = host.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
+  // 카드 묶음 아래에 깔리는 것(여백과 크레딧 줄)까지 창 안에 들어와야 스크롤이 생기지 않는다
+  const box = grid.getBoundingClientRect(), foot = $("#credit");
+  const below = foot && foot.offsetParent
+    ? foot.getBoundingClientRect().bottom - box.bottom
+    : parseFloat(cs.paddingBottom) + 12;
+  const H = innerHeight - (box.top + scrollY) - below - 1;
+  const place = (n, w) => {
+    grid.style.setProperty("--n", n);
+    grid.style.width = n * w + (n - 1) * gap + "px";
+  };
+  /* 열 수마다 들어가는 가장 큰 카드 폭을 구해 그중 큰 쪽을 고른다. 이름이 몇 줄로 접히느냐가
+     카드 폭에 달려 있어서, 가장 넓게 놓고 설명 높이를 재어 줄여 가며 폭이 멎을 때까지 되풀이한다
+     (좁은 데서 넓혀 가면 접힌 이름 때문에 작은 크기에 걸려 버린다). */
+  let best = null;
+  for (let n = c; n >= 1; n--) {   // 크기가 같으면 옆으로 나란한 쪽
+    const rows = Math.ceil(c / n);
+    let w = Math.floor((W - (n - 1) * gap) / n);
+    for (let pass = 0; pass < 8; pass++) {
+      place(n, w);
+      const cap = Math.max(...cards.map(k => k.offsetHeight - k.firstElementChild.offsetHeight));
+      const fit = Math.floor(Math.min(w, ((H - (rows - 1) * gap) / rows - cap) * cupAr));
+      if (fit >= w) break;
+      w = Math.max(fit, 1);
+    }
+    if (!best || w > best.w) best = { n, w };
+  }
+  place(best.n, Math.max(120, Math.floor(best.w * cupZoom())));
+}
+addEventListener("resize", cupFitSoon);
+
 function cupRender() {
   const el = $("#cup");
   cupPlaying = null;            // DOM 을 갈아엎으므로 재생 복구 함수는 무효가 된다
@@ -3091,11 +3145,9 @@ function cupMatch(el) {
 
   const grid = document.createElement("div");
   grid.className = "cup-grid fill" + (cupLock ? " flash" : "") + (cupBusy ? " locked" : "");
-  grid.style.setProperty("--cup-zoom", cupZoom());
-  const c = m.c.length;
-  grid.style.setProperty("--n", c <= 2 ? c : c === 4 ? 2 : 3);
   for (const f of m.c) grid.append(cupCard(f));
   el.append(head, grid);
+  cupFit();
 
   // 라운드가 바뀐 첫 화면에서만 몇 강인지 크게 알린다 — 결승이 가까울수록 길고 강하게
   if (cup.roundNo !== cupLastRound) {
@@ -3169,6 +3221,7 @@ function cupCard(file) {
   const pickedAt = cup.picked.indexOf(file);
   const card = document.createElement("div");
   card.className = "cup-card" + (pickedAt >= 0 ? " picked" : "");
+  card.dataset.file = file;
   const media = cupMedia(file);
   const box = document.createElement("div");
   box.className = "cup-media";
@@ -3182,6 +3235,7 @@ function cupCard(file) {
   if (media.type === "embed") {
     const im = document.createElement("img");
     im.alt = it.label;
+    im.onload = () => cupSeen(file, im.naturalWidth, im.naturalHeight);
     im.src = it.url;      // 기본은 아이템 이미지 — 유튜브만 썸네일을 덧입힌다
     if (media.site === "yt") loadYtThumb(media.id, false).then(t => { if (t) im.src = t.src; });
 
@@ -3214,9 +3268,11 @@ function cupCard(file) {
     const v = document.createElement("video");
     v.src = media.url;
     v.autoplay = v.muted = v.loop = v.playsInline = true;
+    v.onloadedmetadata = () => cupSeen(file, v.videoWidth, v.videoHeight);
     box.append(v);
   } else {
     const im = document.createElement("img");
+    im.onload = () => cupSeen(file, im.naturalWidth, im.naturalHeight);
     im.src = media.url; im.alt = it.label;
     box.append(im);
   }
